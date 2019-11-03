@@ -484,18 +484,18 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Trajet en ville :", "Entrée de la ville\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Plaine\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Forêt\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Donjon sauvage\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Colline\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Montagne\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Grotte\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Labyrinthe\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Salle du boss\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Grand escalier\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Grande plaine du palier 2\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Place principale d'Urbus\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n")
+            .addField("Trajet en ville :", "Entrée de la ville\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Plaine\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Forêt\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Donjon sauvage\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Colline\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Montagne\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Grotte\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Labyrinthe\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Salle du boss\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Grand escalier\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Grande plaine du palier 2\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Place principale d'Urbus\n‖\n‖ `[5 minutes]`\n‖\n")
             .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -508,13 +508,13 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Trajet en ville :", "Entrée de la ville\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Forêt ou Clairière\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Vallée\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Grande clairière\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Ravin\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Labyrinthe\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n" +
-                "Salle du boss\n‖\n‖\n‖ `[5 minutes]`\n‖\n‖\n")
+            .addField("Trajet en ville :", "Entrée de la ville\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Forêt ou Clairière\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Vallée\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Grande clairière\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Ravin\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Labyrinthe\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Salle du boss\n‖\n‖ `[5 minutes]`\n‖\n")
             .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
             .setTimestamp()
         message.channel.send({ embed })
