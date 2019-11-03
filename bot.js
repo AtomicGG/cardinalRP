@@ -33192,6 +33192,7 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat de l'anneau taurus")) {
         const Dégâts = Math.floor(3 * Math.random() + 7)
@@ -33216,6 +33217,146 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Amulette taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat du casque bovin")) {
+        const HP = Math.floor(21 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des épaulières bovin")) {
+        const HP = Math.floor(21 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat du plastron bovin")) {
+        const HP = Math.floor(21 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de la cape bovin")) {
+        const HP = Math.floor(21 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de la ceinture bovin")) {
+        const HP = Math.floor(21 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des gantelets bovin")) {
+        const HP = Math.floor(21 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des jambières bovin")) {
+        const HP = Math.floor(21 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des bottes bovin")) {
+        const HP = Math.floor(21 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'anneau bovin")) {
+        const HP = Math.floor(51 * Math.random() + 95)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'amulette bovin")) {
+        const HP = Math.floor(51 * Math.random() + 95)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
