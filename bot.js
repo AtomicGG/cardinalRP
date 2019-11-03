@@ -509,9 +509,12 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Trajet en ville :", "Entrée de la ville\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Forêt ou Clairière\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Vallée\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Grande clairière\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Forêt dense 1 ou Clairière 1\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Forêt dense 2 ou Clairière 2\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Forêt dense 3 ou Clairière 3\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Vallée\n‖\n‖ `[3 minutes]`\n‖\n" +
+                "Grande clairière\n" +
+                "Pont\n" +
                 "Ravin\n‖\n‖ `[5 minutes]`\n‖\n" +
                 "Labyrinthe\n‖\n‖ `[5 minutes]`\n‖\n" +
                 "Salle du boss\n‖\n‖ `[5 minutes]`\n‖\n")
