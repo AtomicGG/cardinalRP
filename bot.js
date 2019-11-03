@@ -9521,7 +9521,7 @@ bot.on('message', message => {
             "Potion jetable de poison léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de poison léger]\n\n" +
             "Potion jetable de soin légère :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de soin légère]\n\n" +
             "Antidote léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Antidote léger]\n\n" +
-            "Potion améliorée supérieure :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Potion améliorée supérieure]```")
+            "Potion améliorée supérieure :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Potion améliorée supérieure]```")
     }
 });
 
@@ -9549,7 +9549,7 @@ bot.on('message', message => {
         message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
             "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
             "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
-            "Ragoûts bovin :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Ragoût bovin]```")
+            "Ragoûts bovin :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Ragoût bovin]```")
     }
 });
 
@@ -42672,7 +42672,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Potion améliorée")) {
+    if (message.content === (prefix + "Potion améliorée")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42685,13 +42685,40 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Potion améliorée supérieure")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":syringe: Potion améliorée supérieure :", ":syringe: C'est une potion permettant de reprendre des HP constitué de coeur d'animal du palier 2 !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 26\n\n:sparkles: Niveau minimum dans le métier 'Alchimiste' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de veau, 3 lierre de soin, 1 aile de guêpe vivace, 2 portion de lait de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Alchimiste' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 460 cols\n\n:large_orange_diamond: Prix de revente : 115 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la potion améliorée supérieure`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     const HP = (Math.floor((31) * Math.random() + 129))
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion améliorée")) {
+    if (message.content === (prefix + "Achat/fabrication/découverte de la potion améliorée")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":syringe: Potion améliorée :", ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" + HP + "` HP !")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = (Math.floor((31) * Math.random() + 169))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la potion améliorée supérieure")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":syringe: Potion améliorée supérieure :", ":syringe: Vous venez d'acheter ou de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" + HP + "` HP !")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
