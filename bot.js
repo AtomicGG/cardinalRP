@@ -517,7 +517,7 @@ bot.on('message', message => {
                 "Pont\n" +
                 "Ravin\n‖\n‖ `[5 minutes]`\n‖\n" +
                 "Labyrinthe\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Salle du boss\n‖\n‖ `[5 minutes]`\n‖\n")
+                "Salle du boss")
             .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
             .setTimestamp()
         message.channel.send({ embed })
