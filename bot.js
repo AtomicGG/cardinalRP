@@ -9549,7 +9549,7 @@ bot.on('message', message => {
         message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
             "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
             "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
-            "Ragoûts bovin :\nCoûts : [Achat : 380 cols] [Revente : 95 cols]\nInfos : [=Ragoût bovin]```")
+            "Ragoûts bovin :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Ragoût bovin]```")
     }
 });
 
@@ -42650,7 +42650,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":meat_on_bone: Ragoût de taurus :", ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de taurus mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taurus, 1 Lierre commun, 1 Lierre rare \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 320 cols\n\n:large_orange_diamond: Prix de revente : 80 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de taurus`\n\nPour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":meat_on_bone: Ragoût de taurus :", ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande de taurus mais aussi de lierre !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 21\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de taurus, 1 Lierre commun, 1 Lierre rare \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 320 cols\n\n:large_orange_diamond: Prix de revente : 80 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût de taurus`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -42665,6 +42665,33 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":meat_on_bone: Ragoût de taurus :", ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" + HP + "` HP !")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Ragoût bovin") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":meat_on_bone: Ragoût bovin :", ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande bovine !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 26\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de vache, 2 viande de boeuf, 2 viande de veau, 2 pierre de sel, 1 lierre rare \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 400 cols\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût bovin`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du ragoût bovin")) {
+        const HP = (Math.floor((31) * Math.random() + 145))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":meat_on_bone: Ragoût bovin :", ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" + HP + "` HP !")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -44009,7 +44036,7 @@ bot.on('message', message => {
             .addField("Viande de veau :", "C'est une viande basique vous trouvez sur les veaux en chassant dans la vallée du palier 2 !")
             .addField("Prix d'achat :", "64 cols")
             .addField("Prix de revente :", "16 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de desman")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût bovin")
             .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
             .setTimestamp()
         message.channel.send({ embed })
