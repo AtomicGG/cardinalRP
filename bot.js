@@ -495,7 +495,7 @@ bot.on('message', message => {
                 "Salle du boss\n‖\n‖ `[5 minutes]`\n‖\n" +
                 "Grand escalier\n‖\n‖ `[5 minutes]`\n‖\n" +
                 "Grande plaine du palier 2\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Place principale d'Urbus\n‖\n‖ `[5 minutes]`\n‖\n")
+                "Place principale d'Urbus")
             .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
             .setTimestamp()
         message.channel.send({ embed })
