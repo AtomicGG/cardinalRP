@@ -10400,7 +10400,7 @@ bot.on('message', message => {
                 "Petite : 10 000 cols [3 prédéfinis]\n" +
                 "Moyenne : 30 000 cols [10 prédéfinis]\n" +
                 "Grande : 100 000 cols [30 prédéfinis]\n" +
-                "Une planque : 35 000 cols [10 salons discord maximum, Une maison bien cacher]\n" +
+                "Une planque : 35 000 cols [10 salons discord maximum, Une maison bien cachée]\n" +
                 "Un repaire de guilde : 200 000 cols [50 salons discord maximum]")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -44325,7 +44325,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":crossed_swords: Protection du roi déchu :", ":crossed_swords: Vous encaissez les dégâts d'une défense d'un allié pendant 3 tour, Les dégâts sont réduit de 20% pendant la durée de cette technique. Vous pouvez arrêté la technique quand vous voulez.")
+                    .addField(":crossed_swords: Protection du roi déchu :", ":crossed_swords: Vous encaissez les dégâts d'une défense d'un allié pendant 3 tours3 Les dégâts sont réduits de 20% pendant la durée de cette technique. Vous pouvez arrêter la technique quand vous le voulez.")
                     .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
                     .setTimestamp()
                 message.channel.send({ embed })
