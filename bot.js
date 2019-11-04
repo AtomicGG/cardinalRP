@@ -3,8 +3,6 @@ const bot = new Discord.Client();
 const talkedRecently = new Set();
 const prefix = "=";
 
-var fury = false;
-
 bot.on('ready', () => {
     bot.user.setGame('=Menu SAO')
 })
@@ -497,7 +495,7 @@ bot.on('message', message => {
                 "Les espadons : `=Les espadons`\n" +
                 "Les dagues : `=Les dagues`\n" +
                 "Les masses : `=Les masses`\n" +
-                "Les massues : `=Les massues`\n" +
+                "Les marteaux : `=Les marteaux`\n" +
                 "Les haches : `=Les haches`\n" +
                 "Les hallebardes : `=Les hallebardes`\n" +
                 "Les rapières : `=Les rapières`\n" +
@@ -588,12 +586,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les massues") {
+    if (message.content === (prefix) + "Les marteaux") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les massues :", "Ce sont des armes contondantes constituées d'une masse lourde accrochée au bout d'un bâton assez long.\n\n" +
+            .addField("Les marteaux :", "Ce sont des armes contondantes constituées d'une masse lourde accrochée au bout d'un bâton assez long.\n\n" +
                 "Elles sont à deux mains !\n\n" +
                 "Elles donnent généralement un bonus en Coup provocateur de +2.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
@@ -5167,7 +5165,7 @@ bot.on('message', message => {
             "Espadon basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Espadon basique à deux mains]\n\n" +
             "Dague basique :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique]\n\n" +
             "Masse basique :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique]\n\n" +
-            "Massue basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Massue basique à deux mains]\n\n" +
+            "Marteau basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Marteau basique à deux mains]\n\n" +
             "Hache basique :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique]\n\n" +
             "Hallebarde basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hallebarde basique à deux mains]\n\n" +
             "Rapière basique :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique]\n\n" +
@@ -5186,7 +5184,7 @@ bot.on('message', message => {
             "Espadon de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Espadon de kobolt à deux mains]\n\n" +
             "Dague de kobolt :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Dague de kobolt]\n\n" +
             "Masse de kobolt :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Masse de kobolt]\n\n" +
-            "Massue de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Massue de kobolt à deux mains]\n\n" +
+            "Marteau de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Marteau de kobolt à deux mains]\n\n" +
             "Hache de kobolt :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Hache de kobolt]\n\n" +
             "Hallebarde de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Hallebarde de kobolt à deux mains]\n\n" +
             "Rapière de kobolt :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Rapière de kobolt]\n\n" +
@@ -5205,7 +5203,7 @@ bot.on('message', message => {
             "Espadon du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Espadon du clan des loups à deux mains]\n\n" +
             "Dague du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups]\n\n" +
             "Masse du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups]\n\n" +
-            "Massue du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Massue du clan des loups à deux mains]\n\n" +
+            "Marteau du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Marteau du clan des loups à deux mains]\n\n" +
             "Hache du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups]\n\n" +
             "Hallebarde du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hallebarde du clan des loups à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 4```")
@@ -5230,7 +5228,7 @@ bot.on('message', message => {
             "Espadon de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Espadon de kobolt supérieure à deux mains]\n\n" +
             "Dague de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure]\n\n" +
             "Masse de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure]\n\n" +
-            "Massue de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Massue de kobolt supérieure à deux mains]\n\n" +
+            "Marteau de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Marteau de kobolt supérieure à deux mains]\n\n" +
             "Hache de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure]\n\n" +
             "Hallebarde de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hallebarde de kobolt supérieure à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 6```")
@@ -5263,7 +5261,7 @@ bot.on('message', message => {
             "Espadon en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Espadon en chitine à deux mains]\n\n" +
             "Dague en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Dague en chitine à une main]\n\n" +
             "Masse en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Masse en chitine à une main]\n\n" +
-            "Massue en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Massue en chitine à deux mains]\n\n" +
+            "Marteau en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Marteau en chitine à deux mains]\n\n" +
             "Hache en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Hache en chitine à une main]\n\n" +
             "Hallebarde en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Hallebarde en chitine à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 9```")
@@ -5288,7 +5286,7 @@ bot.on('message', message => {
             "Espadon de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Espadon de taurus à deux mains]\n\n" +
             "Dague de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Dague de taurus à une main]\n\n" +
             "Masse de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Masse de taurus à une main]\n\n" +
-            "Massue de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Massue de taurus à deux mains]\n\n" +
+            "Marteau de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Marteau de taurus à deux mains]\n\n" +
             "Hache de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Hache de taurus à une main]\n\n" +
             "Hallebarde de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Hallebarde de taurus à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 11```")
@@ -5312,7 +5310,7 @@ bot.on('message', message => {
             "Espadon darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Espadon darchic à deux mains]\n\n" +
             "Dague darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Dague darchic à une main]\n\n" +
             "Masse darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Masse darchic à une main]\n\n" +
-            "Massue darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Massue darchic à deux mains]\n\n" +
+            "Marteau darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Marteau darchic à deux mains]\n\n" +
             "Hache darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Hache darchic à une main]\n\n" +
             "Hallebarde darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Hallebarde darchic à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 13```")
@@ -5338,7 +5336,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes basiques :", "=Epée basique\n=Espadon basique\n=Dague basique\n=Masse basique\n=Massue basique\n=Hache basique\n=Hallebarde basique\n=Rapière basique\n=Cimeterre basique\n=Sabre basique\n=Katana basique\n=Nodachi basique\n=Pavois basique")
+            .addField(":scales: Liste des armes basiques :", "=Epée basique\n=Espadon basique\n=Dague basique\n=Masse basique\n=Marteau basique\n=Hache basique\n=Hallebarde basique\n=Rapière basique\n=Cimeterre basique\n=Sabre basique\n=Katana basique\n=Nodachi basique\n=Pavois basique")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5353,7 +5351,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes du clan des loups :\n\n:warning: Ces armes sont non échangeable !", "=Epée du clan des loups\n=Espadon du clan des loups\n=Dague du clan des loups\n=Masse du clan des loups\n=Massue du clan des loups\n=Hache du clan des loups\n=Hallebarde du clan des loups\n=Rapière du clan des loups\n=Cimeterre du clan des loups\n=Sabre du clan des loups\n=Katana du clan des loups\n=Nodachi du clan des loups\n=Pavois du clan des loups")
+            .addField(":scales: Liste des armes du clan des loups :\n\n:warning: Ces armes sont non échangeable !", "=Epée du clan des loups\n=Espadon du clan des loups\n=Dague du clan des loups\n=Masse du clan des loups\n=Marteau du clan des loups\n=Hache du clan des loups\n=Hallebarde du clan des loups\n=Rapière du clan des loups\n=Cimeterre du clan des loups\n=Sabre du clan des loups\n=Katana du clan des loups\n=Nodachi du clan des loups\n=Pavois du clan des loups")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5417,13 +5415,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Massue du clan des loups")) {
+    if (message.content.startsWith(prefix + "Marteau du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Massue du clan des loups :", ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:crossed_swords: Améliore le 'Blocage' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la massue du clan des loups`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la massue du clan des loups : [Votre niveau en forgeron]`")
+            .addField(":scales: Marteau du clan des loups :", ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:crossed_swords: Améliore le 'Blocage' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la marteau du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la marteau du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5564,7 +5562,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Liste des armes de kobolt supérieures :", "=Epée de kobolt supérieure\n=Espadon de kobolt supérieur\n=Dague de kobolt supérieure\n=Masse de kobolt supérieure\n=Massue de kobolt supérieure\n=Hache de kobolt supérieure\n=Hallebarde de kobolt supérieure\n=Rapière de kobolt supérieure\n=Cimeterre de kobolt supérieur\n=Sabre de kobolt supérieur\n=Katana de kobolt supérieur\n=Nodachi de kobolt supérieur\n=Pavois de kobolt supérieur")
+                .addField(":scales: Liste des armes de kobolt supérieures :", "=Epée de kobolt supérieure\n=Espadon de kobolt supérieur\n=Dague de kobolt supérieure\n=Masse de kobolt supérieure\n=Marteau de kobolt supérieure\n=Hache de kobolt supérieure\n=Hallebarde de kobolt supérieure\n=Rapière de kobolt supérieure\n=Cimeterre de kobolt supérieur\n=Sabre de kobolt supérieur\n=Katana de kobolt supérieur\n=Nodachi de kobolt supérieur\n=Pavois de kobolt supérieur")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -5573,7 +5571,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Liste des armes de kobolt :", "=Epée de kobolt\n=Espadon de kobolt\n=Dague de kobolt\n=Masse de kobolt\n=Massue de kobolt\n=Hache de kobolt\n=Hallebarde de kobolt\n=Rapière de kobolt\n=Cimeterre de kobolt\n=Sabre de kobolt\n=Katana de kobolt\n=Nodachi de kobolt\n=Pavois de kobolt")
+                .addField(":scales: Liste des armes de kobolt :", "=Epée de kobolt\n=Espadon de kobolt\n=Dague de kobolt\n=Masse de kobolt\n=Marteau de kobolt\n=Hache de kobolt\n=Hallebarde de kobolt\n=Rapière de kobolt\n=Cimeterre de kobolt\n=Sabre de kobolt\n=Katana de kobolt\n=Nodachi de kobolt\n=Pavois de kobolt")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -5668,13 +5666,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la massue du clan des loups")) {
+    if (message.content.startsWith(prefix + "Découverte de la marteau du clan des loups")) {
         const Dégâts = Math.floor(5 * Math.random() + 14)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Massue du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Marteau du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -6743,7 +6741,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la massue du clan des loups")) {
+    if (message.content.startsWith(prefix + "Fonte de la marteau du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(8).join(" : ");
@@ -6753,7 +6751,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Massue du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -6766,7 +6764,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6774,7 +6772,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6786,7 +6784,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6794,7 +6792,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6806,7 +6804,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6814,7 +6812,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6824,7 +6822,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6838,7 +6836,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6846,7 +6844,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6858,7 +6856,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6866,7 +6864,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6878,7 +6876,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6886,7 +6884,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6896,7 +6894,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6910,7 +6908,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6918,7 +6916,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6930,7 +6928,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6938,7 +6936,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6950,7 +6948,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6958,7 +6956,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6968,7 +6966,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -18241,7 +18239,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Massue 
+// Compétences d'armes | Marteau 
 
 bot.on('message', message => {
     const args = message.content;
@@ -24073,12 +24071,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Massue de kobolt")) {
+    if (message.content.startsWith(prefix + "Marteau de kobolt")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Massue de kobolt :", ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la massue de kobolt`")
+            .addField(":scales: Marteau de kobolt :", ":scales: C'est une masse assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme kobolt, 2 cuivre rare, 4 cuivre commun, 6 cuivre médiocre, 4 dent de kobolt, 2 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 8\n\n:large_orange_diamond: Prix d'achat : 580 cols\n\n:large_orange_diamond: Prix de revente : 145 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la marteau de kobolt`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à deux mains`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -24266,13 +24264,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la massue de kobolt")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la marteau de kobolt")) {
         const Dégâts = Math.floor(7 * Math.random() + 14)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Massue de kobolt :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Marteau de kobolt :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24453,15 +24451,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Massue de kobolt supérieure")) {
+    if (message.content.startsWith(prefix + "Marteau de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Massue de kobolt supérieure :", ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la massue de kobolt supérieure`")
+            .addField(":scales: Marteau de kobolt supérieure :", ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la marteau de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la massue de kobolt supérieure : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la marteau de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -25039,7 +25037,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la massue de kobolt supérieure")) {
+    if (message.content.startsWith(prefix + "Fonte de la marteau de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 3
@@ -25048,7 +25046,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Massue de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -25059,7 +25057,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25068,7 +25066,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25077,7 +25075,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25086,7 +25084,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25098,7 +25096,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25107,7 +25105,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25116,7 +25114,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25125,7 +25123,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25137,7 +25135,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25146,7 +25144,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25155,7 +25153,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25164,7 +25162,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Massue de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26425,13 +26423,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la massue de kobolt supérieure")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la marteau de kobolt supérieure")) {
         const Dégâts = Math.floor(9 * Math.random() + 20)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Massue de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Marteau de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26593,12 +26591,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Massue basique")) {
+    if (message.content.startsWith(prefix + "Marteau basique")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Massue basique :", ":scales: C'est une masse peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la massue basique`")
+            .addField(":scales: Marteau basique :", ":scales: C'est une masse peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 cuivre médiocre, 4 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 160 cols\n\n:large_orange_diamond: Prix de revente : 40 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la marteau basique`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26765,12 +26763,12 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const Dégâts = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la massue basique")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la marteau basique")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Massue basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Marteau basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -35350,7 +35348,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes en chitine :", "=Epée en chitine\n=Espadon en chitine\n=Dague en chitine\n=Masse en chitine\n=Massue en chitine\n=Hache en chitine\n=Hallebarde en chitine\n=Rapière en chitine\n=Cimeterre en chitine\n=Sabre en chitine\n=Katana en chitine\n=Nodachi en chitine\n=Pavois en chitine")
+            .addField(":scales: Liste des armes en chitine :", "=Epée en chitine\n=Espadon en chitine\n=Dague en chitine\n=Masse en chitine\n=Marteau en chitine\n=Hache en chitine\n=Hallebarde en chitine\n=Rapière en chitine\n=Cimeterre en chitine\n=Sabre en chitine\n=Katana en chitine\n=Nodachi en chitine\n=Pavois en chitine")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
