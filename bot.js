@@ -515,7 +515,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les dagues :", "Ce sont des armes blanches courte à simple ou double tranchant.\n\n" +
+            .addField("Les dagues :", "Ce sont des armes blanches courtes à simple ou double tranchant.\n\n" +
                 "Elles sont à une main !\n\n" +
                 "Elles donnent généralement un bonus en Coup létal de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
@@ -527,17 +527,17 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les masses") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
+            .addField("Les masses :", "Ce sont des armes contondantes constituées d'une masse lourde accrochée au bout d'un bâton plus ou moins long.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+                "Elles donnent généralement un bonus en Coup provocateur de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup glissé : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
+                "`=Coup fracassant : [Votre attaque]`")
+            .setImage("https://vignette.wikia.nocookie.net/barovia/images/3/3a/Masse_d%27armes.jpg/revision/latest?cb=20190715085956&path-prefix=fr")
             .setTimestamp()
         message.channel.send({ embed })
     }
