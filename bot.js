@@ -5353,7 +5353,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes du clan des loups :\n\n:warning: Ces armes sont non échangeable !", "=Masse du clan des loups à deux mains\n=Masse du clan des loups à une main\n=Rapière du clan des loups à deux mains\n=Rapière du clan des loups à une main\n=Katana du clan des loups à deux mains\n=Katana du clan des loups à une main\n=Epée du clan des loups à deux mains\n=Epée du clan des loups\n=Cimeterre du clan des loups à deux mains\n=Cimeterre du clan des loups à une main\n=Hache du clan des loups à deux mains\n=Hache du clan des loups à une main\n=Glaive du clan des loups à deux mains\n=Dague du clan des loups à une main\n=Bouclier du clan des loups à une main")
+            .addField(":scales: Liste des armes du clan des loups :\n\n:warning: Ces armes sont non échangeable !", "=Epée du clan des loups\n=Espadon du clan des loups\n=Dague du clan des loups\n=Masse du clan des loups\n=Massue du clan des loups\n=Hache du clan des loups\n=Hallebarde du clan des loups\n=Rapière du clan des loups\n=Cimeterre du clan des loups\n=Sabre du clan des loups\n=Katana du clan des loups\n=Nodachi du clan des loups\n=Pavois du clan des loups")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
