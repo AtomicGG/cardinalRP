@@ -448,7 +448,7 @@ bot.on('message', message => {
             .addField("Les armes :", "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, pouvant être des armes à une ou deux mains. Chaque arme améliore un ou des coups ou actions défensives !\n\n" +
                 "Vous saurez quelle arme permet d'améliorer quel coup ou action défensive en affichant les infos sur celle-ci en écrivant : `=[Nom de l'arme]`\n\n" +
                 "Lorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste ci dessous.\n\n" +
-                "Cependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment, seulement les armes que vous trouverez sur des monstres, achèterez ou fabriquerez !")
+                "Cependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment mais vous donnera accès à la compétence de l'arme, seulement les armes que vous trouverez sur des monstres, achèterez ou fabriquerez !")
             .addField("Liste des armes possibles :", "Les épées : `=Les épées`\n" +
                 "Les espadons : `=Les espadons`\n" +
                 "Les dagues : `=Les dagues`\n" +
@@ -463,11 +463,26 @@ bot.on('message', message => {
                 "Les nodachis : `=Les nodachis`\n" +
                 "Les bâtons (pas disponible avant le palier 3) : `=Les bâtons`\n" +
                 "Les lances (pas disponible avant le palier 3) : `=Les lances`\n" +
-                "Les gants de combat (pas disponible avant le palier 3) : `=Les anneaux`\n" +
-                "Les boucliers : `=Les boucliers`\n" +
+                "Les cestes (pas disponible avant le palier 3) : `=Les cestes`\n" +
+                "Les pavois : `=Les pavois`\n" +
                 "Les rondaches (pas disponible avant le palier 3) : `=Les rondaches`\n" +
                 "Les écus (pas disponible avant le palier 3) : `=Les écus`\n" +
                 "Les targes (pas disponible avant le palier 3) : `=Les targes`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Les épées") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde." +
+                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+                "Elles vous donnent accès à la compétence suivante : `=Coup glissé : [Votre attaque]`")
+            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
