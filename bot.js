@@ -1848,80 +1848,80 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'équipements 7")) {
-        message.channel.send("```Casque en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Casque en chitine]\n\n" +
-            "Epaulières en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Epaulières en chitine]\n\n" +
-            "Plastron en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Plastron en chitine]\n\n" +
-            "Cape en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Cape en chitine]\n\n" +
-            "Ceinture en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Ceinture en chitine]\n\n" +
-            "Gantelets en chitines :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Gantelets en chitines]\n\n" +
-            "Jambières en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Jambières en chitine]\n\n" +
-            "Bottes en chitine :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Bottes en chitine]\n\n" +
-            "Anneau en chitine :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Anneau en chitine]\n\n" +
-            "Amulette en chitine :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Amulette en chitine]\n\n" +
+        message.channel.send("```Casque en chitine :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Casque en chitine]\n\n" +
+            "Epaulières en chitine :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Epaulières en chitine]\n\n" +
+            "Plastron en chitine :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Plastron en chitine]\n\n" +
+            "Cape en chitine :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Cape en chitine]\n\n" +
+            "Ceinture en chitine :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Ceinture en chitine]\n\n" +
+            "Gantelets en chitines :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Gantelets en chitines]\n\n" +
+            "Jambières en chitine :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Jambières en chitine]\n\n" +
+            "Bottes en chitine :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Bottes en chitine]\n\n" +
+            "Anneau en chitine :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Anneau en chitine]\n\n" +
+            "Amulette en chitine :\nCoûts : [Achat : 3000 cols] [Revente : 1675010 cols]\nInfos : [=Amulette en chitine]\n\n" +
             "Suite en écrivant :\n=Liste d'équipements 8```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'équipements 8")) {
-        message.channel.send("```Casque taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Casque taurus]\n\n" +
-            "Epaulières taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Epaulières taurus]\n\n" +
-            "Plastron taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Plastron taurus]\n\n" +
-            "Cape taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Cape taurus]\n\n" +
-            "Ceinture taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Ceinture taurus]\n\n" +
-            "Gantelets taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Gantelets tauruss]\n\n" +
-            "Jambières taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Jambières taurus]\n\n" +
-            "Bottes taurus :\nCoûts : [Achat : 1240 cols] [Revente : 620 cols]\nInfos : [=Bottes taurus]\n\n" +
-            "Anneau taurus :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Anneau taurus]\n\n" +
-            "Amulette taurus :\nCoûts : [Achat : 3220 cols] [Revente : 1610 cols]\nInfos : [=Amulette taurus]\n\n" +
+        message.channel.send("```Casque taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Casque taurus]\n\n" +
+            "Epaulières taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Epaulières taurus]\n\n" +
+            "Plastron taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Plastron taurus]\n\n" +
+            "Cape taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Cape taurus]\n\n" +
+            "Ceinture taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Ceinture taurus]\n\n" +
+            "Gantelets taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Gantelets tauruss]\n\n" +
+            "Jambières taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Jambières taurus]\n\n" +
+            "Bottes taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Bottes taurus]\n\n" +
+            "Anneau taurus :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Anneau taurus]\n\n" +
+            "Amulette taurus :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Amulette taurus]\n\n" +
             "Suite en écrivant :\n=Liste d'équipements 9```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'équipements 9")) {
-        message.channel.send("```Casque de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Casque de maille]\n\n" +
-            "Epaulières de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Epaulières de maille]\n\n" +
-            "Plastron de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Plastron de maille]\n\n" +
-            "Cape de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Cape de maille]\n\n" +
-            "Ceinture de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Ceinture de maille]\n\n" +
-            "Gantelets de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Gantelets de maille]\n\n" +
-            "Jambières de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Jambières de maille]\n\n" +
-            "Bottes de maille :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Bottes de maille]\n\n" +
-            "Anneau de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Anneau de maille]\n\n" +
-            "Amulette de maille :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Amulette de maille]\n\n" +
+        message.channel.send("```Casque de maille :\nCoûts : [Achat : X cols] [Revente : 350 cols]\nInfos : [=Casque de maille]\n\n" +
+            "Epaulières de maille :\nCoûts : [Achat : X cols] [Revente : 350 cols]\nInfos : [=Epaulières de maille]\n\n" +
+            "Plastron de maille :\nCoûts : [Achat : X cols] [Revente : 350 cols]\nInfos : [=Plastron de maille]\n\n" +
+            "Cape de maille :\nCoûts : [Achat : X cols] [Revente : 350 cols]\nInfos : [=Cape de maille]\n\n" +
+            "Ceinture de maille :\nCoûts : [Achat : X cols] [Revente : 350 cols]\nInfos : [=Ceinture de maille]\n\n" +
+            "Gantelets de maille :\nCoûts : [Achat : X cols] [Revente : 350 cols]\nInfos : [=Gantelets de maille]\n\n" +
+            "Jambières de maille :\nCoûts : [Achat : X cols] [Revente : 350 cols]\nInfos : [=Jambières de maille]\n\n" +
+            "Bottes de maille :\nCoûts : [Achat : X cols] [Revente : 350 cols]\nInfos : [=Bottes de maille]\n\n" +
+            "Anneau de maille :\nCoûts : [Achat : X cols] [Revente : 750 cols]\nInfos : [=Anneau de maille]\n\n" +
+            "Amulette de maille :\nCoûts : [Achat : X cols] [Revente : 750 cols]\nInfos : [=Amulette de maille]\n\n" +
             "Suite en écrivant :\n=Liste d'équipements 10```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'équipements 10")) {
-        message.channel.send("```Casque dargnan :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Casque dargnan]\n\n" +
-            "Epaulières dargnan :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Epaulières dargnan]\n\n" +
-            "Plastron dargnan :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Plastron dargnan]\n\n" +
-            "Cape dargnan :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Cape dargnan]\n\n" +
-            "Ceinture dargnan :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Ceinture dargnan]\n\n" +
-            "Gantelets dargnan :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Gantelets dargnan]\n\n" +
-            "Jambières dargnan :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Jambières dargnan]\n\n" +
-            "Bottes dargnan :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Bottes dargnan]\n\n" +
-            "Anneau dargnan :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Anneau dargnan]\n\n" +
-            "Amulette dargnan :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Amulette dargnan]\n\n" +
+        message.channel.send("```Casque dargnan :\nCoûts : [Achat : X cols] [Revente : 410 cols]\nInfos : [=Casque dargnan]\n\n" +
+            "Epaulières dargnan :\nCoûts : [Achat : X cols] [Revente : 410 cols]\nInfos : [=Epaulières dargnan]\n\n" +
+            "Plastron dargnan :\nCoûts : [Achat : X cols] [Revente : 410 cols]\nInfos : [=Plastron dargnan]\n\n" +
+            "Cape dargnan :\nCoûts : [Achat : X cols] [Revente : 410 cols]\nInfos : [=Cape dargnan]\n\n" +
+            "Ceinture dargnan :\nCoûts : [Achat : X cols] [Revente : 410 cols]\nInfos : [=Ceinture dargnan]\n\n" +
+            "Gantelets dargnan :\nCoûts : [Achat : X cols] [Revente : 410 cols]\nInfos : [=Gantelets dargnan]\n\n" +
+            "Jambières dargnan :\nCoûts : [Achat : X cols] [Revente : 410 cols]\nInfos : [=Jambières dargnan]\n\n" +
+            "Bottes dargnan :\nCoûts : [Achat : X cols] [Revente : 410 cols]\nInfos : [=Bottes dargnan]\n\n" +
+            "Anneau dargnan :\nCoûts : [Achat : X cols] [Revente : 880 cols]\nInfos : [=Anneau dargnan]\n\n" +
+            "Amulette dargnan :\nCoûts : [Achat : X cols] [Revente : 880 cols]\nInfos : [=Amulette dargnan]\n\n" +
             "Suite en écrivant :\n=Liste d'équipements 11```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'équipements 11")) {
-        message.channel.send("```Casque bovin :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Casque bovin]\n\n" +
-            "Epaulières bovin :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Epaulières bovin]\n\n" +
-            "Plastron bovin :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Plastron bovin]\n\n" +
-            "Cape bovin :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Cape bovin]\n\n" +
-            "Ceinture bovin :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Ceinture bovin]\n\n" +
-            "Gantelets bovin :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Gantelets bovin]\n\n" +
-            "Jambières bovin :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Jambières bovin]\n\n" +
-            "Bottes bovin :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Bottes bovin]\n\n" +
-            "Anneau bovin :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Anneau bovin]\n\n" +
-            "Amulette bovin :\nCoûts : [Achat : X cols] [Revente : 1800 cols]\nInfos : [=Amulette bovin]```")
+        message.channel.send("```Casque bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Casque bovin]\n\n" +
+            "Epaulières bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Epaulières bovin]\n\n" +
+            "Plastron bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Plastron bovin]\n\n" +
+            "Cape bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Cape bovin]\n\n" +
+            "Ceinture bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Ceinture bovin]\n\n" +
+            "Gantelets bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Gantelets bovin]\n\n" +
+            "Jambières bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Jambières bovin]\n\n" +
+            "Bottes bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Bottes bovin]\n\n" +
+            "Anneau bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Anneau bovin]\n\n" +
+            "Amulette bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Amulette bovin]```")
     }
 });
 
