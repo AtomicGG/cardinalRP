@@ -238,7 +238,7 @@ bot.on('message', message => {
                 "`=Berserker : [Vos dégâts]`\n" +
                 "Cette compétence permet à votre 3 prochains coups de vous soigner.")
             .addBlankField(true)
-            /*.addField(":diamond_shape_with_a_dot_inside: Les classes :", "Ces classes vous permettent de déclencher, autant de fois que vous le voulez par jour mais uniquement en PVE, une compétence unique et très puissante !\n\n" +
+            .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Ces classes vous permettent de déclencher, autant de fois que vous le voulez par jour mais uniquement en PVE, une compétence unique et très puissante !\n\n" +
                 "Pour déclencher la compétence selon votre classe :\n\n" +
                 "- Combattant : `=Coups jumeaux : [Vos dégâts]`\n" +
                 "Le lanceur frappe les adversaires à deux reprises, chacun des coups pouvant être dirigé indépendamment l'un de l'autre. Fait des dégâts à une ou deux cibles, les coups peuvent être concentrés sur une seule ou sur deux.\n\n" +
@@ -251,14 +251,13 @@ bot.on('message', message => {
                 "- Vindicateur : `=Ténacité : [Les dégâts adverses]`\n" +
                 "Permet au lanceur d'augmenter son armure pour 3 tours en gagnant des 'Charge de Tenacité', lorsque 3 charges sont réunies les nombres de tours sont réinitialisé à chaque utilisation.\n\n" +
                 "- Berserker : `=Coup enchaîné : [Vos dégâts]` & `=Coup déchaîné : [Vos dégâts]`\n" +
-                "Frappe l'adversaire à l'aide d'un coup enchaîné plaçant une charge sur celle-ci, après 2 charges placée, le lanceur libère une attaque déchaîné faisant de gros dégâts.")*/
+                "Frappe l'adversaire à l'aide d'un coup enchaîné plaçant une charge sur celle-ci, après 2 charges placée, le lanceur libère une attaque déchaîné faisant de gros dégâts.")
             .addBlankField(true)
             .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Une classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n" +
                 "`=Niveaux`")
             .addBlankField(true)
             .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Un calculateur pour les statistiques est également disponible, avec la commande suivante :\n\n" +
                 "`=Calculateur des statistiques d'un [votre classe] : [votre niveau]`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
