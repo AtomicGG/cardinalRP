@@ -679,7 +679,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Les bâtons") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -697,17 +697,17 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les lances") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
-                "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+            .addField("Les lances :", "Ce sont des armes d'hast dotées d'un fer emmanché sur une hampe ou long bois et, pour certaines d'entre elles, d'un talon métallique qui sert en général à équilibrer l'arme tenue en main et à la planter dans le sol.\n\n" +
+                "Elles sont à deux mains !\n\n" +
+                "Elles donnent généralement un bonus en ??? de +2.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup glissé : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
+                "`=Coup révélateur : [Votre attaque]`")
+            .setImage("https://www.medievalfactory.com/6312-large_default/LANCE-MEDIEVAL-LATEX.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
