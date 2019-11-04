@@ -222,19 +222,65 @@ bot.on('message', message => {
                 "[Vindicateur] : Possède beaucoup d'HP, pas mal d'armure mais peu de dégâts !\n" +
                 "[Chevalier] : Possède beaucoup d'armure, pas mal d'HP mais peu de dégâts !\n" +
                 "[Berserker] : Possède beaucoup de dégâts, pas mal d'HP mais peu d'armure !")
-                .addBlankField(true)
+            .addBlankField(true)
             .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Ces classes vous permettent de déclencher, une fois par jour, une compétence unique et très puissante !\n\n" +
                 "Pour voir les différentes compétences principales :\n" +
                 "`=Liste des compétences principales de classes`")
-                .addBlankField(true)
+            .addBlankField(true)
             .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Ces classes vous permettent de déclencher, autant de fois que vous le voulez par jour mais uniquement en PVE, une compétence unique et très puissante !\n\n" +
-            "Pour voir les différentes compétences secondaires :\n" +
-            "`=Liste des compétences secondaires de classes`")
+                "Pour voir les différentes compétences secondaires :\n" +
+                "`=Liste des compétences secondaires de classes`")
             .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Une classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n" +
                 "`=Niveaux`")
             .addBlankField(true)
             .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Un calculateur pour les statistiques est également disponible, avec la commande suivante :\n\n" +
                 "`=Calculateur des statistiques d'un [votre classe] : [votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Liste des compétences principales de classes")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":diamond_shape_with_a_dot_inside: Les compétences principales :", "`=Combattant : [Vos dégâts]`\n" +
+            "Cette compétence inflige deux coups distincts, l'un diminuant l'attaque adverse, l'autre la défense adverse.\n\n" +
+            "`=Assassin : [Vos dégâts]`\n" +
+            "Cette compétence augmente votre attaque pendant un laps de temps puis inflige un grand coup.\n\n" +
+            "`=Chevalier : [Votre armure]`\n" +
+            "Cette compétence crée une barre d'armure de vie durant un laps de temps.\n\n" +
+            "`=Paladin : [Votre armure]`\n" +
+            "Cette compétence vous soigne ainsi que deux compères.\n\n" +
+            "`=Vindicateur : [Votre armure]`\n" +
+            "Cette compétence diminue votre armure mais augmente votre attaque durant un laps de temps.\n\n" +
+            "`=Berserker : [Vos dégâts]`\n" +
+            "Cette compétence permet à votre 3 prochains coups de vous soigner.")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Liste des compétences secondaires de classes")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":diamond_shape_with_a_dot_inside: Les compétences secondaires :", "- Combattant : `=Coups jumeaux : [Vos dégâts]`\n" +
+            "Le lanceur frappe les adversaires à deux reprises, chacun des coups pouvant être dirigé indépendamment l'un de l'autre. Fait des dégâts à une ou deux cibles, les coups peuvent être concentrés sur une seule ou sur deux.\n\n" +
+            "- Assassin : `=Voile sombre`\n" +
+            "Rend le lanceur invisible et impossible à viser directement par les adversaires. Le lanceur n'est plus pris en compte lors des =Ciblage, les coups en zone touchant toute l'équipe peuvent toujours l'atteindre.\n\n" +
+            "- Chevalier : `=Barrage violent : [Les dégâts adverses]`\n" +
+            "Le lanceur bloque une attaque tout en repoussant l'adversaire et redirigeant une partie de ses dégâts contre lui.\n\n" +
+            "- Paladin : `=Bénédiction`\n" +
+            "Soigne légèrement une cible et lui retire toute altération d'états néfastes.\n\n" +
+            "- Vindicateur : `=Ténacité : [Les dégâts adverses]`\n" +
+            "Permet au lanceur d'augmenter son armure pour 3 tours en gagnant des 'Charge de Tenacité', lorsque 3 charges sont réunies les nombres de tours sont réinitialisé à chaque utilisation.\n\n" +
+            "- Berserker : `=Coup enchaîné : [Vos dégâts]` & `=Coup déchaîné : [Vos dégâts]`\n" +
+            "Frappe l'adversaire à l'aide d'un coup enchaîné plaçant une charge sur celle-ci, après 2 charges placée, le lanceur libère une attaque déchaîné faisant de gros dégâts.")
             .setTimestamp()
         message.channel.send({ embed })
     }
