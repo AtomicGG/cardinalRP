@@ -5228,10 +5228,10 @@ bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 5")) {
         message.channel.send("```Epée de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure]\n\n" +
             "Espadon de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Espadon de kobolt supérieure à deux mains]\n\n" +
-            "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
-            "Masse de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\n" +
+            "Dague de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure]\n\n" +
+            "Masse de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure]\n\n" +
             "Massue de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Massue de kobolt supérieure à deux mains]\n\n" +
-            "Hache de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\n" +
+            "Hache de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure]\n\n" +
             "Hallebarde de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hallebarde de kobolt supérieure à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 6```")
     }
@@ -5239,10 +5239,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 6")) {
-        message.channel.send("```Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
-            "Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
+        message.channel.send("```Rapière de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure]\n\n" +
+            "Cimeterre de kobolt supérieur :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieur]\n\n" +
             "Sabre de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Sabre de kobolt supérieure à deux mains]\n\n" +
-            "Katana de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\n" +
+            "Katana de kobolt supérieur :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur]\n\n" +
             "Nodachi de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Nodachi de kobolt supérieur à deux mains]\n\n" +
             "Pavois de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Pavois de kobolt supérieur à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 7```")
@@ -24421,15 +24421,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Espadon de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de kobolt supérieure à deux mains :", ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure à deux mains`")
+            .addField(":scales: Espadon de kobolt supérieure :", ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'espadon de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée de kobolt supérieure à deux mains : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'espadon de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24437,15 +24437,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Hache de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Hallebarde de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache de kobolt supérieure à deux mains :", ":scales: C'est une hache très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt supérieure à deux mains`")
+            .addField(":scales: Hallebarde de kobolt supérieure :", ":scales: C'est une hache très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hallebarde de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache de kobolt supérieure à deux mains : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hallebarde de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24453,15 +24453,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Masse de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Massue de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse de kobolt supérieure à deux mains :", ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt supérieure à deux mains`")
+            .addField(":scales: Massue de kobolt supérieure :", ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la massue de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse de kobolt supérieure à deux mains : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la massue de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24469,28 +24469,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Rapière de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Sabre de kobolt supérieur")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière de kobolt supérieure à deux mains :", ":scales: C'est une rapière très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière de kobolt supérieure à deux mains : [Votre niveau en forgeron]`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cimeterre de kobolt supérieure à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cimeterre de kobolt supérieure à deux mains :", ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore l' 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains`")
+            .addField(":scales: Sabre de kobolt supérieur :", ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore l' 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du sabre de kobolt supérieur`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre de kobolt supérieur à deux mains : [Votre niveau en forgeron]`")
@@ -24501,31 +24485,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Katana de kobolt supérieur à deux mains")) {
+    if (message.content.startsWith(prefix + "Nodachi de kobolt supérieur")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana de kobolt supérieur à deux mains :", ":scales: C'est un katana très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt supérieur à deux mains`")
+            .addField(":scales: Nodachi de kobolt supérieur :", ":scales: C'est un katana très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du nodachi de kobolt supérieur`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana de kobolt supérieur à deux mains : [Votre niveau en forgeron]`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Glaive de kobolt supérieur à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Glaive de kobolt supérieur à deux mains :", ":scales: C'est un glaive très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du glaive de kobolt supérieur à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du glaive de kobolt supérieur à deux mains : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du nodachi de kobolt supérieur : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24538,10 +24506,10 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de kobolt supérieure :", ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure à une main`")
+            .addField(":scales: Epée de kobolt supérieure :", ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée de kobolt supérieure à une main : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24549,15 +24517,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Hache de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Hache de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache de kobolt supérieure à une main :", ":scales: C'est une hache très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt supérieure à une main`")
+            .addField(":scales: Hache de kobolt supérieure :", ":scales: C'est une hache très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache de kobolt supérieure à une main : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24565,15 +24533,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Masse de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Masse de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse de kobolt supérieure à une main :", ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt supérieure à une main`")
+            .addField(":scales: Masse de kobolt supérieure :", ":scales: C'est une masse très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse de kobolt supérieure à une main : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24581,15 +24549,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Rapière de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Rapière de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière de kobolt supérieure à une main :", ":scales: C'est une rapière très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt supérieure à une main`")
+            .addField(":scales: Rapière de kobolt supérieure :", ":scales: C'est une rapière très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière de kobolt supérieure à une main : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24597,15 +24565,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cimeterre de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Cimeterre de kobolt supérieur")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre de kobolt supérieure à une main :", ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à une main`")
+            .addField(":scales: Cimeterre de kobolt supérieur :", ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt supérieure à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre de kobolt supérieur à une main : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre de kobolt supérieur : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24613,15 +24581,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Dague de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Dague de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague de kobolt supérieure à une main :", ":scales: C'est une dague très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobolt supérieure à une main`")
+            .addField(":scales: Dague de kobolt supérieure :", ":scales: C'est une dague très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobolt supérieure`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague de kobolt supérieure à une main : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague de kobolt supérieure : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24629,15 +24597,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Katana de kobolt supérieur à une main")) {
+    if (message.content.startsWith(prefix + "Katana de kobolt supérieur")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana de kobolt supérieur à une main :", ":scales: C'est un katana très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt supérieure à une main`")
+            .addField(":scales: Katana de kobolt supérieur :", ":scales: C'est un katana très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt supérieure à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana de kobolt supérieur à une main : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana de kobolt supérieur : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24645,15 +24613,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bouclier de kobolt supérieur à une main")) {
+    if (message.content.startsWith(prefix + "Pavois de kobolt supérieur")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier de kobolt supérieur à une main :", ":scales: C'est un bouclier très résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du bouclier de kobolt supérieur à une main`")
+            .addField(":scales: Pavois de kobolt supérieur :", ":scales: C'est un bouclier très résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du pavois de kobolt supérieur`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du bouclier de kobolt supérieur à une main : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du pavois de kobolt supérieur : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24663,7 +24631,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte de l'espadon de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(9).join(" : ");
         const lvlArme = 3
@@ -24672,7 +24640,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -24683,7 +24651,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24692,7 +24660,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24701,7 +24669,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24710,7 +24678,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24722,7 +24690,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24731,7 +24699,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24740,7 +24708,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24749,7 +24717,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24761,7 +24729,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24770,7 +24738,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24779,7 +24747,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24788,7 +24756,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24799,7 +24767,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(9).join(" : ");
         const lvlArme = 3
@@ -25071,7 +25039,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la dague de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de la dague de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(10).join(" : ");
         const lvlArme = 3
@@ -25080,7 +25048,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Dague de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -25091,7 +25059,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25100,7 +25068,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25109,7 +25077,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25118,7 +25086,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25130,7 +25098,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25139,7 +25107,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25148,7 +25116,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25157,7 +25125,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25169,7 +25137,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25178,7 +25146,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25187,7 +25155,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup létal.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25196,7 +25164,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25207,7 +25175,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la masse de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte de la massue de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(10).join(" : ");
         const lvlArme = 3
@@ -25216,7 +25184,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Massue de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -25227,7 +25195,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25236,7 +25204,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25245,7 +25213,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25254,7 +25222,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25266,7 +25234,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25275,7 +25243,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25284,7 +25252,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25293,7 +25261,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25305,7 +25273,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25314,7 +25282,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25323,7 +25291,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25332,7 +25300,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Massue de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25343,7 +25311,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la masse de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de la masse de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(10).join(" : ");
         const lvlArme = 3
@@ -25352,7 +25320,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Masse de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -25363,7 +25331,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25372,7 +25340,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25381,7 +25349,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25390,7 +25358,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25402,7 +25370,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25411,7 +25379,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25420,7 +25388,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25429,7 +25397,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25441,7 +25409,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25450,7 +25418,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25459,7 +25427,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25468,7 +25436,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25479,7 +25447,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la hache de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte de la hallebarde de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(10).join(" : ");
         const lvlArme = 3
@@ -25488,7 +25456,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -25499,7 +25467,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25508,7 +25476,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25517,7 +25485,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25526,7 +25494,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25538,7 +25506,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25547,7 +25515,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25556,7 +25524,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25565,7 +25533,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25577,7 +25545,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25586,7 +25554,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25595,7 +25563,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25604,7 +25572,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25615,7 +25583,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la hache de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de la hache de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(10).join(" : ");
         const lvlArme = 3
@@ -25624,7 +25592,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hache de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -25635,7 +25603,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25644,7 +25612,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25653,7 +25621,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25662,7 +25630,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25674,7 +25642,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25683,7 +25651,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25692,7 +25660,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25701,7 +25669,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25713,7 +25681,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25722,7 +25690,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25731,7 +25699,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25740,7 +25708,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25887,7 +25855,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(9).join(" : ");
         const lvlArme = 3
@@ -25896,7 +25864,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -25907,7 +25875,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25916,7 +25884,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25925,7 +25893,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25934,7 +25902,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25946,7 +25914,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25955,7 +25923,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25964,7 +25932,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25973,7 +25941,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25985,7 +25953,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune mineure de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25994,7 +25962,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune commune de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26003,7 +25971,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous obtenez une rune majeure de coup d'estoc.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26012,7 +25980,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26159,7 +26127,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du cimeterre de kobolt supérieur à une main")) {
+    if (message.content.startsWith(prefix + "Fonte du cimeterre de kobolt supérieur")) {
         let roll = 0
         let lvlMetier = args.slice(9).join(" : ");
         const lvlArme = 3
@@ -26168,7 +26136,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -26179,7 +26147,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune mineure d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26188,7 +26156,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune commune d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26197,7 +26165,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune majeure d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26206,7 +26174,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26218,7 +26186,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune mineure d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26227,7 +26195,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune commune d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26236,7 +26204,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune majeure d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26245,7 +26213,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26257,7 +26225,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune mineure d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26266,7 +26234,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune commune d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26275,7 +26243,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous obtenez une rune majeure d'esquive.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26284,7 +26252,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26295,7 +26263,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du katana de kobolt supérieur à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte du nodachi de kobolt supérieur")) {
         let roll = 0
         let lvlMetier = args.slice(9).join(" : ");
         const lvlArme = 3
@@ -26304,7 +26272,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -26315,7 +26283,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26324,7 +26292,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune commune de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26333,7 +26301,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26342,7 +26310,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26354,7 +26322,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26363,7 +26331,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune commune de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26372,7 +26340,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26381,7 +26349,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26393,7 +26361,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26402,7 +26370,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune commune de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26411,7 +26379,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure de parade.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26420,7 +26388,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26431,7 +26399,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
         let roll = 0
         let lvlMetier = args.slice(9).join(" : ");
         const lvlArme = 3
@@ -26440,7 +26408,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Katana de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -26451,7 +26419,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune mineure de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26460,7 +26428,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune commune de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26469,7 +26437,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune majeure de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26478,7 +26446,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26490,7 +26458,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune mineure de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26499,7 +26467,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune commune de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26508,7 +26476,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune majeure de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26517,7 +26485,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26529,7 +26497,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune mineure de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26538,7 +26506,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune commune de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26547,7 +26515,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous obtenez une rune majeure de parade.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26556,7 +26524,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26567,7 +26535,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du bouclier de kobolt supérieur à une main")) {
+    if (message.content.startsWith(prefix + "Fonte du pavois de kobolt supérieur")) {
         let roll = 0
         let lvlMetier = args.slice(9).join(" : ");
         const lvlArme = 3
@@ -26576,7 +26544,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -26587,7 +26555,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune mineure de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26596,7 +26564,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune commune de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26605,7 +26573,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune majeure de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26614,7 +26582,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26626,7 +26594,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune mineure de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26635,7 +26603,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune commune de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26644,7 +26612,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune majeure de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26653,7 +26621,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26665,7 +26633,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune mineure de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26674,7 +26642,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune commune de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26683,7 +26651,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous obtenez une rune majeure de blocage.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26692,7 +26660,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier de kobolt supérieur à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -26701,13 +26669,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon de kobolt supérieure")) {
         const Dégâts = Math.floor(9 * Math.random() + 20)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de kobolt supérieure à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Espadon de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26715,13 +26683,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hallebarde de kobolt supérieure")) {
         const Dégâts = Math.floor(9 * Math.random() + 20)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache de kobolt supérieure à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Hallebarde de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26729,13 +26697,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la massue de kobolt supérieure")) {
         const Dégâts = Math.floor(9 * Math.random() + 20)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse de kobolt supérieure à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Massue de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26757,13 +26725,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt supérieure à deux mains")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du sabre de kobolt supérieur")) {
         const Dégâts = Math.floor(9 * Math.random() + 20)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre de kobolt supérieure à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Sabre de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26771,13 +26739,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur à deux mains")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du nodachi de kobolt supérieur")) {
         const Dégâts = Math.floor(9 * Math.random() + 20)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana de kobolt supérieur à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Nodachi de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26799,7 +26767,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure")) {
         const Dégâts = Math.floor(5 * Math.random() + 10)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -26813,13 +26781,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure")) {
         const Dégâts = Math.floor(5 * Math.random() + 10)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache de kobolt supérieure à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Hache de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26827,13 +26795,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure")) {
         const Dégâts = Math.floor(5 * Math.random() + 10)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse de kobolt supérieure à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Masse de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26841,13 +26809,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt supérieure")) {
         const Dégâts = Math.floor(5 * Math.random() + 10)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière de kobolt supérieure à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Rapière de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26861,7 +26829,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre de kobolt supérieure à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Cimeterre de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26869,13 +26837,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur à une main")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur")) {
         const Dégâts = Math.floor(5 * Math.random() + 10)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana de kobolt supérieur à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Katana de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26883,13 +26851,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague de kobolt supérieure")) {
         const Dégâts = Math.floor(5 * Math.random() + 10)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague de kobolt supérieure à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Dague de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -26897,14 +26865,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du bouclier de kobolt supérieur à une main")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du pavois de kobolt supérieur")) {
         const Défense = Math.floor(3 * Math.random() + 6)
         const HP = Math.floor(11 * Math.random() + 15)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier de kobolt supérieur à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .addField(":scales: Pavois de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
