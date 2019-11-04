@@ -656,7 +656,7 @@ bot.on('message', message => {
                 "Elles donnent généralement un bonus en Parade de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup précis : [Votre attaque]`")
-            .setImage("https://images-na.ssl-images-amazon.com/images/I/31%2BSnEw8mjL._SX425_.jpg")
+            .setImage("https://files.knifecenter.com/knifecenter/coldsteel/images/CS88DK.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
