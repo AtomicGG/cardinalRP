@@ -253,10 +253,10 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les compétences :", "Une compétence est un coup spécial, puissant et pouvant plonger votre ennemi dans différents états. C'est un coup unique selon le personnage et comment vous voulez le jouer !\n\n" +
                 "Il y a quatres types de compétence :\n" +
-                "Les compétences principales des classes (utilisables qu'une fois par jour);\n" +
-                "Les compétences secondaires des classes (utilisables à l'infini mais uniquement en PVE);\n" +
-                "Les compétences classiques (utilisables qu'une fois par heure);\n" +
-                "Les compétences des armes (utilisables à l'infini mais uniquement en PVE);\n\n" +
+                "Les compétences principales des classes (utilisables qu'une fois par jour)\n" +
+                "Les compétences secondaires des classes (utilisables à l'infini mais uniquement en PVE)\n" +
+                "Les compétences classiques (utilisables qu'une fois par heure)\n" +
+                "Les compétences des armes (utilisables à l'infini mais uniquement en PVE)\n\n" +
                 "Pour savoir à quel niveau vous aurez le droit d'avoir d'autres compétences classiques, écrivez :\n\n`=Apprentissage des compétences`\n\n" +
                 "Pour consulter la liste des compétences classiques existantes, écrivez :\n\n`=Liste des compétences 1`")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
