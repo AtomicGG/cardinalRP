@@ -5163,56 +5163,51 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 1")) {
-        message.channel.send("```Epée basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique à une main]\n\n" +
-            "Epée basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Epée basique à deux mains]\n\n" +
+        message.channel.send("```Epée basique :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Epée basique]\n\n" +
+            "Espadon basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Espadon basique à deux mains]\n\n" +
             "Dague basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Dague basique à une main]\n\n" +
-            "Glaive basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Glaive basique à deux mains]\n\n" +
             "Masse basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Masse basique à une main]\n\n" +
-            "Masse basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Masse basique à deux mains]\n\n" +
+            "Massue basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Massue basique à deux mains]\n\n" +
             "Hache basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Hache basique à une main]\n\n" +
-            "Hache basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hache basique à deux mains]\n\n" +
+            "Hallebarde basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Hallebarde basique à deux mains]\n\n" +
             "Rapière basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Rapière basique à une main]\n\n" +
-            "Rapière basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Rapière basique à deux mains]\n\n" +
             "Cimeterre basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Cimeterre basique à une main]\n\n" +
-            "Cimeterre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Cimeterre basique à deux mains]\n\n" +
+            "Sabre basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Sabre basique à deux mains]\n\n" +
             "Katana basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Katana basique à une main]\n\n" +
-            "Katana basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Katana basique à deux mains]\n\n" +
-            "Bouclier basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Bouclier basique à une main]\n\n" +
+            "Nodachi basique à deux mains :\nCoûts : [Achat : 160 cols] [Revente : 40 cols]\nInfos : [=Nodachi basique à deux mains]\n\n" +
+            "Pavois basique à une main :\nCoûts : [Achat : 80 cols] [Revente : 20 cols]\nInfos : [=Pavois basique à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 2```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 2")) {
-        message.channel.send("```Epée de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Epée de kobolt à une main]\n\n" +
-            "Epée de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Epée de kobolt à deux mains]\n\n" +
+        message.channel.send("```Epée de kobolt :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Epée de kobolt]\n\n" +
+            "Espadon de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Espadon de kobolt à deux mains]\n\n" +
             "Dague de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Dague de kobolt à une main]\n\n" +
-            "Glaive de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Glaive de kobolt à deux mains]\n\n" +
             "Masse de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Masse de kobolt à une main]\n\n" +
-            "Masse de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Masse de kobolt à deux mains]\n\n" +
+            "Massue de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Massue de kobolt à deux mains]\n\n" +
             "Hache de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Hache de kobolt à une main]\n\n" +
-            "Hache de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Hache de kobolt à deux mains]\n\n" +
+            "Hallebarde de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Hallebarde de kobolt à deux mains]\n\n" +
             "Rapière de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Rapière de kobolt à une main]\n\n" +
-            "Rapière de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Rapière de kobolt à deux mains]\n\n" +
             "Cimeterre de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Cimeterre de kobolt à une main]\n\n" +
-            "Cimeterre de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Cimeterre de kobolt à deux mains]\n\n" +
+            "Sabre de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Sabre de kobolt à deux mains]\n\n" +
             "Katana de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Katana de kobolt à une main]\n\n" +
-            "Katana de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Katana de kobolt à deux mains]\n\n" +
-            "Bouclier de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Bouclier de kobolt à une main]\n\n" +
+            "Nodachi de kobolt à deux mains :\nCoûts : [Achat : 580 cols] [Revente : 145 cols]\nInfos : [=Nodachi de kobolt à deux mains]\n\n" +
+            "Pavois de kobolt à une main :\nCoûts : [Achat : 340 cols] [Revente : 85 cols]\nInfos : [=Pavois de kobolt à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 3```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 3")) {
-        message.channel.send("```Epée du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups à une main]\n\n" +
-            "Epée du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Epée du clan des loups à deux mains]\n\n" +
+        message.channel.send("```Epée du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups]\n\n" +
+            "Espadon du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Espadon du clan des loups à deux mains]\n\n" +
             "Dague du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups à une main]\n\n" +
-            "Glaive du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Glaive du clan des loups à deux mains]\n\n" +
             "Masse du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups à une main]\n\n" +
-            "Masse du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Masse du clan des loups à deux mains]\n\n" +
+            "Massue du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Massue du clan des loups à deux mains]\n\n" +
             "Hache du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups à une main]\n\n" +
-            "Hache du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hache du clan des loups à deux mains]\n\n" +
+            "Hallebarde du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hallebarde du clan des loups à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 4```")
     }
 });
@@ -5220,26 +5215,24 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 4")) {
         message.channel.send("```Rapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\n" +
-            "Rapière du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Rapière du clan des loups à deux mains]\n\n" +
             "Cimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\n" +
-            "Cimeterre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Cimeterre du clan des loups à deux mains]\n\n" +
+            "Sabre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Sabre du clan des loups à deux mains]\n\n" +
             "Katana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\n" +
-            "Katana du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Katana du clan des loups à deux mains]\n\n" +
-            "Bouclier du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Bouclier du clan des loups à une main]\n\n" +
+            "Nodachi du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Nodachi du clan des loups à deux mains]\n\n" +
+            "Pavois du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Pavois du clan des loups à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 5```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 5")) {
-        message.channel.send("```Epée de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure à une main]\n\n" +
-            "Epée de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Epée de kobolt supérieure à deux mains]\n\n" +
+        message.channel.send("```Epée de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure]\n\n" +
+            "Espadon de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Espadon de kobolt supérieure à deux mains]\n\n" +
             "Dague de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure à une main]\n\n" +
-            "Glaive de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Glaive de kobolt supérieur à deux mains]\n\n" +
             "Masse de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure à une main]\n\n" +
-            "Masse de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Masse de kobolt supérieure à deux mains]\n\n" +
+            "Massue de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Massue de kobolt supérieure à deux mains]\n\n" +
             "Hache de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure à une main]\n\n" +
-            "Hache de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hache de kobolt supérieure à deux mains]\n\n" +
+            "Hallebarde de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hallebarde de kobolt supérieure à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 6```")
     }
 });
@@ -5247,12 +5240,11 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 6")) {
         message.channel.send("```Rapière de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure à une main]\n\n" +
-            "Rapière de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Rapière de kobolt supérieure à deux mains]\n\n" +
             "Cimeterre de kobolt supérieure à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieure à une main]\n\n" +
-            "Cimeterre de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Cimeterre de kobolt supérieure à deux mains]\n\n" +
+            "Sabre de kobolt supérieure à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Sabre de kobolt supérieure à deux mains]\n\n" +
             "Katana de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur à une main]\n\n" +
-            "Katana de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Katana de kobolt supérieur à deux mains]\n\n" +
-            "Bouclier de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Bouclier de kobolt supérieur à une main]\n\n" +
+            "Nodachi de kobolt supérieur à deux mains :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Nodachi de kobolt supérieur à deux mains]\n\n" +
+            "Pavois de kobolt supérieur à une main :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Pavois de kobolt supérieur à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 7```")
     }
 });
@@ -5260,21 +5252,20 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 7")) {
         message.channel.send("```Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
-            "Bouclier du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]\n\n" +
+            "Ecu du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 8```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 8")) {
-        message.channel.send("```Epée en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Epée en chitine à une main]\n\n" +
-            "Epée en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Epée en chitine à deux mains]\n\n" +
+        message.channel.send("```Epée en chitine :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Epée en chitine]\n\n" +
+            "Espadon en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Espadon en chitine à deux mains]\n\n" +
             "Dague en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Dague en chitine à une main]\n\n" +
-            "Glaive en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Glaive en chitine à deux mains]\n\n" +
             "Masse en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Masse en chitine à une main]\n\n" +
-            "Masse en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Masse en chitine à deux mains]\n\n" +
+            "Massue en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Massue en chitine à deux mains]\n\n" +
             "Hache en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Hache en chitine à une main]\n\n" +
-            "Hache en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Hache en chitine à deux mains]\n\n" +
+            "Hallebarde en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Hallebarde en chitine à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 9```")
     }
 });
@@ -5282,26 +5273,24 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 9")) {
         message.channel.send("```Rapière en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Rapière en chitine à une main]\n\n" +
-            "Rapière en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Rapière en chitine à deux mains]\n\n" +
             "Cimeterre en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Cimeterre en chitine à une main]\n\n" +
-            "Cimeterre en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Cimeterre en chitine à deux mains]\n\n" +
+            "Sabre en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Sabre en chitine à deux mains]\n\n" +
             "Katana en chitine à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Katana en chitine à une main]\n\n" +
-            "Katana en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Katana en chitine à deux mains]\n\n" +
-            "Bouclier en chitine à une main :\nCoûts : [Achat : 2625 cols] [Revente : 650 cols]\nInfos : [=Bouclier en chitine à une main]\n\n" +
+            "Nodachi en chitine à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Nodachi en chitine à deux mains]\n\n" +
+            "Pavois en chitine à une main :\nCoûts : [Achat : 2625 cols] [Revente : 650 cols]\nInfos : [=Pavois en chitine à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 10```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 10")) {
-        message.channel.send("```Epée de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Epée de taurus à une main]\n\n" +
-            "Epée de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Epée de taurus à deux mains]\n\n" +
+        message.channel.send("```Epée de taurus :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Epée de taurus]\n\n" +
+            "Espadon de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Espadon de taurus à deux mains]\n\n" +
             "Dague de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Dague de taurus à une main]\n\n" +
-            "Glaive de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Glaive de taurus à deux mains]\n\n" +
             "Masse de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Masse de taurus à une main]\n\n" +
-            "Masse de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Masse de taurus à deux mains]\n\n" +
+            "Massue de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Massue de taurus à deux mains]\n\n" +
             "Hache de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Hache de taurus à une main]\n\n" +
-            "Hache de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Hache de taurus à deux mains]\n\n" +
+            "Hallebarde de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Hallebarde de taurus à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 11```")
     }
 });
@@ -5309,25 +5298,23 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 11")) {
         message.channel.send("```Rapière de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Rapière de taurus à une main]\n\n" +
-            "Rapière de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Rapière de taurus à deux mains]\n\n" +
             "Cimeterre de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Cimeterre de taurus à une main]\n\n" +
-            "Cimeterre de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Cimeterre de taurus à deux mains]\n\n" +
+            "Sabre de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Sabre de taurus à deux mains]\n\n" +
             "Katana de taurus à une main :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Katana de taurus à une main]\n\n" +
-            "Katana de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Katana de taurus à deux mains]\n\n" +
+            "Nodachi de taurus à deux mains :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Nodachi de taurus à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 12```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 12")) {
-        message.channel.send("```Epée darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Epée darchic à une main]\n\n" +
-            "Epée darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Epée darchic à deux mains]\n\n" +
+        message.channel.send("```Epée darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Epée darchic]\n\n" +
+            "Espadon darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Espadon darchic à deux mains]\n\n" +
             "Dague darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Dague darchic à une main]\n\n" +
-            "Glaive darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Glaive darchic à deux mains]\n\n" +
             "Masse darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Masse darchic à une main]\n\n" +
-            "Masse darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Masse darchic à deux mains]\n\n" +
+            "Massue darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Massue darchic à deux mains]\n\n" +
             "Hache darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Hache darchic à une main]\n\n" +
-            "Hache darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Hache darchic à deux mains]\n\n" +
+            "Hallebarde darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Hallebarde darchic à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 13```")
     }
 });
@@ -5335,12 +5322,11 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 13")) {
         message.channel.send("```Rapière darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Rapière darchic à une main]\n\n" +
-            "Rapière darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Rapière darchic à deux mains]\n\n" +
             "Cimeterre darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Cimeterre darchic à une main]\n\n" +
-            "Cimeterre darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Cimeterre darchic à deux mains]\n\n" +
+            "Sabre darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Sabre darchic à deux mains]\n\n" +
             "Katana darchic à une main :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Katana darchic à une main]\n\n" +
-            "Katana darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Katana darchic à deux mains]\n\n" +
-            "Bouclier darchic à une main :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Bouclier darchic à une main]```")
+            "Nodachi darchic à deux mains :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Nodachi darchic à deux mains]\n\n" +
+            "Pavois darchic à une main :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Pavois darchic à une main]```")
     }
 });
 
@@ -5352,7 +5338,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes basiques :", "=Masse basique à deux mains\n=Masse basique à une main\n=Rapière basique à deux mains\n=Rapière basique à une main\n=Katana basique à deux mains\n=Katana basique à une main\n=Epée basique à deux mains\n=Epée basique à une main\n=Cimeterre basique à deux mains\n=Cimeterre basique à une main\n=Hache basique à deux mains\n=Hache basique à une main\n=Glaive basique à deux mains\n=Dague basique à une main\n=Bouclier basique à une main")
+            .addField(":scales: Liste des armes basiques :", "=Masse basique à deux mains\n=Masse basique à une main\n=Rapière basique à deux mains\n=Rapière basique à une main\n=Katana basique à deux mains\n=Katana basique à une main\n=Epée basique à deux mains\n=Epée basique\n=Cimeterre basique à deux mains\n=Cimeterre basique à une main\n=Hache basique à deux mains\n=Hache basique à une main\n=Glaive basique à deux mains\n=Dague basique à une main\n=Bouclier basique à une main")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5367,7 +5353,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes du clan des loups :\n\n:warning: Ces armes sont non échangeable !", "=Masse du clan des loups à deux mains\n=Masse du clan des loups à une main\n=Rapière du clan des loups à deux mains\n=Rapière du clan des loups à une main\n=Katana du clan des loups à deux mains\n=Katana du clan des loups à une main\n=Epée du clan des loups à deux mains\n=Epée du clan des loups à une main\n=Cimeterre du clan des loups à deux mains\n=Cimeterre du clan des loups à une main\n=Hache du clan des loups à deux mains\n=Hache du clan des loups à une main\n=Glaive du clan des loups à deux mains\n=Dague du clan des loups à une main\n=Bouclier du clan des loups à une main")
+            .addField(":scales: Liste des armes du clan des loups :\n\n:warning: Ces armes sont non échangeable !", "=Masse du clan des loups à deux mains\n=Masse du clan des loups à une main\n=Rapière du clan des loups à deux mains\n=Rapière du clan des loups à une main\n=Katana du clan des loups à deux mains\n=Katana du clan des loups à une main\n=Epée du clan des loups à deux mains\n=Epée du clan des loups\n=Cimeterre du clan des loups à deux mains\n=Cimeterre du clan des loups à une main\n=Hache du clan des loups à deux mains\n=Hache du clan des loups à une main\n=Glaive du clan des loups à deux mains\n=Dague du clan des loups à une main\n=Bouclier du clan des loups à une main")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5375,12 +5361,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Epée du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée du clan des loups à une main :", ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à une main`")
+            .addField(":scales: Epée du clan des loups :", ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée du clan des loups à une main : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -5606,7 +5592,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Liste des armes de kobolt supérieures :", "=Masse de kobolt supérieure à deux mains\n=Masse de kobolt supérieure à une main\n=Rapière de kobolt supérieure à deux mains\n=Rapière de kobolt supérieure à une main\n=Katana de kobolt supérieur à deux mains\n=Katana de kobolt supérieur à une main\n=Epée de kobolt supérieure à deux mains\n=Epée de kobolt supérieure à une main\n=Cimeterre de kobolt supérieur à deux mains\n=Cimeterre de kobolt supérieur à une main\n=Hache de kobolt supérieure à deux mains\n=Hache de kobolt supérieure à une main\n=Glaive de kobolt supérieur à deux mains\n=Dague de kobolt supérieure à une main\n=Bouclier de kobolt supérieur à une main")
+                .addField(":scales: Liste des armes de kobolt supérieures :", "=Masse de kobolt supérieure à deux mains\n=Masse de kobolt supérieure à une main\n=Rapière de kobolt supérieure à deux mains\n=Rapière de kobolt supérieure à une main\n=Katana de kobolt supérieur à deux mains\n=Katana de kobolt supérieur à une main\n=Epée de kobolt supérieure à deux mains\n=Epée de kobolt supérieure\n=Cimeterre de kobolt supérieur à deux mains\n=Cimeterre de kobolt supérieur à une main\n=Hache de kobolt supérieure à deux mains\n=Hache de kobolt supérieure à une main\n=Glaive de kobolt supérieur à deux mains\n=Dague de kobolt supérieure à une main\n=Bouclier de kobolt supérieur à une main")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -5615,7 +5601,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Liste des armes de kobolt :", "=Masse de kobolt à deux mains\n=Masse de kobolt à une main\n=Rapière de kobolt à deux mains\n=Rapière de kobolt à une main\n=Katana de kobolt à deux mains\n=Katana de kobolt à une main\n=Epée de kobolt à deux mains\n=Epée de kobolt à une main\n=Cimeterre de kobolt à deux mains\n=Cimeterre de kobolt à une main\n=Hache de kobolt à deux mains\n=Hache de kobolt à une main\n=Glaive de kobolt à deux mains\n=Dague de kobolt à une main\n=Bouclier de kobolt à une main")
+                .addField(":scales: Liste des armes de kobolt :", "=Masse de kobolt à deux mains\n=Masse de kobolt à une main\n=Rapière de kobolt à deux mains\n=Rapière de kobolt à une main\n=Katana de kobolt à deux mains\n=Katana de kobolt à une main\n=Epée de kobolt à deux mains\n=Epée de kobolt\n=Cimeterre de kobolt à deux mains\n=Cimeterre de kobolt à une main\n=Hache de kobolt à deux mains\n=Hache de kobolt à une main\n=Glaive de kobolt à deux mains\n=Dague de kobolt à une main\n=Bouclier de kobolt à une main")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -5660,7 +5646,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée du clan des loups à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5879,7 +5865,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -5950,7 +5936,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6022,7 +6008,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6094,7 +6080,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -24690,12 +24676,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée de kobolt à une main")) {
+    if (message.content.startsWith(prefix + "Epée de kobolt")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de kobolt à une main :", ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt à une main`")
+            .addField(":scales: Epée de kobolt :", ":scales: C'est une épée assez puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 1 cuivre commun, 2 cuivre médiocre, 1 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -24914,7 +24900,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de kobolt à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée de kobolt :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -25134,12 +25120,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée de kobolt supérieure à une main")) {
+    if (message.content.startsWith(prefix + "Epée de kobolt supérieure")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de kobolt supérieure à une main :", ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure à une main`")
+            .addField(":scales: Epée de kobolt supérieure :", ":scales: C'est une épée très puissante constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare,  1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion , 2 bois de frêne rare, 4 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 6\n\n:large_orange_diamond: Prix d'achat : 880 cols\n\n:large_orange_diamond: Prix de revente : 220 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée de kobolt supérieure à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 1 cuivre rare, 1 dent de kobolt pilion, 2 Peau écailleuse de kobolt pilion, 2 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée de kobolt supérieure à une main : [Votre niveau en forgeron]`")
@@ -25409,7 +25395,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -25420,7 +25406,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25429,7 +25415,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25438,7 +25424,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25447,7 +25433,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25459,7 +25445,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25468,7 +25454,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25477,7 +25463,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25486,7 +25472,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25498,7 +25484,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25507,7 +25493,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25516,7 +25502,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -25525,7 +25511,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -27406,7 +27392,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de kobolt supérieure à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -27603,14 +27589,13 @@ bot.on('message', message => {
     }
 });
 
-
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée basique à une main")) {
+    if (message.content.startsWith(prefix + "Epée basique")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée basique à une main :", ":scales: C'est une épée peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée basique à une main`")
+            .addField(":scales: Epée basique :", ":scales: C'est une épée peu puissante constitué de bois et de métal mais très utile pour les débutants !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 1\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 cuivre médiocre, 2 bois de frêne médiocre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 2\n\n:large_orange_diamond: Prix d'achat : 80 cols\n\n:large_orange_diamond: Prix de revente : 20 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de l'épée basique à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36644,7 +36629,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes en chitine :", "=Masse en chitine à deux mains\n=Masse en chitine à une main\n=Rapière en chitine à deux mains\n=Rapière en chitine à une main\n=Katana en chitine à deux mains\n=Katana en chitine à une main\n=Epée en chitine à deux mains\n=Epée en chitine à une main\n=Cimeterre en chitine à deux mains\n=Cimeterre en chitine à une main\n=Hache en chitine à deux mains\n=Hache en chitine à une main\n=Glaive en chitine à deux mains\n=Dague en chitine à une main\n=Bouclier en chitine à une main")
+            .addField(":scales: Liste des armes en chitine :", "=Masse en chitine à deux mains\n=Masse en chitine à une main\n=Rapière en chitine à deux mains\n=Rapière en chitine à une main\n=Katana en chitine à deux mains\n=Katana en chitine à une main\n=Epée en chitine à deux mains\n=Epée en chitine\n=Cimeterre en chitine à deux mains\n=Cimeterre en chitine à une main\n=Hache en chitine à deux mains\n=Hache en chitine à une main\n=Glaive en chitine à deux mains\n=Dague en chitine à une main\n=Bouclier en chitine à une main")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36799,7 +36784,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée en chitine à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -36810,7 +36795,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36819,7 +36804,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36828,7 +36813,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36837,7 +36822,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36849,7 +36834,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36858,7 +36843,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36867,7 +36852,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36876,7 +36861,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36888,7 +36873,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36897,7 +36882,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36906,7 +36891,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -36915,7 +36900,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée en chitine à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -38804,7 +38789,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée en chitine à une main")) {
+    if (message.content.startsWith(prefix + "Epée en chitine")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -39038,7 +39023,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée en chitine à une main :", ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée en chitine :", ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -39252,7 +39237,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée en chitine à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -39467,7 +39452,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée en chitine à une main :", ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -39583,7 +39568,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes taurus :", "=Masse de taurus à deux mains\n=Masse de taurus à une main\n=Rapière de taurus à deux mains\n=Rapière de taurus à une main\n=Katana de taurus à deux mains\n=Katana de taurus à une main\n=Epée de taurus à deux mains\n=Epée de taurus à une main\n=Cimeterre de taurus à deux mains\n=Cimeterre de taurus à une main\n=Hache de taurus à deux mains\n=Hache de taurus à une main\n=Glaive de taurus à deux mains\n=Dague de taurus à une main")
+            .addField(":scales: Liste des armes taurus :", "=Masse de taurus à deux mains\n=Masse de taurus à une main\n=Rapière de taurus à deux mains\n=Rapière de taurus à une main\n=Katana de taurus à deux mains\n=Katana de taurus à une main\n=Epée de taurus à deux mains\n=Epée de taurus\n=Cimeterre de taurus à deux mains\n=Cimeterre de taurus à une main\n=Hache de taurus à deux mains\n=Hache de taurus à une main\n=Glaive de taurus à deux mains\n=Dague de taurus à une main")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -39738,7 +39723,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée de taurus à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -39749,7 +39734,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39758,7 +39743,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39767,7 +39752,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39776,7 +39761,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39788,7 +39773,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39797,7 +39782,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39806,7 +39791,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39815,7 +39800,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39827,7 +39812,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune mineure de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39836,7 +39821,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune commune de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39845,7 +39830,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous obtenez une rune majeure de combo.")
+                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -39854,7 +39839,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée de taurus à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -41607,7 +41592,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée de taurus à une main")) {
+    if (message.content.startsWith(prefix + "Epée de taurus")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -41825,7 +41810,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de taurus à une main :", ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
+            .addField(":scales: Epée de taurus :", ":scales: Vous venez d'achetez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n\n:warning: Vous perdez 2.5 point d'armure si vous avez l'arme équiper")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -42025,7 +42010,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de taurus à une main :", ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
+            .addField(":scales: Epée de taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + " Vous perdez 2.5 point d'armure si vous avez l'arme équiper.")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -42742,7 +42727,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée darchic à une main")) {
+    if (message.content.startsWith(prefix + "Epée darchic")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42976,7 +42961,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée darchic à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée darchic :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -43189,7 +43174,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée darchic à une main :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée darchic :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
