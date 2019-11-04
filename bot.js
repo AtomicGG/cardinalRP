@@ -747,7 +747,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Les rondaches") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -764,7 +764,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Les écus") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -781,7 +781,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Les targes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
