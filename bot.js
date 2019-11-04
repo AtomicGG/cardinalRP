@@ -246,7 +246,7 @@ bot.on('message', message => {
                 "Rend le lanceur invisible et impossible à viser directement par les adversaires. Le lanceur n'est plus pris en compte lors des =Ciblage, les coups en zone touchant toute l'équipe peuvent toujours l'atteindre.\n\n" +
                 "- Chevalier : `=Barrage violent : [Les dégâts adverses]`\n" +
                 "Le lanceur bloque une attaque tout en repoussant l'adversaire et redirigeant une partie de ses dégâts contre lui.")
-                .addField(" ", "- Paladin : `=Bénédiction`\n" +
+                .addField(" toto", "- Paladin : `=Bénédiction`\n" +
                 "Soigne légèrement une cible et lui retire toute altération d'états néfastes.\n\n" +
                 "- Vindicateur : `=Ténacité : [Les dégâts adverses]`\n" +
                 "Permet au lanceur d'augmenter son armure pour 3 tours en gagnant des 'Charge de Tenacité', lorsque 3 charges sont réunies les nombres de tours sont réinitialisé à chaque utilisation.\n\n" +
