@@ -5802,7 +5802,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte de l'épée du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -6038,7 +6038,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte de l'espadon du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -6274,7 +6274,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte de la dague du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(11).join(" : ");
+        let lvlMetier = args.slice(8).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -6507,246 +6507,10 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du glaive du clan des loups à deux mains")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(10).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Glaive du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Glaive du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la masse du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(11).join(" : ");
+        let lvlMetier = args.slice(8).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -6982,7 +6746,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte de la massue du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(11).join(" : ");
+        let lvlMetier = args.slice(8).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -7218,7 +6982,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte de la hache du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(11).join(" : ");
+        let lvlMetier = args.slice(8).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -7454,7 +7218,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte de la hallebarde du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(11).join(" : ");
+        let lvlMetier = args.slice(8).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -7690,7 +7454,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte de la rapière du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(11).join(" : ");
+        let lvlMetier = args.slice(8).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -7923,246 +7687,10 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la rapière du clan des loups à deux mains")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(11).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Rapière du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du cimeterre du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -8398,7 +7926,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte du sabre du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -8634,7 +8162,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte du katana du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -8870,7 +8398,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte du nodachi du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -9106,7 +8634,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fonte du pavois du clan des loups")) {
         let roll = 0
         let roll2 = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 2
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
