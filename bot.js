@@ -1655,7 +1655,7 @@ bot.on('message', message => {
                 "Niveau 37 : Vous gagnez 60 HP et 9 points de dégât et 3 points d'armure !\n\n" +
                 "Niveau 38 : Vous gagnez 60 HP et 9 points de dégât et 3 points d'armure !\n\n" +
                 "Niveau 39 : Vous gagnez 60 HP et 9 points de dégât et 3 points d'armure !\n\n" +
-                "Niveau 40 : Vous gagnez 60 HP et 79 points de dégât et 3 points d'armure !")
+                "Niveau 40 : Vous gagnez 60 HP et 9 points de dégât et 3 points d'armure !")
             .setTimestamp()
         message.channel.send({ embed })
     }
