@@ -707,7 +707,7 @@ bot.on('message', message => {
                 "Elles donnent généralement un bonus en ??? de +2.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup révélateur : [Votre attaque]`")
-            .setImage("https://www.medievalfactory.com/6312-large_default/LANCE-MEDIEVAL-LATEX.jpg")
+            .setImage("https://www.dragonsports.eu/117624-verylarge_default/lance-demontable.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
