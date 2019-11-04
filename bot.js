@@ -34016,7 +34016,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Taureau bossu récompenses")) {
+    if (message.content === (prefix + "Taureau bossu récompenses")) {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
