@@ -5338,7 +5338,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes basiques :", "=Masse basique à deux mains\n=Masse basique à une main\n=Rapière basique à deux mains\n=Rapière basique à une main\n=Katana basique à deux mains\n=Katana basique à une main\n=Epée basique à deux mains\n=Epée basique\n=Cimeterre basique à deux mains\n=Cimeterre basique à une main\n=Hache basique à deux mains\n=Hache basique à une main\n=Glaive basique à deux mains\n=Dague basique à une main\n=Bouclier basique à une main")
+            .addField(":scales: Liste des armes basiques :", "=Epée basique\n=Espadon basique\n=Dague basique\n=Masse basique\n=Massue basique\n=Hache basique\n=Hallebarde basique\n=Rapière basique\n=Cimeterre basique\n=Sabre basique\n=Katana basique\n=Nodachi basique\n=Pavois basique")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
