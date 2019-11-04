@@ -748,17 +748,17 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les rondaches") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
+            .addField("Les rondaches :", "Ce sont des boucliers de forme circulaire et généralement de taille moyenne.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+                "Elles donnent généralement un bonus en ??? de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup glissé : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
+                "`=Coup à revers : [Votre attaque]`")
+            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Rondache_-_MAP_-_I_74.JPG/800px-Rondache_-_MAP_-_I_74.JPG")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -18988,7 +18988,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup dévastateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts et empèche la cible d'attaquer au tour suivant.")
+                .addField(":crossed_swords: Coup dévastateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts.")
                 .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
