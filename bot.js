@@ -34837,30 +34837,14 @@ bot.on('message', message => {
         const paradeRetour = Math.floor(((degat * 0.75) + 1) * Math.random() + (degat * 0.75))
         const parade = Math.floor(100 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 80) {
+        if (roll <= 100) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":shield: Taureau bossu :", ":shield: Le Taureau bossu se préocupe pas de vous et vous lui infligez " + echec + " de dégâts.")
             message.channel.send({ embed })
-        } 
-        if (81 <= roll && roll <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Taureau bossu :", ":shield: Le Taureau bossu préocupe tout à coup de vous et il vous donne un violent coup de tête. Il vous inflige " + parade + " de dégâts mais vous arrivez à lui infliger " + paradeRetour + " de dégâts.")
-            message.channel.send({ embed })
         }
-        if (roll >= 91) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Taureau bossu :", ":shield: Le Taureau bossu préocupe tout à coup de vous et il vous donne un violent coup de tête. Il vous inflige " + parade + " de dégâts.")
-            message.channel.send({ embed })
-        } 
     }
 });
 
