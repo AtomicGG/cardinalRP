@@ -447,8 +447,9 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les armes :", "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, pouvant être des armes à une ou deux mains. Chaque arme améliore un ou des coups ou actions défensives !\n\n" +
                 "Vous saurez quelle arme permet d'améliorer quel coup ou action défensive en affichant les infos sur celle-ci en écrivant : `=[Nom de l'arme]`\n\n" +
-                "Lorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste suivante :\n\n" +
-                "Les épées : `=Les épées`\n" +
+                "Lorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste ci dessous.\n\n" +
+                "Cependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment, seulement les armes que vous trouverez sur des monstres, achèterez ou fabriquerez !")
+            .addField("Les armes :", "Les épées : `=Les épées`\n" +
                 "Les espadons : `=Les espadons`\n" +
                 "Les dagues : `=Les dagues`\n" +
                 "Les masses : `=Les masses`\n" +
@@ -462,12 +463,11 @@ bot.on('message', message => {
                 "Les nodachis : `=Les nodachis`\n" +
                 "Les bâtons (pas disponible avant le palier 3) : `=Les bâtons`\n" +
                 "Les lances (pas disponible avant le palier 3) : `=Les lances`\n" +
-                "Les anneaux (pas disponible avant le palier 3) : `=Les anneaux`\n" +
+                "Les gants de combat (pas disponible avant le palier 3) : `=Les anneaux`\n" +
                 "Les boucliers : `=Les boucliers`\n" +
                 "Les rondaches (pas disponible avant le palier 3) : `=Les rondaches`\n" +
                 "Les écus (pas disponible avant le palier 3) : `=Les écus`\n" +
-                "Les targes (pas disponible avant le palier 3) : `=Les targes`\n" +
-                "Cependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment, seulement les armes que vous trouverez sur des monstres, achèterez ou fabriquerez !")
+                "Les targes (pas disponible avant le palier 3) : `=Les targes`")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -1331,17 +1331,17 @@ bot.on('message', message => {
                 "Niveau 28 : Vous gagnez 9 points de dégât et 3 points d'armure et 15 HP !\n\n" +
                 "Niveau 29 : Vous gagnez 9 points de dégât et 3 points d'armure et 15 HP !\n\n" +
                 "Niveau 30 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !")
-                .addBlankField(true)
-                .addField("Les bonus des niveaux pour Assassin de 31 à 40 :", "Niveau 31 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 32 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 33 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 34 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 35 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 36 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 37 : Vous gagnez 12 points de dégât et 4.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 38 : Vous gagnez 12 points de dégât et 4.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 39 : Vous gagnez 12 points de dégât et 4.5 points d'armure et 30 HP !\n\n" +
-                    "Niveau 40 : Vous gagnez 12 points de dégât et 4.5 points d'armure et 30 HP !")
+            .addBlankField(true)
+            .addField("Les bonus des niveaux pour Assassin de 31 à 40 :", "Niveau 31 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 32 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 33 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 34 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 35 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 36 : Vous gagnez 9 points de dégât et 3.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 37 : Vous gagnez 12 points de dégât et 4.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 38 : Vous gagnez 12 points de dégât et 4.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 39 : Vous gagnez 12 points de dégât et 4.5 points d'armure et 30 HP !\n\n" +
+                "Niveau 40 : Vous gagnez 12 points de dégât et 4.5 points d'armure et 30 HP !")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -1384,17 +1384,17 @@ bot.on('message', message => {
                 "Niveau 28 : Vous gagnez 9 points de dégât et 30 HP et 1,5 points d'armure !\n\n" +
                 "Niveau 29 : Vous gagnez 9 points de dégât et 30 HP et 1,5 points d'armure !\n\n" +
                 "Niveau 30 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !")
-                .addBlankField(true)
-                .addField("Les bonus des niveaux pour Berserker de 31 à 40 :", "Niveau 31 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
-                    "Niveau 32 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
-                    "Niveau 33 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
-                    "Niveau 34 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
-                    "Niveau 35 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
-                    "Niveau 36 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
-                    "Niveau 37 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
-                    "Niveau 38 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
-                    "Niveau 39 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
-                    "Niveau 40 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !")
+            .addBlankField(true)
+            .addField("Les bonus des niveaux pour Berserker de 31 à 40 :", "Niveau 31 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
+                "Niveau 32 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
+                "Niveau 33 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
+                "Niveau 34 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
+                "Niveau 35 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
+                "Niveau 36 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
+                "Niveau 37 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
+                "Niveau 38 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
+                "Niveau 39 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
+                "Niveau 40 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -1437,17 +1437,17 @@ bot.on('message', message => {
                 "Niveau 28 : Vous gagnez 4.5 points d'armure et 6 points de dégât et 15 HP !\n\n" +
                 "Niveau 29 : Vous gagnez 4.5 points d'armure et 6 points de dégât et 15 HP !\n\n" +
                 "Niveau 30 : Vous gagnez 4.5 points d'armure et 7 points de dégât et 30 HP !")
-                .addBlankField(true)
-                .addField("Les bonus des niveaux pour Paladin de 31 à 40 :", "Niveau 31 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
-                    "Niveau 32 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
-                    "Niveau 33 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
-                    "Niveau 34 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP !\n\n" +
-                    "Niveau 35 : Vous gagnez 4.5 points d'armure et 7 points de dégât et 30 HP !\n\n" +
-                    "Niveau 36 : Vous gagnez 4.5 points d'armure et 7 points de dégât et 30 HP !\n\n" +
-                    "Niveau 37 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
-                    "Niveau 38 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
-                    "Niveau 39 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
-                    "Niveau 40 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !")
+            .addBlankField(true)
+            .addField("Les bonus des niveaux pour Paladin de 31 à 40 :", "Niveau 31 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
+                "Niveau 32 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
+                "Niveau 33 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
+                "Niveau 34 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP !\n\n" +
+                "Niveau 35 : Vous gagnez 4.5 points d'armure et 7 points de dégât et 30 HP !\n\n" +
+                "Niveau 36 : Vous gagnez 4.5 points d'armure et 7 points de dégât et 30 HP !\n\n" +
+                "Niveau 37 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
+                "Niveau 38 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
+                "Niveau 39 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
+                "Niveau 40 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -1490,17 +1490,17 @@ bot.on('message', message => {
                 "Niveau 28 : Vous gagnez 45 HP et 3 points d’armure et 3 points de dégât !\n\n" +
                 "Niveau 29 : Vous gagnez 45 HP et 3 points d’armure et 3 points de dégât !\n\n" +
                 "Niveau 30 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât !")
-                .addBlankField(true)
-                .addField("Les bonus des niveaux pour vindicateur de 31 à 40 :", "Niveau 31 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât ! \n\n" +
-                    "Niveau 32 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât ! \n\n" +
-                    "Niveau 33 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât ! \n\n" +
-                    "Niveau 34 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât !\n\n" +
-                    "Niveau 35 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât !\n\n" +
-                    "Niveau 36 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât !\n\n" +
-                    "Niveau 37 : Vous gagnez 60 HP et 4.5 points d’armure et 6 points de dégât !\n\n" +
-                    "Niveau 38 : Vous gagnez 60 HP et 4.5 points d’armure et 6 points de dégât !\n\n" +
-                    "Niveau 39 : Vous gagnez 60 HP et 4.5 points d’armure et 6 points de dégât !\n\n" +
-                    "Niveau 40 : Vous gagnez 60 HP et 4.5 points d’armure et 6 points de dégât !")
+            .addBlankField(true)
+            .addField("Les bonus des niveaux pour vindicateur de 31 à 40 :", "Niveau 31 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât ! \n\n" +
+                "Niveau 32 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât ! \n\n" +
+                "Niveau 33 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât ! \n\n" +
+                "Niveau 34 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât !\n\n" +
+                "Niveau 35 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât !\n\n" +
+                "Niveau 36 : Vous gagnez 45 HP et 3.5 points d’armure et 6 points de dégât !\n\n" +
+                "Niveau 37 : Vous gagnez 60 HP et 4.5 points d’armure et 6 points de dégât !\n\n" +
+                "Niveau 38 : Vous gagnez 60 HP et 4.5 points d’armure et 6 points de dégât !\n\n" +
+                "Niveau 39 : Vous gagnez 60 HP et 4.5 points d’armure et 6 points de dégât !\n\n" +
+                "Niveau 40 : Vous gagnez 60 HP et 4.5 points d’armure et 6 points de dégât !")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -1543,17 +1543,17 @@ bot.on('message', message => {
                 "Niveau 28 : Vous gagnez 4.5 points d'armure et 30 HP et 3 points de dégât !\n\n" +
                 "Niveau 29 : Vous gagnez 4.5 points d'armure et 30 HP et 3 points de dégât !\n\n" +
                 "Niveau 30 : Vous gagnez 4.5 points d'armure et 35 HP et 6 points de dégât !")
-                .addBlankField(true)
-                .addField("Les bonus des niveaux pour Chevalier de 31 à 40 :", "Niveau 31 : Vous gagnez 4.5 points d’armure et 35 HP et 6 points de dégât ! \n\n" +
-                    "Niveau 32 : Vous gagnez 4.5 points d’armure et 35 HP et 6 points de dégât ! \n\n" +
-                    "Niveau 33 : Vous gagnez 4.5 points d’armure et 35 HP et 6 points de dégât ! \n\n" +
-                    "Niveau 34 : Vous gagnez 4.5 points d’armure et 35 HP et 6 points de dégât !\n\n" +
-                    "Niveau 35 : Vous gagnez 4.5 points d'armure et 35 HP et 6 points de dégât !\n\n" +
-                    "Niveau 36 : Vous gagnez 4.5 points d'armure et 35 HP et 6 points de dégât !\n\n" +
-                    "Niveau 37 : Vous gagnez 6 points d'armure et 45 HP et 6 points de dégât !\n\n" +
-                    "Niveau 38 : Vous gagnez 6 points d'armure et 45 HP et 6 points de dégât !\n\n" +
-                    "Niveau 39 : Vous gagnez 6 points d'armure et 45 HP et 6 points de dégât !\n\n" +
-                    "Niveau 40 : Vous gagnez 6 points d'armure et 45 HP et 6 points de dégât !")
+            .addBlankField(true)
+            .addField("Les bonus des niveaux pour Chevalier de 31 à 40 :", "Niveau 31 : Vous gagnez 4.5 points d’armure et 35 HP et 6 points de dégât ! \n\n" +
+                "Niveau 32 : Vous gagnez 4.5 points d’armure et 35 HP et 6 points de dégât ! \n\n" +
+                "Niveau 33 : Vous gagnez 4.5 points d’armure et 35 HP et 6 points de dégât ! \n\n" +
+                "Niveau 34 : Vous gagnez 4.5 points d’armure et 35 HP et 6 points de dégât !\n\n" +
+                "Niveau 35 : Vous gagnez 4.5 points d'armure et 35 HP et 6 points de dégât !\n\n" +
+                "Niveau 36 : Vous gagnez 4.5 points d'armure et 35 HP et 6 points de dégât !\n\n" +
+                "Niveau 37 : Vous gagnez 6 points d'armure et 45 HP et 6 points de dégât !\n\n" +
+                "Niveau 38 : Vous gagnez 6 points d'armure et 45 HP et 6 points de dégât !\n\n" +
+                "Niveau 39 : Vous gagnez 6 points d'armure et 45 HP et 6 points de dégât !\n\n" +
+                "Niveau 40 : Vous gagnez 6 points d'armure et 45 HP et 6 points de dégât !")
             .setTimestamp()
         message.channel.send({ embed })
     }
