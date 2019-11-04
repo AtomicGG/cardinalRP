@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const talkedRecently = new Set();
 const prefix = "=";
- 
+
 var fury = false;
 
 bot.on('ready', () => {
@@ -16956,12 +16956,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":cyclone: Sonic leap :", ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant `4` ordres, l'obligeant à vous obéir !(Divisé par deux pour les joueurs et gros monstres)\n\n" +
-                        "Ordres possibles :\n" +
-                        "- Ordonner un coup normal sur une cible. (a voir si on accepte d'autres coups en dehors des comp)\n" +
-                        "- Ordonner de ne pas se défendre.\n" +
-                        "- Ordonner de ne rien faire ou de faire une action hors des actions de combat pendant le tour du charmé (tant que l'action ne désavantage pas la cible pour la suite du combat)\n" +
-                        "- Ordonner d'interception (pour soi seulement) sur tout le tour.")
+                    .addField(":cyclone: Sonic leap :", ":cyclone: Votre compétence 'Sonic leap' ne fontionne plus.")
                     .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
                     .setTimestamp()
                 message.channel.send({ embed })
@@ -16971,12 +16966,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":cyclone: Sonic leap :", ":cyclone: Votre compétence 'Sonic leap' charme la cible pendant `6` ordres, l'obligeant à vous obéir ! (Divisé par deux pour les joueurs et gros monstres)\n\n" +
-                        "Ordres possibles :\n" +
-                        "- Ordonner un coup normal sur une cible. (a voir si on accepte d'autres coups en dehors des comp)\n" +
-                        "- Ordonner de ne pas se défendre.\n" +
-                        "- Ordonner de ne rien faire ou de faire une action hors des actions de combat pendant le tour du charmé (tant que l'action ne désavantage pas la cible pour la suite du combat)\n" +
-                        "- Ordonner d'interception (pour soi seulement) sur tout le tour.")
+                    .addField(":cyclone: Sonic leap :", ":cyclone: Votre compétence 'Sonic leap' ne fontionne plus.")
                     .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
                     .setTimestamp()
                 message.channel.send({ embed })
