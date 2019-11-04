@@ -866,10 +866,100 @@ bot.on('message', message => {
             caractéristique = 98;
             passage = true;
         }
-        if (16800 <= XP) {
+        if (16800 <= XP & XP < 18500) {
             niveau = 30;
-            xpMax = 999999999999;
+            xpMax = 18500;
             caractéristique = 104;
+            passage = true;
+        }
+        if (18500 <= XP & XP < 20200) {
+            niveau = 31;
+            xpMax = 20200;
+            caractéristique = 111;
+            passage = true;
+        }
+        if (20200 <= XP & XP < 21900) {
+            niveau = 32;
+            xpMax = 21900;
+            caractéristique = 118;
+            passage = true;
+        }
+        if (21900 <= XP & XP < 23600) {
+            niveau = 33;
+            xpMax = 23600;
+            caractéristique = 125;
+            passage = true;
+        }
+        if (23600 <= XP & XP < 25300) {
+            niveau = 34;
+            xpMax = 25300;
+            caractéristique = 132;
+            passage = true;
+        }
+        if (25300 <= XP & XP < 27500) {
+            niveau = 35;
+            xpMax = 27500;
+            caractéristique = 139;
+            passage = true;
+        }
+        if (27500 <= XP & XP < 29700) {
+            niveau = 36;
+            xpMax = 29700;
+            caractéristique = 147;
+            passage = true;
+        }
+        if (29700 <= XP & XP < 31900) {
+            niveau = 37;
+            xpMax = 31900;
+            caractéristique = 155;
+            passage = true;
+        }
+        if (31900 <= XP & XP < 34100) {
+            niveau = 38;
+            xpMax = 34100;
+            caractéristique = 163;
+            passage = true;
+        }
+        if (34100 <= XP & XP < 36300) {
+            niveau = 39;
+            xpMax = 36300;
+            caractéristique = 171;
+            passage = true;
+        }
+        if (36300 <= XP & XP < 39100) {
+            niveau = 40;
+            xpMax = 39100;
+            caractéristique = 179;
+            passage = true;
+        }
+        if (39100 <= XP & XP < 41900) {
+            niveau = 41;
+            xpMax = 41900;
+            caractéristique = 188;
+            passage = true;
+        }
+        if (41900 <= XP & XP < 44700) {
+            niveau = 42;
+            xpMax = 44700;
+            caractéristique = 197;
+            passage = true;
+        }
+        if (44700 <= XP & XP < 47500) {
+            niveau = 43;
+            xpMax = 47500;
+            caractéristique = 206;
+            passage = true;
+        }
+        if (47500 <= XP & XP < 50300) {
+            niveau = 44;
+            xpMax = 50300;
+            caractéristique = 215;
+            passage = true;
+        }
+        if (50300 <= XP) {
+            niveau = 45;
+            xpMax = "'En calcul'";
+            caractéristique = 224;
             passage = true;
         }
         if (passage == true) {
