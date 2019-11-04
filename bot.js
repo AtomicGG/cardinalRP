@@ -24477,7 +24477,7 @@ bot.on('message', message => {
             .addField(":scales: Sabre de kobolt supérieur :", ":scales: C'est un cimeterre très puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts les plus puissants du palier 1 !\n\n:crossed_swords: Améliore l' 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 16\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 3\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 plan d'arme supérieure kobolt, 2 cuivre parfait, 4 cuivre rare,  2 dents de kobolt pilion, 6 Peau écailleuse de kobolt pilion , 4 bois de frêne rare, 8 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 1360 cols\n\n:large_orange_diamond: Prix de revente : 340 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du sabre de kobolt supérieur`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme supérieure kobolt, 1 cuivre parfait, 2 cuivre rare, 1 dent de kobolt pilion, 3 Peau écailleuse de kobolt pilion, 4 bois de frêne rare) :", "`=Amélioration d'une arme de kobolt supérieure à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt supérieure à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre de kobolt supérieur à deux mains : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du sabre de kobolt supérieur : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24633,7 +24633,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'espadon de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
+        let lvlMetier = args.slice(6).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -24769,7 +24769,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
+        let lvlMetier = args.slice(6).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -24903,145 +24903,9 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du glaive de kobolt supérieur à deux mains")) {
-        let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Glaive de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la dague de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -25177,7 +25041,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la massue de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -25313,7 +25177,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la masse de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -25449,7 +25313,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la hallebarde de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -25585,7 +25449,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la hache de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(10).join(" : ");
+        let lvlMetier = args.slice(7).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -25719,145 +25583,9 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la rapière de kobolt supérieure à deux mains")) {
-        let roll = 0
-        let lvlMetier = args.slice(10).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
+        let lvlMetier = args.slice(6).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -25991,9 +25719,9 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du cimeterre de kobolt supérieur à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte du sabre de kobolt supérieur")) {
         let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
+        let lvlMetier = args.slice(6).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -26129,7 +25857,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du cimeterre de kobolt supérieur")) {
         let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
+        let lvlMetier = args.slice(6).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -26265,7 +25993,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du nodachi de kobolt supérieur")) {
         let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
+        let lvlMetier = args.slice(6).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -26401,7 +26129,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
         let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
+        let lvlMetier = args.slice(6).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
@@ -26537,7 +26265,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du pavois de kobolt supérieur")) {
         let roll = 0
-        let lvlMetier = args.slice(9).join(" : ");
+        let lvlMetier = args.slice(6).join(" : ");
         const lvlArme = 3
         if (lvlMetier < lvlArme) {
             const embed = new Discord.RichEmbed()
