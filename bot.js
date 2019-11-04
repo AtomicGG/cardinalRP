@@ -449,7 +449,7 @@ bot.on('message', message => {
                 "Vous saurez quelle arme permet d'améliorer quel coup ou action défensive en affichant les infos sur celle-ci en écrivant : `=[Nom de l'arme]`\n\n" +
                 "Lorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste ci dessous.\n\n" +
                 "Cependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment, seulement les armes que vous trouverez sur des monstres, achèterez ou fabriquerez !")
-            .addField("Les armes :", "Les épées : `=Les épées`\n" +
+            .addField("Liste des armes possibles :", "Les épées : `=Les épées`\n" +
                 "Les espadons : `=Les espadons`\n" +
                 "Les dagues : `=Les dagues`\n" +
                 "Les masses : `=Les masses`\n" +
