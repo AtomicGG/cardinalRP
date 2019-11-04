@@ -940,7 +940,6 @@ bot.on('message', message => {
                 "Niveau 43 : 44700 points d'expérience nécessaires !\n" +
                 "Niveau 44 : 47500 points d'expérience nécessaires !\n" +
                 "Niveau 45 : 50300 points d'expérience nécessaires !")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
