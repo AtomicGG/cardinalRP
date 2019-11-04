@@ -646,17 +646,17 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les katanas") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
+            .addField("Les katanas :", "Ce sont des armes blanches à simple tranchant de plus de 60cm.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+                "Elles donnent généralement un bonus en Parade de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup glissé : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
+                "`=Coup précis : [Votre attaque]`")
+            .setImage("https://images-na.ssl-images-amazon.com/images/I/31%2BSnEw8mjL._SX425_.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
