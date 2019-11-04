@@ -5203,10 +5203,10 @@ bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 3")) {
         message.channel.send("```Epée du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups]\n\n" +
             "Espadon du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Espadon du clan des loups à deux mains]\n\n" +
-            "Dague du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups à une main]\n\n" +
-            "Masse du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups à une main]\n\n" +
+            "Dague du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups]\n\n" +
+            "Masse du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups]\n\n" +
             "Massue du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Massue du clan des loups à deux mains]\n\n" +
-            "Hache du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups à une main]\n\n" +
+            "Hache du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups]\n\n" +
             "Hallebarde du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hallebarde du clan des loups à deux mains]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 4```")
     }
@@ -5214,10 +5214,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 4")) {
-        message.channel.send("```Rapière du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups à une main]\n\n" +
-            "Cimeterre du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups à une main]\n\n" +
+        message.channel.send("```Rapière du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups]\n\n" +
+            "Cimeterre du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups]\n\n" +
             "Sabre du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Sabre du clan des loups à deux mains]\n\n" +
-            "Katana du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups à une main]\n\n" +
+            "Katana du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups]\n\n" +
             "Nodachi du clan des loups à deux mains :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Nodachi du clan des loups à deux mains]\n\n" +
             "Pavois du clan des loups à une main :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Pavois du clan des loups à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 5```")
@@ -5366,8 +5366,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée du clan des loups :", ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée du clan des loups à une main : [Votre niveau en forgeron]`")
+            .addField(":scales: Epée du clan des loups :", ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5375,13 +5375,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Espadon du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée du clan des loups à deux mains :", ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée du clan des loups à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée du clan des loups à deux mains : [Votre niveau en forgeron]`")
+            .addField(":scales: Espadon du clan des loups :", ":scales: C'est une épée rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' de 2 points\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'espadon du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'espadon du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5389,13 +5389,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Dague du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Dague du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague du clan des loups à une main :", ":scales: C'est une dague rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague du clan des loups à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague du clan des loups à une main : [Votre niveau en forgeron]`")
+            .addField(":scales: Dague du clan des loups :", ":scales: C'est une dague rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Combo' de 1 point\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5403,13 +5403,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Glaive du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Masse du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Glaive du clan des loups à deux mains :", ":scales: C'est un glaive rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du glaive du clan des loups à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du glaive du clan des loups à deux mains : [Votre niveau en forgeron]`")
+            .addField(":scales: Masse du clan des loups :", ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5417,13 +5417,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Masse du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Massue du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse du clan des loups à une main :", ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse du clan des loups à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse du clan des loups à une main : [Votre niveau en forgeron]`")
+            .addField(":scales: Massue du clan des loups :", ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:crossed_swords: Améliore le 'Blocage' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la massue du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la massue du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5431,13 +5431,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Masse du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Hache du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse du clan des loups à deux mains :", ":scales: C'est une masse rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:crossed_swords: Améliore le 'Blocage' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse du clan des loups à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse du clan des loups à deux mains : [Votre niveau en forgeron]`")
+            .addField(":scales: Hache du clan des loups :", ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5445,13 +5445,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Hache du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Hallebarde du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache du clan des loups à une main :", ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache du clan des loups à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache du clan des loups à une main : [Votre niveau en forgeron]`")
+            .addField(":scales: Hallebarde du clan des loups :", ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hallebarde du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hallebarde du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5459,13 +5459,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Hache du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Rapière du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache du clan des loups à deux mains :", ":scales: C'est une hache rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 2 points\n\n:crossed_swords: Améliore le 'Coup provocateur' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache du clan des loups à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache du clan des loups à deux mains : [Votre niveau en forgeron]`")
+            .addField(":scales: Rapière du clan des loups :", ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 1 point\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5473,13 +5473,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Rapière du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Cimeterre du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière du clan des loups à une main :", ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 1 point\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière du clan des loups à une main : [Votre niveau en forgeron]`")
+            .addField(":scales: Cimeterre du clan des loups :", ":scales: C'est un cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore 'Esquive' de 1 point\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5487,13 +5487,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Rapière du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Sabre du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière du clan des loups à deux mains :", ":scales: C'est une rapière rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Coup d'estoc' de 2 points\n\n:crossed_swords: Améliore le 'Coup létal' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière du clan des loups à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière du clan des loups à deux mains : [Votre niveau en forgeron]`")
+            .addField(":scales: Sabre du clan des loups :", ":scales: C'est un cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:crossed_swords: Améliore 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du sabre du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du sabre du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5501,13 +5501,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cimeterre du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Katana du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre du clan des loups à une main :", ":scales: C'est un cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore 'Esquive' de 1 point\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre du clan des loups à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre du clan des loups à une main : [Votre niveau en forgeron]`")
+            .addField(":scales: Katana du clan des loups :", ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:crossed_swords: Améliore le 'Coup normal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5515,13 +5515,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cimeterre du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Nodachi du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre du clan des loups à deux mains :", ":scales: C'est un cimeterre rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:crossed_swords: Améliore 'Esquive' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre du clan des loups à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre du clan des loups à deux mains : [Votre niveau en forgeron]`")
+            .addField(":scales: Nodachi du clan des loups :", ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:crossed_swords: Améliore le 'Coup normal' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du nodachi du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du nodachi du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5529,41 +5529,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Katana du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Pavois du clan des loups")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana du clan des loups à une main :", ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:crossed_swords: Améliore le 'Coup normal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana du clan des loups à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana du clan des loups à une main : [Votre niveau en forgeron]`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Katana du clan des loups à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Katana du clan des loups à deux mains :", ":scales: C'est un katana rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore la 'Parade' de 2 points\n\n:crossed_swords: Améliore le 'Coup normal' de 2 points\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 150 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana du clan des loups à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana du clan des loups à deux mains : [Votre niveau en forgeron]`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bouclier du clan des loups à une main")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bouclier du clan des loups à une main :", ":scales: C'est un bouclier rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:crossed_swords: Améliore le 'Coup normal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bouclier du clan des loups à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du bouclier du clan des loups à une main : [Votre niveau en forgeron]`")
+            .addField(":scales: Pavois du clan des loups :", ":scales: C'est un bouclier rare uniquement possible à trouver dans le donjon sauvage !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:crossed_swords: Améliore le 'Coup normal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:warning: Cette arme est non échangeable !\n\n:large_orange_diamond: Prix de revente : 75 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du pavois du clan des loups`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du pavois du clan des loups : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5640,7 +5612,7 @@ bot.on('message', message => {
 // Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Clan des Loups | Découverte
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups")) {
         const Dégâts = Math.floor(3 * Math.random() + 7)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -5654,13 +5626,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Découverte de l'espadon du clan des loups")) {
         const Dégâts = Math.floor(5 * Math.random() + 14)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée du clan des loups à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Espadon du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5668,13 +5640,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la dague du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Découverte de la dague du clan des loups")) {
         const Dégâts = Math.floor(3 * Math.random() + 7)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague du clan des loups à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Dague du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5696,13 +5668,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups")) {
         const Dégâts = Math.floor(3 * Math.random() + 7)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse du clan des loups à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Masse du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5710,13 +5682,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la masse du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Découverte de la massue du clan des loups")) {
         const Dégâts = Math.floor(5 * Math.random() + 14)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse du clan des loups à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Massue du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5724,13 +5696,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups")) {
         const Dégâts = Math.floor(3 * Math.random() + 7)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache du clan des loups à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Hache du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5738,13 +5710,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la hache du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Découverte de la hallebarde du clan des loups")) {
         const Dégâts = Math.floor(5 * Math.random() + 14)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache du clan des loups à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Hallebarde du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5752,13 +5724,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Découverte de la rapière du clan des loups")) {
         const Dégâts = Math.floor(3 * Math.random() + 7)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière du clan des loups à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Rapière du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5780,13 +5752,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte du cimeterre du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Découverte du cimeterre du clan des loups")) {
         const Dégâts = Math.floor(3 * Math.random() + 7)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre du clan des loups à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Cimeterre du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5794,13 +5766,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte du cimeterre du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Découverte du sabre du clan des loups")) {
         const Dégâts = Math.floor(5 * Math.random() + 14)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre du clan des loups à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Sabre du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5808,13 +5780,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Découverte du katana du clan des loups")) {
         const Dégâts = Math.floor(3 * Math.random() + 7)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana du clan des loups à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Katana du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5822,13 +5794,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte du katana du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Découverte du nodachi du clan des loups")) {
         const Dégâts = Math.floor(5 * Math.random() + 14)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana du clan des loups à deux mains :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Nodachi du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5836,14 +5808,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte du bouclier du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Découverte du pavois du clan des loups")) {
         const Défense = Math.floor(2 * Math.random() + 2)
         const HP = Math.floor(11 * Math.random() + 30)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier du clan des loups à une main :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .addField(":scales: Pavois du clan des loups :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5855,7 +5827,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de l'épée du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(10).join(" : ");
@@ -5878,7 +5850,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -5886,7 +5858,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -5898,7 +5870,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -5906,7 +5878,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -5918,7 +5890,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -5926,7 +5898,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -5950,7 +5922,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -5958,7 +5930,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -5970,7 +5942,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -5978,7 +5950,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -5990,7 +5962,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -5998,7 +5970,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6022,7 +5994,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6030,7 +6002,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6042,7 +6014,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6050,7 +6022,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6062,7 +6034,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6070,7 +6042,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6091,7 +6063,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte de l'espadon du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(10).join(" : ");
@@ -6101,7 +6073,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -6114,7 +6086,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6122,7 +6094,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6134,7 +6106,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6142,7 +6114,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6154,7 +6126,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6162,7 +6134,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6172,7 +6144,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6186,7 +6158,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6194,7 +6166,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6206,7 +6178,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6214,7 +6186,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6226,7 +6198,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6234,7 +6206,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6244,7 +6216,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6258,7 +6230,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6266,7 +6238,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6278,7 +6250,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6286,7 +6258,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6298,7 +6270,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6306,7 +6278,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Epée du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6316,7 +6288,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6327,7 +6299,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la dague du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de la dague du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(11).join(" : ");
@@ -6337,7 +6309,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Dague du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -6350,7 +6322,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6358,7 +6330,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune mineure de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6370,7 +6342,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6378,7 +6350,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune commune de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6390,7 +6362,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6398,7 +6370,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune majeure de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6408,7 +6380,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6422,7 +6394,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6430,7 +6402,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune mineure de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6442,7 +6414,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6450,7 +6422,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune commune de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6462,7 +6434,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6470,7 +6442,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune majeure de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6480,7 +6452,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6494,7 +6466,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune mineure de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6502,7 +6474,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune mineure de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6514,7 +6486,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune commune de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6522,7 +6494,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune commune de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6534,7 +6506,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune majeure de combo.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6542,7 +6514,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups à une main :", "Vous obtenez une rune majeure de coup létal.")
+                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6552,7 +6524,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Dague du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6799,7 +6771,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la masse du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de la masse du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(11).join(" : ");
@@ -6809,7 +6781,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Masse du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -6822,7 +6794,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6830,7 +6802,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6842,7 +6814,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6850,7 +6822,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6862,7 +6834,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6870,7 +6842,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6880,7 +6852,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6894,7 +6866,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6902,7 +6874,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6914,7 +6886,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6922,7 +6894,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6934,7 +6906,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6942,7 +6914,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6952,7 +6924,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -6966,7 +6938,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6974,7 +6946,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -6986,7 +6958,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -6994,7 +6966,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7006,7 +6978,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7014,7 +6986,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à une main :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7024,7 +6996,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7035,7 +7007,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la masse du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte de la massue du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(11).join(" : ");
@@ -7045,7 +7017,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Masse du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Massue du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -7058,7 +7030,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7066,7 +7038,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7078,7 +7050,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7086,7 +7058,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7098,7 +7070,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7106,7 +7078,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7116,7 +7088,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Massue du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7130,7 +7102,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7138,7 +7110,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7150,7 +7122,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7158,7 +7130,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7170,7 +7142,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7178,7 +7150,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7188,7 +7160,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Massue du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7202,7 +7174,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7210,7 +7182,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7222,7 +7194,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7230,7 +7202,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7242,7 +7214,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7250,7 +7222,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups à deux mains :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Massue du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7260,7 +7232,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Massue du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7271,7 +7243,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la hache du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de la hache du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(11).join(" : ");
@@ -7281,7 +7253,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hache du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -7294,7 +7266,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7302,7 +7274,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7314,7 +7286,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7322,7 +7294,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune commune de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7334,7 +7306,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7342,7 +7314,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7352,7 +7324,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7366,7 +7338,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7374,7 +7346,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7386,7 +7358,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7394,7 +7366,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune commune de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7406,7 +7378,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7414,7 +7386,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7424,7 +7396,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7438,7 +7410,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7446,7 +7418,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7458,7 +7430,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7466,7 +7438,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune commune de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7478,7 +7450,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7486,7 +7458,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à une main :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7496,7 +7468,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7507,7 +7479,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la hache du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte de la hallebarde du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(11).join(" : ");
@@ -7517,7 +7489,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hache du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -7530,7 +7502,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7538,7 +7510,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7550,7 +7522,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7558,7 +7530,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7570,7 +7542,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7578,7 +7550,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7588,7 +7560,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7602,7 +7574,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7610,7 +7582,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7622,7 +7594,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7630,7 +7602,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7642,7 +7614,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7650,7 +7622,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7660,7 +7632,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7674,7 +7646,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7682,7 +7654,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7694,7 +7666,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune commune de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7702,7 +7674,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune commune de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7714,7 +7686,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7722,7 +7694,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7732,7 +7704,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7743,7 +7715,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la rapière du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Fonte de la rapière du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(11).join(" : ");
@@ -7753,7 +7725,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Rapière du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -7766,7 +7738,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7774,7 +7746,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune mineure de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7786,7 +7758,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7794,7 +7766,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune commune de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7806,7 +7778,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7814,7 +7786,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune majeure de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7824,7 +7796,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7838,7 +7810,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7846,7 +7818,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune mineure de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7858,7 +7830,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7866,7 +7838,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune commune de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7878,7 +7850,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7886,7 +7858,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune majeure de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7896,7 +7868,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -7910,7 +7882,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7918,7 +7890,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune mineure de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7930,7 +7902,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7938,7 +7910,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune commune de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7950,7 +7922,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -7958,7 +7930,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups à une main :", "Vous obtenez une rune majeure de coup létal.")
+                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -7968,7 +7940,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8215,7 +8187,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du cimeterre du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Fonte du cimeterre du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(10).join(" : ");
@@ -8225,7 +8197,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Cimeterre du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -8238,7 +8210,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune mineure d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8246,7 +8218,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8258,7 +8230,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune commune d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8266,7 +8238,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8278,7 +8250,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune majeure d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8286,7 +8258,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8296,7 +8268,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8310,7 +8282,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune mineure d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8318,7 +8290,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8330,7 +8302,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune commune d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8338,7 +8310,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8350,7 +8322,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune majeure d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8358,7 +8330,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8368,7 +8340,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8382,7 +8354,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune mineure d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8390,7 +8362,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8402,7 +8374,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune commune d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8410,7 +8382,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8422,7 +8394,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune majeure d'esquive.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8430,7 +8402,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à une main :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8440,7 +8412,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8451,7 +8423,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du cimeterre du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte du sabre du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(10).join(" : ");
@@ -8461,7 +8433,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -8474,7 +8446,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune mineure d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8482,7 +8454,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8494,7 +8466,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune commune d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8502,7 +8474,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8514,7 +8486,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune majeure d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8522,7 +8494,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8532,7 +8504,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8546,7 +8518,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune mineure d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8554,7 +8526,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8566,7 +8538,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune commune d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8574,7 +8546,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8586,7 +8558,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune majeure d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8594,7 +8566,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8604,7 +8576,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8618,7 +8590,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune mineure d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8626,7 +8598,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8638,7 +8610,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune commune d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8646,7 +8618,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8658,7 +8630,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune majeure d'esquive.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8666,7 +8638,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8676,7 +8648,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8687,7 +8659,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du katana du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Fonte du katana du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(10).join(" : ");
@@ -8697,7 +8669,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Katana du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -8710,7 +8682,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8718,7 +8690,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8730,7 +8702,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8738,7 +8710,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8750,7 +8722,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8758,7 +8730,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8768,7 +8740,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8782,7 +8754,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8790,7 +8762,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8802,7 +8774,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8810,7 +8782,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8822,7 +8794,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8830,7 +8802,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8840,7 +8812,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8854,7 +8826,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8862,7 +8834,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8874,7 +8846,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8882,7 +8854,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8894,7 +8866,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8902,7 +8874,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à une main :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8912,7 +8884,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -8923,7 +8895,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du katana du clan des loups à deux mains")) {
+    if (message.content.startsWith(prefix + "Fonte du nodachi du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(10).join(" : ");
@@ -8933,7 +8905,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Katana du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -8946,7 +8918,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8954,7 +8926,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8966,7 +8938,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8974,7 +8946,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -8986,7 +8958,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -8994,7 +8966,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9004,7 +8976,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -9018,7 +8990,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9026,7 +8998,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9038,7 +9010,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9046,7 +9018,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9058,7 +9030,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9066,7 +9038,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9076,7 +9048,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -9090,7 +9062,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9098,7 +9070,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune mineure de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9110,7 +9082,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9118,7 +9090,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune commune de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9130,7 +9102,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9138,7 +9110,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups à deux mains :", "Vous obtenez une rune majeure de parade.")
+                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9148,7 +9120,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -9159,7 +9131,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du bouclier du clan des loups à une main")) {
+    if (message.content.startsWith(prefix + "Fonte du pavois du clan des loups")) {
         let roll = 0
         let roll2 = 0
         let lvlMetier = args.slice(10).join(" : ");
@@ -9169,7 +9141,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bouclier du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -9182,7 +9154,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9190,7 +9162,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9202,7 +9174,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9210,7 +9182,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9222,7 +9194,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9230,7 +9202,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9240,7 +9212,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -9254,7 +9226,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9262,7 +9234,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9274,7 +9246,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9282,7 +9254,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9294,7 +9266,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9302,7 +9274,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9312,7 +9284,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -9326,7 +9298,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune mineure de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9334,7 +9306,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9346,7 +9318,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune commune de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9354,7 +9326,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9366,7 +9338,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune majeure de coup normal.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -9374,7 +9346,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bouclier du clan des loups à une main :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -9384,7 +9356,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bouclier du clan des loups à une main :", "Vous n'obtenez aucunes runes.")
+                    .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
