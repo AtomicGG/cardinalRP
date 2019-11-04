@@ -696,7 +696,7 @@ bot.off('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Les lances") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -714,17 +714,17 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les cestes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
+            .addField("Les cestes :", "Ce sont les ancêtres du poing américain, ressemblant à des sortes de gant avec des parties renforcées au niveau des phalanges.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+                "Elles donnent généralement un bonus en Coup normal de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup glissé : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
+                "`=Coup ascendant : [Votre attaque]`")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/640940462194032651/1280px-Boxer_of_quirinal_hands.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -19182,7 +19182,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Anneau | En test
+// Compétences d'armes | Cestes | En test
 
 bot.on('message', message => {
     const args = message.content;
@@ -19196,7 +19196,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .addField(":crossed_swords: Coup ascendant :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
                 .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -19206,7 +19206,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts.")
+                .addField(":crossed_swords: Coup ascendant :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts.")
                 .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
