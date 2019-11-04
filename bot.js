@@ -34021,7 +34021,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Récompenses du Taureau bossu vaincu : 450XP, 10 000 cols par joueur et pour la personne suivante qui a réalisé le dernier coup (c'est à dire Lyn), elle reçoit un `Chakram`")
+            .addField("Récompenses du Taureau bossu vaincu : 450XP, 10 000 cols, 5 carapaces de frelon foudroyants, 4 ailes de frelon foudroyant, 3 dards de frelon foudroyant, 3 yeux de frelon foudroyant par joueur et pour la personne suivante qui a réalisé le dernier coup (c'est à dire Lyn), elle reçoit un `Chakram`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
