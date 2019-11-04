@@ -448,15 +448,25 @@ bot.on('message', message => {
             .addField("Les armes :", "Vous trouverez ou fabriquerez parfois des armes plus ou moins rares, pouvant être des armes à une ou deux mains. Chaque arme améliore un ou des coups ou actions défensives !\n\n" +
                 "Vous saurez quelle arme permet d'améliorer quel coup ou action défensive en affichant les infos sur celle-ci en écrivant : `=[Nom de l'arme]`\n\n" +
                 "Lorsque vous créez votre personnage, vous aurez droit de choisir deux armes à une main ou une arme à deux mains dans la liste suivante :\n\n" +
-                "Les épées\n" +
-                "Les dagues\n" +
-                "Les glaives\n" +
-                "Les masses\n" +
-                "Les haches\n" +
-                "Les rapières\n" +
-                "Les cimeterres\n" +
-                "Les katanas\n" +
-                "Les boucliers\n\n" +
+                "Les épées : `=Les épées`\n" +
+                "Les espadons : `=Les espadons`\n" +
+                "Les dagues : `=Les dagues`\n" +
+                "Les masses : `=Les masses`\n" +
+                "Les massues : `=Les massues`\n" +
+                "Les haches : `=Les haches`\n" +
+                "Les hallebardes : `=Les hallebardes`\n" +
+                "Les rapières : `=Les rapières`\n" +
+                "Les cimeterres : `=Les cimeterres`\n" +
+                "Les sabres : `=Les sabres`\n" +
+                "Les katanas : `=Les katanas`\n" +
+                "Les nodachis : `=Les nodachis`\n" +
+                "Les bâtons (pas disponible avant le palier 3) : `=Les bâtons`\n" +
+                "Les lances (pas disponible avant le palier 3) : `=Les lances`\n" +
+                "Les anneaux (pas disponible avant le palier 3) : `=Les anneaux`\n" +
+                "Les boucliers : `=Les boucliers`\n" +
+                "Les rondaches (pas disponible avant le palier 3) : `=Les rondaches`\n" +
+                "Les écus (pas disponible avant le palier 3) : `=Les écus`\n" +
+                "Les targes (pas disponible avant le palier 3) : `=Les targes`\n" +
                 "Cependant, l'arme de base que vous aurez n'améliora pas de coups ou d'actions défensives pour le moment, seulement les armes que vous trouverez sur des monstres, achèterez ou fabriquerez !")
             .setTimestamp()
         message.channel.send({ embed })
