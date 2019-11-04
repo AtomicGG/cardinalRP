@@ -31927,7 +31927,6 @@ bot.on('message', message => {
     }
 });
 
-
 // Clairière | Métiers
 
 bot.on('message', message => {
@@ -35351,7 +35350,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes en chitine :", "=Masse en chitine à deux mains\n=Masse en chitine à une main\n=Rapière en chitine à deux mains\n=Rapière en chitine à une main\n=Katana en chitine à deux mains\n=Katana en chitine à une main\n=Epée en chitine à deux mains\n=Epée en chitine\n=Cimeterre en chitine à deux mains\n=Cimeterre en chitine à une main\n=Hache en chitine à deux mains\n=Hache en chitine à une main\n=Glaive en chitine à deux mains\n=Dague en chitine à une main\n=Bouclier en chitine à une main")
+            .addField(":scales: Liste des armes en chitine :", "=Epée en chitine\n=Espadon en chitine\n=Dague en chitine\n=Masse en chitine\n=Massue en chitine\n=Hache en chitine\n=Hallebarde en chitine\n=Rapière en chitine\n=Cimeterre en chitine\n=Sabre en chitine\n=Katana en chitine\n=Nodachi en chitine\n=Pavois en chitine")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
