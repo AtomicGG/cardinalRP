@@ -1421,7 +1421,17 @@ bot.on('message', message => {
                 "Niveau 28 : Vous gagnez 4.5 points d'armure et 6 points de dégât et 15 HP !\n\n" +
                 "Niveau 29 : Vous gagnez 4.5 points d'armure et 6 points de dégât et 15 HP !\n\n" +
                 "Niveau 30 : Vous gagnez 4.5 points d'armure et 7 points de dégât et 30 HP !")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .addBlankField(true)
+                .addField("Les bonus des niveaux pour Paladin de 31 à 40 :", "Niveau 31 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
+                    "Niveau 32 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
+                    "Niveau 33 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP ! \n\n" +
+                    "Niveau 34 : Vous gagnez 4.5 points d’armure et 7 points de dégât et 30 HP !\n\n" +
+                    "Niveau 35 : Vous gagnez 4.5 points d'armure et 7 points de dégât et 30 HP !\n\n" +
+                    "Niveau 36 : Vous gagnez 4.5 points d'armure et 7 points de dégât et 30 HP !\n\n" +
+                    "Niveau 37 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
+                    "Niveau 38 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
+                    "Niveau 39 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !\n\n" +
+                    "Niveau 40 : Vous gagnez 6 points d'armure et 9 points de dégât et 30 HP !")
             .setTimestamp()
         message.channel.send({ embed })
     }
