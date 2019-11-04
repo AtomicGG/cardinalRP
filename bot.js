@@ -9992,6 +9992,1776 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt supérieur | Fonte
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
+        let roll = 0
+        let lvlMetier = args.slice(6).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de l'espadon de kobolt supérieure")) {
+        let roll = 0
+        let lvlMetier = args.slice(6).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la dague de kobolt supérieure")) {
+        let roll = 0
+        let lvlMetier = args.slice(7).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la masse de kobolt supérieure")) {
+        let roll = 0
+        let lvlMetier = args.slice(7).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du marteau de kobolt supérieur")) {
+        let roll = 0
+        let lvlMetier = args.slice(6).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la hache de kobolt supérieure")) {
+        let roll = 0
+        let lvlMetier = args.slice(7).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la hallebarde de kobolt supérieure")) {
+        let roll = 0
+        let lvlMetier = args.slice(7).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la rapière de kobolt supérieure")) {
+        let roll = 0
+        let lvlMetier = args.slice(7).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du cimeterre de kobolt supérieur")) {
+        let roll = 0
+        let lvlMetier = args.slice(6).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du sabre de kobolt supérieur")) {
+        let roll = 0
+        let lvlMetier = args.slice(6).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune commune d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune commune d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune commune d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure d'esquive.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du katana de kobolt supérieur")) {
+        let roll = 0
+        let lvlMetier = args.slice(6).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du nodachi de kobolt supérieur")) {
+        let roll = 0
+        let lvlMetier = args.slice(6).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du pavois de kobolt supérieur")) {
+        let roll = 0
+        let lvlMetier = args.slice(6).join(" : ");
+        const lvlArme = 3
+        if (lvlMetier < lvlArme) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (lvlMetier == lvlArme) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 21 && roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 35) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 36) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 31 && roll <= 45) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 46 && roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (lvlMetier > (lvlArme + 2)) {
+            roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 51 && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 76 && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 91) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
 // Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt supérieur | Amélioration
 
 bot.on('message', message => {
@@ -24623,1774 +26393,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'espadon de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la dague de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la marteau de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la masse de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la hallebarde de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de la hache de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de kobolt supérieure :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du sabre de kobolt supérieur")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur à deux mains :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du cimeterre de kobolt supérieur")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du nodachi de kobolt supérieur")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte de l'épée de kobolt supérieure")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Fonte du pavois de kobolt supérieur")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 3
-        if (lvlMetier < lvlArme) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune mineure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune commune de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous obtenez une rune majeure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois de kobolt supérieur :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-    }
-});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon de kobolt supérieure")) {
