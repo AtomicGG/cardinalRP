@@ -230,6 +230,7 @@ bot.on('message', message => {
             .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Ces classes vous permettent de déclencher, autant de fois que vous le voulez par jour mais uniquement en PVE, une compétence unique et très puissante !\n\n" +
                 "Pour voir les différentes compétences secondaires :\n" +
                 "`=Liste des compétences secondaires de classes`")
+                .addBlankField(true)
             .addField(":diamond_shape_with_a_dot_inside: Les classes :", "Une classe vous permet aussi de gagner des bonus selon votre niveau, vous aurez plus d'informations en écrivant :\n\n" +
                 "`=Niveaux`")
             .addBlankField(true)
