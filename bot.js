@@ -19087,7 +19087,7 @@ bot.on('message', message => {
         const degatcrit1 = Math.floor((atk * 0.1 + 1) * Math.random() + (atk * 2.2))
         const degatcrit2 = Math.floor((atk * 0.1 + 1) * Math.random() + (atk * 2.2))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 40) {
+        if (roll <= 60) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -19097,7 +19097,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (41 <= roll && roll <= 90) {
+        if (61 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
