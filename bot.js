@@ -578,17 +578,17 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les hallebardes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
-                "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+            .addField("Les hallebardes :", "Ce sont des armes d'hast polyvalentes comportants, au bout d'une hampe en bois, une pointe de lance, un fer de hache et un bec de corbin.\n\n" +
+                "Elles sont à deux mains !\n\n" +
+                "Elles donnent généralement un bonus en Coup circulaire de +2.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup glissé : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
+                "`=Coup grandiose : [Votre attaque]`")
+            .setImage("https://www.lerepairedudragon.fr/55609-large_default/hallebarde.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
