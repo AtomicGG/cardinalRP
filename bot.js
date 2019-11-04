@@ -889,6 +889,63 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Tableau des niveaux")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Tableau des niveaux de 2 à 15 :", "Niveau 2 : 200 points d'expérience nécessaires !\n" +
+                "Niveau 3 : 400 points d'expérience nécessaires !\n" +
+                "Niveau 4 : 600 points d'expérience nécessaires !\n" +
+                "Niveau 5 : 800 points d'expérience nécessaires !\n" +
+                "Niveau 6 : 1100 points d'expérience nécessaires !\n" +
+                "Niveau 7 : 1400 points d'expérience nécessaires !\n" +
+                "Niveau 8 : 1700 points d'expérience nécessaires !\n" +
+                "Niveau 9 : 2000 points d'expérience nécessaires !\n" +
+                "Niveau 10 : 2300 points d'expérience nécessaires !\n" +
+                "Niveau 11 : 2700 points d'expérience nécessaires !\n" +
+                "Niveau 12 : 3100 points d'expérience nécessaires !\n" +
+                "Niveau 13 : 3500 points d'expérience nécessaires !\n" +
+                "Niveau 14 : 3900 points d'expérience nécessaires !\n" +
+                "Niveau 15 : 4300 points d'expérience nécessaires !")
+            .addBlankField(true)
+            .addField("Tableau des niveaux de 16 à 30 :", "Niveau 16 : 4800 points d'expérience nécessaires !\n" +
+                "Niveau 17 : 5300 points d'expérience nécessaires !\n" +
+                "Niveau 18 : 5800 points d'expérience nécessaires !\n" +
+                "Niveau 19 : 6300 points d'expérience nécessaires !\n" +
+                "Niveau 20 : 6800 points d'expérience nécessaires !\n" +
+                "Niveau 21 : 7600 points d'expérience nécessaires !\n" +
+                "Niveau 22 : 8400 points d'expérience nécessaires !\n" +
+                "Niveau 23 : 9200 points d'expérience nécessaires !\n" +
+                "Niveau 24 : 10000 points d'expérience nécessaires !\n" +
+                "Niveau 25 : 10800 points d'expérience nécessaires !\n" +
+                "Niveau 26 : 12000 points d'expérience nécessaires !\n" +
+                "Niveau 27 : 13200 points d'expérience nécessaires !\n" +
+                "Niveau 28 : 14400 points d'expérience nécessaires !\n" +
+                "Niveau 29 : 15600 points d'expérience nécessaires !\n" +
+                "Niveau 30 : 16800 points d'expérience nécessaires !")
+            .addField("Tableau des niveaux de 31 à 45 :", "Niveau 31 : 18500 points d'expérience nécessaires !\n" +
+                "Niveau 32 : 20200 points d'expérience nécessaires !\n" +
+                "Niveau 33 : 21900 points d'expérience nécessaires !\n" +
+                "Niveau 34 : 23600 points d'expérience nécessaires !\n" +
+                "Niveau 35 : 25300 points d'expérience nécessaires !\n" +
+                "Niveau 36 : 27500 points d'expérience nécessaires !\n" +
+                "Niveau 37 : 29700 points d'expérience nécessaires !\n" +
+                "Niveau 38 : 31900 points d'expérience nécessaires !\n" +
+                "Niveau 39 : 34100 points d'expérience nécessaires !\n" +
+                "Niveau 40 : 36300 points d'expérience nécessaires !\n" +
+                "Niveau 41 : 39100 points d'expérience nécessaires !\n" +
+                "Niveau 42 : 41900 points d'expérience nécessaires !\n" +
+                "Niveau 43 : 44700 points d'expérience nécessaires !\n" +
+                "Niveau 44 : 47500 points d'expérience nécessaires !\n" +
+                "Niveau 45 : 50300 points d'expérience nécessaires !")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Calculateur des statistiques d'un combattant")) {
         let niveau = message.content.slice(message.content.lastIndexOf(':') + 2)
         let niveauInt = niveau - 0
@@ -1330,48 +1387,6 @@ bot.on('message', message => {
                 "Niveau 28 : Vous gagnez 4.5 points d'armure et 30 HP et 3 points de dégât !\n\n" +
                 "Niveau 29 : Vous gagnez 4.5 points d'armure et 30 HP et 3 points de dégât !\n\n" +
                 "Niveau 30 : Vous gagnez 4.5 points d'armure et 35 HP et 6 points de dégât !")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Tableau des niveaux")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Tableau des niveaux de 2 à 15 :", "Niveau 2 : 200/16800 points d'expérience nécessaires !\n" +
-                "Niveau 3 : 400/16800 points d'expérience nécessaires !\n" +
-                "Niveau 4 : 600/16800 points d'expérience nécessaires !\n" +
-                "Niveau 5 : 800/16800 points d'expérience nécessaires !\n" +
-                "Niveau 6 : 1100/16800 points d'expérience nécessaires !\n" +
-                "Niveau 7 : 1400/16800 points d'expérience nécessaires !\n" +
-                "Niveau 8 : 1700/16800 points d'expérience nécessaires !\n" +
-                "Niveau 9 : 2000/16800 points d'expérience nécessaires !\n" +
-                "Niveau 10 : 2300/16800 points d'expérience nécessaires !\n" +
-                "Niveau 11 : 2700/16800 points d'expérience nécessaires !\n" +
-                "Niveau 12 : 3100/16800 points d'expérience nécessaires !\n" +
-                "Niveau 13 : 3500/16800 points d'expérience nécessaires !\n" +
-                "Niveau 14 : 3900/16800 points d'expérience nécessaires !\n" +
-                "Niveau 15 : 4300/16800 points d'expérience nécessaires !")
-            .addBlankField(true)
-            .addField("Tableau des niveaux de 16 à 30 :", "Niveau 16 : 4800/16800 points d'expérience nécessaires !\n" +
-                "Niveau 17 : 5300/16800 points d'expérience nécessaires !\n" +
-                "Niveau 18 : 5800/16800 points d'expérience nécessaires !\n" +
-                "Niveau 19 : 6300/16800 points d'expérience nécessaires !\n" +
-                "Niveau 20 : 6800/16800 points d'expérience nécessaires !\n" +
-                "Niveau 21 : 7600/16800 points d'expérience nécessaires !\n" +
-                "Niveau 22 : 8400/16800 points d'expérience nécessaires !\n" +
-                "Niveau 23 : 9200/16800 points d'expérience nécessaires !\n" +
-                "Niveau 24 : 10000/16800 points d'expérience nécessaires !\n" +
-                "Niveau 25 : 10800/16800 points d'expérience nécessaires !\n" +
-                "Niveau 26 : 12000/16800 points d'expérience nécessaires !\n" +
-                "Niveau 27 : 13200/16800 points d'expérience nécessaires !\n" +
-                "Niveau 28 : 14400/16800 points d'expérience nécessaires !\n" +
-                "Niveau 29 : 15600/16800 points d'expérience nécessaires !\n" +
-                "Niveau 30 : 16800/16800 points d'expérience nécessaires !")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
