@@ -18100,6 +18100,37 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Coups jumeaux")) {
+        let degats = args.slice(2).join(" : ");
+        const degat1 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.3))
+        const degat2 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.3))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 35) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coups Jumeaux :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (36 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coups Jumeaux :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "` points de dégâts et `" + degat2 + "` points de dégâts. (Les cibles de chaque coup peuvent être désignées de manière indépendante)")
+                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Compétences de classe | Assassin
 
 bot.on('message', message => {
@@ -18135,6 +18166,32 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Voile sombre")) {
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Voile sombre :", ":crossed_swords: Vous ratez votre Voile sombre et restez visible de tous. ")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Voile sombre :", ":crossed_swords: Vous réussissez votre Voile sombre et devenez invisible jusqu'à ce que vous reussissez une autre action. Si l'action réussie est une attaque, la ou les cible(s) ne pourront pas se défendre. (Les coups de zone sont toujours capable de vous blesser)")
+                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Compétences de classe | Chevalier
 
 bot.on('message', message => {
@@ -18165,194 +18222,6 @@ bot.on('message', message => {
             setTimeout(() => {
                 talkedRecently.delete(message.author.id + 106);
             }, 86400000);
-        }
-    }
-});
-
-// Compétences de classe | Paladin
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Paladin")) {
-        if (talkedRecently.has(message.author.id + 105)) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Cooldown :", " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-                .setTimestamp()
-            message.channel.send({ embed })
-        } else {
-            let def = args.slice(1).join(" : ");
-            const soin = Math.floor(def * 1.5)
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Compétence du paladin :", "Vous déclenchez votre compétence appartenant à tous les paladins. Vous vous soignez de `" + soin + "` points de vie et jusqu'à deux autres personnes de `" + def + "` points de vie. Ensuite, vous vous soignez les deux prochains tours de `" + def + "` points de vie !")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-            talkedRecently.add(message.author.id + 105);
-            setTimeout(() => {
-                talkedRecently.delete(message.author.id + 105);
-            }, 86400000);
-        }
-    }
-});
-
-// Compétences de classe | Vindicateur
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Vindicateur")) {
-        if (talkedRecently.has(message.author.id + 104)) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Cooldown :", " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-                .setTimestamp()
-            message.channel.send({ embed })
-        } else {
-            let def = args.slice(1).join(" : ");
-            const defFinale = Math.floor(def * (2 / 3))
-            const degat = Math.floor(def * 7 / 6)
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Compétence du vindicateur :", "Vous déclenchez votre compétence appartenant à tous les vindicateurs. Pendant 3 tours maximum, votre armure diminue jusqu'à `" + defFinale + "` et vous gagnez `" + degat + "` points d'attaque ! Vous pouvez révoquer l'effet quand vous le souhaitez.")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-            talkedRecently.add(message.author.id + 104);
-            setTimeout(() => {
-                talkedRecently.delete(message.author.id + 104);
-            }, 86400000);
-        }
-    }
-});
-
-// Compétences de classe | Berserker
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Berserker")) {
-        if (talkedRecently.has(message.author.id + 103)) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Cooldown :", " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
-                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-                .setTimestamp()
-            message.channel.send({ embed })
-        } else {
-            let atk = args.slice(1).join(" : ");
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Compétence du berserker :", "Vous déclenchez votre compétence appartenant à tous les berserkers. Pour les 3 prochains coups, vous récupérez `" + atk + "` de points de vie à chaque fois que vous infligez des dommages avec une attaque ! Le berserker peut attaquer juste après l'activation de sa compétence.")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-            talkedRecently.add(message.author.id + 103);
-            setTimeout(() => {
-                talkedRecently.delete(message.author.id + 103);
-            }, 86400000);
-        }
-    }
-});
-
-// Compétences de classe 2 | En test
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Coups jumeaux")) {
-        let degats = args.slice(2).join(" : ");
-        const degat1 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.3))
-        const degat2 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.3))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 35) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Coups Jumeaux :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (36 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Coups Jumeaux :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "` points de dégâts et `" + degat2 + "` points de dégâts. (Les cibles de chaque coup peuvent être désignées de manière indépendante)")
-                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Tenacité")) {
-        let degat = args.slice(1).join(" : ");
-        const degatEchecCrit = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1.1))
-        const degatEchec = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.9))
-        const degatReussite = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 0.85))
-        const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 0.7))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 5) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Tenacité :", ":shield: Vous ratez critiquement votre tentative de ténacité et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts. Vous ne gagnez aucune charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
-                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (6 <= roll && roll <= 35) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Tenacité :", ":shield: Vous ratez votre tentative de ténacité et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts. Vous gagnez une charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
-                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (36 <= roll && roll <= 95) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Tenacité :", ":shield: Vous réussissez votre tentative de ténacité et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts. Vous gagnez une charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
-                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (96 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Tenacité :", ":shield: Vous réussissez critiquement votre tentative de ténacité et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts. Vous gagnez une charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
-                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
-                .setTimestamp()
-            message.channel.send({ embed })
         }
     }
 });
@@ -18413,28 +18282,36 @@ bot.on('message', message => {
     }
 });
 
+// Compétences de classe | Paladin
+
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Voile sombre")) {
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Paladin")) {
+        if (talkedRecently.has(message.author.id + 105)) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Voile sombre :", ":crossed_swords: Vous ratez votre Voile sombre et restez visible de tous. ")
-                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .addField("Cooldown :", " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (71 <= roll) {
+        } else {
+            let def = args.slice(1).join(" : ");
+            const soin = Math.floor(def * 1.5)
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Voile sombre :", ":crossed_swords: Vous réussissez votre Voile sombre et devenez invisible jusqu'à ce que vous reussissez une autre action. Si l'action réussie est une attaque, la ou les cible(s) ne pourront pas se défendre. (Les coups de zone sont toujours capable de vous blesser)")
-                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .addField("Compétence du paladin :", "Vous déclenchez votre compétence appartenant à tous les paladins. Vous vous soignez de `" + soin + "` points de vie et jusqu'à deux autres personnes de `" + def + "` points de vie. Ensuite, vous vous soignez les deux prochains tours de `" + def + "` points de vie !")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
             message.channel.send({ embed })
+            talkedRecently.add(message.author.id + 105);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 105);
+            }, 86400000);
         }
     }
 });
@@ -18461,6 +18338,127 @@ bot.on('message', message => {
                 .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
                 .setTimestamp()
             message.channel.send({ embed })
+        }
+    }
+});
+
+// Compétences de classe | Vindicateur
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Vindicateur")) {
+        if (talkedRecently.has(message.author.id + 104)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Cooldown :", " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            let def = args.slice(1).join(" : ");
+            const defFinale = Math.floor(def * (2 / 3))
+            const degat = Math.floor(def * 7 / 6)
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Compétence du vindicateur :", "Vous déclenchez votre compétence appartenant à tous les vindicateurs. Pendant 3 tours maximum, votre armure diminue jusqu'à `" + defFinale + "` et vous gagnez `" + degat + "` points d'attaque ! Vous pouvez révoquer l'effet quand vous le souhaitez.")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+            talkedRecently.add(message.author.id + 104);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 104);
+            }, 86400000);
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Tenacité")) {
+        let degat = args.slice(1).join(" : ");
+        const degatEchecCrit = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1.1))
+        const degatEchec = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.9))
+        const degatReussite = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 0.85))
+        const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 0.7))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 5) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Tenacité :", ":shield: Vous ratez critiquement votre tentative de ténacité et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchecCrit + "` points de dégâts. Vous ne gagnez aucune charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
+                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (6 <= roll && roll <= 35) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Tenacité :", ":shield: Vous ratez votre tentative de ténacité et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts. Vous gagnez une charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
+                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (36 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Tenacité :", ":shield: Vous réussissez votre tentative de ténacité et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts. Vous gagnez une charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
+                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Tenacité :", ":shield: Vous réussissez critiquement votre tentative de ténacité et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussiteCrit + "` points de dégâts. Vous gagnez une charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
+                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+// Compétences de classe | Berserker
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Berserker")) {
+        if (talkedRecently.has(message.author.id + 103)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Cooldown :", " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            let atk = args.slice(1).join(" : ");
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Compétence du berserker :", "Vous déclenchez votre compétence appartenant à tous les berserkers. Pour les 3 prochains coups, vous récupérez `" + atk + "` de points de vie à chaque fois que vous infligez des dommages avec une attaque ! Le berserker peut attaquer juste après l'activation de sa compétence.")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+            talkedRecently.add(message.author.id + 103);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 103);
+            }, 86400000);
         }
     }
 });
@@ -18547,7 +18545,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Epée | En test
+// Compétences d'armes | Epée 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18590,7 +18588,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Espadon | En test
+// Compétences d'armes | Espadon 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18697,7 +18695,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Dague | En test
+// Compétences d'armes | Dague 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18741,7 +18739,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Masse | En test
+// Compétences d'armes | Masse 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18784,7 +18782,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Massue | En test
+// Compétences d'armes | Massue 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18827,7 +18825,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Hache | En test
+// Compétences d'armes | Hache 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18871,7 +18869,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Hallebarde | En test
+// Compétences d'armes | Hallebarde 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18914,7 +18912,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Rapière | En test
+// Compétences d'armes | Rapière 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18957,7 +18955,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Cimeterre | En test
+// Compétences d'armes | Cimeterre 
 
 bot.on('message', message => {
     const args = message.content;
@@ -18989,7 +18987,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Sabre | En test
+// Compétences d'armes | Sabre 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19032,7 +19030,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Katana | En test
+// Compétences d'armes | Katana 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19075,7 +19073,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Nodachi | En test
+// Compétences d'armes | Nodachi 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19120,7 +19118,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Bâton | En test
+// Compétences d'armes | Bâton 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19165,7 +19163,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Lance | En test
+// Compétences d'armes | Lance 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19208,7 +19206,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Cestes | En test
+// Compétences d'armes | Cestes 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19240,7 +19238,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Bouclier | En test
+// Compétences d'armes | Bouclier 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19283,7 +19281,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Rondache | En test
+// Compétences d'armes | Rondache 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19315,7 +19313,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Ecu | En test
+// Compétences d'armes | Ecu 
 
 bot.on('message', message => {
     const args = message.content;
@@ -19348,7 +19346,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Targe | En test
+// Compétences d'armes | Targe 
 
 bot.on('message', message => {
     const args = message.content;
