@@ -622,7 +622,7 @@ bot.on('message', message => {
                 "Elles donnent généralement un bonus en Esquive de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup débilitant : [Votre attaque]`")
-            .setImage("https://www.boutique-epees.fr/14854-large_default/cimitarra-arabe-funcional.jpg")
+            .setImage("https://www.couteaux-center.com/boutique/images_produits/7060x-z.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
