@@ -687,7 +687,7 @@ bot.off('message', message => {
             .setColor(3447003)
             .addField("Les bâtons :", "Ce sont de très longs bâtons en bois, parfois recouverts de métal, mesurant environ 1m80.\n\n" +
                 "Elles sont à deux mains !\n\n" +
-                "Elles donnent généralement un bonus en ??? de +2.\n\n" +
+                "Elles donnent généralement un bonus en Coup sauté de +2.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup en rafale : [Votre attaque]`")
             .setImage("https://vignette.wikia.nocookie.net/warframe/images/5/51/DEBo.png/revision/latest?cb=20151123070024&path-prefix=fr")
@@ -704,7 +704,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les lances :", "Ce sont des armes d'hast dotées d'un fer emmanché sur une hampe ou long bois et, pour certaines d'entre elles, d'un talon métallique qui sert en général à équilibrer l'arme tenue en main et à la planter dans le sol.\n\n" +
                 "Elles sont à deux mains !\n\n" +
-                "Elles donnent généralement un bonus en ??? de +2.\n\n" +
+                "Elles donnent généralement un bonus en Coup perce armure de +2.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup révélateur : [Votre attaque]`")
             .setImage("https://www.dragonsports.eu/117624-verylarge_default/lance-demontable.jpg")
