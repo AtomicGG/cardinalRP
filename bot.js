@@ -1368,7 +1368,17 @@ bot.on('message', message => {
                 "Niveau 28 : Vous gagnez 9 points de dégât et 30 HP et 1,5 points d'armure !\n\n" +
                 "Niveau 29 : Vous gagnez 9 points de dégât et 30 HP et 1,5 points d'armure !\n\n" +
                 "Niveau 30 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .addBlankField(true)
+                .addField("Les bonus des niveaux pour Berserker de 31 à 40 :", "Niveau 31 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
+                    "Niveau 32 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
+                    "Niveau 33 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n " +
+                    "Niveau 34 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
+                    "Niveau 35 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
+                    "Niveau 36 : Vous gagnez 9 points de dégât et 35 HP et 3 points d'armure !\n\n" +
+                    "Niveau 37 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
+                    "Niveau 38 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
+                    "Niveau 39 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !\n\n" +
+                    "Niveau 40 : Vous gagnez 12 points de dégât et 45 HP et 3 points d'armure !")
             .setTimestamp()
         message.channel.send({ embed })
     }
