@@ -480,6 +480,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde." +
+                "Elles sont à une main !.\n\n" +
                 "Elles donnent généralement un bonus en Combo de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup glissé : [Votre attaque]`")
