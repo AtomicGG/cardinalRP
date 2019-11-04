@@ -313,9 +313,6 @@ bot.on('message', message => {
             .addField(":cyclone: Burning slash", ":cyclone: Compétence d'un coup qui inflige des dégâts pouvant enflammer la cible, votre arme devient d'une couleur rouge clair étrange !\n\n" +
                 "`=Burning slash : [Vos dégâts]`")
             .addBlankField(true)
-            .addField(":cyclone: Sonic leap", ":cyclone: Compétence qui n'inflige pas de dégâts mais qui possède de grandes chances de charmer la cible !\n\n" +
-                "`=Sonic leap`")
-            .addBlankField(true)
             .addField(":book: Suite :", ":book: Pour voir la suite des compétences existantes, écrivez :\n\n=Liste des compétences 2")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
