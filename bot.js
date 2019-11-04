@@ -924,6 +924,7 @@ bot.on('message', message => {
                 "Niveau 28 : 14400 points d'expérience nécessaires !\n" +
                 "Niveau 29 : 15600 points d'expérience nécessaires !\n" +
                 "Niveau 30 : 16800 points d'expérience nécessaires !")
+            .addBlankField(true)
             .addField("Tableau des niveaux de 31 à 45 :", "Niveau 31 : 18500 points d'expérience nécessaires !\n" +
                 "Niveau 32 : 20200 points d'expérience nécessaires !\n" +
                 "Niveau 33 : 21900 points d'expérience nécessaires !\n" +
