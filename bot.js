@@ -758,21 +758,21 @@ bot.on('message', message => {
                 "Elles donnent généralement un bonus en ??? de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup à revers : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Rondache_-_MAP_-_I_74.JPG/800px-Rondache_-_MAP_-_I_74.JPG")
+            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/640975161855836160/800px-Rondache_-_MAP_-_I_74.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les écus") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
+            .addField("Les écus :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+                "Elles donnent généralement un bonus en ??? de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup glissé : [Votre attaque]`")
             .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
