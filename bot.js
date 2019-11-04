@@ -34021,7 +34021,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Récompenses du Taureau bossu vaincu 5000 XP, 50 000 cols puis 2 minute après, vous avez un reset de perso ou vous perdez votre level, argent, équipement. Cela va vous apprendre a découvrir les choses sans les avoir tué.")
+            .addField("Récompenses du Taureau bossu vaincu : 450XP, 10 000 cols par joueur et pour la personne suivante qui a réalisé le dernier coup (c'est à dire Lyn), elle reçoit un `Chakram`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
