@@ -5564,7 +5564,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Liste des armes de kobolt supérieures :", "=Epée de kobolt supérieure\n=Espadon de kobolt supérieure\n=Dague de kobolt supérieure\n=Masse de kobolt supérieure\n=Massue de kobolt supérieure\n=Hache de kobolt supérieure\n=Hallebarde de kobolt supérieure\n=Rapière de kobolt supérieure\n=Cimeterre de kobolt supérieure\n=Sabre de kobolt supérieure\n=Katana de kobolt supérieure\n=Nodachi de kobolt supérieure\n=Pavois de kobolt supérieure")
+                .addField(":scales: Liste des armes de kobolt supérieures :", "=Epée de kobolt supérieure\n=Espadon de kobolt supérieur\n=Dague de kobolt supérieure\n=Masse de kobolt supérieure\n=Massue de kobolt supérieure\n=Hache de kobolt supérieure\n=Hallebarde de kobolt supérieure\n=Rapière de kobolt supérieure\n=Cimeterre de kobolt supérieur\n=Sabre de kobolt supérieur\n=Katana de kobolt supérieur\n=Nodachi de kobolt supérieur\n=Pavois de kobolt supérieur")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
             message.channel.send({ embed })
