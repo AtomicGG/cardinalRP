@@ -713,7 +713,7 @@ bot.off('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Les cestes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -731,17 +731,17 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les pavois") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
+            .addField("Les pavois :", "Ce sont de grands boucliers de forme ovale ou quadrangulaire.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+                "Elles donnent généralement un bonus en Blocage de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup glissé : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
+                "`=Carapace métallique : [Votre armure]`")
+            .setImage("https://imaginaire.com/fr/images/BOUCLIERS-PAVOIS-D-INFANTERIE-120-CM-X-60-CM__403074_2-Z.JPG")
             .setTimestamp()
         message.channel.send({ embed })
     }
