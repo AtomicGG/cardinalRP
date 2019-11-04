@@ -9992,6 +9992,191 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt supérieur | Achat/fabrication/découverte
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure")) {
+        const Dégâts = Math.floor(5 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epée de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon de kobolt supérieure")) {
+        const Dégâts = Math.floor(9 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Espadon de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague de kobolt supérieure")) {
+        const Dégâts = Math.floor(5 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Dague de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure")) {
+        const Dégâts = Math.floor(5 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Masse de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du marteau de kobolt supérieur")) {
+        const Dégâts = Math.floor(9 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Marteau de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure")) {
+        const Dégâts = Math.floor(5 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Hache de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hallebarde de kobolt supérieure")) {
+        const Dégâts = Math.floor(9 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Hallebarde de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt supérieure")) {
+        const Dégâts = Math.floor(5 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Rapière de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt supérieur")) {
+        const Dégâts = Math.floor(5 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cimeterre de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du sabre de kobolt supérieur")) {
+        const Dégâts = Math.floor(9 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Sabre de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur")) {
+        const Dégâts = Math.floor(5 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Katana de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du nodachi de kobolt supérieur")) {
+        const Dégâts = Math.floor(9 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Nodachi de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du pavois de kobolt supérieur")) {
+        const Défense = Math.floor(3 * Math.random() + 6)
+        const HP = Math.floor(11 * Math.random() + 15)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Pavois de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt supérieur | Fonte
 
 bot.on('message', message => {
@@ -26393,189 +26578,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon de kobolt supérieure")) {
-        const Dégâts = Math.floor(9 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Espadon de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hallebarde de kobolt supérieure")) {
-        const Dégâts = Math.floor(9 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Hallebarde de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la marteau de kobolt supérieure")) {
-        const Dégâts = Math.floor(9 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Marteau de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du sabre de kobolt supérieur")) {
-        const Dégâts = Math.floor(9 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Sabre de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du nodachi de kobolt supérieur")) {
-        const Dégâts = Math.floor(9 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Nodachi de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure")) {
-        const Dégâts = Math.floor(5 * Math.random() + 10)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epée de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache de kobolt supérieure")) {
-        const Dégâts = Math.floor(5 * Math.random() + 10)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Hache de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse de kobolt supérieure")) {
-        const Dégâts = Math.floor(5 * Math.random() + 10)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Masse de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière de kobolt supérieure")) {
-        const Dégâts = Math.floor(5 * Math.random() + 10)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Rapière de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre de kobolt supérieur")) {
-        const Dégâts = Math.floor(5 * Math.random() + 10)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cimeterre de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana de kobolt supérieur")) {
-        const Dégâts = Math.floor(5 * Math.random() + 10)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Katana de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague de kobolt supérieure")) {
-        const Dégâts = Math.floor(5 * Math.random() + 10)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Dague de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du pavois de kobolt supérieur")) {
-        const Défense = Math.floor(3 * Math.random() + 6)
-        const HP = Math.floor(11 * Math.random() + 15)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Pavois de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Espadon basique")) {
