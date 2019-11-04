@@ -481,7 +481,8 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde." +
                 "Elles donnent généralement un bonus en Combo de +1.\n\n" +
-                "Elles vous donnent accès à la compétence suivante : `=Coup glissé : [Votre attaque]`")
+                "Elles vous donnent accès à la compétence suivante : \n" +
+                "`=Coup glissé : [Votre attaque]`")
             .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
             .setTimestamp()
         message.channel.send({ embed })
