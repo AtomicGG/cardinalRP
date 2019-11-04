@@ -247,17 +247,17 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":diamond_shape_with_a_dot_inside: Les compétences principales :", "`=Combattant : [Vos dégâts]`\n" +
-            "Cette compétence inflige deux coups distincts, l'un diminuant l'attaque adverse, l'autre la défense adverse.\n\n" +
-            "`=Assassin : [Vos dégâts]`\n" +
-            "Cette compétence augmente votre attaque pendant un laps de temps puis inflige un grand coup.\n\n" +
-            "`=Chevalier : [Votre armure]`\n" +
-            "Cette compétence crée une barre d'armure de vie durant un laps de temps.\n\n" +
-            "`=Paladin : [Votre armure]`\n" +
-            "Cette compétence vous soigne ainsi que deux compères.\n\n" +
-            "`=Vindicateur : [Votre armure]`\n" +
-            "Cette compétence diminue votre armure mais augmente votre attaque durant un laps de temps.\n\n" +
-            "`=Berserker : [Vos dégâts]`\n" +
-            "Cette compétence permet à votre 3 prochains coups de vous soigner.")
+                "Cette compétence inflige deux coups distincts, l'un diminuant l'attaque adverse, l'autre la défense adverse.\n\n" +
+                "`=Assassin : [Vos dégâts]`\n" +
+                "Cette compétence augmente votre attaque pendant un laps de temps puis inflige un grand coup.\n\n" +
+                "`=Chevalier : [Votre armure]`\n" +
+                "Cette compétence crée une barre d'armure de vie durant un laps de temps.\n\n" +
+                "`=Paladin : [Votre armure]`\n" +
+                "Cette compétence vous soigne ainsi que deux compères.\n\n" +
+                "`=Vindicateur : [Votre armure]`\n" +
+                "Cette compétence diminue votre armure mais augmente votre attaque durant un laps de temps.\n\n" +
+                "`=Berserker : [Vos dégâts]`\n" +
+                "Cette compétence permet à votre 3 prochains coups de vous soigner.")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -270,17 +270,17 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":diamond_shape_with_a_dot_inside: Les compétences secondaires :", "- Combattant : `=Coups jumeaux : [Vos dégâts]`\n" +
-            "Le lanceur frappe les adversaires à deux reprises, chacun des coups pouvant être dirigé indépendamment l'un de l'autre. Fait des dégâts à une ou deux cibles, les coups peuvent être concentrés sur une seule ou sur deux.\n\n" +
-            "- Assassin : `=Voile sombre`\n" +
-            "Rend le lanceur invisible et impossible à viser directement par les adversaires. Le lanceur n'est plus pris en compte lors des =Ciblage, les coups en zone touchant toute l'équipe peuvent toujours l'atteindre.\n\n" +
-            "- Chevalier : `=Barrage violent : [Les dégâts adverses]`\n" +
-            "Le lanceur bloque une attaque tout en repoussant l'adversaire et redirigeant une partie de ses dégâts contre lui.\n\n" +
-            "- Paladin : `=Bénédiction`\n" +
-            "Soigne légèrement une cible et lui retire toute altération d'états néfastes.\n\n" +
-            "- Vindicateur : `=Ténacité : [Les dégâts adverses]`\n" +
-            "Permet au lanceur d'augmenter son armure pour 3 tours en gagnant des 'Charge de Tenacité', lorsque 3 charges sont réunies les nombres de tours sont réinitialisé à chaque utilisation.\n\n" +
-            "- Berserker : `=Coup enchaîné : [Vos dégâts]` & `=Coup déchaîné : [Vos dégâts]`\n" +
-            "Frappe l'adversaire à l'aide d'un coup enchaîné plaçant une charge sur celle-ci, après 2 charges placée, le lanceur libère une attaque déchaîné faisant de gros dégâts.")
+                "Le lanceur frappe les adversaires à deux reprises, chacun des coups pouvant être dirigé indépendamment l'un de l'autre. Fait des dégâts à une ou deux cibles, les coups peuvent être concentrés sur une seule ou sur deux.\n\n" +
+                "- Assassin : `=Voile sombre`\n" +
+                "Rend le lanceur invisible et impossible à viser directement par les adversaires. Le lanceur n'est plus pris en compte lors des =Ciblage, les coups en zone touchant toute l'équipe peuvent toujours l'atteindre.\n\n" +
+                "- Chevalier : `=Barrage violent : [Les dégâts adverses]`\n" +
+                "Le lanceur bloque une attaque tout en repoussant l'adversaire et redirigeant une partie de ses dégâts contre lui.")
+                /*"- Paladin : `=Bénédiction`\n" +
+                "Soigne légèrement une cible et lui retire toute altération d'états néfastes.\n\n" +
+                "- Vindicateur : `=Ténacité : [Les dégâts adverses]`\n" +
+                "Permet au lanceur d'augmenter son armure pour 3 tours en gagnant des 'Charge de Tenacité', lorsque 3 charges sont réunies les nombres de tours sont réinitialisé à chaque utilisation.\n\n" +
+                "- Berserker : `=Coup enchaîné : [Vos dégâts]` & `=Coup déchaîné : [Vos dégâts]`\n" +
+                "Frappe l'adversaire à l'aide d'un coup enchaîné plaçant une charge sur celle-ci, après 2 charges placée, le lanceur libère une attaque déchaîné faisant de gros dégâts.")*/
             .setTimestamp()
         message.channel.send({ embed })
     }
