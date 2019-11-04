@@ -663,17 +663,17 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les épées") {
+    if (message.content === (prefix) + "Les nodachis") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les épées :", "Ce sont des armes blanches à double tranchant, composées d'une lame droite en métal, d'une poignée et parfois d'une garde.\n\n" +
-                "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en Combo de +1.\n\n" +
+            .addField("Les nodachis :", "Ce sont de longs katanas que l'on manipule à deux mains.\n\n" +
+                "Elles sont à deux mains !\n\n" +
+                "Elles donnent généralement un bonus en Parade de +2.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup glissé : [Votre attaque]`")
-            .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Trp-Sword-14226124129-v06.png/800px-Trp-Sword-14226124129-v06.png")
+                "`=Coup du cerisier : [Votre attaque]`")
+            .setImage("https://upload.wikimedia.org/wikipedia/commons/3/36/Nodachi.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -18854,7 +18854,6 @@ bot.on('message', message => {
         let atk = args.slice(position + 2);
         const degat = Math.floor((atk * 0.5 + 1) * Math.random() + (atk * 1.7))
         const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2.2))
-        const boostdegat = Math.floor((atk * 0.15 + 1) * Math.random() + (atk * 0.35))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 40) {
             const embed = new Discord.RichEmbed()
@@ -18881,7 +18880,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup grandiose :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit + "` points de dégâts et amplifie votre prochaine attaque qui fera `" + boostdegat + "` de point de dégâts en plus au prochain tour uniquement !")
+                .addField(":crossed_swords: Coup grandiose :", ":crossed_swords: Vous réussissez votre coup, vous êtes en position pour délivrer un coup dévastateur. Vous êtes dans l'incapacité de vous défendre pendant 1 tour mais au tour suivant vous infligerez `" + degatCrit + "` points de dégâts ce qui remplacera l'action du second tour de lancer !")
                 .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
                 .setTimestamp()
             message.channel.send({ embed })
