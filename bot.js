@@ -958,7 +958,7 @@ bot.on('message', message => {
         }
         if (50300 <= XP) {
             niveau = 45;
-            xpMax = "'En calcul'";
+            xpMax = " `En calcul`";
             caractéristique = 224;
             passage = true;
         }
@@ -1501,7 +1501,6 @@ bot.on('message', message => {
                 "Vous l'aurez compris, selon ce que vous voulez devenir, vous aurez le choix parmi ces trois attributs.\n\n" +
                 "Pour voir combien de points de caractéristiques vous gagnez selon votre niveau, écrivez :\n" +
                 "`=Tableau des caractéristiques`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -1529,8 +1528,37 @@ bot.on('message', message => {
                 "Niveau 14 : 3 points de caractéristiques suppplémentaires !\n" +
                 "Niveau 15 : 3 points de caractéristiques suppplémentaires !")
             .addBlankField(true)
-            .addField("Tableau des caractéristiques du niveau 16 à 30 :", "Niveau 16 : 4 points de caractéristiques supplémentaires !\nNiveau 17 : 4 points de caractéristiques supplémentaires !\nNiveau 18 : 4 points de caractéristiques supplémentaires !\nNiveau 19 : 4 points de caractéristiques supplémentaires !\nNiveau 20 : 4 points de caractéristiques supplémentaires !\nNiveau 21 : 5 points de caractéristiques supplémentaires !\nNiveau 22 : 5 points de caractéristiques supplémentaires !\nNiveau 23 : 5 points de caractéristiques supplémentaires !\nNiveau 24 : 5 points de caractéristiques supplémentaires !\nNiveau 25 : 5 points de caractéristiques supplémentaires !\nNiveau 26 : 6 points de caractéristiques supplémentaires !\nNiveau 27 : 6 points de caractéristiques supplémentaires !\nNiveau 28 : 6 points de caractéristiques supplémentaires !\nNiveau 29 : 6 points de caractéristiques supplémentaires !\nNiveau 30 : 6 points de caractéristiques supplémentaires !")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .addField("Tableau des caractéristiques du niveau 16 à 30 :", "Niveau 16 : 4 points de caractéristiques supplémentaires !\n" +
+                "Niveau 17 : 4 points de caractéristiques supplémentaires !\n" +
+                "Niveau 18 : 4 points de caractéristiques supplémentaires !\n" +
+                "Niveau 19 : 4 points de caractéristiques supplémentaires !\n" +
+                "Niveau 20 : 4 points de caractéristiques supplémentaires !\n" +
+                "Niveau 21 : 5 points de caractéristiques supplémentaires !\n" +
+                "Niveau 22 : 5 points de caractéristiques supplémentaires !\n" +
+                "Niveau 23 : 5 points de caractéristiques supplémentaires !\n" +
+                "Niveau 24 : 5 points de caractéristiques supplémentaires !\n" +
+                "Niveau 25 : 5 points de caractéristiques supplémentaires !\n" +
+                "Niveau 26 : 6 points de caractéristiques supplémentaires !\n" +
+                "Niveau 27 : 6 points de caractéristiques supplémentaires !\n" +
+                "Niveau 28 : 6 points de caractéristiques supplémentaires !\n" +
+                "Niveau 29 : 6 points de caractéristiques supplémentaires !\n" +
+                "Niveau 30 : 6 points de caractéristiques supplémentaires !")
+                .addBlankField(true)
+            .addField("Tableau des caractéristiques du niveau 31 à 45 :", "Niveau 31 : 7 points de caractéristiques supplémentaires !\n" +
+                "Niveau 32 : 7 points de caractéristiques supplémentaires !\n" +
+                "Niveau 33 : 7 points de caractéristiques supplémentaires !\n" +
+                "Niveau 34 : 7 points de caractéristiques supplémentaires !\n" +
+                "Niveau 35 : 7 points de caractéristiques supplémentaires !\n" +
+                "Niveau 36 : 8 points de caractéristiques supplémentaires !\n" +
+                "Niveau 37 : 8 points de caractéristiques supplémentaires !\n" +
+                "Niveau 38 : 8 points de caractéristiques supplémentaires !\n" +
+                "Niveau 39 : 8 points de caractéristiques supplémentaires !\n" +
+                "Niveau 40 : 8 points de caractéristiques supplémentaires !\n" +
+                "Niveau 41 : 9 points de caractéristiques supplémentaires !\n" +
+                "Niveau 42 : 9 points de caractéristiques supplémentaires !\n" +
+                "Niveau 43 : 9 points de caractéristiques supplémentaires !\n" +
+                "Niveau 44 : 9 points de caractéristiques supplémentaires !\n" +
+                "Niveau 45 : 9 points de caractéristiques supplémentaires !")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -33952,7 +33980,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Vallée combat")) {
         let joueurs = args.slice(2).join(" : ");
-        if ( talkedRecently.has(message.author.id+1000)) {
+        if (talkedRecently.has(message.author.id + 1000)) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34116,7 +34144,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Taureau bossu :")
-            .addField("Récompenses du Taureau bossu vaincu :","450XP, 10 000 cols, 5 carapaces de frelon foudroyants, 4 ailes de frelon foudroyant, 3 dards de frelon foudroyant, 3 yeux de frelon foudroyant par joueur et pour la personne suivante qui a réalisé le dernier coup (c'est à dire Lyn), elle reçoit un `Chakram`")
+            .addField("Récompenses du Taureau bossu vaincu :", "450XP, 10 000 cols, 5 carapaces de frelon foudroyants, 4 ailes de frelon foudroyant, 3 dards de frelon foudroyant, 3 yeux de frelon foudroyant par joueur et pour la personne suivante qui a réalisé le dernier coup (c'est à dire Lyn), elle reçoit un `Chakram`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
