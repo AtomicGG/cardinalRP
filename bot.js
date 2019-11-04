@@ -554,7 +554,7 @@ bot.on('message', message => {
                 "Elles donnent généralement un bonus en Coup provocateur de +2.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup explosif : [Votre attaque]`")
-            .setImage("https://i.mmo.cm/is/image/mmoimg/bigview/marteau-de-guerre-arme-factice--mw-121000-1.jpg")
+            .setImage("https://imaginaire.com/fr/images/MARTEAUX-MARTEAU-DE-GUERRE-MEDIEVAL-85-CM__402606-G.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
