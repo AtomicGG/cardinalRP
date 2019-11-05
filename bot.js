@@ -10801,6 +10801,25 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+    if (message.content === (prefix + "Liste d'armes 20")) {
+        message.channel.send("```Epée du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups]\n\n" +
+            "Espadon du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Espadon du clan des loups]\n\n" +
+            "Dague du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups]\n\n" +
+            "Masse du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups]\n\n" +
+            "Marteau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Marteau du clan des loups]\n\n" +
+            "Hache du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups]\n\n" +
+            "Hallebarde du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hallebarde du clan des loups]\n\n" +
+            "Rapière du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups]\n\n" +
+            "Cimeterre du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups]\n\n" +
+            "Sabre du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Sabre du clan des loups]\n\n" +
+            "Katana du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups]\n\n" +
+            "Nodachi du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Nodachi du clan des loups]\n\n" +
+            "Pavois du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Pavois du clan des loups]\n\n" +
+            "Suite en écrivant :\n=Liste d'armes 5```")
+    }
+});
+
+bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 3")) {
         message.channel.send("```Epée du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups]\n\n" +
             "Espadon du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Espadon du clan des loups]\n\n" +
