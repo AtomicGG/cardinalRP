@@ -32545,7 +32545,7 @@ bot.on('message', message => {
 // Compétences | blocage parfait
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Blocage parfait")) {
+    if (message.content.startsWith(prefix + "Revive Fukaa")) {
         if ( /*talkedRecently.has(message.author.id+5)*/ false) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -32589,7 +32589,7 @@ bot.on('message', message => {
 // Compétences | blocage parfait
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Revive Fukaa")) {
+    if (message.content.startsWith(prefix + "Revive fukaa")) {
         if ( /*talkedRecently.has(message.author.id+5)*/ false) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
