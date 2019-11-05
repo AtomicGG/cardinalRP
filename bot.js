@@ -32499,6 +32499,92 @@ bot.on('message', message => {
     }
 });
 
+// Compétences | Esquive parfaite
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Esquive parfaite")) {
+        if ( /*talkedRecently.has(message.author.id+5)*/ false) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Cooldown :", " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const roll = (Math.floor(100) * Math.random() + 1)
+            if (roll <= 80) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":cyclone: Esquive parfaite :", ":cyclone: Votre compétence 'Esquive parfaite' vous fait esquivé l'attaque du monstre quoi qu'il arrive et vous donne un bonus de fuite +1 et d'esquive +1 pendant 2 tour.")
+                    .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 81) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":cyclone: Esquive parfaite :", ":cyclone: Votre compétence 'Esquive parfaite' vous fait esquivé l'attaque du monstre quoi qu'il arrive et vous donne un bonus de fuite +1 et d'esquive +1 pendant 3 tour.")
+                    .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            talkedRecently.add(message.author.id + 2);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 2);
+            }, 3600000);
+        }
+    }
+});
+
+// Compétences | blocage parfait
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Blocage parfait")) {
+        if ( /*talkedRecently.has(message.author.id+5)*/ false) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Cooldown :", " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const roll = (Math.floor(100) * Math.random() + 1)
+            if (roll <= 80) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":cyclone: Blocage parfait :", ":cyclone: Votre compétence 'Blocage parfait' vous fait bloquer l'attaque du monstre quoi qu'il arrive et rend les dégats a 0 et vous donne un bonus de fuite +1 et de blocage +1 pendant 2 tour.")
+                    .setImage("https://s2.gifyu.com/images/1b2fd7e3773064806f354e60760852c02083997b_hq.gif")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 81) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":cyclone: Blocage parfait :", ":cyclone: Votre compétence 'Blocage parfait' vous fait esquivé l'attaque du monstre quoi qu'il et rend les dégats a 0 et vous donne un bonus de fuite +1 et blocage +1 pendant 3 tour.")
+                    .setImage("https://s2.gifyu.com/images/1b2fd7e3773064806f354e60760852c02083997b_hq.gif")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            talkedRecently.add(message.author.id + 2);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 2);
+            }, 3600000);
+        }
+    }
+});
+
 // Compétences | Treble scythe
 
 bot.on('message', message => {
@@ -33091,8 +33177,8 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Coups jumeaux")) {
         let degats = args.slice(2).join(" : ");
-        const degat1 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.9))
-        const degat2 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.9))
+        const degat1 = Math.floor((degats * 0.2 + 1) * Math.random() + (degats * 0.9))
+        const degat2 = Math.floor((degats * 0.2 + 1) * Math.random() + (degats * 0.9))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 35) {
             const embed = new Discord.RichEmbed()
