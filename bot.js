@@ -24289,6 +24289,152 @@ bot.on('message', message => {
     }
 });
 
+// Commandes hors catégories
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bonbon étrange")) {
+        const image = (Math.floor(100) * Math.random() + 1)
+        if (image <= 20) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Transformation en lapin géant :", "Vos pieds double de volume et de longues et fines oreilles poussent sur votre tête, des poils apparaîssent tous le long de vos bras et jambes ainsi que votre torse, de longues dents poussent à l'intérieur de votre bouche\n\nVotre transformation dure 24 H et vous confère 50 HP max supplémentaire ainsi que 4 points de défense !")
+                .setImage("https://vignette.wikia.nocookie.net/sfgame/images/0/06/Grauenvoller_monsterhase.png/revision/latest?cb=20090708085014&path-prefix=de")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (21 <= image & image <= 40) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Transformation en slime :", "Votre corps devient gelatineux, vous réduisez de taille mais vous vous sentez très à l'aise comme ceci malgrè que vous êtes presque liquide d'une couleur verte clair\n\nVotre transformation dure 24 H et vous confère 75 HP max supplémentaire ainsi que 6 points de défense !")
+                .setImage("https://vignette.wikia.nocookie.net/sfery/images/6/6b/59pf1_gabrieldevue.jpeg/revision/latest?cb=20141130234640")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (41 <= image & image <= 60) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .setImage("https://i0.wp.com/www.syldi-studio.com/wp-content/uploads/2017/10/loup-garou-foret-face-gros-plan.jpg?fit=640%2C585&ssl=1")
+                .setTimestamp()
+                .addField("Transformation en loup garou :", "Vos mains deviennent très poilus avec des griffes sur le bout des doigts, vous doublez presque de taille et de volume physiquement et un museau apparaît sur votre visage, des crocs font aussi leur apparition sortant de votre bouche.\n\nVotre transformation dure 24 H et vous confère 10 points de dégâts supplémentaires ainsi que 50 HP !")
+            message.channel.send({ embed })
+        }
+        if (61 <= image & image <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Transformation en roi des kobolts :", "Une hache assez large apparaît dans votre main et un bouclier dans l'autre pendant que votre corps triple voir même quadruple de taille, votre peau devient d'une couleur rouge foncé avec des symboles dessus, et vous sentez aussi que vos yeux ont changés pour une couleur rouge très voyante presque lumineuse\n\nVotre transformation dure 24 H et vous confère 10 dégâts supplémentaires ainsi que 50 HP et 10 points d'armure !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/f/f0/SAO_E02.png/revision/latest?cb=20120911050512")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (81 <= image & image <= 100) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Transformation en gleam eyes :", "Une gigantesque épée de formes complexes apparaît dans vos deux mains, votre corps devient tellement immense que vous ne savez plus la notion de la taille humaine, votre peau devient bleu foncé et vos yeux de la même couleur, des cornes poussent sur votre tête ainsi que des genre de sabots à vos pied\n\nVotre transformation dure 24 H et vous confère 20 dégâts supplémentaires ainsi que 100 HP et 10 points d'armure !")
+                .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/a/ab/TheGleamEyes.png/revision/latest?cb=20170611161342&path-prefix=fr")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+// Météo
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Météo du jour")) {
+        const image = (Math.floor(100) * Math.random() + 1)
+        if (image <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Ciel dégagé :", "Aujourd'hui, la météo est un ciel dégagé sans aucun nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !\n\nAucun bonus/malus aujourd'hui !")
+                .setImage("https://www.infoclimat.fr/photolive/photos/2015-09/30572217920151847.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (31 <= image & image <= 40) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Sombre :", "Aujourd'hui, la météo est assez sombre, il y a quelques nuages mais surtout, le soleil n'est pas là et l'environnement en ville et en dehors est assez obscure...\n\nMalus de -10 pour les actions visuelles ainsi qu'un bonus de 10 sur les actions discrètes aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
+                .setImage("https://vignette.wikia.nocookie.net/creepypasta/images/5/53/Clouds.jpg/revision/latest?cb=20150418001214&path-prefix=de")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (41 <= image & image <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Soleil :", "Aujourd'hui, malgré quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil est là !\n\nBonus de +1 pour les fuites en dehors et en combat aujourd'hui")
+                .setImage("https://sitel.com.mk/sites/default/files/article/teaser-images/2018/april/sonce-soncevo-vreme-175810.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (51 <= image & image <= 60) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "https://vignette.wikia.nocookie.net/fairytail/images/a/a1/Elie%27s_boobs.png/revision/latest?cb=20130824220631")
+                .setColor(3447003)
+                .addField("Arc en ciel :", "Aujourd'hui, quelques nuages et un peu de pluie mais un arc en ciel va se former à la fin de la journée avant que le soleil se couche, vous avez de la chance !\n\nBonus de +1 pour les fuites en combat et en dehors, ainsi qu'un bonus de 10 sur les actions sociales aujourd'hui !\n\n=Roll : 10")
+                .setImage("http://ekladata.com/R64I3AX173zliIFqGrdku1qFK8E.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (61 <= image & image <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Vents violents", "Aujourd'hui, ce n'est pas vraiment le jour où il faut sortir, des vents très violents sont présents notamment avec la formation de tornades probables...\n\nMalus de 10 pour les actions auditives, ainsi qu'un malus de 10 sur les actions visuelles aujourd'hui !\n\n=Roll : -10")
+                .setImage("https://cdnfr2.img.sputniknews.com/images/103275/77/1032757713.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (71 <= image & image <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Brouillard", "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...\n\nMalus de 20 sur les actions visuelles, ainsi qu'un malus de 10 sur les fuites en dehors d'un combat aujourd'hui !\n\n=Roll : -20\n=Roll : -10")
+                .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/December_Fog_01_edit2.jpg/1200px-December_Fog_01_edit2.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (81 <= image & image <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Pluie et orage :", "Aujourd'hui, la pluie est présente avec quelques nuages sans aucun soleil en vue, ce n'est pas vraiment le jour pour sortir et se relaxer surtout avec des orages possibles...\n\nMalus de 10 sur les actions sociables aujourd'hui !\n\n=Roll : -10")
+                .setImage("https://p0.storage.canalblog.com/06/80/987217/87418395_o.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= image) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Neige et grêle :", "Aujourd'hui, le gel et le froid sont bien présents autant dans la ville qu'à l'extérieur, de la grêle ainsi que de la neige tombe du ciel partout, une bonne nouvelle pour certains mais une mauvaise pour les autres n'aimant pas la neige !\n\nMalus de 10 sur les fuites en dehors d'un combat, ainsi qu'un bonus de 10 sur les actions sociables aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
+                .setImage("https://www.le-pradet.fr/wp-content/uploads/2018/02/neige-4-1.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Plaine | Description
 
 bot.on('message', message => {
@@ -29061,147 +29207,7 @@ bot.on('message', message => {
 
 //toto
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bonbon étrange")) {
-        const image = (Math.floor(100) * Math.random() + 1)
-        if (image <= 20) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Transformation en lapin géant :", "Vos pieds double de volume et de longues et fines oreilles poussent sur votre tête, des poils apparaîssent tous le long de vos bras et jambes ainsi que votre torse, de longues dents poussent à l'intérieur de votre bouche\n\nVotre transformation dure 24 H et vous confère 50 HP max supplémentaire ainsi que 4 points de défense !")
-                .setImage("https://vignette.wikia.nocookie.net/sfgame/images/0/06/Grauenvoller_monsterhase.png/revision/latest?cb=20090708085014&path-prefix=de")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (21 <= image & image <= 40) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Transformation en slime :", "Votre corps devient gelatineux, vous réduisez de taille mais vous vous sentez très à l'aise comme ceci malgrè que vous êtes presque liquide d'une couleur verte clair\n\nVotre transformation dure 24 H et vous confère 75 HP max supplémentaire ainsi que 6 points de défense !")
-                .setImage("https://vignette.wikia.nocookie.net/sfery/images/6/6b/59pf1_gabrieldevue.jpeg/revision/latest?cb=20141130234640")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (41 <= image & image <= 60) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .setImage("https://i0.wp.com/www.syldi-studio.com/wp-content/uploads/2017/10/loup-garou-foret-face-gros-plan.jpg?fit=640%2C585&ssl=1")
-                .setTimestamp()
-                .addField("Transformation en loup garou :", "Vos mains deviennent très poilus avec des griffes sur le bout des doigts, vous doublez presque de taille et de volume physiquement et un museau apparaît sur votre visage, des crocs font aussi leur apparition sortant de votre bouche.\n\nVotre transformation dure 24 H et vous confère 10 points de dégâts supplémentaires ainsi que 50 HP !")
-            message.channel.send({ embed })
-        }
-        if (61 <= image & image <= 80) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Transformation en roi des kobolts :", "Une hache assez large apparaît dans votre main et un bouclier dans l'autre pendant que votre corps triple voir même quadruple de taille, votre peau devient d'une couleur rouge foncé avec des symboles dessus, et vous sentez aussi que vos yeux ont changés pour une couleur rouge très voyante presque lumineuse\n\nVotre transformation dure 24 H et vous confère 10 dégâts supplémentaires ainsi que 50 HP et 10 points d'armure !")
-                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/f/f0/SAO_E02.png/revision/latest?cb=20120911050512")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (81 <= image & image <= 100) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Transformation en gleam eyes :", "Une gigantesque épée de formes complexes apparaît dans vos deux mains, votre corps devient tellement immense que vous ne savez plus la notion de la taille humaine, votre peau devient bleu foncé et vos yeux de la même couleur, des cornes poussent sur votre tête ainsi que des genre de sabots à vos pied\n\nVotre transformation dure 24 H et vous confère 20 dégâts supplémentaires ainsi que 100 HP et 10 points d'armure !")
-                .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/a/ab/TheGleamEyes.png/revision/latest?cb=20170611161342&path-prefix=fr")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Météo du jour")) {
-        const image = (Math.floor(100) * Math.random() + 1)
-        if (image <= 30) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Ciel dégagé :", "Aujourd'hui, la météo est un ciel dégagé sans aucun nuages à l'horizon, le ciel est d'une couleur bleu clair ce qui vous rend optimiste !\n\nAucun bonus/malus aujourd'hui !")
-                .setImage("https://www.infoclimat.fr/photolive/photos/2015-09/30572217920151847.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (31 <= image & image <= 40) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Sombre :", "Aujourd'hui, la météo est assez sombre, il y a quelques nuages mais surtout, le soleil n'est pas là et l'environnement en ville et en dehors est assez obscure...\n\nMalus de -10 pour les actions visuelles ainsi qu'un bonus de 10 sur les actions discrètes aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
-                .setImage("https://vignette.wikia.nocookie.net/creepypasta/images/5/53/Clouds.jpg/revision/latest?cb=20150418001214&path-prefix=de")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (41 <= image & image <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Soleil :", "Aujourd'hui, malgré quelques nuages, le soleil est présent et éclaire toute la ville et l'extérieur ce qui vous donne envie de vous relaxer le temps que le soleil est là !\n\nBonus de +1 pour les fuites en dehors et en combat aujourd'hui")
-                .setImage("https://sitel.com.mk/sites/default/files/article/teaser-images/2018/april/sonce-soncevo-vreme-175810.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (51 <= image & image <= 60) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "https://vignette.wikia.nocookie.net/fairytail/images/a/a1/Elie%27s_boobs.png/revision/latest?cb=20130824220631")
-                .setColor(3447003)
-                .addField("Arc en ciel :", "Aujourd'hui, quelques nuages et un peu de pluie mais un arc en ciel va se former à la fin de la journée avant que le soleil se couche, vous avez de la chance !\n\nBonus de +1 pour les fuites en combat et en dehors, ainsi qu'un bonus de 10 sur les actions sociales aujourd'hui !\n\n=Roll : 10")
-                .setImage("http://ekladata.com/R64I3AX173zliIFqGrdku1qFK8E.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (61 <= image & image <= 70) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Vents violents", "Aujourd'hui, ce n'est pas vraiment le jour où il faut sortir, des vents très violents sont présents notamment avec la formation de tornades probables...\n\nMalus de 10 pour les actions auditives, ainsi qu'un malus de 10 sur les actions visuelles aujourd'hui !\n\n=Roll : -10")
-                .setImage("https://cdnfr2.img.sputniknews.com/images/103275/77/1032757713.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (71 <= image & image <= 80) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Brouillard", "Aujourd'hui, du brouillard se forme peu à peu à travers tous l'aincrad, vous ne savez pas vraiment les raisons mais il se progage partout et ne vous facilite pas la tâche pour les combats ou pour observer des choses...\n\nMalus de 20 sur les actions visuelles, ainsi qu'un malus de 10 sur les fuites en dehors d'un combat aujourd'hui !\n\n=Roll : -20\n=Roll : -10")
-                .setImage("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/December_Fog_01_edit2.jpg/1200px-December_Fog_01_edit2.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (81 <= image & image <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Pluie et orage :", "Aujourd'hui, la pluie est présente avec quelques nuages sans aucun soleil en vue, ce n'est pas vraiment le jour pour sortir et se relaxer surtout avec des orages possibles...\n\nMalus de 10 sur les actions sociables aujourd'hui !\n\n=Roll : -10")
-                .setImage("https://p0.storage.canalblog.com/06/80/987217/87418395_o.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (91 <= image) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Neige et grêle :", "Aujourd'hui, le gel et le froid sont bien présents autant dans la ville qu'à l'extérieur, de la grêle ainsi que de la neige tombe du ciel partout, une bonne nouvelle pour certains mais une mauvaise pour les autres n'aimant pas la neige !\n\nMalus de 10 sur les fuites en dehors d'un combat, ainsi qu'un bonus de 10 sur les actions sociables aujourd'hui !\n\n=Roll : -10\n=Roll : 10")
-                .setImage("https://www.le-pradet.fr/wp-content/uploads/2018/02/neige-4-1.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
 
 // Forêt dense | Description
 
