@@ -4671,6 +4671,81 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Equipements | Détails | Chitine
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bonus de la panoplie en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Panoplie en chitine :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 2 points d'attaque\n- Pour 6 pièces : Bonus de 7 points d'attaque\n- Pour 10 pièces : Bonus de 12 points d'attaque")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Détails | Taurus
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bonus de la panoplie taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Panoplie taurus :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 10 points de vie\n- Pour 6 pièces : Bonus de 35 points de vie\n- Pour 10 pièces : Bonus de 60 points de vie")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Détails | Maille
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bonus de la panoplie de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Panoplie de maille :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 10 points de vie\n- Pour 6 pièces : Bonus de 35 points de vie\n- Pour 10 pièces : Bonus de 60 points de vie")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Détails | Dargnan
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bonus de la panoplie dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Panoplie dargnan :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 10 pièces : Immunité contre les poisons des monstres. Résistance de 20 aux compétences de poison des joueurs.")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Détails | Bovin
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bonus de la panoplie bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Panoplie bovin :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 1.5 points de défense\n- Pour 6 pièces : Bonus de 5 points de défense\n- Pour 10 pièces : Bonus de 8.5 points de défense")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Peau arrachée | Achat/fabrication/découverte
 
 bot.on('message', message => {
@@ -29205,10 +29280,6 @@ bot.on('message', message => {
     }
 })
 
-//toto
-
-
-
 // Forêt dense | Description
 
 bot.on('message', message => {
@@ -29228,7 +29299,7 @@ bot.on('message', message => {
     }
 })
 
-// Forêt dense | quête
+// Forêt dense | Quête
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Forêt dense quête") {
@@ -30206,81 +30277,6 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Forêt dense bûcheronner")) {
-        let cont = message.content;
-        let split = cont.split(' ');
-        let level = split[4] - 0
-        if (isNaN(level)) {
-            level = 0
-        }
-        let levelZone = 5;
-        if (level < levelZone || isNaN(level)) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Erreur :", " Vous n'avez pas le niveau nécessaire pour bûcheronner dans cette zone ou vous avez fait une erreur dans la commande !")
-                .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        } else {
-            if (talkedRecently.has(message.author.id + 19)) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField("Cooldown :", " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            } else {
-                const roll = Math.floor(100 * Math.random() + 1);
-                const diff = level - levelZone
-                let chance = diff * diff;
-                if (chance > 100) {
-                    chance = 100
-                }
-                const BoisMediocre = Math.floor(2 * Math.random() + 1)
-                let BoisCommun = 0
-                const Exp = Math.floor(5 * Math.random() + 7)
-                let rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    BoisCommun = 1
-                }
-                if (roll <= chance) {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
-                            ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Bûcheron de profession : Doublez les ressources (pas l'xp) !")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
-                            ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            talkedRecently.add(message.author.id + 19);
-            setTimeout(() => {
-                talkedRecently.delete(message.author.id + 19);
-            }, 3600000);
-        }
-    }
-})
-
-bot.on('message', message => {
     if (message.content.startsWith(prefix + "Forêt dense chasser")) {
         let cont = message.content;
         let split = cont.split(' ');
@@ -30373,69 +30369,83 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bonus de la panoplie en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Panoplie en chitine :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 2 points d'attaque\n- Pour 6 pièces : Bonus de 7 points d'attaque\n- Pour 10 pièces : Bonus de 12 points d'attaque")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
+    if (message.content.startsWith(prefix + "Forêt dense bûcheronner")) {
+        let cont = message.content;
+        let split = cont.split(' ');
+        let level = split[4] - 0
+        if (isNaN(level)) {
+            level = 0
+        }
+        let levelZone = 5;
+        if (level < levelZone || isNaN(level)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas le niveau nécessaire pour bûcheronner dans cette zone ou vous avez fait une erreur dans la commande !")
+                .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            if (talkedRecently.has(message.author.id + 19)) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Cooldown :", " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                const roll = Math.floor(100 * Math.random() + 1);
+                const diff = level - levelZone
+                let chance = diff * diff;
+                if (chance > 100) {
+                    chance = 100
+                }
+                const BoisMediocre = Math.floor(2 * Math.random() + 1)
+                let BoisCommun = 0
+                const Exp = Math.floor(5 * Math.random() + 7)
+                let rollRessource = Math.floor(100 * Math.random() + 1);
+                if (rollRessource <= 35) {
+                    BoisCommun = 1
+                }
+                if (roll <= chance) {
+                    const embed = new Discord.RichEmbed()
+                        .setColor(3447003)
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
+                            ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
+                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp + "\n\n" +
+                            ":tada: Si et seulement si vous êtes Bûcheron de profession : Doublez les ressources (pas l'xp) !")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
+                    const embed = new Discord.RichEmbed()
+                        .setColor(3447003)
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
+                            ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
+                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            talkedRecently.add(message.author.id + 19);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 19);
+            }, 3600000);
+        }
     }
-});
+})
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bonus de la panoplie taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Panoplie taurus :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 10 points de vie\n- Pour 6 pièces : Bonus de 35 points de vie\n- Pour 10 pièces : Bonus de 60 points de vie")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
+//toto
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bonus de la panoplie de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Panoplie de maille :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 10 points de vie\n- Pour 6 pièces : Bonus de 35 points de vie\n- Pour 10 pièces : Bonus de 60 points de vie")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bonus de la panoplie dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Panoplie dargnan :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 10 pièces : Immunité contre les poisons des monstres. Résistance de 20 aux compétences de poison des joueurs.")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bonus de la panoplie bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Panoplie bovin :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 1.5 points de défense\n- Pour 6 pièces : Bonus de 5 points de défense\n- Pour 10 pièces : Bonus de 8.5 points de défense")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Casque en chitine")) {
