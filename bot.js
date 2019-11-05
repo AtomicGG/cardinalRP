@@ -16053,6 +16053,154 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Oeuf bavant")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":egg: Oeuf bavant :", ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
+            .addField("Prix d'achat :", "6000 cols")
+            .addField("Prix de revente :", "1500 cols")
+            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf bavant")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf bavant")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous ne découvrez aucun bébé animal malheureusement...")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51 & A <= 60) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un bébé lièvre!")
+                .addField(":egg: Bébé lièvre :", ":egg: Confère 100 HP max supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 61 & A <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un Boa!")
+                .addField(":egg: Boa :", ":egg: Après chacunes de vos attaques réussies, le Boa : =Boa attaque\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 71 & A <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un papiliassit !")
+                .addField(":egg: Papiliassit :", ":egg: Confère 40 HP et 15 points de dégâts supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 81 & A <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un petit bousier")
+                .addField(":egg: Petit bousier :", ":egg: Confère 8 points d'armure et 20 points d'HP supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 91 & A <= 98) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un jeune doryphore !")
+                .addField(":egg: Jeune doryphore :", ":egg: Confère 8 points d'armure et 7 point de dégâts supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 99) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark venom !")
+                .addField(":egg: Ark Venom :", ":egg: Après chacunes de vos attaques réussies, le Ark Venom attaque : =Ark venom attaque\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    const B = (Math.floor((20) * Math.random() + 35))
+    if (message.content.startsWith(prefix + "Boa attaque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Boa :", ":crossed_swords: Le boa tente de mordre sa cible mais il n'est pas assez rapide et n'arrive pas à le toucher...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Boa :", ":crossed_swords: Le boa fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " + B + " points de dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    const B = (Math.floor((26) * Math.random() + 46))
+    if (message.content.startsWith(prefix + "Ark venom attaque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Ark venom :", ":crossed_swords: Le Ark venom essaye de mordre sa cible mais préfère passer a coté...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Ark venom :", ":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu afin de planter ses crocs à un point vital, il inflige " + B + " points de dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Menus | Liste | Clefs
 
 bot.on('message', message => {
@@ -31051,153 +31199,7 @@ bot.on('message', message => {
 
 //toto
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Oeuf bavant")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":egg: Oeuf bavant :", ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
-            .addField("Prix d'achat :", "6000 cols")
-            .addField("Prix de revente :", "1500 cols")
-            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf bavant")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf bavant")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous ne découvrez aucun bébé animal malheureusement...")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51 & A <= 60) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un bébé lièvre!")
-                .addField(":egg: Bébé lièvre :", ":egg: Confère 100 HP max supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 61 & A <= 70) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un Boa!")
-                .addField(":egg: Boa :", ":egg: Après chacunes de vos attaques réussies, le Boa : =Boa attaque\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 71 & A <= 80) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un papiliassit !")
-                .addField(":egg: Papiliassit :", ":egg: Confère 40 HP et 15 points de dégâts supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 81 & A <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un petit bousier")
-                .addField(":egg: Petit bousier :", ":egg: Confère 8 points d'armure et 20 points d'HP supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 91 & A <= 98) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un jeune doryphore !")
-                .addField(":egg: Jeune doryphore :", ":egg: Confère 8 points d'armure et 7 point de dégâts supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 99) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf bavant", ":egg: En ouvrant l'oeuf bavant, vous découvrez un Ark venom !")
-                .addField(":egg: Ark Venom :", ":egg: Après chacunes de vos attaques réussies, le Ark Venom attaque : =Ark venom attaque\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    const B = (Math.floor((20) * Math.random() + 35))
-    if (message.content.startsWith(prefix + "Boa attaque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Boa :", ":crossed_swords: Le boa tente de mordre sa cible mais il n'est pas assez rapide et n'arrive pas à le toucher...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Boa :", ":crossed_swords: Le boa fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " + B + " points de dégâts !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    const B = (Math.floor((26) * Math.random() + 46))
-    if (message.content.startsWith(prefix + "Ark venom attaque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Ark venom :", ":crossed_swords: Le Ark venom essaye de mordre sa cible mais préfère passer a coté...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Ark venom :", ":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu afin de planter ses crocs à un point vital, il inflige " + B + " points de dégâts !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
 
 // Clairière | Description
 
