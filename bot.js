@@ -5069,12 +5069,162 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Casque de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque de maille :", ":scales: C'est un casque fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication du casque de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epaulières de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières de maille :", ":scales: Ce sont des épaulières faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des épaulières de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plastron de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron de maille :", ":scales: C'est un plastron fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication du plastron de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape de maille :", ":scales: C'est une cape faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de la cape de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ceinture de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture de maille :", ":scales: C'est une ceinture faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de la ceinture de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gantelets de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets de maille :", ":scales: Ce sont des gantelets faits avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des gantelets de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Jambières de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières de maille :", ":scales: Ce sont des jambières faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des jambières de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bottes de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes de maille :", ":scales: Ce sont des bottes faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des bottes de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bijoux de maille")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Liste des bijoux de maille :", "=Anneau de maille\n=Amulette de maille")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Anneau de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau de maille :", ":scales: C'est un anneau fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 1800 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'anneau de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 3 Fer rare) :", "`=Amélioration d'un bijou de maille : [Niveau en Bijoutier]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet :", "`=Démantèlement d'un bijou de maille`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Amulette de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette de maille :", ":scales: C'est une amulette faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 1800 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'amulette de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
+            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 3 Fer rare) :", "`=Amélioration d'un bijou de maille : [Niveau en Bijoutier]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démenteler cet objet :", "`=Démantèlement d'un bijou de maille`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5436,7 +5586,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Peau arrachée | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Peau arrachée | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(4 * Math.random() + 2)
@@ -5550,7 +5700,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Coeur d'animal faible | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Coeur d'animal faible | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(3 * Math.random() + 3)
@@ -5582,7 +5732,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Peau résistante | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Peau résistante | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 5)
@@ -5704,7 +5854,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Peau résistante | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Peau résistante | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -5760,7 +5910,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Croc | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Croc | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(4 * Math.random() + 7)
@@ -5792,7 +5942,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Croc | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Croc | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -5848,7 +5998,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Rouillé | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Rouillé | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(4 * Math.random() + 2)
@@ -5998,7 +6148,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Rouillé | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Rouillé | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -6108,7 +6258,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Clan des Loups | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Clan des Loups | Découverte
 
 bot.on('message', message => {
     const Défense = 1
@@ -6260,7 +6410,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Kobolt et kobolt supérieur | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt et kobolt supérieur | Achat/fabrication/découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque de kobolt")) {
@@ -6542,7 +6692,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Kobolt | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -6660,7 +6810,33 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Kobolt supérieur | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un équipement de kobolt")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Equipement de kobolt :", "Vous obtenez :\n\n:pick: 1 Cuivre commun\n:pick: 2 Cuivre médiocre\n:poultry_leg: 1 Peau de ragondin")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un bijou de kobolt")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bijou de kobolt :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:pick: 2 Cuivre commun\n:pick: 4 Cuivre médiocre")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -6792,7 +6968,33 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Kobolt spécial | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un équipement de kobolt supérieur")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Equipement de kobolt supérieur :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:poultry_leg: 2 Peau de chien errant\n:gem: 1 Dent de kobolt pilion")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un bijou de kobolt supérieur")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bijou de kobolt supérieur :", "Vous obtenez :\n\n:pick: 1 Cuivre parfait\n:pick: 2 Cuivre rare\n:pick: 3 Cuivre commun\n:pick: 4 Cuivre médiocre\n:cupid: 1 Coeur de chien errant")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt spécial | Découverte
 
 bot.on('message', message => {
     const Défense = 2
@@ -6824,7 +7026,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Chitine | Achat
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat du casque en chitine")) {
@@ -6976,7 +7178,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Chitine | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication du casque en chitine")) {
@@ -7128,7 +7330,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Chitine | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte du casque en chitine")) {
@@ -7280,7 +7482,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Chitine | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -7412,7 +7614,33 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Taurus | Achat
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un équipement en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Equipement en chitine :", "Vous obtenez :\n\n:knife: 1 Peau élastique de lombric irrégulier\n:shell: 1 Carapace de bousier colossal\n:pick: 2 Fer médiocre")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un bijou en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bijou en chitine :", "Vous obtenez :\n\n:shell: 2 Carapace de doryphore géant\n:butterfly: 1 Aile de doryphore géant\n:cupid: 1 Coeur de lièvre")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat du casque taurus")) {
@@ -7564,7 +7792,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Taurus | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication du casque taurus")) {
@@ -7716,7 +7944,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Taurus | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte du casque taurus")) {
@@ -7838,7 +8066,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Taurus | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -7970,7 +8198,175 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Maille | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un équipement taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Equipement taurus :", "Vous obtenez :\n\n:knife: 2 Peau de taurus\n:shell: 2 Carapace de bourdon flâneur\n:ox: 1 Poil de taurus")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un bijou taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bijou taurus :", "Vous obtenez :\n\n:shell: 2 Carapace de bourdon flâneur\n:beginner: 1 Cuirasse de fort taurus adroit\n:bacon: 1 Scalp de taurus\n:cupid: 1 Coeur de desman")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Maille | Fabrication
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
+        const Défense = (Math.floor((3) * Math.random() + 6))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
+        const Défense = (Math.floor((3) * Math.random() + 6))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
+        const Défense = (Math.floor((3) * Math.random() + 6))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
+        const Défense = (Math.floor((3) * Math.random() + 6))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
+        const Défense = (Math.floor((3) * Math.random() + 6))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
+        const Défense = (Math.floor((3) * Math.random() + 6))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
+        const Défense = (Math.floor((3) * Math.random() + 6))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
+        const Défense = (Math.floor((3) * Math.random() + 6))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de l'anneau de maille")) {
+        const Défense = (Math.floor((7) * Math.random() + 12))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de l'amulette de maille")) {
+        const Défense = (Math.floor((7) * Math.random() + 12))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Maille | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -8102,7 +8498,33 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Dargnan | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Maille | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un équipement de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Equipement de maille :", "Vous obtenez :\n\n:pick: 2 Fer rare\n:pick: 2 Fer commun\n:pick: 3 Fer médiocre")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un bijou de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bijou de maille :", "Vous obtenez :\n\n:pick: 2 Fer rare\n:pick: 2 Fer commun\n:pick: 3 Fer médiocre")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Dargnan | Fabrication
 
 bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 30)
@@ -8254,7 +8676,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Dargnan | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Dargnan | Découverte
 
 bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 25)
@@ -8406,7 +8828,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Dargnan | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Dargnan | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -8538,7 +8960,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Bovin | Achat
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat du casque bovin")) {
@@ -8680,7 +9102,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Bovin | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Fabrication
 
 bot.on('message', message => {
     const HP = Math.floor(26 * Math.random() + 70)
@@ -8822,7 +9244,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Bovin | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Découverte
 
 bot.on('message', message => {
     const HP = Math.floor(26 * Math.random() + 55)
@@ -8964,7 +9386,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Bovin | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -10548,7 +10970,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Basique | Achat/fabrication/découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Basique | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const Dégâts = (Math.floor((3) * Math.random() + 1))
@@ -10733,7 +11155,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Clan des Loups | Découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Clan des Loups | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups")) {
@@ -10918,7 +11340,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Clan des Loups | Fonte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Clan des Loups | Fonte
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -13988,7 +14410,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt | Achat/fabrication/découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Achat/fabrication/découverte
 
 bot.on('message', message => {
     if (message.content === (prefix + "Achat/fabrication/découverte de l'épée de kobolt")) {
@@ -14173,7 +14595,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -14283,7 +14705,33 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt supérieur | Achat/fabrication/découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme de kobolt à une main")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme de kobolt à une main :", "Vous obtenez :\n\n:pick: 1 Cuivre commun\n:pick: 2 Cuivre médiocre\n:gem: 1 Dent de kobolt")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme de kobolt à deux mains")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme de kobolt à deux mains :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:pick: 2 Cuivre commun\n:pick: 3 Cuivre médiocre\n:gem: 2 Dent de kobolt\n:deciduous_tree: 1 Bois de frêne commun")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Achat/fabrication/découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure")) {
@@ -14468,7 +14916,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt supérieur | Fonte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Fonte
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -16238,7 +16686,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Kobolt supérieur | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -16370,7 +16818,33 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Roi déchu | Découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme de kobolt supérieure à une main")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme de kobolt supérieure à une main :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:knife: 2 Peau écailleuse de kobolt pilion\n:deciduous_tree: 1 Bois de frêne rare\n:deciduous_tree: 2 Bois de frêne commun")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme de kobolt supérieure à deux mains")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme de kobolt supérieure à deux mains :", "Vous obtenez :\n\n:pick: 1 Cuivre parfait\n:pick: 2 Cuivre rare\n:gem: 1 Dent de kobolt pilion\n:knife: 3 Peau écailleuse de kobolt pilion\n:deciduous_tree: 2 Bois de frêne rare\n:deciduous_tree: 4 Bois de frêne commun")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Roi déchu | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte de la faux du roi déchu à deux mains")) {
@@ -16401,7 +16875,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Chitine | Achat
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat de l'épée en chitine")) {
@@ -16586,7 +17060,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Chitine | Fabrication
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication de l'épée en chitine")) {
@@ -16771,7 +17245,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Chitine | Découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte de l'épée en chitine")) {
@@ -16956,7 +17430,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Chitine | Fonte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Fonte
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -18726,7 +19200,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Chitine | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -18858,7 +19332,33 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Taurus | Achat
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme en chitine à une main")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme en chitine à une main :", "Vous obtenez :\n\n:shell: 1 Carapace de doryphore géant\n:pick: 1 Fer médiocre\n:poultry_leg: 1 Patte de doryphore géant")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme en chitine à deux mains")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme en chitine à deux mains :", "Vous obtenez :\n\n:shell: 2 Carapace de doryphore géant\n:pick: 1 Fer commun\n:pick: 2 Fer médiocre\n:poultry_leg: 2 Patte de doryphore géant\n:deciduous_tree: 1 Bois de séquoia commun")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat de l'épée de taurus")) {
@@ -19028,7 +19528,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Taurus | Fabrication
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication de l'épée de taurus")) {
@@ -19198,7 +19698,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Taurus | Fonte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Fonte
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -20832,7 +21332,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Taurus | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -20964,7 +21464,33 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Darchic | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme de taurus à une main")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme de taurus à une main :", "Vous obtenez :\n\n:beginner: 1 Cuirasse de fort taurus adroit\n:pick: 1 Fer médiocre\n:dagger: 1 Corne de taurus")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme de taurus à deux mains")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme de taurus à deux mains :", "Vous obtenez :\n\n:beginner: 2 Cuirasse de  fort taurus adroit\n:pick: 1 Fer commun\n:pick: 2 Fer médiocre\n:dagger: 2 Corne de taurus\n:deciduous_tree: 1 Bois de séquoia commun")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Darchic | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -40101,519 +40627,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-
-
-
-// Equipements de maille
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Casque de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque de maille :", ":scales: C'est un casque fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication du casque de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epaulières de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières de maille :", ":scales: Ce sont des épaulières faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des épaulières de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cape de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape de maille :", ":scales: C'est une cape faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de la cape de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Plastron de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron de maille :", ":scales: C'est un plastron fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication du plastron de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Gantelets de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets de maille :", ":scales: Ce sont des gantelets faits avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des gantelets de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Ceinture de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture de maille :", ":scales: C'est une ceinture faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de la ceinture de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Jambières de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières de maille :", ":scales: Ce sont des jambières faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des jambières de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bottes de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes de maille :", ":scales: Ce sont des bottes faites avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 5 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication des bottes de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 2 Fer rare) :", "`=Amélioration d'un équipement de maille : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Anneau de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau de maille :", ":scales: C'est un anneau fait avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 1800 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'anneau de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 3 Fer rare) :", "`=Amélioration d'un bijou de maille : [Niveau en Bijoutier]`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet :", "`=Démantèlement d'un bijou de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Amulette de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette de maille :", ":scales: C'est une amulette faite avec des minerais de fer\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Fer médiocre, 5 Fer commun, 7 Fer rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 1800 cols\n\n:keyboard: Si vous fabriquez cet objet `=Fabrication de l'amulette de maille`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : =Bonus de la panoplie de maille")
-            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 4 Fer médiocre, 3 Fer commun, 3 Fer rare) :", "`=Amélioration d'un bijou de maille : [Niveau en Bijoutier]`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite démenteler cet objet :", "`=Démantèlement d'un bijou de maille`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un équipement de kobolt")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement de kobolt :", "Vous obtenez :\n\n:pick: 1 Cuivre commun\n:pick: 2 Cuivre médiocre\n:poultry_leg: 1 Peau de ragondin")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un bijou de kobolt")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou de kobolt :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:pick: 2 Cuivre commun\n:pick: 4 Cuivre médiocre")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'une arme de kobolt à une main")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de kobolt à une main :", "Vous obtenez :\n\n:pick: 1 Cuivre commun\n:pick: 2 Cuivre médiocre\n:gem: 1 Dent de kobolt")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'une arme de kobolt à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de kobolt à deux mains :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:pick: 2 Cuivre commun\n:pick: 3 Cuivre médiocre\n:gem: 2 Dent de kobolt\n:deciduous_tree: 1 Bois de frêne commun")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un équipement de kobolt supérieur")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement de kobolt supérieur :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:poultry_leg: 2 Peau de chien errant\n:gem: 1 Dent de kobolt pilion")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un bijou de kobolt supérieur")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou de kobolt supérieur :", "Vous obtenez :\n\n:pick: 1 Cuivre parfait\n:pick: 2 Cuivre rare\n:pick: 3 Cuivre commun\n:pick: 4 Cuivre médiocre\n:cupid: 1 Coeur de chien errant")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'une arme de kobolt supérieure à une main")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de kobolt supérieure à une main :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:knife: 2 Peau écailleuse de kobolt pilion\n:deciduous_tree: 1 Bois de frêne rare\n:deciduous_tree: 2 Bois de frêne commun")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'une arme de kobolt supérieure à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de kobolt supérieure à deux mains :", "Vous obtenez :\n\n:pick: 1 Cuivre parfait\n:pick: 2 Cuivre rare\n:gem: 1 Dent de kobolt pilion\n:knife: 3 Peau écailleuse de kobolt pilion\n:deciduous_tree: 2 Bois de frêne rare\n:deciduous_tree: 4 Bois de frêne commun")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un équipement en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement en chitine :", "Vous obtenez :\n\n:knife: 1 Peau élastique de lombric irrégulier\n:shell: 1 Carapace de bousier colossal\n:pick: 2 Fer médiocre")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un bijou en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou en chitine :", "Vous obtenez :\n\n:shell: 2 Carapace de doryphore géant\n:butterfly: 1 Aile de doryphore géant\n:cupid: 1 Coeur de lièvre")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'une arme en chitine à une main")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme en chitine à une main :", "Vous obtenez :\n\n:shell: 1 Carapace de doryphore géant\n:pick: 1 Fer médiocre\n:poultry_leg: 1 Patte de doryphore géant")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'une arme en chitine à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme en chitine à deux mains :", "Vous obtenez :\n\n:shell: 2 Carapace de doryphore géant\n:pick: 1 Fer commun\n:pick: 2 Fer médiocre\n:poultry_leg: 2 Patte de doryphore géant\n:deciduous_tree: 1 Bois de séquoia commun")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un équipement taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement taurus :", "Vous obtenez :\n\n:knife: 2 Peau de taurus\n:shell: 2 Carapace de bourdon flâneur\n:ox: 1 Poil de taurus")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un bijou taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou taurus :", "Vous obtenez :\n\n:shell: 2 Carapace de bourdon flâneur\n:beginner: 1 Cuirasse de fort taurus adroit\n:bacon: 1 Scalp de taurus\n:cupid: 1 Coeur de desman")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'une arme de taurus à une main")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de taurus à une main :", "Vous obtenez :\n\n:beginner: 1 Cuirasse de fort taurus adroit\n:pick: 1 Fer médiocre\n:dagger: 1 Corne de taurus")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'une arme de taurus à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de taurus à deux mains :", "Vous obtenez :\n\n:beginner: 2 Cuirasse de  fort taurus adroit\n:pick: 1 Fer commun\n:pick: 2 Fer médiocre\n:dagger: 2 Corne de taurus\n:deciduous_tree: 1 Bois de séquoia commun")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un équipement de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement de maille :", "Vous obtenez :\n\n:pick: 2 Fer rare\n:pick: 2 Fer commun\n:pick: 3 Fer médiocre")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un bijou de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou de maille :", "Vous obtenez :\n\n:pick: 2 Fer rare\n:pick: 2 Fer commun\n:pick: 3 Fer médiocre")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Equipements de maille fabrication
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de l'anneau de maille")) {
-        const Défense = (Math.floor((7) * Math.random() + 12))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de l'amulette de maille")) {
-        const Défense = (Math.floor((7) * Math.random() + 12))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
-        const Défense = (Math.floor((3) * Math.random() + 6))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des épaulières de maille")) {
-        const Défense = (Math.floor((3) * Math.random() + 6))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du plastron de maille")) {
-        const Défense = (Math.floor((3) * Math.random() + 6))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de la cape de maille")) {
-        const Défense = (Math.floor((3) * Math.random() + 6))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de la ceinture de maille")) {
-        const Défense = (Math.floor((3) * Math.random() + 6))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des gantelets de maille")) {
-        const Défense = (Math.floor((3) * Math.random() + 6))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des jambières de maille")) {
-        const Défense = (Math.floor((3) * Math.random() + 6))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des bottes de maille")) {
-        const Défense = (Math.floor((3) * Math.random() + 6))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes de maille :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
 // Arme darchic //
 
