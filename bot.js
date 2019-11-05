@@ -13549,6 +13549,57 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    if (message.content === prefix + "Parchemin de feu rouge faible") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 24\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de feu rouge faible")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégâts à un ennemis : `=Feu faible`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const roll = (Math.floor((100) * Math.random() + 1))
+    const feu = (Math.floor((16) * Math.random() + 20))
+    if (message.content.startsWith(prefix + "Feu faible")) {
+        if (roll <= 35) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Feu faible :", ":crossed_swords: Vous n'arrivez pas à enflammer votre cible...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (roll >= 36) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Feu faible :", ":crossed_swords: Vous arrivez à enflammer votre cible ce qui lui inflige " + feu + " points de dégâts, l'armure ne réduit pas les dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Menus | Liste | Runes
 
 bot.on('message', message => {
@@ -13879,6 +13930,19 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des clefs 1")) {
         message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Clef du donjon sauvage")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":key: Clef du donjon sauvage:", ":key: C'est une clef permettant d'ouvrir la porte pour accèder au donjon sauvage !\n\nPrix d'achat : X\n\nPrix de revente : 200")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
 });
 
@@ -27549,76 +27613,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-bot.on('message', message => {
-    const roll = (Math.floor((100) * Math.random() + 1))
-    const feu = (Math.floor((16) * Math.random() + 20))
-    if (message.content.startsWith(prefix + "Feu faible")) {
-        if (roll <= 35) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Feu faible :", ":crossed_swords: Vous n'arrivez pas à enflammer votre cible...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (roll >= 36) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Feu faible :", ":crossed_swords: Vous arrivez à enflammer votre cible ce qui lui inflige " + feu + " points de dégâts, l'armure ne réduit pas les dégâts !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-
-
-
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de feu rouge faible")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégâts à un ennemis : `=Feu faible`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === prefix + "Parchemin de feu rouge faible") {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 24\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Clef du donjon sauvage")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":key: Clef du donjon sauvage:", ":key: C'est une clef permettant d'ouvrir la porte pour accèder au donjon sauvage !\n\nPrix d'achat : X\n\nPrix de revente : 200")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-//////////////////////////////////////////////////////////////////OEUFS ET FAMILIERS///////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Oeuf déformé")) {
