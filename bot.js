@@ -5019,6 +5019,136 @@ bot.on('message', message => {
 // Menus | Liste | Equipements | Détails | Dargnan
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Casque dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque dargnan :", ":scales: C'est un casque fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de bousier colossal, 4 Carapace de guêpe vivace, 2 Carapace de doryphore géant, 2 Aile de frelon foudroyant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du casque dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epaulières dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières dargnan :", ":scales: Ce sont des épaulières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de guêpe vicace, 4 Carapace de doryphore géant, 2 Corne de bousier colossal, 4 Carapace de frelon foudroyant \n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des epaulières dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des epaulières dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plastron dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron dargnan :", ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de frelon foudroyant, 3 Aile de neoridas, 2 Dard de guêpe vicace, 2 Aile de doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape dargnan :", ":scales: C'est une cape faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de frelon foudroyant, 2 Aile de guêpe vivace, 2 Peau de neoridas, 1 Dard de frelon foudroyant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ceinture dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture dargnan :", ":scales: C'est une ceinture faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Aile de guêpe vicace, 3 Carapace de guêpe vivace, 3 Carapace de frelon foudroyant, 2 Langue de lombric irrégulier\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gantelets dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets dargnan :", ":scales: Ce sont des gantelets faits avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Aile de neoridas, 2 Carapace de frelon foudroyant, 1 Aile de guêpe vicace, 2 Dard de frelon foudroyant \n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Jambières dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières dargnan :", ":scales: Ce sont des jambières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de doryphore géant, 2 Carapace de frelon foudroyant, 1 Dard de frelon foudroyant, 2 Carapace de guêpe vicace\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bottes dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes dargnan :", ":scales: Ce sont des bottes faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte de bousier colossal, 2 Carapace de guêpe vivace, 2 Carapace de doryphore géant, 2 Carapace de frelon foudroyant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Anneau dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau dargnan :", ":scales: C'est un anneau fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de frelon foudroyant, 3 Carapace de guêpe vicace, 2 Dard de frelon foudroyant, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Amulette dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette dargnan :", ":scales: C'est une amulette faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de frelon foudroyant, 3 Carapace de guêpe vicace, 2 Dard de frelon foudroyant, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bonus de la panoplie dargnan")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -5032,6 +5162,136 @@ bot.on('message', message => {
 });
 
 // Menus | Liste | Equipements | Détails | Bovin
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Casque bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque bovin :", ":scales: C'est un casque fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de taurus, 4 Peau de boeuf, 2 Oreille de vache, 2 Corne de boeuf\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du casque bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du casque bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epaulières bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières bovin :", ":scales: Ce sont des épaulières fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de boeuf, 4 Peau de vache, 2 Corne de taurus, 2 Sabot de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des épaulières bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des épaulières bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des épaulières bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plastron bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron bovin :", ":scales: C'est un plastron fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peau de boeuf, 3 Poil de fort taurus adroit, 2 Sabot de boeuf, 2 Sabot de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du plastron bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron bovin`  \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape bovin :", ":scales: C'est une cape fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de vache, 2 Oreille de vache, 2 Poil de taurus, 1 Poil de taurus lourd\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la cape bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ceinture bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture bovin :", ":scales: C'est une ceinture fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Oreille de vache, 3 Peau de boeuf, 1 Sabot de boeuf, 2 Scalp de taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la ceinture bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gantelets bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets bovin :", ":scales: Ce sont des gantelets fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Corne de boeuf, 2 Sabot de boeuf, 1 Cuirasse de fort taurus adroit, 2 Sabot de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des gantelets bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Jambières bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières bovin :", ":scales: Ce sont des jambières fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de boeuf, 2 Sabot de vache, 1 Cuirasse de fort taurus adroit, 2 Poil de taurus lourd\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des jambières bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bottes bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes bovin :", ":scales: Ce sont des bottes fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 2 Sabot de vache, 2 Corne de boeuf, 2 Oreille de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des bottes bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Anneau bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau bovin :", ":scales: C'est un anneau fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : \n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 3 Oreille de vache, 2 Corne de boeuf, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'anneau bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Amulette bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette bovin :", ":scales: C'est une amulette fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : \n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 3 Oreille de vache, 2 Corne de boeuf, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'amulette bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bonus de la panoplie bovin")) {
@@ -7712,6 +7972,310 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Dargnan | Fabrication
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Fabrication du casque dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Fabrication des épaulières dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Épaulières dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Fabrication du plastron dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Fabrication de la cape dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Fabrication de la ceinture dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Fabrication des gantelets dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Fabrication des jambières dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 30)
+    const Défense = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Fabrication des bottes dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(31 * Math.random() + 70)
+    const Défense = (Math.floor((5) * Math.random() + 7))
+    if (message.content.startsWith(prefix + "Fabrication de l'anneau dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(31 * Math.random() + 70)
+    const Défense = (Math.floor((5) * Math.random() + 7))
+    if (message.content.startsWith(prefix + "Fabrication de l'amulette dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Dargnan | Découverte
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 3)
+    if (message.content.startsWith(prefix + "Découverte du casque dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 3)
+    if (message.content.startsWith(prefix + "Découverte des épaulières dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Épaulières dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 3)
+    if (message.content.startsWith(prefix + "Découverte du plastron dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 3)
+    if (message.content.startsWith(prefix + "Découverte de la cape dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 3)
+    if (message.content.startsWith(prefix + "Découverte de la ceinture dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 3)
+    if (message.content.startsWith(prefix + "Découverte des gantelets dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 3)
+    if (message.content.startsWith(prefix + "Découverte des jambières dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 25)
+    const Défense = Math.floor(2 * Math.random() + 3)
+    if (message.content.startsWith(prefix + "Découverte des bottes dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(31 * Math.random() + 55)
+    const Défense = (Math.floor((4) * Math.random() + 6))
+    if (message.content.startsWith(prefix + "Découverte de l'anneau dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(31 * Math.random() + 55)
+    const Défense = (Math.floor((4) * Math.random() + 6))
+    if (message.content.startsWith(prefix + "Découverte de l'amulette dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Dargnan | Amélioration
 
 bot.on('message', message => {
@@ -7980,6 +8544,290 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Amulette bovin :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Bovin | Fabrication
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 70)
+    if (message.content.startsWith(prefix + "Fabrication du casque bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 70)
+    if (message.content.startsWith(prefix + "Fabrication des épaulières bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Épaulières bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 70)
+    if (message.content.startsWith(prefix + "Fabrication du plastron bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 70)
+    if (message.content.startsWith(prefix + "Fabrication de la cape bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 70)
+    if (message.content.startsWith(prefix + "Fabrication de la ceinture bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 70)
+    if (message.content.startsWith(prefix + "Fabrication des gantelets bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 70)
+    if (message.content.startsWith(prefix + "Fabrication des jambières bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 70)
+    if (message.content.startsWith(prefix + "Fabrication des bottes bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = (Math.floor((71) * Math.random() + 140))
+    if (message.content.startsWith(prefix + "Fabrication de l'anneau bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = (Math.floor((71) * Math.random() + 140))
+    if (message.content.startsWith(prefix + "Fabrication de l'amulette bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Bovin | Découverte
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 55)
+    if (message.content.startsWith(prefix + "Découverte du casque bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 55)
+    if (message.content.startsWith(prefix + "Découverte des épaulières bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Épaulières bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 55)
+    if (message.content.startsWith(prefix + "Découverte du plastron bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 55)
+    if (message.content.startsWith(prefix + "Découverte de la cape bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 55)
+    if (message.content.startsWith(prefix + "Découverte de la ceinture bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 55)
+    if (message.content.startsWith(prefix + "Découverte des gantelets bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 55)
+    if (message.content.startsWith(prefix + "Découverte des jambières bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(26 * Math.random() + 55)
+    if (message.content.startsWith(prefix + "Découverte des bottes bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = (Math.floor((61) * Math.random() + 115))
+    if (message.content.startsWith(prefix + "Découverte de l'anneau bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = (Math.floor((61) * Math.random() + 115))
+    if (message.content.startsWith(prefix + "Découverte de l'amulette bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -34394,858 +35242,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-// Equipements dargnan
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Casque dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque dargnan :", ":scales: C'est un casque fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de bousier colossal, 4 Carapace de guêpe vivace, 2 Carapace de doryphore géant, 2 Aile de frelon foudroyant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du casque dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epaulières dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières dargnan :", ":scales: Ce sont des épaulières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de guêpe vicace, 4 Carapace de doryphore géant, 2 Corne de bousier colossal, 4 Carapace de frelon foudroyant \n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des epaulières dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des epaulières dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Plastron dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron dargnan :", ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de frelon foudroyant, 3 Aile de neoridas, 2 Dard de guêpe vicace, 2 Aile de doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cape dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape dargnan :", ":scales: C'est une cape faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de frelon foudroyant, 2 Aile de guêpe vivace, 2 Peau de neoridas, 1 Dard de frelon foudroyant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Ceinture dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture dargnan :", ":scales: C'est une ceinture faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Aile de guêpe vicace, 3 Carapace de guêpe vivace, 3 Carapace de frelon foudroyant, 2 Langue de lombric irrégulier\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Gantelets dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets dargnan :", ":scales: Ce sont des gantelets faits avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Aile de neoridas, 2 Carapace de frelon foudroyant, 1 Aile de guêpe vicace, 2 Dard de frelon foudroyant \n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Jambières dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières dargnan :", ":scales: Ce sont des jambières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de doryphore géant, 2 Carapace de frelon foudroyant, 1 Dard de frelon foudroyant, 2 Carapace de guêpe vicace\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bottes dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes dargnan :", ":scales: Ce sont des bottes faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte de bousier colossal, 2 Carapace de guêpe vivace, 2 Carapace de doryphore géant, 2 Carapace de frelon foudroyant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Anneau dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau dargnan :", ":scales: C'est un anneau fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de frelon foudroyant, 3 Carapace de guêpe vicace, 2 Dard de frelon foudroyant, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Amulette dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette dargnan :", ":scales: C'est une amulette faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de frelon foudroyant, 3 Carapace de guêpe vicace, 2 Dard de frelon foudroyant, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : X cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette dargnan` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette dargnan`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Equipements dargnan  fabrication
-
-bot.on('message', message => {
-    const HP = Math.floor(31 * Math.random() + 70)
-    const Défense = (Math.floor((5) * Math.random() + 7))
-    if (message.content.startsWith(prefix + "Fabrication de l'anneau dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(31 * Math.random() + 70)
-    const Défense = (Math.floor((5) * Math.random() + 7))
-    if (message.content.startsWith(prefix + "Fabrication de l'amulette dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 30)
-    const Défense = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Fabrication du casque dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 30)
-    const Défense = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Fabrication des épaulières dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Épaulières dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 30)
-    const Défense = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Fabrication de la cape dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 30)
-    const Défense = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Fabrication du plastron dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 30)
-    const Défense = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Fabrication des gantelets dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 30)
-    const Défense = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Fabrication de la ceinture dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 30)
-    const Défense = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Fabrication des jambières dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 30)
-    const Défense = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Fabrication des bottes dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Equipements dargnan découverte
-
-bot.on('message', message => {
-    const HP = Math.floor(31 * Math.random() + 55)
-    const Défense = (Math.floor((4) * Math.random() + 6))
-    if (message.content.startsWith(prefix + "Découverte de l'anneau dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(31 * Math.random() + 55)
-    const Défense = (Math.floor((4) * Math.random() + 6))
-    if (message.content.startsWith(prefix + "Découverte de l'amulette dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 25)
-    const Défense = Math.floor(2 * Math.random() + 3)
-    if (message.content.startsWith(prefix + "Découverte du casque dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 25)
-    const Défense = Math.floor(2 * Math.random() + 3)
-    if (message.content.startsWith(prefix + "Découverte des épaulières dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Épaulières dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 25)
-    const Défense = Math.floor(2 * Math.random() + 3)
-    if (message.content.startsWith(prefix + "Découverte de la cape dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 25)
-    const Défense = Math.floor(2 * Math.random() + 3)
-    if (message.content.startsWith(prefix + "Découverte du plastron dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 25)
-    const Défense = Math.floor(2 * Math.random() + 3)
-    if (message.content.startsWith(prefix + "Découverte des gantelets dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 25)
-    const Défense = Math.floor(2 * Math.random() + 3)
-    if (message.content.startsWith(prefix + "Découverte de la ceinture dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 25)
-    const Défense = Math.floor(2 * Math.random() + 3)
-    if (message.content.startsWith(prefix + "Découverte des jambières dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(16 * Math.random() + 25)
-    const Défense = Math.floor(2 * Math.random() + 3)
-    if (message.content.startsWith(prefix + "Découverte des bottes dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes dargnan :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Equipements Bovin
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Casque bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque bovin :", ":scales: C'est un casque fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de taurus, 4 Peau de boeuf, 2 Oreille de vache, 2 Corne de boeuf\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du casque bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du casque bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epaulières bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières bovin :", ":scales: Ce sont des épaulières fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de boeuf, 4 Peau de vache, 2 Corne de taurus, 2 Sabot de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des épaulières bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des épaulières bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des épaulières bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cape bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape bovin :", ":scales: C'est une cape fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de vache, 2 Oreille de vache, 2 Poil de taurus, 1 Poil de taurus lourd\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la cape bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Plastron bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron bovin :", ":scales: C'est un plastron fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peau de boeuf, 3 Poil de fort taurus adroit, 2 Sabot de boeuf, 2 Sabot de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du plastron bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron bovin`  \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Gantelets bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets bovin :", ":scales: Ce sont des gantelets fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Corne de boeuf, 2 Sabot de boeuf, 1 Cuirasse de fort taurus adroit, 2 Sabot de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des gantelets bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Ceinture bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture bovin :", ":scales: C'est une ceinture fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Oreille de vache, 3 Peau de boeuf, 1 Sabot de boeuf, 2 Scalp de taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la ceinture bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Jambières bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières bovin :", ":scales: Ce sont des jambières fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de boeuf, 2 Sabot de vache, 1 Cuirasse de fort taurus adroit, 2 Poil de taurus lourd\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des jambières bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bottes bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes bovin :", ":scales: Ce sont des bottes fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 2 Sabot de vache, 2 Corne de boeuf, 2 Oreille de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des bottes bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Anneau bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau bovin :", ":scales: C'est un anneau fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : \n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 3 Oreille de vache, 2 Corne de boeuf, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'anneau bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Amulette bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette bovin :", ":scales: C'est une amulette fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : \n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 3 Oreille de vache, 2 Corne de boeuf, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'amulette bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Equipements bovin fabrication
-
-bot.on('message', message => {
-    const HP = (Math.floor((71) * Math.random() + 140))
-    if (message.content.startsWith(prefix + "Fabrication de l'anneau bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = (Math.floor((71) * Math.random() + 140))
-    if (message.content.startsWith(prefix + "Fabrication de l'amulette bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 70)
-    if (message.content.startsWith(prefix + "Fabrication du casque bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 70)
-    if (message.content.startsWith(prefix + "Fabrication des épaulières bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Épaulières bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 70)
-    if (message.content.startsWith(prefix + "Fabrication de la cape bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 70)
-    if (message.content.startsWith(prefix + "Fabrication du plastron bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 70)
-    if (message.content.startsWith(prefix + "Fabrication des gantelets bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 70)
-    if (message.content.startsWith(prefix + "Fabrication de la ceinture bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 70)
-    if (message.content.startsWith(prefix + "Fabrication des jambières bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 70)
-    if (message.content.startsWith(prefix + "Fabrication des bottes bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Equipements bovin découverte
-
-bot.on('message', message => {
-    const HP = (Math.floor((61) * Math.random() + 115))
-    if (message.content.startsWith(prefix + "Découverte de l'anneau bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = (Math.floor((61) * Math.random() + 115))
-    if (message.content.startsWith(prefix + "Découverte de l'amulette bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 55)
-    if (message.content.startsWith(prefix + "Découverte du casque bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 55)
-    if (message.content.startsWith(prefix + "Découverte des épaulières bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Épaulières bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 55)
-    if (message.content.startsWith(prefix + "Découverte de la cape bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 55)
-    if (message.content.startsWith(prefix + "Découverte du plastron bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 55)
-    if (message.content.startsWith(prefix + "Découverte des gantelets bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 55)
-    if (message.content.startsWith(prefix + "Découverte de la ceinture bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 55)
-    if (message.content.startsWith(prefix + "Découverte des jambières bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(26 * Math.random() + 55)
-    if (message.content.startsWith(prefix + "Découverte des bottes bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes bovin :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points d'HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
 // Equipements
 
