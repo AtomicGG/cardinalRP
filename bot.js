@@ -32585,6 +32585,48 @@ bot.on('message', message => {
     }
 });
 
+// Compétences | blocage parfait
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Revive fukaa")) {
+        if ( /*talkedRecently.has(message.author.id+5)*/ false) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Cooldown :", " Vous devrez attendre 1 H avant de pouvoir refaire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const roll = (Math.floor(100) * Math.random() + 1)
+            if (roll <= 80) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":cyclone: Revive Fukaa :", ":cyclone: Votre compétence 'Revive Fukaa' fait revenir Fukaa a la vie pendant 2 tour.")
+                    .setImage("https://i.gifer.com/8Va3.gif")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (roll >= 81) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":cyclone: Revive Fukaa :", ":cyclone: Votre compétence 'Revive Fukaa' fait revenir Fukaa a la vie pendant 2 tour.")
+                    .setImage("https://i.gifer.com/8Va3.gif")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            talkedRecently.add(message.author.id + 2);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 2);
+            }, 3600000);
+        }
+    }
+});
 
 // Compétences | Treble scythe
 
