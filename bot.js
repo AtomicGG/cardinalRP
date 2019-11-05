@@ -33091,8 +33091,8 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Coups jumeaux")) {
         let degats = args.slice(2).join(" : ");
-        const degat1 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.3))
-        const degat2 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.3))
+        const degat1 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.9))
+        const degat2 = Math.floor((degats * 0.4 + 1) * Math.random() + (degats * 0.9))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 35) {
             const embed = new Discord.RichEmbed()
@@ -33531,7 +33531,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Epée 
+// Compétences d'armes | Epée
 
 bot.on('message', message => {
     const args = message.content;
@@ -33574,7 +33574,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Espadon 
+// Compétences d'armes | Espadon
 
 bot.on('message', message => {
     const args = message.content;
@@ -33681,7 +33681,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Dague 
+// Compétences d'armes | Dague
 
 bot.on('message', message => {
     const args = message.content;
@@ -33725,7 +33725,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Masse 
+// Compétences d'armes | Masse
 
 bot.on('message', message => {
     const args = message.content;
@@ -33768,7 +33768,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Marteau 
+// Compétences d'armes | Marteau
 
 bot.on('message', message => {
     const args = message.content;
@@ -33811,7 +33811,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Hache 
+// Compétences d'armes | Hache
 
 bot.on('message', message => {
     const args = message.content;
@@ -33855,7 +33855,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Hallebarde 
+// Compétences d'armes | Hallebarde
 
 bot.on('message', message => {
     const args = message.content;
@@ -33898,7 +33898,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Rapière 
+// Compétences d'armes | Rapière
 
 bot.on('message', message => {
     const args = message.content;
@@ -33941,7 +33941,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Cimeterre 
+// Compétences d'armes | Cimeterre
 
 bot.on('message', message => {
     const args = message.content;
@@ -33973,7 +33973,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Sabre 
+// Compétences d'armes | Sabre
 
 bot.on('message', message => {
     const args = message.content;
@@ -34016,7 +34016,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Katana 
+// Compétences d'armes | Katana
 
 bot.on('message', message => {
     const args = message.content;
@@ -34059,7 +34059,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Nodachi 
+// Compétences d'armes | Nodachi
 
 bot.on('message', message => {
     const args = message.content;
@@ -34104,7 +34104,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Bâton 
+// Compétences d'armes | Bâton
 
 bot.on('message', message => {
     const args = message.content;
@@ -34149,7 +34149,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Lance 
+// Compétences d'armes | Lance
 
 bot.on('message', message => {
     const args = message.content;
@@ -34192,7 +34192,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Cestes 
+// Compétences d'armes | Cestes
 
 bot.on('message', message => {
     const args = message.content;
@@ -34224,7 +34224,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Bouclier 
+// Compétences d'armes | Bouclier
 
 bot.on('message', message => {
     const args = message.content;
@@ -34267,7 +34267,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Rondache 
+// Compétences d'armes | Rondache
 
 bot.on('message', message => {
     const args = message.content;
@@ -34299,7 +34299,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Ecu 
+// Compétences d'armes | Ecu
 
 bot.on('message', message => {
     const args = message.content;
@@ -34332,7 +34332,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences d'armes | Targe 
+// Compétences d'armes | Targe
 
 bot.on('message', message => {
     const args = message.content;
