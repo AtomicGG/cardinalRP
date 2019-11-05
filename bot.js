@@ -4674,6 +4674,19 @@ bot.on('message', message => {
 // Menus | Liste | Equipements | Détails | Chitine
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Equipements en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des équipements en chitine :", "=Casque en chitine\n=Epaulières en chitine\n=Plastron en chitine\n=Cape en chitine\n=Ceinture en chitine\n=Gantelets en chitine\n=Jambières en chitine\n=Bottes en chitine")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Casque en chitine")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -4794,6 +4807,19 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bijoux en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des bijoux en chitine :", "=Anneau en chitine\n=Amulette en chitine")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Anneau en chitine")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -4837,6 +4863,19 @@ bot.on('message', message => {
 });
 
 // Menus | Liste | Equipements | Détails | Taurus
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Equipements taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des équipements taurus :", "=Casque taurus\n=Epaulières taurus\n=Plastron taurus\n=Cape taurus\n=Ceinture taurus\n=Gantelets taurus\n=Jambières taurus\n=Bottes taurus")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Casque taurus")) {
@@ -4959,6 +4998,19 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bijoux taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des bijoux taurus :", "=Anneau taurus\n=Amulette taurus")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Anneau taurus")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -5004,6 +5056,32 @@ bot.on('message', message => {
 // Menus | Liste | Equipements | Détails | Maille
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Equipements de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des équipements de maille :", "=Casque de maille\n=Epaulières de maille\n=Plastron de maille\n=Cape de maille\n=Ceinture de maille\n=Gantelets de maille\n=Jambières de maille\n=Bottes de maille")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bijoux de maille")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des bijoux de maille :", "=Anneau de maille\n=Amulette de maille")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bonus de la panoplie de maille")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -5017,6 +5095,19 @@ bot.on('message', message => {
 });
 
 // Menus | Liste | Equipements | Détails | Dargnan
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Equipements dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des équipements dargnan :", "=Casque dargnan\n=Epaulières dargnan\n=Plastron dargnan\n=Cape dargnan\n=Ceinture dargnan\n=Gantelets dargnan\n=Jambières dargnan\n=Bottes dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Casque dargnan")) {
@@ -5123,6 +5214,19 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bijoux dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des bijoux dargnan :", "=Anneau dargnan\n=Amulette dargnan")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Anneau dargnan")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -5162,6 +5266,19 @@ bot.on('message', message => {
 });
 
 // Menus | Liste | Equipements | Détails | Bovin
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Equipements bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des équipements bovin :", "=Casque bovin\n=Epaulières bovin\n=Plastron bovin\n=Cape bovin\n=Ceinture bovin\n=Gantelets bovin\n=Jambières bovin\n=Bottes bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Casque bovin")) {
@@ -5261,6 +5378,19 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Bottes bovin :", ":scales: Ce sont des bottes fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 2 Sabot de vache, 2 Corne de boeuf, 2 Oreille de vache\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des bottes bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bijoux bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des bijoux bovin :", "=Anneau bovin\n=Amulette bovin")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -35242,138 +35372,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-// Equipements
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Equipements en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des équipements en chitine :", "=Casque en chitine\n=Epaulières en chitine\n=Cape en chitine\n=Plastron en chitine\n=Ceinture en chitine\n=Gantelets en chitine\n=Jambières en chitine\n=Bottes en chitine")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Equipements de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des équipements de maille :", "=Casque de maille\n=Epaulières de maille\n=Cape de maille\n=Plastron de maille\n=Ceinture de maille\n=Gantelets de maille\n=Jambières de maille\n=Bottes de maille")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Equipements taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des équipements taurus :", "=Casque taurus\n=Epaulières taurus\n=Cape taurus\n=Plastron taurus\n=Ceinture taurus\n=Gantelets taurus\n=Jambières taurus\n=Bottes taurus")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Equipements bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des équipements bovin :", "=Casque bovin\n=Epaulières bovin\n=Cape bovin\n=Plastron bovin\n=Ceinture bovin\n=Gantelets bovin\n=Jambières bovin\n=Bottes bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Equipements dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des équipements dargnan :", "=Casque dargnan\n=Epaulières dargnan\n=Cape dargnan\n=Plastron dargnan\n=Ceinture dargnan\n=Gantelets dargnan\n=Jambières dargnan\n=Bottes dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bijoux en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des bijoux en chitine :", "=Anneau en chitine\n=Amulette en chitine")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bijoux de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des bijoux de maille :", "=Anneau de maille\n=Amulette de maille")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bijoux taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des bijoux taurus :", "=Anneau taurus\n=Amulette taurus")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bijoux bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des bijoux bovin :", "=Anneau bovin\n=Amulette bovin")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bijoux dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Liste des bijoux dargnan :", "=Anneau dargnan\n=Amulette dargnan")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
 // Arme en chitine
 
