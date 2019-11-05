@@ -7174,6 +7174,158 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Taurus | Fabrication
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du casque taurus")) {
+        const Dégâts = Math.floor(2 * Math.random() + 2)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des épaulières taurus")) {
+        const Dégâts = Math.floor(2 * Math.random() + 2)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du plastron taurus")) {
+        const Dégâts = Math.floor(2 * Math.random() + 2)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la cape taurus")) {
+        const Dégâts = Math.floor(2 * Math.random() + 2)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la ceinture taurus")) {
+        const Dégâts = Math.floor(2 * Math.random() + 2)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des gantelets taurus")) {
+        const Dégâts = Math.floor(2 * Math.random() + 2)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du jambières taurus")) {
+        const Dégâts = Math.floor(2 * Math.random() + 2)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des bottes taurus")) {
+        const Dégâts = Math.floor(2 * Math.random() + 2)
+        const HP = Math.floor(16 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de l'anneau taurus")) {
+        const Dégâts = Math.floor(5 * Math.random() + 11)
+        const HP = Math.floor(41 * Math.random() + 65)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de l'amulette taurus")) {
+        const Dégâts = Math.floor(5 * Math.random() + 11)
+        const HP = Math.floor(41 * Math.random() + 65)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Taurus | Découverte
 
 bot.on('message', message => {
@@ -32790,162 +32942,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-
-
-
-
-
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de l'anneau taurus")) {
-        const Dégâts = Math.floor(5 * Math.random() + 11)
-        const HP = Math.floor(41 * Math.random() + 65)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de l'amulette taurus")) {
-        const Dégâts = Math.floor(5 * Math.random() + 11)
-        const HP = Math.floor(41 * Math.random() + 65)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du casque taurus")) {
-        const Dégâts = Math.floor(2 * Math.random() + 2)
-        const HP = Math.floor(16 * Math.random() + 50)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des épaulières taurus")) {
-        const Dégâts = Math.floor(2 * Math.random() + 2)
-        const HP = Math.floor(16 * Math.random() + 50)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du plastron taurus")) {
-        const Dégâts = Math.floor(2 * Math.random() + 2)
-        const HP = Math.floor(16 * Math.random() + 50)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de la cape taurus")) {
-        const Dégâts = Math.floor(2 * Math.random() + 2)
-        const HP = Math.floor(16 * Math.random() + 50)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de la ceinture taurus")) {
-        const Dégâts = Math.floor(2 * Math.random() + 2)
-        const HP = Math.floor(16 * Math.random() + 50)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des gantelets taurus")) {
-        const Dégâts = Math.floor(2 * Math.random() + 2)
-        const HP = Math.floor(16 * Math.random() + 50)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du jambières taurus")) {
-        const Dégâts = Math.floor(2 * Math.random() + 2)
-        const HP = Math.floor(16 * Math.random() + 50)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des bottes taurus")) {
-        const Dégâts = Math.floor(2 * Math.random() + 2)
-        const HP = Math.floor(16 * Math.random() + 50)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes taurus :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Oeuf brisé")) {
