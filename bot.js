@@ -41693,7 +41693,7 @@ bot.on('message', message => {
             scalp = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 15) {
+        if (rollRessource <= 25) {
             cuirasse = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
