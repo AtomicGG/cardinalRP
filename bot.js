@@ -10801,7 +10801,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix + "Liste d'armes 20")) {
+    if (message.content === (prefix + "Liste d'armes 3")) {
         message.channel.send("```Epée du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups]\n\n" +
             "Espadon du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Espadon du clan des loups]\n\n" +
             "Dague du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups]\n\n" +
@@ -10815,31 +10815,25 @@ bot.on('message', message => {
             "Katana du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups]\n\n" +
             "Nodachi du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Nodachi du clan des loups]\n\n" +
             "Pavois du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Pavois du clan des loups]\n\n" +
-            "Suite en écrivant :\n=Liste d'armes 5```")
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Liste d'armes 3")) {
-        message.channel.send("```Epée du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Epée du clan des loups]\n\n" +
-            "Espadon du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Espadon du clan des loups]\n\n" +
-            "Dague du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Dague du clan des loups]\n\n" +
-            "Masse du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Masse du clan des loups]\n\n" +
-            "Marteau du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Marteau du clan des loups]\n\n" +
-            "Hache du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Hache du clan des loups]\n\n" +
-            "Hallebarde du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Hallebarde du clan des loups]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 4```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 4")) {
-        message.channel.send("```Rapière du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Rapière du clan des loups]\n\n" +
-            "Cimeterre du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Cimeterre du clan des loups]\n\n" +
-            "Sabre du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Sabre du clan des loups]\n\n" +
-            "Katana du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Katana du clan des loups]\n\n" +
-            "Nodachi du clan des loups :\nCoûts : [Achat : X cols] [Revente : 150 cols]\nInfos : [=Nodachi du clan des loups]\n\n" +
-            "Pavois du clan des loups :\nCoûts : [Achat : X cols] [Revente : 75 cols]\nInfos : [=Pavois du clan des loups]\n\n" +
+        message.channel.send("```Epée de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Epée de kobolt supérieure]\n\n" +
+            "Espadon de kobolt supérieure :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Espadon de kobolt supérieure]\n\n" +
+            "Dague de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Dague de kobolt supérieure]\n\n" +
+            "Masse de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Masse de kobolt supérieure]\n\n" +
+            "Marteau de kobolt supérieure :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Marteau de kobolt supérieure]\n\n" +
+            "Hache de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Hache de kobolt supérieure]\n\n" +
+            "Hallebarde de kobolt supérieure :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Hallebarde de kobolt supérieure]\n\n" +
+            "Rapière de kobolt supérieure :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Rapière de kobolt supérieure]\n\n" +
+            "Cimeterre de kobolt supérieur :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Cimeterre de kobolt supérieur]\n\n" +
+            "Sabre de kobolt supérieure :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Sabre de kobolt supérieure]\n\n" +
+            "Katana de kobolt supérieur :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Katana de kobolt supérieur]\n\n" +
+            "Nodachi de kobolt supérieur :\nCoûts : [Achat : 1360 cols] [Revente : 340 cols]\nInfos : [=Nodachi de kobolt supérieur]\n\n" +
+            "Pavois de kobolt supérieur :\nCoûts : [Achat : 880 cols] [Revente : 220 cols]\nInfos : [=Pavois de kobolt supérieur]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 5```")
     }
 });
