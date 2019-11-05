@@ -33065,10 +33065,6 @@ bot.on('message', message => {
     }
 })
 
-//toto
-
-
-
 // Vallée | Description
 
 bot.on('message', message => {
@@ -33088,7 +33084,7 @@ bot.on('message', message => {
     }
 })
 
-// Vallée | quête
+// Vallée | Quête
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Vallée quête") {
@@ -33304,37 +33300,6 @@ bot.on('message', message => {
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Frelon foudroyant attaque`")
             .addField(":shield: Lorsque le Frelon foudroyant reçoit un coup :", ":shield: `=Frelon foudroyant défense : [Points de dégâts de votre coup]`")
             .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Frelon foudroyant récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-//Mid Boss // Bulls
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Taureau bossu") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Taureau bossu :", ":japanese_ogre: Le mid boss qui n'est trouvable que dans la vallée du palier 2 !")
-            .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/8/8a/Bullbous_Bow.png/revision/latest/scale-to-width-down/180?cb=20170611164919&path-prefix=fr")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 20 000 ")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Taureau bossu attaque`")
-            .addField(":shield: Lorsque le Taureau bossu reçoit un coup :", ":shield: `=Taureau bossu défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Taureau bossu récompenses`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Taureau bossu récompenses")) {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Taureau bossu :")
-            .addField("Récompenses du Taureau bossu vaincu :", "450XP, 10 000 cols, 5 carapaces de frelon foudroyants, 4 ailes de frelon foudroyant, 3 dards de frelon foudroyant, 3 yeux de frelon foudroyant par joueur et pour la personne suivante qui a réalisé le dernier coup (c'est à dire Lyn), elle reçoit un `Chakram`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -34043,9 +34008,25 @@ bot.on('message', message => {
     }
 })
 
-// Grande clairière//
+// Grande clairière
 
-bot.on('message', message => {
+bot.off('message', message => {
+    if (message.content === (prefix) + "Taureau bossu") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Taureau bossu :", ":japanese_ogre: Le mid boss qui n'est trouvable que dans la vallée du palier 2 !")
+            .setImage("https://vignette.wikia.nocookie.net/sword-art-online/images/8/8a/Bullbous_Bow.png/revision/latest/scale-to-width-down/180?cb=20170611164919&path-prefix=fr")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 20 000 ")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Taureau bossu attaque`")
+            .addField(":shield: Lorsque le Taureau bossu reçoit un coup :", ":shield: `=Taureau bossu défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Taureau bossu récompenses`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Taureau bossu attaque")) {
         const degat = Math.floor(36 * Math.random() + 240)
         const degatPique = Math.floor(46 * Math.random() + 280)
@@ -34114,7 +34095,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Echec de l'esquive de la charge fulgurante")) {
         const degat = Math.floor(56 * Math.random() + 280)
         const embed = new Discord.RichEmbed()
@@ -34127,7 +34108,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Réussite de l'esquive de la charge fulgurante")) {
         const degat = Math.floor(56 * Math.random() + 280)
         const embed = new Discord.RichEmbed()
@@ -34140,7 +34121,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Taureau bossu défense")) {
@@ -34160,7 +34141,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Taureau bossu Calme")) {
@@ -34174,6 +34155,19 @@ bot.on('message', message => {
             message.channel.send({ embed })
             fury = true
         }
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Taureau bossu récompenses")) {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Taureau bossu :")
+            .addField("Récompenses du Taureau bossu vaincu :", "450XP, 10 000 cols, 5 carapaces de frelon foudroyants, 4 ailes de frelon foudroyant, 3 dards de frelon foudroyant, 3 yeux de frelon foudroyant par joueur et pour la personne suivante qui a réalisé le dernier coup (c'est à dire Lyn), elle reçoit un `Chakram`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
 });
 
@@ -34398,6 +34392,8 @@ bot.on('message', message => {
         }
     }
 })
+
+//toto
 
 // Equipements dargnan
 
