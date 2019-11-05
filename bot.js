@@ -10884,31 +10884,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix + "Liste d'armes 10")) {
-        message.channel.send("```Epée de taurus :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Epée de taurus]\n\n" +
-            "Espadon de taurus :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Espadon de taurus]\n\n" +
-            "Dague de taurus :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Dague de taurus]\n\n" +
-            "Masse de taurus :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Masse de taurus]\n\n" +
-            "Marteau de taurus :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Marteau de taurus]\n\n" +
-            "Hache de taurus :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Hache de taurus]\n\n" +
-            "Hallebarde de taurus :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Hallebarde de taurus]\n\n" +
-            "Suite en écrivant :\n=Liste d'armes 11```")
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Liste d'armes 11")) {
-        message.channel.send("```Rapière de taurus :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Rapière de taurus]\n\n" +
-            "Cimeterre de taurus :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Cimeterre de taurus]\n\n" +
-            "Sabre de taurus :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Sabre de taurus]\n\n" +
-            "Katana de taurus :\nCoûts : [Achat : 1725 cols] [Revente : 430 cols]\nInfos : [=Katana de taurus]\n\n" +
-            "Nodachi de taurus :\nCoûts : [Achat : 3725 cols] [Revente : 930 cols]\nInfos : [=Nodachi de taurus]\n\n" +
-            "Suite en écrivant :\n=Liste d'armes 12```")
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Liste d'armes 12")) {
+    if (message.content === (prefix + "Liste d'armes 8")) {
         message.channel.send("```Epée darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Epée darchic]\n\n" +
             "Espadon darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Espadon darchic]\n\n" +
             "Dague darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Dague darchic]\n\n" +
@@ -10916,13 +10892,7 @@ bot.on('message', message => {
             "Marteau darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Marteau darchic]\n\n" +
             "Hache darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Hache darchic]\n\n" +
             "Hallebarde darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Hallebarde darchic]\n\n" +
-            "Suite en écrivant :\n=Liste d'armes 13```")
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Liste d'armes 13")) {
-        message.channel.send("```Rapière darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Rapière darchic]\n\n" +
+            "Rapière darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Rapière darchic]\n\n" +
             "Cimeterre darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Cimeterre darchic]\n\n" +
             "Sabre darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Sabre darchic]\n\n" +
             "Katana darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Katana darchic]\n\n" +
