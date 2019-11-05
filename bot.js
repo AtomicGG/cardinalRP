@@ -16919,6 +16919,130 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Oeuf brisé")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":egg: Oeuf brisé :", ":egg: C'est un oeuf assez étrange, avec une allure qui pourrait faire penser qu'il est sur le point de se briser, qui renferme parfois un bébé animal trouvable dans le palier 2 !")
+            .addField("Prix d'achat :", "8000 cols")
+            .addField("Prix de revente :", "2000 cols")
+            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf brisé")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf brisé")) {
+        if (A <= 60) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous ne découvrez aucun bébé animal malheureusement...")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 61 & A <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez une vachette !")
+                .addField(":egg: vachette :", ":egg: Confère 150 HP max supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 71 & A <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez un bébé boeuf !")
+                .addField(":egg: Bébé boeuf :", ":egg: Confère 20 points de dégâts supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 81 & A <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez un gros bébé taurus !")
+                .addField(":egg: Gros bébé taurus :", ":egg: Après chacunes de vos attaques réussies, le bébé taurus provoque, ne fonctionne que sur les monstres : =Gros bébé taurus provoque!\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 91 & A <= 100) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez un petit taurus malin")
+                .addField(":egg: Taurus malin :", ":egg: Après chacunes de vos attaques réussies, le petit taurus malin attaquera : =Petit taurus malin attaque!\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Gros bébé taurus provoque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque... Rien... Il a raté sa provoc...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque un monstre pendant un tour, il pourra supporter que 3 attaque!")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Petit taurus malin attaque")) {
+        if (A <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Petit taurus malin :", ":crossed_swords: Petit taurus malin tente de briser la défense du monstre mais il préfère faire le beau...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 76) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Petit taurus malin :", ":crossed_swords: Petit taurus malin attaque et brise la défense du monstre, l'immobilisant pour une attaque!")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Menus | Liste | Clefs
 
 bot.on('message', message => {
@@ -32943,129 +33067,7 @@ bot.on('message', message => {
 
 //toto
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Oeuf brisé")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":egg: Oeuf brisé :", ":egg: C'est un oeuf assez étrange, avec une allure qui pourrait faire penser qu'il est sur le point de se briser, qui renferme parfois un bébé animal trouvable dans le palier 2 !")
-            .addField("Prix d'achat :", "8000 cols")
-            .addField("Prix de revente :", "2000 cols")
-            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf brisé")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf brisé")) {
-        if (A <= 60) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous ne découvrez aucun bébé animal malheureusement...")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 61 & A <= 70) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez une vachette !")
-                .addField(":egg: vachette :", ":egg: Confère 150 HP max supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 71 & A <= 80) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez un bébé boeuf !")
-                .addField(":egg: Bébé boeuf :", ":egg: Confère 20 points de dégâts supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 81 & A <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez un gros bébé taurus !")
-                .addField(":egg: Gros bébé taurus :", ":egg: Après chacunes de vos attaques réussies, le bébé taurus provoque, ne fonctionne que sur les monstres : =Gros bébé taurus provoque!\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 91 & A <= 100) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez un petit taurus malin")
-                .addField(":egg: Taurus malin :", ":egg: Après chacunes de vos attaques réussies, le petit taurus malin attaquera : =Petit taurus malin attaque!\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
-                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Gros bébé taurus provoque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque... Rien... Il a raté sa provoc...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque un monstre pendant un tour, il pourra supporter que 3 attaque!")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Petit taurus malin attaque")) {
-        if (A <= 75) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Petit taurus malin :", ":crossed_swords: Petit taurus malin tente de briser la défense du monstre mais il préfère faire le beau...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 76) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Petit taurus malin :", ":crossed_swords: Petit taurus malin attaque et brise la défense du monstre, l'immobilisant pour une attaque!")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
 
 // Vallée | Description
 
