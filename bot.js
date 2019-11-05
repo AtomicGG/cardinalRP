@@ -34449,6 +34449,94 @@ bot.on('message', message => {
     }
 });
 
+bot.off('message', message => {
+    if (message.content === (prefix) + "Kobolt géant rouge") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Kobolt géant rouge :", ":japanese_ogre: Un kobolt géant rare qui n'est trouvable que dans le labyrinthe")
+            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3500")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Kobolt géant rouge attaque`")
+            .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :", ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
+            .addField(":warning: Le kobolt géant rouge est insensible aux effets suivants :", ":warning: Provocation, étourdissement")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.off('message', message => {
+    if (message.content.startsWith(prefix + "Kobolt géant rouge attaque")) {
+        const Dégâts = 40
+        const A = (Math.floor((30) * Math.random() + 130))
+        const B = (Math.floor((100) * Math.random() + 1))
+        const C = (Math.floor((10) * Math.random() + 150))
+        if (B <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Kobolt géant rouge :", ":crossed_swords: Le kobolt géant rouge sort deux épées de son dos et les fait frotter le sol en courant vers vous mais sa course le fait tomber à cause de son immensité, vous avez de la chance !")
+            message.channel.send({ embed })
+        }
+        if (31 <= B & B <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Kobolt géant rouge :", ":crossed_swords: Le kobolt géant rouge sort et balance ses deux épées ainsi que ses bras gigantesques vers vous d'une vitesse colossale, il inflige " + A + " points de dégâts à deux joueurs")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= B) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Kobolt géant rouge :", ":crossed_swords: Le kobolt géant rouge commence à avoir des yeux complètement injectés de sang et se déchaîne complètement en balançant ses bras et ses épées dans tous les sens autour de lui, il inflige " + A + " points de dégâts à tous les joueurs, ou s'il n'y a qu'un joueur " + C + " points de dégâts à la place [Esquive uniquement possible de la part de tous les joueurs]")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.off('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Kobolt géant rouge défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const A = (Math.floor((Dégâts * 1.5) * Math.random() + (Dégâts / 1.5)))
+        const B = (Math.floor((100) * Math.random() + 1))
+        const C = (Math.floor((21) * Math.random() + 100))
+        if (B <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Kobolt géant rouge :", ":shield: Le kobolt géant rouge est si imposant qu'il n'arrive à peine à bouger lors de l'arrivé de votre coup, vous lui infligez " + A + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (76 <= B & B <= 89) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Kobolt géant rouge :", ":shield: Le kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et cri a travers le labyrinthe.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (90 <= B) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Kobolt géant rouge :", ":shield: Le kobolt géant rouge sors une épée et la tien à deux mains avant de l'exploser sur le sol par réflexe provoquant un genre de séisme tellement la puissance est grande, il inflige " + C + " points de dégâts à tous les joueurs.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Météo
 
 bot.on('message', message => {
@@ -39307,6 +39395,355 @@ bot.on('message', message => {
     }
 })
 
+// Salle du boss | Description
+
+bot.off('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Salle du boss")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField(":bank: Salle du boss :", ":bank: Vous ouvrez les portes de la salle du boss du palier 1, vous tombez face à face devant : \n" +
+                ":crossed_swords: Illfang le seigneur kobolt\n" +
+                ":crossed_swords: 3 Kobolt sentinelle")
+            .setColor(3447003)
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Salle du boss | Monstres | Descriptions
+
+bot.off('message', message => {
+    if (message.content === (prefix) + "Kobolt sentinelle") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Kobolt sentinelle :", ":japanese_ogre: Un kobolt qui n'est trouvable que dans... !")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/4d/Kobold_Sentinel.png/revision/latest?cb=20140309042458")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 1500")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Kobolt sentinelle attaque`")
+            .addField(":shield: Lorsque le kobolt sentinelle reçoit un coup :", ":shield: `=Kobolt sentinelle défense : [Points de dégâts de votre coup]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.off('message', message => {
+    if (message.content === (prefix) + "Illfang le seigneur kobolt") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Illfang le seigneur kobolt :", ":japanese_ogre: C'est le seigneur kobolt gardant la porte vers le palier 2 !")
+            .setImage("https://cdn.myanimelist.net/s/common/uploaded_files/1444463879-27a3b94bfb547baaf570cb84ab77763f.jpeg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 25 000")
+            .addField(":crossed_swords: Lorsqu'Illfang attaque :", ":crossed_swords: `=Illfang attaque`")
+            .addField(":shield: Lorsqu'Illfang reçoit un coup :", ":shield: `=Illfang défense : [Points de dégâts de votre coup]`")
+            .addField(":japanese_ogre: Lorsque qu'Illfang entre dans sa deuxième phase, qui commence à partir de 5000 HP.", "`=Illfang entrée phase 2`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.off('message', message => {
+    if (message.content === (prefix) + "Illfang entrée phase 2") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594600636020949002/tumblr_mbr5n4TMrp1rsxn5po1_400.gif")
+            .addField(":japanese_ogre: Illfang le seigneur kobolt :", "\n**Illfang vous hurle dessus et rentre dans sa deuxième phase !\nIl jette sa hache à deux mains derrière lui qui commence à se désintégrer.**")
+            .addField(":crossed_swords: Lorsqu'Illfang attaque dans sa phase 2 :", ":crossed_swords: `=Illfang phase 2 attaque`")
+            .addField(":shield: Lorsqu'Illfang reçoit un coup dans sa phase 2 :", ":shield: `=Illfang phase 2  défense : [Points de dégâts de votre coup]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+// Salle du boss | Monstres | Attaques
+
+bot.off('message', message => {
+    if (message.content.startsWith(prefix + "Méta sentinelle attaque")) {
+        const degat = Math.floor(21 * Math.random() + 55)
+        const degatCrit = Math.floor(21 * Math.random() + 60)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 35) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Méta sentinelle :", ":crossed_swords: Le Méta sentinelle fonce vers vous avec sa masse et l'écrase sur vous mais hésite un peu et il rate de peu. Vous avez de la chance.")
+            message.channel.send({ embed })
+        }
+        if (36 <= roll & roll <= 85) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Méta sentinelle :", ":crossed_swords: Le Méta sentinelle fonce vers vous avec sa masse et l'écrase sur vous, il inflige " + degat + " points de dégâts")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (86 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Méta sentinelle :", ":crossed_swords: Le Méta sentinelle fonce vers vous puis saute vers vous avec sa masse et l'écrase sur vous, il inflige " + degatCrit + " points de dégâts et vous étourdit pour un tour")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.off('message', message => {
+    if (message.content.startsWith(prefix + "Illfang attaque")) {
+        const degat = Math.floor(51 * Math.random() + 160)
+        const degatArmure = Math.floor(21 * Math.random() + 110)
+        const degatCirculaire = Math.floor(31 * Math.random() + 140)
+        const cible = Math.floor(2 * Math.random() + 2)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 20) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang essaye de faire un grand coup horizontal sur votre gauche mais il est trop lent et vous rate, vous avez de la chance !")
+            message.channel.send({ embed })
+        }
+        if (21 <= roll && roll <= 40) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang vous donne un grand coup vertical avec sa hache à deux mains qui vous envoie en l'air, il inflige " + degatArmure + " points de dégâts qui perce votre armure")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (41 <= roll && roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang vous donne un grand coup vertical avec sa hache à deux mains, il inflige " + degat + " points de dégâts")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang court vers vous et donne un grand coup horizontal de droite à gauche. " +
+                    "Il inflige " + degatCirculaire + " points de dégâts à " + cible + " personnes.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.off('message', message => {
+    if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594566342489669662/Ukifune.gif")
+            .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang s'élance vers la personne qu'il a éjecté et lui fait un grand coup oblique plein de rage. " +
+                "Il inflige `999` dégâts perce armure !\nCette attaque n'est pas défendable ni interceptable.")
+        message.channel.send({ embed })
+    }
+});
+
+bot.off('message', message => {
+    if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
+        const degatGroupe = Math.floor(31 * Math.random() + 165)
+        const degatGroupeArmure = Math.floor(21 * Math.random() + 130)
+        const degatVert = Math.floor(21 * Math.random() + 210)
+        const degatVertGroupe = Math.floor(51 * Math.random() + 160)
+        const cible = Math.floor(4 * Math.random() + 2)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 20) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang fait un coup circulaire au groupe qui vient de l'attaquer. Il inflige " + degatGroupeArmure + " dégâts de perce armure à ce groupe !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (21 <= roll && roll <= 40) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang fait un coup circulaire au groupe qui vient de l'attaquer. Il inflige " + degatGroupe + " dégâts à ce groupe !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (41 <= roll && roll <= 60) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang fait un grand coup vertical. Il inflige " + degatVert + " dégâts à une personne !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (61 <= roll && roll <= 99) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang fait un grand coup vertical qui crée une onde de choc dévastatrice. Il inflige " + degatVertGroupe + " dégâts à " + cible + " personnes !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (100 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang tente de faire un coup oblique dans votre direction mais rate son coup, vous avez de la chance !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+// Salle du boss | Monstres | Défenses
+
+bot.off('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Méta sentinelle défense")) {
+        let Dégâts = args.slice(3).join(" : ");
+        const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.8))
+        const devia = Math.floor(30 * Math.random() + 40)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 85) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Méta sentinelle :", ":shield: Le Méta sentinelle tente d'esquiver votre coup mais il n'est pas assez rapdie, vous lui infligez " + degat + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (86 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Méta sentinelle :", ":shield: Le méta sentinelle décide de bloquer votre coup et le dévie sur un autre joueur a côté de vous et inflige " + devia + " . [Défense possible pour le joueur toucher. Vous ne passez pas orange si vous touchez votre allié]")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.off('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Illfang défense")) {
+        let Dégâts = args.slice(2).join(" : ");
+        const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.8))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":shield: Illfang :", ":shield: L'épaisse peau d'Illfang réduit légèrement les dégâts ou non, vous lui infligez " + degat + " points de dégâts")
+        message.channel.send({ embed })
+    }
+});
+
+bot.off('message', message => {
+if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
+const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username , message.author.avatarURL)
+.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+.setColor(3447003)
+.addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
+                                        "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
+.setTimestamp()
+message.channel.send({embed})
+}
+});
+
+bot.off('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 0.8))
+        const paradeReussie = Math.floor(16 * Math.random() + 135)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 25) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté, vous lui infligez " + paradeRatee + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (26 <= roll && roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade et il vous met un coup oblique de katana, vous faisant reculer et prendre des dégâts, " +
+                    "il inflige " + paradeReussie + " points de dégâts sauf si vous tentez de parade sa parade.Si vous réussissez le Illfang tantera de parade votre parade de la parade. Faite `=Illfang phase 2 parade`")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (51 <= roll && roll <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Illfang :", ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Le prochain joueur qui attaque appartenant au même groupe peut tenter un coups d'éstoc pour le surprendre. Le Illfang ne pourra pas se défendre de ce coup et le joueur aura fait son attaque.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (76 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté et Illfang rentre dans une colère noire !\n" +
+                    "Vous lui infligez " + paradeRatee + " points de dégâts et sa prochaine attaque fait 10% de dégâts supplémentaires !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.off('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Illfang phase 2 parade")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 60) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté, vous lui infligez " + Dégâts + " points de dégâts fois le nombre de fois que vous l'avez paré durant cette action. ")
+            message.channel.send({ embed })
+        }
+        if (61 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade et le réussir en déviant votre lame et vous donne le double des dégâts que vous aurez du recevoir, sauf si vous tentez de parade de nouveau !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Forêt dense | Description
 
 bot.on('message', message => {
@@ -42824,10 +43261,7 @@ bot.on('message', message => {
     }
 })
 
-//toto
-
-
-// labyrinthe Palier 2//
+// Labyrinthe Palier 2 | Monstres | Descriptions
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Apex lombric irrégulier") {
@@ -42910,7 +43344,135 @@ bot.on('message', message => {
     }
 })
 
-// Forêt dense | Monstres | Attaques
+bot.on('message', message => {
+    if (message.content === (prefix) + "Apex bourdon flâneur") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Apex bourdon flâneur :", ":japanese_ogre: Un insecte qui n'est trouvable que dans le labyrinthe du palier 2 !")
+            .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590559361961820190/43111646922_5cd4ecd7f1_k.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3700 \n:warning: **__Si vous êtes protégés contre le poison, l'attaque suicide du Apex bourdon flâneur perd ses propriétés perce armure et devient un coup normal.__** ")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex bourdon flâneur attaque`")
+            .addField(":shield: Lorsque L'Apex bourdon flâneur reçoit un coup :", ":shield: `=Apex bourdon flâneur défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex bourdon flâneur récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Apex taurus chargeur") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Apex taurus chargeur  :", ":japanese_ogre: Un taurus qui n'est trouvable que dans le labyrinthe du palier 2 !")
+            .setImage("https://media.discordapp.net/attachments/543345227604164618/584058188953813024/taurus_chargeur.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 4250 \n:warning: **__L'Apex taurus chargeur vous étourdit même si vous bloqués la totalité des dégâts de son coup étourdissant__** ")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex taurus chargeur attaque`")
+            .addField(":shield: Lorsque L'Apex taurus chargeur  reçoit un coup :", ":shield: `=Apex taurus chargeur défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex taurus chargeur  récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Apex fort taurus adroit") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Apex fort taurus adroit :", ":japanese_ogre: Un taurus qui n'est trouvable que dans le labyrinthe du palier 2 !")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/596810463107350528/89246df4b0c6ce758ad30798dc650384.png")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 4350 \n:warning: **__Le saignement du fort taurus lourd n'est pas additif, si vous êtes déjà en saignement, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex fort taurus adroit attaque`")
+            .addField(":shield: Lorsque L'Apex fort taurus adroit reçoit un coup :", ":shield: `=Apex fort taurus adroit défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex fort taurus adroit récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Apex taurus lourd") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Apex taurus lourd :", ":japanese_ogre: Un tarus qui n'est trouvable que dans le labyrinthe du palier 2 !")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/580401229063258132/taureau_lourd.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5550")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex taurus lourd attaque`")
+            .addField(":shield: Lorsque L'Apex taurus lourd reçoit un coup :", ":shield: `=Apex taurus lourd défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex taurus lourd récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Apex guêpe vivace") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Apex guêpe vivace :", ":japanese_ogre: Un guêpe qui n'est trouvable que dans la vallée du palier 2 !")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214914/350-1.png")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 225\n:warning: **__Si vous êtes protégés contre le poison, l'attaque normal de la guèpe vivace inflige uniquement des dégat perce armure__** ")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex guêpe vivace attaque`")
+            .addField(":shield: Lorsque l'Apex guêpe vivace reçoit un coup :", ":shield: `=Apex guêpe vivace défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex guêpe vivace récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Apex vache vrombissante") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Apex vache vrombissante :", ":japanese_ogre: Une vache qui n'est trouvable que dans la vallée du palier 2 !")
+            .setImage("https://previews.123rf.com/images/vladischern/vladischern1312/vladischern131200001/24184438-vache-main-vecteur-llustration-croquis-tir%C3%A9-r%C3%A9aliste.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2750 \n:warning: **__Si un boeuf meurt dans le combat, la vache gagne 80 points de dégâts pendant 3 tours. Non additif___** ")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex vache vrombissante attaque`")
+            .addField(":shield: Lorsque l'Apex vache vrombissante reçoit un coup :", ":shield: `=Apex vache vrombissante défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex vache vrombissante récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Apex boeuf vrombissant") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Apex boeuf vrombissant :", ":japanese_ogre: Un boeuf qui n'est trouvable que dans la vallée du palier 2 !")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609766017589051392/Taurus-Pic-Drawing.png")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3250 \n:warning: **__Si une Apex vache vrombissante meurt, l'Apex boeuf vrombissant gagne 40 points d'armure pendant 3 tours. Non additif__**")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex boeuf vrombissant attaque`")
+            .addField(":shield: Lorsque l'Apex boeuf vrombissant reçoit un coup :", ":shield: `=Apex boeuf vrombissant défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex boeuf vrombissant récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Apex frelon foudroyant") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Apex frelon foudroyant :", ":japanese_ogre: Un frelon qui n'est trouvable que dans la vallée du palier 2 !")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214920/73.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 550")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex frelon foudroyant attaque`")
+            .addField(":shield: Lorsque l'Apex frelon foudroyant reçoit un coup :", ":shield: `=Apex frelon foudroyant défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex frelon foudroyant récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Labyrinthe Palier 2 | Monstres | Attaques
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex lombric irrégulier attaque")) {
@@ -43102,218 +43664,6 @@ bot.on('message', message => {
     }
 });
 
-// Forêt dense | Monstres | Défenses
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex lombric irrégulier défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex Apex lombric irrégulier :", ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle, il se prend " + degat + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (71 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex lombric irrégulier :", ":shield: Le lombric sent votre coup arriver, essayez d'être plus discret la prochaine fois ! Il plonge alors dans le sol pour l'éviter sans se soucier de l'environnement et disparaît de votre champ de vision pour réapparaître quelques mètres plus loin en gesticulant.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex neoridas défense")) {
-        let Dégâts = args.slice(3).join(" : ");
-        const Esquiverate = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
-        const Esquivecrit = Math.floor(21 * Math.random() + 35)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 1) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex Neoridas :", ":shield: L'Apex Neoridas vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + Esquiverate + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (2 <= roll & roll <= 85) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex Neoridas :", ":shield: L'Apex Neoridas vous fonce dessus et esquive votre coup de justesse avant de tourner autour de votre tête pour se moquer de vous.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (86 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex Neoridas :", ":shield: L'Apex Neoridas vole rapidement et évite votre coup puis lâche une poudre rouge clair qui vous fait perdre " + Esquivecrit + " points d'attaque pendant un tour.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex venom défense")) {
-        let Dégâts = args.slice(3).join(" : ");
-        const degat = Math.floor((Dégâts * 0.4 + 1) * Math.random() + (Dégâts * 0.9))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 65) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex Venom :", ":shield: L'Apex Venom tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (66 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex Venom :", ":shield: L'Apex Venom se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex bousier colossal défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.3))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":shield: Apex Bousier colossal :", ":shield: L'Apex Bousier colossal utilise l'énorme pierre qu'il tient pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex doryphore géant défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const degat = Math.floor((Dégâts * 0.3 + 1) * Math.random() + (Dégâts * 0.4))
-        const degatcrit = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 5) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex doryphore géant :", ":shield: L'Apex doryphore géant tente de se protéger avec la plus épaisse partie de sa carapace mais expose dans le même temps une ouverture dans l'une des jointures de sa carapace. Vous profitez de cette faibesse et lui infligez  " + degatcrit + " points de dégâts perce armure.")
-            message.channel.send({ embed })
-        }
-        if (6 <= roll & roll <= 94) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex doryphore géant :", ":shield: L'Apex doryphore géant bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (95 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex doryphore géant :", ":shield: L'Apex doryphore géant tente de se protéger avec la plus épaisse partie de son armure, votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Apex bourdon flâneur") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Apex bourdon flâneur :", ":japanese_ogre: Un insecte qui n'est trouvable que dans le labyrinthe du palier 2 !")
-            .setImage("https://cdn.discordapp.com/attachments/493849233519149056/590559361961820190/43111646922_5cd4ecd7f1_k.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3700 \n:warning: **__Si vous êtes protégés contre le poison, l'attaque suicide du Apex bourdon flâneur perd ses propriétés perce armure et devient un coup normal.__** ")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex bourdon flâneur attaque`")
-            .addField(":shield: Lorsque L'Apex bourdon flâneur reçoit un coup :", ":shield: `=Apex bourdon flâneur défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex bourdon flâneur récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Apex taurus chargeur") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Apex taurus chargeur  :", ":japanese_ogre: Un taurus qui n'est trouvable que dans le labyrinthe du palier 2 !")
-            .setImage("https://media.discordapp.net/attachments/543345227604164618/584058188953813024/taurus_chargeur.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 4250 \n:warning: **__L'Apex taurus chargeur vous étourdit même si vous bloqués la totalité des dégâts de son coup étourdissant__** ")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex taurus chargeur attaque`")
-            .addField(":shield: Lorsque L'Apex taurus chargeur  reçoit un coup :", ":shield: `=Apex taurus chargeur défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex taurus chargeur  récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Apex fort taurus adroit") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Apex fort taurus adroit :", ":japanese_ogre: Un taurus qui n'est trouvable que dans le labyrinthe du palier 2 !")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/596810463107350528/89246df4b0c6ce758ad30798dc650384.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 4350 \n:warning: **__Le saignement du fort taurus lourd n'est pas additif, si vous êtes déjà en saignement, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex fort taurus adroit attaque`")
-            .addField(":shield: Lorsque L'Apex fort taurus adroit reçoit un coup :", ":shield: `=Apex fort taurus adroit défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex fort taurus adroit récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Apex taurus lourd") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Apex taurus lourd :", ":japanese_ogre: Un tarus qui n'est trouvable que dans le labyrinthe du palier 2 !")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/580401229063258132/taureau_lourd.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5550")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex taurus lourd attaque`")
-            .addField(":shield: Lorsque L'Apex taurus lourd reçoit un coup :", ":shield: `=Apex taurus lourd défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex taurus lourd récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
-// Clairière | Monstres | Attaques
-
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex bourdon flâneur attaque")) {
         const degat = Math.floor(26 * Math.random() + 135)
@@ -43463,186 +43813,6 @@ bot.on('message', message => {
     }
 });
 
-// Clairière | Monstres | Défenses
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex bourdon flâneur défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-        const Esquive = Math.floor(21 * Math.random() + 35)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 40) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex bourdon flâneur :", ":shield: L'Apex bourdon flâneur vrombit bruyamment et feinte de vous percuter, votre attaque est interrompue.")
-            message.channel.send({ embed })
-        }
-        if (41 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex bourdon flâneur :", ":shield: L'Apex bourdon flâneur vrombit bruyamment et feinte de vous percuter mais vous voyez à travers son bluff et le touchez sans problème. Vous lui infligez " + Esquiveraté + " points de dégâts.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex taurus chargeur défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const Paraderaté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-        const Parade = Math.floor(26 * Math.random() + 155)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 75) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex taurus chargeur :", ":shield: L'Apex taurus chargeur tente de vous feinter sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + " points de dégâts.")
-            message.channel.send({ embed })
-        }
-        if (76 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex taurus chargeur :", ":shield: L'Apex taurus chargeur feinte votre attaque et se retrouve dans votre dos, il vous attrape par la taille et vous envoie valser vers l'arrière. Vous percutez le sol et vous vous prenez " + Parade + " points de dégâts.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex fort taurus adroit défense")) {
-        let Dégâts = args.slice(5).join(" : ");
-        const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 80) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex fort taurus adroit :", ":shield: L'Apex fort taurus adroit tente d'esquiver votre coup en essayant d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (81 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex fort taurus adroit :", ":shield: L'Apex fort taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Pendant ce temps, il recule pour être hors de portée. ")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex taurus lourd défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex taurus lourd :", ":shield: L'Apex taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attaque. Vous lui infligez " + paradeRatee + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (91 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Apex taurus lourd :", ":shield: L'Apex taurus lourd vous voit approcher et vous sonne en vous assénant un violent coup avec le plat de sa hache. Vous êtes sonné et ne pouvez pas vous défendre ou attaquer pendant un tour.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-// Vallée | Monstres | Descriptions
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Apex guêpe vivace") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Apex guêpe vivace :", ":japanese_ogre: Un guêpe qui n'est trouvable que dans la vallée du palier 2 !")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214914/350-1.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 225\n:warning: **__Si vous êtes protégés contre le poison, l'attaque normal de la guèpe vivace inflige uniquement des dégat perce armure__** ")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex guêpe vivace attaque`")
-            .addField(":shield: Lorsque l'Apex guêpe vivace reçoit un coup :", ":shield: `=Apex guêpe vivace défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex guêpe vivace récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Apex vache vrombissante") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Apex vache vrombissante :", ":japanese_ogre: Une vache qui n'est trouvable que dans la vallée du palier 2 !")
-            .setImage("https://previews.123rf.com/images/vladischern/vladischern1312/vladischern131200001/24184438-vache-main-vecteur-llustration-croquis-tir%C3%A9-r%C3%A9aliste.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2750 \n:warning: **__Si un boeuf meurt dans le combat, la vache gagne 80 points de dégâts pendant 3 tours. Non additif___** ")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex vache vrombissante attaque`")
-            .addField(":shield: Lorsque l'Apex vache vrombissante reçoit un coup :", ":shield: `=Apex vache vrombissante défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex vache vrombissante récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Apex boeuf vrombissant") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Apex boeuf vrombissant :", ":japanese_ogre: Un boeuf qui n'est trouvable que dans la vallée du palier 2 !")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609766017589051392/Taurus-Pic-Drawing.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3250 \n:warning: **__Si une Apex vache vrombissante meurt, l'Apex boeuf vrombissant gagne 40 points d'armure pendant 3 tours. Non additif__**")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex boeuf vrombissant attaque`")
-            .addField(":shield: Lorsque l'Apex boeuf vrombissant reçoit un coup :", ":shield: `=Apex boeuf vrombissant défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex boeuf vrombissant récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Apex frelon foudroyant") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Apex frelon foudroyant :", ":japanese_ogre: Un frelon qui n'est trouvable que dans la vallée du palier 2 !")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214920/73.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 550")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex frelon foudroyant attaque`")
-            .addField(":shield: Lorsque l'Apex frelon foudroyant reçoit un coup :", ":shield: `=Apex frelon foudroyant défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex frelon foudroyant récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Vallée | Monstres | Attaques
-
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex vache vrombissante attaque")) {
         const degat = Math.floor(26 * Math.random() + 200)
@@ -43780,7 +43950,260 @@ bot.on('message', message => {
     }
 });
 
-// Vallée | Monstres | Défenses
+// Labyrinthe Palier 2 | Monstres | Défenses
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex lombric irrégulier défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex Apex lombric irrégulier :", ":shield: Le lombric se croit plus malin que vous et tente alors de glisser sur le sol pour éviter votre attaque, il se retrouve cependant bloqué par un obstacle, il se prend " + degat + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex lombric irrégulier :", ":shield: Le lombric sent votre coup arriver, essayez d'être plus discret la prochaine fois ! Il plonge alors dans le sol pour l'éviter sans se soucier de l'environnement et disparaît de votre champ de vision pour réapparaître quelques mètres plus loin en gesticulant.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex neoridas défense")) {
+        let Dégâts = args.slice(3).join(" : ");
+        const Esquiverate = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
+        const Esquivecrit = Math.floor(21 * Math.random() + 35)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 1) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex Neoridas :", ":shield: L'Apex Neoridas vole rapidement pour esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + Esquiverate + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (2 <= roll & roll <= 85) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex Neoridas :", ":shield: L'Apex Neoridas vous fonce dessus et esquive votre coup de justesse avant de tourner autour de votre tête pour se moquer de vous.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (86 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex Neoridas :", ":shield: L'Apex Neoridas vole rapidement et évite votre coup puis lâche une poudre rouge clair qui vous fait perdre " + Esquivecrit + " points d'attaque pendant un tour.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex venom défense")) {
+        let Dégâts = args.slice(3).join(" : ");
+        const degat = Math.floor((Dégâts * 0.4 + 1) * Math.random() + (Dégâts * 0.9))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 65) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex Venom :", ":shield: L'Apex Venom tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (66 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex Venom :", ":shield: L'Apex Venom se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex bousier colossal défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.3))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":shield: Apex Bousier colossal :", ":shield: L'Apex Bousier colossal utilise l'énorme pierre qu'il tient pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex doryphore géant défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const degat = Math.floor((Dégâts * 0.3 + 1) * Math.random() + (Dégâts * 0.4))
+        const degatcrit = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 5) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex doryphore géant :", ":shield: L'Apex doryphore géant tente de se protéger avec la plus épaisse partie de sa carapace mais expose dans le même temps une ouverture dans l'une des jointures de sa carapace. Vous profitez de cette faibesse et lui infligez  " + degatcrit + " points de dégâts perce armure.")
+            message.channel.send({ embed })
+        }
+        if (6 <= roll & roll <= 94) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex doryphore géant :", ":shield: L'Apex doryphore géant bloque le coup avec sa carapace, vous lui infligez " + degat + " points de dégâts")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (95 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex doryphore géant :", ":shield: L'Apex doryphore géant tente de se protéger avec la plus épaisse partie de son armure, votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex bourdon flâneur défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+        const Esquive = Math.floor(21 * Math.random() + 35)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 40) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex bourdon flâneur :", ":shield: L'Apex bourdon flâneur vrombit bruyamment et feinte de vous percuter, votre attaque est interrompue.")
+            message.channel.send({ embed })
+        }
+        if (41 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex bourdon flâneur :", ":shield: L'Apex bourdon flâneur vrombit bruyamment et feinte de vous percuter mais vous voyez à travers son bluff et le touchez sans problème. Vous lui infligez " + Esquiveraté + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex taurus chargeur défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const Paraderaté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+        const Parade = Math.floor(26 * Math.random() + 155)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex taurus chargeur :", ":shield: L'Apex taurus chargeur tente de vous feinter sur le coté mais il se prend votre coup en plein milieu de son action. Il subit " + Paraderaté + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (76 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex taurus chargeur :", ":shield: L'Apex taurus chargeur feinte votre attaque et se retrouve dans votre dos, il vous attrape par la taille et vous envoie valser vers l'arrière. Vous percutez le sol et vous vous prenez " + Parade + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex fort taurus adroit défense")) {
+        let Dégâts = args.slice(5).join(" : ");
+        const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex fort taurus adroit :", ":shield: L'Apex fort taurus adroit tente d'esquiver votre coup en essayant d'envoyer une hachette sur vous pour vous distraire mais vous l'avez frappé avant , vous lui infligez " + degat + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (81 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex fort taurus adroit :", ":shield: L'Apex fort taurus adroit tente d'esquiver votre coup en envoyant une hachette sur vous pour vous distraire. Pendant ce temps, il recule pour être hors de portée. ")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Apex taurus lourd défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex taurus lourd :", ":shield: L'Apex taurus lourd vous voit approcher et tente de vous frapper avec sa hache mais vous rate et s'expose complètement à votre attaque. Vous lui infligez " + paradeRatee + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Apex taurus lourd :", ":shield: L'Apex taurus lourd vous voit approcher et vous sonne en vous assénant un violent coup avec le plat de sa hache. Vous êtes sonné et ne pouvez pas vous défendre ou attaquer pendant un tour.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -43892,448 +44315,7 @@ bot.on('message', message => {
     }
 });
 
-// Boss palier 1
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Salle du boss")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .addField(":bank: Salle du boss :", ":bank: Vous ouvrez les portes de la salle du boss du palier 1, vous tombez face à face devant : \n" +
-                ":crossed_swords: Illfang le seigneur kobolt\n" +
-                ":crossed_swords: 3 Kobolt sentinelle")
-            .setColor(3447003)
-            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/e/ee/Thrym%27s_boss_room.png/revision/latest?cb=20141025221201")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Illfang le seigneur kobolt") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Illfang le seigneur kobolt :", ":japanese_ogre: C'est le seigneur kobolt gardant la porte vers le palier 2 !")
-            .setImage("https://cdn.myanimelist.net/s/common/uploaded_files/1444463879-27a3b94bfb547baaf570cb84ab77763f.jpeg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 25 000")
-            .addField(":crossed_swords: Lorsqu'Illfang attaque :", ":crossed_swords: `=Illfang attaque`")
-            .addField(":shield: Lorsqu'Illfang reçoit un coup :", ":shield: `=Illfang défense : [Points de dégâts de votre coup]`")
-            .addField(":japanese_ogre: Lorsque qu'Illfang entre dans sa deuxième phase, qui commence à partir de 5000 HP.", "`=Illfang entrée phase 2`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Illfang entrée phase 2") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/594600636020949002/tumblr_mbr5n4TMrp1rsxn5po1_400.gif")
-            .addField(":japanese_ogre: Illfang le seigneur kobolt :", "\n**Illfang vous hurle dessus et rentre dans sa deuxième phase !\nIl jette sa hache à deux mains derrière lui qui commence à se désintégrer.**")
-            .addField(":crossed_swords: Lorsqu'Illfang attaque dans sa phase 2 :", ":crossed_swords: `=Illfang phase 2 attaque`")
-            .addField(":shield: Lorsqu'Illfang reçoit un coup dans sa phase 2 :", ":shield: `=Illfang phase 2  défense : [Points de dégâts de votre coup]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Illfang attaque")) {
-        const degat = Math.floor(51 * Math.random() + 160)
-        const degatArmure = Math.floor(21 * Math.random() + 110)
-        const degatCirculaire = Math.floor(31 * Math.random() + 140)
-        const cible = Math.floor(2 * Math.random() + 2)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 20) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang essaye de faire un grand coup horizontal sur votre gauche mais il est trop lent et vous rate, vous avez de la chance !")
-            message.channel.send({ embed })
-        }
-        if (21 <= roll && roll <= 40) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang vous donne un grand coup vertical avec sa hache à deux mains qui vous envoie en l'air, il inflige " + degatArmure + " points de dégâts qui perce votre armure")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (41 <= roll && roll <= 70) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang vous donne un grand coup vertical avec sa hache à deux mains, il inflige " + degat + " points de dégâts")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (71 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang court vers vous et donne un grand coup horizontal de droite à gauche. " +
-                    "Il inflige " + degatCirculaire + " points de dégâts à " + cible + " personnes.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Illfang défense")) {
-        let Dégâts = args.slice(2).join(" : ");
-        const degat = Math.floor((Dégâts * 0.8 + 1) * Math.random() + (Dégâts * 0.8))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":shield: Illfang :", ":shield: L'épaisse peau d'Illfang réduit légèrement les dégâts ou non, vous lui infligez " + degat + " points de dégâts")
-        message.channel.send({ embed })
-    }
-});
-/*
-bot.on('message', message => {
-if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
-const embed = new Discord.RichEmbed()
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setColor(3447003)
-.setImage("https://cdn.discordapp.com/attachments/566021680120725518/594566342489669662/Ukifune.gif")
-.addField(":crossed_swords: Illfang :" , ":crossed_swords: Illfang s'élance vers la personne qu'il a éjecté et lui fait un grand coup oblique plein de rage. " +
-                                        "Il inflige `999` dégâts perce armure !\nCette attaque n'est pas défendable ni interceptable.")
-message.channel.send({embed})
-}
-});
-
-bot.on('message', message => {
-if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
-const embed = new Discord.RichEmbed()
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setColor(3447003)
-.addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
-                                        "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
-.setTimestamp()
-message.channel.send({embed})
-}
-});
-*/
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Illfang phase 2 attaque")) {
-        const degatGroupe = Math.floor(31 * Math.random() + 165)
-        const degatGroupeArmure = Math.floor(21 * Math.random() + 130)
-        const degatVert = Math.floor(21 * Math.random() + 210)
-        const degatVertGroupe = Math.floor(51 * Math.random() + 160)
-        const cible = Math.floor(4 * Math.random() + 2)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 20) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang fait un coup circulaire au groupe qui vient de l'attaquer. Il inflige " + degatGroupeArmure + " dégâts de perce armure à ce groupe !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (21 <= roll && roll <= 40) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang fait un coup circulaire au groupe qui vient de l'attaquer. Il inflige " + degatGroupe + " dégâts à ce groupe !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (41 <= roll && roll <= 60) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang fait un grand coup vertical. Il inflige " + degatVert + " dégâts à une personne !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (61 <= roll && roll <= 99) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang fait un grand coup vertical qui crée une onde de choc dévastatrice. Il inflige " + degatVertGroupe + " dégâts à " + cible + " personnes !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (100 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Illfang :", ":crossed_swords: Illfang tente de faire un coup oblique dans votre direction mais rate son coup, vous avez de la chance !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const paradeRatee = Math.floor(((Dégâts * 0.8) + 1) * Math.random() + (Dégâts * 0.8))
-        const paradeReussie = Math.floor(16 * Math.random() + 135)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 25) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté, vous lui infligez " + paradeRatee + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (26 <= roll && roll <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade et il vous met un coup oblique de katana, vous faisant reculer et prendre des dégâts, " +
-                    "il inflige " + paradeReussie + " points de dégâts sauf si vous tentez de parade sa parade.Si vous réussissez le Illfang tantera de parade votre parade de la parade. Faite `=Illfang phase 2 parade`")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (51 <= roll && roll <= 75) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Illfang :", ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Le prochain joueur qui attaque appartenant au même groupe peut tenter un coups d'éstoc pour le surprendre. Le Illfang ne pourra pas se défendre de ce coup et le joueur aura fait son attaque.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (76 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté et Illfang rentre dans une colère noire !\n" +
-                    "Vous lui infligez " + paradeRatee + " points de dégâts et sa prochaine attaque fait 10% de dégâts supplémentaires !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Illfang phase 2 parade")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 60) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade mais votre coup est bien exécuté, vous lui infligez " + Dégâts + " points de dégâts fois le nombre de fois que vous l'avez paré durant cette action. ")
-            message.channel.send({ embed })
-        }
-        if (61 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Illfang :", ":shield: Illfang tente d'effectuer une parade et le réussir en déviant votre lame et vous donne le double des dégâts que vous aurez du recevoir, sauf si vous tentez de parade de nouveau !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-
-//kobolt sentinel
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Kobolt sentinelle") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Kobolt sentinelle :", ":japanese_ogre: Un kobolt qui n'est trouvable que dans... !")
-            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/4d/Kobold_Sentinel.png/revision/latest?cb=20140309042458")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 1500")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Kobolt sentinelle attaque`")
-            .addField(":shield: Lorsque le kobolt sentinelle reçoit un coup :", ":shield: `=Kobolt sentinelle défense : [Points de dégâts de votre coup]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Méta sentinelle attaque")) {
-        const degat = Math.floor(21 * Math.random() + 55)
-        const degatCrit = Math.floor(21 * Math.random() + 60)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 35) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Méta sentinelle :", ":crossed_swords: Le Méta sentinelle fonce vers vous avec sa masse et l'écrase sur vous mais hésite un peu et il rate de peu. Vous avez de la chance.")
-            message.channel.send({ embed })
-        }
-        if (36 <= roll & roll <= 85) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Méta sentinelle :", ":crossed_swords: Le Méta sentinelle fonce vers vous avec sa masse et l'écrase sur vous, il inflige " + degat + " points de dégâts")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (86 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Méta sentinelle :", ":crossed_swords: Le Méta sentinelle fonce vers vous puis saute vers vous avec sa masse et l'écrase sur vous, il inflige " + degatCrit + " points de dégâts et vous étourdit pour un tour")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Méta sentinelle défense")) {
-        let Dégâts = args.slice(3).join(" : ");
-        const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.8))
-        const devia = Math.floor(30 * Math.random() + 40)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 85) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Méta sentinelle :", ":shield: Le Méta sentinelle tente d'esquiver votre coup mais il n'est pas assez rapdie, vous lui infligez " + degat + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (86 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Méta sentinelle :", ":shield: Le méta sentinelle décide de bloquer votre coup et le dévie sur un autre joueur a côté de vous et inflige " + devia + " . [Défense possible pour le joueur toucher. Vous ne passez pas orange si vous touchez votre allié]")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-
-// kobolt géant rouge
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Kobolt géant rouge attaque")) {
-        const Dégâts = 40
-        const A = (Math.floor((30) * Math.random() + 130))
-        const B = (Math.floor((100) * Math.random() + 1))
-        const C = (Math.floor((10) * Math.random() + 150))
-        if (B <= 30) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Kobolt géant rouge :", ":crossed_swords: Le kobolt géant rouge sort deux épées de son dos et les fait frotter le sol en courant vers vous mais sa course le fait tomber à cause de son immensité, vous avez de la chance !")
-            message.channel.send({ embed })
-        }
-        if (31 <= B & B <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Kobolt géant rouge :", ":crossed_swords: Le kobolt géant rouge sort et balance ses deux épées ainsi que ses bras gigantesques vers vous d'une vitesse colossale, il inflige " + A + " points de dégâts à deux joueurs")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (91 <= B) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Kobolt géant rouge :", ":crossed_swords: Le kobolt géant rouge commence à avoir des yeux complètement injectés de sang et se déchaîne complètement en balançant ses bras et ses épées dans tous les sens autour de lui, il inflige " + A + " points de dégâts à tous les joueurs, ou s'il n'y a qu'un joueur " + C + " points de dégâts à la place [Esquive uniquement possible de la part de tous les joueurs]")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Kobolt géant rouge défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const A = (Math.floor((Dégâts * 1.5) * Math.random() + (Dégâts / 1.5)))
-        const B = (Math.floor((100) * Math.random() + 1))
-        const C = (Math.floor((21) * Math.random() + 100))
-        if (B <= 75) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Kobolt géant rouge :", ":shield: Le kobolt géant rouge est si imposant qu'il n'arrive à peine à bouger lors de l'arrivé de votre coup, vous lui infligez " + A + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (76 <= B & B <= 89) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Kobolt géant rouge :", ":shield: Le kobolt géant rouge saute d'un bond gigantesque en l'air lors de votre coup d'une dizaine de mètres en hauteur, il ne prend aucun dégâts et cri a travers le labyrinthe.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (90 <= B) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Kobolt géant rouge :", ":shield: Le kobolt géant rouge sors une épée et la tien à deux mains avant de l'exploser sur le sol par réflexe provoquant un genre de séisme tellement la puissance est grande, il inflige " + C + " points de dégâts à tous les joueurs.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Kobolt géant rouge") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Kobolt géant rouge :", ":japanese_ogre: Un kobolt géant rare qui n'est trouvable que dans le labyrinthe")
-            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3500")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Kobolt géant rouge attaque`")
-            .addField(":shield: Lorsque le kobolt géant rouge reçoit un coup :", ":shield: `=Kobolt géant rouge défense : [Points de dégâts de votre coup]`")
-            .addField(":warning: Le kobolt géant rouge est insensible aux effets suivants :", ":warning: Provocation, étourdissement")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Boss palier 2 //
+// Salle du boss | Monstres | Descriptions
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Le colonel taurus") {
@@ -44351,6 +44333,42 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Le général taurus") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Le général taurus :", ":japanese_ogre: Le général taurus qui a un plus gros marteau que le colonel, si il touche deux fois avec une compétence a étourdissement, l'effet se transforme en paralysie.")
+            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 50 000")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Le général taurus attaque`")
+            .addField(":shield: Lorsque Le général taurus reçoit un coup :", ":shield: `=Le général taurus défense : [Points de dégâts de votre coup]`")
+            .addField(":warning: Le général taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
+            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564414154211359/proxy.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Asterius le roi taurus") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Le colonel taurus :", ":japanese_ogre: Asterius le roi taurus est le boss du 2ème palier, il est giganteste et porte une courrone lumineuse.")
+            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 60 000")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Asterius attaque`")
+            .addField(":shield: Lorsque Asterius le roi taurus reçoit un coup :", ":shield: `=Asterius défense : [Points de dégâts de votre coup]`")
+            .addField(":warning: Asterius le roi taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
+            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564604365766658/unknown.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Salle du boss | Monstres | Attaques
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Le colonel taurus attaque")) {
@@ -44387,51 +44405,6 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Le colonel taurus défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.4))
-        const defenseR = Math.floor(((Dégâts * 2) + 1) * Math.random() + (Dégâts * 2))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 85) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Le colonel taurus :", ":shield: Le colonel taurus gonfle son torse et ne prend pas la peine de vous esquiver, vous lui infligez " + defense + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (86 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Le colonel taurus :", ":shield: Vous arrivez en utilisant la jambes du colonel a atteindre ses cornes et vous lui infligez " + defenseR + " de dégâts qui vont lui empêcher d'attaquer au prochain tour.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Le général taurus") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Le général taurus :", ":japanese_ogre: Le général taurus qui a un plus gros marteau que le colonel, si il touche deux fois avec une compétence a étourdissement, l'effet se transforme en paralysie.")
-            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 50 000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Le général taurus attaque`")
-            .addField(":shield: Lorsque Le général taurus reçoit un coup :", ":shield: `=Le général taurus défense : [Points de dégâts de votre coup]`")
-            .addField(":warning: Le général taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564414154211359/proxy.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
     if (message.content.startsWith(prefix + "Le général taurus attaque")) {
         const A = (Math.floor((31) * Math.random() + 330))
         const B = (Math.floor((100) * Math.random() + 1))
@@ -44462,51 +44435,6 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Le général taurus défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.4))
-        const defenseR = Math.floor(((Dégâts * 2) + 1) * Math.random() + (Dégâts * 2))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 85) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Le général taurus :", ":shield: Le général taurus gonfle son torse et ne prend pas la peine de vous esquiver, vous lui infligez " + defense + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (86 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Le général taurus :", ":shield: Vous arrivez en utilisant la jambes du général a atteindre ses cornes et vous lui infligez " + defenseR + " de dégâts qui vont lui empêcher d'attaquer au prochain tour.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Asterius le roi taurus") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Le colonel taurus :", ":japanese_ogre: Asterius le roi taurus est le boss du 2ème palier, il est giganteste et porte une courrone lumineuse.")
-            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 60 000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Asterius attaque`")
-            .addField(":shield: Lorsque Asterius le roi taurus reçoit un coup :", ":shield: `=Asterius défense : [Points de dégâts de votre coup]`")
-            .addField(":warning: Asterius le roi taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564604365766658/unknown.png")
-            .setTimestamp()
-        message.channel.send({ embed })
     }
 });
 
@@ -44559,6 +44487,64 @@ bot.on('message', message => {
     }
 });
 
+// Salle du boss | Monstres | Défenses
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Le colonel taurus défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.4))
+        const defenseR = Math.floor(((Dégâts * 2) + 1) * Math.random() + (Dégâts * 2))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 85) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Le colonel taurus :", ":shield: Le colonel taurus gonfle son torse et ne prend pas la peine de vous esquiver, vous lui infligez " + defense + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (86 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Le colonel taurus :", ":shield: Vous arrivez en utilisant la jambes du colonel a atteindre ses cornes et vous lui infligez " + defenseR + " de dégâts qui vont lui empêcher d'attaquer au prochain tour.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Le général taurus défense")) {
+        let Dégâts = args.slice(4).join(" : ");
+        const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.4))
+        const defenseR = Math.floor(((Dégâts * 2) + 1) * Math.random() + (Dégâts * 2))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 85) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Le général taurus :", ":shield: Le général taurus gonfle son torse et ne prend pas la peine de vous esquiver, vous lui infligez " + defense + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (86 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Le général taurus :", ":shield: Vous arrivez en utilisant la jambes du général a atteindre ses cornes et vous lui infligez " + defenseR + " de dégâts qui vont lui empêcher d'attaquer au prochain tour.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
@@ -44577,6 +44563,8 @@ bot.on('message', message => {
     }
 });
 
+// Salle du boss | Monstres | Récompenses
+
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius récompenses")) {
         const embed = new Discord.RichEmbed()
@@ -44589,5 +44577,3 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
-
-/// Event ///
