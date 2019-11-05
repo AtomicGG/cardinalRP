@@ -6613,7 +6613,188 @@ bot.on('message', message => {
 
 // Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Basique | Achat/fabrication/découverte
 
+bot.on('message', message => {
+    const Dégâts = (Math.floor((3) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epée basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
+bot.on('message', message => {
+    const Dégâts = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Espadon basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = (Math.floor((3) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Dague basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = (Math.floor((3) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Masse basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la marteau basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Marteau basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = (Math.floor((3) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Hache basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hallebarde basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Hallebarde basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = (Math.floor((3) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Rapière basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = (Math.floor((3) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cimeterre basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du sabre basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Sabre basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = (Math.floor((3) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Katana basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const Dégâts = Math.floor(2 * Math.random() + 4)
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du nodachi basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Nodachi basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(4 * Math.random() + 7)
+    const Défense = Math.floor(3 * Math.random() + 0)
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du pavois basique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bouclier basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 // Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration | Clan des Loups | Découverte
 
@@ -26751,191 +26932,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Espadon basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hallebarde basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Hallebarde basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la marteau basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Marteau basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du sabre basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Sabre basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du nodachi basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Nodachi basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = (Math.floor((3) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epée basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = (Math.floor((3) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hache basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Hache basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = (Math.floor((3) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la masse basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Masse basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = (Math.floor((3) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du cimeterre basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cimeterre basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = (Math.floor((3) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la dague basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Dague basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = (Math.floor((3) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du katana basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Katana basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const Dégâts = (Math.floor((3) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la rapière basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Rapière basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const HP = Math.floor(4 * Math.random() + 7)
-    const Défense = Math.floor(3 * Math.random() + 0)
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du pavois basique")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bouclier basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Parchemin de poison faible")) {
