@@ -4839,6 +4839,156 @@ bot.on('message', message => {
 // Menus | Liste | Equipements | Détails | Taurus
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Casque taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque taurus :", ":scales: C'est un casque fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Corne de Taurus, 2 Carapace de bourdon flâneur, 2 Scalp de Taurus, 2 Poil de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du casque taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du casque taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epaulières taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières taurus :", ":scales: Ce sont des épaulières faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Bourdon flâneur, 4 Cuirasse de taurus adroit, 2 Corne de Taurus, 4 Peau de Taurus lourd\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de épaulières taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des épaulières taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des épaulières taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plastron taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron taurus :", ":scales: C'est un plastron fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peau de Taurus lourd, 3 Scalp de Taurus, 2 Poil de Taurus lourd, 2 Antenne de Bourdon flâneur\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du plastron taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron taurus`  \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape taurus :", ":scales: C'est une cape faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de Taurus adroit, 2 Aile de Bourdon flâneur, 2 Poil de Taurus, 1 Scalp de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la cape taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ceinture taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture taurus :", ":scales: C'est une ceinture faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Poil de Taurus lourd, 3 Peau de Taurus lourd, 3 Peau de Taurus, 2 Corne de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la ceinture taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gantelets taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets taurus :", ":scales: Ce sont des gantelets faits avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de Bourdon flâneur, 2 Cuirasse de taurus adroit, 1 Peau de Taurus lourd, 2 Poil de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des gantelets taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Jambières taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières taurus :", ":scales: Ce sont des jambières faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Cuirasse de taurus adroit, 2 Antenne de Bourdon flâneur, 1 Carapace de Bourdon flâneur, 2 Scalpe de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des jambières taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bottes taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes taurus :", ":scales: Ce sont des bottes faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de Taurus, 2 Corne de Taurus, 2 Cuirasse de fort taurus adroit, 2 Scalp de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des bottes taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Anneau taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau taurus :", ":scales: C'est un anneau fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de bourdon flâneur, 3 Cuirasse de fort taurus adroit, 2 Scalp de Taurus, 2 Coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 3220 cols\n\n:large_orange_diamond: Prix de revente : 1610 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'anneau taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Carapace de bourdon flâneur, 2 Cuirasse de fort taurus adroit, 1 Scalp de Taurus, 1 Coeur de Desman) :", "`=Amélioration d'un bijou taurus : [Niveau en Bijoutier]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un bijou taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Amulette taurus")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette taurus :", ":scales: C'est une amulette faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de bourdon flâneur, 3 Cuirasse de fort taurus adroit, 2 Scalp de Taurus, 2 Coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 3220 cols\n\n:large_orange_diamond: Prix de revente : 1610 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'amulette taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Carapace de bourdon flâneur, 2 Cuirasse de fort taurus adroit, 1 Scalp de Taurus, 1 Coeur de Desman) :", "`=Amélioration d'un bijou taurus : [Niveau en Bijoutier]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un bijou taurus`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bonus de la panoplie taurus")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -6869,6 +7019,158 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
         }
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Taurus | Achat
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat du casque taurus")) {
+        const Dégâts = Math.floor(1 * Math.random() + 0)
+        const HP = Math.floor(11 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des épaulières taurus")) {
+        const Dégâts = Math.floor(1 * Math.random() + 0)
+        const HP = Math.floor(11 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat du plastron taurus")) {
+        const Dégâts = Math.floor(1 * Math.random() + 0)
+        const HP = Math.floor(11 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de la cape taurus")) {
+        const Dégâts = Math.floor(1 * Math.random() + 0)
+        const HP = Math.floor(11 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de la ceinture taurus")) {
+        const Dégâts = Math.floor(1 * Math.random() + 0)
+        const HP = Math.floor(11 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des gantelets taurus")) {
+        const Dégâts = Math.floor(1 * Math.random() + 0)
+        const HP = Math.floor(11 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des jambières taurus")) {
+        const Dégâts = Math.floor(1 * Math.random() + 0)
+        const HP = Math.floor(11 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des bottes taurus")) {
+        const Dégâts = Math.floor(1 * Math.random() + 0)
+        const HP = Math.floor(11 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'anneau taurus")) {
+        const Dégâts = Math.floor(3 * Math.random() + 7)
+        const HP = Math.floor(21 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'amulette taurus")) {
+        const Dégâts = Math.floor(3 * Math.random() + 7)
+        const HP = Math.floor(21 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
 });
 
@@ -31197,10 +31499,6 @@ bot.on('message', message => {
     }
 })
 
-//toto
-
-
-
 // Clairière | Description
 
 bot.on('message', message => {
@@ -31220,7 +31518,7 @@ bot.on('message', message => {
     }
 })
 
-// Clairière | quête
+// Clairière | Quête
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Clairière quête") {
@@ -32048,94 +32346,6 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Clairière miner")) {
-        let cont = message.content;
-        let split = cont.split(' ');
-        let level = split[3] - 0
-        if (isNaN(level)) {
-            level = 0
-        }
-        let levelZone = 7;
-        if (level < levelZone || isNaN(level)) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Erreur :", " Vous n'avez pas le niveau nécessaire pour miner dans cette zone ou vous avez fait une erreur dans la commande !")
-                .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        } else {
-            if (talkedRecently.has(message.author.id + 19)) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField("Cooldown :", " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
-                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            } else {
-                const roll = Math.floor(100 * Math.random() + 1);
-                const diff = level - levelZone
-                let chance = diff * diff;
-                if (chance > 100) {
-                    chance = 100
-                }
-                const Sel = Math.floor(2 * Math.random() + 2)
-                const FerMediocre = Math.floor(2 * Math.random() + 1)
-                let FerCommun = 0
-                let FerRare = 0
-                const Exp = Math.floor(5 * Math.random() + 11)
-                let rollRessource = 0
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    FerCommun = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    FerRare = 1
-                }
-                if (roll <= chance) {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Pierre de sel : " + Sel + "\n" +
-                            ":pick: Fer médiocre : " + FerMediocre + "\n" +
-                            ":pick: Fer commun : " + FerCommun + "\n" +
-                            ":pick: Fer rare : " + FerRare + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Mineur de profession : +1 a chaque ressource !")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
-                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Pierre de sel : " + Sel + "\n" +
-                            ":pick: Fer médiocre : " + FerMediocre + "\n" +
-                            ":pick: Fer commun : " + FerCommun + "\n" +
-                            ":pick: Fer rare : " + FerRare + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            talkedRecently.add(message.author.id + 19);
-            setTimeout(() => {
-                talkedRecently.delete(message.author.id + 19);
-            }, 3600000);
-        }
-    }
-})
-
-bot.on('message', message => {
     if (message.content.startsWith(prefix + "Clairière chasser")) {
         let cont = message.content;
         let split = cont.split(' ');
@@ -32228,304 +32438,96 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Casque taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque taurus :", ":scales: C'est un casque fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Corne de Taurus, 2 Carapace de bourdon flâneur, 2 Scalp de Taurus, 2 Poil de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du casque taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du casque taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
+    if (message.content.startsWith(prefix + "Clairière miner")) {
+        let cont = message.content;
+        let split = cont.split(' ');
+        let level = split[3] - 0
+        if (isNaN(level)) {
+            level = 0
+        }
+        let levelZone = 7;
+        if (level < levelZone || isNaN(level)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas le niveau nécessaire pour miner dans cette zone ou vous avez fait une erreur dans la commande !")
+                .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            if (talkedRecently.has(message.author.id + 19)) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Cooldown :", " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                const roll = Math.floor(100 * Math.random() + 1);
+                const diff = level - levelZone
+                let chance = diff * diff;
+                if (chance > 100) {
+                    chance = 100
+                }
+                const Sel = Math.floor(2 * Math.random() + 2)
+                const FerMediocre = Math.floor(2 * Math.random() + 1)
+                let FerCommun = 0
+                let FerRare = 0
+                const Exp = Math.floor(5 * Math.random() + 11)
+                let rollRessource = 0
+                rollRessource = Math.floor(100 * Math.random() + 1);
+                if (rollRessource <= 35) {
+                    FerCommun = 1
+                }
+                rollRessource = Math.floor(100 * Math.random() + 1);
+                if (rollRessource <= 20) {
+                    FerRare = 1
+                }
+                if (roll <= chance) {
+                    const embed = new Discord.RichEmbed()
+                        .setColor(3447003)
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
+                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":pick: Pierre de sel : " + Sel + "\n" +
+                            ":pick: Fer médiocre : " + FerMediocre + "\n" +
+                            ":pick: Fer commun : " + FerCommun + "\n" +
+                            ":pick: Fer rare : " + FerRare + "\n" +
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp + "\n\n" +
+                            ":tada: Si et seulement si vous êtes Mineur de profession : +1 a chaque ressource !")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
+                    const embed = new Discord.RichEmbed()
+                        .setColor(3447003)
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
+                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":pick: Pierre de sel : " + Sel + "\n" +
+                            ":pick: Fer médiocre : " + FerMediocre + "\n" +
+                            ":pick: Fer commun : " + FerCommun + "\n" +
+                            ":pick: Fer rare : " + FerRare + "\n" +
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            talkedRecently.add(message.author.id + 19);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 19);
+            }, 3600000);
+        }
     }
-});
+})
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epaulières taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières taurus :", ":scales: Ce sont des épaulières faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Bourdon flâneur, 4 Cuirasse de taurus adroit, 2 Corne de Taurus, 4 Peau de Taurus lourd\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de épaulières taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des épaulières taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des épaulières taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
+//toto
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cape taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape taurus :", ":scales: C'est une cape faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de Taurus adroit, 2 Aile de Bourdon flâneur, 2 Poil de Taurus, 1 Scalp de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la cape taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Plastron taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron taurus :", ":scales: C'est un plastron fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Peau de Taurus lourd, 3 Scalp de Taurus, 2 Poil de Taurus lourd, 2 Antenne de Bourdon flâneur\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du plastron taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron taurus`  \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Gantelets taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets taurus :", ":scales: Ce sont des gantelets faits avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de Bourdon flâneur, 2 Cuirasse de taurus adroit, 1 Peau de Taurus lourd, 2 Poil de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des gantelets taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Ceinture taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture taurus :", ":scales: C'est une ceinture faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Poil de Taurus lourd, 3 Peau de Taurus lourd, 3 Peau de Taurus, 2 Corne de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la ceinture taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Jambières taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières taurus :", ":scales: Ce sont des jambières faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Cuirasse de taurus adroit, 2 Antenne de Bourdon flâneur, 1 Carapace de Bourdon flâneur, 2 Scalpe de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des jambières taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bottes taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes taurus :", ":scales: Ce sont des bottes faites avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de Taurus, 2 Corne de Taurus, 2 Cuirasse de fort taurus adroit, 2 Scalp de Taurus\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des bottes taurus`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes taurus` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 corne de taurus, 2 peau de taurus lourd, 1 cuirasse de fort taurus adroit, 1 scalp de taurus) :", "`=Amélioration d'un équipement taurus : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Anneau taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau taurus :", ":scales: C'est un anneau fait avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de bourdon flâneur, 3 Cuirasse de fort taurus adroit, 2 Scalp de Taurus, 2 Coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 3220 cols\n\n:large_orange_diamond: Prix de revente : 1610 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'anneau taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Carapace de bourdon flâneur, 2 Cuirasse de fort taurus adroit, 1 Scalp de Taurus, 1 Coeur de Desman) :", "`=Amélioration d'un bijou taurus : [Niveau en Bijoutier]`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un bijou taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Amulette taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette taurus :", ":scales: C'est une amulette faite avec des composants de taurus trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de bourdon flâneur, 3 Cuirasse de fort taurus adroit, 2 Scalp de Taurus, 2 Coeur de Desman\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 3220 cols\n\n:large_orange_diamond: Prix de revente : 1610 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'amulette taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette taurus`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie taurus`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Carapace de bourdon flâneur, 2 Cuirasse de fort taurus adroit, 1 Scalp de Taurus, 1 Coeur de Desman) :", "`=Amélioration d'un bijou taurus : [Niveau en Bijoutier]`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un bijou taurus`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du casque taurus")) {
-        const Dégâts = Math.floor(1 * Math.random() + 0)
-        const HP = Math.floor(11 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des épaulières taurus")) {
-        const Dégâts = Math.floor(1 * Math.random() + 0)
-        const HP = Math.floor(11 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du plastron taurus")) {
-        const Dégâts = Math.floor(1 * Math.random() + 0)
-        const HP = Math.floor(11 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la cape taurus")) {
-        const Dégâts = Math.floor(1 * Math.random() + 0)
-        const HP = Math.floor(11 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la ceinture taurus")) {
-        const Dégâts = Math.floor(1 * Math.random() + 0)
-        const HP = Math.floor(11 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des gantelets taurus")) {
-        const Dégâts = Math.floor(1 * Math.random() + 0)
-        const HP = Math.floor(11 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des jambières taurus")) {
-        const Dégâts = Math.floor(1 * Math.random() + 0)
-        const HP = Math.floor(11 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des bottes taurus")) {
-        const Dégâts = Math.floor(1 * Math.random() + 0)
-        const HP = Math.floor(11 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de l'anneau taurus")) {
-        const Dégâts = Math.floor(3 * Math.random() + 7)
-        const HP = Math.floor(21 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de l'amulette taurus")) {
-        const Dégâts = Math.floor(3 * Math.random() + 7)
-        const HP = Math.floor(21 * Math.random() + 40)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette taurus :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat du casque bovin")) {
