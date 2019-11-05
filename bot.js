@@ -4674,6 +4674,156 @@ bot.on('message', message => {
 // Menus | Liste | Equipements | Détails | Chitine
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Casque en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque en chitine :", ":scales: C'est un casque fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de bousier colossal, 4 Carapace de bousier colossal, 2 Carapace de Doryphore géant, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du casque en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du casque en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epaulières en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières en chitine :", ":scales: Ce sont des épaulières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de bousier colossal, 4 Carapace de Doryphore géant, 2 Corne de bousier colossal\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des épaulières en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des épaulières en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des épaulières en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plastron en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron en chitine :", ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 3 Aile de Neoridas, 2 Hémolymphe, 2 Aile de Doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du plastron en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron en chitine`  \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape en chitine :", ":scales: C'est une cape faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de venom, 2 Peau élastique de lombric irrégulier, 2 Peau de Neoridas, 1 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la cape en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ceinture en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture en chitine :", ":scales: C'est une ceinture faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Queue de Venom, 3 Peau de Venom, 3 Peau élastique de lombric irrégulier, 2 Langue de lombric irrégulier\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la ceinture en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gantelets en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets en chitine :", ":scales: Ce sont des gantelets faits avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Aile de Neoridas, 2 Carapace de Bousier colossal, 1 Bave de lombric irrégulier, 2 Hémolymphe\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des gantelets en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Jambières en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières en chitine :", ":scales: Ce sont des jambières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de Doryphore géant, 2 Patte de Doryphore géant, 1 Patte de Bousier colossal, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des jambières en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bottes en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes en chitine :", ":scales: Ce sont des bottes faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte de Bousier colossal, 2 Carapace de Bousier colossal, 2 Peau élastique de lombric irrégulier, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des bottes en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Anneau en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau en chitine :", ":scales: C'est un anneau fait avec des composants d'insectes trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 2 Aile de Doryphore géant, 2 Coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 3220 cols\n\n:large_orange_diamond: Prix de revente : 1610 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'anneau en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Carapace de Doryphore géant, 1 Aile de Doryphore géant, 1 Coeur de lièvre) :", "`=Amélioration d'un bijou en chitine : [Niveau en Bijoutier]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un bijou en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Amulette en chitine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette en chitine :", ":scales: C'est une amulette faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 2 Aile de Doryphore géant, 2 Coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 3220 cols\n\n:large_orange_diamond: Prix de revente : 1610 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'amulette en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Carapace de Doryphore géant, 1 Aile de Doryphore géant, 1 Coeur de lièvre) :", "`=Amélioration d'un bijou en chitine : [Niveau en Bijoutier]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un bijou en chitine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bonus de la panoplie en chitine")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -6128,6 +6278,462 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Découverte du casque de mineur kobolt :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP + "\n\n:warning: En portant ce casque, vous gagnez le double de cuivre [Médiocre] et [Commun] lorsque vous minez !\n\n:warning: Si vous possédez en plus la [Pioche de kobolt] alors vous gagnez le double de cuivre [Rare] aussi !")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Chitine | Achat
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat du casque en chitine")) {
+        const HP = Math.floor(6 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque en chitine :", ":scales: Vous venez d'acheter' cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des épaulières en chitine")) {
+        const HP = Math.floor(6 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat du plastron en chitine")) {
+        const HP = Math.floor(6 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de la cape en chitine")) {
+        const HP = Math.floor(6 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de la ceinture en chitine")) {
+        const HP = Math.floor(6 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des gantelets en chitine")) {
+        const HP = Math.floor(6 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des jambières en chitine")) {
+        const HP = Math.floor(6 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des bottes en chitine")) {
+        const HP = Math.floor(6 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 2)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'anneau en chitine")) {
+        const Défense = Math.floor(4 * Math.random() + 6)
+        const HP = Math.floor(11 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'amulette en chitine")) {
+        const Défense = Math.floor(4 * Math.random() + 6)
+        const HP = Math.floor(11 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Chitine | Fabrication
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du casque en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 30)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des épaulières en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 30)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du plastron en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 30)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la cape en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 30)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la ceinture en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 30)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des gantelets en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 30)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des jambières en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 30)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication des bottes en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 30)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de l'anneau en chitine")) {
+        const Défense = Math.floor(5 * Math.random() + 9)
+        const HP = Math.floor(21 * Math.random() + 30)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de l'amulette en chitine")) {
+        const Défense = Math.floor(5 * Math.random() + 9)
+        const HP = Math.floor(21 * Math.random() + 30)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration | Chitine | Découverte
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte du casque en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte des épaulières en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte du plastron en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte de la cape en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte de la ceinture en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte des gantelets en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantlets en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte des jambières en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte des bottes en chitine")) {
+        const HP = Math.floor(11 * Math.random() + 20)
+        const Défense = Math.floor(2 * Math.random() + 3)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte de l'anneau en chitine")) {
+        const Défense = Math.floor(5 * Math.random() + 8)
+        const HP = Math.floor(11 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte de l'amulette en chitine")) {
+        const Défense = Math.floor(5 * Math.random() + 8)
+        const HP = Math.floor(11 * Math.random() + 20)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -30444,612 +31050,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Casque en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque en chitine :", ":scales: C'est un casque fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Corne de bousier colossal, 4 Carapace de bousier colossal, 2 Carapace de Doryphore géant, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du casque en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du casque en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du casque en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epaulières en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières en chitine :", ":scales: Ce sont des épaulières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de bousier colossal, 4 Carapace de Doryphore géant, 2 Corne de bousier colossal\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des épaulières en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des épaulières en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des épaulières en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cape en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape en chitine :", ":scales: C'est une cape faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Peau de venom, 2 Peau élastique de lombric irrégulier, 2 Peau de Neoridas, 1 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la cape en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la cape en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Plastron en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron en chitine :", ":scales: C'est un plastron fait avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 3 Aile de Neoridas, 2 Hémolymphe, 2 Aile de Doryphore géant\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du plastron en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du plastron en chitine`  \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Gantelets en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets en chitine :", ":scales: Ce sont des gantelets faits avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Aile de Neoridas, 2 Carapace de Bousier colossal, 1 Bave de lombric irrégulier, 2 Hémolymphe\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des gantelets en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des gantelets en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Ceinture en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture en chitine :", ":scales: C'est une ceinture faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Queue de Venom, 3 Peau de Venom, 3 Peau élastique de lombric irrégulier, 2 Langue de lombric irrégulier\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la ceinture en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Jambières en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières en chitine :", ":scales: Ce sont des jambières faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Carapace de Doryphore géant, 2 Patte de Doryphore géant, 1 Patte de Bousier colossal, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des jambières en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des jambières en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bottes en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes en chitine :", ":scales: Ce sont des bottes faites avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte de Bousier colossal, 2 Carapace de Bousier colossal, 2 Peau élastique de lombric irrégulier, 2 Hémolymphe\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1240 cols\n\n:large_orange_diamond: Prix de revente : 620 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat des bottes en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte des bottes en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 peau de neoridas, 1 peau de venom, 2 carapace de doryphore géant, 1 hémolymphe) :", "`=Amélioration d'un équipement en chitine : [Niveau en Forgeron]`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un équipement en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Anneau en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau en chitine :", ":scales: C'est un anneau fait avec des composants d'insectes trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 2 Aile de Doryphore géant, 2 Coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 3220 cols\n\n:large_orange_diamond: Prix de revente : 1610 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'anneau en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Carapace de Doryphore géant, 1 Aile de Doryphore géant, 1 Coeur de lièvre) :", "`=Amélioration d'un bijou en chitine : [Niveau en Bijoutier]`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un bijou en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Amulette en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette en chitine :", ":scales: C'est une amulette faite avec des composants d'insecte trouvables au palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 4\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Carapace de Doryphore géant, 2 Aile de Doryphore géant, 2 Coeur de lièvre\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 3220 cols\n\n:large_orange_diamond: Prix de revente : 1610 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'amulette en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette en chitine` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette en chitine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie en chitine`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Carapace de Doryphore géant, 1 Aile de Doryphore géant, 1 Coeur de lièvre) :", "`=Amélioration d'un bijou en chitine : [Niveau en Bijoutier]`")
-            .addField(":keyboard: Si un bijoutier de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'un bijou en chitine`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-//Achat équipements en chitine
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de l'anneau en chitine")) {
-        const Défense = Math.floor(4 * Math.random() + 6)
-        const HP = Math.floor(11 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de l'amulette en chitine")) {
-        const Défense = Math.floor(4 * Math.random() + 6)
-        const HP = Math.floor(11 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du casque en chitine")) {
-        const HP = Math.floor(6 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 2)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque en chitine :", ":scales: Vous venez d'acheter' cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des épaulières en chitine")) {
-        const HP = Math.floor(6 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 2)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du plastron en chitine")) {
-        const HP = Math.floor(6 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 2)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la cape en chitine")) {
-        const HP = Math.floor(6 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 2)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la ceinture en chitine")) {
-        const HP = Math.floor(6 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 2)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des gantelets en chitine")) {
-        const HP = Math.floor(6 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 2)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des jambières en chitine")) {
-        const HP = Math.floor(6 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 2)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des bottes en chitine")) {
-        const HP = Math.floor(6 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 2)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes en chitine :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-//Fabrication équipements en chitine
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de l'anneau en chitine")) {
-        const Défense = Math.floor(5 * Math.random() + 9)
-        const HP = Math.floor(21 * Math.random() + 30)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de l'amulette en chitine")) {
-        const Défense = Math.floor(5 * Math.random() + 9)
-        const HP = Math.floor(21 * Math.random() + 30)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du casque en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 30)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des épaulières en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 30)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du plastron en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 30)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de la cape en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 30)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication de la ceinture en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 30)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des gantelets en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 30)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantelets en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des jambières en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 30)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication des bottes en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 30)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes en chitine :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de l'anneau en chitine")) {
-        const Défense = Math.floor(5 * Math.random() + 8)
-        const HP = Math.floor(11 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Anneau en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de l'amulette en chitine")) {
-        const Défense = Math.floor(5 * Math.random() + 8)
-        const HP = Math.floor(11 * Math.random() + 20)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Amulette en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte du casque en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Casque en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte des épaulières en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Epaulières en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte du plastron en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Plastron en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la cape en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Cape en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte de la ceinture en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Ceinture en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte des gantelets en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Gantlets en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte des jambières en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Jambières en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Découverte des bottes en chitine")) {
-        const HP = Math.floor(11 * Math.random() + 20)
-        const Défense = Math.floor(2 * Math.random() + 3)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bottes en chitine :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Oeuf bavant")) {
