@@ -1020,6 +1020,44 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Meurtre")) {
+        const A = (Math.floor((4) * Math.random() + 0))
+        const Cols = 25 * A
+        const B = (Math.floor((2 - (0.85)) * Math.random()))
+        const C = (Math.floor((2 - (0.85)) * Math.random()))
+        const D = (Math.floor((2 - (0.85)) * Math.random()))
+        const E = (Math.floor((2 - (0.85)) * Math.random()))
+        const F = (Math.floor((2 - (0.85)) * Math.random()))
+        const G = (Math.floor((2 - (0.85)) * Math.random()))
+        const H = (Math.floor((2 - (0.85)) * Math.random()))
+        const I = (Math.floor((2 - (0.85)) * Math.random()))
+        const J = (Math.floor((2 - (0.85)) * Math.random()))
+        const K = (Math.floor((2 - (0.85)) * Math.random()))
+        const L = (Math.floor((3 - (0.85)) * Math.random()))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Récompenses :", "Suite à votre meurtre sur un joueur, vous obtenez :")
+            .addField("Cols :", +Cols + " % de ses cols")
+            .addField("Casque du joueur :", +B)
+            .addField("Epaulières du joueur :", +C)
+            .addField("Cape du joueur :", +D)
+            .addField("Plastron du joueur :", +E)
+            .addField("Gantelets du joueur :", +F)
+            .addField("Ceinture du joueur :", +G)
+            .addField("Jambières du joueur :", +H)
+            .addField("Bottes du joueur :", +I)
+            .addField("Amulette du joueur :", +J)
+            .addField("Anneau du joueur :", +K)
+            .addField("Armes du joueur :", +L)
+            .setImage("https://pm1.narvii.com/6286/fc81508bf3d20fa80036bca2dfe85f729697c547_hq.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
 // Menus | Rétablissement
 
 bot.on('message', message => {
@@ -29022,48 +29060,6 @@ bot.on('message', message => {
 })
 
 //toto
-
-//////////////////////////////////////////////////////////////////Meurtres///////////////////////////////////////////////////////////////////////
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Meurtre")) {
-        const A = (Math.floor((4) * Math.random() + 0))
-        const Cols = 25 * A
-        const B = (Math.floor((2 - (0.85)) * Math.random()))
-        const C = (Math.floor((2 - (0.85)) * Math.random()))
-        const D = (Math.floor((2 - (0.85)) * Math.random()))
-        const E = (Math.floor((2 - (0.85)) * Math.random()))
-        const F = (Math.floor((2 - (0.85)) * Math.random()))
-        const G = (Math.floor((2 - (0.85)) * Math.random()))
-        const H = (Math.floor((2 - (0.85)) * Math.random()))
-        const I = (Math.floor((2 - (0.85)) * Math.random()))
-        const J = (Math.floor((2 - (0.85)) * Math.random()))
-        const K = (Math.floor((2 - (0.85)) * Math.random()))
-        const L = (Math.floor((3 - (0.85)) * Math.random()))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Récompenses :", "Suite à votre meurtre sur un joueur, vous obtenez :")
-            .addField("Cols :", +Cols + " % de ses cols")
-            .addField("Casque du joueur :", +B)
-            .addField("Epaulières du joueur :", +C)
-            .addField("Cape du joueur :", +D)
-            .addField("Plastron du joueur :", +E)
-            .addField("Gantelets du joueur :", +F)
-            .addField("Ceinture du joueur :", +G)
-            .addField("Jambières du joueur :", +H)
-            .addField("Bottes du joueur :", +I)
-            .addField("Amulette du joueur :", +J)
-            .addField("Anneau du joueur :", +K)
-            .addField("Armes du joueur :", +L)
-            .setImage("https://pm1.narvii.com/6286/fc81508bf3d20fa80036bca2dfe85f729697c547_hq.jpg")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
-//////////////////////////////////////////////////////////////////Commandes pour montrer des expressions//////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bonbon étrange")) {
