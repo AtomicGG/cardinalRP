@@ -29906,7 +29906,7 @@ bot.on('message', message => {
                 if (chanceEnnemis <= 33) {
                     nbrEnnemis = 2;
                 }
-                if (34 <= chanceEnnemis && rochanceEnnemisll <= 66) {
+                if (34 <= chanceEnnemis && chanceEnnemis <= 66) {
                     nbrEnnemis = 3;
                 }
                 if (67 <= chanceEnnemis) {
