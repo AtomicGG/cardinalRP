@@ -385,6 +385,12 @@ bot.on('message', message => {
             .addBlankField(true)
             .addField(":cyclone: Blood insanity", ":cyclone: Compétence où vous vous infligez vous même des dégâts pour doubler vos prochains dégâts pendant un certains temps, " +
                 "vous vous transpercez avant de ressortir la lame ce qui augmente votre force et vous entoure d'une aura étrange !\n\n`=Blood insanity : [Vos dégâts]`")
+            .addBlankField(true)
+            .addField(":cyclone: Esquive parfaite", ":cyclone: Une compétence de défense qui vous permez de faire une esquive garentie !\n\n" +
+                "`=Esquive parfaite`")
+            .addBlankField(true)
+            .addField(":cyclone: Blocage parfaite ", ":cyclone: Une compétence de défense qui vous permez de faire un blocage garentie !\n\n" +
+                "`=Blocage parfaite`")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
