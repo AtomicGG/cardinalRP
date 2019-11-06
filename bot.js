@@ -30445,7 +30445,7 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
             if (26 <= roll) {
-                let nbrEnnemis;
+                let nbrEnnemis = 0;
                 const chanceEnnemis = Math.floor(100 * Math.random() + 1);
                 if (chanceEnnemis <= 33) {
                     nbrEnnemis = 2;
@@ -30517,7 +30517,7 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
             if (24 <= roll) {
-                let nbrEnnemis;
+                let nbrEnnemis = 0;
                 const chanceEnnemis = Math.floor(100 * Math.random() + 1);
                 if (chanceEnnemis <= 30) {
                     nbrEnnemis = 2;
@@ -30553,7 +30553,7 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
             if (23 <= roll) {
-                let nbrEnnemis;
+                let nbrEnnemis = 0;
                 const chanceEnnemis = Math.floor(100 * Math.random() + 1);
                 if (chanceEnnemis <= 27) {
                     nbrEnnemis = 2;
@@ -30589,7 +30589,7 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
             if (22 <= roll) {
-                let nbrEnnemis;
+                let nbrEnnemis = 0;
                 const chanceEnnemis = Math.floor(100 * Math.random() + 1);
                 if (chanceEnnemis <= 27) {
                     nbrEnnemis = 2;
@@ -30625,7 +30625,7 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
             if (21 <= roll) {
-                let nbrEnnemis;
+                let nbrEnnemis = 0;
                 const chanceEnnemis = Math.floor(100 * Math.random() + 1);
                 if (chanceEnnemis <= 23) {
                     nbrEnnemis = 2;
@@ -30661,7 +30661,7 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
             if (20 <= roll) {
-                let nbrEnnemis;
+                let nbrEnnemis = 0;
                 const chanceEnnemis = Math.floor(100 * Math.random() + 1);
                 if (chanceEnnemis <= 20) {
                     nbrEnnemis = 2;
@@ -30697,7 +30697,7 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
             if (19 <= roll) {
-                let nbrEnnemis;
+                let nbrEnnemis = 0;
                 const chanceEnnemis = Math.floor(100 * Math.random() + 1);
                 if (chanceEnnemis <= 20) {
                     nbrEnnemis = 2;
