@@ -30480,7 +30480,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (25 <= chanceEnnemis) {
+            if (25 <= roll) {
                 let nbrEnnemis;
                 const chanceEnnemis = Math.floor(100 * Math.random() + 1);
                 if (chanceEnnemis <= 33) {
