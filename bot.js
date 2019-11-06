@@ -32509,7 +32509,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Esquive parfaite")) {
-        if ( /*talkedRecently.has(message.author.id+5)*/ false) {
+        if (talkedRecently.has(message.author.id + 2)) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -32552,7 +32552,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Blocage parfait")) {
-        if ( /*talkedRecently.has(message.author.id+5)*/ false) {
+        if (talkedRecently.has(message.author.id + 2)) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
