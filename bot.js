@@ -34073,7 +34073,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Coup dévastateur")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
-        const degat = Math.floor((atk * 0.4 + 1) * Math.random() + (atk * 1.3))
+        const degat = Math.floor((atk * 0.5 + 1) * Math.random() + (atk * 1.4))
         const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 35) {
@@ -34086,7 +34086,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (36 <= roll && roll <= 97) {
+        if (36 <= roll && roll <= 94) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34096,7 +34096,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (98 <= roll) {
+        if (96 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
