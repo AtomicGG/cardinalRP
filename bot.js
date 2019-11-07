@@ -33203,7 +33203,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Coups Jumeaux :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "` points de dégâts et `" + degat2 + "` points de dégâts. (Les cibles de chaque coup peuvent être désignées de manière indépendante)")
-                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setImage("https://cdn.discordapp.com/attachments/543345227604164618/634475540648296468/F4F33722C120BC24A8A0C1C6646319C1F9D00D72.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -33264,7 +33264,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Voile sombre :", ":crossed_swords: Vous réussissez votre Voile sombre et devenez invisible jusqu'à ce que vous reussissez une autre action. Si l'action réussie est une attaque, la ou les cible(s) ne pourront pas se défendre. (Les coups de zone sont toujours capable de vous blesser)")
-                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/642058091214405652/giphy.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -33414,7 +33414,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Bénédiction :", ":crossed_swords: Vous utilisez votre Bénédiction sur votre allié, celui-ci se sent revigoré. Il est soigné de 5% de vos Points de vie actuels et est soigné de toute altération d'état.")
-                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setImage("https://cdn.discordapp.com/attachments/543345227604164618/634478099953877025/unknown.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -33482,7 +33482,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":shield: Tenacité :", ":shield: Vous ratez votre tentative de ténacité et vous vous prenez les dégâts de l'attaque qui vous inflige `" + degatEchec + "` points de dégâts. Vous gagnez une charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
-                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+                .setImage("https://cdn.discordapp.com/attachments/543345227604164618/634477350620364820/sword-art-online-gifs24.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -33492,7 +33492,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":shield: Tenacité :", ":shield: Vous réussissez votre tentative de ténacité et vous vous prenez les dégâts qui vous inflige seulement `" + degatReussite + "` points de dégâts. Vous gagnez une charge de ténacité. A chaque charge de tenacité obtenue votre armure augmente de 10% pour 1 charge, 15% pour 2 charges et 20% pour 3 charges.")
-                .setImage("https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/9/9d/Heathcliff7.png/revision/latest?cb=20140423203836")
+                .setImage("https://cdn.discordapp.com/attachments/543345227604164618/634477350620364820/sword-art-online-gifs24.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -33566,7 +33566,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Coup enchaîné :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degats + "` points de dégâts et applique 1 charge enchaîné sur la cible. Si la cible possède au moins 2 Charge enchaîné, utilisez =Coup déchaîné pour les consommer et augmenter les dégâts !")
-                .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+                .setImage("https://cdn.discordapp.com/attachments/543345227604164618/634477931321884723/unknown.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -33576,7 +33576,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Coup enchaîné :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit + "` points de dégâts et appliqué 2 Charge enchaîné sur la cible. Si la cible possède au moins 2 Charge enchaîné, utilisez =Coup déchaîné pour les consommer et augmenter les dégâts !")
-                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setImage("https://cdn.discordapp.com/attachments/543345227604164618/634477931321884723/unknown.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
