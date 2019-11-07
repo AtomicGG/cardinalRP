@@ -41466,7 +41466,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Taurus lourd :", ":shield: Le Taurus lourd vous voit approcher et vous sonne en vous assénant un violent coup avec le plat de sa hache. Vous êtes sonné et ne pouvez pas vous défendre ou attaquer pendant un tour.")
+                .addField(":shield: Taurus lourd :", ":shield: Le Taurus lourd vous voit approcher et vous sonne en vous assénant un violent coup avec le plat de sa hache. Vous êtes sonné et ne pouvez pas vous défendre et attaquer pendant un tour.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
