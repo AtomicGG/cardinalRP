@@ -42066,7 +42066,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Vallée quête accomplie")) {
         let lvl = args.slice(3).join(" : ");
-        const control = Math.floor(200 * Math.random() + 200)
+        const control = Math.floor(100 * Math.random() + 100)
         let xp = control - (lvl * 6)
         const cols = Math.floor(90 * Math.random() + 90)
         const potionAmelioreeSup = Math.floor(2 * 0.25 * Math.random())
@@ -42555,7 +42555,7 @@ bot.on('message', message => {
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         carapace = Math.floor((2 - 0.32) * Math.random())
         aile = Math.floor((2 - 0.57) * Math.random())
-        dard = Math.floor((2 - 0.88) * Math.random())
+        dard = Math.floor((2 - 0.66) * Math.random())
         oeil = Math.floor((2 - 0.913) * Math.random())
         armeUneMainDargnan = Math.floor((2 - 0.98) * Math.random())
         armeDeuxMainDargnan = Math.floor((2 - 0.958) * Math.random())
