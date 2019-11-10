@@ -44649,7 +44649,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Pour le ranger vert légendaire qui nous a suivi et supporter toute ces années !... Quoi ? Ok bon presque 1 an ! Ou on était en guerre au débuts (inrp) puis on s'est tous rapproché ! On te souhaîte un joueux anniversaire !\nPas d'ice tea ! Pas de cadeau mais une commande, je t'aurais bien offert le truc de Fukaa mais tu m'a dis que tu n'aimais pas donc je vais te raconter ma vie, non plus ?")
+            .addField("Pour le ranger vert légendaire qui nous a suivi et supporter toute ces années !... Quoi ? Ok bon presque 1 an ! Ou on était en guerre au débuts (inrp) puis on s'est tous rapproché ! On te souhaîte un joueux anniversaire !")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
