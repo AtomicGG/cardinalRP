@@ -42066,7 +42066,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Vallée quête accomplie")) {
         let lvl = args.slice(3).join(" : ");
-        const control = Math.floor(100 * Math.random() + 100)
+        const control = Math.floor(150 * Math.random() + 150)
         let xp = control - (lvl * 6)
         const cols = Math.floor(90 * Math.random() + 90)
         const potionAmelioreeSup = Math.floor(2 * 0.25 * Math.random())
