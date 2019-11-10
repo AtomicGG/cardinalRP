@@ -44640,3 +44640,16 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Redi")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Pour le ranger vert légendaire qui nous a suivi et supporter toute ces années !... Quoi ? Ok bon presque 1 an ! Ou on était en guerre au débuts (inrp) puis on s'est tous rapproché ! On te souhaîte un joueux anniversaire ! Pas d'ice tea ! Pas de cadeau mais une commande, je t'aurais bien offert le truc de Fukaa mais tu m'a dis que tu n'aimais pas donc je vais te raconter ma vie, non plus ? Bon... Alors tu dois croire qu'on t'aime pas et tous hein mais sache que pour nous l'heure de ton anniversaire est pas encore passé ! Et après tous c'est qu'un jour de retard pour toi mais tu es a notre horaire n'est ce pas ? Tu nous as grandement aidé pour le staff, pour les programme, ton avis, et plein d'autre chose. Tous n'est pas rose et tous ne sera pas rose entre nous tous. Après tous on est tous différent mais je pense que dans l'ensemble ça va vu que tu es encore parmis nous. Je sais aussi que tu aurais aimé plus de chose pour ton anniversaire ce mot qui commence par A mais malheureusement j'ai déjà du mal a passer du temps avec une personne que j'adore plus que tous, donc sorry about that. Le 1er 29 et le 1er 31 de SAO ! Le meilleur joueurs normalement de SAO, toujours présent a l'appele et un jour on s'affrontera en duel de YU GI OH ! Si tu fais REDIIIOOOO Je ferrais *Mais pourquoi il gueule son prénom ? Il est con ou quoi ?* XD Je sens qu'on va bien rire sur du JDG. Je suis pas sur qu'un long texte te ferra plaisir et hors de question que je t'offre du ice tea. Mais je ferrais avec les moyens du bord ! Quoi les fautes ? Bon ta l'habitude maintenant non ? Et donc aussi la prochaine fois pas de date d'anniversaire caché ! J'ai déjà essayé de mettre un lien de youtube sur le code et ça fait un rip enfin ! Joue a Pokemon l'infirmière Joelle va te le souhaîter donc JOYEUX ANNIVERSAIRE ! D'ailleurs je le redis l'infirmière est la vrai mère dans Pokemon entre ta mère qui t'envoie dans ta chambre et elle qui te souhaîte joyeux anniversaire, oui oui je m'égare mais ta l'habitude avec moi...déjà dit c'est ça ? Donc après je pense qu'on s'était presque tous dis sur la situation en MP. Donc ce qui te ferra vraiment plaisir je ne peux te l'offrir. En tous cas Joyeux anniversaire en retard ou a l'heure ou pile. Perso je ne vois pas la différence, l'important c'est qu'on te le souhaîte... ~~Et pas se plaindre quand on le dit a personne et qu'on doit presque deviné~~ Happy birthday to you...Happy birthday to you... Watashi kara ! Arata méto ! Happy Happy birthday....Quoi?")
+            .setImage("https://media1.tenor.com/images/2fad87de6f32e16f1bf3fedd77c67f53/tenor.gif?itemid=13740025")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
