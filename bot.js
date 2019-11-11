@@ -44435,7 +44435,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Le colonel taurus attaque")) {
-        const A = (Math.floor((31) * Math.random() + 330))
+        const A = (Math.floor((31) * Math.random() + 350))
         const B = (Math.floor((100) * Math.random() + 1))
         const C = (Math.floor((21) * Math.random() + 200))
         if (B <= 30) {
@@ -44446,12 +44446,21 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus tournoie son arme rapidement avant de donner un énorme coup sur un joueur pour l'écraser sous le poids du marteau en infligeant " + C + " dégâts de perce armure. !")
             message.channel.send({ embed })
         }
-        if (31 <= B & B <= 90) {
+        if (31 <= B & B <= 80) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus lance son marteau vers un joueur pour infliger " + A + " dégâts. Il cours vers son arme pour la reprendre en main et donner un coup de marteau latéral pour infliger " + A + " dégâts a un autre joueur.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (81 <= B & B <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus prend un joueur et fait un german suplex qui inflige " + C + " de dégâts sans possibilité de défense et l'envoie vers le général taurus.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -44469,9 +44478,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Le général taurus attaque")) {
-        const A = (Math.floor((31) * Math.random() + 330))
+        const A = (Math.floor((31) * Math.random() + 350))
         const B = (Math.floor((100) * Math.random() + 1))
         const C = (Math.floor((41) * Math.random() + 320))
+        const D = (Math.floor((31) * Math.random() + 200))
         if (B <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -44480,12 +44490,21 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus tournoie son arme rapidement avant de donner un énorme coup sur un joueur pour l'écraser sous le poids du marteau en infligeant " + C + " dégâts et réduit l'attaque de 30.")
             message.channel.send({ embed })
         }
-        if (31 <= B & B <= 90) {
+        if (31 <= B & B <= 80) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus lance son marteau vers un joueur pour infliger " + A + " dégâts. Il cours vers son arme pour la reprendre en main et donner un coup de marteau latéral pour infliger " + C + " dégâts a un autre joueur.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (81 <= B & B <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus prend un joueur et fait un german suplex qui inflige " + D + " de dégâts sans possibilité de défense et l'envoie vers le colonel taurus.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -44503,23 +44522,32 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius attaque")) {
-        const A = (Math.floor((31) * Math.random() + 230))
+        const A = (Math.floor((31) * Math.random() + 420))
         const B = (Math.floor((100) * Math.random() + 1))
-        const C = (Math.floor((41) * Math.random() + 350))
+        const C = (Math.floor((41) * Math.random() + 385))
         if (B <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius crie de rage et serre bien son poing et vous donne un coup sec et direct vertial en infligeant " + C + " de dégâts.")
+                .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius crie de rage et serre bien son poing et vous donne un coup sec et direct en infligeant " + C + " de dégâts.")
             message.channel.send({ embed })
         }
-        if (31 <= B & B <= 90) {
+        if (31 <= B & B <= 60) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius vous fait une série de coup de poing et tente de vous tuer sur son combo de 3 coups qui fait " + A + " dégâts a chaque porté. Une défense a chaque coup doit être fait.")
+                .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius vous fait une série de coup de poing et tente de vous tuer sur son combo de 3 coups qui fait " + A + " dégâts a coup chaque porté. Une défense a chaque coup doit être fait. 2 joueur peuvent bloquer seulement un coup pour que la personne visé en reçoit que 1.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (61 <= B & B <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Asterius :", ":crossed_swords: Astérius attrape un joueur et le garde dans sa main. De l'autre il frappe un autre joueur et fait " + C + " de dégâts. Le joueurs attraper peut rien faire sauf se heal dans sa main. Pour être sauver il faut un joueur qui envoye un autre joueur en l'air donc deux roll doit être réussie (Rp le un peu). Si dans deux tour il est encore dans sa main. Le joueur se ferra éclater au sol et va subire 400 de dégats sans possibilité de se défendre. ")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -44635,28 +44663,6 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Récompenses du Asterius battu 1000 XP 10 000 cols.\n\n Bonus du last hit vous recevez le légendaire...https://www.youtube.com/watch?v=0EVrOapzDvg")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Red")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Pour le ranger vert légendaire qui nous a suivi et supporter toute ces années !... Quoi ? Ok bon presque 1 an ! Ou on était en guerre au débuts (inrp) puis on s'est tous rapproché ! On te souhaîte un joueux anniversaire !\n" +
-            "Pas d'ice tea ! Pas de cadeau mais une commande, je t'aurais bien offert le truc de Fukaa mais tu m'a dis que tu n'aimais pas donc je vais te raconter ma vie, non plus ? Bon... Alors tu dois croire qu'on t'aime pas et tous hein mais sache que pour nous l'heure de ton anniversaire est pas encore passé ! \n" +
-            "Et après tous c'est qu'un jour de retard pour toi mais tu es a notre horaire n'est ce pas ? Tu nous as grandement aidé pour le staff, pour les programme, ton avis, et plein d'autre chose. Tous n'est pas rose et tous ne sera pas rose entre nous tous. \n" +
-            "Après tous on est tous différent mais je pense que dans l'ensemble ça va vu que tu es encore parmis nous. Je sais aussi que tu aurais aimé plus de chose pour ton anniversaire ce mot qui commence par A mais malheureusement j'ai déjà du mal a passer du temps avec une personne que j'adore plus que tous, donc sorry about that. Le 1er 29 et le 1er 31 de SAO ! \n" +
-            "Le meilleur joueurs normalement de SAO, toujours présent a l'appele et un jour on s'affrontera en duel de YU GI OH ! Si tu fais REDIIIOOOO Je ferrais *Mais pourquoi il gueule son prénom ? Il est con ou quoi ?* XD Je sens qu'on va bien rire sur du JDG. Je suis pas sur qu'un long texte te ferra plaisir et hors de question que je t'offre du ice tea. \n" +
-            "Mais je ferrais avec les moyens du bord ! Quoi les fautes ? Bon ta l'habitude maintenant non ? Et donc aussi la prochaine fois pas de date d'anniversaire caché ! J'ai déjà essayé de mettre un lien de youtube sur le code et ça fait un rip enfin !\n" +
-            "Joue a Pokemon l'infirmière Joelle va te le souhaîter donc JOYEUX ANNIVERSAIRE ! D'ailleurs je le redis l'infirmière est la vrai mère dans Pokemon entre ta mère qui t'envoie dans ta chambre et elle qui te souhaîte joyeux anniversaire, oui oui je m'égare mais ta l'habitude avec moi...déjà dit c'est ça ? Donc après je pense qu'on s'était presque tous dis sur la situation en MP. \n" +
-            "Donc ce qui te ferra vraiment plaisir je ne peux te l'offrir. En tous cas Joyeux anniversaire en retard ou a l'heure ou pile. Perso je ne vois pas la différence, l'important c'est qu'on te le souhaîte... ~~Et pas se plaindre quand on le dit a personne et qu'on doit presque deviné~~ Happy birthday to you...Happy birthday to you... Watashi kara ! Arata méto ! Happy Happy birthday....Quoi?")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
