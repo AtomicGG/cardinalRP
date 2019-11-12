@@ -42096,7 +42096,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Vallée combat")) {
         let joueurs = args.slice(2).join(" : ");
-        if (talkedRecently.has(message.author.id + 1000)) {
+        if (/*talkedRecently.has(message.author.id + 1000)*/false) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -42121,7 +42121,7 @@ bot.on('message', message => {
                     } else break;
                 }
                 roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 40) {
+                if (roll <= 50) {
                     test = test + 2 + frelonFoudroyant;
                     if (test <= (6 + 7 * (joueurs - 1))) {
                         frelonFoudroyant = frelonFoudroyant + 1;
