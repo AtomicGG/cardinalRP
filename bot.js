@@ -11363,7 +11363,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague de kobolt à un main :", ":scales: C'est une dague assez puissante constituée de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobolt`")
+            .addField(":scales: Dague de kobolt :", ":scales: C'est une dague assez puissante constituée de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la dague de kobolt`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 1 cuivre commun, 2 cuivre médiocre, 1 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -42096,7 +42096,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Vallée combat")) {
         let joueurs = args.slice(2).join(" : ");
-        if (/*talkedRecently.has(message.author.id + 1000)*/false) {
+        if (talkedRecently.has(message.author.id + 1000)) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
