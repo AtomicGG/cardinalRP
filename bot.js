@@ -27048,7 +27048,7 @@ bot.on('message', message => {
             .addField("Le monstre attaque les joueurs :", + tableau2.toString())
             .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
             .setTimestamp()
-        message.channel.send({ embed })
+        message.channel.send(/*{ embed }*/tableau2.toString())
     }
 });
 
