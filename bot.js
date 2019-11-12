@@ -88,7 +88,7 @@ bot.on('message', message => {
                 ":microphone2:=Dirigeant\n" +
                 ":shield:=Garde\n" +
                 ":bow_and_arrow:=Mercenaire\n" +
-                ":chains:=Prison\n" +
+                ":chains:=La prison\n" +
                 ":ring:=Mariage\n" +
                 ":notes:=Musiques")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -26886,7 +26886,7 @@ bot.on('message', message => {
 // Menus | Prison
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Prison")) {
+    if (message.content.startsWith(prefix + "La prison")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
