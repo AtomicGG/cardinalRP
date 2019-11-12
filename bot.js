@@ -23486,6 +23486,32 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Darchic | Démantèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme darchic à une main")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme darchic à une main :", "Vous obtenez :\n\n:dagger: 1 Sabot de boeuf\n:syringe: 1 Dard de frelon foudroyant\n:pick: 1 Fer commun\n:pick: 1 Fer rare")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme darchic à deux mains")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Arme darchic à deux mains :", "Vous obtenez :\n\n:dagger: 2 Sabot de boeuf\n:syringe: 2 Dard de frelon foudroyant\n:pick: 2 Fer commun\n:pick: 1 Fer rare\n:deciduous_tree: 1 Bois de séquoia rare")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Menus | Liste | Potions
 
 bot.on('message', message => {
