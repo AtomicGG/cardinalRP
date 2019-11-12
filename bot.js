@@ -27026,6 +27026,10 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Multiciblage")) {
         var position = message.content.indexOf(':');
         var str2 = message.content.slice(position + 2)
+        var intStr2 = str2 - 0
+        if(isNaN(intStr2)) {
+            str2 = '1'
+        }
         var espace = str2.indexOf(' ');
         var nbrJoueurs = str2.slice(0, espace);
         var nbrJoueursVisés = str2.slice(espace + 1);
