@@ -27009,21 +27009,6 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Ciblage")) {
-        let nbrJoueurs = args.slice(1).join(" : ");
-        const Joueurs = Math.floor(nbrJoueurs * Math.random() + 1)
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Le monstre attaque le joueur :", + Joueurs)
-            .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Multiciblage")) {
         var position = message.content.indexOf(':');
         var str2 = message.content.slice(position + 2)
         var espace = str2.indexOf(' ');
@@ -27054,7 +27039,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Le monstre attaque les joueurs :", "" + texte.replace(regex, ' & '))
+            .addField("Le monstre attaque le(s) joueur(s) :", "" + texte.replace(regex, ' & '))
             .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
             .setTimestamp()
         message.channel.send({ embed })
