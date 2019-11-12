@@ -27026,15 +27026,17 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Multiciblage")) {
         var position = message.content.indexOf(':');
         var str2 = message.content.slice(position + 2)
-        var intStr2 = str2 - 0
-        if(isNaN(intStr2)) {
-            str2 = '1'
-        }
         var espace = str2.indexOf(' ');
+        if(espace == -1){
+            espace = 1
+        }
         var nbrJoueurs = str2.slice(0, espace);
         var nbrJoueursVisés = str2.slice(espace + 1);
         var IntNbrJoueurs = nbrJoueurs - 0;
         var IntNbrJoueursVisés = nbrJoueursVisés - 0;
+        if(IntNbrJoueursVisés == 0) {
+            IntNbrJoueursVisés = 1
+        }
         var tableau = new Array(IntNbrJoueurs);
         var tableau2 = new Array(IntNbrJoueursVisés);
         for (var i = 0; i < tableau.length; i++) {
