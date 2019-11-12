@@ -937,23 +937,23 @@ bot.on('message', message => {
 // Menus | Combat
 
 bot.on('message', message => {
-    if (message.content === prefix + "Combat") {
+    if (message.content === prefix + "Déroulement d'un combat") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Déroulement de combat, partie 1 :", "Le système de combat est avant tout un système par tour, c'est à dire que chaque personne et monstre pourra agir que pendant son tour de jeu !\n\n" +
+            .addField("Déroulement d'un combat, partie 1 :", "Le système de combat est avant tout un système par tour, c'est à dire que chaque personne et monstre pourra agir que pendant son tour de jeu !\n\n" +
                 "Il faut savoir que, dans un combat lorsque c'est votre tour, vous aurez droit à une attaque ou une action, mais si un joueur ou un monstre vous attaque, " +
                 "vous aurez droit de faire une action défensive !\n\nPour voir la liste des différents coups et actions défensives possibles ainsi que pour comprendre comment sa marche :\n" +
                 "`=Coups et défenses`\n\nVous disposez de 'HP' qui sont dans votre pseudo, une fois que vous êtes à 0 HP, vous mourrez...\n\n" +
                 "Vous disposez aussi de 'points de dégâts' qui vous permettent d'infliger des coups plus puissants à vos adversaires, plus vous en aurez, plus vous ferez mal !\n\n" +
                 "Vous disposez aussi de 'points d'armure' qui permette de réduire les dégâts finaux reçus que vous subissez, si un ennemis inflige 10 points de dégâts après " +
                 "votre action défensive et que vous avez 4 points de défense, vous perdrez que 6 HP avec l'armure !")
-            .addField("Déroulement de combat, partie 2 :", "Dans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !\n\n" +
+            .addField("Déroulement d'un combat, partie 2 :", "Dans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !\n\n" +
                 "Quand c'est au tour des joueurs, il faudra définir au départ qui commence son tour, le suivant, et ainsi de suite !\n\n" +
                 "Pour savoir quel joueur se fera attaquer par un monstre, il suffit d'écrire :\n=Ciblage : [Nombre de joueurs dans le combat]\n\n" +
-                "Lorsque plusieurs personnes se font cibler, la commande suivante existe :\n=Multiciblage : [Nombre de joueurs dans le combat] [Nombre de personnes visée par l'attaque]\n\n" +
-                "Lors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez !\n\n" +
+                "Lorsque plusieurs personnes se font cibler, la commande suivante existe :\n=Multiciblage : [Nombre de joueurs dans le combat] [Nombre de personnes visée par l'attaque]")
+            .addField("Déroulement d'un combat, partie 3 :", "Lors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez !\n\n" +
                 "Exemple :\nLoup [A] : 80/80 HP\nLoup [B] : 50/80 HP\nLoup [C] : 24/80 HP\n\nLes actions défensives et attaques des monstres seront écrites sur ses infos si vous écrivez :\n" +
                 "`=[Nom du monstre]`\n\Selon la zone où vous voulez faire un combat, il y aura une commande à faire  étant :\n\n`=Plaines combat : [Nombre de participants]`\n\n" +
                 "Si vous rejoignez un combat, vous devez faire cette commande, par exemple si je rejoins le combat déjà lancé avec moi et un amis, je fait :\n\n`=Plaines combat : 2`")
