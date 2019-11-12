@@ -6835,7 +6835,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Peau arrachée | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Peau arrachée | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(4 * Math.random() + 2)
@@ -6949,7 +6949,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Coeur d'animal faible | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Coeur d'animal faible | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(3 * Math.random() + 3)
@@ -6981,7 +6981,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Peau résistante | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Peau résistante | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(6 * Math.random() + 5)
@@ -7103,7 +7103,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Peau résistante | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Peau résistante | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -7159,7 +7159,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Croc | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Croc | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(4 * Math.random() + 7)
@@ -7191,7 +7191,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Croc | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Croc | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -7247,7 +7247,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Rouillé | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Rouillé | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const HP = Math.floor(4 * Math.random() + 2)
@@ -7397,7 +7397,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Rouillé | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Rouillé | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -7507,7 +7507,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Clan des Loups | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Clan des Loups | Découverte
 
 bot.on('message', message => {
     const Défense = 1
@@ -7659,7 +7659,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt et kobolt supérieur | Achat/fabrication/découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt et kobolt supérieur | Achat/fabrication/découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du casque de kobolt")) {
@@ -7941,7 +7941,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -8059,7 +8059,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Démentèlement
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement de kobolt")) {
@@ -8085,7 +8085,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt supérieur | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -8217,7 +8217,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Démentèlement
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt supérieur | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement de kobolt supérieur")) {
@@ -8243,7 +8243,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt spécial | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt spécial | Découverte
 
 bot.on('message', message => {
     const Défense = 2
@@ -8275,7 +8275,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Achat
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat du casque en chitine")) {
@@ -8427,7 +8427,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication du casque en chitine")) {
@@ -8579,7 +8579,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte du casque en chitine")) {
@@ -8731,7 +8731,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -8863,7 +8863,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Démentèlement
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement en chitine")) {
@@ -8889,7 +8889,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Achat
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat du casque taurus")) {
@@ -9041,7 +9041,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication du casque taurus")) {
@@ -9193,7 +9193,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte du casque taurus")) {
@@ -9315,7 +9315,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -9447,7 +9447,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Démentèlement
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement taurus")) {
@@ -9473,7 +9473,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Maille | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Maille | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication du casque de maille")) {
@@ -9615,7 +9615,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Maille | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Maille | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -9747,7 +9747,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Maille | Démentèlement
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Maille | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement de maille")) {
@@ -9773,7 +9773,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Dargnan | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Dargnan | Fabrication
 
 bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 30)
@@ -9925,7 +9925,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Dargnan | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Dargnan | Découverte
 
 bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 25)
@@ -10077,7 +10077,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Dargnan | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Dargnan | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -10209,7 +10209,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Dargnan | Démentèlement
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Dargnan | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement dargnan")) {
@@ -10235,7 +10235,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Achat
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Bovin | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat du casque bovin")) {
@@ -10377,7 +10377,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Fabrication
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Bovin | Fabrication
 
 bot.on('message', message => {
     const HP = Math.floor(26 * Math.random() + 70)
@@ -10519,7 +10519,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Découverte
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Bovin | Découverte
 
 bot.on('message', message => {
     const HP = Math.floor(26 * Math.random() + 55)
@@ -10661,7 +10661,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Amélioration
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Bovin | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -10793,7 +10793,31 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Démentèlement
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Bovin | Démantèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un équipement bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Equipement bovin :", "Vous obtenez :\n\n:knife: 2 Peau de boeuf\n:knife: 2 Peau de vache\n:dagger: 1 Corne de boeuf\n:gem: 1 Oreille de vache")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un bijou bovin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bijou bovin :", "Vous obtenez :\n\n:dagger: 2 Sabot de boeuf\n:gem: 1 Oreille de vache\n:dagger: 1 Corne de boeuf\n:cupid: 1 Coeur de veau")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 // Menus | Liste | Armes
 
@@ -12440,7 +12464,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Basique | Achat/fabrication/découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Basique | Achat/fabrication/découverte
 
 bot.on('message', message => {
     const Dégâts = (Math.floor((3) * Math.random() + 1))
@@ -12625,7 +12649,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Clan des Loups | Découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Clan des Loups | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte de l'épée du clan des loups")) {
@@ -12810,7 +12834,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Clan des Loups | Fonte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Clan des Loups | Fonte
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -15880,7 +15904,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Achat/fabrication/découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt | Achat/fabrication/découverte
 
 bot.on('message', message => {
     if (message.content === (prefix + "Achat/fabrication/découverte de l'épée de kobolt")) {
@@ -16065,7 +16089,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -16175,7 +16199,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt | Démentèlement
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme de kobolt à une main")) {
@@ -16201,7 +16225,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Achat/fabrication/découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt supérieur | Achat/fabrication/découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'épée de kobolt supérieure")) {
@@ -16386,7 +16410,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Fonte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt supérieur | Fonte
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -18156,7 +18180,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt supérieur | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -18288,7 +18312,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Kobolt supérieur | Démentèlement
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt supérieur | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme de kobolt supérieure à une main")) {
@@ -18314,7 +18338,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Roi déchu | Découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Roi déchu | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte de la faux du roi déchu à deux mains")) {
@@ -18345,7 +18369,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Achat
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat de l'épée en chitine")) {
@@ -18530,7 +18554,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Fabrication
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication de l'épée en chitine")) {
@@ -18715,7 +18739,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte de l'épée en chitine")) {
@@ -18900,7 +18924,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Fonte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Fonte
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -20670,7 +20694,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -20802,7 +20826,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Chitine | Démentèlement
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Chitine | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme en chitine à une main")) {
@@ -20828,7 +20852,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Achat
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Achat
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat de l'épée de taurus")) {
@@ -20998,7 +21022,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Fabrication
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication de l'épée de taurus")) {
@@ -21168,7 +21192,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Fonte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Fonte
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -22802,7 +22826,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
@@ -22934,7 +22958,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Taurus | Démentèlement
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Taurus | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme de taurus à une main")) {
@@ -22960,7 +22984,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Darchic | Fabrication
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Darchic | Fabrication
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fabrication de l'épée darchic")) {
@@ -23145,7 +23169,7 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Darchic | Découverte
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Darchic | Découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Découverte de l'épée darchic")) {
@@ -23330,8 +23354,7 @@ bot.on('message', message => {
     }
 });
 
-
-// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Darchic | Amélioration
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Darchic | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
