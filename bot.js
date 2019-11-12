@@ -386,11 +386,11 @@ bot.on('message', message => {
             .addField(":cyclone: Blood insanity", ":cyclone: Compétence où vous vous infligez vous même des dégâts pour doubler vos prochains dégâts pendant un certains temps, " +
                 "vous vous transpercez avant de ressortir la lame ce qui augmente votre force et vous entoure d'une aura étrange !\n\n`=Blood insanity : [Vos dégâts]`")
             .addBlankField(true)
-            .addField(":cyclone: Esquive parfaite", ":cyclone: Une compétence de défense qui vous permez de faire une esquive garentie !\n\n" +
+            .addField(":cyclone: Esquive parfaite", ":cyclone: Une compétence de défense qui vous permet de faire une esquive garantie !\n\n" +
                 "`=Esquive parfaite`")
             .addBlankField(true)
-            .addField(":cyclone: Blocage parfaite ", ":cyclone: Une compétence de défense qui vous permez de faire un blocage garentie !\n\n" +
-                "`=Blocage parfaite`")
+            .addField(":cyclone: Blocage parfait ", ":cyclone: Une compétence de défense qui vous permet de faire un blocage garantie !\n\n" +
+                "`=Blocage parfait`")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4030,7 +4030,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Cuirasse de fort taurus adroit :", "C'est une cuirasse trouvable sur forts taurus adroits dans la clairière du les palier 2 !")
+            .addField("Cuirasse de fort taurus adroit :", "C'est une cuirasse trouvable sur les forts taurus adroits dans la clairière du palier 2 !")
             .addField("Prix d'achat :", "X cols")
             .addField("Prix de revente :", "44 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Bottes taurus\n=Anneau taurus\n=Amulette taurus\n=Armes taurus")
@@ -16189,13 +16189,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon de kobolt supérieure")) {
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon de kobolt supérieur")) {
         const Dégâts = Math.floor(9 * Math.random() + 20)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Espadon de kobolt supérieure :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Espadon de kobolt supérieur :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -32548,7 +32548,7 @@ bot.on('message', message => {
     }
 });
 
-// Compétences | blocage parfait
+// Compétences | Blocage parfait
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Blocage parfait")) {
@@ -41274,7 +41274,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Taurus chargeur  :", ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauter dans les airs et d'écraser ses pieds contre vous violemment. Vous êtes projeté au sol et vous vous prenez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. Le taurus chargeur vous étourdit même si vous bloqués la totalité des dégâts.")
+                .addField(":crossed_swords: Taurus chargeur  :", ":crossed_swords: Le Taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauter dans les airs et d'écraser ses pieds contre vous violemment. Vous êtes projeté au sol et vous vous prenez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. Le taurus chargeur vous étourdit même si vous bloquez la totalité des dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -41718,8 +41718,8 @@ bot.on('message', message => {
             .addField(":moneybag: Récompenses :", ":knife: Peau de fort taurus adroit : " + peau + "\n" +
                 ":poultry_leg: Viande de taurus : " + viande + "\n" +
                 ":ox: Poil de fort taurus adroit : " + poil + "\n" +
-                ":dagger: Corne de Taurus : " + corne + "\n" +
-                ":bacon: Scalp de Taurus : " + scalp + "\n" +
+                ":dagger: Corne de taurus : " + corne + "\n" +
+                ":bacon: Scalp de taurus : " + scalp + "\n" +
                 ":beginner: Cuirasse de fort taurus adroit : " + cuirasse + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
@@ -42343,7 +42343,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant observe attentivement ses adversaires mais n'attaque pas.")
+                .addField(":crossed_swords: Frelon foudroyant :", ":crossed_swords: Le frelon foudroyant observe attentivement ses adversaires mais n'attaque pas.")
             message.channel.send({ embed })
         }
         if (31 <= roll && roll <= 85) {
