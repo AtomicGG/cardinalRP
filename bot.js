@@ -27022,6 +27022,36 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Multiciblage")) {
+        var position = message.content.indexOf(':');
+        var str2 = message.content.slice(position + 2)
+        var espace = str2.indexOf(' ');
+        var nbrJoueurs = str2.slice(0, espace);
+        var nbrJoueursVisés = str2.slice(espace + 1);
+        var IntNbrJoueurs = nbrJoueurs - 0;
+        var IntNbrJoueursVisés = nbrJoueursVisés - 0;
+        var tableau = new Array(IntNbrJoueurs);
+        var tableau2 = new Array(IntNbrJoueursVisés);
+        for (var i = 0; i < tableau.length; i++) {
+            tableau[i] = i + 1;
+        }
+        for (var j = 0; j < tableau2.length; j++) {
+            var roll = Math.floor(tableau.length * Math.random())
+            tableau2[j] = tableau[roll];
+            tableau.splice(roll, 1)
+        }
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Le monstre attaque les joueurs :", + tableau2)
+            .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Coups & Défenses | Menus
 
 bot.on('message', message => {
@@ -39722,16 +39752,16 @@ bot.off('message', message => {
 });
 
 bot.off('message', message => {
-if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
-const embed = new Discord.RichEmbed()
-.setAuthor(message.author.username , message.author.avatarURL)
-.setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-.setColor(3447003)
-.addField(":shield: Illfang :" , ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
-                                        "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
-.setTimestamp()
-message.channel.send({embed})
-}
+    if (message.content.startsWith(prefix + "Illfang phase 2 défense")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":shield: Illfang :", ":shield: Vous voyant arriver, Illfang sort un katana à deux mains et bloque parfaitement votre coup à l'aide de ce dernier. Il vous fait ensuite un coup de pommeau vous étourdissant et vous éjectant. \n\n" +
+                "Faites ensuite directement la commande : `=Illfang phase 2 attaque`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
 });
 
 bot.off('message', message => {
@@ -42039,7 +42069,7 @@ bot.on('message', message => {
                 const guepeVivace = Math.floor(3 * Math.random() + 2)
                 const vacheVrombissante = Math.floor(3 * Math.random() + 2)
                 const boeufVrombissant = Math.floor(2 * Math.random() + 1)
-                const frelonFoudroyant = Math.floor(2 * Math.random()+ 1)
+                const frelonFoudroyant = Math.floor(2 * Math.random() + 1)
                 const embed = new Discord.RichEmbed()
                     .setColor(3447003)
                     .setAuthor(message.author.username, message.author.avatarURL)
