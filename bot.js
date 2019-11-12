@@ -41648,7 +41648,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":poultry_leg: Peau de taurus lourd : " + peau + "\n" +
+            .addField(":moneybag: Récompenses :", ":knife: Peau de taurus lourd : " + peau + "\n" +
                 ":poultry_leg: Viande de taurus : " + viande + "\n" +
                 ":ox: Poil de taurus lourd : " + poil + "\n" +
                 ":dagger: Corne de taurus : " + corne + "\n" +
@@ -41715,7 +41715,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":poultry_leg: Peau de fort taurus adroit : " + peau + "\n" +
+            .addField(":moneybag: Récompenses :", ":knife: Peau de fort taurus adroit : " + peau + "\n" +
                 ":poultry_leg: Viande de taurus : " + viande + "\n" +
                 ":ox: Poil de fort taurus adroit : " + poil + "\n" +
                 ":dagger: Corne de Taurus : " + corne + "\n" +
