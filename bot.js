@@ -951,7 +951,8 @@ bot.on('message', message => {
                 "votre action défensive et que vous avez 4 points de défense, vous perdrez que 6 HP avec l'armure !")
             .addField("Déroulement de combat, partie 2 :", "Dans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !\n\n" +
                 "Quand c'est au tour des joueurs, il faudra définir au départ qui commence son tour, le suivant, et ainsi de suite !\n\n" +
-                "Pour savoir quel joueur attaquera un monstre, il suffit d'écrire :\n=Ciblage : [Nombre de joueurs dans le combat]\n\n" +
+                "Pour savoir quel joueur se fera attaquer par un monstre, il suffit d'écrire :\n=Ciblage : [Nombre de joueurs dans le combat]\n\n" +
+                "Lorsque plusieurs personnes se font cibler, la commande suivante existe :\n=Multiciblage : [Nombre de joueurs dans le combat] [Nombre de personnes visée par l'attaque]\n\n" +
                 "Lors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez !\n\n" +
                 "Exemple :\nLoup [A] : 80/80 HP\nLoup [B] : 50/80 HP\nLoup [C] : 24/80 HP\n\nLes actions défensives et attaques des monstres seront écrites sur ses infos si vous écrivez :\n" +
                 "`=[Nom du monstre]`\n\Selon la zone où vous voulez faire un combat, il y aura une commande à faire  étant :\n\n`=Plaines combat : [Nombre de participants]`\n\n" +
