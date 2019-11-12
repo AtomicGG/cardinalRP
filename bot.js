@@ -10209,6 +10209,32 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Dargnan | Démentèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un équipement dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Equipement dargnan :", "Vous obtenez :\n\n:shell: 2 Carapace de guêpe vivace\n:shell: 2 Carapace de frelon foudroyant\n:butterfly: 1 Aile de frelon foudroyant")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un bijou dargnan")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bijou dargnan :", "Vous obtenez :\n\n:shell: 2 Carapace de frelon foudroyant\n:shell: 1 Carapace de guêpe vivace\n:syringe: 1 dard de frelon foudroyant\n:cupid: 1 Coeur de veau")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Achat
 
 bot.on('message', message => {
@@ -10766,6 +10792,8 @@ bot.on('message', message => {
         }
     }
 });
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démentèlement | Bovin | Démentèlement
 
 // Menus | Liste | Armes
 
