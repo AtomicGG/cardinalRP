@@ -10846,8 +10846,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 5")) {
-        message.channel.send("```Faux du roi déchu :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu]\n\n" +
-            "Ecu du roi déchu :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu]\n\n" +
+        message.channel.send("```Faux du roi déchu à deux mains :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Faux du roi déchu à deux mains]\n\n" +
+            "Ecu du roi déchu à une main :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Ecu du roi déchu à une main]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 6```")
     }
 });
