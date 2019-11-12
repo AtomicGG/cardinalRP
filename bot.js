@@ -59,7 +59,7 @@ bot.on('message', message => {
                 ":cyclone:=Compétences\n" +
                 ":trident:=Particularités\n" +
                 ":hammer:=Améliorations\n" +
-                ":dagger:=Armes\n" +
+                ":dagger:=Les armes\n" +
                 ":walking:=Trajets\n" +
                 ":game_die:=Rolls\n" +
                 ":crossed_swords:=Déroulement d'un combat\n" +
@@ -488,7 +488,7 @@ bot.on('message', message => {
 // Menus | Armes
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Armes") {
+    if (message.content === (prefix) + "Les armes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -952,7 +952,7 @@ bot.on('message', message => {
             .addField("Déroulement d'un combat, partie 2 :", "Dans un combat, ce sera toujours au tour des monstres d'attaquer avant les joueurs, dans l'ordre que vous souhaitez !\n\n" +
                 "Quand c'est au tour des joueurs, il faudra définir au départ qui commence son tour, le suivant, et ainsi de suite !\n\n" +
                 "Pour savoir quel joueur se fera attaquer par un monstre, il suffit d'écrire :\n=Ciblage : [Nombre de joueurs dans le combat]\n\n" +
-                "Lorsque plusieurs personnes se font cibler, la commande suivante existe :\n=Multiciblage : [Nombre de joueurs dans le combat] [Nombre de personnes visée par l'attaque]")
+                "Lorsque plusieurs personnes se font cibler, la commande suivante existe :\n=Ciblage : [Nombre de joueurs dans le combat] [Nombre de personnes visée par l'attaque]")
             .addField("Déroulement d'un combat, partie 3 :", "Lors d'un combat contre un monstre, il faudra ne pas oublier de noter ses HP tout au long du combat, vous pouvez présenter ceci comme vous voulez !\n\n" +
                 "Exemple :\nLoup [A] : 80/80 HP\nLoup [B] : 50/80 HP\nLoup [C] : 24/80 HP\n\nLes actions défensives et attaques des monstres seront écrites sur ses infos si vous écrivez :\n" +
                 "`=[Nom du monstre]`\n\Selon la zone où vous voulez faire un combat, il y aura une commande à faire  étant :\n\n`=Plaines combat : [Nombre de participants]`\n\n" +
