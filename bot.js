@@ -27129,14 +27129,14 @@ bot.on('message', message => {
         var position = message.content.indexOf(':');
         var str2 = message.content.slice(position + 2)
         var espace = str2.indexOf(' ');
-        if(espace == -1){
+        if (espace == -1) {
             espace = 1
         }
         var nbrJoueurs = str2.slice(0, espace);
         var nbrJoueursVisés = str2.slice(espace + 1);
         var IntNbrJoueurs = nbrJoueurs - 0;
         var IntNbrJoueursVisés = nbrJoueursVisés - 0;
-        if(IntNbrJoueursVisés == 0) {
+        if (IntNbrJoueursVisés == 0) {
             IntNbrJoueursVisés = 1
         }
         var tableau = new Array(IntNbrJoueurs);
@@ -44808,5 +44808,28 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Testtt")) {
+        if (message.channel.id == 566021680120725518) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Test réussi")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ? PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
