@@ -44818,7 +44818,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField("Test réussi")
+                .addField("Test","Réussi")
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
@@ -44826,7 +44826,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField("On a essayé de tricher ? PAS BIEN !!!!!!")
+                .addField("On a essayé de tricher ?","PAS BIEN !!!!!!")
                 .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
                 .setTimestamp()
             message.channel.send({ embed })
