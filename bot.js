@@ -59,10 +59,10 @@ bot.on('message', message => {
                 ":cyclone:=Compétences\n" +
                 ":trident:=Particularités\n" +
                 ":hammer:=Améliorations\n" +
-                ":dagger:=Les armes\n" +
+                ":dagger:=Armes\n" +
                 ":walking:=Trajets\n" +
                 ":game_die:=Rolls\n" +
-                ":crossed_swords:=Déroulement d'un combat\n" +
+                ":crossed_swords:=Combat\n" +
                 ":white_flower:=Etats\n" +
                 ":book:=Quêtes\n" +
                 ":skull:=Mort\n" +
@@ -488,7 +488,7 @@ bot.on('message', message => {
 // Menus | Armes
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Les armes") {
+    if (message.content === (prefix) + "Armes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -937,7 +937,7 @@ bot.on('message', message => {
 // Menus | Combat
 
 bot.on('message', message => {
-    if (message.content === prefix + "Déroulement d'un combat") {
+    if (message.content === prefix + "Combat") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
