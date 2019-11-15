@@ -5,11 +5,9 @@ const prefix = "=";
 
 bot.on('ready', () => {
     bot.user.setGame('=Menu SAO')
-})
-
-bot.on('ready', function () {
     console.log("Je suis connecté !")
-});
+    const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
+})
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
@@ -27,6 +25,7 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('message', message => {
+    if(message.guild !== serveur) return
     if (message.content === 'ping') {
         message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**` + ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**` + ' **Ms** ] pour repondre')
     }
