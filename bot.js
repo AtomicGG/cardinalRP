@@ -9174,7 +9174,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du jambières taurus")) {
+    if (message.content.startsWith(prefix + "Fabrication des jambières taurus")) {
         const Dégâts = Math.floor(2 * Math.random() + 2)
         const HP = Math.floor(16 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
