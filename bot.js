@@ -2,13 +2,14 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const talkedRecently = new Set();
 const prefix = "=";
-const nomServeur = "Sωσя∂ Aят Oηℓιηє ∂'Aυяσтσρια [RƤ]"
 
 bot.on('ready', () => {
     bot.user.setGame('=Menu SAO')
-    console.log("Je suis connecté !")
-    const serveur = bot.guilds.find(serveur => serveur.name === nomServeur)
 })
+
+bot.on('ready', function () {
+    console.log("Je suis connecté !")
+});
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
@@ -26,7 +27,6 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('message', message => {
-    if(message.guild !== serveur) return
     if (message.content === 'ping') {
         message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**` + ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**` + ' **Ms** ] pour repondre')
     }
