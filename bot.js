@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const talkedRecently = new Set();
 const prefix = "=";
+const nomServeur = "Sωσя∂ Aят Oηℓιηє ∂'Aυяσтσρια [RƤ]"
 
 bot.on('ready', () => {
     bot.user.setGame('=Menu SAO')
