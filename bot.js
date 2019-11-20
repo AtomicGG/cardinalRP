@@ -2164,6 +2164,7 @@ bot.on('message', message => {
                 "`=Liste des plans 1`\n" +
                 "`=Liste des cartes au trésor 1`\n" +
                 "`=Liste des oeufs 1`\n" +
+                "`=Liste des familiers 1`\n" +
                 "`=Liste des clefs 1`")
             .setTimestamp()
         message.channel.send({ embed })
@@ -25524,6 +25525,66 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
+    }
+});
+
+// Menus | Liste | Familiers
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Liste des familiers 1")) {
+        message.channel.send("```Familiers de l'oeuf déformé :\n\n" +
+                             "Bébé lapin :\nNiveau requis : 1\nBonus : 20 HP\n\n" +
+                             "Bébé chien :\nNiveau requis : 1\nBonus : 5 Atk\n\n" +
+                             "Bébé sanglier :\nNiveau requis : 1\nBonus : 2 Def\n\n" +
+                             "Bébé taupe :\nNiveau requis : 1\nBonus : 4 Def\n\n" +
+                             "Bébé renard :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé renard attaque]\n\n" +
+                             "Bébé loup :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé loup attaque]\n\n" +
+                             "Bébé loup de sang :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé loup de sang attaque]\n\n" +
+                             "Suite en écrivant :\n=Liste des familiers 2```")
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Liste des familiers 2")) {
+        message.channel.send("```Familiers de l'oeuf difforme :\n\n" +
+                             "Bébé chiot :\nNiveau requis : 1\nBonus : Rien, doit être donné pendant 3h à un éleveur pour devenir un Chien adulte qui donne 35 HP & 10 Atk\n\n" +
+                             "Suite en écrivant :\n=Liste des familiers 3```")
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Liste des familiers 3")) {
+        message.channel.send("```Familiers de l'oeuf bavant :\n\n" +
+                             "Bébé lièvre :\nNiveau requis : 20\nBonus : 100 HP\n\n" +
+                             "Papillasit :\nNiveau requis : 20\nBonus : 40 HP & 15 Atk\n\n" +
+                             "Petit bousier :\nNiveau requis : 20\nBonus : 20 HP & 8 Def\n\n" +
+                             "Jeune doryphore :\nNiveau requis : 20\nBonus : 7 Atk et 8 Def\n\n" +
+                             "Boa :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Boa attaque]\n\n" +
+                             "Ark venom :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Ark venom attaque]\n\n" +
+                             "Suite en écrivant :\n=Liste des familiers 4```")
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Liste des familiers 4")) {
+        message.channel.send("```Familiers de l'oeuf brisé :\n\n" +
+                             "Vachette :\nNiveau requis : 20\nBonus : 150 HP\n\n" +
+                             "Bébé boeuf :\nNiveau requis : 20\nBonus : 20 Atk\n\n" +
+                             "Petit taurus malin :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Petit taurus malin attaque]\n\n" +
+                             "Gros bébé taurus :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Gros bébé taurus provoque]\n\n" +
+                             "Suite en écrivant :\n=Liste des familiers 5```")
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Liste des familiers 5")) {
+        message.channel.send("```Familiers d'évènement ou du marchand' :\n\n" +
+                             "Ecureuil (indisponible):\nNiveau requis : 1\nBonus : 40 HP\n\n" +
+                             "Bébé loup blanc (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 4 Atk\n\n" +
+                             "Bébé renne (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
+                             "Bébé ours polaire (indisponible) :\nNiveau requis : 1\nBonus : 4 Atk & 2 Def\n\n" +
+                             "Lézard (marchand) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
+                             "Métamorphe :\nNiveau requis : 1\nBonus : Peut prendre la forme et le bonus de n'importe quel familier de l'oeuf déformé```")
     }
 });
 
