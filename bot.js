@@ -2062,7 +2062,9 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les zones :", "Quand vous entrez dans une zone et que vous voulez voir les activités ainsi que ce qui se cache à l'intérieur, vous pourrez écrire :\n\n`=[Nom de la zone]`\n\n" +
                 "Par exemple, si vous arrivez en plaine, pour découvrir le lieu et voir ce qui est possible de faire à l'intérieur, écrivez `=Plaine` !\n\n" +
-                "Les zones actuellement disponible sont :\n\n`=Plaine`\n`=Forêt`\n`=Donjon sauvage`\n`=Montagne`\n`=Grotte`")
+                "Les zones actuellement disponible selon les paliers sont les suivantes :")
+                .addField("Zones du palier 1 :", "\n`=Plaine`\n`=Forêt`\n`=Donjon sauvage`\n`=Montagne`\n`=Grotte`")
+                .addField("Zones du palier 2 :", "\n`=Forêt dense`\n`=Clairière`\n`=Vallée`\n`=Ravin`")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
