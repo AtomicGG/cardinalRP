@@ -27161,28 +27161,29 @@ bot.on('message', message => {
                     .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
                     .setTimestamp()
                 message.channel.send({ embed })
+            } else {
+                var tableau = new Array(IntNbrJoueurs);
+                var tableau2 = new Array(IntNbrJoueursVisés);
+                for (var i = 0; i < tableau.length; i++) {
+                    tableau[i] = i + 1;
+                }
+                for (var j = 0; j < tableau2.length; j++) {
+                    var roll = Math.floor(tableau.length * Math.random())
+                    tableau2[j] = tableau[roll];
+                    tableau.splice(roll, 1)
+                }
+                tableau2.sort()
+                var texte = tableau2.toString()
+                var regex = /,/gi
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Le monstre attaque le(s) joueur(s) :", "" + texte.replace(regex, ' & '))
+                    .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
-            var tableau = new Array(IntNbrJoueurs);
-            var tableau2 = new Array(IntNbrJoueursVisés);
-            for (var i = 0; i < tableau.length; i++) {
-                tableau[i] = i + 1;
-            }
-            for (var j = 0; j < tableau2.length; j++) {
-                var roll = Math.floor(tableau.length * Math.random())
-                tableau2[j] = tableau[roll];
-                tableau.splice(roll, 1)
-            }
-            tableau2.sort()
-            var texte = tableau2.toString()
-            var regex = /,/gi
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Le monstre attaque le(s) joueur(s) :", "" + texte.replace(regex, ' & '))
-                .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
         }
     }
 });
