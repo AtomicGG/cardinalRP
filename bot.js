@@ -44886,7 +44886,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius récompenses")) {
-            if (message.channel.id != 593454901498085377 || message.channel.id != 566021680120725518 || message.channel.id != 576072663592730624){
+            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624){
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
