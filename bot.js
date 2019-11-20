@@ -27151,6 +27151,17 @@ bot.on('message', message => {
             if (IntNbrJoueursVisés == 0) {
                 IntNbrJoueursVisés = 1
             }
+            if (IntNbrJoueursVisés > IntNbrJoueurs) {
+
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Vous avez fait une erreur dans la commande !", "Veuillez recommencer !")
+                    .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
             var tableau = new Array(IntNbrJoueurs);
             var tableau2 = new Array(IntNbrJoueursVisés);
             for (var i = 0; i < tableau.length; i++) {
