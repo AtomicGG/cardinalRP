@@ -40309,7 +40309,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Neoridas :", ":crossed_swords: Le Neoridas bat des ailes et lâche une poudre verte, tout les monstres présents sont soignés de " + soin + " points de vie.")
+                .addField(":crossed_swords: Neoridas :", ":crossed_swords: Le Neoridas bat des ailes et lâche une poudre verte, tout les monstres présents sont soignés de " + soin + " points de vie. (Le neoridas ne s'auto heal pas !")
                 .setTimestamp()
             message.channel.send({ embed })
         }
