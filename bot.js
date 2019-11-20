@@ -25533,58 +25533,58 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 1")) {
         message.channel.send("```Familiers de l'oeuf déformé :\n\n" +
-                             "Bébé lapin :\nNiveau requis : 1\nBonus : 20 HP\n\n" +
-                             "Bébé chien :\nNiveau requis : 1\nBonus : 5 Atk\n\n" +
-                             "Bébé sanglier :\nNiveau requis : 1\nBonus : 2 Def\n\n" +
-                             "Bébé taupe :\nNiveau requis : 1\nBonus : 4 Def\n\n" +
-                             "Bébé renard :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé renard attaque]\n\n" +
-                             "Bébé loup :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé loup attaque]\n\n" +
-                             "Bébé loup de sang :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé loup de sang attaque]\n\n" +
-                             "Suite en écrivant :\n=Liste des familiers 2```")
+            "Bébé lapin :\nNiveau requis : 1\nBonus : 20 HP\n\n" +
+            "Bébé chien :\nNiveau requis : 1\nBonus : 5 Atk\n\n" +
+            "Bébé sanglier :\nNiveau requis : 1\nBonus : 2 Def\n\n" +
+            "Bébé taupe :\nNiveau requis : 1\nBonus : 4 Def\n\n" +
+            "Bébé renard :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé renard attaque]\n\n" +
+            "Bébé loup :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé loup attaque]\n\n" +
+            "Bébé loup de sang :\nNiveau requis : 1\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Bébé loup de sang attaque]\n\n" +
+            "Suite en écrivant :\n=Liste des familiers 2```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 2")) {
         message.channel.send("```Familiers de l'oeuf difforme :\n\n" +
-                             "Bébé chiot :\nNiveau requis : 1\nBonus : Rien, doit être donné pendant 3h à un éleveur pour devenir un Chien adulte qui donne 35 HP & 10 Atk\n\n" +
-                             "Suite en écrivant :\n=Liste des familiers 3```")
+            "Bébé chiot :\nNiveau requis : 1\nBonus : Rien, doit être donné pendant 3h à un éleveur pour devenir un Chien adulte qui donne 35 HP & 10 Atk\n\n" +
+            "Suite en écrivant :\n=Liste des familiers 3```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 3")) {
         message.channel.send("```Familiers de l'oeuf bavant :\n\n" +
-                             "Bébé lièvre :\nNiveau requis : 20\nBonus : 100 HP\n\n" +
-                             "Papillasit :\nNiveau requis : 20\nBonus : 40 HP & 15 Atk\n\n" +
-                             "Petit bousier :\nNiveau requis : 20\nBonus : 20 HP & 8 Def\n\n" +
-                             "Jeune doryphore :\nNiveau requis : 20\nBonus : 7 Atk et 8 Def\n\n" +
-                             "Boa :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Boa attaque]\n\n" +
-                             "Ark venom :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Ark venom attaque]\n\n" +
-                             "Suite en écrivant :\n=Liste des familiers 4```")
+            "Bébé lièvre :\nNiveau requis : 20\nBonus : 100 HP\n\n" +
+            "Papillasit :\nNiveau requis : 20\nBonus : 40 HP & 15 Atk\n\n" +
+            "Petit bousier :\nNiveau requis : 20\nBonus : 20 HP & 8 Def\n\n" +
+            "Jeune doryphore :\nNiveau requis : 20\nBonus : 7 Atk et 8 Def\n\n" +
+            "Boa :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Boa attaque]\n\n" +
+            "Ark venom :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Ark venom attaque]\n\n" +
+            "Suite en écrivant :\n=Liste des familiers 4```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 4")) {
         message.channel.send("```Familiers de l'oeuf brisé :\n\n" +
-                             "Vachette :\nNiveau requis : 20\nBonus : 150 HP\n\n" +
-                             "Bébé boeuf :\nNiveau requis : 20\nBonus : 20 Atk\n\n" +
-                             "Petit taurus malin :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Petit taurus malin attaque]\n\n" +
-                             "Gros bébé taurus :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Gros bébé taurus provoque]\n\n" +
-                             "Suite en écrivant :\n=Liste des familiers 5```")
+            "Vachette :\nNiveau requis : 20\nBonus : 150 HP\n\n" +
+            "Bébé boeuf :\nNiveau requis : 20\nBonus : 20 Atk\n\n" +
+            "Petit taurus malin :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Petit taurus malin attaque]\n\n" +
+            "Gros bébé taurus :\nNiveau requis : 20\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Gros bébé taurus provoque]\n\n" +
+            "Suite en écrivant :\n=Liste des familiers 5```")
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 5")) {
         message.channel.send("```Familiers d'évènement ou du marchand' :\n\n" +
-                             "Ecureuil (indisponible):\nNiveau requis : 1\nBonus : 40 HP\n\n" +
-                             "Bébé loup blanc (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 4 Atk\n\n" +
-                             "Bébé renne (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
-                             "Bébé ours polaire (indisponible) :\nNiveau requis : 1\nBonus : 4 Atk & 2 Def\n\n" +
-                             "Lézard (marchand) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
-                             "Métamorphe :\nNiveau requis : 1\nBonus : Peut prendre la forme et le bonus de n'importe quel familier de l'oeuf déformé```")
+            "Ecureuil (indisponible):\nNiveau requis : 1\nBonus : 40 HP\n\n" +
+            "Bébé loup blanc (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 4 Atk\n\n" +
+            "Bébé renne (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
+            "Bébé ours polaire (indisponible) :\nNiveau requis : 1\nBonus : 4 Atk & 2 Def\n\n" +
+            "Lézard (marchand) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
+            "Métamorphe :\nNiveau requis : 1\nBonus : Peut prendre la forme et le bonus de n'importe quel familier de l'oeuf déformé```")
     }
 });
 
@@ -44610,52 +44610,85 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Le colonel taurus") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Le colonel taurus :", ":japanese_ogre: Le colonel taurus qui est plus petit que le général y compris son marteau, si il touche deux fois avec une compétence a étourdissement, l'effet se transforme en paralysie.")
-            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 30 000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Le colonel taurus attaque`")
-            .addField(":shield: Lorsque Le colonel taurus reçoit un coup :", ":shield: `=Le colonel taurus défense : [Points de dégâts de votre coup]`")
-            .addField(":warning: Le colonel taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564414154211359/proxy.png")
-            .setTimestamp()
-        message.channel.send({ embed })
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setColor(3447003)
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setTitle(":japanese_ogre: Le colonel taurus :", ":japanese_ogre: Le colonel taurus qui est plus petit que le général y compris son marteau, si il touche deux fois avec une compétence a étourdissement, l'effet se transforme en paralysie.")
+                .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 30 000")
+                .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Le colonel taurus attaque`")
+                .addField(":shield: Lorsque Le colonel taurus reçoit un coup :", ":shield: `=Le colonel taurus défense : [Points de dégâts de votre coup]`")
+                .addField(":warning: Le colonel taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564414154211359/proxy.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Le général taurus") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Le général taurus :", ":japanese_ogre: Le général taurus qui a un plus gros marteau que le colonel, si il touche deux fois avec une compétence a étourdissement, l'effet se transforme en paralysie.")
-            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 50 000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Le général taurus attaque`")
-            .addField(":shield: Lorsque Le général taurus reçoit un coup :", ":shield: `=Le général taurus défense : [Points de dégâts de votre coup]`")
-            .addField(":warning: Le général taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564414154211359/proxy.png")
-            .setTimestamp()
-        message.channel.send({ embed })
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setColor(3447003)
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setTitle(":japanese_ogre: Le général taurus :", ":japanese_ogre: Le général taurus qui a un plus gros marteau que le colonel, si il touche deux fois avec une compétence a étourdissement, l'effet se transforme en paralysie.")
+                .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 50 000")
+                .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Le général taurus attaque`")
+                .addField(":shield: Lorsque Le général taurus reçoit un coup :", ":shield: `=Le général taurus défense : [Points de dégâts de votre coup]`")
+                .addField(":warning: Le général taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564414154211359/proxy.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Asterius le roi taurus") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Le colonel taurus :", ":japanese_ogre: Asterius le roi taurus est le boss du 2ème palier, il est giganteste et porte une courrone lumineuse.")
-            .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 60 000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Asterius attaque`")
-            .addField(":shield: Lorsque Asterius le roi taurus reçoit un coup :", ":shield: `=Asterius défense : [Points de dégâts de votre coup]`")
-            .addField(":warning: Asterius le roi taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564604365766658/unknown.png")
-            .setTimestamp()
-        message.channel.send({ embed })
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setColor(3447003)
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setTitle(":japanese_ogre: Le colonel taurus :", ":japanese_ogre: Asterius le roi taurus est le boss du 2ème palier, il est giganteste et porte une courrone lumineuse.")
+                .setImage("https://www.aidedd.org/dnd/images/demonGlabrezu.jpg")
+                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 60 000")
+                .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Asterius attaque`")
+                .addField(":shield: Lorsque Asterius le roi taurus reçoit un coup :", ":shield: `=Asterius défense : [Points de dégâts de votre coup]`")
+                .addField(":warning: Asterius le roi taurus est insensible aux effets suivants :", ":warning: Provocation, charme, gèle, paralysie, sommeil.")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/634564604365766658/unknown.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -44663,145 +44696,189 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Le colonel taurus attaque")) {
-        const A = (Math.floor((31) * Math.random() + 350))
-        const B = (Math.floor((100) * Math.random() + 1))
-        const C = (Math.floor((21) * Math.random() + 200))
-        if (B <= 30) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus tournoie son arme rapidement avant de donner un énorme coup sur un joueur pour l'écraser sous le poids du marteau en infligeant " + C + " dégâts de perce armure. !")
-            message.channel.send({ embed })
-        }
-        if (31 <= B & B <= 80) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus lance son marteau vers un joueur pour infliger " + A + " dégâts. Il cours vers son arme pour la reprendre en main et donner un coup de marteau latéral pour infliger " + A + " dégâts a un autre joueur.")
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (81 <= B & B <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus prend un joueur et fait un german suplex qui inflige " + C + " de dégâts sans possibilité de défense et l'envoie vers le général taurus.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (91 <= B) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus lève son marteau bien droit. Le marteau s’arrête alors un instant au-dessus de la tête et sa large surface commence à briller avec des étincelles jaune brillant. Puis, avec un rugissement acharné, la bête dépose son marteau, le plaquant contre le sol. Des vrilles d'étincelles étroites s'étendent alors du point d'impact. Toute personne trop proche de l'attaque subit " + A + " points de dégâts direct, tandis que toute personne touchée par les vrilles étincelantes subit un étourdissement pendant 1 tours [Esquive uniquement possible de la part de tous les joueurs], Le colonel taurus reste rigide pendant quelques instants.")
-                .setTimestamp()
-            message.channel.send({ embed })
+        } else {
+            const A = (Math.floor((31) * Math.random() + 350))
+            const B = (Math.floor((100) * Math.random() + 1))
+            const C = (Math.floor((21) * Math.random() + 200))
+            if (B <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus tournoie son arme rapidement avant de donner un énorme coup sur un joueur pour l'écraser sous le poids du marteau en infligeant " + C + " dégâts de perce armure. !")
+                message.channel.send({ embed })
+            }
+            if (31 <= B & B <= 80) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus lance son marteau vers un joueur pour infliger " + A + " dégâts. Il cours vers son arme pour la reprendre en main et donner un coup de marteau latéral pour infliger " + A + " dégâts a un autre joueur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (81 <= B & B <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus prend un joueur et fait un german suplex qui inflige " + C + " de dégâts sans possibilité de défense et l'envoie vers le général taurus.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (91 <= B) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Le colonel taurus :", ":crossed_swords: Le colonel taurus lève son marteau bien droit. Le marteau s’arrête alors un instant au-dessus de la tête et sa large surface commence à briller avec des étincelles jaune brillant. Puis, avec un rugissement acharné, la bête dépose son marteau, le plaquant contre le sol. Des vrilles d'étincelles étroites s'étendent alors du point d'impact. Toute personne trop proche de l'attaque subit " + A + " points de dégâts direct, tandis que toute personne touchée par les vrilles étincelantes subit un étourdissement pendant 1 tours [Esquive uniquement possible de la part de tous les joueurs], Le colonel taurus reste rigide pendant quelques instants.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
         }
     }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Le général taurus attaque")) {
-        const A = (Math.floor((31) * Math.random() + 350))
-        const B = (Math.floor((100) * Math.random() + 1))
-        const C = (Math.floor((41) * Math.random() + 320))
-        const D = (Math.floor((31) * Math.random() + 200))
-        if (B <= 30) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus tournoie son arme rapidement avant de donner un énorme coup sur un joueur pour l'écraser sous le poids du marteau en infligeant " + C + " dégâts et réduit l'attaque de 30.")
-            message.channel.send({ embed })
-        }
-        if (31 <= B & B <= 80) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus lance son marteau vers un joueur pour infliger " + A + " dégâts. Il cours vers son arme pour la reprendre en main et donner un coup de marteau latéral pour infliger " + C + " dégâts a un autre joueur.")
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (81 <= B & B <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus prend un joueur et fait un german suplex qui inflige " + D + " de dégâts sans possibilité de défense et l'envoie vers le colonel taurus.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (91 <= B) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus lève son marteau bien droit. Le marteau s’arrête alors un instant au-dessus de la tête et sa large surface commence à briller avec des étincelles jaune brillant. Puis, avec un rugissement acharné, la bête dépose son marteau, le plaquant contre le sol. Des vrilles d'étincelles étroites s'étendent alors du point d'impact. Tous les joeurs trop proche de l'attaque subit " + A + " points de dégâts direct, tandis que toute personne touchée par les vrilles étincelantes subit un étourdissement pendant 1 tours [Esquive uniquement possible de la part de tous les joueurs], Le général taurus reste rigide pendant quelques instants.")
-                .setTimestamp()
-            message.channel.send({ embed })
+        } else {
+            const A = (Math.floor((31) * Math.random() + 350))
+            const B = (Math.floor((100) * Math.random() + 1))
+            const C = (Math.floor((41) * Math.random() + 320))
+            const D = (Math.floor((31) * Math.random() + 200))
+            if (B <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus tournoie son arme rapidement avant de donner un énorme coup sur un joueur pour l'écraser sous le poids du marteau en infligeant " + C + " dégâts et réduit l'attaque de 30.")
+                message.channel.send({ embed })
+            }
+            if (31 <= B & B <= 80) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus lance son marteau vers un joueur pour infliger " + A + " dégâts. Il cours vers son arme pour la reprendre en main et donner un coup de marteau latéral pour infliger " + C + " dégâts a un autre joueur.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (81 <= B & B <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus prend un joueur et fait un german suplex qui inflige " + D + " de dégâts sans possibilité de défense et l'envoie vers le colonel taurus.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (91 <= B) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Le général taurus :", ":crossed_swords: Le général taurus lève son marteau bien droit. Le marteau s’arrête alors un instant au-dessus de la tête et sa large surface commence à briller avec des étincelles jaune brillant. Puis, avec un rugissement acharné, la bête dépose son marteau, le plaquant contre le sol. Des vrilles d'étincelles étroites s'étendent alors du point d'impact. Tous les joeurs trop proche de l'attaque subit " + A + " points de dégâts direct, tandis que toute personne touchée par les vrilles étincelantes subit un étourdissement pendant 1 tours [Esquive uniquement possible de la part de tous les joueurs], Le général taurus reste rigide pendant quelques instants.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
         }
     }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius attaque")) {
-        const A = (Math.floor((31) * Math.random() + 420))
-        const B = (Math.floor((100) * Math.random() + 1))
-        const C = (Math.floor((41) * Math.random() + 385))
-        if (B <= 30) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius crie de rage et serre bien son poing et vous donne un coup sec et direct en infligeant " + C + " de dégâts.")
-            message.channel.send({ embed })
-        }
-        if (31 <= B & B <= 60) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius vous fait une série de coup de poing et tente de vous tuer sur son combo de 3 coups qui fait " + A + " dégâts a coup chaque porté. Une défense a chaque coup doit être fait. 2 joueur peuvent bloquer seulement un coup pour que la personne visé en reçoit que 1.")
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (61 <= B & B <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Asterius :", ":crossed_swords: Astérius attrape un joueur et le garde dans sa main. De l'autre il frappe un autre joueur et fait " + C + " de dégâts. Le joueurs attraper peut rien faire sauf se heal dans sa main. Pour être sauver il faut un joueur qui envoye un autre joueur en l'air donc deux roll doit être réussie (Rp le un peu). Si dans deux tour il est encore dans sa main. Le joueur se ferra éclater au sol et va subire 400 de dégats sans possibilité de se défendre. ")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (91 <= B) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Asterius :", ":crossed_swords: Les yeux d'Asterius brillent, le roi taurus se penche en arrière, aspirant de l'air et sa poitrine massive se gonfle comme un tonneau avec de petites étincelles qui sortent de ses narines. Au prochain tour faite =DIE Je veux dire =Asterius spécial sauf si vous l'empêchez de faire le coup...")
-                .setTimestamp()
-            message.channel.send({ embed })
+        } else {
+            const A = (Math.floor((31) * Math.random() + 420))
+            const B = (Math.floor((100) * Math.random() + 1))
+            const C = (Math.floor((41) * Math.random() + 385))
+            if (B <= 30) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius crie de rage et serre bien son poing et vous donne un coup sec et direct en infligeant " + C + " de dégâts.")
+                message.channel.send({ embed })
+            }
+            if (31 <= B & B <= 60) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius vous fait une série de coup de poing et tente de vous tuer sur son combo de 3 coups qui fait " + A + " dégâts a coup chaque porté. Une défense a chaque coup doit être fait. 2 joueur peuvent bloquer seulement un coup pour que la personne visé en reçoit que 1.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (61 <= B & B <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Asterius :", ":crossed_swords: Astérius attrape un joueur et le garde dans sa main. De l'autre il frappe un autre joueur et fait " + C + " de dégâts. Le joueurs attraper peut rien faire sauf se heal dans sa main. Pour être sauver il faut un joueur qui envoye un autre joueur en l'air donc deux roll doit être réussie (Rp le un peu). Si dans deux tour il est encore dans sa main. Le joueur se ferra éclater au sol et va subire 400 de dégats sans possibilité de se défendre. ")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (91 <= B) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Asterius :", ":crossed_swords: Les yeux d'Asterius brillent, le roi taurus se penche en arrière, aspirant de l'air et sa poitrine massive se gonfle comme un tonneau avec de petites étincelles qui sortent de ses narines. Au prochain tour faite =DIE Je veux dire =Asterius spécial sauf si vous l'empêchez de faire le coup...")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
         }
     }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius spécial")) {
-        const degat = Math.floor(41 * Math.random() + 350)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 100) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius relache son souffle fulgurant sur tous le monde devant lui. Et inflige " + degat + " de dégâts qui vous paralyse.")
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
             message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(41 * Math.random() + 350)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 100) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius relache son souffle fulgurant sur tous le monde devant lui. Et inflige " + degat + " de dégâts qui vous paralyse.")
+                message.channel.send({ embed })
+            }
         }
     }
 });
@@ -44812,26 +44889,37 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Le colonel taurus défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.4))
-        const defenseR = Math.floor(((Dégâts * 2) + 1) * Math.random() + (Dégâts * 2))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 85) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Le colonel taurus :", ":shield: Le colonel taurus gonfle son torse et ne prend pas la peine de vous esquiver, vous lui infligez " + defense + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (86 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Le colonel taurus :", ":shield: Vous arrivez en utilisant la jambes du colonel a atteindre ses cornes et vous lui infligez " + defenseR + " de dégâts qui vont lui empêcher d'attaquer au prochain tour.")
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
                 .setTimestamp()
             message.channel.send({ embed })
+        } else {
+            let Dégâts = args.slice(4).join(" : ");
+            const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.4))
+            const defenseR = Math.floor(((Dégâts * 2) + 1) * Math.random() + (Dégâts * 2))
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 85) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":shield: Le colonel taurus :", ":shield: Le colonel taurus gonfle son torse et ne prend pas la peine de vous esquiver, vous lui infligez " + defense + " points de dégâts")
+                message.channel.send({ embed })
+            }
+            if (86 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":shield: Le colonel taurus :", ":shield: Vous arrivez en utilisant la jambes du colonel a atteindre ses cornes et vous lui infligez " + defenseR + " de dégâts qui vont lui empêcher d'attaquer au prochain tour.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
         }
     }
 });
@@ -44840,26 +44928,37 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Le général taurus défense")) {
-        let Dégâts = args.slice(4).join(" : ");
-        const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.4))
-        const defenseR = Math.floor(((Dégâts * 2) + 1) * Math.random() + (Dégâts * 2))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 85) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Le général taurus :", ":shield: Le général taurus gonfle son torse et ne prend pas la peine de vous esquiver, vous lui infligez " + defense + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (86 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Le général taurus :", ":shield: Vous arrivez en utilisant la jambes du général a atteindre ses cornes et vous lui infligez " + defenseR + " de dégâts qui vont lui empêcher d'attaquer au prochain tour.")
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
                 .setTimestamp()
             message.channel.send({ embed })
+        } else {
+            let Dégâts = args.slice(4).join(" : ");
+            const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.4))
+            const defenseR = Math.floor(((Dégâts * 2) + 1) * Math.random() + (Dégâts * 2))
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 85) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":shield: Le général taurus :", ":shield: Le général taurus gonfle son torse et ne prend pas la peine de vous esquiver, vous lui infligez " + defense + " points de dégâts")
+                message.channel.send({ embed })
+            }
+            if (86 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":shield: Le général taurus :", ":shield: Vous arrivez en utilisant la jambes du général a atteindre ses cornes et vous lui infligez " + defenseR + " de dégâts qui vont lui empêcher d'attaquer au prochain tour.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
         }
     }
 });
@@ -44868,16 +44967,27 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Asterius défense")) {
-        let Dégâts = args.slice(2).join(" : ");
-        const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.2))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 100) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Asterius :", ":shield: Asterius de sa giganteste taille ne peut ni esquivern, ni bloquer, ni parade et vous l'attaquez bien dans ses jambes, vous lui infligez " + defense + " points de dégâts")
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
             message.channel.send({ embed })
+        } else {
+            let Dégâts = args.slice(2).join(" : ");
+            const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.2))
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 100) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":shield: Asterius :", ":shield: Asterius de sa giganteste taille ne peut ni esquivern, ni bloquer, ni parade et vous l'attaquez bien dans ses jambes, vous lui infligez " + defense + " points de dégâts")
+                message.channel.send({ embed })
+            }
         }
     }
 });
@@ -44886,25 +44996,25 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius récompenses")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624){
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            } else {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Récompenses du Asterius battu 1000 XP 10 000 cols.\n\n Bonus du last hit vous recevez le légendaire...https://www.youtube.com/watch?v=0EVrOapzDvg")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-            }
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Récompenses du Asterius battu 1000 XP 10 000 cols.", "Bonus du last hit vous recevez le légendaire...https://www.youtube.com/watch?v=0EVrOapzDvg")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
