@@ -44886,6 +44886,15 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius récompenses")) {
+            if (message.channel.id == 593454901498085377 || message.channel.id == 566021680120725518 || message.channel.id == 576072663592730624){
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Test", "Réussi")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -44894,6 +44903,7 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
+            }
     }
 });
 
