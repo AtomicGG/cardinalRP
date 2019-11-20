@@ -11501,7 +11501,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache de kobolt à un main :", ":scales: C'est une hache assez puissante constituée de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt`")
+            .addField(":scales: Hache de kobolt :", ":scales: C'est une hache assez puissante constituée de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la hache de kobolt`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 1 cuivre commun, 2 cuivre médiocre, 1 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -24682,7 +24682,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des outils 1")) {
-        message.channel.send("```Hache de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt]\n\n" +
+        message.channel.send("```Hache de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Hache de kobolt (outil)]\n\n" +
             "Pioche de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Pioche de kobolt]\n\n" +
             "Faucille de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Faucille de kobolt]\n\n" +
             "Couteau de kobolt :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Couteau de kobolt]```")
@@ -24690,7 +24690,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Hache de kobolt") {
+    if (message.content === (prefix) + "Hache de kobolt (outil)") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -40533,7 +40533,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Doryphore géant :", ":shield: Le Doryphore géant tente de se protéger avec la plus épaisse partie de sa carapace mais expose dans le même temps une ouverture dans l'une des jointures de sa carapace. Vous profitez de cette faibesse et lui infligez  " + degatcrit + " points de dégâts perce armure.")
+                .addField(":shield: Doryphore géant :", ":shield: Le Doryphore géant tente de se protéger avec la plus épaisse partie de sa carapace mais expose dans le même temps une ouverture dans l'une des jointures de sa carapace. Vous profitez de cette faiblesse et lui infligez  " + degatcrit + " points de dégâts perce armure.")
             message.channel.send({ embed })
         }
         if (6 <= roll & roll <= 94) {
