@@ -23437,7 +23437,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Arme darchic à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk")
+                    .addField(":scales: Arme darchic à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk (Si c'est un bouclier, c'est 1 Def)")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -23455,7 +23455,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Arme darchic à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk")
+                    .addField(":scales: Arme darchic à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk (Si c'est un bouclier, c'est 5 HP)")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
