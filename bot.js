@@ -44246,7 +44246,17 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex lombric irrégulier défense")) {
+    if (message.content.startsWith(prefix + "Apex lombric irrégulier défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(4).join(" : ");
         const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -44268,12 +44278,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex neoridas défense")) {
+    if (message.content.startsWith(prefix + "Apex neoridas défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(3).join(" : ");
         const Esquiverate = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 0.9))
         const Esquivecrit = Math.floor(21 * Math.random() + 35)
@@ -44305,12 +44326,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+}
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex venom défense")) {
+    if (message.content.startsWith(prefix + "Apex venom défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(3).join(" : ");
         const degat = Math.floor((Dégâts * 0.4 + 1) * Math.random() + (Dégâts * 0.9))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -44332,12 +44364,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex bousier colossal défense")) {
+    if (message.content.startsWith(prefix + "Apex bousier colossal défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(4).join(" : ");
         const degat = Math.floor((Dégâts * 0.6 + 1) * Math.random() + (Dégâts * 0.3))
         const embed = new Discord.RichEmbed()
@@ -44347,12 +44390,23 @@ bot.on('message', message => {
             .addField(":shield: Apex Bousier colossal :", ":shield: L'Apex Bousier colossal utilise l'énorme pierre qu'il tient pour bloquer votre coup, vous lui infligez " + degat + " points de dégâts")
         message.channel.send({ embed })
     }
+}
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex doryphore géant défense")) {
+    if (message.content.startsWith(prefix + "Apex doryphore géant défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(4).join(" : ");
         const degat = Math.floor((Dégâts * 0.3 + 1) * Math.random() + (Dégâts * 0.4))
         const degatcrit = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
@@ -44384,12 +44438,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex bourdon flâneur défense")) {
+    if (message.content.startsWith(prefix + "Apex bourdon flâneur défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(4).join(" : ");
         const Esquiveraté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
         const Esquive = Math.floor(21 * Math.random() + 35)
@@ -44412,12 +44477,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex taurus chargeur défense")) {
+    if (message.content.startsWith(prefix + "Apex taurus chargeur défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(4).join(" : ");
         const Paraderaté = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
         const Parade = Math.floor(26 * Math.random() + 155)
@@ -44440,12 +44516,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex fort taurus adroit défense")) {
+    if (message.content.startsWith(prefix + "Apex fort taurus adroit défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(5).join(" : ");
         const degat = Math.floor((Dégâts * 0.5 + 1) * Math.random() + (Dégâts * 1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -44467,12 +44554,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex taurus lourd défense")) {
+    if (message.content.startsWith(prefix + "Apex taurus lourd défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let Dégâts = args.slice(4).join(" : ");
         const paradeRatee = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -44494,12 +44592,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex vache vrombissante défense")) {
+    if (message.content.startsWith(prefix + "Apex vache vrombissante défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let degat = args.slice(4).join(" : ");
         const echec = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
         const echeccrit = Math.floor(((degat * 1.5) + 1) * Math.random() + (degat * 1.5))
@@ -44522,12 +44631,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex guêpe vivace défense")) {
+    if (message.content.startsWith(prefix + "Apex guêpe vivace défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let degat = args.slice(4).join(" : ");
         const echec = Math.floor(((degat * 1.5) + 1) * Math.random() + (degat * 1.5))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -44549,12 +44669,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+}
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex boeuf vrombissant défense")) {
+    if (message.content.startsWith(prefix + "Apex boeuf vrombissant défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let degat = args.slice(4).join(" : ");
         const paradeRatee = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1.5))
         const paradeReussie = Math.floor(26 * Math.random() + 180)
@@ -44577,12 +44708,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+    }
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Apex frelon foudroyant défense")) {
+    if (message.content.startsWith(prefix + "Apex frelon foudroyant défense")) {        
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952){
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                        .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
         let degat = args.slice(4).join(" : ");
         const echec = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -44604,6 +44746,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
     }
+}
 });
 
 // Salle du boss | Monstres | Descriptions
