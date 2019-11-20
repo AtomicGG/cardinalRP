@@ -2063,8 +2063,8 @@ bot.on('message', message => {
             .addField("Les zones :", "Quand vous entrez dans une zone et que vous voulez voir les activités ainsi que ce qui se cache à l'intérieur, vous pourrez écrire :\n\n`=[Nom de la zone]`\n\n" +
                 "Par exemple, si vous arrivez en plaine, pour découvrir le lieu et voir ce qui est possible de faire à l'intérieur, écrivez `=Plaine` !\n\n" +
                 "Les zones actuellement disponible selon les paliers sont les suivantes :")
-                .addField("Zones du palier 1 :", "\n`=Plaine`\n`=Forêt`\n`=Donjon sauvage`\n`=Montagne`\n`=Grotte`")
-                .addField("Zones du palier 2 :", "\n`=Forêt dense`\n`=Clairière`\n`=Vallée`\n`=Ravin`")
+            .addField("Zones du palier 1 :", "\n`=Plaine`\n`=Forêt`\n`=Donjon sauvage`\n`=Montagne`\n`=Grotte`")
+            .addField("Zones du palier 2 :", "\n`=Forêt dense`\n`=Clairière`\n`=Vallée`\n`=Ravin`")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -27137,31 +27137,42 @@ bot.on('message', message => {
         var nbrJoueurs = str2.slice(0, espace);
         var nbrJoueursVisés = str2.slice(espace + 1);
         var IntNbrJoueurs = nbrJoueurs - 0;
-        var IntNbrJoueursVisés = nbrJoueursVisés - 0;
-        if (IntNbrJoueursVisés == 0) {
-            IntNbrJoueursVisés = 1
+        if (IntNbrJoueurs == 0) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Vous avez fait une erreur dans la commande !", "Veuillez recommencer !")
+                .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            var IntNbrJoueursVisés = nbrJoueursVisés - 0;
+            if (IntNbrJoueursVisés == 0) {
+                IntNbrJoueursVisés = 1
+            }
+            var tableau = new Array(IntNbrJoueurs);
+            var tableau2 = new Array(IntNbrJoueursVisés);
+            for (var i = 0; i < tableau.length; i++) {
+                tableau[i] = i + 1;
+            }
+            for (var j = 0; j < tableau2.length; j++) {
+                var roll = Math.floor(tableau.length * Math.random())
+                tableau2[j] = tableau[roll];
+                tableau.splice(roll, 1)
+            }
+            tableau2.sort()
+            var texte = tableau2.toString()
+            var regex = /,/gi
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Le monstre attaque le(s) joueur(s) :", "" + texte.replace(regex, ' & '))
+                .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
         }
-        var tableau = new Array(IntNbrJoueurs);
-        var tableau2 = new Array(IntNbrJoueursVisés);
-        for (var i = 0; i < tableau.length; i++) {
-            tableau[i] = i + 1;
-        }
-        for (var j = 0; j < tableau2.length; j++) {
-            var roll = Math.floor(tableau.length * Math.random())
-            tableau2[j] = tableau[roll];
-            tableau.splice(roll, 1)
-        }
-        tableau2.sort()
-        var texte = tableau2.toString()
-        var regex = /,/gi
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Le monstre attaque le(s) joueur(s) :", "" + texte.replace(regex, ' & '))
-            .setImage("http://www.otakia.com/wp-content/uploads/2015/11/sword_art_online_aincrad_episode_04_silica_attaquee.jpg")
-            .setTimestamp()
-        message.channel.send({ embed })
     }
 });
 
@@ -44820,7 +44831,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField("Test","Réussi")
+                .addField("Test", "Réussi")
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
@@ -44828,7 +44839,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField("On a essayé de tricher ?","PAS BIEN !!!!!!")
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
                 .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
                 .setTimestamp()
             message.channel.send({ embed })
