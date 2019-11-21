@@ -43602,8 +43602,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            //const choixSalle = Math.floor(100 * Math.random() + 1)
-            const choixSalle = 85;
+            const choixSalle = Math.floor(100 * Math.random() + 1)
             if (choixSalle <= 20) {
                 const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous.```\n\n`Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 5]`"
                 message.channel.send(embed)
@@ -43992,6 +43991,40 @@ bot.on('message', message => {
                 const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue tout droit.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 5]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
                 message.channel.send(embed)
             }
+        }
+    }
+})
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Coffre protégé par des monstres") {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const cols = Math.floor(1000 * Math.random() + 1000)
+            const chitine = Math.floor((2 - 0.749) * Math.random)
+            const dargnan = Math.floor((2 - 0.88) * Math.random)
+            const darchic = Math.floor((2 - 0.913) * Math.random)
+            const poison = Math.floor((2 - 0.958) * Math.random)
+            const oeuf = Math.floor((2 - 0.88) * Math.random)
+            const embed = new Discord.RichEmbed()
+                .setColor(3447003)
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .addField("Vous ouvrez le coffre et vous trouvez :", ":large_orange_diamond: Cols : " + cols + "\n" + 
+                                                                     ":scales: Armure ou Bijou ou Arme en chitine au choix : " + chitine + "\n" +
+                                                                     ":scales: Armure ou Bijou dargnan au choix : " + dargnan + "\n" +
+                                                                     ":scales: Armure ou Bijou bovin au choix : " + bovin + "\n" +
+                                                                     ":scales: Arme darchic au choix : " + darchic + "\n" +
+                                                                     ":scales: Parchemin de poison moyen : " + poison + "\n" +
+                                                                     ":gem: Oeuf bavant ou brisé au choix : " + oeuf)
+                .setTimestamp()
+            message.channel.send({ embed })
         }
     }
 })
