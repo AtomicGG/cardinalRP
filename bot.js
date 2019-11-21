@@ -43552,6 +43552,26 @@ bot.on('message', message => {
     }
 })
 
+// Labyrinthe Palier 2 | Parcours
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Entrée du labyrinthe") {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = "Test"
+            message.channel.send(embed)
+        }
+    }
+})
+
 // Labyrinthe Palier 2 | Monstres | Descriptions
 
 bot.on('message', message => {
