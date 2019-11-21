@@ -43566,7 +43566,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const embed = "```Devant vous, une immense arche faite de plante surplombe l'entrée de ce lieu empli de mystères pour le moment. A partir de l'entrée, un brouillard suréaliste est présent, ne vous permettant pas de voir plus loin que de quelques mêtres. Un étrange sentiment d'insécurité vous englobe si vous décidez de franchir cette arche.\n\n Seules 5 personnes peuvent rentrer à la fois, lorsque vous rentrez, le guilde devra faire la commande [=Chemin 1]"
+            const embed = "```Devant vous, une immense arche faite de plante surplombe l'entrée de ce lieu empli de mystères pour le moment. A partir de l'entrée, un brouillard suréaliste est présent, ne vous permettant pas de voir plus loin que de quelques mêtres. Un étrange sentiment d'insécurité vous englobe si vous décidez de franchir cette arche.```\n\n`Seules 5 personnes peuvent rentrer à la fois, lorsque vous rentrez, le guilde devra faire la commande [=Chemin 1]`"
             message.channel.send(embed)
         }
     }
