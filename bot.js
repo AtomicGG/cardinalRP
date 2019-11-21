@@ -43566,7 +43566,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const embed = "```Devant vous, une immense arche faite de plante surplombe l'entrée de ce lieu empli de mystères pour le moment. A partir de l'entrée, un brouillard suréaliste est présent, ne vous permettant pas de voir plus loin que de quelques mêtres. Un étrange sentiment d'insécurité vous englobe si vous décidez de franchir cette arche. Le chemin continue tout droit aussi loin que vous pouvez voir.```\n\n`Seules 5 personnes peuvent rentrer à la fois, lorsque vous rentrez, le guilde devra faire la commande [=Chemin 1]`"
+            const embed = "```Devant vous, une immense arche faite de plante surplombe l'entrée de ce lieu empli de mystères pour le moment. A partir de l'entrée, un brouillard suréaliste est présent, ne vous permettant pas de voir plus loin que de quelques mêtres. Un étrange sentiment d'insécurité vous englobe si vous décidez de franchir cette arche. Le chemin continue tout droit aussi loin que vous pouvez voir.```\n\n`Seules 5 personnes peuvent rentrer à la fois, lorsque vous rentrez, le guide devra faire la commande [=Chemin 1]`"
             message.channel.send(embed)
         }
     }
@@ -43584,7 +43584,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const embed = "```Vous marchez pendant ce qu'il vous semble quelques minutes mais avec cette brûme, le temps semble suspendu, comme si vous vous trouviez dans une autre dimension. Vous continuez à marcher en formation, votre guide en première position jusqu'à ce que vous tombez sur une intersection. Face à vous se trouve trois chemins, l'un allant vers la gauche, le second en face de vous et le dernier allant vers la droite.```\n\n`Seules 5 personnes peuvent rentrer à la fois, lorsque vous rentrez, le guilde devra faire la commande [=Chemin 1]`"
+            const embed = "```Vous marchez pendant ce qu'il vous semble quelques minutes mais avec cette brûme, le temps semble suspendu, comme si vous vous trouviez dans une autre dimension. Vous continuez à marcher en formation, votre guide en première position jusqu'à ce que vous tombez sur une intersection. Face à vous se trouve trois chemins, l'un allant vers la gauche, le second en face de vous et le dernier allant vers la droite.```\n\n`Pour emprunter le chemin de gauche, le guide devra faire la commande [=Chemin 2]\nPour emprunter le chemin d'en face, le guide devra faire la commande [=Chemin 3]\nPour emprunter le chemin de droite, le guide devra faire la commande [=Chemin 4]`"
             message.channel.send(embed)
         }
     }
