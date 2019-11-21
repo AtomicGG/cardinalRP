@@ -43609,7 +43609,7 @@ bot.on('message', message => {
                 message.channel.send(embed)
             }
             if (choixSalle > 20 && choixSalle <= 70) {
-                let joueurs = 6;
+                let joueurs = 100;
                 let test = 0;
                 let lombricIrregulier = 0;
                 let testLombric = false
