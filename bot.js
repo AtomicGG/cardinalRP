@@ -43985,7 +43985,7 @@ bot.on('message', message => {
                 if(testVache){
                     message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
                 }
-                const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 5]`"
+                const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 5]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
             }
             if (choixSalle > 80) {
