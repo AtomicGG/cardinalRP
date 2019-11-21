@@ -46057,7 +46057,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Chemin 4") {
+    if (message.content === (prefix) + "Chemin 10") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -46070,11 +46070,11 @@ bot.on('message', message => {
         } else {
             const choixSalle = Math.floor(100 * Math.random() + 1)
             if (choixSalle <= 20) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous.```\n\n`Vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 8]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Au bout d'un moment, vous arrivez à une intersection. 3 chemins s'offrent à vous : à gauche, tout droit et à droite.```\n\n`Vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller tout droite, le guide devra faire la commande [=Chemin 14]\nPour aller à droite, le guide devra faire la commande [=Chemin 15]`"
                 message.channel.send(embed)
             }
             if (choixSalle > 20 && choixSalle <= 70) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin continue tout droit.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin se sépare en trois : à gauche, tout droit et à droite.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 5;
                 let test = 0;
@@ -46260,11 +46260,11 @@ bot.on('message', message => {
                 if (testVache) {
                     message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
                 }
-                const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 8]`"
+                const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller tout droit, le guide devra faire la commande [=Chemin 14]\nPour aller à droite, le guide devra faire la commande [=Chemin 15]`"
                 message.channel.send(embed2)
             }
             if (choixSalle > 70 && choixSalle <= 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin continue tout droit.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin se sépare en trois : à gauche, tout droit et à droite.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 6;
                 let test = 0;
@@ -46450,11 +46450,11 @@ bot.on('message', message => {
                 if (testVache) {
                     message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
                 }
-                const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 8]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
+                const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller tout droit, le guide devra faire la commande [=Chemin 14]\nPour aller à droite, le guide devra faire la commande [=Chemin 15]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
             }
             if (choixSalle > 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue tout droit.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 8]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin se sépare en trois : à gauche, tout droit et à droite.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller tout droit, le guide devra faire la commande [=Chemin 14]\nPour aller à droite, le guide devra faire la commande [=Chemin 15]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
                 message.channel.send(embed)
             }
         }
