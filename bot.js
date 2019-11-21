@@ -43566,7 +43566,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const embed = "```Devant vous, une immense arche faite de plante surplombe l'entrée de ce lieu empli de mystères pour le moment. A partir de l'entrée, un brouillard suréaliste est présent, ne vous permettant pas de voir plus loin que de quelques mêtres. Un étrange sentiment d'insécurité vous englobe si vous décidez de franchir cette arche. Le chemin continue tout droit aussi loin que vous pouvez voir.```\n\n`Seules 5 personnes peuvent rentrer à la fois, lorsque vous rentrez, le guide devra faire la commande [=Chemin 1]`"
+            const embed = "```Devant vous, une immense arche faite de plante surplombe l'entrée de ce lieu empli de mystères pour le moment. A partir de l'entrée, un brouillard suréaliste est présent, ne vous permettant pas de voir plus loin que de quelques mêtres. Un étrange sentiment d'insécurité vous englobe si vous décidez de franchir cette arche. Le chemin continue tout droit aussi loin que vous pouvez voir.```\n\n`Seules X personnes peuvent rentrer à la fois, lorsque vous rentrez, le guide devra faire la commande [=Chemin 1]`"
             message.channel.send(embed)
         }
     }
@@ -43609,7 +43609,7 @@ bot.on('message', message => {
                 message.channel.send(embed)
             }
             if (choixSalle > 20 && choixSalle <= 70) {
-                let joueurs = 5;
+                let joueurs = 6;
                 let test = 0;
                 let lombricIrregulier = 0;
                 let testLombric = false
