@@ -43603,7 +43603,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         } else {
             //const choixSalle = Math.floor(100 * Math.random() + 1)
-            const choixSalle = 75;
+            const choixSalle = 85;
             if (choixSalle <= 20) {
                 const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous.```\n\n`Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 5]`"
                 message.channel.send(embed)
@@ -43989,7 +43989,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 80) {
-                const embed = "+80"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue tout droit.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 5]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
                 message.channel.send(embed)
             }
         }
