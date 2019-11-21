@@ -43755,43 +43755,43 @@ bot.on('message', message => {
                         } else break;
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
-                if(testLombric){
+                if (testLombric) {
                     message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
                 }
-                if(testNeo){
+                if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
-                if(testBousier){
+                if (testBousier) {
                     message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
                 }
-                if(testVenom){
+                if (testVenom) {
                     message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
                 }
-                if(testDory){
+                if (testDory) {
                     message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
                 }
-                if(testBourdon){
+                if (testBourdon) {
                     message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
                 }
-                if(testChargeur){
+                if (testChargeur) {
                     message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
                 }
-                if(testFTA){
+                if (testFTA) {
                     message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
                 }
-                if(testLourd){
+                if (testLourd) {
                     message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
                 }
-                if(testGuepe){
+                if (testGuepe) {
                     message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
                 }
-                if(testFrelon){
+                if (testFrelon) {
                     message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
                 }
-                if(testBoeuf){
+                if (testBoeuf) {
                     message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
                 }
-                if(testVache){
+                if (testVache) {
                     message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 5]`"
@@ -43945,43 +43945,43 @@ bot.on('message', message => {
                         } else break;
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
-                if(testLombric){
+                if (testLombric) {
                     message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
                 }
-                if(testNeo){
+                if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
-                if(testBousier){
+                if (testBousier) {
                     message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
                 }
-                if(testVenom){
+                if (testVenom) {
                     message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
                 }
-                if(testDory){
+                if (testDory) {
                     message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
                 }
-                if(testBourdon){
+                if (testBourdon) {
                     message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
                 }
-                if(testChargeur){
+                if (testChargeur) {
                     message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
                 }
-                if(testFTA){
+                if (testFTA) {
                     message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
                 }
-                if(testLourd){
+                if (testLourd) {
                     message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
                 }
-                if(testGuepe){
+                if (testGuepe) {
                     message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
                 }
-                if(testFrelon){
+                if (testFrelon) {
                     message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
                 }
-                if(testBoeuf){
+                if (testBoeuf) {
                     message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
                 }
-                if(testVache){
+                if (testVache) {
                     message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 5]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
@@ -44008,23 +44008,23 @@ bot.on('message', message => {
             message.channel.send({ embed })
         } else {
             const cols = Math.floor(1000 * Math.random() + 1000)
-            const chitine = Math.floor((2 - 0.32) * Math.random())
-            const dargnan = Math.floor((2 - 0.57) * Math.random())
-            const bovin = Math.floor((2 - 0.57) * Math.random())
-            const darchic = Math.floor((2 - 0.666) * Math.random())
+            const chitine = Math.floor((2 - 0.32) * Math.random() + 2)
+            const dargnan = Math.floor((2 - 0.57) * Math.random() + 1)
+            const bovin = Math.floor((2 - 0.57) * Math.random() + 1)
+            const darchic = Math.floor((2 - 0.666) * Math.random() + 1)
             const poison = Math.floor((2 - 0.749) * Math.random())
             const oeuf = Math.floor((2 - 0.666) * Math.random())
             const embed = new Discord.RichEmbed()
                 .setColor(3447003)
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .addField("Vous ouvrez le coffre et vous trouvez :", ":large_orange_diamond: Cols : " + cols + "\n" + 
-                                                                     ":scales: Armure ou Bijou ou Arme en chitine au choix : " + chitine + "\n" +
-                                                                     ":scales: Armure ou Bijou dargnan au choix : " + dargnan + "\n" +
-                                                                     ":scales: Armure ou Bijou bovin au choix : " + bovin + "\n" +
-                                                                     ":scales: Arme darchic au choix : " + darchic + "\n" +
-                                                                     ":scales: Parchemin de poison moyen : " + poison + "\n" +
-                                                                     ":gem: Oeuf bavant ou brisé au choix : " + oeuf)
-                                                                     .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
+                .addField("Vous ouvrez le coffre et vous trouvez :", ":large_orange_diamond: Cols : " + cols + "\n" +
+                    ":scales: Armure ou Bijou ou Arme en chitine au choix : " + chitine + "\n" +
+                    ":scales: Armure ou Bijou dargnan au choix : " + dargnan + "\n" +
+                    ":scales: Armure ou Bijou bovin au choix : " + bovin + "\n" +
+                    ":scales: Arme darchic au choix : " + darchic + "\n" +
+                    ":scales: Parchemin de poison moyen : " + poison + "\n" +
+                    ":gem: Oeuf bavant ou brisé au choix : " + oeuf)
+                .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
