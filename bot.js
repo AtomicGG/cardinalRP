@@ -44012,6 +44012,8 @@ bot.on('message', message => {
             const dargnan = Math.floor((2 - 0.57) * Math.random() + 1)
             const bovin = Math.floor((2 - 0.57) * Math.random() + 1)
             const darchic = Math.floor((2 - 0.666) * Math.random() + 1)
+            const amelioree = Math.floor((2 - 0.32) * Math.random() + 1)
+            const amelioreeSup = Math.floor((2 - 0.666) * Math.random() + 1)
             const poison = Math.floor((2 - 0.749) * Math.random())
             const oeuf = Math.floor((2 - 0.666) * Math.random())
             const embed = new Discord.RichEmbed()
@@ -44022,11 +44024,65 @@ bot.on('message', message => {
                     ":scales: Armure ou Bijou dargnan au choix : " + dargnan + "\n" +
                     ":scales: Armure ou Bijou bovin au choix : " + bovin + "\n" +
                     ":scales: Arme darchic au choix : " + darchic + "\n" +
+                    ":scales: Potion améliorée : " + amelioree + "\n" +
+                    ":scales: Potion améliorée supérieure : " + amelioreeSup + "\n" +
                     ":scales: Parchemin de poison moyen : " + poison + "\n" +
                     ":gem: Oeuf bavant ou brisé au choix : " + oeuf)
                 .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                 .setTimestamp()
             message.channel.send({ embed })
+        }
+    }
+})
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Coffre du labyrinthe") {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const roll = Math.floor(20 * Math.random() + 1)
+            if(roll <= 5) {
+                const boom = Math.floor(100 * Math.random() + 100)
+                const embed = new Discord.RichEmbed()
+                    .setColor(3447003)
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .addField("Vous ouvrez le coffre et ... IL VOUS EXPLOSE A LA FIGURE !!", "Toutes les personnes présentes perdent " + boom)
+                    .setImage("https://i.pinimg.com/originals/9d/58/37/9d5837c6f0cb8b18be6ddd1e2742472a.gif")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                const cols = Math.floor(1000 * Math.random() + 1000)
+                const chitine = Math.floor((2 - 0.32) * Math.random() + 2)
+                const dargnan = Math.floor((2 - 0.57) * Math.random() + 1)
+                const bovin = Math.floor((2 - 0.57) * Math.random() + 1)
+                const darchic = Math.floor((2 - 0.666) * Math.random() + 1)
+                const amelioree = Math.floor((2 - 0.32) * Math.random() + 1)
+                const amelioreeSup = Math.floor((2 - 0.666) * Math.random() + 1)
+                const poison = Math.floor((2 - 0.749) * Math.random())
+                const oeuf = Math.floor((2 - 0.666) * Math.random())
+                const embed = new Discord.RichEmbed()
+                    .setColor(3447003)
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .addField("Vous ouvrez le coffre et vous trouvez :", ":large_orange_diamond: Cols : " + cols + "\n" +
+                        ":scales: Armure ou Bijou ou Arme en chitine au choix : " + chitine + "\n" +
+                        ":scales: Armure ou Bijou dargnan au choix : " + dargnan + "\n" +
+                        ":scales: Armure ou Bijou bovin au choix : " + bovin + "\n" +
+                        ":scales: Arme darchic au choix : " + darchic + "\n" +
+                        ":scales: Potion améliorée : " + amelioree + "\n" +
+                        ":scales: Potion améliorée supérieure : " + amelioreeSup + "\n" +
+                        ":scales: Parchemin de poison moyen : " + poison + "\n" +
+                        ":gem: Oeuf bavant ou brisé au choix : " + oeuf)
+                    .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
         }
     }
 })
