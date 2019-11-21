@@ -44010,6 +44010,7 @@ bot.on('message', message => {
             const cols = Math.floor(1000 * Math.random() + 1000)
             const chitine = Math.floor((2 - 0.749) * Math.random())
             const dargnan = Math.floor((2 - 0.88) * Math.random())
+            const bovin = Math.floor((2 - 0.88) * Math.random())
             const darchic = Math.floor((2 - 0.913) * Math.random())
             const poison = Math.floor((2 - 0.958) * Math.random())
             const oeuf = Math.floor((2 - 0.88) * Math.random())
