@@ -43758,40 +43758,40 @@ bot.on('message', message => {
                     message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
                 }
                 if(testNeo){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 10 HP : " + paplliAssit);
+                    message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if(testBousier){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
                 }
                 if(testVenom){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
                 }
                 if(testDory){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if(testBourdon){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
                 }
                 if(testChargeur){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
                 }
                 if(testFTA){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
                 }
                 if(testLourd){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
                 }
                 if(testGuepe){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
                 }
                 if(testFrelon){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
                 }
                 if(testBoeuf){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
                 }
                 if(testVache){
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
                 }
             }
             if (choixSalle > 70 && choixSalle <= 80) {
