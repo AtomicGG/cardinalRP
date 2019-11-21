@@ -43605,10 +43605,10 @@ bot.on('message', message => {
             //const choixSalle = Math.floor(100 * Math.random() + 1)
             const choixSalle = 50;
             if (choixSalle <= 20) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous.```\n\n`Pour continuer, le guide devra faire la commande [=Chemin 5]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous.```\n\n`Une fois les monstres tués, vous pouvez retourner soit continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 5]`"
                 message.channel.send(embed)
             }
-            const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin continue tout droit.```\n\n`Une fois les monstres tués, vous pouvez retourner soit continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 5]`"
+            const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin continue tout droit.```"
             message.channel.send(embed)
             if (choixSalle > 20 && choixSalle <= 70) {
                 let joueurs = 5;
