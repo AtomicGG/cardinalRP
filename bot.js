@@ -44024,6 +44024,7 @@ bot.on('message', message => {
                                                                      ":scales: Arme darchic au choix : " + darchic + "\n" +
                                                                      ":scales: Parchemin de poison moyen : " + poison + "\n" +
                                                                      ":gem: Oeuf bavant ou brisé au choix : " + oeuf)
+                                                                     .setImage("http://www.le317.fr/guide/images/5/53/Coffrerustique2.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
