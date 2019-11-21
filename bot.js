@@ -43603,7 +43603,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         } else {
             //const choixSalle = Math.floor(100 * Math.random() + 1)
-            const choixSalle = 5;
+            const choixSalle = 50;
             if (choixSalle <= 20) {
                 const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous.```\n\n`Pour continuer, le guide devra faire la commande [=Chemin 5]`"
                 message.channel.send(embed)
