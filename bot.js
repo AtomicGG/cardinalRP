@@ -43603,19 +43603,19 @@ bot.on('message', message => {
             message.channel.send({ embed })
         } else {
             const choixSalle = Math.floor(100 * Math.random() + 1)
-            if (roll<=20) {
+            if (choixSalle <= 20) {
                 const embed = "-20"
                 message.channel.send(embed)
             }
-            if (roll>20 && roll<=60){
+            if (choixSalle > 20 && choixSalle <= 60) {
                 const embed = "20 60"
                 message.channel.send(embed)
             }
-            if (roll>60 && roll<=80){
+            if (choixSalle > 60 && choixSalle <= 80) {
                 const embed = "60 80"
                 message.channel.send(embed)
             }
-            if (roll>80){
+            if (choixSalle > 80) {
                 const embed = "+80"
                 message.channel.send(embed)
             }
@@ -44025,576 +44025,576 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex neoridas attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(16 * Math.random() + 35)
+            const soin = Math.floor(31 * Math.random() + 70)
+            const degatCrit = Math.floor(76 * Math.random() + 150)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 25) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et virevolte joyeusement, vous avez de la chance !")
+                message.channel.send({ embed })
+            }
+            if (26 <= roll && roll <= 60) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre rouge, tout les monstres présents ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif. Si L'Apex lombric irrégulier s'enfouit sous terre au tour d'après ou si il est déjà sous terre, il n'est pas ou plus affecté.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(16 * Math.random() + 35)
-                const soin = Math.floor(31 * Math.random() + 70)
-                const degatCrit = Math.floor(76 * Math.random() + 150)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 25) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et virevolte joyeusement, vous avez de la chance !")
-                    message.channel.send({ embed })
-                }
-                if (26 <= roll && roll <= 60) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre rouge, tout les monstres présents ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif. Si L'Apex lombric irrégulier s'enfouit sous terre au tour d'après ou si il est déjà sous terre, il n'est pas ou plus affecté.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (61 <= roll && roll <= 95) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre verte, tout les monstres présents sont soignés de " + soin + " points de vie.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (96 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas prend de l'élan et soulève un grand nuages de poudre d'or, tout les monstres sont soignés de " + soin + " points de vie et gagnent " + degat + " points de dégâts pour 1 tour puis s'enfuit __pas__.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (61 <= roll && roll <= 95) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre verte, tout les monstres présents sont soignés de " + soin + " points de vie.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (96 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas prend de l'élan et soulève un grand nuages de poudre d'or, tout les monstres sont soignés de " + soin + " points de vie et gagnent " + degat + " points de dégâts pour 1 tour puis s'enfuit __pas__.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex bousier colossal attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(36 * Math.random() + 165)
+            const degatCrit = Math.floor(36 * Math.random() + 175)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex Bousier colossal :", ":crossed_swords: L'Apex Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation, il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. L'Apex Bousier colossal récuperera une autre pierre au prochain tour et est donc paralyser et ne pourra ni attaquer ni se défendre pendant 1 tour. Vous avez de la chance !")
+                message.channel.send({ embed })
+            }
+            if (31 <= roll && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex Bousier colossal :", ":crossed_swords: L'Apex Bousier colossal fait rouler son immense pierre vers vous et tente de vous écraser, il inflige " + degat + " points de dégâts")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(36 * Math.random() + 165)
-                const degatCrit = Math.floor(36 * Math.random() + 175)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 30) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Bousier colossal :", ":crossed_swords: L'Apex Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation, il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. L'Apex Bousier colossal récuperera une autre pierre au prochain tour et est donc paralyser et ne pourra ni attaquer ni se défendre pendant 1 tour. Vous avez de la chance !")
-                    message.channel.send({ embed })
-                }
-                if (31 <= roll && roll <= 90) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Bousier colossal :", ":crossed_swords: L'Apex Bousier colossal fait rouler son immense pierre vers vous et tente de vous écraser, il inflige " + degat + " points de dégâts")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (91 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Bousier colossal :", ":crossed_swords: L'Apex Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toutes ses forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. Vous êtes paralysés même si vous ne prenez aucun dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (91 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex Bousier colossal :", ":crossed_swords: L'Apex Bousier colossal soulève la pierre qu'il tient au dessus de lui et se rapproche avant de l'écraser sur vous de toutes ses forces, il inflige " + degatCrit + " et vous paralyse pour 1 tour. Vous êtes paralysés même si vous ne prenez aucun dégâts.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex venom attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(26 * Math.random() + 115)
+            const poison = Math.floor(11 * Math.random() + 35)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 35) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex Venom :", ":crossed_swords: L'Apex Venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
+                message.channel.send({ embed })
+            }
+            if (36 <= roll && roll <= 85) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex Venom :", ":crossed_swords: L'Apex Venom tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(26 * Math.random() + 115)
-                const poison = Math.floor(11 * Math.random() + 35)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 35) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Venom :", ":crossed_swords: L'Apex Venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
-                    message.channel.send({ embed })
-                }
-                if (36 <= roll && roll <= 85) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Venom :", ":crossed_swords: L'Apex Venom tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (86 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex Venom:", ":crossed_swords: L'Apex Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (86 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex Venom:", ":crossed_swords: L'Apex Venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex doryphore géant attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(31 * Math.random() + 150)
+            const armure = Math.floor(21 * Math.random() + 30)
+            const cible = Math.floor(3 * Math.random() + 2)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 35) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex doryphore géant :", ":crossed_swords: L'Apex doryphore géant vole de gauche à droite et attend le bon moment pour attaquer.")
+                message.channel.send({ embed })
+            }
+            if (36 <= roll && roll <= 75) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex doryphore géant :", ":crossed_swords: L'Apex doryphore géant vous charge et vous percute de plein fouet, infligeant " + degat + " points de dégâts")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(31 * Math.random() + 150)
-                const armure = Math.floor(21 * Math.random() + 30)
-                const cible = Math.floor(3 * Math.random() + 2)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 35) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex doryphore géant :", ":crossed_swords: L'Apex doryphore géant vole de gauche à droite et attend le bon moment pour attaquer.")
-                    message.channel.send({ embed })
-                }
-                if (36 <= roll && roll <= 75) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex doryphore géant :", ":crossed_swords: L'Apex doryphore géant vous charge et vous percute de plein fouet, infligeant " + degat + " points de dégâts")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (76 <= roll && roll <= 90) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex doryphore géant :", ":crossed_swords: L'Apex doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueurs. Ces joueurs sont provoqués pendant 2 tours et le Doryphore double son armure pendant cette durée. Si L'Apex doryphore géant est provoqué, il ne peut pas provoquer le groupe de joueur et provoque uniquement le joueur qui l'a provoqué initialement.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (91 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex doryphore géant :", ":crossed_swords:L'Apex doryphore géant s'envole et se dirige vers vous. Puis il atterrit sur vous en vous écrasant avec ses pattes avants. Il inflige " + degat + " points de dégâts et réduit votre armure de " + armure + " pendant 3 tours.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (76 <= roll && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex doryphore géant :", ":crossed_swords: L'Apex doryphore géant fait vibrer ses ailes sous sa carapaces et attire l'attention de " + cible + " joueurs. Ces joueurs sont provoqués pendant 2 tours et le Doryphore double son armure pendant cette durée. Si L'Apex doryphore géant est provoqué, il ne peut pas provoquer le groupe de joueur et provoque uniquement le joueur qui l'a provoqué initialement.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (91 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex doryphore géant :", ":crossed_swords:L'Apex doryphore géant s'envole et se dirige vers vous. Puis il atterrit sur vous en vous écrasant avec ses pattes avants. Il inflige " + degat + " points de dégâts et réduit votre armure de " + armure + " pendant 3 tours.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex bourdon flâneur attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(26 * Math.random() + 135)
+            const degatCrit = Math.floor(76 * Math.random() + 230)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 35) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex bourdon flâneur :", ":crossed_swords: L'Apex bourdon flâneur vrombit silencieusement sur place de manière intimidante. Vous avez de la chance !")
+                message.channel.send({ embed })
+            }
+            if (36 <= roll && roll <= 97) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex bourdon flâneur  :", ":crossed_swords: L'Apex bourdon flâneur vous fonce dessus et vous percute violemment. Vous vous prenez " + degat + " points de dégâts.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(26 * Math.random() + 135)
-                const degatCrit = Math.floor(76 * Math.random() + 230)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 35) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex bourdon flâneur :", ":crossed_swords: L'Apex bourdon flâneur vrombit silencieusement sur place de manière intimidante. Vous avez de la chance !")
-                    message.channel.send({ embed })
-                }
-                if (36 <= roll && roll <= 97) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex bourdon flâneur  :", ":crossed_swords: L'Apex bourdon flâneur vous fonce dessus et vous percute violemment. Vous vous prenez " + degat + " points de dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (98 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex bourdon flâneur  :", ":crossed_swords: L'Apex bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache à son propre dard, mourrant dans le procédé. Il vous inflige  " + degatCrit + " de dégâts de poison perce armure. Si vous êtes protégés contre le poison, l'attaque suicide du Apex bourdon flâneur perd ses propriétés perce armure et devient un coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (98 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex bourdon flâneur  :", ":crossed_swords: L'Apex bourdon flâneur vrombit à nouveau mais cette fois n'hésite plus, il vous fonce droit dessus et plante son dard a travers votre armure puis s'arrache à son propre dard, mourrant dans le procédé. Il vous inflige  " + degatCrit + " de dégâts de poison perce armure. Si vous êtes protégés contre le poison, l'attaque suicide du Apex bourdon flâneur perd ses propriétés perce armure et devient un coup normal.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex taurus chargeur attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(36 * Math.random() + 150)
+            const degatCrit = Math.floor(36 * Math.random() + 155)
+            const tours = Math.floor(2 * Math.random() + 1)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex taurus chargeur  :", ":crossed_swords: L'Apex taurus chargeur piétine le sol à plusieurs reprises mais n'attaque pas. Vous avez de la chance !")
+                message.channel.send({ embed })
+            }
+            if (31 <= roll && roll <= 80) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex taurus chargeur  :", ":crossed_swords: L'Apex taurus chargeur charge droit vers vous avec ses cornes en avant. Il vous percute violemment vous faisant perdre " + degat + " points de vie.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(36 * Math.random() + 150)
-                const degatCrit = Math.floor(36 * Math.random() + 155)
-                const tours = Math.floor(2 * Math.random() + 1)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 30) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex taurus chargeur  :", ":crossed_swords: L'Apex taurus chargeur piétine le sol à plusieurs reprises mais n'attaque pas. Vous avez de la chance !")
-                    message.channel.send({ embed })
-                }
-                if (31 <= roll && roll <= 80) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex taurus chargeur  :", ":crossed_swords: L'Apex taurus chargeur charge droit vers vous avec ses cornes en avant. Il vous percute violemment vous faisant perdre " + degat + " points de vie.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (81 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex taurus chargeur  :", ":crossed_swords: L'Apex taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauter dans les airs et d'écraser ses pieds contre vous violemment. Vous êtes projeté au sol et vous vous prenez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. L'Apex taurus chargeur vous étourdit même si vous bloqués la totalité des dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (81 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex taurus chargeur  :", ":crossed_swords: L'Apex taurus chargeur se frappe le torse avant d'hurler de rage, il prend de la vitesse et vous fonce dessus sans retenue avant de sauter dans les airs et d'écraser ses pieds contre vous violemment. Vous êtes projeté au sol et vous vous prenez " + degatCrit + " points de dégâts et vous étourdit pendant 1 tour. L'Apex taurus chargeur vous étourdit même si vous bloqués la totalité des dégâts.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex fort taurus adroit attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(26 * Math.random() + 155)
+            const degatCrit = Math.floor(26 * Math.random() + 105)
+            const saignement = Math.floor(11 * Math.random() + 35)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex fort taurus adroit :", ":crossed_swords: L'Apex fort taurus adroit envoie des hachettes mais vous rate, vous avez de la chance !")
+                message.channel.send({ embed })
+            }
+            if (21 <= roll && roll <= 80) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex fort taurus adroit :", ":crossed_swords: L'Apex fort taurus adroit vous lance des hachettes, il inflige " + degat + " points de dégâts.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(26 * Math.random() + 155)
-                const degatCrit = Math.floor(26 * Math.random() + 105)
-                const saignement = Math.floor(11 * Math.random() + 35)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 20) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex fort taurus adroit :", ":crossed_swords: L'Apex fort taurus adroit envoie des hachettes mais vous rate, vous avez de la chance !")
-                    message.channel.send({ embed })
-                }
-                if (21 <= roll && roll <= 80) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex fort taurus adroit :", ":crossed_swords: L'Apex fort taurus adroit vous lance des hachettes, il inflige " + degat + " points de dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (81 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex fort taurus adroit:", ":crossed_swords: L'Apex fort taurus adroit vous lance une hachette très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous inflige " + saignement + " dégâts de saignement pendant 3 tours. Le saignement du Apex fort taurus adroit n'est pas additif, si vous êtes déjà en saignement, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (81 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex fort taurus adroit:", ":crossed_swords: L'Apex fort taurus adroit vous lance une hachette très tranchante, il inflige " + degatCrit + " points de dégâts de perce armure et vous inflige " + saignement + " dégâts de saignement pendant 3 tours. Le saignement du Apex fort taurus adroit n'est pas additif, si vous êtes déjà en saignement, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex taurus lourd attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(31 * Math.random() + 160)
+            const degatraté = Math.floor(21 * Math.random() + 40)
+            const degatcrit = Math.floor(31 * Math.random() + 180)
+            const cible = Math.floor(4 * Math.random() + 2)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 20) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex taurus lourd :", ":crossed_swords: L'Apex taurus lourd vous fonce dessus mais évalue mal sa distance, il décide alors de vous donner un coup de poing qui vous fait " + degatraté + " points de dégâts.")
+                message.channel.send({ embed })
+            }
+            if (21 <= roll & roll <= 55) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex taurus lourd :", ":crossed_swords:L'Apex taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge, vous pouvez seulement esquiver ou interception possible. Vous et L'Apex taurus lourd ne pouvez plus attaquer. \n A chaque tour du joueur capturé il peut tenter un =Roll pour s'échapper, si il réusit le joueur peut profiter de son tour d'attaque.\n A chaque tour du Apex taurus lourd, il inflige " + degatraté + " points de dégâts de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible, il peut uniquement tenter d'esquiver. S'il réussit, le joueur est libéré et les effets ainsi que les dégâts de l'attaque sont infligés au Apex taurus lourd.\nSi vous attaquez le taurus alors qu'il a capturé un joueur, le joueur doit esquiver l'attaque. S'il rate, il se prend les dégâts. S'il réussit, il échappe à la capture et le taurus se prend l'attaque.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(31 * Math.random() + 160)
-                const degatraté = Math.floor(21 * Math.random() + 40)
-                const degatcrit = Math.floor(31 * Math.random() + 180)
-                const cible = Math.floor(4 * Math.random() + 2)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 20) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex taurus lourd :", ":crossed_swords: L'Apex taurus lourd vous fonce dessus mais évalue mal sa distance, il décide alors de vous donner un coup de poing qui vous fait " + degatraté + " points de dégâts.")
-                    message.channel.send({ embed })
-                }
-                if (21 <= roll & roll <= 55) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex taurus lourd :", ":crossed_swords:L'Apex taurus lourd se rue sur vous et vous prend en otage en mettant sa hache sous votre gorge, vous pouvez seulement esquiver ou interception possible. Vous et L'Apex taurus lourd ne pouvez plus attaquer. \n A chaque tour du joueur capturé il peut tenter un =Roll pour s'échapper, si il réusit le joueur peut profiter de son tour d'attaque.\n A chaque tour du Apex taurus lourd, il inflige " + degatraté + " points de dégâts de perce armure au joueur capturé. \n Si le joueur capturé est prit pour cible, il peut uniquement tenter d'esquiver. S'il réussit, le joueur est libéré et les effets ainsi que les dégâts de l'attaque sont infligés au Apex taurus lourd.\nSi vous attaquez le taurus alors qu'il a capturé un joueur, le joueur doit esquiver l'attaque. S'il rate, il se prend les dégâts. S'il réussit, il échappe à la capture et le taurus se prend l'attaque.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (56 <= roll & roll <= 90) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex taurus lourd :", ":crossed_swords:L'Apex taurus lourd se rapproche du groupe et effectue un puissant coup circulaire sur " + cible + " joueurs et leur inflige " + degat + " points de dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (91 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex taurus lourd :", ":crossed_swords: L'Apex taurus lourd prend de l'élan et se jette dans les airs en se cambrant en arrière avant d'écraser sa hache imposante contre vous de toute sa puissance. Vous vous prenez " + degatcrit + " points de dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (56 <= roll & roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex taurus lourd :", ":crossed_swords:L'Apex taurus lourd se rapproche du groupe et effectue un puissant coup circulaire sur " + cible + " joueurs et leur inflige " + degat + " points de dégâts.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (91 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex taurus lourd :", ":crossed_swords: L'Apex taurus lourd prend de l'élan et se jette dans les airs en se cambrant en arrière avant d'écraser sa hache imposante contre vous de toute sa puissance. Vous vous prenez " + degatcrit + " points de dégâts.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex guêpe vivace attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(6 * Math.random() + 35)
+            const poison = Math.floor(21 * Math.random() + 50)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 85) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex guêpe vivace :", ":crossed_swords: La Apex guêpe vivace s'approche de vous en un éclair et vous pique en un instant, infligeant " + degat + " de dégâts de perce armure. Vous êtes empoisonnés et subissez " + poison + " de dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+                message.channel.send({ embed })
+            }
+            if (86 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex guêpe vivace :", ":crossed_swords: La Apex guêpe vivace semble disparaitre de votre champ de vision et vous pique à l'arrière de votre cou. Vous êtes semi-paralysé, après un coup vous ne l'êtes plus. __A la fin du tour des monstres, vous n'êtes plus paralysé__.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(6 * Math.random() + 35)
-                const poison = Math.floor(21 * Math.random() + 50)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 85) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex guêpe vivace :", ":crossed_swords: La Apex guêpe vivace s'approche de vous en un éclair et vous pique en un instant, infligeant " + degat + " de dégâts de perce armure. Vous êtes empoisonnés et subissez " + poison + " de dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
-                    message.channel.send({ embed })
-                }
-                if (86 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex guêpe vivace :", ":crossed_swords: La Apex guêpe vivace semble disparaitre de votre champ de vision et vous pique à l'arrière de votre cou. Vous êtes semi-paralysé, après un coup vous ne l'êtes plus. __A la fin du tour des monstres, vous n'êtes plus paralysé__.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex frelon foudroyant attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(26 * Math.random() + 205)
+            const degatPerce = Math.floor(26 * Math.random() + 145)
+            const crit = Math.floor(21 * Math.random() + 230)
+            const buff = Math.floor(21 * Math.random() + 50)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 30) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant observe attentivement ses adversaires mais n'attaque pas.")
+                message.channel.send({ embed })
+            }
+            if (31 <= roll && roll <= 85) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant cherche une cible puis fonce vers vous, enfonçant son dard en vous. Il inflige " + degat + " de dégâts.")
+                message.channel.send({ embed })
+            }
+            if (86 <= roll && roll <= 90) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant cherche une cible et en a trouvé une parfaite, fonçant dans son angle mort, piquant avec son dard à la jonction entre deux pièces de votre armure. Il inflige " + degatPerce + " de dégâts de perce armure.")
+                message.channel.send({ embed })
+            }
+            if (91 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex frelon foudroyant :", ":crossed_swords: l'Apex frelon foudroyant cherche un Apex boeuf vrombissant s'il n'y a pas de Apex vache vrombissante et le pique tout d'un coup, lui infligeant " + crit + " de dégâts et augmentant les dégâts du boeuf de " + buff + " pendant 3 tours (ce bonus est additif mais pas les tours). Si il n'y as pas de Apex boeuf vrombissant aux alentours, il prend un joueur pour cible et lui inflige les dégats en perce armure uniquement.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(26 * Math.random() + 205)
-                const degatPerce = Math.floor(26 * Math.random() + 145)
-                const crit = Math.floor(21 * Math.random() + 230)
-                const buff = Math.floor(21 * Math.random() + 50)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 30) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant observe attentivement ses adversaires mais n'attaque pas.")
-                    message.channel.send({ embed })
-                }
-                if (31 <= roll && roll <= 85) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant cherche une cible puis fonce vers vous, enfonçant son dard en vous. Il inflige " + degat + " de dégâts.")
-                    message.channel.send({ embed })
-                }
-                if (86 <= roll && roll <= 90) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant cherche une cible et en a trouvé une parfaite, fonçant dans son angle mort, piquant avec son dard à la jonction entre deux pièces de votre armure. Il inflige " + degatPerce + " de dégâts de perce armure.")
-                    message.channel.send({ embed })
-                }
-                if (91 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex frelon foudroyant :", ":crossed_swords: l'Apex frelon foudroyant cherche un Apex boeuf vrombissant s'il n'y a pas de Apex vache vrombissante et le pique tout d'un coup, lui infligeant " + crit + " de dégâts et augmentant les dégâts du boeuf de " + buff + " pendant 3 tours (ce bonus est additif mais pas les tours). Si il n'y as pas de Apex boeuf vrombissant aux alentours, il prend un joueur pour cible et lui inflige les dégats en perce armure uniquement.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                    fury = true;
-                }
+                fury = true;
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex boeuf vrombissant attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(31 * Math.random() + 230)
+            const buff = Math.floor(21 * Math.random() + 50)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 25) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex boeuf vrombissant :", ":crossed_swords: l'Apex boeuf vrombissant émet un beuglement des plus puissants, faisant presque trembler le sol. Il n'attaque pas mais sa prochaine attaque fera " + buff + " dégâts en plus. (Ce bonus est additif mais est perdu si le boeuf se fait toucher avant d'attaquer)")
+                message.channel.send({ embed })
+            }
+            if (26 <= roll && roll <= 95) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex boeuf vrombissant :", ":crossed_swords: l'Apex boeuf vrombissant se cabre en arrière avant de vous foncer dessus à tout vitesse. Il vous percute violemment et vous inflige " + degat + " points de dégâts.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(31 * Math.random() + 230)
-                const buff = Math.floor(21 * Math.random() + 50)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 25) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex boeuf vrombissant :", ":crossed_swords: l'Apex boeuf vrombissant émet un beuglement des plus puissants, faisant presque trembler le sol. Il n'attaque pas mais sa prochaine attaque fera " + buff + " dégâts en plus. (Ce bonus est additif mais est perdu si le boeuf se fait toucher avant d'attaquer)")
-                    message.channel.send({ embed })
-                }
-                if (26 <= roll && roll <= 95) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex boeuf vrombissant :", ":crossed_swords: l'Apex boeuf vrombissant se cabre en arrière avant de vous foncer dessus à tout vitesse. Il vous percute violemment et vous inflige " + degat + " points de dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (96 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex boeuf vrombissant:", ":crossed_swords: l'Apex boeuf vrombissant souffle fort par son naseau et il semble se teinter de rouge. Il vous charge en beuglant bruyamment avec les cornes en avant, il inflige " + degat + " de dégâts et vous étourdis pendant 1 tour. Le boeuf vous étourdit sauf si vous bloqués la totalité des dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (96 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex boeuf vrombissant:", ":crossed_swords: l'Apex boeuf vrombissant souffle fort par son naseau et il semble se teinter de rouge. Il vous charge en beuglant bruyamment avec les cornes en avant, il inflige " + degat + " de dégâts et vous étourdis pendant 1 tour. Le boeuf vous étourdit sauf si vous bloqués la totalité des dégâts.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex vache vrombissante attaque")) {
-            if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const degat = Math.floor(26 * Math.random() + 200)
+            const buff = Math.floor(21 * Math.random() + 50)
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 15) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                    .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                    .addField(":crossed_swords: Apex vache vrombissante :", ":crossed_swords: La Apex vache vrombissante beugle bruyamment pendant un moment. Elle n'attaque pas mais réduit les dégâts subits par ses alliés de " + buff + " points pour 1 tour.")
+                message.channel.send({ embed })
+            }
+            if (16 <= roll && roll <= 85) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex vache vrombissante :", ":crossed_swords: La Apex vache vrombissante piétine le sol et vous fonce dessus sans retenue. Elle vous percute violemment et vous inflige " + degat + " points de dégâts.")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                const degat = Math.floor(26 * Math.random() + 200)
-                const buff = Math.floor(21 * Math.random() + 50)
-                const roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 15) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex vache vrombissante :", ":crossed_swords: La Apex vache vrombissante beugle bruyamment pendant un moment. Elle n'attaque pas mais réduit les dégâts subits par ses alliés de " + buff + " points pour 1 tour.")
-                    message.channel.send({ embed })
-                }
-                if (16 <= roll && roll <= 85) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex vache vrombissante :", ":crossed_swords: La Apex vache vrombissante piétine le sol et vous fonce dessus sans retenue. Elle vous percute violemment et vous inflige " + degat + " points de dégâts.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (86 <= roll) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":crossed_swords: Apex vache vrombissante:", ":crossed_swords: La Apex vache vrombissante vient se placer devant le(s) boeuf(s) vrombissant(s) et subira toutes les attaques dirigées vers lui(eux) à sa(leur) place pendant un tour et se heal de 500HP.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+            }
+            if (86 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Apex vache vrombissante:", ":crossed_swords: La Apex vache vrombissante vient se placer devant le(s) boeuf(s) vrombissant(s) et subira toutes les attaques dirigées vers lui(eux) à sa(leur) place pendant un tour et se heal de 500HP.")
+                    .setTimestamp()
+                message.channel.send({ embed })
             }
         }
+    }
 });
 
 // Labyrinthe Palier 2 | Monstres | Défenses
