@@ -43602,16 +43602,199 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const choixSalle = Math.floor(100 * Math.random() + 1)
+            //const choixSalle = Math.floor(100 * Math.random() + 1)
+            const choixSalle = 5;
             if (choixSalle <= 20) {
-                const embed = "-20"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous.```\n\n`Pour continuer, le guide devra faire la commande [=Chemin 5]`"
                 message.channel.send(embed)
             }
-            if (choixSalle > 20 && choixSalle <= 60) {
-                const embed = "20 60"
-                message.channel.send(embed)
+            if (choixSalle > 20 && choixSalle <= 70) {
+                let joueurs = 5;
+                let test = 0;
+                let lombricIrregulier = 0;
+                let testLombric = false
+                let paplliAssit = 1;
+                let testNeo = false
+                let bousierColossal = 0;
+                let testBousier = false
+                let snakeSneaky = 0;
+                let testVenom = false
+                let doryphoreGeant = 0;
+                let testDory = false
+                let bourdonFlaneur = 0;
+                let testBourdon = false
+                let taurusChargeur = 0;
+                let testChargeur = false
+                let fortTaurus = 0;
+                let testFTA = false
+                let taurusLourd = 0;
+                let testLourd = false
+                let guepeVivace = 0;
+                let testGuepe = false
+                let frelonFoudroyant = 0;
+                let testFrelon = false
+                let boeufVrombissant = 0;
+                let testBoeuf = false
+                let vacheVrombissante = 0;
+                let testVache = false
+                let roll = 0;
+                do {
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 55) {
+                        test = test + 2 + lombricIrregulier;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            lombricIrregulier = lombricIrregulier + 1;
+                            testLombric = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 50) {
+                        test = test + 2 + paplliAssit;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            paplliAssit = paplliAssit + 1;
+                            testNeo = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 55) {
+                        test = test + 2 + bousierColossal;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            bousierColossal = bousierColossal + 1;
+                            testBousier = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 40) {
+                        test = test + 4 + snakeSneaky;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            snakeSneaky = snakeSneaky + 1;
+                            testVenom = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 40) {
+                        test = test + 4 + (2 * doryphoreGeant);
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            doryphoreGeant = doryphoreGeant + 1;
+                            testDory = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 70) {
+                        test = test + 2 + bourdonFlaneur;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            bourdonFlaneur = bourdonFlaneur + 1;
+                            testBourdon = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 70) {
+                        test = test + 4 + taurusChargeur;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            taurusChargeur = taurusChargeur + 1;
+                            testChargeur = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 40) {
+                        test = test + 3 + fortTaurus;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            fortTaurus = fortTaurus + 1;
+                            testFTA = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 30) {
+                        test = test + 3 + (2 * taurusLourd);
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            taurusLourd = taurusLourd + 1;
+                            testLourd = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 60) {
+                        test = test + 2 + guepeVivace;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            guepeVivace = guepeVivace + 2;
+                            testGuepe = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 50) {
+                        test = test + 2 + frelonFoudroyant;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            frelonFoudroyant = frelonFoudroyant + 1;
+                            testFrelon = true;
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 50) {
+                        test = test + 3 + boeufVrombissant;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            boeufVrombissant = boeufVrombissant + 1;
+                            testBoeuf = true;
+                            if (vacheVrombissante == 0) {
+                                vacheVrombissante = vacheVrombissante + 1;
+                                testVache = true;
+                                test = test + 3 + vacheVrombissante;
+                            }
+                        } else break;
+                    }
+                    roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= 50) {
+                        test = test + 3 + vacheVrombissante;
+                        if (test <= (6 + 7 * (joueurs - 1))) {
+                            vacheVrombissante = vacheVrombissante + 1;
+                            testVache = true;
+                            if (boeufVrombissant == 0) {
+                                boeufVrombissant = boeufVrombissant + 1;
+                                testBoeuf = true;
+                                test = test + 3 + boeufVrombissant;
+                            }
+                        } else break;
+                    }
+                } while (test <= (6 + 7 * (joueurs - 1)));
+                if(testLombric){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                }
+                if(testNeo){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 10 HP : " + paplliAssit);
+                }
+                if(testBousier){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3950 HP : " + bousierColossal);
+                }
+                if(testVenom){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 4050 HP : " + snakeSneaky);
+                }
+                if(testDory){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 4250 HP & 100 Def : " + doryphoreGeant);
+                }
+                if(testBourdon){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3700 HP : " + bourdonFlaneur);
+                }
+                if(testChargeur){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 4250 HP : " + taurusChargeur);
+                }
+                if(testFTA){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 4350 HP : " + fortTaurus);
+                }
+                if(testLourd){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 5550 HP : " + taurusLourd);
+                }
+                if(testGuepe){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3225 HP : " + guepeVivace);
+                }
+                if(testFrelon){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3550 HP : " + frelonFoudroyant);
+                }
+                if(testBoeuf){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 6250 HP : " + boeufVrombissant);
+                }
+                if(testVache){
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 5750 HP : " + vacheVrombissante);
+                }
             }
-            if (choixSalle > 60 && choixSalle <= 80) {
+            if (choixSalle > 70 && choixSalle <= 80) {
                 const embed = "60 80"
                 message.channel.send(embed)
             }
@@ -43885,7 +44068,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setTitle(":japanese_ogre: Apex guêpe vivace :", ":japanese_ogre: Un guêpe qui n'est trouvable que dans la vallée du palier 2 !")
                 .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214914/350-1.png")
-                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 225\n:warning: **__Si vous êtes protégés contre le poison, l'attaque normal de la guèpe vivace inflige uniquement des dégat perce armure__** ")
+                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3225\n:warning: **__Si vous êtes protégés contre le poison, l'attaque normal de la guèpe vivace inflige uniquement des dégat perce armure__** ")
                 .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex guêpe vivace attaque`")
                 .addField(":shield: Lorsque l'Apex guêpe vivace reçoit un coup :", ":shield: `=Apex guêpe vivace défense : [Points de dégâts de votre coup]`")
                 .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex guêpe vivace récompenses : [Votre niveau]`")
@@ -43912,7 +44095,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setTitle(":japanese_ogre: Apex frelon foudroyant :", ":japanese_ogre: Un frelon qui n'est trouvable que dans la vallée du palier 2 !")
                 .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214920/73.jpg")
-                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 550")
+                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3550")
                 .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex frelon foudroyant attaque`")
                 .addField(":shield: Lorsque l'Apex frelon foudroyant reçoit un coup :", ":shield: `=Apex frelon foudroyant défense : [Points de dégâts de votre coup]`")
                 .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex frelon foudroyant récompenses : [Votre niveau]`")
@@ -43939,7 +44122,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setTitle(":japanese_ogre: Apex boeuf vrombissant :", ":japanese_ogre: Un boeuf qui n'est trouvable que dans la vallée du palier 2 !")
                 .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609766017589051392/Taurus-Pic-Drawing.png")
-                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3250 \n:warning: **__Si une Apex vache vrombissante meurt, l'Apex boeuf vrombissant gagne 40 points d'armure pendant 3 tours. Non additif__**")
+                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 6250 \n:warning: **__Si une Apex vache vrombissante meurt, l'Apex boeuf vrombissant gagne 40 points d'armure pendant 3 tours. Non additif__**")
                 .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex boeuf vrombissant attaque`")
                 .addField(":shield: Lorsque l'Apex boeuf vrombissant reçoit un coup :", ":shield: `=Apex boeuf vrombissant défense : [Points de dégâts de votre coup]`")
                 .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex boeuf vrombissant récompenses : [Votre niveau]`")
@@ -43966,7 +44149,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setTitle(":japanese_ogre: Apex vache vrombissante :", ":japanese_ogre: Une vache qui n'est trouvable que dans la vallée du palier 2 !")
                 .setImage("https://previews.123rf.com/images/vladischern/vladischern1312/vladischern131200001/24184438-vache-main-vecteur-llustration-croquis-tir%C3%A9-r%C3%A9aliste.jpg")
-                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2750 \n:warning: **__Si un boeuf meurt dans le combat, la vache gagne 80 points de dégâts pendant 3 tours. Non additif___** ")
+                .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5750 \n:warning: **__Si un boeuf meurt dans le combat, la vache gagne 80 points de dégâts pendant 3 tours. Non additif___** ")
                 .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Apex vache vrombissante attaque`")
                 .addField(":shield: Lorsque l'Apex vache vrombissante reçoit un coup :", ":shield: `=Apex vache vrombissante défense : [Points de dégâts de votre coup]`")
                 .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Apex vache vrombissante récompenses : [Votre niveau]`")
