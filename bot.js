@@ -48750,6 +48750,24 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
+    if (message.content === (prefix) + "Chemin 19") {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = "```Vous continuez d'avancer, l'air et la brûme sont de plus en plus pesant tout autour de vous. Après plusieurs minutes se dresse, devant vous, une immense arche faite de plante surplombe ce qui semble être la sortie de ce labyrinthe. Une fois que vous franchissez l'arche, le brouillard se lêve et, devant vous, se dresse l'immense porte du la salle du boss où, sur cette immense porte, sont gravés deux taurus énormes.`"
+            message.channel.send(embed)
+        }
+    }
+})
+
+bot.on('message', message => {
     if (message.content === (prefix) + "Coffre protégé par des monstres") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
             const embed = new Discord.RichEmbed()
@@ -48807,7 +48825,7 @@ bot.on('message', message => {
                 const embed = new Discord.RichEmbed()
                     .setColor(3447003)
                     .setAuthor(message.author.username, message.author.avatarURL)
-                    .addField("Vous ouvrez le coffre et ... IL VOUS EXPLOSE A LA FIGURE !!", "Toutes les personnes présentes perdent " + boom + " HP !")
+                    .addField("Vous ouvrez le coffre et ... IL VOUS EXPLOSE A LA FIGURE !!", "Toutes les personnes présentes perdent " + boom + " HP (l'armure ne réduit pas les dégâts) !")
                     .setImage("https://i.pinimg.com/originals/9d/58/37/9d5837c6f0cb8b18be6ddd1e2742472a.gif")
                     .setTimestamp()
                 message.channel.send({ embed })
@@ -48837,24 +48855,6 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-        }
-    }
-})
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Chemin 19") {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
-                .setTimestamp()
-            message.channel.send({ embed })
-        } else {
-            const embed = "```Vous continuez d'avancer, l'air et la brûme sont de plus en plus pesant tout autour de vous. Après plusieurs minutes se dresse, devant vous, une immense arche faite de plante surplombe ce qui semble être la sortie de ce labyrinthe. Une fois que vous franchissez l'arche, le brouillard se lêve et, devant vous, se dresse l'immense porte du la salle du boss où, sur cette immense porte, sont gravés deux taurus énormes.`"
-            message.channel.send(embed)
         }
     }
 })
