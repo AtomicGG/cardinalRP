@@ -34828,6 +34828,29 @@ bot.off('message', message => {
     }
 });
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Antispoil")) {
+        if (message.channel.id == 566021680120725518) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Test", "Réussi")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Météo
 
 bot.on('message', message => {
@@ -44009,11 +44032,11 @@ bot.on('message', message => {
         } else {
             const choixSalle = Math.floor(100 * Math.random() + 1)
             if (choixSalle <= 20) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Au bout d'un moment, vous arrivez à une nouvelle intersection : à gauche ou à droite.```\n\n`Vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 6]\nPour aller à droite, le guide devra faire la commande [=Chemin 7]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Au bout d'un moment, vous arrivez à une nouvelle intersection : à gauche ou à droite.```\n\n`Vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 6]\nPour aller à droite, le guide devra faire la commande [=Chemin 7]`"
                 message.channel.send(embed)
             }
             if (choixSalle > 20 && choixSalle <= 70) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin continue soit à gauche, soit à droite.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin continue soit à gauche, soit à droite.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 5;
                 let test = 0;
@@ -44203,7 +44226,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 70 && choixSalle <= 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin continue soit à gauche, soit à droite.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin continue soit à gauche, soit à droite.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 6;
                 let test = 0;
@@ -44393,7 +44416,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue soit à gauche, soit à droite.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 6]\nPour aller à droite, le guide devra faire la commande [=Chemin 7]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue soit à gauche, soit à droite.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 6]\nPour aller à droite, le guide devra faire la commande [=Chemin 7]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
                 message.channel.send(embed)
             }
         }
@@ -45224,11 +45247,11 @@ bot.on('message', message => {
         } else {
             const choixSalle = Math.floor(100 * Math.random() + 1)
             if (choixSalle <= 20) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Au bout du chemin, vous devez bifurquer à droite.```\n\n`Vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 10]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Au bout du chemin, vous devez bifurquer à droite.```\n\n`Vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 10]`"
                 message.channel.send(embed)
             }
             if (choixSalle > 20 && choixSalle <= 70) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin bifurque à droite.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin bifurque à droite.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 5;
                 let test = 0;
@@ -45418,7 +45441,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 70 && choixSalle <= 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin bifurque à droite.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin bifurque à droite.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 6;
                 let test = 0;
@@ -45608,7 +45631,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin bifurque à droite.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 10]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin bifurque à droite.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 10]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
                 message.channel.send(embed)
             }
         }
@@ -46070,11 +46093,11 @@ bot.on('message', message => {
         } else {
             const choixSalle = Math.floor(100 * Math.random() + 1)
             if (choixSalle <= 20) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Au bout d'un moment, vous arrivez à une intersection. 2 chemins s'offrent à vous : à gauche ou à droite.```\n\n`Vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller à droite, le guide devra faire la commande [=Chemin 14]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Au bout d'un moment, vous arrivez à une intersection. 2 chemins s'offrent à vous : à gauche ou à droite.```\n\n`Vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller à droite, le guide devra faire la commande [=Chemin 14]`"
                 message.channel.send(embed)
             }
             if (choixSalle > 20 && choixSalle <= 70) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin se sépare en deux : à gauche ou à droite.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin se sépare en deux : à gauche ou à droite.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 5;
                 let test = 0;
@@ -46264,7 +46287,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 70 && choixSalle <= 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin se sépare en deux : à gauche ou à droite.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin se sépare en deux : à gauche ou à droite.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 6;
                 let test = 0;
@@ -46454,7 +46477,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin se sépare en deux : à gauche ou à droite.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller à droite, le guide devra faire la commande [=Chemin 14]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin se sépare en deux : à gauche ou à droite.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller à droite, le guide devra faire la commande [=Chemin 14]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
                 message.channel.send(embed)
             }
         }
@@ -47690,11 +47713,11 @@ bot.on('message', message => {
         } else {
             const choixSalle = Math.floor(100 * Math.random() + 1)
             if (choixSalle <= 20) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Au bout d'un moment, le chemin bifurque à gauche.```\n\n`Vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 17]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Au bout d'un moment, le chemin bifurque à gauche.```\n\n`Vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 17]`"
                 message.channel.send(embed)
             }
             if (choixSalle > 20 && choixSalle <= 70) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin bifurque à gauche.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin bifurque à gauche.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 5;
                 let test = 0;
@@ -47884,7 +47907,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 70 && choixSalle <= 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin bifurque à gauche.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin bifurque à gauche.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 6;
                 let test = 0;
@@ -48074,7 +48097,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue vers la gauche.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 17]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue vers la gauche.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 17]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
                 message.channel.send(embed)
             }
         }
@@ -48131,11 +48154,11 @@ bot.on('message', message => {
         } else {
             const choixSalle = Math.floor(100 * Math.random() + 1)
             if (choixSalle <= 20) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Au bout d'un moment, le chemin continue tout droit.```\n\n`Vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 18]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Au bout d'un moment, le chemin continue tout droit.```\n\n`Vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 18]`"
                 message.channel.send(embed)
             }
             if (choixSalle > 20 && choixSalle <= 70) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin continue tout droit.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Derrière les monstres, vous voyez que le chemin continue tout droit.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 5;
                 let test = 0;
@@ -48325,7 +48348,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 70 && choixSalle <= 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin continue tout droit.``` `\n`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin continue tout droit.``` `\n`"
                 message.channel.send(embed)
                 let joueurs = 6;
                 let test = 0;
@@ -48515,7 +48538,7 @@ bot.on('message', message => {
                 message.channel.send(embed2)
             }
             if (choixSalle > 80) {
-                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue tout droit.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 18]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
+                const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgit de la brûme, un gros coffre. Derrière le coffre, vous voyez que le chemin continue tout droit.```\n\n`Vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 18]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre du labyrinthe]`"
                 message.channel.send(embed)
             }
         }
@@ -48534,7 +48557,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin continue tout droit.``` `\n`"
+            const embed = "```Vous marchez encore quelques temps, rien à l'horizon, seul le bruit de vos pas résonne autour de vous. Plus vous avancez, plus vous sentez votre sentiment d'insécurité s'amplifier. Le passage s'élargit peu à peu et, surgissent de la brûme, les monstres qui suiveront. Dans un coin de la salle, vous apercevez un gros coffre. Derrière les monstres, vous voyez que le chemin continue tout droit.``` `\n`"
             message.channel.send(embed)
             let joueurs = 7;
             let test = 0;
@@ -50724,29 +50747,6 @@ bot.on('message', message => {
                 .setColor(3447003)
                 .addField("Récompenses du Asterius battu 1000 XP 10 000 cols.", "Bonus du last hit vous recevez le légendaire...https://www.youtube.com/watch?v=0EVrOapzDvg")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Testtt")) {
-        if (message.channel.id == 566021680120725518) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("Test", "Réussi")
-                .setTimestamp()
-            message.channel.send({ embed })
-        } else {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField("On a essayé de tricher ?", "PAS BIEN !!!!!!")
-                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/643995114129063936/Tire_la_langue.gif")
                 .setTimestamp()
             message.channel.send({ embed })
         }
