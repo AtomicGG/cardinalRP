@@ -49251,7 +49251,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":crossed_swords: Apex lombric irrégulier :", ":crossed_swords: L'Apex lombric irrégulier s'enfouit sous terre et devient intouchable. Il ressortira a la fin du tour joueur et infligera " + degatcrit + " points de dégâts. Pendant ce délai, il n'est pas ciblable.")
+                    .addField(":crossed_swords: Apex lombric irrégulier :", ":crossed_swords: L'Apex lombric irrégulier vous attaque avant de s'enfouit sous terre et devient intouchable, il inflige " + degat + " points de dégâts a un joueur et visera le même a sa sorti. Il ressortira a la fin du tour joueur et infligera " + degatcrit + " points de dégâts. Pendant ce délai, il n'est pas ciblable.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -49288,7 +49288,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre rouge, tout les monstres présents ont " + degat + " points de dégâts en plus pour 1 tour. Le buff est additif. Si L'Apex lombric irrégulier s'enfouit sous terre au tour d'après ou si il est déjà sous terre, il n'est pas ou plus affecté.")
+                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre rouge, tout les monstres présents ont " + degat + " points de dégâts en plus pour 1 tour et inflige 30 points de dégats a tous le monde, [Aucune défense possible, si vous avez fait voile sombre, vous êtes désormais visible]. Le buff est additif. Si L'Apex lombric irrégulier s'enfouit sous terre au tour d'après ou si il est déjà sous terre, il n'est pas ou plus affecté.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -49297,7 +49297,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre verte, tout les monstres présents sont soignés de " + soin + " points de vie.")
+                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre verte, tout les monstres présents sont soignés de " + soin + " points de vie et inflige 30 points de dégats a tous le monde, [Aucune défense possible, si vous avez fait voile sombre, vous êtes désormais visible].")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -49329,7 +49329,7 @@ bot.on('message', message => {
             const degat = Math.floor(36 * Math.random() + 165)
             const degatCrit = Math.floor(36 * Math.random() + 175)
             const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
+            if (roll <= 15) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -49337,7 +49337,7 @@ bot.on('message', message => {
                     .addField(":crossed_swords: Apex Bousier colossal :", ":crossed_swords: L'Apex Bousier colossal fait rouler son immmense pierre vers vous mais dans sa précipitation, il en perd le contrôle et la pierre lui échappe, il tombe ensuite sur le coté, complétement à découvert. L'Apex Bousier colossal récuperera une autre pierre au prochain tour et est donc paralyser et ne pourra ni attaquer ni se défendre pendant 1 tour. Vous avez de la chance !")
                 message.channel.send({ embed })
             }
-            if (31 <= roll && roll <= 90) {
+            if (16 <= roll && roll <= 90) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
