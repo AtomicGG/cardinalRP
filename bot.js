@@ -50715,17 +50715,26 @@ bot.on('message', message => {
             let Dégâts = args.slice(2).join(" : ");
             const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.2))
             const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 100) {
+            if (roll <= 30) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
                     .addField(":shield: Asterius :", ":shield: Asterius de sa giganteste taille ne peut ni esquivern, ni bloquer, ni parade et vous l'attaquez bien dans ses jambes, vous lui infligez " + defense + " points de dégâts")
                 message.channel.send({ embed })
-            }
-        }
-    }
-});
+              }
+              if (31 <= roll) {
+                  const embed = new Discord.RichEmbed()
+                      .setAuthor(message.author.username, message.author.avatarURL)
+                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                      .setColor(3447003)
+                      .addField(":shield: Le général taurus :", ":shield: A venir Bllblb.")
+                      .setTimestamp()
+                  message.channel.send({ embed })
+              }
+          }
+      }
+  });
 
 // Salle du boss | Monstres | Récompenses
 
