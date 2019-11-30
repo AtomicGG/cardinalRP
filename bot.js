@@ -50792,3 +50792,94 @@ bot.on('message', message => {
         }
     }
 });
+
+// Noël 2019 | Plaine
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Pingouin pas gentil attaque")) {
+        const degat = Math.floor(7 * Math.random() + 8)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 60) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Pingouin pas gentil :", ":crossed_swords: Le pingouin pas gentil court vers vous mais tombe et glisse. Il rate son attaque.")
+            message.channel.send({ embed })
+        }
+        if (61 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Pingouin pas gentil :", ":crossed_swords: Le pingouin pas gentil court vers vous et vous attaque à coup de bec ! Il vous inflige " + degat + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Pingouin pas gentil:", ":crossed_swords: Le pingouin pas gentil réalise une boule de neige et la lance vers vous. Si vous vous faites toucher, vous êtes gélé pendant un tour. (Vous ne pouvez qu'esquiver).")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Pingouin pas gentil défense")) {
+        let degat = args.slice(3).join(" : ");
+        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Pingouin pas gentil :", ":shield: Le pingouin pas gentil essaye d'esquiver votre attaque mais avec sa démarche de clown, vous le touchez aisément. Vous lui infligez " + degatSubis + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (81 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Pingouin pas gentil :", ":shield: Le pingouin pas gentil esquive votre attaque malgré sa démarche de clown. Il ne subit aucun dommage.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Pingouin pas gentil récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        let flocon = Math.floor(9 * Math.random() + 6)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Noël 2019 | Forêt
+
+// Noël 2019 | Montagne
+
+// Noël 2019 | Grotte
+
+// Noël 2019 | Forêt dense
+
+// Noël 2019 | Clairière
+
+// Noël 2019 | Vallée
