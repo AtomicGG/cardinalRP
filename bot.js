@@ -43589,7 +43589,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const embed = "```Devant vous, une immense arche faite de plante surplombe l'entrée de ce lieu empli de mystères pour le moment. A partir de l'entrée, un brouillard suréaliste est présent, ne vous permettant pas de voir plus loin que de quelques mêtres. Un étrange sentiment d'insécurité vous englobe si vous décidez de franchir cette arche. Le chemin continue tout droit aussi loin que vous pouvez voir.```\n\n`Seules 8 personnes peuvent rentrer à la fois, lorsque vous rentrez, le guide devra faire la commande [=Chemin 1]`"
+            const embed = "```Devant vous, une immense arche faite de plante surplombe l'entrée de ce lieu empli de mystères pour le moment. A partir de l'entrée, un brouillard suréaliste est présent, ne vous permettant pas de voir plus loin que de quelques mètres. Un étrange sentiment d'insécurité vous englobe si vous décidez de franchir cette arche. Le chemin continue tout droit aussi loin que vous pouvez voir.```\n\n`Seules 8 personnes peuvent rentrer à la fois, lorsque vous rentrez, le guide devra faire la commande [=Chemin 1]`"
             message.channel.send(embed)
         }
     }
@@ -50551,9 +50551,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         } else {
             const A = (Math.floor((31) * Math.random() + 420))
-            const B = (Math.floor((100) * Math.random() + 1))
+            const roll = (Math.floor((100) * Math.random() + 1))
             const C = (Math.floor((41) * Math.random() + 385))
-            if (B <= 30) {
+            const rocher = Math.floor(3 * Math.random() + 3)
+            const degatRocher = Math.floor(51 * Math.random() + 300)
+            if (roll <= 30) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50561,7 +50563,7 @@ bot.on('message', message => {
                     .addField(":crossed_swords: Asterius :", ":crossed_swords: Asterius crie de rage et serre bien son poing et vous donne un coup sec et direct en infligeant " + C + " de dégâts.")
                 message.channel.send({ embed })
             }
-            if (31 <= B & B <= 60) {
+            if (31 <= roll && roll <= 50) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50570,7 +50572,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (61 <= B & B <= 90) {
+            if (51 <= roll && roll <= 70) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50579,12 +50581,21 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (91 <= B) {
+            if (71 <= roll && roll <= 90) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":crossed_swords: Asterius :", ":crossed_swords: Les yeux d'Asterius brillent, le roi taurus se penche en arrière, aspirant de l'air et sa poitrine massive se gonfle comme un tonneau avec de petites étincelles qui sortent de ses narines. Au prochain tour faite =DIE Je veux dire =Asterius spécial sauf si vous l'empêchez de faire le coup...")
+                    .addField(":crossed_swords: Asterius :", ":crossed_swords: Astérius lance sur vous " + rocher + " rochers infligeant " + degatRocher + " dégâts. Vous ne pouvez qu'esquiver ou utiliser la technique Crescent Moon.\n\nSi vous utilisez la technique spéciale, faites un `=Roll : 15`.\nInférieur ou égal à 50, vous ratez. Entre 51 et 80 compris, vous repoussez simplement le rocher. Entre 81 et 100 compris, vous renvoyez le rocher sur Astérius.\n\nCeux qui font la technique ont l'avantage avec le Ciblage des rochers, mais s'il en reste plus qu'une, faites le ciblage et seulement l'esquive sera possible.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (91 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Asterius :", ":crossed_swords: Les yeux d'Asterius brillent, le roi taurus se penche en arrière, aspirant de l'air et sa poitrine massive se gonfle comme un tonneau avec de petites étincelles qui sortent de ses narines. Au prochain tour, faites =Asterius spécial au lieu de l'attaque normale et ne se défend pas se tour ci.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
@@ -50715,26 +50726,46 @@ bot.on('message', message => {
             let Dégâts = args.slice(2).join(" : ");
             const defense = Math.floor(((Dégâts * 1) + 1) * Math.random() + (Dégâts * 1.2))
             const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
+            const parade = Math.floor(41 * Math.random() + 380)
+            const paradePerce = Math.floor(21 * Math.random() + 190)
+            if (roll <= 40) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":shield: Asterius :", ":shield: Asterius de sa giganteste taille ne peut ni esquivern, ni bloquer, ni parade et vous l'attaquez bien dans ses jambes, vous lui infligez " + defense + " points de dégâts")
+                    .addField(":shield: Asterius :", ":shield: Asterius de sa giganteste taille ne peut ni esquiver, ni bloquer, ni parade et vous l'attaquez bien dans ses jambes, vous lui infligez " + defense + " points de dégâts")
                 message.channel.send({ embed })
-              }
-              if (31 <= roll) {
-                  const embed = new Discord.RichEmbed()
-                      .setAuthor(message.author.username, message.author.avatarURL)
-                      .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                      .setColor(3447003)
-                      .addField(":shield: Le général taurus :", ":shield: A venir Bllblb.")
-                      .setTimestamp()
-                  message.channel.send({ embed })
-              }
-          }
-      }
-  });
+            }
+            if (41 <= roll && roll >= 60) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":shield: Asterius :", ":shield: Asterius vous voit venir mais sa grande taille le rend trop lent. Vous lui infligez " + defense + " points de dégâts. Cependant, il a le temps de vous attaquer en retour, vous infligeant " + parade + "dégâts. Un joueur proche de vous peut faire une défense pour vous sauver. (Soit proche via une explication RP antérieure ou via le tableau)")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (61 <= roll && roll >= 80) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":shield: Asterius :", ":shield: Asterius vous voit venir mais sa grande taille le rend trop lent. Vous lui infligez " + defense + " points de dégâts. Cependant, il a le temps de vous attaquer en retour en visant un point précis de votre armure, vous infligeant " + paradePerce + "dégâts de perce armure. Un joueur proche de vous peut faire une défense pour vous sauver. (Soit proche via une explication RP antérieure ou via le tableau)")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (81 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":shield: Asterius :", ":shield: Asterius prend une pose spéciale, bloquant tout vos dégâts. Il va ensuite contre attaquer directement sur vous.\n\nFaites `=Asterius attaque`")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
 
 // Salle du boss | Monstres | Récompenses
 
