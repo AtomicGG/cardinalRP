@@ -50832,7 +50832,7 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Pingouin pas gentil défense")) {
-        let degat = args.slice(3).join(" : ");
+        let degat = args.slice(4).join(" : ");
         const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 80) {
