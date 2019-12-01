@@ -50799,7 +50799,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Pingouin pas gentil attaque")) {
         const degat = Math.floor(7 * Math.random() + 8)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 60) {
+        if (roll <= 50) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50807,7 +50807,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Pingouin pas gentil :", ":crossed_swords: Le pingouin pas gentil court vers vous mais tombe et glisse. Il rate son attaque.")
             message.channel.send({ embed })
         }
-        if (61 <= roll && roll <= 90) {
+        if (51 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50833,9 +50833,9 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Pingouin pas gentil défense")) {
         let degat = args.slice(4).join(" : ");
-        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const degatSubis = Math.floor(((degat * 1.1) + 1) * Math.random() + (degat * 0.8))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 80) {
+        if (roll <= 70) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50843,7 +50843,7 @@ bot.on('message', message => {
                 .addField(":shield: Pingouin pas gentil :", ":shield: Le pingouin pas gentil essaye d'esquiver votre attaque mais avec sa démarche de clown, vous le touchez aisément. Vous lui infligez " + degatSubis + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (81 <= roll) {
+        if (71 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50874,12 +50874,467 @@ bot.on('message', message => {
 
 // Noël 2019 | Forêt
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Slime guerrier attaque")) {
+        const degat = Math.floor(7 * Math.random() + 8)
+        const degatSpecial = Math.floor(16 * Math.random() + 5)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Slime guerrier :", ":crossed_swords:")
+            message.channel.send({ embed })
+        }
+        if (51 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Slime guerrier :", ":crossed_swords:")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Slime guerrier:", ":crossed_swords: Le slime guerrier coince un joueur avec lui dans sa carapace pendant 3 tours. Le joueur ne pourra plus attaquer et perdra " + degatSpecial + "à tout les tours. Si vous esquivez, le slime guerrier perd sa carapace (et donc son armure).")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Slime guerrier défense")) {
+        let degat = args.slice(3).join(" : ");
+        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":shield: Slime guerrier :", ":shield: Le slime bloque votre coup, il subit " + degatSubis + " points de dégâts.")
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Slime guerrier récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        let flocon = Math.floor(9 * Math.random() + 6)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Noël 2019 | Montagne
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ours polaire attaque")) {
+        const degat = Math.floor(9 * Math.random() + 52)
+        const degatSpecial = Math.floor(9 * Math.random() + 54)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Ours polaire :", ":crossed_swords: L'ours polaire fonce vers vous mais à cause de sa masse imposante, vous esquivez facilement le coup.")
+            message.channel.send({ embed })
+        }
+        if (51 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Ours polaire :", ":crossed_swords: L'ours polaire fonce vers vous et vous donne un violent coup de griffe infligeant " + degat + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Ours polaire:", ":crossed_swords: L'ours polaire fonce vers vous et vous percute. Il vous inflige " + degatSpecial + " points de dégâts et vous rend confus pendant un tour.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Ours polaire défense")) {
+        let degat = args.slice(3).join(" : ");
+        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Ours polaire :", ":shield: Malgré sa grande masse, l'ours polaire esquive votre coup.")
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Ours polaire :", ":shield: A cause de sa grande masse, vous arrivez à toucher l'ours polaire, lui infligeant " + degatSubis + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Ours polaire récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        let flocon = Math.floor(9 * Math.random() + 6)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 // Noël 2019 | Grotte
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Yeti attaque")) {
+        const degat = Math.floor(15 * Math.random() + 76)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Yeti :", ":crossed_swords: Le yeti vous attaque mais vous avez le temps de voir venir son attaque à cause de son importante masse. Il rate son attaque.")
+            message.channel.send({ embed })
+        }
+        if (51 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Yeti :", ":crossed_swords: Le yeti vous attaque et vous donne une grosse mandale ! Il vous inflige " + degat + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Yeti:", ":crossed_swords: Le yeti se croit au Rudby et vous plaque au sol pendant un tour. De plus si vous raté critiquement votre esquive ou votre blocage, vous êtes gelé un tour de plus.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Yeti défense")) {
+        let degat = args.slice(2).join(" : ");
+        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const parade = Math.floor(16 * Math.random() + 25)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Yeti :", ":shield: Le yeti essaye d'esquiver votre attaque mais à cause de sa magge, vous le touchez aisément. Vous lui infligez " + degatSubis + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Yeti :", ":shield: Le yeti vous voit venir et pare votre coup, vous envoyant au loin avec un puissant crochet du droit ! Il vous inflige " + parade + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Yeti récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        let flocon = Math.floor(9 * Math.random() + 6)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Noël 2019 | Forêt dense
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Rudolf sauvage attaque")) {
+        const degat = Math.floor(31 * Math.random() + 120)
+        const degatSpecial = Math.floor(31 * Math.random() + 135)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Rudolf sauvage :", ":crossed_swords: Rudolf fonce vers vous, ses cornes en avant, mais se loupe. Il rate son attaque.")
+            message.channel.send({ embed })
+        }
+        if (51 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Rudolf sauvage :", ":crossed_swords: Rudolf fonce vers vous, ses cornes en avant, et vous percute ! Il vous inflige " + degat + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Rudolf sauvage :", ":crossed_swords: Rudolf s'envole pendant un tour entier (Il n'est plus ciblable pendant ce laps de temps) puis fonce vers un joueur à la fin du tour joueurs, infligeant " + degatSpecial + " points de dégâts et perdant 20 points d'armure pendant un tour s'il subit ne serait-ce qu'un dégât.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Rudolf sauvage défense")) {
+        let degat = args.slice(3).join(" : ");
+        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Rudolf sauvage :", ":shield: Rudolf essaye de vous esquiver mais il est trop lent pour vous. Vous lui infligez " + degatSubis + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Rudolf sauvage :", ":shield: Rudolf essaye de vous esquiver et vous vous prenez une branche d'arbre dans les gens vous faisant tomber et rater votre attaque. Il ne subit aucun dommage.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Rudolf sauvage récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        let flocon = Math.floor(9 * Math.random() + 6)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 // Noël 2019 | Clairière
 
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Grenouille hivernale attaque")) {
+        const degat = Math.floor(16 * Math.random() + 105)
+        const degatSpecial = Math.floor(11 * Math.random() + 40)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Grenouille hivernale :", ":crossed_swords: La grenouille saute et tente de vous écrabouiller mais il atterrit à côté. Il rate son attaque.")
+            message.channel.send({ embed })
+        }
+        if (51 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Grenouille hivernale :", ":crossed_swords: La grenouille saute et vous écrabouille ! Il vous inflige " + degat + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Grenouille hivernale:", ":crossed_swords: La grenouille vous avale et vous êtes emprisonné dans la grenouille pendant 3 tours, perdant " + degatSpecial + " chaque tour.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Grenouille hivernale défense")) {
+        let degat = args.slice(4).join(" : ");
+        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Grenouille hivernale :", ":shield:")
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Grenouille hivernale :", ":shield:")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Grenouille hivernale récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        let flocon = Math.floor(9 * Math.random() + 6)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Noël 2019 | Vallée
+
+bot.off('message', message => {
+    if (message.content.startsWith(prefix + "Pingouin pas gentil attaque")) {
+        const degat = Math.floor(7 * Math.random() + 8)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Pingouin pas gentil :", ":crossed_swords: Le pingouin pas gentil court vers vous mais tombe et glisse. Il rate son attaque.")
+            message.channel.send({ embed })
+        }
+        if (51 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Pingouin pas gentil :", ":crossed_swords: Le pingouin pas gentil court vers vous et vous attaque à coup de bec ! Il vous inflige " + degat + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Pingouin pas gentil:", ":crossed_swords: Le pingouin pas gentil réalise une boule de neige et la lance vers vous. Si vous vous faites toucher, vous êtes gélé pendant un tour. (Vous ne pouvez qu'esquiver).")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.off('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Pingouin pas gentil défense")) {
+        let degat = args.slice(4).join(" : ");
+        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Pingouin pas gentil :", ":shield: Le pingouin pas gentil essaye d'esquiver votre attaque mais avec sa démarche de clown, vous le touchez aisément. Vous lui infligez " + degatSubis + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Pingouin pas gentil :", ":shield: Le pingouin pas gentil esquive votre attaque malgré sa démarche de clown. Il ne subit aucun dommage.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.off('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Pingouin pas gentil récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        let flocon = Math.floor(9 * Math.random() + 6)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
