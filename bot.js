@@ -50876,10 +50876,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Slime guerrier attaque")) {
-        const degat = Math.floor(7 * Math.random() + 8)
-        const degatSpecial = Math.floor(16 * Math.random() + 5)
+        const degat = Math.floor(11 * Math.random() + 9)
+        const degatSpecial = Math.floor(6 * Math.random() + 15)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 50) {
+        if (roll <= 62) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50887,21 +50887,21 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Slime guerrier :", ":crossed_swords:")
             message.channel.send({ embed })
         }
-        if (51 <= roll && roll <= 90) {
+        if (63 <= roll && roll <= 97) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Slime guerrier :", ":crossed_swords:")
+                .addField(":crossed_swords: Slime guerrier :", ":crossed_swords: Le slime guerrier fonce vers vous et vous donne un coup de boule. Il vous inflige " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (98 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Slime guerrier:", ":crossed_swords: Le slime guerrier coince un joueur avec lui dans sa carapace pendant 3 tours. Le joueur ne pourra plus attaquer et perdra " + degatSpecial + "à tout les tours. Si vous esquivez, le slime guerrier perd sa carapace (et donc son armure).")
+                .addField(":crossed_swords: Slime guerrier:", ":crossed_swords: Le slime guerrier coince un joueur avec lui dans sa carapace pendant 3 tours. Le joueur ne pourra plus attaquer et perdra " + degatSpecial + "à tout les tours. Si vous esquivez, le slime guerrier perd sa carapace (et donc son armure).\n\nLes joueurs peuvent attaquer le slime sans blesser le joueur capturé. Si les monstres visent le joueur bloqué, ils ont une chance sur deux de toucher le slime.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -50913,13 +50913,26 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Slime guerrier défense")) {
         let degat = args.slice(3).join(" : ");
-        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":shield: Slime guerrier :", ":shield: Le slime bloque votre coup, il subit " + degatSubis + " points de dégâts.")
-        message.channel.send({ embed })
+        const blocageRate = Math.floor(((degat * 0.55) + 1) * Math.random() + (degat * 1.05))
+        const blocageReussi = Math.floor(((degat * 0.35) + 1) * Math.random() + (degat * 0.4))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 40) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Slime guerrier :", ":shield: Le slime ne réussit pas à bloquer votre coup, il subit " + blocageRate + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (41 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Slime guerrier :", ":shield: Le slime bloque votre coup, il subit " + blocageReussi + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -50947,7 +50960,7 @@ bot.on('message', message => {
         const degat = Math.floor(9 * Math.random() + 52)
         const degatSpecial = Math.floor(9 * Math.random() + 54)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 50) {
+        if (roll <= 40) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50955,7 +50968,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Ours polaire :", ":crossed_swords: L'ours polaire fonce vers vous mais à cause de sa masse imposante, vous esquivez facilement le coup.")
             message.channel.send({ embed })
         }
-        if (51 <= roll && roll <= 90) {
+        if (41 <= roll && roll <= 95) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50964,12 +50977,12 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (96 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Ours polaire:", ":crossed_swords: L'ours polaire fonce vers vous et vous percute. Il vous inflige " + degatSpecial + " points de dégâts et vous rend confus pendant un tour.")
+                .addField(":crossed_swords: Ours polaire:", ":crossed_swords: L'ours polaire fonce vers vous et vous percute. Il vous inflige " + degatSpecial + " points de dégâts et vous rend confus pendant un tour (Plus de défense, semblable à l'étourdissement).")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -50981,9 +50994,9 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Ours polaire défense")) {
         let degat = args.slice(3).join(" : ");
-        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const degatSubis = Math.floor(((degat * 0.55) + 1) * Math.random() + (degat * 1.1))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+        if (roll <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50991,7 +51004,7 @@ bot.on('message', message => {
                 .addField(":shield: Ours polaire :", ":shield: Malgré sa grande masse, l'ours polaire esquive votre coup.")
             message.channel.send({ embed })
         }
-        if (71 <= roll) {
+        if (26 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51026,7 +51039,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Yeti attaque")) {
         const degat = Math.floor(15 * Math.random() + 76)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 50) {
+        if (roll <= 35) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51034,7 +51047,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Yeti :", ":crossed_swords: Le yeti vous attaque mais vous avez le temps de voir venir son attaque à cause de son importante masse. Il rate son attaque.")
             message.channel.send({ embed })
         }
-        if (51 <= roll && roll <= 90) {
+        if (36 <= roll && roll <= 96) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51043,7 +51056,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (97 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51060,10 +51073,10 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Yeti défense")) {
         let degat = args.slice(2).join(" : ");
-        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const degatSubis = Math.floor(((degat * 0.75) + 1) * Math.random() + (degat * 1.35))
         const parade = Math.floor(16 * Math.random() + 25)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+        if (roll <= 55) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51071,7 +51084,7 @@ bot.on('message', message => {
                 .addField(":shield: Yeti :", ":shield: Le yeti essaye d'esquiver votre attaque mais à cause de sa magge, vous le touchez aisément. Vous lui infligez " + degatSubis + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (71 <= roll) {
+        if (56 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51107,7 +51120,7 @@ bot.on('message', message => {
         const degat = Math.floor(31 * Math.random() + 120)
         const degatSpecial = Math.floor(31 * Math.random() + 135)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 50) {
+        if (roll <= 65) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51115,7 +51128,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Rudolf sauvage :", ":crossed_swords: Rudolf fonce vers vous, ses cornes en avant, mais se loupe. Il rate son attaque.")
             message.channel.send({ embed })
         }
-        if (51 <= roll && roll <= 90) {
+        if (66 <= roll && roll <= 95) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51124,7 +51137,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (96 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51141,9 +51154,9 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Rudolf sauvage défense")) {
         let degat = args.slice(3).join(" : ");
-        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const degatSubis = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.2))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+        if (roll <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51151,7 +51164,7 @@ bot.on('message', message => {
                 .addField(":shield: Rudolf sauvage :", ":shield: Rudolf essaye de vous esquiver mais il est trop lent pour vous. Vous lui infligez " + degatSubis + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (71 <= roll) {
+        if (31 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51187,7 +51200,7 @@ bot.on('message', message => {
         const degat = Math.floor(16 * Math.random() + 105)
         const degatSpecial = Math.floor(11 * Math.random() + 40)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 50) {
+        if (roll <= 20) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51195,7 +51208,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Grenouille hivernale :", ":crossed_swords: La grenouille saute et tente de vous écrabouiller mais il atterrit à côté. Il rate son attaque.")
             message.channel.send({ embed })
         }
-        if (51 <= roll && roll <= 90) {
+        if (21 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -51209,7 +51222,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Grenouille hivernale:", ":crossed_swords: La grenouille vous avale et vous êtes emprisonné dans la grenouille pendant 3 tours, perdant " + degatSpecial + " chaque tour.")
+                .addField(":crossed_swords: Grenouille hivernale:", ":crossed_swords: La grenouille vous avale et vous êtes emprisonné dans la grenouille pendant 3 tours, perdant " + degatSpecial + " chaque tour.\n\nLes joueurs peuvent attaquer sans risque la grenouille si un joueur est à l'intérieur. Le joueur ne peut sortir de la grenouille avant la fin des 3 tours que si la grenouille est tuée. Si le joueur avalé est seul, les autres monstres ne font rien et les trois tours passent directement.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51221,14 +51234,15 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Grenouille hivernale défense")) {
         let degat = args.slice(4).join(" : ");
-        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const blocageRate = Math.floor(((degat * 0.55) + 1) * Math.random() + (degat * 1.1))
+        const blocageReussi = Math.floor(((degat * 0.3) + 1) * Math.random() + (degat * 0.55))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Grenouille hivernale :", ":shield:")
+                .addField(":shield: Grenouille hivernale :", ":shield: La grenouille hivernale ne réussit pas à bloquer votre coup, vous lui infligez " + blocageRate + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (71 <= roll) {
@@ -51236,7 +51250,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Grenouille hivernale :", ":shield:")
+                .addField(":shield: Grenouille hivernale :", ":shield: La grenouille hivernale bloque votre coup, vous lui infligez " + blocageReussi + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
