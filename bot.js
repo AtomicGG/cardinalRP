@@ -51441,69 +51441,83 @@ bot.on('message', message => {
 
 // Noël 2019 | Vallée
 
-bot.off('message', message => {
-    if (message.content.startsWith(prefix + "Pingouin pas gentil attaque")) {
-        const degat = Math.floor(7 * Math.random() + 8)
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Simiozard attaque")) {
+        const degat = Math.floor(36 * Math.random() + 195)
+        const degatSpecial = Math.floor(36 * Math.random() + 195)
+        const buffBoeuf = Math.floor(36 * Math.random() + 195)
+        const buffVache = Math.floor(36 * Math.random() + 195)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 50) {
+        if (roll <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Pingouin pas gentil :", ":crossed_swords: Le pingouin pas gentil court vers vous mais tombe et glisse. Il rate son attaque.")
+                .addField(":crossed_swords: Simiozard :", ":crossed_swords: Le simiozard bondit dans votre direction mais estime mal la trajectoire, atterrissant largement à côté de vous et battant en retraite pour mieux préparer son prochain assaut.")
             message.channel.send({ embed })
         }
-        if (51 <= roll && roll <= 90) {
+        if (31 <= roll && roll <= 95) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Pingouin pas gentil :", ":crossed_swords: Le pingouin pas gentil court vers vous et vous attaque à coup de bec ! Il vous inflige " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Simiozard :", ":crossed_swords: Le simiozard vous bondit sauvagement dessus en se servant de ses puissantes pattes arrières et vous assène une puissante frappe au torse à l’atterrissage, vous projetant en arrière ! Il vous inflige " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (96 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Pingouin pas gentil:", ":crossed_swords: Le pingouin pas gentil réalise une boule de neige et la lance vers vous. Si vous vous faites toucher, vous êtes gélé pendant un tour. (Vous ne pouvez qu'esquiver).")
+                .addField(":crossed_swords: Simiozard :", ":crossed_swords: Le simiozard saisit un boeuf, ou une vache s'il n'y a pas de boeuf, ou un roche s'il n'y a pas ni vache, ni boeuf, le prenant prenant de ses quatre puissants bras afin de le projeter sur vous, infligeant " + degatSpecial + " points de dégâts à vous et au monstre lancé si c'est le cas. (Parade interdite et en cas de blocage/esquive réussie, le monstre se prend quand même les dégâts)\n\nS'il s'agit d'un boeuf, le boeuf va se mettre sur ses gardes, réduisant les dégâts reçus de " + buffBoeuf + " pendant 2 tours.\nS'il s'agit d'une vache, la vache va s'affoler et devenir plus violente, augmentant ses dégâts de " + buffVache + " pendant 2 tours.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Pingouin pas gentil défense")) {
-        let degat = args.slice(4).join(" : ");
-        const degatSubis = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+    if (message.content.startsWith(prefix + "Simiozard défense")) {
+        let degat = args.slice(2).join(" : ");
+        const paradeRatee = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1.7))
+        const blocage = Math.floor(((degat * 0.35) + 1) * Math.random() + (degat * 0.4))
+        const paradeReussie = Math.floor(31 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+        if (roll <= 15) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Pingouin pas gentil :", ":shield: Le pingouin pas gentil essaye d'esquiver votre attaque mais avec sa démarche de clown, vous le touchez aisément. Vous lui infligez " + degatSubis + " points de dégâts.")
+                .addField(":shield: Simiozard :", ":shield: Vous tentez de frapper la créature mais celle-ci attrape votre ou vos bras tenant votre ou vos arme(s), puis se sert d’un autre de ses bras pour vous infliger un puissant coup à l’abdomen, vous stoppant net et vous faisant reculer. Vous subissez " + paradeReussie + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (71 <= roll) {
+        if (16 <= roll && roll <= 60) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Pingouin pas gentil :", ":shield: Le pingouin pas gentil esquive votre attaque malgré sa démarche de clown. Il ne subit aucun dommage.")
+                .addField(":shield: Simiozard :", ":crossed_swords: Le simiozard tente de vous saisir lorsque vous l’attaquez mais vous parvenez à déjouer sa tentative, le frappant alors qu’il est totalement pris au dépourvu. Vous lui infligez " + paradeRatee + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (61 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Simiozard :", ":shield: Vous voyant charger, le simiozard croise ses quatre épais membres supérieurs face à vous, réduisant considérablement les dommages qu'il aurait pu subir, ne subissant que " + blocage + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Pingouin pas gentil récompenses")) {
+    if (message.content.startsWith(prefix + "Simiozard récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         let flocon = Math.floor(9 * Math.random() + 6)
