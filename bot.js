@@ -28994,7 +28994,7 @@ bot.on('message', message => {
         let amelioration = args.slice(9, position - 1);
         let degat = args.slice(position + 2);
         if (amelioration == "") {
-            const degatSubis = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.3))
+            const degatSubis = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.1))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 60) {
                 const embed = new Discord.RichEmbed()
@@ -29018,7 +29018,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "1") {
-            const degatSubis = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.3))
+            const degatSubis = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.1))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 55) {
                 const embed = new Discord.RichEmbed()
@@ -29042,7 +29042,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "2") {
-            const degatSubis = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.3))
+            const degatSubis = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.1))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 50) {
                 const embed = new Discord.RichEmbed()
@@ -29066,7 +29066,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "3") {
-            const degatSubis = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.3))
+            const degatSubis = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.1))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 50) {
                 const embed = new Discord.RichEmbed()
@@ -29090,7 +29090,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "4") {
-            const degatSubis = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.3))
+            const degatSubis = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1.1))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 45) {
                 const embed = new Discord.RichEmbed()
@@ -29114,7 +29114,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "5") {
-            const degatSubis = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.3))
+            const degatSubis = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 1.1))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 45) {
                 const embed = new Discord.RichEmbed()
@@ -29138,7 +29138,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "6") {
-            const degatSubis = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.3))
+            const degatSubis = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 1.1))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 40) {
                 const embed = new Discord.RichEmbed()
@@ -29162,7 +29162,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "7") {
-            const degatSubis = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 1.3))
+            const degatSubis = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1.1))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 40) {
                 const embed = new Discord.RichEmbed()
@@ -29195,7 +29195,7 @@ bot.on('message', message => {
         let amelioration = args.slice(17, position - 1);
         let degat = args.slice(position + 2);
         if (amelioration == "") {
-            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 0.9))
+            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29206,7 +29206,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (amelioration == "1") {
-            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 0.9))
+            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29217,7 +29217,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (amelioration == "2") {
-            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 0.9))
+            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29228,7 +29228,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (amelioration == "3") {
-            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1))
+            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.1))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29239,7 +29239,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (amelioration == "4") {
-            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1))
+            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.1))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29250,7 +29250,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (amelioration == "5") {
-            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.1))
+            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.2))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29261,7 +29261,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (amelioration == "6") {
-            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.1))
+            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.2))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29272,7 +29272,7 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (amelioration == "7") {
-            const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 1.2))
+            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.3))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29294,9 +29294,9 @@ bot.on('message', message => {
         let amelioration = args.slice(13, position - 1);
         let degat = args.slice(position + 2);
         if (amelioration == "") {
-            const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
+            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.8))
             const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 48) {
+            if (roll <= 53) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29306,7 +29306,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (49 <= roll) {
+            if (54 <= roll) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29318,7 +29318,79 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "1") {
-            const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
+            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.8))
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 50) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (51 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (amelioration == "2") {
+            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.8))
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 47) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (48 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (amelioration == "3") {
+            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.9))
+            const roll = Math.floor(100 * Math.random() + 1)
+            if (roll <= 47) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (48 <= roll) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+        if (amelioration == "4") {
+            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.9))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 44) {
                 const embed = new Discord.RichEmbed()
@@ -29341,82 +29413,10 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
         }
-        if (amelioration == "2") {
-            const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 1.5))
-            const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 40) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-                    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (41 <= roll) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
-                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (amelioration == "3") {
-            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.6))
-            const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 40) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-                    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (41 <= roll) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
-                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (amelioration == "4") {
-            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 1.6))
-            const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
-                    .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (37 <= roll) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":crossed_swords: Coup létal :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatInflige + "` points de dégâts.")
-                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/84/Kirito_vs._Heathcliff_final_blow_BD.png/revision/latest?cb=20130202030015")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
         if (amelioration == "5") {
-            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.7))
+            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 2))
             const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 36) {
+            if (roll <= 44) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29426,7 +29426,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (37 <= roll) {
+            if (45 <= roll) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29438,9 +29438,9 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "6") {
-            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.7))
+            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 2))
             const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 32) {
+            if (roll <= 41) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29450,7 +29450,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (33 <= roll) {
+            if (42 <= roll) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29462,9 +29462,9 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "7") {
-            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.8))
+            const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 2.1))
             const roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 32) {
+            if (roll <= 38) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -29474,7 +29474,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (33 <= roll) {
+            if (39 <= roll) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33734,7 +33734,7 @@ bot.on('message', message => {
         const degats = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.5))
         const degatcrit = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 0.8))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 30) {
+        if (roll <= 15) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33744,7 +33744,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (31 <= roll && roll <= 95) {
+        if (16 <= roll && roll <= 95) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33772,8 +33772,8 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Coup déchaîné")) {
         let degat = args.slice(2).join(" : ");
-        const degats = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 1.6))
-        const degatcrit = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2))
+        const degats = Math.floor((degat * 0.5 + 1) * Math.random() + (degat * 2))
+        const degatcrit = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 2.5))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 15) {
             const embed = new Discord.RichEmbed()
@@ -34139,10 +34139,10 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Coup grandiose")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
-        const degat = Math.floor((atk * 0.5 + 1) * Math.random() + (atk * 1.7))
-        const degatCrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2.2))
+        const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2.3))
+        const degatCrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2.6))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 40) {
+        if (roll <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34152,7 +34152,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (41 <= roll && roll <= 80) {
+        if (26 <= roll && roll <= 80) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34183,7 +34183,7 @@ bot.on('message', message => {
         let position = args.indexOf(":");
         let degat = args.slice(position + 2);
         const degatEchecCrit = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1.2))
-        const degatEchec = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 0.7))
+        const degatEchec = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 5) {
             const embed = new Discord.RichEmbed()
@@ -34260,7 +34260,7 @@ bot.on('message', message => {
         const degat = Math.floor((atk * 0.5 + 1) * Math.random() + (atk * 1.4))
         const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 35) {
+        if (roll <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34270,7 +34270,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (36 <= roll && roll <= 94) {
+        if (31 <= roll && roll <= 94) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -34363,7 +34363,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup du cerisier :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "` points de dégâts et `" + degat2 + "` de points de dégâts à deux ennemis adjacents. (La position des ennemis est déterminée par leur ordre d'attaque)")
+                .addField(":crossed_swords: Coup du cerisier :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "` points de dégâts et `" + degat2 + "` de points de dégâts à deux ennemis l'un a côté de l'autres. (La position des ennemis est déterminée par leur ordre d'attaque)")
                 .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -34373,7 +34373,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup du cerisier :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit1 + "` points de dégâts et `" + degatcrit2 + "` de points de dégâts à deux ennemis adjacents. (La position des ennemis est déterminée par leur ordre d'attaque)")
+                .addField(":crossed_swords: Coup du cerisier :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit1 + "` points de dégâts et `" + degatcrit2 + "` de points de dégâts à deux ennemis l'un a côté de l'autres. (La position des ennemis est déterminée par leur ordre d'attaque)")
                 .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
                 .setTimestamp()
             message.channel.send({ embed })
