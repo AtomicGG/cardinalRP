@@ -49462,7 +49462,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre rouge, tout les monstres présents ont " + degat + " points de dégâts en plus pour 1 tour et inflige 30 points de dégats a tous le monde, [Aucune défense possible, si vous avez fait voile sombre, vous êtes désormais visible]. Le buff est additif. Si L'Apex lombric irrégulier s'enfouit sous terre au tour d'après ou si il est déjà sous terre, il n'est pas ou plus affecté.")
+                    .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et lâche une poudre rouge, tout les monstres présents ont " + degat + " points de dégâts en plus pour 1 tour et inflige 30 points de dégats de perce armure à tout le monde, [Aucune défense possible, si vous avez fait voile sombre, vous êtes désormais visible]. Le buff est additif. Si L'Apex lombric irrégulier s'enfouit sous terre au tour d'après ou si il est déjà sous terre, il n'est pas ou plus affecté.")
                     .setTimestamp()
                 message.channel.send({ embed })
             }
