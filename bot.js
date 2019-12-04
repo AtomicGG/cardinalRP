@@ -42504,8 +42504,16 @@ bot.on('message', message => {
             let vacheVrombissante = 0;
             let boeufVrombissant = 0;
             let frelonFoudroyant = 0;
+            let mobNoel = 0;
             let roll = 0;
             do {
+                roll = Math.floor(100 * Math.random() + 1)
+                if ((roll <= 10) && mobNoel != 1) {
+                    test = test + 3 + mobNoel;
+                    if (test <= (5 + 6 * (joueurs - 1))) {
+                        mobNoel = mobNoel + 1;
+                    } else break;
+                }
                 roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= 60) {
                     test = test + 2 + guepeVivace;
@@ -42548,6 +42556,7 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":mount_fuji: Vallée :", ":mount_fuji: En marchant dans la vallée, vous rencontrez les ennemis suivants :\n\n" +
+                ":crossed_swords: Simiozard | 3500HP : " + mobNoel + "\n" +
                     ":crossed_swords: Guêpe vivace | 225HP : " + guepeVivace + "\n" +
                     ":crossed_swords: Frelon foudroyant | 550HP : " + frelonFoudroyant + "\n" +
                     ":crossed_swords: Boeuf vrombissant | 3250HP : " + boeufVrombissant + "\n" +
