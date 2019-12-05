@@ -51454,8 +51454,8 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Simiozard attaque")) {
         const degat = Math.floor(36 * Math.random() + 195)
         const degatSpecial = Math.floor(36 * Math.random() + 195)
-        const buffBoeuf = Math.floor(36 * Math.random() + 195)
-        const buffVache = Math.floor(36 * Math.random() + 195)
+        const buffBoeuf = Math.floor(11 * Math.random() + 30)
+        const buffVache = Math.floor(21 * Math.random() + 60)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30) {
             const embed = new Discord.RichEmbed()
