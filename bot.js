@@ -51407,7 +51407,7 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Grenouille hivernale défense")) {
-        let degat = args.slice(4).join(" : ");
+        let degat = args.slice(3).join(" : ");
         const blocageRate = Math.floor(((degat * 0.55) + 1) * Math.random() + (degat * 1.1))
         const blocageReussi = Math.floor(((degat * 0.3) + 1) * Math.random() + (degat * 0.55))
         const roll = Math.floor(100 * Math.random() + 1)
