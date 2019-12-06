@@ -43953,43 +43953,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 5]`"
                 message.channel.send(embed2)
@@ -44143,43 +44143,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 5]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -44358,43 +44358,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 6]\nPour aller à droite, le guide devra faire la commande [=Chemin 7]`"
                 message.channel.send(embed2)
@@ -44548,43 +44548,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer, à gauche ou à droite, ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 6]\nPour aller à droite, le guide devra faire la commande [=Chemin 7]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -44763,43 +44763,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 8]`"
                 message.channel.send(embed2)
@@ -44953,43 +44953,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 8]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -45168,43 +45168,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 9]`"
                 message.channel.send(embed2)
@@ -45358,43 +45358,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 9]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -45573,43 +45573,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 10]`"
                 message.channel.send(embed2)
@@ -45763,43 +45763,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 10]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -45978,43 +45978,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 11]\nPour aller tout droit, le guide devra faire la commande [=Chemin 12]`"
                 message.channel.send(embed2)
@@ -46168,43 +46168,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 11]\nPour aller tout droit, le guide devra faire la commande [=Chemin 12]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -46419,43 +46419,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller à droite, le guide devra faire la commande [=Chemin 14]`"
                 message.channel.send(embed2)
@@ -46609,43 +46609,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour aller à gauche, le guide devra faire la commande [=Chemin 13]\nPour aller à droite, le guide devra faire la commande [=Chemin 14]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -46824,43 +46824,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière.\nPour continuer, le guide devra faire la commande [=Chemin 15]`"
                 message.channel.send(embed2)
@@ -47014,43 +47014,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 15]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -47229,43 +47229,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous devez retourner en arrière.`"
                 message.channel.send(embed2)
@@ -47419,43 +47419,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous devez retourner en arrière ou ouvrir le coffre.\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -47634,43 +47634,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 16]`"
                 message.channel.send(embed2)
@@ -47824,43 +47824,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 16]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -48039,43 +48039,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 17]`"
                 message.channel.send(embed2)
@@ -48229,43 +48229,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 17]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -48480,43 +48480,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière. Pour continuer, le guide devra faire la commande [=Chemin 18]`"
                 message.channel.send(embed2)
@@ -48670,43 +48670,43 @@ bot.on('message', message => {
                     }
                 } while (test <= (6 + 7 * (joueurs - 1)));
                 if (testLombric) {
-                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                    message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
                 }
                 if (testNeo) {
                     message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
                 }
                 if (testBousier) {
-                    message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                    message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
                 }
                 if (testVenom) {
-                    message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                    message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
                 }
                 if (testDory) {
-                    message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                    message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
                 }
                 if (testBourdon) {
-                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                    message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
                 }
                 if (testChargeur) {
-                    message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                    message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
                 }
                 if (testFTA) {
-                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                    message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
                 }
                 if (testLourd) {
-                    message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                    message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
                 }
                 if (testGuepe) {
-                    message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                    message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
                 }
                 if (testFrelon) {
-                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                    message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
                 }
                 if (testBoeuf) {
-                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                    message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
                 }
                 if (testVache) {
-                    message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                    message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
                 }
                 const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 18]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
                 message.channel.send(embed2)
@@ -48879,43 +48879,43 @@ bot.on('message', message => {
                 }
             } while (test <= (6 + 7 * (joueurs - 1)));
             if (testLombric) {
-                message.channel.send(":crossed_swords: Apex lombric irrégulier | 3880 HP : " + lombricIrregulier);
+                message.channel.send(":crossed_swords: Apex lombric irrégulier | 1880 HP : " + lombricIrregulier);
             }
             if (testNeo) {
                 message.channel.send(":crossed_swords: Apex neoridas | 10 HP : " + paplliAssit);
             }
             if (testBousier) {
-                message.channel.send(":crossed_swords: Apex bousier colossal | 3950 HP : " + bousierColossal);
+                message.channel.send(":crossed_swords: Apex bousier colossal | 1950 HP : " + bousierColossal);
             }
             if (testVenom) {
-                message.channel.send(":crossed_swords: Apex venom | 4050 HP : " + snakeSneaky);
+                message.channel.send(":crossed_swords: Apex venom | 2050 HP : " + snakeSneaky);
             }
             if (testDory) {
-                message.channel.send(":crossed_swords: Apex doryphore géant | 4250 HP & 100 Def : " + doryphoreGeant);
+                message.channel.send(":crossed_swords: Apex doryphore géant | 2250 HP & 100 Def : " + doryphoreGeant);
             }
             if (testBourdon) {
-                message.channel.send(":crossed_swords: Apex bourdon flâneur | 3700 HP : " + bourdonFlaneur);
+                message.channel.send(":crossed_swords: Apex bourdon flâneur | 1700 HP : " + bourdonFlaneur);
             }
             if (testChargeur) {
-                message.channel.send(":crossed_swords: Apex taurus chargeur | 4250 HP : " + taurusChargeur);
+                message.channel.send(":crossed_swords: Apex taurus chargeur | 2250 HP : " + taurusChargeur);
             }
             if (testFTA) {
-                message.channel.send(":crossed_swords: Apex fort taurus adroit | 4350 HP : " + fortTaurus);
+                message.channel.send(":crossed_swords: Apex fort taurus adroit | 2350 HP : " + fortTaurus);
             }
             if (testLourd) {
-                message.channel.send(":crossed_swords: Apex taurus lourd | 5550 HP : " + taurusLourd);
+                message.channel.send(":crossed_swords: Apex taurus lourd | 3550 HP : " + taurusLourd);
             }
             if (testGuepe) {
-                message.channel.send(":crossed_swords: Apex guêpe vivace | 3225 HP : " + guepeVivace);
+                message.channel.send(":crossed_swords: Apex guêpe vivace | 1225 HP : " + guepeVivace);
             }
             if (testFrelon) {
-                message.channel.send(":crossed_swords: Apex frelon foudroyant | 3550 HP : " + frelonFoudroyant);
+                message.channel.send(":crossed_swords: Apex frelon foudroyant | 1550 HP : " + frelonFoudroyant);
             }
             if (testBoeuf) {
-                message.channel.send(":crossed_swords: Apex boeuf vrombissant | 6250 HP : " + boeufVrombissant);
+                message.channel.send(":crossed_swords: Apex boeuf vrombissant | 4250 HP : " + boeufVrombissant);
             }
             if (testVache) {
-                message.channel.send(":crossed_swords: Apex vache vrombissante | 5750 HP : " + vacheVrombissante);
+                message.channel.send(":crossed_swords: Apex vache vrombissante | 3750 HP : " + vacheVrombissante);
             }
             const embed2 = "`\n` `Une fois les monstres tués, vous pouvez continuer ou retourner en arrière ou même ouvrir le coffre.\nPour continuer, le guide devra faire la commande [=Chemin 19]\nPour ouvrir le coffre, le guide devra faire la commande [=Coffre protégé par des monstres]`"
             message.channel.send(embed2)
