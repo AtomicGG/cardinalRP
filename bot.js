@@ -49400,8 +49400,8 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const degat = Math.floor(26 * Math.random() + 145)
-            const degatcrit = Math.floor(26 * Math.random() + 155)
+            const degat = Math.floor(26 * Math.random() + 165)
+            const degatcrit = Math.floor(26 * Math.random() + 175)
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 35) {
                 const embed = new Discord.RichEmbed()
@@ -49500,8 +49500,8 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const degat = Math.floor(36 * Math.random() + 165)
-            const degatCrit = Math.floor(36 * Math.random() + 175)
+            const degat = Math.floor(36 * Math.random() + 185)
+            const degatCrit = Math.floor(36 * Math.random() + 195)
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 15) {
                 const embed = new Discord.RichEmbed()
@@ -49645,8 +49645,8 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const degat = Math.floor(26 * Math.random() + 135)
-            const degatCrit = Math.floor(76 * Math.random() + 230)
+            const degat = Math.floor(26 * Math.random() + 155)
+            const degatCrit = Math.floor(76 * Math.random() + 250)
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 35) {
                 const embed = new Discord.RichEmbed()
@@ -49690,8 +49690,8 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const degat = Math.floor(36 * Math.random() + 150)
-            const degatCrit = Math.floor(36 * Math.random() + 155)
+            const degat = Math.floor(36 * Math.random() + 160)
+            const degatCrit = Math.floor(36 * Math.random() + 165)
             const tours = Math.floor(2 * Math.random() + 1)
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 30) {
