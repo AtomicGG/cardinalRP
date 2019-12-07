@@ -43846,7 +43846,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -44036,7 +44036,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -44251,7 +44251,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -44441,7 +44441,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -44656,7 +44656,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -44846,7 +44846,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -45061,7 +45061,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -45251,7 +45251,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -45466,7 +45466,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -45656,7 +45656,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -45871,7 +45871,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -46061,7 +46061,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -46312,7 +46312,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -46502,7 +46502,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -46717,7 +46717,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -46907,7 +46907,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -47122,7 +47122,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -47312,7 +47312,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -47527,7 +47527,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -47717,7 +47717,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -47932,7 +47932,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -48122,7 +48122,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -48373,7 +48373,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -48563,7 +48563,7 @@ bot.on('message', message => {
                         } else break;
                     }
                     roll = Math.floor(100 * Math.random() + 1)
-                    if (roll <= 50) {
+                    if (roll <= 50 && paplliAssit < 2) {
                         test = test + 2 + paplliAssit;
                         if (test <= (6 + 7 * (joueurs - 1))) {
                             paplliAssit = paplliAssit + 1;
@@ -49457,7 +49457,7 @@ bot.on('message', message => {
                     .addField(":crossed_swords: Apex Neoridas :", ":crossed_swords: L'Apex Neoridas bat des ailes et virevolte joyeusement, vous avez de la chance !")
                 message.channel.send({ embed })
             }
-            if (26 <= roll && roll <= 60) {
+            if (26 <= roll && roll <= 50) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -49466,7 +49466,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (61 <= roll && roll <= 95) {
+            if (51 <= roll && roll <= 75) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -49475,7 +49475,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (96 <= roll) {
+            if (76 <= roll) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
