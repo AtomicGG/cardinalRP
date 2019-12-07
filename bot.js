@@ -51058,7 +51058,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Slime guerrier :", ":crossed_swords:")
+                .addField(":crossed_swords: Slime guerrier :", ":crossed_swords: Le slime guerrier fonce vers vous mais passe à côté. Vous ne recevez aucun dommage.")
             message.channel.send({ embed })
         }
         if (63 <= roll && roll <= 97) {
