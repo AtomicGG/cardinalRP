@@ -49385,6 +49385,784 @@ bot.on('message', message => {
         }
     }
 });
+// récompenses Laby //
+// Forêt dense | Monstres | Récompenses
+
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex guêpe vivace récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let carapace = 0
+        let aile = 0
+        let dard = 0
+        let oeil = 0
+        let armureDargnan = 0
+        let bijouDargnan = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 50) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        carapace = Math.floor((2 - 0.12) * Math.random())
+        aile = Math.floor((2 - 0.12) * Math.random())
+        dard = Math.floor((2 - 0.12) * Math.random())
+        oeil = Math.floor((2 - 0.12) * Math.random())
+        armureDargnan = Math.floor((2 - 0.32) * Math.random())
+        bijouDargnan = Math.floor((2 - 0.32) * Math.random())
+        cols = Math.floor(40 * Math.random() + 70)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":shell: Carapace de guêpe vicace : " + carapace + "\n" +
+                ":butterfly: Aile de guêpe vivace  : " + aile + "\n" +
+                ":syringe: Dard de guêpe vivace: " + dard + "\n" +
+                ":eyes: Oeil de guêpe vicace : " + oeil + "\n" +
+                ":scales: Armure dargnan au choix : " + armureDargnan + "\n" +
+                ":scales: Bijou dargnan au choix : " + bijouDargnan + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex frelon foudroyant récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let carapace = 0
+        let aile = 0
+        let dard = 0
+        let oeil = 0
+        let armeUneMainDargnan = 0
+        let armeDeuxMainDargnan = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        carapace = Math.floor((2 - 0.12) * Math.random())
+        aile = Math.floor((2 - 0.32) * Math.random())
+        dard = Math.floor((2 - 0.32) * Math.random())
+        oeil = Math.floor((2 - 0.57) * Math.random())
+        armeUneMainDargnan = Math.floor((2 - 0.749) * Math.random())
+        armeDeuxMainDargnan = Math.floor((2 - 0.749) * Math.random())
+        cols = Math.floor(35 * Math.random() + 85)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":shell: Carapace de frelon foudroyant : " + carapace + "\n" +
+                ":butterfly: Aile de frelon foudroyant  : " + aile + "\n" +
+                ":syringe: Dard de frelon foudroyant: " + dard + "\n" +
+                ":eyes: Oeil de frelon foudroyant : " + oeil + "\n" +
+                ":scales: Arme darchic à une main : " + armeUneMainDargnan + "\n" +
+                ":scales: Arme darchic à deux mains : " + armeDeuxMainDargnan + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex vache vrombissante récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let peau = 0
+        let viande = 0
+        let oreille = 0
+        let sabot = 0
+        let lait = 0
+        let oeufB = 0
+        let armureBovin = 0
+        let bijouBovin = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        peau = Math.floor((2 - 0.12) * Math.random())
+        viande = Math.floor((2 - 0.12) * Math.random())
+        oreille = Math.floor((2 - 0.32) * Math.random())
+        sabot = Math.floor((2 - 0.32) * Math.random())
+        lait = Math.floor((2 - 0.32) * Math.random())
+        oeufB = Math.floor((2 - 0.98) * Math.random())
+        armureBovin = Math.floor((2 - 0.666) * Math.random())
+        bijouBovin = Math.floor((2 - 0.666) * Math.random())
+        cols = Math.floor(41 * Math.random() + 120)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":knife: Peau de vache : " + peau + "\n" +
+                ":poultry_leg: Viande de vache : " + viande + "\n" +
+                ":gem: Oreille de vache : " + oreille + "\n" +
+                ":dagger: Sabot de vache : " + sabot + "\n" +
+                ":milk: Portion de lait de vache : " + lait + "\n" +
+                ":gem: Oeuf brisé : " + oeufB + "\n" +
+                ":scales: Armure bovin au choix : " + armureBovin + "\n" +
+                ":scales: Bijou bovin au choix : " + bijouBovin + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex boeuf vrombissant récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(8 * Math.random() + 3)
+        let peau = 0
+        let viande = 0
+        let corne = 0
+        let sabot = 0
+        let intestin = 0
+        let oeufB = 0
+        let armeUneMainBovin = 0
+        let armeDeuxMainBovin = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        peau = Math.floor((2 - 0.12) * Math.random())
+        viande = Math.floor((2 - 0.12) * Math.random())
+        corne = Math.floor((2 - 0.32) * Math.random())
+        sabot = Math.floor((2 - 0.32) * Math.random())
+        intestin = Math.floor((2 - 0.32) * Math.random())
+        oeufB = Math.floor((2 - 0.98) * Math.random())
+        armeUneMainBovin = Math.floor((2 - 0.98) * Math.random())
+        armeDeuxMainBovin = Math.floor((2 - 0.958) * Math.random())
+        cols = Math.floor(41 * Math.random() + 135)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":knife: Peau de boeuf : " + peau + "\n" +
+                ":poultry_leg: Viande de boeuf : " + viande + "\n" +
+                ":dagger: Corne de boeuf : " + corne + "\n" +
+                ":dagger: Sabot de boeuf  : " + sabot + "\n" +
+                ":bacon: Intestin de boeuf : " + intestin + "\n" +
+                ":gem: Oeuf brisé : " + oeufB + "\n" +
+                ":scales: Arme darchic à une main au choix : " + armeUneMainBovin + "\n" +
+                ":scales: Arme darchic à deux mains au choix : " + armeDeuxMainBovin + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex bourdon flâneur récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let carapace = 0
+        let ailes = 0
+        let antenne = 0
+        let hemolymphe = 0
+        let oeufB = 0
+        let oeil = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 5
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 50) / 10
+        let rollRessource = 0
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        carapace = Math.floor(2 * Math.random() + 1)
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 65) {
+            ailes = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            antenne = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            oeil = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 45) {
+            hemolymphe = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 10) {
+            oeufB = 1
+        }
+        cols = Math.floor(40 * Math.random() + 70)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":shell: Carapace de bourdon flâneur : " + carapace + "\n" +
+                ":butterfly: Aile de bourdon flâneur  : " + ailes + "\n" +
+                ":syringe: Antenne de bourdon flâneur : " + antenne + "\n" +
+                ":eyes: Oeil de bourdon flâneur : " + oeil + "\n" +
+                ":alembic: Hemolymphe : " + hemolymphe + "\n" +
+                ":gem: Oeuf brisé : " + oeufB + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex taurus chargeur récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let peau = 0
+        let poil = 0
+        let corne = 0
+        let viande = 0
+        let oeufB = 0
+        let scalp = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 5
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let rollRessource = 0
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        peau = Math.floor(2 * Math.random() + 1)
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 65) {
+            viande = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            poil = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 50) {
+            corne = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 45) {
+            scalp = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 10) {
+            oeufB = 1
+        }
+        cols = Math.floor(41 * Math.random() + 70)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":knife: Peau de taurus : " + peau + "\n" +
+                ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                ":ox: Poil de taurus : " + poil + "\n" +
+                ":dagger: Corne de taurus : " + corne + "\n" +
+                ":bacon: Scalp de taurus : " + scalp + "\n" +
+                ":gem: Oeuf brisé : " + oeufB + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex taurus lourd récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(8 * Math.random() + 3)
+        let peau = 0
+        let poil = 0
+        let corne = 0
+        let viande = 0
+        let oeufB = 0
+        let scalp = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 5
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let rollRessource = 0
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        peau = Math.floor(2 * Math.random() + 1)
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 65) {
+            viande = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            poil = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 50) {
+            corne = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 45) {
+            scalp = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 10) {
+            oeufB = 1
+        }
+        cols = Math.floor(41 * Math.random() + 70)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":knife: Peau de taurus lourd : " + peau + "\n" +
+                ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                ":ox: Poil de taurus lourd : " + poil + "\n" +
+                ":dagger: Corne de taurus : " + corne + "\n" +
+                ":bacon: Scalp de taurus : " + scalp + "\n" +
+                ":gem: Oeuf brisé : " + oeufB + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex fort taurus adroit récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let peau = 0
+        let poil = 0
+        let corne = 0
+        let viande = 0
+        let oeufB = 0
+        let scalp = 0
+        let cuirasse = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 5
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let rollRessource = 0
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        peau = Math.floor(2 * Math.random() + 1)
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 65) {
+            viande = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            poil = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 50) {
+            corne = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 45) {
+            scalp = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 45) {
+            cuirasse = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 10) {
+            oeufB = 1
+        }
+        cols = Math.floor(41 * Math.random() + 70)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":knife: Peau de fort taurus adroit : " + peau + "\n" +
+                ":poultry_leg: Viande de taurus : " + viande + "\n" +
+                ":ox: Poil de fort taurus adroit : " + poil + "\n" +
+                ":dagger: Corne de taurus : " + corne + "\n" +
+                ":bacon: Scalp de taurus : " + scalp + "\n" +
+                ":beginner: Cuirasse de fort taurus adroit : " + cuirasse + "\n" +
+                ":gem: Oeuf brisé : " + oeufB + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex lombric irrégulier récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let bave = 0
+        let peauelastic = 0
+        let langue = 0
+        let hemolyphe = 0
+        let oeufB = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 50) / 10
+        let rollRessource = 0
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        bave = Math.floor(2 * Math.random() + 1)
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 70) {
+            peauelastic = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 45) {
+            langue = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 45) {
+            hemolyphe = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 3) {
+            oeufB = 1
+        }
+        cols = Math.floor(60 * Math.random() + 90)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":alembic: Bave de lombric irrégulier  : " + bave + "\n" +
+                ":knife: Peau élastique de lombric irrégulier  : " + peauelastic + "\n" +
+                ":tongue: Langue de lombric irrégulier : " + langue + "\n" +
+                ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+                ":gem: Oeuf bavant : " + oeufB + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex neoridas récompenses")) {
+        const pos = args.indexOf(":");
+
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let poudrePoison = 0
+        let ailes = 0
+        let peau = 0
+        let hemolyphe = 0
+        let oeufB = 0
+        let armureChitine = 0
+        let bijouChitine = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let rollRessource = Math.floor(100 * Math.random() + 1)
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        poudrePoison = Math.floor(2 * Math.random() + 1)
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 60) {
+            peau = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 60) {
+            ailes = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            hemolyphe = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 3) {
+            oeufB = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 35) {
+            armureChitine = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 35) {
+            bijouChitine = 1
+        }
+        cols = Math.floor(60 * Math.random() + 90)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":space_invader: Poudre de poison : " + poudrePoison + "\n" +
+                ":butterfly: Aile de neoridas  : " + ailes + "\n" +
+                ":knife: Peau de neoridas : " + peau + "\n" +
+                ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+                ":scales: Armure en chitine au choix : " + armureChitine + "\n" +
+                ":scales: Bijou en chitine au choix : " + bijouChitine + "\n" +
+                ":gem: Oeuf bavant : " + oeufB + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex bousier colossal récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let patte = 0
+        let carapace = 0
+        let corne = 0
+        let hemolyphe = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let rollRessource = 0
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        patte = Math.floor(2 * Math.random() + 1)
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 60) {
+            carapace = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            corne = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            hemolyphe = 1
+        }
+        cols = Math.floor(60 * Math.random() + 100)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":poultry_leg: Patte de bousier colossal: " + patte + "\n" +
+                ":shell: Carapace de bousier colossal : " + carapace + "\n" +
+                ":dagger: Corne de bousier colossal : " + corne + "\n" +
+                ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex venom récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(5 * Math.random() + 1)
+        let crochetPoison = 0
+        let Peau = 0
+        let queueSerpent = 0
+        let Venin = 0
+        let Oeufs = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let rollRessource = 0
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        crochetPoison = Math.floor(2 * Math.random() + 1)
+        Peau = Math.floor(3 * Math.random())
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 60) {
+            queueSerpent = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 50) {
+            Venin = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 3) {
+            Oeufs = 1
+        }
+        cols = Math.floor(51 * Math.random() + 80)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":skull: Crochet de venom : " + crochetPoison + "\n" +
+                ":knife: Peau de venom : " + Peau + "\n" +
+                ":snake: Queue de venom : " + queueSerpent + "\n" +
+                ":alembic: Venin de venom : " + Venin + "\n" +
+                ":gem: Oeuf bavant : " + Oeufs + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Apex doryphore géant récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const flocon = Math.floor(8 * Math.random() + 3)
+        let carapace = 0
+        let aile = 0
+        let patte = 0
+        let armeChitineUneMain = 0
+        let armeChitineDeuxMains = 0
+        let hemolyphe = 0
+        let oeufB = 0
+        let cols = 0
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let rollRessource = 0
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 70) {
+            carapace = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 60) {
+            aile = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 60) {
+            patte = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 35) {
+            armeChitineUneMain = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 35) {
+            armeChitineDeuxMains = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 55) {
+            hemolyphe = 1
+        }
+        rollRessource = Math.floor(100 * Math.random() + 1);
+        if (rollRessource <= 3) {
+            oeufB = 1
+        }
+        cols = Math.floor(81 * Math.random() + 110)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":shell: Carapace de doryphore géant : " + carapace + "\n" +
+                ":butterfly: Aile de doryphore géant : " + aile + "\n" +
+                ":poultry_leg: Patte de doryphore géant : " + patte + "\n" +
+                ":alembic: Hémolymphe : " + hemolyphe + "\n" +
+                ":scales: Arme en chitine à une main au choix : " + armeChitineUneMain + "\n" +
+                ":scales: Arme en chitine à deux mains au choix : " + armeChitineDeuxMains + "\n" +
+                ":gem: Oeuf bavant : " + oeufB + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 // Labyrinthe Palier 2 | Monstres | Attaques
 
