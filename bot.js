@@ -35867,19 +35867,19 @@ bot.on('message', message => {
                 const Herbe = Math.floor(3 * 0.25 * Math.random() + 1)
                 const Baies = Math.floor(3 * 0.25 * Math.random() + 1)
                 const Exp = Math.floor(3 * Math.random() + 2)
-                if (roll <= chance) {
+                const idRole = "544250412753092638"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":wilted_rose: Persil : " + Persils + "\n" +
-                            ":wilted_rose: Herbe médicinale faible : " + Herbe + "\n" +
-                            ":wilted_rose: Baie : " + Baies + "\n" +
+                            ":wilted_rose: Persil : " + Persils * 2 + "\n" +
+                            ":wilted_rose: Herbe médicinale faible : " + Herbe * 2 + "\n" +
+                            ":wilted_rose: Baie : " + Baies * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Cueilleur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -35947,20 +35947,20 @@ bot.on('message', message => {
                 const Coeur = Math.floor((2 - 0.75) * Math.random())
                 const Oeil = Math.floor((2 - 0.75) * Math.random())
                 const Exp = Math.floor(3 * Math.random() + 2)
-                if (roll <= chance) {
+                const idRole = "544250415550693386"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":knife: Viande de lapin : " + Viande + "\n" +
-                            ":knife: Peau de lapin : " + Peau + "\n" +
-                            ":cupid: Coeur de lapin : " + Coeur + "\n" +
-                            ":eye: Oeil de lapin : " + Oeil + "\n" +
+                            ":knife: Viande de lapin : " + Viande * 2 + "\n" +
+                            ":knife: Peau de lapin : " + Peau * 2 + "\n" +
+                            ":cupid: Coeur de lapin : " + Coeur * 2 + "\n" +
+                            ":eye: Oeil de lapin : " + Oeil * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Chasseur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -36901,18 +36901,18 @@ bot.on('message', message => {
                 const Estragon = Math.floor(3 * 0.25 * Math.random() + 1)
                 const Herbe = Math.floor(3 * 0.25 * Math.random() + 1)
                 const Exp = Math.floor(4 * Math.random() + 4)
-                if (roll <= chance) {
+                const idRole = "544250412753092638"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":wilted_rose: Estragon : " + Estragon + "\n" +
-                            ":wilted_rose: Herbe médicinale : " + Herbe + "\n" +
+                            ":wilted_rose: Estragon : " + Estragon * 2 + "\n" +
+                            ":wilted_rose: Herbe médicinale : " + Herbe * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Cueilleur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -36977,18 +36977,18 @@ bot.on('message', message => {
                 const CuivreMediocre = Math.floor(3 * Math.random() + 1)
                 const CuivreCommun = Math.floor(2 * 0.90 * Math.random())
                 const Exp = Math.floor(3 * Math.random() + 2)
-                if (roll <= chance) {
+                const idRole = "544250415051702282"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Cuivre médiocre : " + CuivreMediocre + "\n" +
-                            ":pick: Cuivre commun : " + CuivreCommun + "\n" +
+                            ":pick: Cuivre médiocre : " + CuivreMediocre * 2 + "\n" +
+                            ":pick: Cuivre commun : " + CuivreCommun * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Mineur de profession : +1 a chaque ressource !")
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -37053,18 +37053,18 @@ bot.on('message', message => {
                 const BoisMediocre = Math.floor(3 * Math.random() + 1)
                 const BoisCommun = Math.floor((2 - 0.75) * Math.random())
                 const Exp = Math.floor(3 * Math.random() + 2)
-                if (roll <= chance) {
+                const idRole = "544250416943071355"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre + "\n" +
-                            ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
+                            ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre * 2 + "\n" +
+                            ":deciduous_tree: Bois de frêne commun : " + BoisCommun * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Bûcheron de profession : Doublez les ressources (pas l'xp) !")
+                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -37131,20 +37131,20 @@ bot.on('message', message => {
                 const Coeur = Math.floor((2 - 0.75) * Math.random())
                 const Oeil = Math.floor((2 - 0.75) * Math.random())
                 const Exp = Math.floor(4 * Math.random() + 4)
-                if (roll <= chance) {
+                const idRole = "544250415550693386"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":knife: Viande de taupe : " + Viande + "\n" +
-                            ":knife: Peau de taupe : " + Peau + "\n" +
-                            ":cupid: Coeur de taupe : " + Coeur + "\n" +
-                            ":eye: Oeil de taupe : " + Oeil + "\n" +
+                            ":knife: Viande de taupe : " + Viande * 2 + "\n" +
+                            ":knife: Peau de taupe : " + Peau * 2 + "\n" +
+                            ":cupid: Coeur de taupe : " + Coeur * 2 + "\n" +
+                            ":eye: Oeil de taupe : " + Oeil * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Chasseur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -38688,19 +38688,19 @@ bot.on('message', message => {
                 const PlantrusMediocre = Math.floor(3 * 0.5 * Math.random())
                 const PlantrusCommun = Math.floor(2 * 0.75 * Math.random())
                 const Exp = Math.floor(5 * Math.random() + 7)
-                if (roll <= chance) {
+                const idRole = "544250412753092638"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":wilted_rose: Basilic : " + Basilic + "\n" +
-                            ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre + "\n" +
-                            ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
+                            ":wilted_rose: Basilic : " + Basilic * 2 + "\n" +
+                            ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre * 2 + "\n" +
+                            ":wilted_rose: Plantrus commun : " + PlantrusCommun * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Cueilleur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -38766,18 +38766,18 @@ bot.on('message', message => {
                 const CuivreCommun = Math.floor(2 * 0.5 * Math.random() + 1)
                 const CuivreRare = Math.floor(2 * 0.80 * Math.random())
                 const Exp = Math.floor(4 * Math.random() + 4)
-                if (roll <= chance) {
+                const idRole = "544250415051702282"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Cuivre commun : " + CuivreCommun + "\n" +
-                            ":pick: Cuivre rare : " + CuivreRare + "\n" +
+                            ":pick: Cuivre commun : " + CuivreCommun * 2 + "\n" +
+                            ":pick: Cuivre rare : " + CuivreRare * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Mineur de profession : +1 a chaque ressource !")
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -38842,18 +38842,18 @@ bot.on('message', message => {
                 const BoisCommun = Math.floor(2 * 0.5 * Math.random() + 1)
                 const BoisRare = Math.floor((2 - 0.75) * Math.random())
                 const Exp = Math.floor(4 * Math.random() + 4)
-                if (roll <= chance) {
+                const idRole = "544250416943071355"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
-                            ":deciduous_tree: Bois de frêne rare : " + BoisRare + "\n" +
+                            ":deciduous_tree: Bois de frêne commun : " + BoisCommun * 2 + "\n" +
+                            ":deciduous_tree: Bois de frêne rare : " + BoisRare * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Bûcheron de profession : Doublez les ressources (pas l'xp) !")
+                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -38920,20 +38920,20 @@ bot.on('message', message => {
                 const Coeur = Math.floor((2 - 0.75) * Math.random())
                 const Oeil = Math.floor((2 - 0.75) * Math.random())
                 const Exp = Math.floor(5 * Math.random() + 7)
-                if (roll <= chance) {
+                const idRole = "544250415550693386"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":knife: Viande de ragondin : " + Viande + "\n" +
-                            ":knife: Peau de ragondin : " + Peau + "\n" +
-                            ":cupid: Coeur de ragondin : " + Coeur + "\n" +
-                            ":eye: Oeil de ragondin : " + Oeil + "\n" +
+                            ":knife: Viande de ragondin : " + Viande * 2 + "\n" +
+                            ":knife: Peau de ragondin : " + Peau * 2 + "\n" +
+                            ":cupid: Coeur de ragondin : " + Coeur * 2 + "\n" +
+                            ":eye: Oeil de ragondin : " + Oeil * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Chasseur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -39805,19 +39805,19 @@ bot.on('message', message => {
                 const PlantrusRare = Math.floor(2 * 0.75 * Math.random())
                 const PlantrusParfait = Math.floor(2 * 0.95 * Math.random())
                 const Exp = Math.floor(5 * Math.random() + 11)
-                if (roll <= chance) {
+                const idRole = "544250412753092638"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
-                            ":wilted_rose: Plantrus rare : " + PlantrusRare + "\n" +
-                            ":wilted_rose: Plantrus parfait : " + PlantrusParfait + "\n" +
+                            ":wilted_rose: Plantrus commun : " + PlantrusCommun * 2 + "\n" +
+                            ":wilted_rose: Plantrus rare : " + PlantrusRare * 2 + "\n" +
+                            ":wilted_rose: Plantrus parfait : " + PlantrusParfait * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Cueilleur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -39884,19 +39884,19 @@ bot.on('message', message => {
                 const CuivreParfait = Math.floor(2 * 0.80 * Math.random())
                 const Feu = Math.floor(2 * 0.95 * Math.random())
                 const Exp = Math.floor(5 * Math.random() + 7)
-                if (roll <= chance) {
+                const idRole = "544250415051702282"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Cuivre rare : " + CuivreRare + "\n" +
-                            ":pick: Cuivre parfait : " + CuivreParfait + "\n" +
-                            ":pick: Pierre de feu faible : " + Feu + "\n" +
+                            ":pick: Cuivre rare : " + CuivreRare * 2 + "\n" +
+                            ":pick: Cuivre parfait : " + CuivreParfait * 2 + "\n" +
+                            ":pick: Pierre de feu faible : " + Feu * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Mineur de profession : +1 a chaque ressource !")
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -41257,19 +41257,19 @@ bot.on('message', message => {
                 if (rollRessource <= 20) {
                     LierreParfait = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250412753092638"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":wilted_rose: Lierre commun : " + LierreCommun + "\n" +
-                            ":wilted_rose: Lierre rare : " + LierreRare + "\n" +
-                            ":wilted_rose: Lierre parfait : " + LierreParfait + "\n" +
+                            ":wilted_rose: Lierre commun : " + LierreCommun * 2 + "\n" +
+                            ":wilted_rose: Lierre rare : " + LierreRare * 2 + "\n" +
+                            ":wilted_rose: Lierre parfait : " + LierreParfait * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Cueilleur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -41350,20 +41350,20 @@ bot.on('message', message => {
                 if (rollRessource <= 20) {
                     Oeil = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250415550693386"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":knife: Viande de lièvre : " + Viande + "\n" +
-                            ":knife: Peau de lièvre : " + Peau + "\n" +
-                            ":cupid: Coeur de lièvre : " + Coeur + "\n" +
-                            ":eye: Oeil de lièvre : " + Oeil + "\n" +
+                            ":knife: Viande de lièvre : " + Viande * 2 + "\n" +
+                            ":knife: Peau de lièvre : " + Peau * 2 + "\n" +
+                            ":cupid: Coeur de lièvre : " + Coeur * 2 + "\n" +
+                            ":eye: Oeil de lièvre : " + Oeil * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Chasseur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -41434,17 +41434,17 @@ bot.on('message', message => {
                 if (rollRessource <= 35) {
                     BoisCommun = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250416943071355"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
-                            ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
+                            ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre * 2 + "\n" +
+                            ":deciduous_tree: Bois de séquoia commun : " + BoisCommun * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Bûcheron de profession : Doublez les ressources (pas l'xp) !")
+                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -42302,19 +42302,19 @@ bot.on('message', message => {
                 if (rollRessource <= 20) {
                     LierreAir = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250412753092638"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":wilted_rose: Lierre d'antidote : " + LierreAntidote + "\n" +
-                            ":wilted_rose: Lierre de soin : " + LierreSoin + "\n" +
-                            ":wilted_rose: Lierre d'air : " + LierreAir + "\n" +
+                            ":wilted_rose: Lierre d'antidote : " + LierreAntidote * 2 + "\n" +
+                            ":wilted_rose: Lierre de soin : " + LierreSoin * 2 + "\n" +
+                            ":wilted_rose: Lierre d'air : " + LierreAir * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Cueilleur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -42395,20 +42395,20 @@ bot.on('message', message => {
                 if (rollRessource <= 20) {
                     Oeil = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250415550693386"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":knife: Viande de desman : " + Viande + "\n" +
-                            ":knife: Peau de desman : " + Peau + "\n" +
-                            ":cupid: Coeur de desman : " + Coeur + "\n" +
-                            ":eye: Oeil de desman : " + Oeil + "\n" +
+                            ":knife: Viande de desman : " + Viande * 2 + "\n" +
+                            ":knife: Peau de desman : " + Peau * 2 + "\n" +
+                            ":cupid: Coeur de desman : " + Coeur * 2 + "\n" +
+                            ":eye: Oeil de desman : " + Oeil * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Chasseur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -42486,20 +42486,20 @@ bot.on('message', message => {
                 if (rollRessource <= 20) {
                     FerRare = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250415051702282"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Pierre de sel : " + Sel + "\n" +
-                            ":pick: Fer médiocre : " + FerMediocre + "\n" +
-                            ":pick: Fer commun : " + FerCommun + "\n" +
-                            ":pick: Fer rare : " + FerRare + "\n" +
+                            ":pick: Pierre de sel : " + Sel * 2 + "\n" +
+                            ":pick: Fer médiocre : " + FerMediocre * 2 + "\n" +
+                            ":pick: Fer commun : " + FerCommun * 2 + "\n" +
+                            ":pick: Fer rare : " + FerRare * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Mineur de profession : +1 a chaque ressource !")
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -43295,20 +43295,20 @@ bot.on('message', message => {
                 if (rollRessource <= 20) {
                     Oeil = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250415550693386"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":knife: Viande de veau : " + Viande + "\n" +
-                            ":knife: Peau de veau : " + Peau + "\n" +
-                            ":cupid: Coeur de veau : " + Coeur + "\n" +
-                            ":eye: Oeil de veau : " + Oeil + "\n" +
+                            ":knife: Viande de veau : " + Viande * 2 + "\n" +
+                            ":knife: Peau de veau : " + Peau * 2 + "\n" +
+                            ":cupid: Coeur de veau : " + Coeur * 2 + "\n" +
+                            ":eye: Oeil de veau : " + Oeil * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Chasseur de profession : Doublez les ressources (pas l'xp) !")
+                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -43385,19 +43385,19 @@ bot.on('message', message => {
                 if (rollRessource <= 20) {
                     FerParfait = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250415051702282"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Fer commun : " + FerCommun + "\n" +
-                            ":pick: Fer rare : " + FerRare + "\n" +
-                            ":pick: Fer parfait : " + FerParfait + "\n" +
+                            ":pick: Fer commun : " + FerCommun * 2 + "\n" +
+                            ":pick: Fer rare : " + FerRare * 2 + "\n" +
+                            ":pick: Fer parfait : " + FerParfait * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Mineur de profession : +1 a chaque ressource !")
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -43467,17 +43467,17 @@ bot.on('message', message => {
                 if (rollRessource <= 35) {
                     BoisRare = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250416943071355"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
-                            ":deciduous_tree: Bois de séquoia rare : " + BoisRare + "\n" +
+                            ":deciduous_tree: Bois de séquoia commun : " + BoisCommun * 2 + "\n" +
+                            ":deciduous_tree: Bois de séquoia rare : " + BoisRare * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Bûcheron de profession : Doublez les ressources (pas l'xp) !")
+                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -43766,17 +43766,17 @@ bot.on('message', message => {
                 if (rollRessource <= 35) {
                     BoisParfait = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250416943071355"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":deciduous_tree: Bois de séquoia rare : " + BoisRare + "\n" +
-                            ":deciduous_tree: Bois de séquoia parfait : " + BoisParfait + "\n" +
+                            ":deciduous_tree: Bois de séquoia rare : " + BoisRare * 2 + "\n" +
+                            ":deciduous_tree: Bois de séquoia parfait : " + BoisParfait * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Bûcheron de profession : Doublez les ressources (pas l'xp) !")
+                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -43854,19 +43854,19 @@ bot.on('message', message => {
                 if (rollRessource <= 15) {
                     crabe = 1
                 }
-                if (roll <= chance) {
+                const idRole = "544250417123426324"
+                if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .addField(":fish: Pêcheur :", ":fish: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":fish: Goujon : " + goujon + "\n" +
-                            ":fish: Crevette : " + crevette + "\n" +
-                            ":fish: Truite : " + truite + "\n" +
-                            ":fish: Crabe : " + crabe + "\n" +
+                            ":fish: Goujon : " + goujon * 2 + "\n" +
+                            ":fish: Crevette : " + crevette * 2 + "\n" +
+                            ":fish: Truite : " + truite * 2 + "\n" +
+                            ":fish: Crabe : " + crabe * 2 + "\n" +
                             ":snowflake: Flocons : " + flocon + "\n" +
-                            ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp + "\n\n" +
-                            ":tada: Si et seulement si vous êtes Pêcheur de profession : Doublez les ressources (pas l'xp) !")
+                            ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
