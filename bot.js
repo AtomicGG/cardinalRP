@@ -3725,7 +3725,7 @@ bot.on('message', message => {
             .addField("Lierre commun :", "C'est une herbe basique que vous trouvez en cueillant dans les forêts du palier 2 !")
             .addField("Prix d'achat :", "80 cols")
             .addField("Prix de revente :", "20 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de lièvre\n=Ragoût de taurus\n=Ragoût de desman\n=Potion améliorée")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de lièvre\n=Ragoût de taurus\n=Ragoût de desman\n=Petite cassolette de goujon\n=Soupe de crevette\n=Cassolette de truite\n=Soupe de crabe\n=Potion améliorée")
             .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -3741,7 +3741,7 @@ bot.on('message', message => {
             .addField("Lierre rare :", "C'est une herbe basique que vous trouvez en cueillant dans les forêts du palier 2 !")
             .addField("Prix d'achat :", "96 cols")
             .addField("Prix de revente :", "24 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de lièvre\n=Ragoût de desman\n=Ragoût de taurus\n=Potion améliorée")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de lièvre\n=Ragoût de desman\n=Ragoût de taurus\n=Soupe de crevette\n=Cassolette de truite\n=Soupe de crabe\n=Potion améliorée")
             .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -3757,7 +3757,7 @@ bot.on('message', message => {
             .addField("Lierre parfait :", "C'est une herbe basique que vous trouvez en cueillant dans les forêts  du palier 2 !")
             .addField("Prix d'achat :", "112 cols")
             .addField("Prix de revente :", "28 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "Aucun pour le moment")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Soupe de crabe")
             .setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4194,7 +4194,7 @@ bot.on('message', message => {
             .addField("Pierre de sel :", "C'est un minerai basique que vous trouvez en minant dans la clairière du palier 2 !")
             .addField("Prix d'achat :", "80 cols")
             .addField("Prix de revente :", "20 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Petite cassolette de goujon\n=Soupe de crevette\n=Cassolette de truite\n=Soupe de crabe")
             .setImage("https://png.icons8.com/color/1600/gold-ore.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4648,7 +4648,7 @@ bot.on('message', message => {
             .addField("Goujon :", "C'est un poisson basique que vous trouvez en pêchant dans le ravin du palier 2 !")
             .addField("Prix d'achat :", "4 cols")
             .addField("Prix de revente :", "1 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Petite cassolette de goujon")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813532119760906/640x410_importe-europe-annees-60-goujon-asiatique-porteur-parasite-mortel-autres-especes-poisson.webp")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4664,7 +4664,7 @@ bot.on('message', message => {
             .addField("GouCrevettejon :", "C'est un crustacé basique que vous trouvez en pêchant dans le ravin du palier 2 !")
             .addField("Prix d'achat :", "8 cols")
             .addField("Prix de revente :", "2 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Soupe de crevette")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813565846028326/Woda-6_ubt.jpeg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4680,7 +4680,7 @@ bot.on('message', message => {
             .addField("Truite :", "C'est un poisson basique que vous trouvez en pêchant dans le ravin du palier 2 !")
             .addField("Prix d'achat :", "12 cols")
             .addField("Prix de revente :", "3 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Cassolette de truite")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813554773327913/truite-fario_Madelon-FNPF-1-800x516.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4696,7 +4696,7 @@ bot.on('message', message => {
             .addField("Crabe :", "C'est un crustacé basique que vous trouvez en pêchant dans le ravin du palier 2 !")
             .addField("Prix d'achat :", "16 cols")
             .addField("Prix de revente :", "4 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Soupe de crabe")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813543486324736/crabe_57491350_web.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24042,7 +24042,11 @@ bot.on('message', message => {
         message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
             "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
             "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
-            "Ragoûts bovin :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Ragoût bovin]```")
+            "Ragoûts bovin :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Ragoût bovin]\n\n" +
+            "Petite cassolette de goujon :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Petite cassolette de goujon]\n\n" +
+            "Soupe de crevette :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Soupe de crevette]\n\n" +
+            "Cassolette de truite :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Cassolette de truite]\n\n" +
+            "Soupe de crabe :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Soupe de crabe]```")
     }
 });
 
@@ -24234,6 +24238,58 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":meat_on_bone: Ragoût bovin :", ":meat_on_bone: C'est un ragoût d'une bonne qualité constitué de viande bovine !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 26\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 viande de vache, 2 viande de boeuf, 2 viande de veau, 2 pierre de sel, 1 lierre rare \n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 400 cols\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du ragoût bovin`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Petite cassolette de goujon") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":bowl_with_spoon: Petite cassolette de goujon :", ":bowl_with_spoon: C'est une petite cassolette d'une bonne qualité constituée majoritairement de goujon !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 26\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 Goujon, 2 Lierre commun et 3 Pierre de sel (Vous donne 3 items !)\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : ?? cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Fabrication de la petite cassolette de goujon`")
+            //.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Soupe de crevette") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":bowl_with_spoon: Soupe de crevette :", ":bowl_with_spoon: C'est une soupe d'une bonne qualité constituée majoritairement de crevette !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 26\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Crevette, 3 Lierre commun, 2 Lierre rare, 5 Pierre de sel\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Fabrication de la soupe de crevette`")
+            //.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Cassolette de truite") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":bowl_with_spoon: Cassolette de truite :", ":bowl_with_spoon: C'est une cassolette d'une bonne qualité constituée majoritairement de truite !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 26\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Truite, 3 Lierre commun, 2 Lierre rare, 5 Pierre de sel\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Fabrication de la cassolette de truite`")
+            //.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Soupe de crabe") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":bowl_with_spoon: Soupe de crabe :", ":bowl_with_spoon: C'est une soupe d'une bonne qualité constituée majoritairement de crabe !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 26\n\n:sparkles: Niveau minimum dans le métier 'Cuisinier' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Crabe, 3 Lierre commun, 2 Lierre rare, 1 Lierre parfait, 5 Pierre de sel\n\n:sparkles: Points d'expérience gagnés dans le métier 'Cuisinier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 100 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Fabrication de la soupe de crabe`")
+            //.setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -24439,6 +24495,64 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":meat_on_bone: Ragoût bovin :", ":meat_on_bone: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" + HP + "` HP !")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la petite cassolette de goujon")) {
+        const HP1 = Math.floor(21 * Math.random() + 40)
+        const HP2 = Math.floor(21 * Math.random() + 40)
+        const HP3 = Math.floor(21 * Math.random() + 40)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":bowl_with_spoon: Petite cassolette de goujon :", ":bowl_with_spoon: Vous venez de fabriquer trois exemplaires de cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" + HP1 + "`, `" + HP2 + "` et `" + HP3 + "` HP !")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la soupe de crevette")) {
+        const sagesse = Math.floor(11 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":bowl_with_spoon: Soupe de crevette :", ":bowl_with_spoon: Vous venez de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous gagnez `" + sagesse + "%` d'xp en plus sur vos 10 prochains loots !")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la cassolette de truite")) {
+        const fortune = Math.floor(11 * Math.random() + 10)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":bowl_with_spoon: Cassolette de truite :", ":bowl_with_spoon: Vous venez de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous gagnez `" + sagesse + "%` de cols en plus sur vos 10 prochains loots !")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication de la soupe de crabe")) {
+        const hp = Math.floor(101 * Math.random() + 150)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":bowl_with_spoon: Soupe de crabe :", ":bowl_with_spoon: Vous venez de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous regagnez `" + hp + "` HP !")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
