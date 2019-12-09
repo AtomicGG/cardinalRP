@@ -256,7 +256,7 @@ bot.on('message', message => {
                 "`=Vindicateur : [Votre armure]`\n" +
                 "Cette compétence diminue votre armure mais augmente votre attaque durant un laps de temps.\n\n" +
                 "`=Berserker : [Vos dégâts]`\n" +
-                "Cette compétence permet à votre 3 prochains coups de vous soigner.")
+                "Cette compétence permet à vos 3 prochains coups de vous soigner.")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -4827,7 +4827,7 @@ bot.on('message', message => {
             "Plastron taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Plastron taurus]\n\n" +
             "Cape taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Cape taurus]\n\n" +
             "Ceinture taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Ceinture taurus]\n\n" +
-            "Gantelets taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Gantelets tauruss]\n\n" +
+            "Gantelets taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Gantelets taurus]\n\n" +
             "Jambières taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Jambières taurus]\n\n" +
             "Bottes taurus :\nCoûts : [Achat : 1425 cols] [Revente : 350 cols]\nInfos : [=Bottes taurus]\n\n" +
             "Anneau taurus :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Anneau taurus]\n\n" +
@@ -6841,7 +6841,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Anneau bovin :", ":scales: C'est un anneau fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : \n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 3 Oreille de vache, 2 Corne de boeuf, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'anneau bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin`")
+            .addField(":scales: Anneau bovin :", ":scales: C'est un anneau fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 3 Oreille de vache, 2 Corne de boeuf, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'anneau bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin`")
             .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Sabot de boeuf, 2 Oreille de vache, 1 Corne de boeuf, 1 Coeur de veau) :", "`=Amélioration d'un bijou bovin : [Niveau en Bijoutier]`")
             .addField(":keyboard: Si un bijoutier de profession souhaite démenteler cet objet :", "`=Démantèlement d'un bijou bovin`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -6856,7 +6856,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Amulette bovin :", ":scales: C'est une amulette fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : \n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 3 Oreille de vache, 2 Corne de boeuf, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'amulette bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin`")
+            .addField(":scales: Amulette bovin :", ":scales: C'est une amulette fait avec des composant de vache et boeuf trouvable aux palier 2\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 5\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Sabot de boeuf, 3 Oreille de vache, 2 Corne de boeuf, 2 coeur de veau\n\n:sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix de revente : 50 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'amulette bovin`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette bovin` \n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette bovin`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie bovin`")
             .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 2 Sabot de boeuf, 2 Oreille de vache, 1 Corne de boeuf, 1 Coeur de veau) :", "`=Amélioration d'un bijou bovin : [Niveau en Bijoutier]`")
             .addField(":keyboard: Si un bijoutier de profession souhaite démenteler cet objet :", "`=Démantèlement d'un bijou bovin`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -35090,7 +35090,7 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":sunrise_over_mountains: Plaines :", ":sunrise_over_mountains: En marchant dans les plaines, vous rencontrez les ennemis suivants\n\n" +
-                ":crossed_swords: Pingouin pas gentil | 45HP : " + mobNoel + "\n" +
+                    ":crossed_swords: Pingouin pas gentil | 45HP : " + mobNoel + "\n" +
                     ":crossed_swords: Renard(s) | 20HP : " + renard + "\n" +
                     ":crossed_swords: Sanglier(s) | 30HP : " + sanglier + "\n" +
                     ":crossed_swords: Chien(s) | 15HP : " + chien + "\n" +
@@ -35738,7 +35738,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -35817,7 +35817,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -36075,7 +36075,7 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":park: Forêt :", ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
-                ":crossed_swords: Slime guerrier | 175HP & 10Def : " + mobNoel + "\n" +
+                    ":crossed_swords: Slime guerrier | 175HP & 10Def : " + mobNoel + "\n" +
                     ":crossed_swords: Loup(s) | 80HP : " + loup + "\n" +
                     ":crossed_swords: Slime(s) | 150HP " + slime + "\n" +
                     ":crossed_swords: Bandit(s) expérimenté(s) | 140HP : " + banditExp + "\n" +
@@ -36769,7 +36769,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -36845,7 +36845,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -36921,7 +36921,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -36997,7 +36997,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -37879,7 +37879,7 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":mountain_snow: Montagne :", ":mountain_snow: En marchant dans la montagne, vous rencontrez les ennemis suivants\n\n" +
-                ":crossed_swords: Ours polaire | 300HP : " + mobNoel + "\n" +
+                    ":crossed_swords: Ours polaire | 300HP : " + mobNoel + "\n" +
                     ":crossed_swords: Jeune(s) kobolt(s) | 200HP : " + jeuneKobolt + "\n" +
                     ":crossed_swords: Kobolt(s) explorateur(s) | 325HP : " + koboltExplo + "\n" +
                     ":crossed_swords: Kobolt(s) ouvrier(s) | 275HP : " + koboltOuvrier + "\n" +
@@ -38551,7 +38551,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -38630,7 +38630,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -38706,7 +38706,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -38782,7 +38782,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -39030,7 +39030,7 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":mount_fuji: Grotte :", ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n" +
-                ":crossed_swords: Yeti | 450HP : " + mobNoel + "\n" +
+                    ":crossed_swords: Yeti | 450HP : " + mobNoel + "\n" +
                     ":crossed_swords: Kobolt(s) mineur(s) | 350HP : " + koboltMineur + "\n" +
                     ":crossed_swords: Kobolt(s) combattant(s) | 600HP : " + koboltCombattant + "\n" +
                     ":crossed_swords: Kobolt(s) garde(s) | 520HP : " + koboltGarde + "\n" +
@@ -39664,7 +39664,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -39743,7 +39743,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -40322,7 +40322,7 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":mount_fuji: Forêt dense :", ":mount_fuji: En marchant dans la Forêt dense, vous rencontrez les ennemis suivants\n\n" +
-                ":crossed_swords: Rudolf sauvage | 900HP : " + mobNoel + "\n" +
+                    ":crossed_swords: Rudolf sauvage | 900HP : " + mobNoel + "\n" +
                     ":crossed_swords: Lombric irrégulier | 880HP : " + lombricIrregulier + "\n" +
                     ":crossed_swords: Neoridas | 400HP : " + paplliAssit + "\n" +
                     ":crossed_swords: Bousier colossal | 950HP : " + bousierColossal + "\n" +
@@ -41103,7 +41103,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -41191,7 +41191,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -41286,7 +41286,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -41502,7 +41502,7 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":mount_fuji: Clairière :", ":mount_fuji: En marchant dans la Clairière, vous rencontrez les ennemis suivants\n\n" +
-                ":crossed_swords: Grenouille hivernale | 1000HP : " + mobNoel + "\n" +
+                    ":crossed_swords: Grenouille hivernale | 1000HP : " + mobNoel + "\n" +
                     ":crossed_swords: Bourdon flâneur | 700HP : " + bourdonFlaneur + "\n" +
                     ":crossed_swords: Taurus chargeur | 1250HP : " + taurusChargeur + "\n" +
                     ":crossed_swords: Fort taurus adroit | 1350HP : " + fortTaurus + "\n" +
@@ -42144,7 +42144,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -42232,7 +42232,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -42327,7 +42327,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -42556,7 +42556,7 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":mount_fuji: Vallée :", ":mount_fuji: En marchant dans la vallée, vous rencontrez les ennemis suivants :\n\n" +
-                ":crossed_swords: Simiozard | 3500HP : " + mobNoel + "\n" +
+                    ":crossed_swords: Simiozard | 3500HP : " + mobNoel + "\n" +
                     ":crossed_swords: Guêpe vivace | 225HP : " + guepeVivace + "\n" +
                     ":crossed_swords: Frelon foudroyant | 550HP : " + frelonFoudroyant + "\n" +
                     ":crossed_swords: Boeuf vrombissant | 3250HP : " + boeufVrombissant + "\n" +
@@ -42792,7 +42792,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Vache vrombissante :", ":shield: La vache vrombissante est paralysée en vous voyant approcher vous lui infligez " + echec + " de dégâts. De plus, le boeuf vrombrissant, s'il y en a encore au minimum un, vous attaquera au prochain tour.")
+                .addField(":shield: Vache vrombissante :", ":shield: La vache vrombissante est paralysée en vous voyant approcher vous lui infligez " + echec + " de dégâts. De plus, le boeuf vrombissant, s'il y en a encore au minimum un, vous attaquera au prochain tour.")
             message.channel.send({ embed })
         }
         if (96 <= roll) {
@@ -42927,7 +42927,7 @@ bot.on('message', message => {
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
             .addField(":moneybag: Récompenses :", ":shell: Carapace de guêpe vicace : " + carapace + "\n" +
                 ":butterfly: Aile de guêpe vivace  : " + aile + "\n" +
-                ":syringe: Dard de guêpe vivace: " + dard + "\n" +
+                ":syringe: Dard de guêpe vivace : " + dard + "\n" +
                 ":eyes: Oeil de guêpe vicace : " + oeil + "\n" +
                 ":scales: Armure dargnan au choix : " + armureDargnan + "\n" +
                 ":scales: Bijou dargnan au choix : " + bijouDargnan + "\n" +
@@ -42975,7 +42975,7 @@ bot.on('message', message => {
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
             .addField(":moneybag: Récompenses :", ":shell: Carapace de frelon foudroyant : " + carapace + "\n" +
                 ":butterfly: Aile de frelon foudroyant  : " + aile + "\n" +
-                ":syringe: Dard de frelon foudroyant: " + dard + "\n" +
+                ":syringe: Dard de frelon foudroyant : " + dard + "\n" +
                 ":eyes: Oeil de frelon foudroyant : " + oeil + "\n" +
                 ":scales: Arme darchic à une main : " + armeUneMainDargnan + "\n" +
                 ":scales: Arme darchic à deux mains : " + armeDeuxMainDargnan + "\n" +
@@ -43128,7 +43128,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -43223,7 +43223,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -43311,7 +43311,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -43610,7 +43610,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -43688,7 +43688,7 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-const flocon = Math.floor(6 * Math.random() + 10)
+                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -49385,9 +49385,8 @@ bot.on('message', message => {
         }
     }
 });
-// récompenses Laby //
-// Forêt dense | Monstres | Récompenses
 
+// Labyrinthe Palier 2 | Monstres | Récompenses
 
 bot.on('message', message => {
     const args = message.content;
