@@ -26182,6 +26182,8 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les familiers :", "Parfois durant votre aventure, vous gagnerez sur des monstres, dans des coffres ou même pendant des évènements ce que l'on appelle un 'Familier' !\n\n" +
                 "Ce sont des petits animaux qui vous permettent de non seulement vous offrir des bonus, mais aussi qui vous suivent partout où vous irez !")
+            .addField("Les familiers :", "Pour avoir la liste des familiers qui existent ou qui sont disponible dans le jeu, faites la commande :\n" +
+                "`=Liste des familiers 1`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
