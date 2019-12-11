@@ -51971,7 +51971,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -52064,7 +52064,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -52156,7 +52156,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -52248,7 +52248,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -52340,7 +52340,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -52433,7 +52433,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -52538,7 +52538,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
