@@ -52426,7 +52426,8 @@ bot.on('message', message => {
         const roll = Math.floor(11 * Math.random() + 45) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
-            xp = 
+            xp = 0;
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
