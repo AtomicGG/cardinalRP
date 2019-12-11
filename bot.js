@@ -51956,12 +51956,24 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         let flocon = Math.floor(9 * Math.random() + 6)
+        const cols = Math.floor(51 * Math.random() + 50)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 1
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 25) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0;
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -52037,12 +52049,24 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         let flocon = Math.floor(9 * Math.random() + 6)
+        const cols = Math.floor(41 * Math.random() + 40)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 2
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 30) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0;
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -52117,12 +52141,24 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         let flocon = Math.floor(9 * Math.random() + 6)
+        const cols = Math.floor(21 * Math.random() + 100)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 3
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 40) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0;
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -52197,12 +52233,24 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         let flocon = Math.floor(9 * Math.random() + 6)
+        const cols = Math.floor(121 * Math.random() + 120)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 4
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 50) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0;
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -52277,12 +52325,24 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         let flocon = Math.floor(9 * Math.random() + 6)
+        const cols = Math.floor(161 * Math.random() + 160)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 5
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 55) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0;
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -52358,12 +52418,23 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         let flocon = Math.floor(9 * Math.random() + 6)
+        const cols = Math.floor(81 * Math.random() + 80)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 5
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 45) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -52451,12 +52522,24 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         let flocon = Math.floor(9 * Math.random() + 6)
+        const cols = Math.floor(81 * Math.random() + 210)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 45) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0;
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":snowflake: Flocon de neige : " + flocon)
+            .addField(":sparkles: Points d'expérience : " + xp + "\n" +
+                ":snowflake: Flocons : " + flocon + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
     }
