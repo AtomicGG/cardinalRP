@@ -35863,9 +35863,9 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Persils = Math.floor(3 * 0.25 * Math.random() + 1)
-                const Herbe = Math.floor(3 * 0.25 * Math.random() + 1)
-                const Baies = Math.floor(3 * 0.25 * Math.random() + 1)
+                const Persils = Math.floor(1 * Math.random() + 2)
+                const Herbe = Math.floor(2 * Math.random() + 1)
+                const Baies = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(3 * Math.random() + 2)
                 const idRole = "544250412753092638"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -35942,10 +35942,10 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Viande = Math.floor(3 * Math.random() + 1)
-                const Peau = Math.floor((2 - 0.50) * Math.random())
-                const Coeur = Math.floor((2 - 0.75) * Math.random())
-                const Oeil = Math.floor((2 - 0.75) * Math.random())
+                const Viande = Math.floor(2 * Math.random() + 2)
+                const Peau = Math.floor(2 * Math.random() + 1)
+                const Coeur = Math.floor(2 * Math.random() + 1) - 1
+                const Oeil = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(3 * Math.random() + 2)
                 const idRole = "544250415550693386"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -36898,8 +36898,8 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Estragon = Math.floor(3 * 0.25 * Math.random() + 1)
-                const Herbe = Math.floor(3 * 0.25 * Math.random() + 1)
+                const Estragon = Math.floor(2 * Math.random() + 1)
+                const Herbe = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(4 * Math.random() + 4)
                 const idRole = "544250412753092638"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -36974,8 +36974,8 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const CuivreMediocre = Math.floor(3 * Math.random() + 1)
-                const CuivreCommun = Math.floor(2 * 0.90 * Math.random())
+                const CuivreMediocre = Math.floor(1 * Math.random() + 2)
+                const CuivreCommun = Math.floor(2 * Math.random() + 1)
                 const Exp = Math.floor(3 * Math.random() + 2)
                 const idRole = "544250415051702282"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -37050,8 +37050,8 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const BoisMediocre = Math.floor(3 * Math.random() + 1)
-                const BoisCommun = Math.floor((2 - 0.75) * Math.random())
+                const BoisMediocre = Math.floor(2 * Math.random() + 1)
+                const BoisCommun = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(3 * Math.random() + 2)
                 const idRole = "544250416943071355"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -37126,10 +37126,10 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Viande = Math.floor(3 * 0.25 * Math.random() + 1)
-                const Peau = Math.floor((2 - 0.50) * Math.random())
-                const Coeur = Math.floor((2 - 0.75) * Math.random())
-                const Oeil = Math.floor((2 - 0.75) * Math.random())
+                const Viande = Math.floor(2 * Math.random() + 2)
+                const Peau = Math.floor(2 * Math.random() + 1)
+                const Coeur = Math.floor(2 * Math.random() + 1) - 1
+                const Oeil = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(4 * Math.random() + 4)
                 const idRole = "544250415550693386"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -38684,9 +38684,9 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Basilic = Math.floor(3 * 0.25 * Math.random() + 1)
-                const PlantrusMediocre = Math.floor(3 * 0.5 * Math.random())
-                const PlantrusCommun = Math.floor(2 * 0.75 * Math.random())
+                const Basilic = Math.floor(1 * Math.random() + 2)
+                const PlantrusMediocre = Math.floor(2 * Math.random() + 1)
+                const PlantrusCommun = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 7)
                 const idRole = "544250412753092638"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -38763,8 +38763,8 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const CuivreCommun = Math.floor(2 * 0.5 * Math.random() + 1)
-                const CuivreRare = Math.floor(2 * 0.80 * Math.random())
+                const CuivreCommun = Math.floor(2 * Math.random() + 1)
+                const CuivreRare = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(4 * Math.random() + 4)
                 const idRole = "544250415051702282"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -38839,8 +38839,8 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const BoisCommun = Math.floor(2 * 0.5 * Math.random() + 1)
-                const BoisRare = Math.floor((2 - 0.75) * Math.random())
+                const BoisCommun = Math.floor(2 * Math.random() + 1)
+                const BoisRare = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(4 * Math.random() + 4)
                 const idRole = "544250416943071355"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -38915,10 +38915,10 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Viande = Math.floor(3 * 0.25 * Math.random() + 1)
-                const Peau = Math.floor((2 - 0.50) * Math.random())
-                const Coeur = Math.floor((2 - 0.75) * Math.random())
-                const Oeil = Math.floor((2 - 0.75) * Math.random())
+                const Viande = Math.floor(2 * Math.random() + 2)
+                const Peau = Math.floor(2 * Math.random() + 1)
+                const Coeur = Math.floor(2 * Math.random() + 1) - 1
+                const Oeil = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 7)
                 const idRole = "544250415550693386"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -39801,9 +39801,9 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const PlantrusCommun = Math.floor(2 * 0.5 * Math.random() + 1)
-                const PlantrusRare = Math.floor(2 * 0.75 * Math.random())
-                const PlantrusParfait = Math.floor(2 * 0.95 * Math.random())
+                const PlantrusCommun = Math.floor(1 * Math.random() + 2)
+                const PlantrusRare = Math.floor(2 * Math.random() + 1)
+                const PlantrusParfait = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 11)
                 const idRole = "544250412753092638"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -39880,9 +39880,9 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const CuivreRare = Math.floor(2 * 0.5 * Math.random() + 1)
-                const CuivreParfait = Math.floor(2 * 0.80 * Math.random())
-                const Feu = Math.floor(2 * 0.95 * Math.random())
+                const CuivreRare = Math.floor(1 * Math.random() + 2)
+                const CuivreParfait = Math.floor(2 * Math.random() + 1)
+                const Feu = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 7)
                 const idRole = "544250415051702282"
                 if (roll <= chance && message.member.roles.has(idRole)) {
@@ -40343,7 +40343,7 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Forêt dense quête accomplie")) {
-        let lvl = args.slice(4).join(" : ");        
+        let lvl = args.slice(4).join(" : ");
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 5
         const dif = tMob - tJoueur
@@ -41244,19 +41244,10 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const LierreCommun = Math.floor(2 * Math.random() + 1)
-                let LierreRare = 0
-                let LierreParfait = 0
+                const LierreCommun = Math.floor(1 * Math.random() + 2)
+                const LierreRare = Math.floor(2 * Math.random() + 1)
+                const LierreParfait = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 15)
-                let rollRessource = 0
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    LierreRare = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    LierreParfait = 1
-                }
                 const idRole = "544250412753092638"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -41332,24 +41323,11 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Viande = Math.floor(2 * Math.random() + 1)
-                let Peau = 0
-                let Coeur = 0
-                let Oeil = 0
+                const Viande = Math.floor(2 * Math.random() + 2)
+                const Peau = Math.floor(2 * Math.random() + 1)
+                const Coeur = Math.floor(2 * Math.random() + 1) - 1
+                const Oeil = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 11)
-                let rollRessource = 0
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    Peau = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    Coeur = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    Oeil = 1
-                }
                 const idRole = "544250415550693386"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -41428,12 +41406,8 @@ bot.on('message', message => {
                     chance = 100
                 }
                 const BoisMediocre = Math.floor(2 * Math.random() + 1)
-                let BoisCommun = 0
+                const BoisCommun = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 7)
-                let rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    BoisCommun = 1
-                }
                 const idRole = "544250416943071355"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -42289,19 +42263,10 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const LierreAntidote = Math.floor(2 * Math.random() + 1)
-                let LierreSoin = 0
-                let LierreAir = 0
+                const LierreAntidote = Math.floor(1 * Math.random() + 2)
+                const LierreSoin = Math.floor(2 * Math.random() + 1)
+                const LierreAir = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 15)
-                let rollRessource = 0
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    LierreSoin = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    LierreAir = 1
-                }
                 const idRole = "544250412753092638"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -42377,24 +42342,11 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Viande = Math.floor(2 * Math.random() + 1)
-                let Peau = 0
-                let Coeur = 0
-                let Oeil = 0
+                const Viande = Math.floor(2 * Math.random() + 2)
+                const Peau = Math.floor(2 * Math.random() + 1)
+                const Coeur = Math.floor(2 * Math.random() + 1) - 1
+                const Oeil = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 11)
-                let rollRessource = 0
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    Peau = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    Coeur = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    Oeil = 1
-                }
                 const idRole = "544250415550693386"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -42474,18 +42426,9 @@ bot.on('message', message => {
                 }
                 const Sel = Math.floor(2 * Math.random() + 2)
                 const FerMediocre = Math.floor(2 * Math.random() + 1)
-                let FerCommun = 0
-                let FerRare = 0
+                const FerCommun = Math.floor(2 * Math.random() + 1) - 1
+                const FerRare = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 11)
-                let rollRessource = 0
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    FerCommun = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    FerRare = 1
-                }
                 const idRole = "544250415051702282"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -43277,24 +43220,11 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const Viande = Math.floor(2 * Math.random() + 1)
-                let Peau = 0
-                let Coeur = 0
-                let Oeil = 0
+                const Viande = Math.floor(2 * Math.random() + 2)
+                const Peau = Math.floor(2 * Math.random() + 1)
+                const Coeur = Math.floor(2 * Math.random() + 1) - 1
+                const Oeil = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 15)
-                let rollRessource = 0
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    Peau = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    Coeur = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    Oeil = 1
-                }
                 const idRole = "544250415550693386"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -43372,19 +43302,10 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                let FerCommun = Math.floor(2 * Math.random() + 1)
-                let FerRare = 0
-                let FerParfait = 0
+                const FerCommun = Math.floor(1 * Math.random() + 2)
+                const FerRare = Math.floor(2 * Math.random() + 1)
+                const FerParfait = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(5 * Math.random() + 15)
-                let rollRessource = 0
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    FerRare = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 20) {
-                    FerParfait = 1
-                }
                 const idRole = "544250415051702282"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -43461,12 +43382,7 @@ bot.on('message', message => {
                     chance = 100
                 }
                 const BoisCommun = Math.floor(2 * Math.random() + 1)
-                let BoisRare = 0
-                const Exp = Math.floor(5 * Math.random() + 11)
-                let rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    BoisRare = 1
-                }
+                const BoisRare = Math.floor(2 * Math.random() + 1) - 1
                 const idRole = "544250416943071355"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -43760,12 +43676,7 @@ bot.on('message', message => {
                     chance = 100
                 }
                 const BoisRare = Math.floor(2 * Math.random() + 1)
-                let BoisParfait = 0
-                const Exp = Math.floor(5 * Math.random() + 15)
-                let rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    BoisParfait = 1
-                }
+                const BoisParfait = Math.floor(2 * Math.random() + 1)
                 const idRole = "544250416943071355"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
@@ -43837,23 +43748,11 @@ bot.on('message', message => {
                 if (chance > 100) {
                     chance = 100
                 }
-                const goujon = Math.floor(2 * Math.random() + 1)
-                let crevette = 0
-                let truite = 0
-                let crabe = 0
+                const goujon = Math.floor(2 * Math.random() + 2)
+                const crevette = Math.floor(2 * Math.random() + 1)
+                const truite = Math.floor(2 * Math.random() + 1) - 1
+                const crabe = Math.floor(2 * Math.random() + 1) - 1
                 const Exp = Math.floor(3 * Math.random() + 2)
-                let rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 55) {
-                    crevette = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 35) {
-                    truite = 1
-                }
-                rollRessource = Math.floor(100 * Math.random() + 1);
-                if (rollRessource <= 15) {
-                    crabe = 1
-                }
                 const idRole = "544250417123426324"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
