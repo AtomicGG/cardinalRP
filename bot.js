@@ -43677,6 +43677,7 @@ bot.on('message', message => {
                 }
                 const BoisRare = Math.floor(2 * Math.random() + 1)
                 const BoisParfait = Math.floor(2 * Math.random() + 1)
+                const Exp = Math.floor(5 * Math.random() + 15)
                 const idRole = "544250416943071355"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const embed = new Discord.RichEmbed()
