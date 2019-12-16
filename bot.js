@@ -43377,6 +43377,7 @@ bot.on('message', message => {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
                 const flocon = Math.floor(6 * Math.random() + 10)
+                const Exp = Math.floor(5 * Math.random() + 11)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
