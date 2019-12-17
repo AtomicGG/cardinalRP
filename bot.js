@@ -2001,20 +2001,20 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Tableau des caractéristiques du niveau 1 à 15 :", "Niveau 1 : Aucun\n" +
-                "Niveau 2 : 1 point de caractéristique suppplémentaire !\n" +
-                "Niveau 3 : 1 point de caractéristique suppplémentaire !\n" +
-                "Niveau 4 : 1 point de caractéristique suppplémentaire !\n" +
-                "Niveau 5 : 1 point de caractéristique suppplémentaire !\n" +
-                "Niveau 6 : 2 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 7 : 2 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 8 : 2 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 9 : 2 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 10 : 2 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 11 : 3 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 12 : 3 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 13 : 3 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 14 : 3 points de caractéristiques suppplémentaires !\n" +
-                "Niveau 15 : 3 points de caractéristiques suppplémentaires !")
+                "Niveau 2 : 1 point de caractéristique supplémentaire !\n" +
+                "Niveau 3 : 1 point de caractéristique supplémentaire !\n" +
+                "Niveau 4 : 1 point de caractéristique supplémentaire !\n" +
+                "Niveau 5 : 1 point de caractéristique supplémentaire !\n" +
+                "Niveau 6 : 2 points de caractéristiques supplémentaires !\n" +
+                "Niveau 7 : 2 points de caractéristiques supplémentaires !\n" +
+                "Niveau 8 : 2 points de caractéristiques supplémentaires !\n" +
+                "Niveau 9 : 2 points de caractéristiques supplémentaires !\n" +
+                "Niveau 10 : 2 points de caractéristiques supplémentaires !\n" +
+                "Niveau 11 : 3 points de caractéristiques supplémentaires !\n" +
+                "Niveau 12 : 3 points de caractéristiques supplémentaires !\n" +
+                "Niveau 13 : 3 points de caractéristiques supplémentaires !\n" +
+                "Niveau 14 : 3 points de caractéristiques supplémentaires !\n" +
+                "Niveau 15 : 3 points de caractéristiques supplémentaires !")
             .addBlankField(true)
             .addField("Tableau des caractéristiques du niveau 16 à 30 :", "Niveau 16 : 4 points de caractéristiques supplémentaires !\n" +
                 "Niveau 17 : 4 points de caractéristiques supplémentaires !\n" +
@@ -12586,7 +12586,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Hache basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -24538,7 +24538,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":bowl_with_spoon: Cassolette de truite :", ":bowl_with_spoon: Vous venez de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous gagnez `" + sagesse + "%` de cols en plus sur vos 10 prochains loots !")
+            .addField(":bowl_with_spoon: Cassolette de truite :", ":bowl_with_spoon: Vous venez de fabriquer cet objet !\n\n:gift_heart: Lorsque vous utilisez cet objet, vous gagnez `" + fortune + "%` de cols en plus sur vos 10 prochains loots !")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -33429,7 +33429,7 @@ bot.on('message', message => {
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":crossed_swords: Protection du roi déchu :", ":crossed_swords: Vous encaissez les dégâts d'une défense d'un allié pendant 3 tours3 Les dégâts sont réduits de 20% pendant la durée de cette technique. Vous pouvez arrêter la technique quand vous le voulez.")
+                    .addField(":crossed_swords: Protection du roi déchu :", ":crossed_swords: Vous encaissez les dégâts d'une défense d'un allié pendant 3 tours. Les dégâts sont réduits de 20% pendant la durée de cette technique. Vous pouvez arrêter la technique quand vous le voulez.")
                     .setImage("https://steamusercontent-a.akamaihd.net/ugc/911296644870506361/6415F9D8B892ABD2EAB81DB5EA271AC297C16CBA/")
                     .setTimestamp()
                 message.channel.send({ embed })
@@ -42840,7 +42840,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant cherche une cible puis fonce vers vous, enfonçant son dard en vous. Il inflige " + degat + " de dégâts.")
+                .addField(":crossed_swords: Frelon foudroyant :", ":crossed_swords: Le frelon foudroyant cherche une cible puis fonce vers vous, enfonçant son dard en vous. Il inflige " + degat + " de dégâts.")
             message.channel.send({ embed })
         }
         if (86 <= roll && roll <= 90) {
@@ -42848,7 +42848,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Frelon foudroyant :", ":crossed_swords: Le frelon fourdroyant cherche une cible et en a trouvé une parfaite, fonçant dans son angle mort, piquant avec son dard à la jonction entre deux pièces de votre armure. Il inflige " + degatPerce + " de dégâts de perce armure.")
+                .addField(":crossed_swords: Frelon foudroyant :", ":crossed_swords: Le frelon foudroyant cherche une cible et en a trouvé une parfaite, fonçant dans son angle mort, piquant avec son dard à la jonction entre deux pièces de votre armure. Il inflige " + degatPerce + " de dégâts de perce armure.")
             message.channel.send({ embed })
         }
         if (91 <= roll) {
