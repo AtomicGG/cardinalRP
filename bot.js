@@ -52290,7 +52290,7 @@ bot.on('message', message => {
         let degat = args.slice(3).join(" : ");
         const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 90) {
+        if (roll <= 35) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -52298,7 +52298,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon esquive le coup.")
             message.channel.send({ embed })
         }
-        if (11 <= roll) {
+        if (36 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
