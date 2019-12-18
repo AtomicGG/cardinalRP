@@ -43796,7 +43796,7 @@ bot.on('message', message => {
 
 // Labyrinthe Palier 2 | Parcours
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Entrée du labyrinthe") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -43814,7 +43814,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 1") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -43832,7 +43832,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 2") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -44237,7 +44237,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 3") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -44642,7 +44642,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 4") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -45047,7 +45047,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 5") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -45452,7 +45452,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 6") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -45857,7 +45857,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 7") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -46262,7 +46262,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 8") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -46280,7 +46280,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 9") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -46298,7 +46298,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 10") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -46703,7 +46703,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 11") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -47108,7 +47108,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 12") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -47513,7 +47513,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 13") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -47918,7 +47918,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 14") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -48323,7 +48323,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 15") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -48341,7 +48341,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 16") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -48359,7 +48359,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 17") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -48764,7 +48764,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 18") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -48968,7 +48968,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Chemin 19") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -48986,7 +48986,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Coffre protégé par des monstres") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49026,7 +49026,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Coffre du labyrinthe") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49080,7 +49080,7 @@ bot.on('message', message => {
 
 // Labyrinthe Palier 2 | Monstres | Descriptions
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex lombric irrégulier") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49107,7 +49107,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex neoridas") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49134,7 +49134,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex bousier colossal") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49161,7 +49161,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex venom") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49188,7 +49188,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex doryphore géant") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49216,7 +49216,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex bourdon flâneur") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49243,7 +49243,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex taurus chargeur") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49270,7 +49270,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex fort taurus adroit")
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49296,7 +49296,7 @@ bot.on('message', message => {
         }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex taurus lourd") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49323,7 +49323,7 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex guêpe vivace") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49350,7 +49350,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex frelon foudroyant") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49377,7 +49377,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex boeuf vrombissant") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -49404,7 +49404,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix) + "Apex vache vrombissante") {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50210,7 +50210,7 @@ bot.on('message', message => {
 
 // Labyrinthe Palier 2 | Monstres | Attaques
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex lombric irrégulier attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50255,7 +50255,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex neoridas attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50310,7 +50310,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex bousier colossal attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50355,7 +50355,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex venom attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50400,7 +50400,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex doryphore géant attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50455,7 +50455,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex bourdon flâneur attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50500,7 +50500,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex taurus chargeur attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50546,7 +50546,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex fort taurus adroit attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50592,7 +50592,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex taurus lourd attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50648,7 +50648,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex guêpe vivace attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50684,7 +50684,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex frelon foudroyant attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50739,7 +50739,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex boeuf vrombissant attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50784,7 +50784,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Apex vache vrombissante attaque")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072135169277952 && message.channel.id != 652552592118906900) {
             const embed = new Discord.RichEmbed()
@@ -50831,7 +50831,7 @@ bot.on('message', message => {
 
 // Labyrinthe Palier 2 | Monstres | Défenses
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex lombric irrégulier défense")) {
@@ -50869,7 +50869,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex neoridas défense")) {
@@ -50917,7 +50917,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex venom défense")) {
@@ -50955,7 +50955,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex bousier colossal défense")) {
@@ -50981,7 +50981,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex doryphore géant défense")) {
@@ -51029,7 +51029,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex bourdon flâneur défense")) {
@@ -51068,7 +51068,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex taurus chargeur défense")) {
@@ -51107,7 +51107,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex fort taurus adroit défense")) {
@@ -51145,7 +51145,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex taurus lourd défense")) {
@@ -51183,7 +51183,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex vache vrombissante défense")) {
@@ -51222,7 +51222,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex guêpe vivace défense")) {
@@ -51260,7 +51260,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex boeuf vrombissant défense")) {
@@ -51299,7 +51299,7 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Apex frelon foudroyant défense")) {
@@ -51789,7 +51789,6 @@ bot.on('message', message => {
     }
 });
 
-
 //Palier 3 En cours
 
 bot.on('message', message => {
@@ -51872,8 +51871,6 @@ bot.on('message', message => {
     }
 });
 
-
-
 // Palier 3 | Monstres | Attaques
 
 bot.on('message', message => {
@@ -51885,7 +51882,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Dark Wolf :", ":crossed_swords: La Dark Wolf regarde sa prochaine proie et compte pas le lacher même si provoque, sa prochaine attaque ne serra pas esquivable.")
+                .addField(":crossed_swords: Dark Wolf :", ":crossed_swords: La Dark Wolf regarde sa prochaine proie et compte pas la lâcher même si le loup est provoqué. Sa prochaine attaque ne sera pas esquivable !")
             message.channel.send({ embed })
         }
         if (16 <= roll && roll <= 85) {
@@ -51893,7 +51890,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Dark Wolf :", ":crossed_swords: La Dark Wolf montre les croc et cours vers vous, il saute pour esquiver tous obsactle et vous mord, cela vous inflige " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Dark Wolf :", ":crossed_swords: La Dark Wolf montre les crocs et court vers vous, il saute pour esquiver tout obsactle et vous mord. Cela vous inflige " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51902,7 +51899,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Dark Wolf:", ":crossed_swords: La Dark Wolf vous mord a la jambe et vous inflige " + degat + " de dégâts, cela vous empêche de faire toute actions/attaque/défense qui vous nécessiste de vous déplacez.")
+                .addField(":crossed_swords: Dark Wolf:", ":crossed_swords: La Dark Wolf vous mord la jambe et vous inflige " + degat + " de dégâts. Cela vous empêche également de faire toutes actions offessives ou défensives qui nécessisteraient de se déplacer.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51920,7 +51917,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider saute sur vous et vous mord bien a travers votre armure, infligeant " + degat + " de dégâts de perce armure. Vous êtes empoisonnés et subissez " + poison + " de dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider saute sur vous et vous mord à travers votre armure, infligeant " + degat + " de dégâts de perce armure. Vous êtes empoisonnés et subissez " + poison + " de dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
             message.channel.send({ embed })
         }
         if (56 <= roll) {
@@ -51928,7 +51925,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider vous tire une toile qui vous empêche de bloquer pendant 1 tour, et en profite pour vous attaquer en suite avec ses pattes pendant que vous pouvez plus bloquer. Et il vous inflige " + degatT + " de dégâts. ")
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider vous tire une toile qui vous empêche de bloquer pendant 1 tour et en profite pour vous attaquer ensuite avec ses pattes pendant que vous ne pouvez plus bloquer. Il vous inflige " + degatT + " points de dégâts. ")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51938,6 +51935,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Treant Sapling attaque")) {
         const degat = Math.floor(31 * Math.random() + 260)
+        const soin = Math.floor(31 * Math.random() + 260)
         const ciblage = Math.floor(2 * Math.random() + 2)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 55) {
@@ -51945,7 +51943,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling entre ces racines dans le sol et attaque " + ciblage + " joueurs si vous êtes seul, il vous focus et étourdit en plus des dégats. Il inflige " + degat + " aux joueurs ciblé, si jamais vous êtes toucher, les effet négatif qui sont sur vous dur un tour de plus.")
+                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling s'enracine dans le sol et attaque " + ciblage + " joueurs. Si vous êtes seul, en plus des dégâts, il vous étourdit pendant un tour. Il inflige " + degat + " points de dégâts aux joueurs ciblés. Si jamais vous êtes touchés, les effets négatifs qui sont sur vous durent un tour de plus.")
             message.channel.send({ embed })
         }
         if (56 <= roll && roll <= 75) {
@@ -51953,7 +51951,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling plante bien ses racine dans le sol et se soigner de 200HP.")
+                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling s'enracine dans le sol et se soigne de 200HP.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51962,7 +51960,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling:", ":crossed_swords: Le Treant Sapling plante ses racine dans le sol et lache une pourdre verte depuis ses feuilles qui iront vers les monstres et vont les soigner de " + degat + " HP.")
+                .addField(":crossed_swords: Treant Sapling:", ":crossed_swords: Le Treant Sapling s'enracine dans le sol et lâche une poudre verte depuis ses feuilles qui iront vers les monstres et les soigne de " + soin + " HP.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51978,7 +51976,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider vous tire une toile violette sur vous, vous pouvez seulement l'esquivez.")
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider vous tire une toile violette sur vous. Vous pouvez seulement l'esquiver.")
             message.channel.send({ embed })
         }
         if (31 <= roll && roll <= 94) {
@@ -51986,15 +51984,15 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider cherche une cible marqué de ses toile violette et si elle le trouve et se balance vers lui et tiré une toile sur le joueur et tombe sur lui pour le mordre. Il inflige " + degat + " de dégâts.")
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider cherche une cible marquée de ses toiles violettes. Si elle la trouve, elle se balance vers elle, tire une toile et tombe sur elle pour la mordre. Il inflige " + degat + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (95<= roll) {
+        if (95 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tire ses toile violette sur tous le monde, et cherche la cilbe la plus marqué et va la capturé dans sa toile ou il pourra se libéré quand toute les toiles qu'il a ne sont pas retiré. Pour les retiré il doit se faire frapper.")
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tire ses toiles violettes sur tout le monde et cherche la cible qui possède le plus de toile sur elle. Elle va la capturer dans sa toile où elle ne pourra se libérer que lorsque toutes les toiles qu'elle a seront enlevées. Pour les retirer, le joueur doit se faire frapper.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52010,7 +52008,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole au dessus de vous et donc ne peut pas être visez quand il est au ciel sauf si vous le faite descendre")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole au dessus de vous et donc ne peut pas être visé quand il est au ciel sauf si vous le faites descendre")
             message.channel.send({ embed })
         }
         if (71 <= roll && roll <= 94) {
@@ -52018,15 +52016,15 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vol vers vous et vous griffe. Il inflige " + degat + " de dégâts. Et vole un peu près du sol.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole à ras du sol vers vous et vous griffe. Il inflige " + degat + " de dégâts.")
             message.channel.send({ embed })
         }
-        if (95<= roll) {
+        if (95 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole vers vous et vous capture ( sauf si vous esquivez ) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prennant appuie sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appuie sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes faite =Falcon punch.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole vers vous et vous capture (sauf si vous esquivez) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prenant appui sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appui sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes, faites `=Falcon punch`.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52042,7 +52040,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole au dessus de vous et obeserve.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole au dessus de vous et vous observe.")
             message.channel.send({ embed })
         }
         if (21 <= roll && roll <= 75) {
@@ -52050,15 +52048,15 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon descend en piquer et vous fait une attaque rapace de Pokemon. Il inflige " + degat + " de dégâts. Et s'envole de nouveau SAUF si vous faite une parade ou un blocage crit. Dans ce cas il reste a terre.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon descend en piqué et vous fait une attaque rapace de Pokemon. Il inflige " + degat + " points de dégâts. Il s'envole à nouveau sauf si, pour la défense, vous faites une parade réussie ou un blocage critique. Dans ce cas, il reste à terre.")
             message.channel.send({ embed })
         }
-        if (76<= roll) {
+        if (76 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole vers vous et vous capture ( sauf si vous esquivez ) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prennant appuie sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appuie sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes faite =Falcon punch.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole vers vous et vous capture (sauf si vous esquivez) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prenant appui sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appui sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes, faites `=Falcon punch`.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52077,7 +52075,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vous garde dans les air avec lui, Ding Ding Ding Ding bienvenu sur air falcon.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vous garde dans les airs avec lui, Ding Ding Ding Ding bienvenu sur air falcon.")
             message.channel.send({ embed })
         }
         if (21 <= roll && roll <= 95) {
@@ -52085,15 +52083,15 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon descend en piquer avec le joueur dans ses pattes, il plante bien ses griffe qui font perdre " + degatPerce + " de __perce armure__ ( Pas de défense possible ) et vous jette en force sur le sol qui vous inflige " + degat + " de dégâts sauf si un autre joueur roll pour vous rattraper. Et s'envole de nouveau.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon descend en piqué avec le joueur dans ses pattes, il plante bien ses griffes qui font perdre " + degatPerce + " points de dégâts perce armure (pas de défense possible) et vous jette en force sur le sol qui vous inflige " + degat + " points de dégâts sauf si un autre joueur roll pour vous rattraper. Suite à cela, il s'envole de nouveau.")
             message.channel.send({ embed })
         }
-        if (96<= roll) {
+        if (96 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon envoie le joueur devant lui et fonce sur lui faire un FALCON PUNCH... / L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " de dégats pour chaque arbres pris.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon envoie le joueur devant lui et fonce sur lui faire un FALCON PUNCH... / L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " points de dégats pour chaque arbre que vous vous prenez.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52114,7 +52112,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Dark Wolf :", ":shield: Le Dark Wolf tente d'esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + echec + " de dégâts.")
+                .addField(":shield: Dark Wolf :", ":shield: Le Dark Wolf tente d'esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + echec + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (31 <= roll) {
@@ -52122,7 +52120,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Dark Wolf :", ":shield: Le Dark Wolf prend appuie sur vous saute par dessus vous pour vous esquiver et vous regarde l'air de dire C'est pas seulement le lion le roi de la jungle ! Tu l'a devant toi.")
+                .addField(":shield: Dark Wolf :", ":shield: Le Dark Wolf prend appui sur vous pour sauter par dessus vous et ainsi esquiver. Il vous regarde l'air de dire C'est pas seulement le lion le roi de la jungle ! Tu l'a devant toi.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52142,7 +52140,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider tente d'esquiver mais se fait toucher et subit " + echec + "  la ou vous avez frappez de l'acide va sur vous et vous inflige " + poison + " de dégâts __perce armure__.")
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider tente d'esquiver mais se fait toucher et subit " + echec + " points de dégâts. Malheureusement, là où vous avez frappé, de l'acide jaillit sur vous et vous inflige " + poison + " points de dégâts perce armure.")
             message.channel.send({ embed })
         }
         if (91 <= roll) {
@@ -52150,7 +52148,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider monte d'un arbre et saute par dessus vous et vous esquivez.")
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider monte dans un arbre et saute par dessus vous pour vous esquiver.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52169,7 +52167,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling vous voit approcher et se durcit au maximum et vous lui infligez " + blocage + " points de dégâts.")
+                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling vous voit approcher et se durcit au maximum. Vous lui infligez " + blocage + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (71 <= roll) {
@@ -52177,7 +52175,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling vous voit arriver et met des ronce pour bloquer votre avancer et ne voit plus rien, vous pouvez Roll pour passer derrière son dos ou un joueur passe dans son dos et attaque sans roll et vous faite =Treant Sapling behind you : [Vos dégats d'attaque] Vous devez cependant refaire une attaque derrière, si vous la ratez l'arbre vous fixe de nouveau.")
+                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling vous voit arriver et met des ronces pour bloquer votre avancée et ne voit plus rien. Vous pouvez roll pour passer derrière son dos ou un joueur passe dans son dos et attaque, sans besoin de roll et, pour la défense, faites `=Treant Sapling behind you : [Vos dégats d'attaque]`. Vous devez cependant refaire une attaque, si vous la ratez l'arbre vous fixe à nouveau.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52198,7 +52196,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling se retourne subitement vers vous I SEE YOU... et donne un coup de brancher assez brancher et vous fait prendre  " + parade + " points de dégâts.")
+                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling se retourne subitement vers vous I SEE YOU... et donne un coup de branche assez branché et vous fait prendre  " + parade + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (26 <= roll && roll <= 85) {
@@ -52206,7 +52204,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Treant Sapling se retourne pas assez vite mais essaye de bloquer le coup comme il peut et reçoit " + blocage + "  .")
+                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Treant Sapling se retourne pas assez vite mais essaye de bloquer le coup comme il peut et reçoit " + blocage + "  points de dégâts.")
             message.channel.send({ embed })
         }
         if (86 <= roll) {
@@ -52214,7 +52212,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Treant Sapling :", ":shield: Vous attaquez l'Treant Sapling de dos et vous lui infliger " + blocage + " de dégâts perce armure.")
+                .addField(":shield: Treant Sapling :", ":shield: Vous attaquez le Treant Sapling dans son dos et vous lui infligez " + blocage + " de dégâts perce armure.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52233,7 +52231,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider esquive le coup et vous lance 2 toile violette sur vous.")
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider esquive le coup et vous lance 2 toiles violettes en retour.")
             message.channel.send({ embed })
         }
         if (31 <= roll) {
@@ -52241,7 +52239,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tente d'esquivez mais vous arrivez a le toucher, vous lui infligez " + echec + " de dégâts. Mais il profique du coup pour vous rajoutez une toile violette")
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tente d'esquiver mais vous arrivez à le toucher. Vous lui infligez " + echec + " points de dégâts. Mais il en profite du coup pour vous rajouter une toile violette.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52268,17 +52266,17 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon tente d'esquivez mais vous arrivez a le toucher, vous lui infligez " + echec + " de dégâts. Et descend sur terre.  .")
-         message.channel.send({ embed })
-       }
-       if (91 <= roll) {
-           const embed = new Discord.RichEmbed()
-               .setAuthor(message.author.username, message.author.avatarURL)
-               .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-               .setColor(3447003)
-               .addField(":crossed_swords: Falcon vol :", ":crossed_swords: Le Falcon vous esquive et vous capture comme vous êtes la, a son tour faite =FALCON PUNCH. ")
-               .setTimestamp()
-           message.channel.send({ embed })
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon tente d'esquiver mais vous arrivez à le toucher. Vous lui infligez " + echec + " points de dégâts et il descend sur terre.")
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon vol :", ":crossed_swords: Le Falcon vous esquive et vous capture comme vous êtes la, à son tour faite =FALCON PUNCH.")
+                .setTimestamp()
+            message.channel.send({ embed })
         }
     }
 });
@@ -52303,12 +52301,13 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon tente d'esquivez mais vous arrivez a le toucher, vous lui infligez " + echec + " de dégâts.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon tente d'esquiver mais vous arrivez à le toucher, vous lui infligez " + echec + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
     }
 });
+
 // Noël 2019 | Plaine
 
 bot.on('message', message => {
