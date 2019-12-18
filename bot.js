@@ -51856,16 +51856,16 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Falcon") {
+    if (message.content === (prefix) + "Eagle") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Falcon :", ":japanese_ogre: Un aigle qui n'est trouvable que dans le palier 3, il a deux phases, une phase a terre et l'autre ras du sol")
-            .setImage("https://vignette.wikia.nocookie.net/smashbros/images/d/d6/Art_Captain_Falcon_Ultimate.png/revision/latest?cb=20180615173545&path-prefix=fr")
+            .setTitle(":japanese_ogre: Eagle :", ":japanese_ogre: Un aigle qui n'est trouvable que dans le palier 3, il a deux phases, une phase a terre et l'autre ras du sol")
+            .setImage("https://media.moddb.com/images/games/1/28/27218/Zombie-Eagle.1.jpg")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Falcon vol attaque`")
-            .addField(":shield: Lorsque le Falcon reçoit un coup :", ":shield: `=Falcon défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Falcon récompenses : [Votre niveau]`")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Eagle vol attaque`")
+            .addField(":shield: Lorsque le Eagle reçoit un coup :", ":shield: `=Eagle défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Eagle récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -51917,7 +51917,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider saute sur vous et vous mord à travers votre armure, infligeant " + degat + " de dégâts de perce armure. Vous êtes empoisonnés et subissez " + poison + " de dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider vous saute dessus et vous mord à travers votre armure, infligeant " + degat + " de dégâts de perce armure. Vous êtes empoisonné.e et subissez  " + poison + " dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonné.e, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent..")
             message.channel.send({ embed })
         }
         if (56 <= roll) {
@@ -52000,7 +52000,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Falcon sol attaque")) {
+    if (message.content.startsWith(prefix + "Eagle sol attaque")) {
         const degat = Math.floor(26 * Math.random() + 285)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
@@ -52008,7 +52008,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole au dessus de vous et donc ne peut pas être visé quand il est au ciel sauf si vous le faites descendre")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole au dessus de vous et donc ne peut pas être visé quand il est au ciel sauf si vous le faites descendre")
             message.channel.send({ embed })
         }
         if (71 <= roll && roll <= 94) {
@@ -52016,7 +52016,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole à ras du sol vers vous et vous griffe. Il inflige " + degat + " de dégâts.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole à ras du sol vers vous et vous griffe. Il inflige " + degat + " de dégâts.")
             message.channel.send({ embed })
         }
         if (95 <= roll) {
@@ -52024,7 +52024,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole vers vous et vous capture (sauf si vous esquivez) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prenant appui sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appui sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes, faites `=Falcon punch`.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole vers vous et vous capture (sauf si vous esquivez) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prenant appui sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appui sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes, faites `=Eagle punch`.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52032,7 +52032,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Falcon vol attaque")) {
+    if (message.content.startsWith(prefix + "Eagle vol attaque")) {
         const degat = Math.floor(26 * Math.random() + 285)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 20) {
@@ -52040,7 +52040,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole au dessus de vous et vous observe.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole au dessus de vous et vous observe.")
             message.channel.send({ embed })
         }
         if (21 <= roll && roll <= 75) {
@@ -52048,7 +52048,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon descend en piqué et vous fait une attaque rapace de Pokemon. Il inflige " + degat + " points de dégâts. Il s'envole à nouveau sauf si, pour la défense, vous faites une parade réussie ou un blocage critique. Dans ce cas, il reste à terre.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle descend en piqué et vous fait une attaque rapace de Pokemon. Il inflige " + degat + " points de dégâts. Il s'envole à nouveau sauf si, pour la défense, vous faites une parade réussie ou un blocage critique. Dans ce cas, il reste à terre.")
             message.channel.send({ embed })
         }
         if (76 <= roll) {
@@ -52056,7 +52056,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole vers vous et vous capture (sauf si vous esquivez) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prenant appui sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appui sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes, faites `=Falcon punch`.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole vers vous et vous capture (sauf si vous esquivez) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prenant appui sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appui sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes, faites `=Eagle punch`.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52064,7 +52064,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Falcon punch")) {
+    if (message.content.startsWith(prefix + "Eagle punch")) {
         const degat = Math.floor(26 * Math.random() + 255)
         const degatPerce = Math.floor(26 * Math.random() + 115)
         const crit = Math.floor(21 * Math.random() + 260)
@@ -52075,7 +52075,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vous garde dans les airs avec lui, Ding Ding Ding Ding bienvenu sur air falcon.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vous garde dans les airs avec lui, Ding Ding Ding Ding bienvenu sur air Eagle.")
             message.channel.send({ embed })
         }
         if (21 <= roll && roll <= 95) {
@@ -52083,7 +52083,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon descend en piqué avec le joueur dans ses pattes, il plante bien ses griffes qui font perdre " + degatPerce + " points de dégâts perce armure (pas de défense possible) et vous jette en force sur le sol qui vous inflige " + degat + " points de dégâts sauf si un autre joueur roll pour vous rattraper. Suite à cela, il s'envole de nouveau.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle descend en piqué avec le joueur dans ses pattes, il plante bien ses griffes qui font perdre " + degatPerce + " points de dégâts perce armure (pas de défense possible) et vous jette en force sur le sol qui vous inflige " + degat + " points de dégâts sauf si un autre joueur roll pour vous rattraper. Suite à cela, il s'envole de nouveau.")
             message.channel.send({ embed })
         }
         if (96 <= roll) {
@@ -52091,7 +52091,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon envoie le joueur devant lui et fonce sur lui faire un FALCON PUNCH... / L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " points de dégats pour chaque arbre que vous vous prenez.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle envoie le joueur devant lui et fonce sur lui faire un Eagle PUNCH... / L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " points de dégats pour chaque arbre que vous vous prenez.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52249,7 +52249,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Falcon vol défense")) {
+    if (message.content.startsWith(prefix + "Eagle vol défense")) {
         let degat = args.slice(3).join(" : ");
         const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -52258,7 +52258,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon vol :", ":crossed_swords: Le Falcon esquive le coup.")
+                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: Le Eagle esquive le coup.")
             message.channel.send({ embed })
         }
         if (51 <= roll && roll <= 90) {
@@ -52266,7 +52266,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon tente d'esquiver mais vous arrivez à le toucher. Vous lui infligez " + echec + " points de dégâts et il descend sur terre.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle tente d'esquiver mais vous arrivez à le toucher. Vous lui infligez " + echec + " points de dégâts et il descend sur terre.")
             message.channel.send({ embed })
         }
         if (91 <= roll) {
@@ -52274,7 +52274,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon vol :", ":crossed_swords: Le Falcon vous esquive et vous capture comme vous êtes la, à son tour faite =FALCON PUNCH.")
+                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: Le Eagle vous esquive et vous capture comme vous êtes la, à son tour faite =Eagle PUNCH.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52284,7 +52284,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Falcon sol défense")) {
+    if (message.content.startsWith(prefix + "Eagle sol défense")) {
         let degat = args.slice(3).join(" : ");
         const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -52293,7 +52293,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon esquive le coup.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle esquive le coup.")
             message.channel.send({ embed })
         }
         if (36 <= roll) {
@@ -52301,7 +52301,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon tente d'esquiver mais vous arrivez à le toucher, vous lui infligez " + echec + " points de dégâts.")
+                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle tente d'esquiver mais vous arrivez à le toucher, vous lui infligez " + echec + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
