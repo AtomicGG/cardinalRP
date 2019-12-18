@@ -51978,7 +51978,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider vous tire une toile voillette sur vous, vous pouvez seulement l'esquivez.")
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider vous tire une toile violette sur vous, vous pouvez seulement l'esquivez.")
             message.channel.send({ embed })
         }
         if (31 <= roll && roll <= 94) {
@@ -51986,7 +51986,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider cherche une cible marqué de ses toile voillette et si elle le trouve et se balance vers lui et tiré une toile sur le joueur et tombe sur lui pour le mordre. Il inflige " + degat + " de dégâts.")
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider cherche une cible marqué de ses toile violette et si elle le trouve et se balance vers lui et tiré une toile sur le joueur et tombe sur lui pour le mordre. Il inflige " + degat + " de dégâts.")
             message.channel.send({ embed })
         }
         if (95<= roll) {
@@ -51994,7 +51994,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tire ses toile voillette sur tous le monde, et cherche la cilbe la plus marqué et va la capturé dans sa toile ou il pourra se libéré quand toute les toiles qu'il a ne sont pas retiré. Pour les retiré il doit se faire frapper.")
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tire ses toile violette sur tous le monde, et cherche la cilbe la plus marqué et va la capturé dans sa toile ou il pourra se libéré quand toute les toiles qu'il a ne sont pas retiré. Pour les retiré il doit se faire frapper.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
