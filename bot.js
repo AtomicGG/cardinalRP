@@ -51878,7 +51878,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Dark Wolf attaque")) {
-        const degat = Math.floor(26 * Math.random() + 235)
+        const degat = Math.floor(26 * Math.random() + 255)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 15) {
             const embed = new Discord.RichEmbed()
@@ -51912,7 +51912,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Coppice spider attaque")) {
         const degat = Math.floor(26 * Math.random() + 160)
-        const degatT = Math.floor(26 * Math.random() + 200)
+        const degatT = Math.floor(26 * Math.random() + 250)
         const poison = Math.floor(21 * Math.random() + 40)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 55) {
@@ -51937,7 +51937,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Treant Sapling attaque")) {
-        const degat = Math.floor(31 * Math.random() + 200)
+        const degat = Math.floor(31 * Math.random() + 260)
         const ciblage = Math.floor(2 * Math.random() + 2)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 55) {
@@ -51971,7 +51971,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Thicket Spider attaque")) {
-        const degat = Math.floor(26 * Math.random() + 225)
+        const degat = Math.floor(26 * Math.random() + 275)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 30) {
             const embed = new Discord.RichEmbed()
@@ -52003,7 +52003,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Falcon sol attaque")) {
-        const degat = Math.floor(26 * Math.random() + 255)
+        const degat = Math.floor(26 * Math.random() + 285)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
             const embed = new Discord.RichEmbed()
@@ -52035,7 +52035,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Falcon vol attaque")) {
-        const degat = Math.floor(26 * Math.random() + 255)
+        const degat = Math.floor(26 * Math.random() + 285)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 20) {
             const embed = new Discord.RichEmbed()
