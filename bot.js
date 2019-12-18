@@ -52018,7 +52018,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vol vers vous et vous griffe. Il inflige " + degat + " de dégâts. Et vole un peu prêt du sol.")
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vol vers vous et vous griffe. Il inflige " + degat + " de dégâts. Et vole un peu près du sol.")
             message.channel.send({ embed })
         }
         if (95<= roll) {
@@ -52255,7 +52255,7 @@ bot.on('message', message => {
         let degat = args.slice(3).join(" : ");
         const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 80) {
+        if (roll <= 50) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -52263,7 +52263,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Falcon vol :", ":crossed_swords: Le Falcon esquive le coup.")
             message.channel.send({ embed })
         }
-        if (80 <= roll && roll <= 90) {
+        if (51 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
