@@ -51798,7 +51798,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Coppice spider :", ":japanese_ogre: Une arraigné qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214914/350-1.png")
+            .setImage("https://cdn.discordapp.com/attachments/537815708223012875/653659854493319168/unknown.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550\n:warning: **__Si vous êtes protégés contre le poison, l'attaque normal de la Coppice spider inflige uniquement des dégat perce armure__** ")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Coppice spider attaque`")
             .addField(":shield: Lorsque le Coppice spider reçoit un coup :", ":shield: `=Coppice spider défense : [Points de dégâts de votre coup]`")
@@ -51814,7 +51814,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Dark Wolf :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
-            .setImage("https://previews.123rf.com/images/vladischern/vladischern1312/vladischern131200001/24184438-vache-main-vecteur-llustration-croquis-tir%C3%A9-r%C3%A9aliste.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/656685405311074347/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Dark Wolf attaque`")
             .addField(":shield: Lorsque le Dark Wolf reçoit un coup :", ":shield: `=Dark Wolf défense : [Points de dégâts de votre coup]`")
@@ -51825,16 +51825,16 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Elder Treant") {
+    if (message.content === (prefix) + "Treant Sapling") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Elder Treant :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609766017589051392/Taurus-Pic-Drawing.png")
+            .setTitle(":japanese_ogre: Treant Sapling :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/cc/Treant_Sapling.png/revision/latest/scale-to-width-down/350?cb=20160913205917")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 500 :shield: 500")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Elder Treant attaque`")
-            .addField(":shield: Lorsque le Elder Treant reçoit un coup :", ":shield: `=Elder Treant défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Elder Treant récompenses : [Votre niveau]`")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Treant Sapling attaque`")
+            .addField(":shield: Lorsque le Treant Sapling reçoit un coup :", ":shield: `=Treant Sapling défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Treant Sapling récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -51846,7 +51846,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Thicket Spider :", ":japanese_ogre: Un araigné qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214920/73.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/537815708223012875/653659854493319168/unknown.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 550")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Thicket Spider attaque`")
             .addField(":shield: Lorsque le Thicket Spider reçoit un coup :", ":shield: `=Thicket Spider défense : [Points de dégâts de votre coup]`")
@@ -51862,9 +51862,9 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Falcon :", ":japanese_ogre: Un aigle qui n'est trouvable que dans le palier 3, il a deux phases, une phase a terre et l'autre ras du sol")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214920/73.jpg")
+            .setImage("https://vignette.wikia.nocookie.net/smashbros/images/d/d6/Art_Captain_Falcon_Ultimate.png/revision/latest?cb=20180615173545&path-prefix=fr")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Falcon attaque`")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Falcon vol attaque`")
             .addField(":shield: Lorsque le Falcon reçoit un coup :", ":shield: `=Falcon défense : [Points de dégâts de votre coup]`")
             .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Falcon récompenses : [Votre niveau]`")
             .setTimestamp()
@@ -51936,7 +51936,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Elder Treant attaque")) {
+    if (message.content.startsWith(prefix + "Treant Sapling attaque")) {
         const degat = Math.floor(31 * Math.random() + 200)
         const ciblage = Math.floor(2 * Math.random() + 2)
         const roll = Math.floor(100 * Math.random() + 1)
@@ -51945,7 +51945,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Elder Treant :", ":crossed_swords: Le Elder Treant entre ces racines dans le sol et attaque " + ciblage + " si vous êtes seul, il vous focus et étourdit et inflige " + degat + " aux joueurs ciblé, si jamais vous êtes toucher, les effet négatif qui sont sur vous dur un tour de plus.")
+                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling entre ces racines dans le sol et attaque " + ciblage + " si vous êtes seul, il vous focus et étourdit et inflige " + degat + " aux joueurs ciblé, si jamais vous êtes toucher, les effet négatif qui sont sur vous dur un tour de plus.")
             message.channel.send({ embed })
         }
         if (56 <= roll && roll <= 75) {
@@ -51953,7 +51953,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Elder Treant :", ":crossed_swords: Le Elder Treant plante bien ses racine dans le sol et se soigner de 200HP.")
+                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling plante bien ses racine dans le sol et se soigner de 200HP.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51962,7 +51962,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Elder Treant:", ":crossed_swords: Le Elder Treant plante ses racine dans le sol et lache une pourdre verte depuis ses feuilles qui iront vers les monstres et vont les soigner de " + degat + " HP.")
+                .addField(":crossed_swords: Treant Sapling:", ":crossed_swords: Le Treant Sapling plante ses racine dans le sol et lache une pourdre verte depuis ses feuilles qui iront vers les monstres et vont les soigner de " + degat + " HP.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52160,7 +52160,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Elder Treant défense")) {
+    if (message.content.startsWith(prefix + "Treant Sapling défense")) {
         let degat = args.slice(3).join(" : ");
         const blocage = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -52169,7 +52169,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Elder Treant :", ":shield: Le Elder Treant vous voit approcher et se durcit au maximum et vous lui infligez " + blocage + " points de dégâts.")
+                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling vous voit approcher et se durcit au maximum et vous lui infligez " + blocage + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (71 <= roll) {
@@ -52177,7 +52177,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Elder Treant :", ":shield: Le Elder Treant vous voit arriver et met des ronce pour bloquer votre avancer et ne voit plus rien, vous pouvez Roll pour passer derrière son dos ou un joueur passe dans son dos et attaque sans roll et vous faite =Elder treant behind you : [Vos dégats d'attaque] Vous devez cependant refaire une attaque derrière, si vous la ratez l'arbre vous fixe de nouveau.")
+                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling vous voit arriver et met des ronce pour bloquer votre avancer et ne voit plus rien, vous pouvez Roll pour passer derrière son dos ou un joueur passe dans son dos et attaque sans roll et vous faite =Treant Sapling behind you : [Vos dégats d'attaque] Vous devez cependant refaire une attaque derrière, si vous la ratez l'arbre vous fixe de nouveau.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52187,7 +52187,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Elder Treant behind you")) {
+    if (message.content.startsWith(prefix + "Treant Sapling behind you")) {
         let degat = args.slice(4).join(" : ");
         const blocage = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 0.6))
         const blocageRater = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 1))
@@ -52198,7 +52198,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Elder Treant :", ":shield: Le Elder Treant se retourne subitement vers vous I SEE YOU... et donne un coup de brancher assez brancher et vous fait prendre  " + parade + " points de dégâts.")
+                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling se retourne subitement vers vous I SEE YOU... et donne un coup de brancher assez brancher et vous fait prendre  " + parade + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (26 <= roll && roll <= 85) {
@@ -52206,7 +52206,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Elder Treant :", ":crossed_swords: Elder Treant se retourne pas assez vite mais essaye de bloquer le coup comme il peut et reçoit " + blocage + "  .")
+                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Treant Sapling se retourne pas assez vite mais essaye de bloquer le coup comme il peut et reçoit " + blocage + "  .")
             message.channel.send({ embed })
         }
         if (86 <= roll) {
@@ -52214,7 +52214,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Elder Treant :", ":shield: Vous attaquez l'Elder treant de dos et vous lui infliger " + blocage + " de dégâts perce armure.")
+                .addField(":shield: Treant Sapling :", ":shield: Vous attaquez l'Treant Sapling de dos et vous lui infliger " + blocage + " de dégâts perce armure.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
