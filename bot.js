@@ -51789,6 +51789,465 @@ bot.on('message', message => {
     }
 });
 
+
+//Palier 3 En cours
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Coppice spider") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Coppice spider :", ":japanese_ogre: Une arraigné qui n'est trouvable que dans le palier 3")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214914/350-1.png")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550\n:warning: **__Si vous êtes protégés contre le poison, l'attaque normal de la Coppice spider inflige uniquement des dégat perce armure__** ")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Coppice spider attaque`")
+            .addField(":shield: Lorsque le Coppice spider reçoit un coup :", ":shield: `=Coppice spider défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Coppice spider récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Dark Wolf") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Dark Wolf :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
+            .setImage("https://previews.123rf.com/images/vladischern/vladischern1312/vladischern131200001/24184438-vache-main-vecteur-llustration-croquis-tir%C3%A9-r%C3%A9aliste.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Dark Wolf attaque`")
+            .addField(":shield: Lorsque le Dark Wolf reçoit un coup :", ":shield: `=Dark Wolf défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Dark Wolf récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Elder Treant") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Elder Treant :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609766017589051392/Taurus-Pic-Drawing.png")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 500 :shield: 500")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Elder Treant attaque`")
+            .addField(":shield: Lorsque le Elder Treant reçoit un coup :", ":shield: `=Elder Treant défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Elder Treant récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Thicket Spider") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Thicket Spider :", ":japanese_ogre: Un araigné qui n'est trouvable que dans le palier 3")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214920/73.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 550")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Thicket Spider attaque`")
+            .addField(":shield: Lorsque le Thicket Spider reçoit un coup :", ":shield: `=Thicket Spider défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Thicket Spider récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Falcon") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Falcon :", ":japanese_ogre: Un aigle qui n'est trouvable que dans le palier 3, il a deux phases, une phase a terre et l'autre ras du sol")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/609765850706214920/73.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Falcon attaque`")
+            .addField(":shield: Lorsque le Falcon reçoit un coup :", ":shield: `=Falcon défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Falcon récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+
+
+// Palier 3 | Monstres | Attaques
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Dark Wolf attaque")) {
+        const degat = Math.floor(26 * Math.random() + 235)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 15) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Dark Wolf :", ":crossed_swords: La Dark Wolf regarde sa prochaine proie et compte pas le lacher même si provoque, sa prochaine attaque ne serra pas esquivable.")
+            message.channel.send({ embed })
+        }
+        if (16 <= roll && roll <= 85) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Dark Wolf :", ":crossed_swords: La Dark Wolf montre les croc et cours vers vous, il saute pour esquiver tous obsactle et vous mord, cela vous inflige " + degat + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (86 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Dark Wolf:", ":crossed_swords: La Dark Wolf vous mord a la jambe et vous inflige " + degat + " de dégâts, cela vous empêche de faire toute actions/attaque/défense qui vous nécessiste de vous déplacez.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Coppice spider attaque")) {
+        const degat = Math.floor(26 * Math.random() + 160)
+        const degatT = Math.floor(26 * Math.random() + 200)
+        const poison = Math.floor(21 * Math.random() + 40)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 55) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider saute sur vous et vous mord bien a travers votre armure, infligeant " + degat + " de dégâts de perce armure. Vous êtes empoisonnés et subissez " + poison + " de dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+            message.channel.send({ embed })
+        }
+        if (56 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider vous tire une toile qui vous empêche de bloquer pendant 1 tour, et en profite pour vous attaquer en suite avec ses pattes pendant que vous pouvez plus bloquer. Et il vous inflige " + degatT + " de dégâts. ")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Elder Treant attaque")) {
+        const degat = Math.floor(31 * Math.random() + 200)
+        const ciblage = Math.floor(2 * Math.random() + 2)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 55) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Elder Treant :", ":crossed_swords: Le Elder Treant entre ces racines dans le sol et attaque " + ciblage + " si vous êtes seul, il vous focus et étourdit et inflige " + degat + " aux joueurs ciblé, si jamais vous êtes toucher, les effet négatif qui sont sur vous dur un tour de plus.")
+            message.channel.send({ embed })
+        }
+        if (56 <= roll && roll <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Elder Treant :", ":crossed_swords: Le Elder Treant plante bien ses racine dans le sol et se soigner de 200HP.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (76 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Elder Treant:", ":crossed_swords: Le Elder Treant plante ses racine dans le sol et lache une pourdre verte depuis ses feuilles qui iront vers les monstres et vont les soigner de " + degat + " HP.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Thicket Spider attaque")) {
+        const degat = Math.floor(26 * Math.random() + 225)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider vous tire une toile voillette sur vous, vous pouvez seulement l'esquivez.")
+            message.channel.send({ embed })
+        }
+        if (31 <= roll && roll <= 94) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider cherche une cible marqué de ses toile voillette et si elle le trouve et se balance vers lui et tiré une toile sur le joueur et tombe sur lui pour le mordre. Il inflige " + degat + " de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (95<= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tire ses toile voillette sur tous le monde, et cherche la cilbe la plus marqué et va la capturé dans sa toile ou il pourra se libéré quand toute les toiles qu'il a ne sont pas retiré. Pour les retiré il doit se faire frapper.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Falcon sol attaque")) {
+        const degat = Math.floor(26 * Math.random() + 255)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole au dessus de vous et donc ne peut pas être visez quand il est au ciel sauf si vous le faite descendre")
+            message.channel.send({ embed })
+        }
+        if (71 <= roll && roll <= 94) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vol vers vous et vous griffe. Il inflige " + degat + " de dégâts. Et vole un peu prêt du sol.")
+            message.channel.send({ embed })
+        }
+        if (95<= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole vers vous et vous capture ( sauf si vous esquivez ) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prennant appuie sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appuie sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes faite =Falcon punch.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Falcon vol attaque")) {
+        const degat = Math.floor(26 * Math.random() + 255)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 20) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole au dessus de vous et obeserve.")
+            message.channel.send({ embed })
+        }
+        if (21 <= roll && roll <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon descend en piquer et vous fait une attaque rapace de Pokemon. Il inflige " + degat + " de dégâts. Et s'envole de nouveau SAUF si vous faite une parade ou un blocage crit. Dans ce cas il reste a terre.")
+            message.channel.send({ embed })
+        }
+        if (76<= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vole vers vous et vous capture ( sauf si vous esquivez ) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prennant appuie sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appuie sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes faite =Falcon punch.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Falcon punch")) {
+        const degat = Math.floor(26 * Math.random() + 255)
+        const degatPerce = Math.floor(26 * Math.random() + 115)
+        const crit = Math.floor(21 * Math.random() + 260)
+        const ciblage = Math.floor(3 * Math.random() + 1)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 20) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon vous garde dans les air avec lui, Ding Ding Ding Ding bienvenu sur air falcon.")
+            message.channel.send({ embed })
+        }
+        if (21 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon descend en piquer avec le joueur dans ses pattes, il plante bien ses griffe qui font perdre " + degatPerce + " de __perce armure__ ( Pas de défense possible ) et vous jette en force sur le sol qui vous inflige " + degat + " de dégâts sauf si un autre joueur roll pour vous rattraper. Et s'envole de nouveau.")
+            message.channel.send({ embed })
+        }
+        if (96<= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon envoie le joueur devant lui et fonce sur lui faire un FALCON PUNCH... / L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " de dégats pour chaque arbres pris.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+// Palier 3| Monstres | Défenses
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Dark Wolf défense")) {
+        let degat = args.slice(3).join(" : ");
+        const echec = Math.floor(((degat * 1.2) + 1) * Math.random() + (degat * 0.7))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Dark Wolf :", ":shield: Le Dark Wolf tente d'esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + echec + " de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (31 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Dark Wolf :", ":shield: Le Dark Wolf prend appuie sur vous saute par dessus vous pour vous esquiver et vous regarde l'air de dire C'est pas seulement le lion le roi de la jungle ! Tu l'a devant toi.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Coppice spider défense")) {
+        let degat = args.slice(3).join(" : ");
+        const echec = Math.floor(((degat * 1.5) + 1) * Math.random() + (degat * 1.5))
+        const poison = Math.floor(21 * Math.random() + 80)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider tente d'esquiver mais se fait toucher et subit " + echec + "  la ou vous avez frappez de l'acide va sur vous et vous inflige " + poison + " de dégâts __perce armure__.")
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider monte d'un arbre et saute par dessus vous et vous esquivez.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Elder Treant défense")) {
+        let degat = args.slice(3).join(" : ");
+        const blocage = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elder Treant :", ":shield: Le Elder Treant vous voit approcher et se durcit au maximum et vous lui infligez " + blocage + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elder Treant :", ":shield: Le Elder Treant vous voit arriver et met des ronce pour bloquer votre avancer et ne voit plus rien, vous pouvez Roll pour passer derrière son dos ou un joueur passe dans son dos et attaque sans roll et vous faite =Elder treant behind you : [Vos dégats d'attaque] Vous devez cependant refaire une attaque derrière, si vous la ratez l'arbre vous fixe de nouveau.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Elder Treant behind you")) {
+        let degat = args.slice(4).join(" : ");
+        const blocage = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 0.6))
+        const blocageRater = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 1))
+        const parade = Math.floor(26 * Math.random() + 200)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 25) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elder Treant :", ":shield: Le Elder Treant se retourne subitement vers vous I SEE YOU... et donne un coup de brancher assez brancher et vous fait prendre  " + parade + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (26 <= roll && roll <= 85) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Elder Treant :", ":crossed_swords: Elder Treant se retourne pas assez vite mais essaye de bloquer le coup comme il peut et reçoit " + blocage + "  .")
+            message.channel.send({ embed })
+        }
+        if (86 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elder Treant :", ":shield: Vous attaquez l'Elder treant de dos et vous lui infliger " + blocage + " de dégâts perce armure.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Thicket Spider défense")) {
+        let degat = args.slice(3).join(" : ");
+        const echec = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider esquive le coup et vous lance 2 toile violette sur vous.")
+            message.channel.send({ embed })
+        }
+        if (31 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tente d'esquivez mais vous arrivez a le toucher, vous lui infligez " + echec + " de dégâts. Mais il profique du coup pour vous rajoutez une toile violette")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Noël 2019 | Plaine
 
 bot.on('message', message => {
