@@ -51945,7 +51945,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling entre ces racines dans le sol et attaque " + ciblage + " si vous êtes seul, il vous focus et étourdit et inflige " + degat + " aux joueurs ciblé, si jamais vous êtes toucher, les effet négatif qui sont sur vous dur un tour de plus.")
+                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling entre ces racines dans le sol et attaque " + ciblage + " joueurs si vous êtes seul, il vous focus et étourdit en plus des dégats. Il inflige " + degat + " aux joueurs ciblé, si jamais vous êtes toucher, les effet négatif qui sont sur vous dur un tour de plus.")
             message.channel.send({ embed })
         }
         if (56 <= roll && roll <= 75) {
@@ -52134,7 +52134,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Coppice spider défense")) {
         let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 1.5) + 1) * Math.random() + (degat * 1.5))
+        const echec = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.1))
         const poison = Math.floor(21 * Math.random() + 80)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 90) {
@@ -52248,6 +52248,67 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Falcon vol défense")) {
+        let degat = args.slice(3).join(" : ");
+        const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon vol :", ":crossed_swords: Le Falcon esquive le coup.")
+            message.channel.send({ embed })
+        }
+        if (80 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon tente d'esquivez mais vous arrivez a le toucher, vous lui infligez " + echec + " de dégâts. Et descend sur terre.  .")
+         message.channel.send({ embed })
+       }
+       if (91 <= roll) {
+           const embed = new Discord.RichEmbed()
+               .setAuthor(message.author.username, message.author.avatarURL)
+               .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+               .setColor(3447003)
+               .addField(":crossed_swords: Falcon vol :", ":crossed_swords: Le Falcon vous esquive et vous capture comme vous êtes la, a son tour faite =FALCON PUNCH. ")
+               .setTimestamp()
+           message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Falcon sol défense")) {
+        let degat = args.slice(3).join(" : ");
+        const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon esquive le coup.")
+            message.channel.send({ embed })
+        }
+        if (11 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Falcon :", ":crossed_swords: Le Falcon tente d'esquivez mais vous arrivez a le toucher, vous lui infligez " + echec + " de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
 // Noël 2019 | Plaine
 
 bot.on('message', message => {
