@@ -37207,7 +37207,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .addField(":bank: Donjon sauvage :", ":bank: Vous entrez dans une nouvelle salle du donjon, vous sentez que l'atmosphère n'est pas habituelle, un gaz toxique remplit subitment la pièce " +
-                    "qui vous inflige " + piege + " dégâts à chacun...\n\n[Votre armure ne réduit rien]\nVous pouvez accéder à la salle suivante : `=Donjon sauvage salle : " + ((salle * 1) + 1) + "`")
+                    "qui vous inflige " + poison + " dégâts à chacun...\n\n[Votre armure ne réduit rien]\nVous pouvez accéder à la salle suivante : `=Donjon sauvage salle : " + ((salle * 1) + 1) + "`")
                 .setColor(3447003)
                 .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/d7/Hidden_Dungeon_Entrance.png/revision/latest?cb=20140429103123")
                 .setTimestamp()
