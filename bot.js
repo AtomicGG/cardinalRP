@@ -12524,7 +12524,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
+    const Dégâts = Math.floor(3 * Math.random() + 4)
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte de l'espadon basique")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -12566,7 +12566,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
+    const Dégâts = Math.floor(3 * Math.random() + 4)
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la marteau basique")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -12594,7 +12594,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
+    const Dégâts = Math.floor(3 * Math.random() + 4)
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte de la hallebarde basique")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -12636,7 +12636,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
+    const Dégâts = Math.floor(3 * Math.random() + 4)
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du sabre basique")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -12664,7 +12664,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    const Dégâts = Math.floor(2 * Math.random() + 4)
+    const Dégâts = Math.floor(3 * Math.random() + 4)
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du nodachi basique")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
