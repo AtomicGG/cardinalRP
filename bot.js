@@ -3283,7 +3283,7 @@ bot.on('message', message => {
             .addField("Viande de ragondin :", "C'est une viande basique vous trouvez sur les ragondins en chassant dans la montagne du palier 1 !")
             .addField("Prix d'achat :", "16 cols")
             .addField("Prix de revente :", "4 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de ragondin\n=Ragoût de kobolt\n=Ragoût de kobolt supérieur\n=Ragoût de kobolt géant rouge")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de ragondin\n=Ragoût de kobolt")
             .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -33285,29 +33285,15 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            const B = (Math.floor(100) * Math.random() + 1)
-            const tours = (Math.floor((3) * Math.random() + 2))
-            const tourss = (Math.floor((3) * Math.random() + 1))
-            if (B <= 25) {
+            const tours = Math.floor(3 * Math.random() + 2)
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":cyclone: Cri rabaissant :", ":cyclone: Votre compétence 'Cri rabaissant' baisse l'attaque de la cible de moitié pendant `" + tourss + "` tours, l'obligeant aussi à vous visez!")
-                    .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
+                    .addField(":cyclone: Cri rabaissant :", ":cyclone: De votre cri, le monstre que vous visez semble avoir son moral qui se brise en deux tellement il fut violent et impitoyable. La peur et la haine subgmergent son être tandis que ses dégats sont réduits de moitié ! Par pur instinct de survie, il décide de vous prendre pour cible pendant `" + tours + "` tours afin de vous abattre !")
+                    .setImage("https://cdn.discordapp.com/attachments/543345227604164618/655227981022756864/txytp1lkpwrz.png")
                     .setTimestamp()
                 message.channel.send({ embed })
-            }
-            if (B >= 26) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":cyclone: Cri rabaissant :", ":cyclone: Votre compétence 'Cri rabaissant' baisse l'attaque de la cible de moitié pendant `" + tourss + "` tours, l'obligeant aussi à vous visez!")
-                    .setImage("https://media.giphy.com/media/M11VMiyk3CDXq/source.gif")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
             talkedRecently.add(message.author.id + 2);
             setTimeout(() => {
                 talkedRecently.delete(message.author.id + 2);
@@ -33333,15 +33319,13 @@ bot.on('message', message => {
             message.channel.send({ embed })
         } else {
             let degats = args.slice(2).join(" : ");
-            const A = (Math.floor((degats) * Math.random() + 1 * (degats)))
-            const B = (Math.floor(100) * Math.random() + 1)
-            const C = (Math.floor((3) * Math.random() + 1))
+            const degat = (Math.floor((degats) * Math.random() + 1 * (degats)))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":cyclone: Armure sainte :", ":cyclone: Votre compétence 'Armure sainte' vous inflige `" + A + "` points de dégâts, mais votre armures seront doublés pendant `" + C + "` tours !")
-                .setImage("https://s2.gifyu.com/images/1b2fd7e3773064806f354e60760852c02083997b_hq.gif")
+                .addField(":cyclone: Armure sainte :", ":cyclone: Afin de mieux vous protéger, vous acceptez de vous infliger des dégâts allant jusqu'à `" + degat + "` points de dégâts ! En retour, votre corps se sentit plus apte au combat. Vous sentant mieux protégé par une aura protecteur, votre armure est doublée !")
+                .setImage("https://cdn.discordapp.com/attachments/564812043169824772/655247154436243460/latest.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -36201,7 +36185,7 @@ bot.on('message', message => {
                 .addField(":park: Forêt :", ":park: En marchant dans la forêt, vous rencontrez les ennemis suivants\n\n" +
                     ":crossed_swords: Slime guerrier | 175HP & 10Def : " + mobNoel + "\n" +
                     ":crossed_swords: Loup(s) | 80HP : " + loup + "\n" +
-                    ":crossed_swords: Slime(s) | 150HP " + slime + "\n" +
+                    ":crossed_swords: Slime(s) | 150HP : " + slime + "\n" +
                     ":crossed_swords: Bandit(s) expérimenté(s) | 140HP : " + banditExp + "\n" +
                     ":crossed_swords: Bandit(s) sombre(s) | 240HP : " + banditSombre + "\n" +
                     ":crossed_swords: Loup(s) de sang | 300HP : " + loupDeSang)
@@ -51789,92 +51773,92 @@ bot.on('message', message => {
     }
 });
 
-//Palier 3 En cours
+// Jungle profonde | Monstres | Description
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Coppice spider") {
+    if (message.content === (prefix) + "Loup sombre") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Coppice spider :", ":japanese_ogre: Une arraigné qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/537815708223012875/653659854493319168/unknown.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550\n:warning: **__Si vous êtes protégés contre le poison, l'attaque normal de la Coppice spider inflige uniquement des dégat perce armure__** ")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Coppice spider attaque`")
-            .addField(":shield: Lorsque le Coppice spider reçoit un coup :", ":shield: `=Coppice spider défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Coppice spider récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Dark Wolf") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Dark Wolf :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
+            .setTitle(":japanese_ogre: Loup sombre :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/656685405311074347/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Dark Wolf attaque`")
-            .addField(":shield: Lorsque le Dark Wolf reçoit un coup :", ":shield: `=Dark Wolf défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Dark Wolf récompenses : [Votre niveau]`")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Loup sombre attaque`")
+            .addField(":shield: Lorsque le loup sombre reçoit un coup :", ":shield: `=Loup sombre défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Loup sombre récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Treant Sapling") {
+    if (message.content === (prefix) + "Traknide") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Treant Sapling :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
-            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/cc/Treant_Sapling.png/revision/latest/scale-to-width-down/350?cb=20160913205917")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 500 :shield: 500")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Treant Sapling attaque`")
-            .addField(":shield: Lorsque le Treant Sapling reçoit un coup :", ":shield: `=Treant Sapling défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Treant Sapling récompenses : [Votre niveau]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix) + "Thicket Spider") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Thicket Spider :", ":japanese_ogre: Un araigné qui n'est trouvable que dans le palier 3")
+            .setTitle(":japanese_ogre: Traknide :", ":japanese_ogre: Un araigné qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/656687405947944991/unknown.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Thicket Spider attaque`")
-            .addField(":shield: Lorsque le Thicket Spider reçoit un coup :", ":shield: `=Thicket Spider défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Thicket Spider récompenses : [Votre niveau]`")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Traknide attaque`")
+            .addField(":shield: Lorsque la traknide reçoit un coup :", ":shield: `=Traknide défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Traknide récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Eagle") {
+    if (message.content === (prefix) + "Ataknide") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Eagle :", ":japanese_ogre: Un aigle qui n'est trouvable que dans le palier 3, il a deux phases, une phase a terre et l'autre ras du sol")
-            .setImage("https://media.moddb.com/images/games/1/28/27218/Zombie-Eagle.1.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Eagle vol attaque`")
-            .addField(":shield: Lorsque le Eagle reçoit un coup :", ":shield: `=Eagle défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Eagle récompenses : [Votre niveau]`")
+            .setTitle(":japanese_ogre: Ataknide :", ":japanese_ogre: Une arraigné qui n'est trouvable que dans le palier 3")
+            .setImage("https://cdn.discordapp.com/attachments/537815708223012875/653659854493319168/unknown.png")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550\n:warning: **__Si vous êtes protégés contre le poison, l'attaque normal de l'ataknide inflige uniquement des dégat perce armure__** ")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Ataknide attaque`")
+            .addField(":shield: Lorsque l'ataknide reçoit un coup :", ":shield: `=Ataknide défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Ataknide récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
-// Palier 3 | Monstres | Attaques
+bot.on('message', message => {
+    if (message.content === (prefix) + "Jeune tréant") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Jeune tréant :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/cc/Treant_Sapling.png/revision/latest/scale-to-width-down/350?cb=20160913205917")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 500 :shield: 250")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Jeune tréant attaque`")
+            .addField(":shield: Lorsque le jeune tréant reçoit un coup :", ":shield: `=Jeune tréant défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Jeune tréant récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Dark Wolf attaque")) {
+    if (message.content === (prefix) + "Aigle") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Aigle :", ":japanese_ogre: Un aigle qui n'est trouvable que dans le palier 3, il a deux phases, une phase a terre et l'autre ras du sol")
+            .setImage("https://media.moddb.com/images/games/1/28/27218/Zombie-Eagle.1.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2550")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Aigle vol attaque`")
+            .addField(":shield: Lorsque l'aigle reçoit un coup :", ":shield: `=Aigle défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Aigle récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Jungle profonde | Monstres | Attaques
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Loup sombre attaque")) {
         const degat = Math.floor(26 * Math.random() + 255)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 15) {
@@ -51882,7 +51866,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Dark Wolf :", ":crossed_swords: La Dark Wolf regarde sa prochaine proie et compte pas la lâcher même si le loup est provoqué. Sa prochaine attaque ne sera pas esquivable !")
+                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: La sombre créature canine vous faisant face jettera son dévolu sur une cible précise et ne prêtera plus attention aux différentes provocations qui pourrait la viser.\nAu prochain tour, le loup au pelage noir de jais va vivement bondir sur le côté, se mouvant dans un silence de mort, camouflé par les multiples obstacles visuels des lieux.\nIl en sortira alors brusquement pour attaquer la proie désignée : L'effet de surprise rend toute esquive impossible, ne vous laissant le temps que de vous défendre sans déplacement.")
             message.channel.send({ embed })
         }
         if (16 <= roll && roll <= 85) {
@@ -51890,7 +51874,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Dark Wolf :", ":crossed_swords: La Dark Wolf montre les crocs et court vers vous, il saute pour esquiver tout obsactle et vous mord. Cela vous inflige " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: Le loup sombre vous choisit comme prochaine victime puis, après avoir poussé un grognement dévoilant ses crocs acérés, se rue sur vous en esquivant avec une aisance totale les différents obstacles naturels de son habitat. Il plonge alors profondément ses crocs dans votre chair, vous infligeant " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51899,7 +51883,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Dark Wolf:", ":crossed_swords: La Dark Wolf vous mord la jambe et vous inflige " + degat + " de dégâts. Cela vous empêche également de faire toutes actions offessives ou défensives qui nécessisteraient de se déplacer.")
+                .addField(":crossed_swords: Loup sombre:", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51907,7 +51891,39 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Coppice spider attaque")) {
+    if (message.content.startsWith(prefix + "Traknide attaque")) {
+        const degat = Math.floor(26 * Math.random() + 275)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Traknide :", ":crossed_swords: L'insecte spectaculairement imposant vous faisant face à un léger mouvement de recul, puis sans bouger la base de son corps effectue un rapide balancement vers l'avant, crachant une masse violette qui s'avérera être une toile visqueuse lorsqu'elle atterrira sur vous.\nIl est uniquement possible de l'esquiver et bien qu'elle soit sans effet pour le moment, il faut prendre en considération sa présence sur le joueur si l'esquive est échouée.\nElle se cumule à de potentielles autres toiles.")
+            message.channel.send({ embed })
+        }
+        if (31 <= roll && roll <= 94) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Traknide :", ":crossed_swords: L'adversaire violacé observera son ou ses adversaire(s) à la recherche d'une quelconque toile arborant ses couleurs pour faire sa proie de celui en étant recouvert.\nSi l'un des joueur a une toile violette sur lui, alors la Traknide va se balancer à l'aide d'une toile jusqu'à lui pour atterrir brutalement où il se trouve en lui ayant envoyé une nouvelle toile dans la manœuvre. Dans sa chute, il va mordre violemment sa cible en lui infligeant " + degat + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (95 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Traknide :", ":crossed_swords: La terrifiante engeance projette sur l'ensemble des joueurs ses mystérieuses toiles violettes, qui s'ajouteront au compteur de chacun d'entre eux qui ne parviendront pas à esquiver. Ces toiles sont des marqueurs qui s'accumulent.\nSuite à cette première action, elle localise l'individu portant le plus grand nombre de ses toiles et va alors le capturer dans un piège constitué de ces mêmes toiles couvrant la personne en question.\nCelle-ci y restera coincée, incapable d'effectuer une quelconque action, tant qu'il restera des toiles.\nPour les retirer, le joueur doit se faire frapper, en perdant une toile par coup reçu.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ataknide attaque")) {
         const degat = Math.floor(26 * Math.random() + 160)
         const degatT = Math.floor(26 * Math.random() + 250)
         const poison = Math.floor(21 * Math.random() + 40)
@@ -51917,7 +51933,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider vous saute dessus et vous mord à travers votre armure, infligeant " + degat + " de dégâts de perce armure. Vous êtes empoisonné.e et subissez  " + poison + " dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonné.e, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent..")
+                .addField(":crossed_swords: Ataknide :", ":crossed_swords: Le sauvage arthropode vous bondit dessus et vous mord en transperçant vos défenses, infligeant " + degat + " de dégâts de perce armure. En ayant profité pour vous injecter un puissant venin, vous êtes alors empoisonné et subissez  " + poison + " dégâts de poison par tour pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonné, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
             message.channel.send({ embed })
         }
         if (56 <= roll) {
@@ -51925,7 +51941,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider vous tire une toile qui vous empêche de bloquer pendant 1 tour et en profite pour vous attaquer ensuite avec ses pattes pendant que vous ne pouvez plus bloquer. Il vous inflige " + degatT + " points de dégâts. ")
+                .addField(":crossed_swords: Ataknide :", ":crossed_swords: La féroce arachnide vous faisant face prend soigneusement le temps de vous viser, avant de vous cracher une toile gluante dessus. Celle-ci vous empêche de bloquer les coups reçus pendant un tour. Profitant de la précarité de votre situation, elle se rue alors vers vous pour vous asséner une puissante attaque à l'aide de ses pattes qui vous inflige " + degatT + " points de dégâts. ")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51933,7 +51949,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Treant Sapling attaque")) {
+    if (message.content.startsWith(prefix + "Jeune tréant attaque")) {
         const degat = Math.floor(31 * Math.random() + 260)
         const soin = Math.floor(31 * Math.random() + 260)
         const ciblage = Math.floor(2 * Math.random() + 2)
@@ -51943,7 +51959,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling s'enracine dans le sol et attaque " + ciblage + " joueurs. Si vous êtes seul, en plus des dégâts, il vous étourdit pendant un tour. Il inflige " + degat + " points de dégâts aux joueurs ciblés. Si jamais vous êtes touchés, les effets négatifs qui sont sur vous durent un tour de plus.")
+                .addField(":crossed_swords: Jeune tréant :", ":crossed_swords: La terrifiante créature de feuilles et d'écorce déploie rapidement ses épaisses racines dans le sol, mais celles-ci se dirigent cette fois vers " + ciblage + " joueurs de votre groupe, sortant brusquement du sol juste en face de vous avant de venir s'écraser là où vous vous trouvez, vous infligeant " + degat + " points de dégâts. De plus, si vous êtes seul face à cette attaque, alors des racines viennent ensuite vous saisir pour vous immobiliser, empêchant toute défense jusqu'au prochain tour.\nSuite au coup, une sève poisseuse couvre votre corps et vous donne une sensation étrange, tandis que toutes vos afflictions durent un tour supplémentaire.")
             message.channel.send({ embed })
         }
         if (56 <= roll && roll <= 75) {
@@ -51951,7 +51967,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Le Treant Sapling s'enracine dans le sol et se soigne de 200HP.")
+                .addField(":crossed_swords: Jeune tréant :", ":crossed_swords: L'immense arbre animé déploiera ses longues racines dans les profondeurs de la terre où il est enraciné à la recherche de nutriments et d'eau. Cette nutrition lui permettra de se régénérer à hauteur de 200 HP.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51960,7 +51976,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling:", ":crossed_swords: Le Treant Sapling s'enracine dans le sol et lâche une poudre verte depuis ses feuilles qui iront vers les monstres et les soigne de " + soin + " HP.")
+                .addField(":crossed_swords: Jeune tréant:", ":crossed_swords: Le robuste être végétal agitera ses branchages, d'épaises et nombreuses spores d'un vert éclatant tombant alors lentement de ceux-ci. Une fois celles-ci arrivées à hauteur du visage taillé dans la souche de la créature, un puissant souffle en sortira, projetant ces mystérieux germes sur les autres monstres que vous affrontez, ce qui leur rendra " + soin + " HP chacun.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -51968,39 +51984,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Thicket Spider attaque")) {
-        const degat = Math.floor(26 * Math.random() + 275)
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 30) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider vous tire une toile violette sur vous. Vous pouvez seulement l'esquiver.")
-            message.channel.send({ embed })
-        }
-        if (31 <= roll && roll <= 94) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider cherche une cible marquée de ses toiles violettes. Si elle la trouve, elle se balance vers elle, tire une toile et tombe sur elle pour la mordre. Il inflige " + degat + " points de dégâts.")
-            message.channel.send({ embed })
-        }
-        if (95 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tire ses toiles violettes sur tout le monde et cherche la cible qui possède le plus de toile sur elle. Elle va la capturer dans sa toile où elle ne pourra se libérer que lorsque toutes les toiles qu'elle a seront enlevées. Pour les retirer, le joueur doit se faire frapper.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Eagle sol attaque")) {
+    if (message.content.startsWith(prefix + "Aigle sol attaque")) {
         const degat = Math.floor(26 * Math.random() + 285)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
@@ -52008,7 +51992,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole au dessus de vous et donc ne peut pas être visé quand il est au ciel sauf si vous le faites descendre")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le grand aigle décide de reprendre de l'altitude. Il bat alors puissamment des ailes et profite d'un courant d'air ascendant pour partir bien loin du sol, se mettant par la même occasion hors de portée de l'attaque des joueurs pour le moment.")
             message.channel.send({ embed })
         }
         if (71 <= roll && roll <= 94) {
@@ -52016,7 +52000,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole à ras du sol vers vous et vous griffe. Il inflige " + degat + " de dégâts.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Après avoir pris de l'élan, le dangereux prédateur s'en sert pour vous foncer dessus à très grande vitesse, porté par le vent. Il passe alors juste à côté de vous, se servant au passage de ses griffes pour profondément lacérer votre chair, vous infligeant " + degat + " de dégâts.")
             message.channel.send({ embed })
         }
         if (95 <= roll) {
@@ -52024,7 +52008,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole vers vous et vous capture (sauf si vous esquivez) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prenant appui sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appui sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes, faites `=Eagle punch`.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le féroce rapace vole à vive allure jusqu'au joueur le plus proche, l'attrapant par les épaules et l'emmenant dans le ciel.\nLes seules défenses possibles sont la parade et l'esquive, les autres entraînant la capture dans tous les cas.\nS'il est bel et bien capturé, alors le joueur ne peut plus rien faire. Cependant, en prenant appui sur l'un de ses coéquipiers qui l'enverra vers l'agresseur, un joueur libre peut tenter de le sauver en réussissant à toucher la bête. Seul l'élan procuré par la poussée d'un autre joueur permet d'atteindre l'aigle, il est donc impossible de réussir en se servant d'une quelconque autre plateforme que l'échine de l'un de vos camarades.\n\nSi le joueur n'est toujours pas libéré au tour de l'aigle, faites `=Aigle punch`.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52032,7 +52016,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Eagle vol attaque")) {
+    if (message.content.startsWith(prefix + "Aigle vol attaque")) {
         const degat = Math.floor(26 * Math.random() + 285)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 20) {
@@ -52040,7 +52024,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole au dessus de vous et vous observe.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: La créature à la terrifiante splendeur continue de planer au-dessus de l'affrontement sans passer à l'assaut, projetant l'intimidante ombre de sa menace sur vous et vos camarades, prêt à vous attaquer au moindre faux-pas de votre part.")
             message.channel.send({ embed })
         }
         if (21 <= roll && roll <= 75) {
@@ -52048,7 +52032,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle descend en piqué et vous fait une attaque rapace de Pokemon. Il inflige " + degat + " points de dégâts. Il s'envole à nouveau sauf si, pour la défense, vous faites une parade réussie ou un blocage critique. Dans ce cas, il reste à terre.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le majestueux volatile, planant au-dessus de votre tête, va alors décider de plonger en piqué dans votre direction pour venir violemment vous heurter, becs et griffes sortis qu'il déchaînera en déployant toute sa fougue, vous infligeant " + degat + " points de dégâts. Suite à cela, l'animal enragé repartira aussitôt dans les cieux, à moins d'avoir réussi une parade ou bloquer critiquement son attaque auquel cas il sera contraint de rester à basse altitude, le rendant vulnérable à vos attaques.")
             message.channel.send({ embed })
         }
         if (76 <= roll) {
@@ -52056,7 +52040,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vole vers vous et vous capture (sauf si vous esquivez) et vous emmène dans le ciel avec lui. Le joueur ne peut rien faire. Un autre joueur peut tenter de le sauver en prenant appui sur un autre joueur qui va l'envoyer vers l'aigle. Prendre appui sur autre chose ne fonctionnera pas. Si au prochain tour de l'aigle, l'aigle a toujours un joueur dans ses pattes, faites `=Eagle punch`.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le féroce rapace vole à vive allure jusqu'au joueur le plus proche, l'attrapant par les épaules et l'emmenant dans le ciel.\nLes seules défenses possibles sont la parade et l'esquive, les autres entraînant la capture dans tous les cas.\nS'il est bel et bien capturé, alors le joueur ne peut plus rien faire. Cependant, en prenant appui sur l'un de ses coéquipiers qui l'enverra vers l'agresseur, un joueur libre peut tenter de le sauver en réussissant à toucher la bête. Seul l'élan procuré par la poussée d'un autre joueur permet d'atteindre l'aigle, il est donc impossible de réussir en se servant d'une quelconque autre plateforme que l'échine de l'un de vos camarades.\n\nSi le joueur n'est toujours pas libéré au tour de l'aigle, faites `=Aigle punch`.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52064,7 +52048,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Eagle punch")) {
+    if (message.content.startsWith(prefix + "Aigle punch")) {
         const degat = Math.floor(26 * Math.random() + 255)
         const degatPerce = Math.floor(26 * Math.random() + 115)
         const crit = Math.floor(21 * Math.random() + 260)
@@ -52075,7 +52059,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle vous garde dans les airs avec lui, Ding Ding Ding Ding bienvenu sur air Eagle.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le Eagle vous garde dans les airs avec lui, Ding Ding Ding Ding bienvenu sur air Eagle.")
             message.channel.send({ embed })
         }
         if (21 <= roll && roll <= 95) {
@@ -52083,7 +52067,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle descend en piqué avec le joueur dans ses pattes, il plante bien ses griffes qui font perdre " + degatPerce + " points de dégâts perce armure (pas de défense possible) et vous jette en force sur le sol qui vous inflige " + degat + " points de dégâts sauf si un autre joueur roll pour vous rattraper. Suite à cela, il s'envole de nouveau.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le Eagle descend en piqué avec le joueur dans ses pattes, il plante bien ses griffes qui font perdre " + degatPerce + " points de dégâts perce armure (pas de défense possible) et vous jette en force sur le sol qui vous inflige " + degat + " points de dégâts sauf si un autre joueur roll pour vous rattraper. Suite à cela, il s'envole de nouveau.")
             message.channel.send({ embed })
         }
         if (96 <= roll) {
@@ -52091,19 +52075,19 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle envoie le joueur devant lui et fonce sur lui faire un Eagle PUNCH... / L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " points de dégats pour chaque arbre que vous vous prenez.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le Eagle envoie le joueur devant lui et fonce sur lui faire un Eagle PUNCH... / L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " points de dégats pour chaque arbre que vous vous prenez.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
     }
 });
 
-// Palier 3| Monstres | Défenses
+// Jungle profonde | Monstres | Défenses
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Dark Wolf défense")) {
+    if (message.content.startsWith(prefix + "Loup sombre défense")) {
         let degat = args.slice(3).join(" : ");
         const echec = Math.floor(((degat * 1.2) + 1) * Math.random() + (degat * 0.7))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -52112,7 +52096,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Dark Wolf :", ":shield: Le Dark Wolf tente d'esquiver votre coup mais vous êtes plus rapide, vous lui infligez " + echec + " points de dégâts.")
+                .addField(":shield: Loup sombre :", ":shield: Vous voyant lancer l'assaut, le canidé, certes fort mais un peu trop fier, tentera comme à son habitude de vous éviter tout en vous faisant vous écraser au sol. Malheureusement pour lui, sa fierté n'en sera que plus blessée pour cette même raison lorsque sa manœuvre échouera et que vous lui infligerez un puissant coup au bas-ventre. Sa fierté ne sera pas la seule chose blessée, puisque vous lui infligez " + echec + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (31 <= roll) {
@@ -52120,7 +52104,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Dark Wolf :", ":shield: Le Dark Wolf prend appui sur vous pour sauter par dessus vous et ainsi esquiver. Il vous regarde l'air de dire C'est pas seulement le lion le roi de la jungle ! Tu l'a devant toi.")
+                .addField(":shield: Loup sombre :", ":shield: L'habile animal vous faisant face, vous voyant attaquer, bondira une première fois du sol dans votre direction quoiqu'un peu plus haut que vous. Retombant sur vous, il se servira de votre corps comme d'une seconde plateforme et effectuera un deuxième bond pour finalement atterrir derrière vous, ne vous lâchant pas du regard. Malgré votre, très certaine, absence de connaissances en physionomie lupine, vous êtes étrangement convaincu en regardant son expression qu'il se moque de vous suite à cette action.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52130,8 +52114,35 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Coppice spider défense")) {
-        let degat = args.slice(3).join(" : ");
+    if (message.content.startsWith(prefix + "Traknide défense")) {
+        let degat = args.slice(2).join(" : ");
+        const echec = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Traknide :", ":crossed_swords: Pour ne pas subir votre attaque, l'ingénieux insecte tire une toile dans les branchages surplombant le combat et remonte rapidement le long de celle-ci, échappant à votre assaut et en profitant pour vous cracher deux toiles violettes supplémentaires.")
+            message.channel.send({ embed })
+        }
+        if (31 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Traknide :", ":crossed_swords: L'impressionnant monstre essaie de tirer une toile dans les branchages au-dessus de lui pour prendre une fuite temporaire en réponse à votre attaque. Sa tentative échoue cependant lamentablement, la toile retombant puisqu'elle n'avait adhéré à rien. L'araignée se prend donc violemment votre coup en subissant " + echec + " points de dégâts, mais la toile tirée auparavant pour fuir vous retombe dessus, ajoutant une toile violette aux éventuelles autres que vous porteriez déjà.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Ataknide défense")) {
+        let degat = args.slice(2).join(" : ");
         const echec = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.1))
         const poison = Math.floor(21 * Math.random() + 80)
         const roll = Math.floor(100 * Math.random() + 1)
@@ -52140,7 +52151,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider tente d'esquiver mais se fait toucher et subit " + echec + " points de dégâts. Malheureusement, là où vous avez frappé, de l'acide jaillit sur vous et vous inflige " + poison + " points de dégâts perce armure.")
+                .addField(":crossed_swords: Ataknide :", ":crossed_swords: L'hideux être aux 8 pattes velues va tenter, en vain, d'éviter votre coup en grimpant à un arbre proche. Malheureusement pour lui, celui-ci n'est pas du tout à son avantage, le tronc bien trop petit pour lui permettre un déplacement aisé et rapide. Ainsi, vous aurez le temps de lui infliger votre frappe qui fendra son enveloppe corporelle, subissant " + echec + " points de dégâts, laissant s'échapper le venin de la créature qui jaillira sur vous en vous infligeant " + poison + " points de dégâts perce armure.")
             message.channel.send({ embed })
         }
         if (91 <= roll) {
@@ -52148,7 +52159,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coppice spider :", ":crossed_swords: La Coppice spider monte dans un arbre et saute par dessus vous pour vous esquiver.")
+                .addField(":crossed_swords: Ataknide :", ":crossed_swords: Supposant assez aisément de vos intentions hostiles, l'araignée gargantuesque va alors se servir de sa naturelle faculté à escalader les surfaces pour se réfugier rapidement en haut d'un arbre, hors de votre portée, pour finalement redescendre un peu plus loin dans un lieu hors-de-danger.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52158,7 +52169,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Treant Sapling défense")) {
+    if (message.content.startsWith(prefix + "Jeune tréant défense")) {
         let degat = args.slice(3).join(" : ");
         const blocage = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -52167,7 +52178,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling vous voit approcher et se durcit au maximum. Vous lui infligez " + blocage + " points de dégâts.")
+                .addField(":shield: Jeune tréant :", ":shield: Le robuste monstre vous faisant face voit votre assaut venir mais se laisse simplement frapper, comptant sur sa solidité à toute épreuve pour encaisser votre coup. Il ne subit donc que " + blocage + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (71 <= roll) {
@@ -52175,7 +52186,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling vous voit arriver et met des ronces pour bloquer votre avancée et ne voit plus rien. Vous pouvez roll pour passer derrière son dos ou un joueur passe dans son dos et attaque, sans besoin de roll et, pour la défense, faites `=Treant Sapling behind you : [Vos dégats d'attaque]`. Vous devez cependant refaire une attaque, si vous la ratez l'arbre vous fixe à nouveau.")
+                .addField(":shield: Jeune tréant :", ":shield: Le monstrueux tréant, en vous voyant l'approcher, décide cette fois-ci de dresser un grand mur de racines entre vous et lui, presque collé à son visage, ce qui obstrue totalement sa vision.\nVous pouvez alors tenter de passer derrière son dos en faisant un roll ou bien laisser un autre joueur le prendre à revers, celui-ci n'ayant alors pas besoin de roll pour réussir le contournement.\nFaites ensuite la défense du monstre avec la commande `=Jeune tréant behind you : [Vos dégâts d'attaque]`.\nCependant, si vous décidez de tenter un roll pour l'attaquer lui-même et que vous réussissez, vous devez refaire une autre attaque. En cas d'échec, le tréant vous fait de nouveau face.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52185,10 +52196,9 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Treant Sapling behind you")) {
+    if (message.content.startsWith(prefix + "Jeune tréant behind you")) {
         let degat = args.slice(4).join(" : ");
         const blocage = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 0.6))
-        const blocageRater = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 1))
         const parade = Math.floor(26 * Math.random() + 200)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 25) {
@@ -52196,7 +52206,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Treant Sapling :", ":shield: Le Treant Sapling se retourne subitement vers vous I SEE YOU... et donne un coup de branche assez branché et vous fait prendre  " + parade + " points de dégâts.")
+                .addField(":shield: Jeune tréant :", ":shield: Tandis que vous vous apprêtez à frapper le point faible de ce presque impénétrable monstre en pensant le prendre par surprise, celui-ci se retourne brusquement pour vous faire face. L'ouverture béante et obscure faisant office de bouche sur son tronc, habituellement béat, vient former un effrayant sourire accompagné des puissants craquements du bois causés par ce mouvement, vous exposant toute la satisfaction du tréant que vous vous soyez laissé prendre dans son piège. Subitement, des racines surgissent de la terre sous vos pieds et vous frappent de plein fouet, interrompant votre attaque tout en vous infligeant " + parade + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (26 <= roll && roll <= 85) {
@@ -52204,7 +52214,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Treant Sapling :", ":crossed_swords: Treant Sapling se retourne pas assez vite mais essaye de bloquer le coup comme il peut et reçoit " + blocage + "  points de dégâts.")
+                .addField(":crossed_swords: Jeune tréant :", ":crossed_swords: Alors que vous vous apprêtez à frapper à revers son point faible, celui-ci détecte votre présence au dernier moment, mais malgré tout un peu trop tard. Il tente alors de bloquer votre coup comme il peut, sans grand succès, et subit " + blocage + "  points de dégâts.")
             message.channel.send({ embed })
         }
         if (86 <= roll) {
@@ -52212,7 +52222,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Treant Sapling :", ":shield: Vous attaquez le Treant Sapling dans son dos et vous lui infligez " + blocage + " de dégâts perce armure.")
+                .addField(":shield: Jeune tréant :", ":shield: Tandis que vous avez contourné sans aucun bruit la cible massive pour le moment aveuglée, vous l'attaquez avec brutalité en plein dans la partie fragile qu'il s'exerçait tant à camoufler. Il ne se rendra compte de cela qu'une fois votre coup porté avec succès, lui infligeant " + blocage + " de dégâts ignorant totalement son armure.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -52222,69 +52232,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Thicket Spider défense")) {
-        let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 30) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider esquive le coup et vous lance 2 toiles violettes en retour.")
-            message.channel.send({ embed })
-        }
-        if (31 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Thicket Spider :", ":crossed_swords: Le Thicket Spider tente d'esquiver mais vous arrivez à le toucher. Vous lui infligez " + echec + " points de dégâts. Mais il en profite du coup pour vous rajouter une toile violette.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Eagle vol défense")) {
-        let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: Le Eagle esquive le coup.")
-            message.channel.send({ embed })
-        }
-        if (51 <= roll && roll <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle tente d'esquiver mais vous arrivez à le toucher. Vous lui infligez " + echec + " points de dégâts et il descend sur terre.")
-            message.channel.send({ embed })
-        }
-        if (91 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: Le Eagle vous esquive et vous capture comme vous êtes la, à son tour faite =Eagle PUNCH.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Eagle sol défense")) {
+    if (message.content.startsWith(prefix + "Aigle sol défense")) {
         let degat = args.slice(3).join(" : ");
         const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
@@ -52293,7 +52241,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle esquive le coup.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Percevant sans peine votre hostile approche, l'habile animal attendra les tout derniers instants de votre coup pour effectuer à la perfection une vrille sur le côté, évitant de justesse votre attaque et le sifflement provoqué par son vol rapide arrivant directement à votre oreille qu'il vient de frôler.")
             message.channel.send({ embed })
         }
         if (36 <= roll) {
@@ -52301,8 +52249,42 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle :", ":crossed_swords: Le Eagle tente d'esquiver mais vous arrivez à le toucher, vous lui infligez " + echec + " points de dégâts.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Tandis que vous vous ruez férocement sur l'oiseau tourmenteur volant à portée de vos coups, celui-ci va tenter de virer sur le côté afin d'esquiver votre assaut, en vain. Il se prend alors votre coup de plein fouet et subit " + echec + " points de dégâts.")
                 .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Aigle vol défense")) {
+        let degat = args.slice(3).join(" : ");
+        const echec = Math.floor(((degat * 0.1) + 1) * Math.random() + (degat * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Aigle vol :", ":crossed_swords: Envoyé dans les airs par l'un de vos compagnons, vous n'échappez pas à la vision perçante du rapace qui n'aura alors aucun mal à changer sa trajectoire, vous faisant largement rater votre cible. Vous retombez alors bien vite au sol, restant bredouille.")
+            message.channel.send({ embed })
+        }
+        if (51 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Tandis que vous êtes projeté dans les airs par un membre de votre groupe sur la trajectoire de l'hautain volatile, celui-ci est totalement pris au dépourvu et se prend violemment votre attaque, lui infligeant " + echec + " points de dégâts  et le faisant s'écraser au sol, ce qui le pousse à rester à basse altitude pour le moment malgré qu'il en devienne vulnérable aux menaces terrestres.")
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: L'intelligent chasseur aérien aperçoit vos agissements et les comprend bien assez vite. Cependant, plutôt que simplement manœuvrer au loin pour esquiver votre assaut, il décide de continuer vers vous en passant légèrement trop haut pour être à la portée de votre coup et vient refermer ses puissantes serres sur vos épaules, vous emportant avec lui.\nÀ son prochain tour, faites la commande `=Eagle punch`.")                .setTimestamp()
             message.channel.send({ embed })
         }
     }
@@ -52632,7 +52614,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Yeti :", ":shield: Le yeti essaye d'esquiver votre attaque mais à cause de sa magge, vous le touchez aisément. Vous lui infligez " + degatSubis + " points de dégâts.")
+                .addField(":shield: Yeti :", ":shield: Le yeti essaye d'esquiver votre attaque mais à cause de sa masse, vous le touchez aisément. Vous lui infligez " + degatSubis + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (56 <= roll) {
