@@ -52150,7 +52150,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le Eagle descend en piqué avec le joueur dans ses pattes, il plante bien ses griffes qui font perdre " + degatPerce + " points de dégâts perce armure (pas de défense possible) et vous jette en force sur le sol qui vous inflige " + degat + " points de dégâts sauf si un autre joueur roll pour vous rattraper. Suite à cela, il s'envole de nouveau.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Tenant fermement entre ses serres le joueur précédemment capturé, l'impitoyable prédateur plonge en piqué, maintenant sa proie en raffermissant sa prise au point que les pattes acérées viennent se plonger profondément dans les épaules du prisonnier, lui infligeant " + degatPerce + " points de dégâts perce armure sans qu'il ne puisse se défendre d'une quelconque manière.\nUne fois sa vitesse de pointe atteinte, il projette le malheureux violemment vers le sol, la brutalité de l'impact infligeant à l'individu " + degat + " points de dégâts supplémentaires, à moins qu'un de ses camarades ne le rattrape à l'aide d'un roll.\nEnfin, l'aigle reprend son envol et retourne dans les cieux.")
             message.channel.send({ embed })
         }
         if (96 <= roll) {
