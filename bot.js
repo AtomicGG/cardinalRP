@@ -51773,6 +51773,89 @@ bot.on('message', message => {
     }
 });
 
+// Jungle profonde | Combat
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Jungle profonde combat")) {
+        let joueurs = args.slice(3).join(" : ");
+        if (/*talkedRecently.has(message.author.id + 1000)*/false) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Cooldown :", " Vous devrez attendre 10 minutes avant de pouvoir refaire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            let test = 0;
+            let loupSombre = 0;
+            let traknide = 0;
+            let ataknide = 0;
+            let jeuneTreant = 0;
+            let aigle = 0;
+            let roll = 0;
+            do {
+                roll = Math.floor(100 * Math.random() + 1)
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 60) {
+                    test = test + 2 + loupSombre;
+                    if (test <= (6 + 7 * (joueurs - 1))) {
+                        loupSombre = loupSombre + 1;
+                    } else break;
+                }
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    test = test + 2 + traknide;
+                    if (test <= (6 + 7 * (joueurs - 1))) {
+                        traknide = traknide + 1;
+                    } else break;
+                }
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 60) {
+                    test = test + 2 + ataknide;
+                    if (test <= (6 + 7 * (joueurs - 1))) {
+                        ataknide = ataknide + 1;
+                    } else break;
+                }
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    test = test + 4 + jeuneTreant;
+                    if (test <= (6 + 7 * (joueurs - 1))) {
+                        jeuneTreant = jeuneTreant + 1;
+                    } else break;
+                }
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    test = test + 4 + (2 * aigle);
+                    if (test <= (6 + 7 * (joueurs - 1))) {
+                        aigle = aigle + 1;
+                    } else break;
+                }
+            } while (test <= (6 + 7 * (joueurs - 1)));
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":mount_fuji: Grotte :", ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n" +
+                    ":crossed_swords: Loup(s) sombre(s) | 3000HP : " + loupSombre + "\n" +
+                    ":crossed_swords: Traknide(s) | 2550HP : " + traknide + "\n" +
+                    ":crossed_swords: Ataknide(s) | 2550HP : " + ataknide + "\n" +
+                    ":crossed_swords: Jeune(s) tréant(s) | 500HP | 250Def : " + jeuneTreant + "\n" +
+                    ":crossed_swords: Aigle(s) | 2550HP : " + aigle)
+                .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        talkedRecently.add(message.author.id + 1000);
+        setTimeout(() => {
+            talkedRecently.delete(message.author.id + 1000);
+        }, 600000);
+    }
+})
+
 // Jungle profonde | Monstres | Description
 
 bot.on('message', message => {
