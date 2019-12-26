@@ -33044,7 +33044,6 @@ bot.on('message', message => {
     }
 });
 
-
 // Menus | Liste | Parchemins | Achat/fabrication/découverte
 
 bot.on('message', message => {
