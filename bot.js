@@ -60335,7 +60335,7 @@ bot.on('message', message => {
                     } else break;
                 }
                 roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= 30) {
+                if (roll <= 30 && aigle < 1) {
                     test = test + 4 + (2 * aigle);
                     if (test <= (6 + 7 * (joueurs - 1))) {
                         aigle = aigle + 1;
@@ -60877,6 +60877,45 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Eagle vol :", ":crossed_swords: L'intelligent chasseur aérien aperçoit vos agissements et les comprend bien assez vite. Cependant, plutôt que simplement manœuvrer au loin pour esquiver votre assaut, il décide de continuer vers vous en passant légèrement trop haut pour être à la portée de votre coup et vient refermer ses puissantes serres sur vos épaules, vous emportant avec lui.\nÀ son prochain tour, faites la commande `=Eagle punch`.").setTimestamp()
             message.channel.send({ embed })
         }
+    }
+});
+
+// Jungle profonde | Monstres | Récompenses
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Loup sombre récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const viande = Math.floor((2 - 0.46) * Math.random())
+        const peau = Math.floor((2 - 0.32) * Math.random())
+        const coeur = Math.floor((2 - 0.749) * Math.random())
+        const clef = Math.floor((2 - 0.947) * Math.random())
+        const oeuf = Math.floor((2 - 0.98) * Math.random())
+        const cols = Math.floor(41 * Math.random() + 105)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 45) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":poultry_leg: Viande de loup sombre : " + viande + "\n" +
+                ":knife: Peau de loup sombre : " + peau + "\n" +
+                ":cupid: Coeur de loup sombre : " + coeur + "\n" +
+                ":key: Clef du donjon ???  : " + clef + "\n" +
+                ":egg: Oeuf ??? : " + oeuf + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
     }
 });
 
