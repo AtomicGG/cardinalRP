@@ -31963,6 +31963,27 @@ bot.on('message', message => {
     }
 });
 
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des potions 2")) {
+        message.channel.send("```Potion améliorée :\nCoûts : [Achat : 360 cols] [Revente : 90 cols]\nInfos : [=Potion améliorée]\n\n" +
+            "Potion jetable de poison léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de poison léger]\n\n" +
+            "Potion jetable de soin légère :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de soin légère]\n\n" +
+            "Antidote léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Antidote léger]\n\n" +
+            "Potion améliorée supérieure :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Potion améliorée supérieure]\n\n" +
+            "Suite en écrivant :\n=Liste des potions 3```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des potions 3")) {
+        message.channel.send("```Potion améliorée :\nCoûts : [Achat : 360 cols] [Revente : 90 cols]\nInfos : [=Potion améliorée]\n\n" +
+            "Potion jetable de poison léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de poison léger]\n\n" +
+            "Potion jetable de soin légère :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de soin légère]\n\n" +
+            "Antidote léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Antidote léger]\n\n" +
+            "Potion améliorée supérieure :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Potion améliorée supérieure]```")
+    }
+});
+
 // Menus | Liste | Potions | Détails
 
 bot.on('message', message => {
@@ -32419,6 +32440,33 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des plats 2")) {
+        message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
+            "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
+            "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
+            "Ragoûts bovin :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Ragoût bovin]\n\n" +
+            "Petite cassolette de goujon :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Petite cassolette de goujon]\n\n" +
+            "Soupe de crevette :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Soupe de crevette]\n\n" +
+            "Cassolette de truite :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Cassolette de truite]\n\n" +
+            "Soupe de crabe :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Soupe de crabe]```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des plats 2")) {
+        message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
+            "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
+            "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
+            "Ragoûts bovin :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Ragoût bovin]\n\n" +
+            "Petite cassolette de goujon :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Petite cassolette de goujon]\n\n" +
+            "Soupe de crevette :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Soupe de crevette]\n\n" +
+            "Cassolette de truite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cassolette de truite]\n\n" +
+            "Soupe de crabe :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Soupe de crabe]\n\n" +
+            "Suite en écrivant :\n=Liste des plats 3```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des plats 3")) {
         message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
             "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
             "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
@@ -32955,6 +33003,8 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Parchemins | Détails
+
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Parchemin de poison faible")) {
         const embed = new Discord.RichEmbed()
@@ -32967,6 +33017,35 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
+bot.on('message', message => {
+    if (message.content === prefix + "Parchemin de feu rouge faible") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 24\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Parchemin de poison moyen")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scroll: Parchemin de poison moyen :", ":scroll: C'est un parchemin assez efficace permettant d'enchanter votre arme causant parfois du poison constitué de certains monstres !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 21\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Hémolymphe, 3 crochet de venom, 5 venin de Venom\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 300 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Fabrication du parchemin de poison moyen`\n\n:warning: Un seul enchantement actif possible")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+
+// Menus | Liste | Parchemins | Achat/fabrication/découverte
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de poison faible")) {
@@ -32982,9 +33061,37 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    const roll = (Math.floor((100) * Math.random() + 1))
-    const poison = (Math.floor((11) * Math.random() + 5))
+    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de feu rouge faible")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégâts à un ennemis : `=Feu faible`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Fabrication du parchemin de poison moyen")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scroll: Parchemin de poison moyen :", ":scroll: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégât à un ennemis : `=Poison moyen`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Parchemins | Attaques
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Poison faible")) {
+        const roll = (Math.floor((100) * Math.random() + 1))
+        const poison = (Math.floor((11) * Math.random() + 5))
         if (roll <= 50) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -33007,35 +33114,9 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === prefix + "Parchemin de feu rouge faible") {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 24\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat/fabrication/découverte du parchemin de feu rouge faible")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: Vous venez d'acheter ou de fabriquer ou même de découvrir cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégâts à un ennemis : `=Feu faible`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const roll = (Math.floor((100) * Math.random() + 1))
-    const feu = (Math.floor((16) * Math.random() + 20))
     if (message.content.startsWith(prefix + "Feu faible")) {
+        const roll = (Math.floor((100) * Math.random() + 1))
+        const feu = (Math.floor((16) * Math.random() + 20))
         if (roll <= 35) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -33054,32 +33135,6 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Parchemin de poison moyen")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scroll: Parchemin de poison moyen :", ":scroll: C'est un parchemin assez efficace permettant d'enchanter votre arme causant parfois du poison constitué de certains monstres !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 21\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Hémolymphe, 3 crochet de venom, 5 venin de Venom\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 300 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Fabrication du parchemin de poison moyen`\n\n:warning: Un seul enchantement actif possible")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Fabrication du parchemin de poison moyen")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scroll: Parchemin de poison moyen :", ":scroll: Vous venez de fabriquer cet objet !\n\n:crossed_swords: Chaque fois que vous infligez au moins 1 point de dégât à un ennemis : `=Poison moyen`")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
     }
 });
 
