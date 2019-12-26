@@ -17147,52 +17147,64 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme de kobolt à une main")) {
-        let lvlMetier = args.slice(8).join(" : ");
-        let plage = 0
-        const lvlArme = 3
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(8).join(" : ");
+            let plage = 0
+            const lvlArme = 3
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme de kobolt à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de kobolt à une main :", "Vous avez réussi l'amélioration. L'objet gagne 1 Atk (Si c'est un bouclier, c'est 5 HP)")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de kobolt à une main :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Arme de kobolt à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de kobolt à une main :", "Vous avez réussi l'amélioration. L'objet gagne 1 Atk (Si c'est un bouclier, c'est 5 HP)")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de kobolt à une main :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -17201,52 +17213,64 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme de kobolt à deux mains")) {
-        let lvlMetier = args.slice(8).join(" : ");
-        let plage = 0
-        const lvlArme = 3
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(8).join(" : ");
+            let plage = 0
+            const lvlArme = 3
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme de kobolt à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de kobolt à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de kobolt à deux mains :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Arme de kobolt à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de kobolt à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de kobolt à deux mains :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -17255,25 +17279,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme de kobolt à une main")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de kobolt à une main :", "Vous obtenez :\n\n:pick: 1 Cuivre commun\n:pick: 2 Cuivre médiocre\n:gem: 1 Dent de kobolt")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme de kobolt à une main :", "Vous obtenez :\n\n:pick: 1 Cuivre commun\n:pick: 2 Cuivre médiocre\n:gem: 1 Dent de kobolt")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme de kobolt à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de kobolt à deux mains :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:pick: 2 Cuivre commun\n:pick: 3 Cuivre médiocre\n:gem: 2 Dent de kobolt\n:deciduous_tree: 1 Bois de frêne commun")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme de kobolt à deux mains :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:pick: 2 Cuivre commun\n:pick: 3 Cuivre médiocre\n:gem: 2 Dent de kobolt\n:deciduous_tree: 1 Bois de frêne commun")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
