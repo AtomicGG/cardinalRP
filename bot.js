@@ -31729,6 +31729,212 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Arachnide | Amélioration
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Amélioration d'une arme arachnide à une main")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(7).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 7
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme arachnide à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme arachnide à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk (Si c'est un bouclier, c'est 1 Def)")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme arachnide à une main :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme arachnide à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk (Si c'est un bouclier, c'est 5 HP)")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Amélioration d'une arme arachnide à deux mains")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(7).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 7
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme arachnide à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme arachnide à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 4 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme arachnide à deux mains :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme arachnide à deux mains :", "Vous avez raté critiquement l'amélioration. L'objet perd 2 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Arachnide | Démantèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme arachnide à une main")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme arachnide à une main :", "Vous obtenez :\n\n:spider: 2 Patte d'arachnide\n:deciduous_tree: 1 Bois de jeune tréant\n:eagle: 1 Bec d'aigle\n:deciduous_tree: 2 Bois de manioc pur\n:pick: 2 Malachite médiocre\n:pick: 2 Malachite commune")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'une arme arachnide à deux mains")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme arachnide à deux mains :", "Vous obtenez :\n\n:spider: 2 Patte d'arachnide\n:deciduous_tree: 2 Bois de jeune tréant\n:eagle: 1 Bec d'aigle\n:deciduous_tree: 2 Bois de manioc impur\n:pick: 3 Malachite médiocre\n:pick: 3 Malachite commune")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Menus | Liste | Potions
 
 bot.on('message', message => {
