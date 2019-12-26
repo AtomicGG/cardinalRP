@@ -4796,8 +4796,6 @@ bot.on('message', message => {
 
 // Menus | Liste | Matériaux 9 | Détail
 
-//*
-
 bot.on('message', message => {
     if (message.content === prefix + "Viande de loup sombre") {
         const embed = new Discord.RichEmbed()
@@ -5335,6 +5333,22 @@ bot.on('message', message => {
             "Bottes bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Bottes bovin]\n\n" +
             "Anneau bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Anneau bovin]\n\n" +
             "Amulette bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Amulette bovin]```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste d'équipements 11")) {
+        message.channel.send("```Casque bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Casque bovin]\n\n" +
+            "Epaulières bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Epaulières bovin]\n\n" +
+            "Plastron bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Plastron bovin]\n\n" +
+            "Cape bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Cape bovin]\n\n" +
+            "Ceinture bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Ceinture bovin]\n\n" +
+            "Gantelets bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Gantelets bovin]\n\n" +
+            "Jambières bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Jambières bovin]\n\n" +
+            "Bottes bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Bottes bovin]\n\n" +
+            "Anneau bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Anneau bovin]\n\n" +
+            "Amulette bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Amulette bovin]\n\n" +
+            "Suite en écrivant :\n=Liste d'équipements 12```")
     }
 });
 
@@ -7607,52 +7621,64 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un équipement en peau résistante")) {
-        let lvlMetier = args.slice(6).join(" : ");
-        let plage = 0
-        const lvlArme = 2
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(6).join(" : ");
+            let plage = 0
+            const lvlArme = 2
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Equipement en peau résistante :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement en peau résistante :", "Vous avez réussi l'amélioration. L'objet gagne 5 HP")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement en peau résistante :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Equipement en peau résistante :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement en peau résistante :", "Vous avez réussi l'amélioration. L'objet gagne 5 HP")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement en peau résistante :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -33741,14 +33767,14 @@ bot.on('message', message => {
             message.channel.send({ embed })
         } else {
             const tours = Math.floor(3 * Math.random() + 2)
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":cyclone: Cri rabaissant :", ":cyclone: De votre cri, le monstre que vous visez semble avoir son moral qui se brise en deux tellement il fut violent et impitoyable. La peur et la haine subgmergent son être tandis que ses dégats sont réduits de moitié ! Par pur instinct de survie, il décide de vous prendre pour cible pendant `" + tours + "` tours afin de vous abattre !")
-                    .setImage("https://cdn.discordapp.com/attachments/543345227604164618/655227981022756864/txytp1lkpwrz.png")
-                    .setTimestamp()
-                message.channel.send({ embed })
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":cyclone: Cri rabaissant :", ":cyclone: De votre cri, le monstre que vous visez semble avoir son moral qui se brise en deux tellement il fut violent et impitoyable. La peur et la haine subgmergent son être tandis que ses dégats sont réduits de moitié ! Par pur instinct de survie, il décide de vous prendre pour cible pendant `" + tours + "` tours afin de vous abattre !")
+                .setImage("https://cdn.discordapp.com/attachments/543345227604164618/655227981022756864/txytp1lkpwrz.png")
+                .setTimestamp()
+            message.channel.send({ embed })
             talkedRecently.add(message.author.id + 2);
             setTimeout(() => {
                 talkedRecently.delete(message.author.id + 2);
@@ -52821,7 +52847,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: L'intelligent chasseur aérien aperçoit vos agissements et les comprend bien assez vite. Cependant, plutôt que simplement manœuvrer au loin pour esquiver votre assaut, il décide de continuer vers vous en passant légèrement trop haut pour être à la portée de votre coup et vient refermer ses puissantes serres sur vos épaules, vous emportant avec lui.\nÀ son prochain tour, faites la commande `=Eagle punch`.")                .setTimestamp()
+                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: L'intelligent chasseur aérien aperçoit vos agissements et les comprend bien assez vite. Cependant, plutôt que simplement manœuvrer au loin pour esquiver votre assaut, il décide de continuer vers vous en passant légèrement trop haut pour être à la portée de votre coup et vient refermer ses puissantes serres sur vos épaules, vous emportant avec lui.\nÀ son prochain tour, faites la commande `=Eagle punch`.").setTimestamp()
             message.channel.send({ embed })
         }
     }
