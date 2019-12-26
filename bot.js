@@ -20234,134 +20234,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'épée en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -20370,134 +20382,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'espadon en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Espadon en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -20506,134 +20530,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la dague en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Dague en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -20642,134 +20678,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la masse en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Masse en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -20778,134 +20826,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du marteau en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Marteau en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -20914,134 +20974,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la hache en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hache en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -21050,134 +21122,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la hallebarde en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hallebarde en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -21186,134 +21270,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la rapière en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Rapière en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -21322,134 +21418,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du cimeterre en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Cimeterre en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -21458,134 +21566,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du sabre en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Sabre en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Sabre en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -21594,134 +21714,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du katana en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Katana en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -21730,134 +21862,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du nodachi en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Nodachi en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -21866,134 +22010,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du pavois en chitine")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois en chitine :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois en chitine :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Pavois en chitine :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune mineure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune commune de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune majeure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune mineure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune commune de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune majeure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune mineure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune commune de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous obtenez une rune majeure de blocage.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois en chitine :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -22004,63 +22160,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme en chitine à une main")) {
-        let lvlMetier = args.slice(8).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(8).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme en chitine à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme en chitine à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk (Si c'est un bouclier, c'est 1 Def)")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme en chitine à une main :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme en chitine à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk (Si c'est un bouclier, c'est 5 HP)")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Arme en chitine à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme en chitine à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk (Si c'est un bouclier, c'est 1 Def)")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme en chitine à une main :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme en chitine à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk (Si c'est un bouclier, c'est 5 HP)")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -22069,63 +22237,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme en chitine à deux mains")) {
-        let lvlMetier = args.slice(8).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(8).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme en chitine à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme en chitine à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 4 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme en chitine à deux mains :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme en chitine à deux mains :", "Vous avez raté critiquement l'amélioration. L'objet perd 2 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Arme en chitine à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme en chitine à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 4 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme en chitine à deux mains :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme en chitine à deux mains :", "Vous avez raté critiquement l'amélioration. L'objet perd 2 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -22134,25 +22314,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme en chitine à une main")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme en chitine à une main :", "Vous obtenez :\n\n:shell: 1 Carapace de doryphore géant\n:pick: 1 Fer médiocre\n:poultry_leg: 1 Patte de doryphore géant")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme en chitine à une main :", "Vous obtenez :\n\n:shell: 1 Carapace de doryphore géant\n:pick: 1 Fer médiocre\n:poultry_leg: 1 Patte de doryphore géant")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme en chitine à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme en chitine à deux mains :", "Vous obtenez :\n\n:shell: 2 Carapace de doryphore géant\n:pick: 1 Fer commun\n:pick: 2 Fer médiocre\n:poultry_leg: 2 Patte de doryphore géant\n:deciduous_tree: 1 Bois de séquoia commun")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme en chitine à deux mains :", "Vous obtenez :\n\n:shell: 2 Carapace de doryphore géant\n:pick: 1 Fer commun\n:pick: 2 Fer médiocre\n:poultry_leg: 2 Patte de doryphore géant\n:deciduous_tree: 1 Bois de séquoia commun")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
