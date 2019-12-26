@@ -4690,7 +4690,7 @@ bot.on('message', message => {
             .addField("Fer parfait :", "C'est un minerai basique que vous trouvez en minant dans la vallée du palier 2 !")
             .addField("Prix d'achat :", "144 cols")
             .addField("Prix de revente :", "36 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements de maille \n=Bijoux de maille")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements de maille\n=Bijoux de maille\n=Gantelets lupines\n=Jambières lupines\n=Bottes lupines\n=Bijoux lupines")
             .setImage("https://png.icons8.com/color/1600/gold-ore.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4820,7 +4820,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Peau de loup sombre :", "C'est une peau basique que vous trouvez sur les loups sombres dans la jungle du palier 3 !")
             .addField("Prix de revente :", "54 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Casque de ???\n=Plastron de ???\n=Bottes de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements lupines")
             .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4835,7 +4835,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Coeur de loup sombre :", "C'est un coeur basique que vous trouvez sur les loups sombres dans la jungle du palier 3 !")
             .addField("Prix de revente :", "58 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Bijoux de ???\n=Potion de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Bijoux lupines")
             .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4850,7 +4850,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Patte d'arachnide :", "C'est une patte basique que vous trouvez sur les traknides et les ataknides dans la jungle du palier 3 !")
             .addField("Prix de revente :", "58 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Epaulières de ???\n=Gantelets de ???\n=Jambières de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes arachnides")
             .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809130193748004/patte_darakne.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4865,7 +4865,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Sclérite d'arachnide :", "C'est une plaque de chitine formant l'exosquelette des arachniques que vous trouvez sur les traknides et les ataknides dans la jungle du palier 3 !")
             .addField("Prix de revente :", "54 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Casque de ???\n=Ceinture de ???\n=Bottes de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements lupines")
             //.setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4895,7 +4895,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Bois de jeune tréant :", "C'est un bois basique que vous trouvez sur les jeunes tréants dans la jungle du palier 3 !")
             .addField("Prix de revente :", "58 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes arachnides")
             .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4910,7 +4910,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Sève de jeune tréant :", "C'est une sève basique que vous trouvez sur les jeunes tréants dans la jungle du palier 3 !")
             .addField("Prix de revente :", "62 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements lupines")
             //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4925,7 +4925,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Essence de jeune tréant :", "C'est un essence basique que vous trouvez sur les jeunes tréants dans la jungle du palier 3 !")
             .addField("Prix de revente :", "66 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Parchemin de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Bijoux lupines")
             //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4940,7 +4940,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Bec d'aigle :", "C'est un bec basique que vous trouvez sur les aigles dans la jungle du palier 3 !")
             .addField("Prix de revente :", "62 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes arachnides")
             .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659808926975524876/bec_daigle.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -4955,7 +4955,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Plume d'aigle :", "C'est une plume basique que vous trouvez sur les aigles dans la jungle du palier 3 !")
             .addField("Prix de revente :", "66 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements de ???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Plastron lupine\n=Cape lupine")
             .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809186640822282/plume_daigle.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5015,7 +5015,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Peau de marcassin :", "C'est une peau basique que vous trouvez sur les marcassins en chassant dans la jungle du palier 3 !")
             .addField("Prix de revente :", "44 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Casque lupine\n=Epaulières lupines\n=Ceinture lupine")
             .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5030,7 +5030,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Coeur de marcassin :", "C'est un coeur basique que vous trouvez sur les marcassins en chassant dans la jungle du palier 3 !")
             .addField("Prix de revente :", "48 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Bijoux lupines")
             .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5090,7 +5090,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Bois de manioc impur :", "C'est un bois impur que vous trouvez dans la jungle du palier 3 !")
             .addField("Prix de revente :", "44 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Espadon arachnide\n=Marteau arachnide\n=Hallebarde arachnide\n=Sabre arachnide\n=Nodachi arachnide\n=Bâton arachnide\n=Lance arachnide")
             .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5105,7 +5105,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Bois de manioc pur :", "C'est un bois pur que vous trouvez dans la jungle du palier 3 !")
             .addField("Prix de revente :", "48 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes en chitine\n=Armes taurus")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Epée arachnide\n=Dague arachnide\n=Masse arachnide\n=Hache arachnide\n=Rapière arachnide\n=Cimeterre arachnide\n=Katana arachnide\n=Ceste arachnide\n=Pavois arachnide\n=Rondache arachnide\n=Ecu arachnide\n=Targe arachnide")
             .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5120,7 +5120,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Malachite médiocre :", "C'est une pierre verte que vous trouvez en minant dans la jungle du palier 3 !")
             .addField("Prix de revente :", "44 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes arachnide")
             .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809064808611852/malachite.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5135,7 +5135,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Malachite commune :", "C'est une pierre verte que vous trouvez en minant dans la jungle du palier 3 !")
             .addField("Prix de revente :", "48 cols")
-            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes arachnide")
             .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809064808611852/malachite.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -5365,6 +5365,21 @@ bot.off('message', message => {
             "Anneau bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Anneau bovin]\n\n" +
             "Amulette bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Amulette bovin]\n\n" +
             "Suite en écrivant :\n=Liste d'équipements 12```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste d'équipements 12")) {
+        message.channel.send("```Casque lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Casque lupine]\n\n" +
+            "Epaulières lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Epaulières lupine]\n\n" +
+            "Plastron lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Plastron lupine]\n\n" +
+            "Cape lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Cape lupine]\n\n" +
+            "Ceinture lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Ceinture lupine]\n\n" +
+            "Gantelets lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Gantelets lupine]\n\n" +
+            "Jambières lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Jambières lupine]\n\n" +
+            "Bottes lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Bottes lupine]\n\n" +
+            "Anneau lupine :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau lupine]\n\n" +
+            "Amulette lupine :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette lupine]```")
     }
 });
 
