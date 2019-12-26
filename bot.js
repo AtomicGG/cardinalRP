@@ -12682,7 +12682,7 @@ bot.off('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix + "Liste d'armes 9")) {
         message.channel.send("```Epée arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Epée arachnide]\n\n" +
             "Espadon arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Espadon arachnide]\n\n" +
@@ -13177,7 +13177,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse de kobolt à un main :", ":scales: C'est une masse assez puissante constituée de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt`")
+            .addField(":scales: Masse de kobolt :", ":scales: C'est une masse assez puissante constituée de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la masse de kobolt`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 1 cuivre commun, 2 cuivre médiocre, 1 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -13237,7 +13237,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière de kobolt à un main :", ":scales: C'est une rapière assez puissante constituée de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt`")
+            .addField(":scales: Rapière de kobolt :", ":scales: C'est une rapière assez puissante constituée de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte de la rapière de kobolt`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 1 cuivre commun, 2 cuivre médiocre, 1 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -13252,7 +13252,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre de kobolt à un main :", ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt`")
+            .addField(":scales: Cimeterre de kobolt :", ":scales: C'est un cimeterre assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du cimeterre de kobolt`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 1 cuivre commun, 2 cuivre médiocre, 1 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -13282,7 +13282,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana de kobolt à un main :", ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt`")
+            .addField(":scales: Katana de kobolt :", ":scales: C'est un katana assez puissant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore la 'Parade' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du katana de kobolt`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 1 cuivre commun, 2 cuivre médiocre, 1 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -13312,7 +13312,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Pavois de kobolt à un main :", ":scales: C'est un pavois assez résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du pavois de kobolt`")
+            .addField(":scales: Pavois de kobolt :", ":scales: C'est un pavois assez résistant constitué de bois résistant et de cuivre de différentes raretés qu'utilisent les kobolts peu puissants !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point\n\n:sparkles: Niveau minimum requis pour le porter : 11\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 plan d'arme kobolt, 1 cuivre rare, 2 cuivre commun, 3 cuivre médiocre, 2 dent de kobolt, 1 bois de frêne commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 4\n\n:large_orange_diamond: Prix d'achat : 340 cols\n\n:large_orange_diamond: Prix de revente : 85 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du pavois de kobolt`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 plan d'arme kobolt, 1 cuivre rare, 1 cuivre commun, 2 cuivre médiocre, 1 dent de kobolt, 1 bois de frêne commun) :", "`=Amélioration d'une arme de kobolt à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'une arme de kobolt à une main`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -13578,7 +13578,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée en chitine à un main :", ":scales: C'est une épée faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'épée en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine`")
+            .addField(":scales: Epée en chitine :", ":scales: C'est une épée faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'épée en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'épée en chitine`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Carapace de Doryphore géant, 1 fer commun, 1 fer médiocre, 1 Patte de Doryphore géant, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme en chitine à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme en chitine à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée en chitine : [Votre niveau en forgeron]`")
@@ -13610,7 +13610,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague en chitine à un main :", ":scales: C'est une dague faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la dague en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague en chitine`")
+            .addField(":scales: Dague en chitine :", ":scales: C'est une dague faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la dague en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague en chitine`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Carapace de Doryphore géant, 1 fer commun, 1 fer médiocre, 1 Patte de Doryphore géant, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme en chitine à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme en chitine à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague en chitine : [Votre niveau en forgeron]`")
@@ -13626,7 +13626,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse en chitine à un main :", ":scales: C'est une masse faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat la hache en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse en chitine`")
+            .addField(":scales: Masse en chitine :", ":scales: C'est une masse faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat la hache en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse en chitine`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Carapace de Doryphore géant, 1 fer commun, 1 fer médiocre, 1 Patte de Doryphore géant, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme en chitine à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme en chitine à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse en chitine : [Votre niveau en forgeron]`")
@@ -13658,7 +13658,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache en chitine à un main :", ":scales: C'est une hache faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat la hache en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine`")
+            .addField(":scales: Hache en chitine :", ":scales: C'est une hache faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat la hache en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache en chitine`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Carapace de Doryphore géant, 1 fer commun, 1 fer médiocre, 1 Patte de Doryphore géant, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme en chitine à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme en chitine à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache en chitine : [Votre niveau en forgeron]`")
@@ -13690,7 +13690,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière en chitine à un main :", ":scales: C'est une rapière faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la rapière en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine`")
+            .addField(":scales: Rapière en chitine :", ":scales: C'est une rapière faite à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la rapière en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière en chitine`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Carapace de Doryphore géant, 1 fer commun, 1 fer médiocre, 1 Patte de Doryphore géant, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme en chitine à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme en chitine à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière en chitine : [Votre niveau en forgeron]`")
@@ -13706,7 +13706,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre en chitine à un main :", ":scales: C'est un cimeterre fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du cimeterre en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine`")
+            .addField(":scales: Cimeterre en chitine :", ":scales: C'est un cimeterre fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du cimeterre en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre en chitine`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Carapace de Doryphore géant, 1 fer commun, 1 fer médiocre, 1 Patte de Doryphore géant, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme en chitine à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme en chitine à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre en chitine : [Votre niveau en forgeron]`")
@@ -13738,7 +13738,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana en chitine à un main :", ":scales: C'est un katana fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du katana en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine`")
+            .addField(":scales: Katana en chitine :", ":scales: C'est un katana fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du katana en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana en chitine`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana en chitine`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Carapace de Doryphore géant, 1 fer commun, 1 fer médiocre, 1 Patte de Doryphore géant, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme en chitine à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme en chitine à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana en chitine : [Votre niveau en forgeron]`")
@@ -13770,7 +13770,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier en chitine à un main :", ":scales: C'est un bouclier fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du pavois en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du pavois en chitine`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du pavois en chitine`")
+            .addField(":scales: Bouclier en chitine :", ":scales: C'est un bouclier fait à partir des monstres insectes du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Carapace de Doryphore géant, 2 fer commun, 3 fer médiocre, 2 Patte de Doryphore géant, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du pavois en chitine`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du pavois en chitine`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du pavois en chitine`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Carapace de Doryphore géant, 1 fer commun, 1 fer médiocre, 1 Patte de Doryphore géant, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme en chitine à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme en chitine à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du pavois en chitine : [Votre niveau en forgeron]`")
@@ -13801,7 +13801,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de taurus à un main :", ":scales: C'est une épée faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'épée de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'épée de taurus`")
+            .addField(":scales: Epée de taurus :", ":scales: C'est une épée faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'épée de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'épée de taurus`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Cuirasse de fort taurus adroit, 1 fer commun, 1 fer médiocre, 1 Corne de taurus, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme de taurus à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme de taurus à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée de taurus : [Votre niveau en forgeron]`")
@@ -13833,7 +13833,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague de taurus à un main :", ":scales: C'est une dague faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la dague de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la dague de taurus`")
+            .addField(":scales: Dague de taurus :", ":scales: C'est une dague faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la dague de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la dague de taurus`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Cuirasse de fort taurus adroit, 1 fer commun, 1 fer médiocre, 1 Corne de taurus, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme de taurus à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme de taurus à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague de taurus : [Votre niveau en forgeron]`")
@@ -13849,7 +13849,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse de taurus à un main :", ":scales: C'est une masse faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la masse de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la masse de taurus`")
+            .addField(":scales: Masse de taurus :", ":scales: C'est une masse faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la masse de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la masse de taurus`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Cuirasse de fort taurus adroit, 1 fer commun, 1 fer médiocre, 1 Corne de taurus, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme de taurus à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme de taurus à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse de taurus : [Votre niveau en forgeron]`")
@@ -13881,7 +13881,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache de taurus à un main :", ":scales: C'est une hache faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la hache de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la hache de taurus`")
+            .addField(":scales: Hache de taurus :", ":scales: C'est une hache faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la hache de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la hache de taurus`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Cuirasse de fort taurus adroit, 1 fer commun, 1 fer médiocre, 1 Corne de taurus, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme de taurus à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme de taurus à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache de taurus : [Votre niveau en forgeron]`")
@@ -13913,7 +13913,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière de taurus à un main :", ":scales: C'est une rapière faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la rapière de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la rapière de taurus`")
+            .addField(":scales: Rapière de taurus :", ":scales: C'est une rapière faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de la rapière de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de la rapière de taurus`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Cuirasse de fort taurus adroit, 1 fer commun, 1 fer médiocre, 1 Corne de taurus, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme de taurus à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme de taurus à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière de taurus : [Votre niveau en forgeron]`")
@@ -13929,7 +13929,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre de taurus à un main :", ":scales: C'est un cimeterre fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du cimeterre de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du cimeterre de taurus`")
+            .addField(":scales: Cimeterre de taurus :", ":scales: C'est un cimeterre fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du cimeterre de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du cimeterre de taurus`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Cuirasse de fort taurus adroit, 1 fer commun, 1 fer médiocre, 1 Corne de taurus, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme de taurus à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme de taurus à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre de taurus : [Votre niveau en forgeron]`")
@@ -13961,7 +13961,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana de taurus à un main :", ":scales: C'est un katana fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du katana de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du katana de taurus`")
+            .addField(":scales: Katana de taurus :", ":scales: C'est un katana fait à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat du katana de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication du katana de taurus`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Cuirasse de fort taurus adroit, 1 fer commun, 1 fer médiocre, 1 Corne de taurus, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme de taurus à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme de taurus à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana de taurus : [Votre niveau en forgeron]`")
@@ -14040,7 +14040,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague darchic à un main :", ":scales: C'est une dague faite à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague darchic`")
+            .addField(":scales: Dague darchic :", ":scales: C'est une dague faite à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague darchic`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Sabot de boeuf, 1 Dard de frelon foudroyant , 1 Fer commun, 1 Fer rare, 1 Bois de séquoia rare) :", "`=Amélioration d'une arme darchic à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme darchic à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague darchic : [Votre niveau en forgeron]`")
@@ -14056,7 +14056,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse darchic à un main :", ":scales: C'est une masse faite à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse darchic`")
+            .addField(":scales: Masse darchic :", ":scales: C'est une masse faite à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'épée darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse darchic`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Sabot de boeuf, 1 Dard de frelon foudroyant , 1 Fer commun, 1 Fer rare, 1 Bois de séquoia rare) :", "`=Amélioration d'une arme darchic à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme darchic à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse darchic : [Votre niveau en forgeron]`")
@@ -14088,7 +14088,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache darchic à un main :", ":scales: C'est une hache faite à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache darchic`")
+            .addField(":scales: Hache darchic :", ":scales: C'est une hache faite à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache darchic`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Sabot de boeuf, 1 Dard de frelon foudroyant , 1 Fer commun, 1 Fer rare, 1 Bois de séquoia rare) :", "`=Amélioration d'une arme darchic à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme darchic à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache darchic : [Votre niveau en forgeron]`")
@@ -14120,7 +14120,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière darchic à un main :", ":scales: C'est une rapière faite à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols rapière darchic`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière darchic`")
+            .addField(":scales: Rapière darchic :", ":scales: C'est une rapière faite à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols rapière darchic`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière darchic`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Sabot de boeuf, 1 Dard de frelon foudroyant , 1 Fer commun, 1 Fer rare, 1 Bois de séquoia rare) :", "`=Amélioration d'une arme darchic à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme darchic à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière darchic : [Votre niveau en forgeron]`")
@@ -14136,7 +14136,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre darchic à un main :", ":scales: C'est un cimeterre fait à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre darchic`")
+            .addField(":scales: Cimeterre darchic :", ":scales: C'est un cimeterre fait à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre darchic`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Sabot de boeuf, 1 Dard de frelon foudroyant , 1 Fer commun, 1 Fer rare, 1 Bois de séquoia rare) :", "`=Amélioration d'une arme darchic à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme darchic à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre darchic : [Votre niveau en forgeron]`")
@@ -14168,7 +14168,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana darchic à un main :", ":scales: C'est un katana fait à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana darchic`")
+            .addField(":scales: Katana darchic :", ":scales: C'est un katana fait à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana darchic`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Sabot de boeuf, 1 Dard de frelon foudroyant , 1 Fer commun, 1 Fer rare, 1 Bois de séquoia rare) :", "`=Amélioration d'une arme darchic à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme darchic à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana darchic : [Votre niveau en forgeron]`")
@@ -14200,10 +14200,345 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier darchic à un main :", ":scales: C'est un bouclier fait à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du pavois darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du pavois darchic`")
+            .addField(":scales: Bouclier darchic :", ":scales: C'est un bouclier fait à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du pavois darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du pavois darchic`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Sabot de boeuf, 1 Dard de frelon foudroyant , 1 Fer commun, 1 Fer rare, 1 Bois de séquoia rare) :", "`=Amélioration d'une arme darchic à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme darchic à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du pavois darchic : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Armes | Détails | Arachnide
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Armes arachnides")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des armes arachnides :", "=Epée arachnide\n=Espadon arachnide\n=Dague arachnide\n=Masse arachnide\n=Marteau arachnide\n=Hache arachnide\n=Hallebarde arachnide\n=Rapière arachnide\n=Cimeterre arachnide\n=Sabre arachnide\n=Katana arachnide\n=Nodachi arachnide\n=Bâton arachnide\n=Lance arachnide\n=Ceste arachnide\n=Pavois arachnide\n=Rondache arachnide\n=Ecu arachnide\n=Targe arachnide")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epée arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epée arachnide :", ":scales: C'est une épée faite à partir des monstres de la jungle du palier 3 !\n\n" +
+                                                   ":crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n" +
+                                                   ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                                                   ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n" +
+                                                   ":wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n" +
+                                                   ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                                                   ":large_orange_diamond: Prix de revente : 700 cols\n\n" +
+                                                   ":keyboard: Si vous trouvez cet objet : `=Découverte de l'épée arachnide`\n\n" +
+                                                   "keyboard: Si vous fabriquez cet objet : `=Fabrication de l'épée arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Espadon arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Espadon arachnide :", ":scales: C'est un espadon fait à partir des monstres de la jungle du palier 3 !\n\n" +
+                                                   ":crossed_swords: Améliore le 'Combo' de 3 points.\n\n" +
+                                                   ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                                                   ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n" +
+                                                   ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n" +
+                                                   ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                                                   ":large_orange_diamond: Prix de revente : 1100 cols\n\n" +
+                                                   ":keyboard: Si vous trouvez cet objet : `=Découverte de l'espadon arachnide`\n\n" +
+                                                   "keyboard: Si vous fabriquez cet objet : `=Fabrication de l'espadon arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'espadon arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Dague arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Dague arachnide :", ":scales: C'est une dague faite à partir des monstres de la jungle du palier 3 !:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Masse arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Masse arachnide :", ":scales: C'est une masse faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Marteau arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Marteau arachnide :", ":scales: C'est une masse faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du marteau arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du marteau arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du marteau arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Hache arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Hache arachnide :", ":scales: C'est une hache faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Hallebarde arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Hallebarde arachnide :", ":scales: C'est une hache faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hallebarde arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hallebarde arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hallebarde arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Rapière arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Rapière arachnide :", ":scales: C'est une rapière faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 700 cols rapière arachnide`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cimeterre arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cimeterre arachnide :", ":scales: C'est un cimeterre fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Sabre arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Sabre arachnide :", ":scales: C'est un cimeterre fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du sabre arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du sabre arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du sabre arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Katana arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Katana arachnide :", ":scales: C'est un katana fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Nodachi arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Nodachi arachnide :", ":scales: C'est un katana fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du nodachi arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du nodachi arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du nodachi arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bâton arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bâton arachnide :", ":scales: C'est un bâton fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup sauté' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bâton arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bâton arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du bâton arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Lance arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Lance arachnide :", ":scales: C'est une lance faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du lance arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du lance arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du lance arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ceste arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceste arachnide :", ":scales: C'est un ceste fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Coup normal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du ceste arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du ceste arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du ceste arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Pavois arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Pavois arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du pavois arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du pavois arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du pavois arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Rondache arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Rondache arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du rondache arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du rondache arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du rondache arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ecu arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ecu arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du écu arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du écu arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du écu arachnide : [Votre niveau en forgeron]`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Targe arachnide")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Targe arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du targe arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du targe arachnide`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du targe arachnide : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14219,7 +14554,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14247,7 +14582,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Dague basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14261,7 +14596,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Masse basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14331,7 +14666,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Cimeterre basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14359,7 +14694,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Katana basique :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14388,7 +14723,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier basique à un main :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .addField(":scales: Bouclier basique :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
