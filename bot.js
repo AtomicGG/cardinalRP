@@ -867,6 +867,26 @@ bot.on('message', message => {
     }
 });
 
+bot.off('message', message => {
+    if (message.content.startsWith(prefix + "Trajets")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Les trajets :", "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\n" +
+                "Pour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n`=Trajet palier 1`\n\n" +
+                "Pour consulter la durée des trajets en dehors de la ville du palier 2 :\n\n`=Trajet palier 2`\n\n" +
+                "Pour consulter la durée des trajets en dehors de la ville du palier 3 :\n\n`=Trajet palier 3`\n\n" +
+                "Quand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y en a que dans les zones extérieures !\n\n" +
+                "Pour vous rendre à l'extérieur depuis la ville, il vous faudra passer par l'entrée de la ville !\n\n" +
+                "Pour mieux comprendre ce système, imaginez que vous êtes à un magasin de 15 min de chez vous, pour revenir vous mettrez 15 minutes !\n\n" +
+                "Les chemins entre les zones permettent de pouvoir continuer à RP avant d'arriver à la zone souhaitée !")
+            .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Trajet palier 1")) {
         const embed = new Discord.RichEmbed()
@@ -893,6 +913,28 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Trajet palier 2")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Trajet en ville :", "Entrée de la ville\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Forêt dense 1 ou Clairière 1\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Forêt dense 2 ou Clairière 2\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Forêt dense 3 ou Clairière 3\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Vallée\n‖\n‖ `[3 minutes]`\n‖\n" +
+                "Grande clairière\n" +
+                "Pont\n" +
+                "Ravin\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Labyrinthe\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Salle du boss")
+            .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.off('message', message => {
+    if (message.content.startsWith(prefix + "Trajet palier 3")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -2065,6 +2107,7 @@ bot.on('message', message => {
                 "Les zones actuellement disponible selon les paliers sont les suivantes :")
             .addField("Zones du palier 1 :", "\n`=Plaine`\n`=Forêt`\n`=Donjon sauvage`\n`=Montagne`\n`=Grotte`")
             .addField("Zones du palier 2 :", "\n`=Forêt dense`\n`=Clairière`\n`=Vallée`\n`=Ravin`")
+            //.addField("Zones du palier 3 :", "\n`=Forêt dense`\n`=Clairière`\n`=Vallée`\n`=Ravin`")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -2083,15 +2126,7 @@ bot.on('message', message => {
             .addBlankField(true)
             .addField("**__Le Palier 2 :__**", "`=Monstres du palier 2`")
             .addBlankField(true)
-            .addField("**__La Plaine :__**", "`=Renard` : 20 :hearts:\n`=Sanglier` : 30 :hearts:\n`=Chien` : 15 :hearts:\n`=Bandit débutant` : 40 :hearts:\n`=Lapin géant` : 70 :hearts:")
-            .addBlankField(true)
-            .addField("**__La Forêt :__**", "`=Loup` : 80 :hearts:\n`=Slime` : 150 :hearts:\n`=Bandit expérimenté` : 140 :hearts:\n`=Bandit sombre` : 240 :hearts:\n`=Loup de sang` : 300 :hearts:")
-            .addBlankField(true)
-            .addField("**__Le Donjon Sauvage :__**", "`=Loup d'élite` : 180 :hearts:\n`=Loup de sang d'élite` : 400 :hearts:\n`=Bandit sombre d'élite` : 350 :hearts:\n`=Loup gigantesque` : 2000 :hearts:")
-            .addBlankField(true)
-            .addField("**__La Montagne :__**", "`=Jeune kobolt` : 200 :hearts:\n`=Kobolt explorateur` : 325 :hearts:\n`=Kobolt ouvrier` : 275 :hearts:\n`=Kobolt espion` : 250 :hearts:\n`=Kobolt enragé` : 650 :hearts:")
-            .addBlankField(true)
-            .addField("**__La Grotte :__**", "`=Kobolt mineur` : 350 :hearts:\n`=Kobolt combattant` : 600 :hearts:\n`=Kobolt garde` : 520 :hearts:\n`=Chien errant` : 400 :hearts:\n`=Kobolt pilion` : 1000 :hearts:")
+            //.addField("**__Le Palier 3 :__**", "`=Monstres du palier 3`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -2136,6 +2171,22 @@ bot.on('message', message => {
             .addField("**__La Clairière :__**", "`=Bourdon flâneur` : 700 :hearts:\n`=Taurus chargeur` : 1250 :hearts:\n`=Fort taurus adroit` : 1350 :hearts:\n`=Taurus lourd` : 2550 :hearts:")
             .addBlankField(true)
             .addField("**__La Vallée :__**", "`=Guêpe vivace` : 225 :hearts:\n`=Frelon foudroyant` : 550 :hearts:\n`=Boeuf vrombissant` : 3250 :hearts:\n`=Vache vrombissante` : 2750 :hearts:")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Monstres du palier 3")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Les monstres du palier 3 :", "Pour connaître les informations sur un monstre lors d'un combat, il suffit d'écrire :\n\n" +
+                "`=[Nom du monstre]`\n\nLa liste des monstres actuellement existant est la suivante :")
+            .addBlankField(true)
+            .addField("**__La Jungle pronfonde :__**", "`=Loup sombre` : 3000 :hearts:\n`=Traknide` : 2550 :hearts:\n`=Ataknide` : 2550 :hearts:\n`=Jeune tréant` : 500 :hearts:  250 :shield:\n`=Aigle` : 2550 :hearts:")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -2365,6 +2416,46 @@ bot.on('message', message => {
             "Crevette :\nCoûts : [Achat : 8 cols] [Revente : 2 cols]\n\n" +
             "Truite :\nCoûts : [Achat : 12 cols] [Revente : 3 cols]\n\n" +
             "Crabe :\nCoûts : [Achat : 16 cols] [Revente : 4 cols]```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des matériaux 8")) {
+        message.channel.send("```Bois de séquoia parfait :\nCoûts : [Achat : 128 cols] [Revente : 32 cols]\n\n" +
+            "Goujon :\nCoûts : [Achat : 4 cols] [Revente : 1 cols]\n\n" +
+            "Crevette :\nCoûts : [Achat : 8 cols] [Revente : 2 cols]\n\n" +
+            "Truite :\nCoûts : [Achat : 12 cols] [Revente : 3 cols]\n\n" +
+            "Crabe :\nCoûts : [Achat : 16 cols] [Revente : 4 cols]\n\n" +
+            "Suite en écrivant :\n=Liste des matériaux 9```")
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Liste des matériaux 9")) {
+        message.channel.send("```Viande de loup sombre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Peau de loup sombre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Coeur de loup sombre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Patte d'arachnide :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Sclérite d'arachnide :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Toile d'arachnide' :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Bois de jeune tréant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Essence de jeune tréant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Bec d'aigle :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Plume d'aigle :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Plume d'or :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Serre d'aigle :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Viande de marcassin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Peau de marcassin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Coeur de marcassin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Sarriette commune :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Sarriette rare :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Sarriette parfaite :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Bois de manioc impur :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Bois de manioc pur :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Malachite médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Malachite commun :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Petit piranha :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
+            "Grand piranha :\nCoûts : [Achat : X cols] [Revente : X cols]```")
     }
 });
 
@@ -52186,7 +52277,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: L'habile animal vous faisant face, vous voyant attaquer, bondira une première fois du sol dans votre direction quoiqu'un peu plus haut que vous. Retombant sur vous, il se servira de votre corps comme d'une seconde plateforme et effectuera un deuxième bond pour finalement atterrir derrière vous, ne vous lâchant pas du regard. Malgré votre, très certaine, absence de connaissances en physionomie lupine, vous êtes étrangement convaincu en regardant son expression qu'il se moque de vous suite à cette action.")
+                .addField(":shield: Loup sombre :", ":shield: L'habile animal vous faisant face, vous voyant attaquer, bondira une première fois du sol dans votre direction quoiqu'un peu plus haut que vous. Retombant sur vous, il se servira de votre corps comme d'une seconde plateforme et effectuera un deuxième bond pour finalement atterrir derrière vous, ne vous lâchant pas du regard. Malgré votre, très certaine, absence de connaissances en physiognomonie lupine, vous êtes étrangement convaincu en regardant son expression qu'il se moque de vous suite à cette action.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
