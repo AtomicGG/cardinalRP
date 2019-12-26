@@ -2439,7 +2439,8 @@ bot.off('message', message => {
             "Sclérite d'arachnide :\nCoûts : [Achat : X cols] [Revente : 58 cols]\n\n" +
             "Toile d'arachnide' :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
             "Bois de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 58 cols]\n\n" +
-            "Essence de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
+            "Sève de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
+            "Essence de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 66 cols]\n\n" +
             "Bec d'aigle :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
             "Plume d'aigle :\nCoûts : [Achat : X cols] [Revente : 66 cols]\n\n" +
             "Plume d'or :\nCoûts : [Achat : X cols] [Revente : 70 cols]\n\n" +
@@ -4850,7 +4851,7 @@ bot.on('message', message => {
             .addField("Patte d'arachnide :", "C'est une patte basique que vous trouvez sur les traknides et les ataknides dans la jungle du palier 3 !")
             .addField("Prix de revente :", "58 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Epaulières de ???\n=Gantelets de ???\n=Jambières de ???")
-            //.setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809130193748004/patte_darakne.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -4880,7 +4881,7 @@ bot.on('message', message => {
             .addField("Toile d'arachnide :", "C'est une toile que vous trouvez sur les traknides dans la jungle du palier 3 !")
             .addField("Prix de revente :", "54 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=???")
-            //.setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659808973922238498/cobweb.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -4902,13 +4903,28 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Sève de jeune tréant")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Sève de jeune tréant :", "C'est une sève basique que vous trouvez sur les jeunes tréants dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "62 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de ???")
+            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Essence de jeune tréant")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Essence de jeune tréant :", "C'est un essence basique que vous trouvez sur les jeunes tréants dans la jungle du palier 3 !")
-            .addField("Prix de revente :", "62 cols")
+            .addField("Prix de revente :", "66 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Parchemin de ???")
             //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
             .setTimestamp()
@@ -4925,7 +4941,7 @@ bot.on('message', message => {
             .addField("Bec d'aigle :", "C'est un bec basique que vous trouvez sur les aigles dans la jungle du palier 3 !")
             .addField("Prix de revente :", "62 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de ???")
-            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659808926975524876/bec_daigle.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -4940,7 +4956,7 @@ bot.on('message', message => {
             .addField("Plume d'aigle :", "C'est une plume basique que vous trouvez sur les aigles dans la jungle du palier 3 !")
             .addField("Prix de revente :", "66 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements de ???")
-            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809186640822282/plume_daigle.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -4955,7 +4971,7 @@ bot.on('message', message => {
             .addField("Plume d'or :", "C'est une plume très rare que vous trouvez sur les aigles dans la jungle du palier 3 !")
             .addField("Prix de revente :", "70 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "Aucuns")
-            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809224427175937/plume_de_tofu.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -4970,7 +4986,7 @@ bot.on('message', message => {
             .addField("Serre d'aigle :", "C'est une serre basique que vous trouvez sur les aigles dans la jungle du palier 3 !")
             .addField("Prix de revente :", "74 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "???")
-            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809307650424875/serre_dikargn.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -5030,7 +5046,7 @@ bot.on('message', message => {
             .addField("Sarriette commune :", "C'est une herbe commune que vous trouvez en cueillant dans les jungles du palier 3 !")
             .addField("Prix de revente :", "40 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "???")
-            //.setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809264944021504/sarriette.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -5045,7 +5061,7 @@ bot.on('message', message => {
             .addField("Sarriette rare :", "C'est une herbe rare que vous trouvez en cueillant dans les jungles du palier 3 !")
             .addField("Prix de revente :", "44 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "???")
-            //.setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809264944021504/sarriette.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -5060,7 +5076,7 @@ bot.on('message', message => {
             .addField("Sarriette parfaite :", "C'est une herbe parfaite que vous trouvez en cueillant dans les jungles  du palier 3 !")
             .addField("Prix de revente :", "48 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "???")
-            //.setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809264944021504/sarriette.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -5105,7 +5121,7 @@ bot.on('message', message => {
             .addField("Malachite médiocre :", "C'est une pierre verte que vous trouvez en minant dans la jungle du palier 3 !")
             .addField("Prix de revente :", "44 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "???")
-            //.setImage("https://fargin.files.wordpress.com/2011/04/rubis-brut.jpg?w=590")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809064808611852/malachite.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -5120,7 +5136,7 @@ bot.on('message', message => {
             .addField("Malachite commune :", "C'est une pierre verte que vous trouvez en minant dans la jungle du palier 3 !")
             .addField("Prix de revente :", "48 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "???")
-            //.setImage("https://fargin.files.wordpress.com/2011/04/rubis-brut.jpg?w=590")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809064808611852/malachite.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -5135,7 +5151,7 @@ bot.on('message', message => {
             .addField("Petit piranha :", "C'est un poisson basique que vous trouvez en pêchant dans la jungle du palier 3 !")
             .addField("Prix de revente :", "8 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "???")
-            //.setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813554773327913/truite-fario_Madelon-FNPF-1-800x516.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809377196441625/petit_piranha.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -5150,7 +5166,7 @@ bot.on('message', message => {
             .addField("Grand piranha :", "C'est un poisson rare que vous trouvez en pêchant dans la jungle du palier 3 !")
             .addField("Prix de revente :", "12 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "???")
-            //.setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813554773327913/truite-fario_Madelon-FNPF-1-800x516.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809377196441625/petit_piranha.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
