@@ -2437,7 +2437,8 @@ bot.off('message', message => {
             "Coeur de loup sombre :\nCoûts : [Achat : X cols] [Revente : 58 cols]\n\n" +
             "Patte d'arachnide :\nCoûts : [Achat : X cols] [Revente : 54 cols]\n\n" +
             "Sclérite d'arachnide :\nCoûts : [Achat : X cols] [Revente : 58 cols]\n\n" +
-            "Toile d'arachnide' :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
+            "Toile de traknide' :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
+            "Venin d'ataknide' :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
             "Bois de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 58 cols]\n\n" +
             "Sève de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
             "Essence de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 66 cols]\n\n" +
@@ -4849,7 +4850,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Patte d'arachnide :", "C'est une patte basique que vous trouvez sur les traknides et les ataknides dans la jungle du palier 3 !")
-            .addField("Prix de revente :", "58 cols")
+            .addField("Prix de revente :", "54 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Armes arachnides")
             .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659809130193748004/patte_darakne.jpg")
             .setTimestamp()
@@ -4864,7 +4865,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Sclérite d'arachnide :", "C'est une plaque de chitine formant l'exosquelette des arachniques que vous trouvez sur les traknides et les ataknides dans la jungle du palier 3 !")
-            .addField("Prix de revente :", "54 cols")
+            .addField("Prix de revente :", "58 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements lupines")
             //.setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
             .setTimestamp()
@@ -4873,15 +4874,30 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content === prefix + "Toile d'arachnide") {
+    if (message.content === prefix + "Toile de traknide") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Toile d'arachnide :", "C'est une toile que vous trouvez sur les traknides dans la jungle du palier 3 !")
-            .addField("Prix de revente :", "54 cols")
+            .addField("Toile de traknide :", "C'est une toile que vous trouvez sur les traknides dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "62 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=???")
             .setImage("https://cdn.discordapp.com/attachments/517729877491974188/659808973922238498/cobweb.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Venin d'ataknide") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Venin d'ataknide :", "C'est un venin que vous trouvez sur les ataknides dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "62 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=???")
+            //.setImage("https://cdn.discordapp.com/attachments/517729877491974188/659808973922238498/cobweb.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -12643,6 +12659,49 @@ bot.on('message', message => {
             "Katana darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Katana darchic]\n\n" +
             "Nodachi darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Nodachi darchic]\n\n" +
             "Pavois darchic :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Pavois darchic]```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste d'armes 8")) {
+        message.channel.send("```Epée darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Epée darchic]\n\n" +
+            "Espadon darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Espadon darchic]\n\n" +
+            "Dague darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Dague darchic]\n\n" +
+            "Masse darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Masse darchic]\n\n" +
+            "Marteau darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Marteau darchic]\n\n" +
+            "Hache darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Hache darchic]\n\n" +
+            "Hallebarde darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Hallebarde darchic]\n\n" +
+            "Rapière darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Rapière darchic]\n\n" +
+            "Cimeterre darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Cimeterre darchic]\n\n" +
+            "Sabre darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Sabre darchic]\n\n" +
+            "Katana darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Katana darchic]\n\n" +
+            "Nodachi darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Nodachi darchic]\n\n" +
+            "Pavois darchic :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Pavois darchic]\n\n" +
+            "Suite en écrivant :\n=Liste d'armes 9```")
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Liste d'armes 9")) {
+        message.channel.send("```Epée arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Epée arachnide]\n\n" +
+            "Espadon arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Espadon arachnide]\n\n" +
+            "Dague arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Dague arachnide]\n\n" +
+            "Masse arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Masse arachnide]\n\n" +
+            "Marteau arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Marteau arachnide]\n\n" +
+            "Hache arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Hache arachnide]\n\n" +
+            "Hallebarde arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Hallebarde arachnide]\n\n" +
+            "Rapière arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Rapière arachnide]\n\n" +
+            "Cimeterre arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Cimeterre arachnide]\n\n" +
+            "Sabre arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Sabre arachnide]\n\n" +
+            "Katana arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Katana arachnide]\n\n" +
+            "Nodachi arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Nodachi arachnide]\n\n" +
+            "Bâton arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Bâton arachnide]\n\n" +
+            "Lance arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Lance arachnide]\n\n" +
+            "Ceste arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Ceste arachnide]\n\n" +
+            "Pavois arachnide :\nCoûts : [Achat : X cols] [Revente : 900 cols]\nInfos : [=Pavois arachnide]\n\n" +
+            "Rondache arachnide :\nCoûts : [Achat : X cols] [Revente : 900 cols]\nInfos : [=Rondache arachnide]\n\n" +
+            "Ecu arachnide :\nCoûts : [Achat : X cols] [Revente : 900 cols]\nInfos : [=Ecu arachnide]\n\n" +
+            "Targe arachnide :\nCoûts : [Achat : X cols] [Revente : 900 cols]\nInfos : [=Targe arachnide]```")
     }
 });
 
