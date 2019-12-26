@@ -14455,10 +14455,10 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Lance arachnide :", ":scales: C'est une lance faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du lance arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du lance arachnide`")
+            .addField(":scales: Lance arachnide :", ":scales: C'est une lance faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la lance arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la lance arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du lance arachnide : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la lance arachnide : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14503,10 +14503,10 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rondache arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du rondache arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du rondache arachnide`")
+            .addField(":scales: Rondache arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rondache arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rondache arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du rondache arachnide : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rondache arachnide : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14519,10 +14519,10 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Ecu arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du écu arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du écu arachnide`")
+            .addField(":scales: Ecu arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'écu arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'écu arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du écu arachnide : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'écu arachnide : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -14535,10 +14535,10 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Targe arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du targe arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du targe arachnide`")
+            .addField(":scales: Targe arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la targe arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la targe arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
-            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du targe arachnide : [Votre niveau en forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la targe arachnide : [Votre niveau en forgeron]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -28912,6 +28912,2820 @@ bot.on('message', message => {
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Arachnide | Fonte
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de l'épée arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de l'espadon arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la dague arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la masse arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du marteau arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la hache arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la hallebarde arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la rapière arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du cimeterre arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du sabre arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Sabre arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du katana arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du nodachi arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du bâton arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bâton arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune mineure de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune commune de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune majeure de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune mineure de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune commune de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune majeure de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune mineure de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune commune de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous obtenez une rune majeure de coup sauté.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bâton arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la lance arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Lance arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune mineure de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune commune de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune majeure de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune mineure de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune commune de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune majeure de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune mineure de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune commune de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous obtenez une rune majeure de coup perce armure.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Lance arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du ceste arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Ceste arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune mineure de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune commune de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune majeure de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune mineure de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune commune de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune majeure de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune mineure de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune commune de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous obtenez une rune majeure de coup normal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ceste arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du pavois arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la rondache arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rondache arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rondache arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de l'écu arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Ecu arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Ecu arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la targe arachnide")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 7
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Targe arachnide :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Targe arachnide :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
