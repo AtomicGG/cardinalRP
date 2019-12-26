@@ -4942,7 +4942,7 @@ bot.on('message', message => {
             .addField("Essence de jeune tréant :", "C'est un essence basique que vous trouvez sur les jeunes tréants dans la jungle du palier 3 !")
             .addField("Prix de revente :", "66 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Bijoux lupines")
-            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659871929225969669/essence_de_treant.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
