@@ -2430,7 +2430,7 @@ bot.off('message', message => {
     }
 });
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content === (prefix + "Liste des matériaux 9")) {
         message.channel.send("```Viande de loup sombre :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
             "Peau de loup sombre :\nCoûts : [Achat : X cols] [Revente : 54 cols]\n\n" +
@@ -2453,7 +2453,7 @@ bot.on('message', message => {
             "Bois de manioc impur :\nCoûts : [Achat : X cols] [Revente : 44 cols]\n\n" +
             "Bois de manioc pur :\nCoûts : [Achat : X cols] [Revente : 48 cols]\n\n" +
             "Malachite médiocre :\nCoûts : [Achat : X cols] [Revente : 44 cols]\n\n" +
-            "Malachite commun :\nCoûts : [Achat : X cols] [Revente : 48 cols]\n\n" +
+            "Malachite commune :\nCoûts : [Achat : X cols] [Revente : 48 cols]\n\n" +
             "Petit piranha :\nCoûts : [Achat : X cols] [Revente : 8 cols]\n\n" +
             "Grand piranha :\nCoûts : [Achat : X cols] [Revente : 12 cols]```")
     }
@@ -4789,6 +4789,370 @@ bot.on('message', message => {
             .addField("Prix de revente :", "4 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Soupe de crabe")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813543486324736/crabe_57491350_web.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Matériaux 9 | Détail
+
+//*
+
+bot.on('message', message => {
+    if (message.content === prefix + "Viande de loup sombre") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Viande de loup sombre :", "C'est une viande basique que vous trouvez sur les loups sombres dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "50 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Ragoût de ???")
+            .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Peau de loup sombre") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Peau de loup sombre :", "C'est une peau basique que vous trouvez sur les loups sombres dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "54 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Casque de ???\n=Plastron de ???\n=Bottes de ???")
+            .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Coeur de loup sombre") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Coeur de loup sombre :", "C'est un coeur basique que vous trouvez sur les loups sombres dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "58 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Bijoux de ???\n=Potion de ???")
+            .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Patte d'arachnide") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Patte d'arachnide :", "C'est une patte basique que vous trouvez sur les traknides et les ataknides dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "58 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Epaulières de ???\n=Gantelets de ???\n=Jambières de ???")
+            //.setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Sclérite d'arachnide") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Sclérite d'arachnide :", "C'est une plaque de chitine formant l'exosquelette des arachniques que vous trouvez sur les traknides et les ataknides dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "54 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Casque de ???\n=Ceinture de ???\n=Bottes de ???")
+            //.setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Toile d'arachnide") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Toile d'arachnide :", "C'est une toile que vous trouvez sur les traknides dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "54 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=???")
+            //.setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bois de jeune tréant")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Bois de jeune tréant :", "C'est un bois basique que vous trouvez sur les jeunes tréants dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "58 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de ???")
+            .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Essence de jeune tréant")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Essence de jeune tréant :", "C'est un essence basique que vous trouvez sur les jeunes tréants dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "62 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Parchemin de ???")
+            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bec d'aigle")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Bec d'aigle :", "C'est un bec basique que vous trouvez sur les aigles dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "62 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de ???")
+            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plume d'aigle")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Plume d'aigle :", "C'est une plume basique que vous trouvez sur les aigles dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "66 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements de ???")
+            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plume d'or")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Plume d'or :", "C'est une plume très rare que vous trouvez sur les aigles dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "70 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "Aucuns")
+            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Serre d'aigle")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Serre d'aigle :", "C'est une serre basique que vous trouvez sur les aigles dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "74 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            //.setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Viande de marcassin") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Viande de marcassin :", "C'est une viande basique vous trouvez sur les marcassins en chassant dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "40 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=???")
+            .setImage("https://cdn.pixabay.com/photo/2016/10/18/14/07/steak-1750291_960_720.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === prefix + "Peau de marcassin") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Peau de marcassin :", "C'est une peau basique que vous trouvez sur les marcassins en chassant dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "44 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            .setImage("https://cdn0.iconfinder.com/data/icons/prehistoric-elements-1/64/animal-skin-leather-material-Clothes-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Coeur de marcassin")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Coeur de marcassin :", "C'est un coeur basique que vous trouvez sur les marcassins en chassant dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "48 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=???")
+            .setImage("https://png.icons8.com/ios/1600/medical-heart-filled.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Sarriette commune")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Sarriette commune :", "C'est une herbe commune que vous trouvez en cueillant dans les jungles du palier 3 !")
+            .addField("Prix de revente :", "40 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            //.setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Sarriette rare")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Sarriette rare :", "C'est une herbe rare que vous trouvez en cueillant dans les jungles du palier 3 !")
+            .addField("Prix de revente :", "44 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            //.setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Sarriette parfaite")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Sarriette parfaite :", "C'est une herbe parfaite que vous trouvez en cueillant dans les jungles  du palier 3 !")
+            .addField("Prix de revente :", "48 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            //.setImage("https://cdn.discordapp.com/attachments/564812043169824772/610587162181894154/Liere_2.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bois de manioc impur")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Bois de manioc impur :", "C'est un bois impur que vous trouvez dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "44 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "En cours")
+            .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bois de manioc pur")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Bois de manioc pur :", "C'est un bois pur que vous trouvez dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "48 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "=Armes en chitine\n=Armes taurus")
+            .setImage("https://cdn2.iconfinder.com/data/icons/food-icons-6/200/farm_wood-512.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Malachite médiocre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Malachite médiocre :", "C'est une pierre verte que vous trouvez en minant dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "44 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            //.setImage("https://fargin.files.wordpress.com/2011/04/rubis-brut.jpg?w=590")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Malachite commune")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Malachite commune :", "C'est une pierre verte que vous trouvez en minant dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "48 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            //.setImage("https://fargin.files.wordpress.com/2011/04/rubis-brut.jpg?w=590")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Petit piranha")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Petit piranha :", "C'est un poisson basique que vous trouvez en pêchant dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "8 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            //.setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813554773327913/truite-fario_Madelon-FNPF-1-800x516.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Grand piranha")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Grand piranha :", "C'est un poisson rare que vous trouvez en pêchant dans la jungle du palier 3 !")
+            .addField("Prix de revente :", "12 cols")
+            .addField("Permet de réaliser le ou les crafts suivants :", "???")
+            //.setImage("https://cdn.discordapp.com/attachments/566021680120725518/630813554773327913/truite-fario_Madelon-FNPF-1-800x516.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -27299,7 +27663,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("Les mariages :", "Le mariage est l'union sacrée de deux personnes. Pour se marier, il faut qu'un dirigeant fasse l'union au Temple.\n\n" +
+            .addField("Les mariages :", "Le mariage est l'union sacrée de deux personnes. Pour se marier, il faut qu'un dirigeant fasse l'union au Temple et que vous ayez deux anneaux de mariages (trouvable en commerce pour 2750 cols/Unité).\n\n" +
                 "Un couple marié se partage leurs inventaires. Il vous faudra bien faire attention. \n\n" +
                 "Si un des conjoints meurt, l'inventaire revient donc au conjoint encore en vie.")
             .setImage("https://i0.wp.com/s-media-cache-ak0.pinimg.com/736x/f0/43/68/f0436863981bbbae5fc257e2490bd39f--sword-art-online-asuna-kirito-asuna.jpg")
