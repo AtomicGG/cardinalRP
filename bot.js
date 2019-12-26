@@ -3743,6 +3743,7 @@ bot.on('message', message => {
             .addField("Prix d'achat :", "X cols")
             .addField("Prix de revente :", "52 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Parchemin de poison moyen")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659873200842211352/Venin_dataknide.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -4897,7 +4898,7 @@ bot.on('message', message => {
             .addField("Venin d'ataknide :", "C'est un venin que vous trouvez sur les ataknides dans la jungle du palier 3 !")
             .addField("Prix de revente :", "62 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=???")
-            //.setImage("https://cdn.discordapp.com/attachments/517729877491974188/659808973922238498/cobweb.png")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659873200842211352/Venin_dataknide.jpg")
             .setTimestamp()
         message.channel.send({ embed })
     }
