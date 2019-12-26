@@ -5378,8 +5378,8 @@ bot.off('message', message => {
             "Gantelets lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Gantelets lupine]\n\n" +
             "Jambières lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Jambières lupine]\n\n" +
             "Bottes lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Bottes lupine]\n\n" +
-            "Anneau lupine :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Anneau lupine]\n\n" +
-            "Amulette lupine :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Amulette lupine]```")
+            "Anneau lupine :\nCoûts : [Achat : X cols] [Revente : 1000 cols]\nInfos : [=Anneau lupine]\n\n" +
+            "Amulette lupine :\nCoûts : [Achat : X cols] [Revente : 1000 cols]\nInfos : [=Amulette lupine]```")
     }
 });
 
@@ -7372,6 +7372,275 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Panoplie bovin :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises) : \n\n- Pour 2 pièces : Bonus de 1.5 points de défense\n- Pour 6 pièces : Bonus de 5 points de défense\n- Pour 10 pièces : Bonus de 8.5 points de défense")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Equipements | Détails | Lupine
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Equipements lupines")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des équipements lupines :", "=Casque lupine\n=Epaulières lupines\n=Plastron lupine\n=Cape lupine\n=Ceinture lupine\n=Gantelets lupines\n=Jambières lupines\n=Bottes lupines")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Casque lupine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque lupine :", ":scales: C'est un casque fait avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Peau de marcassin\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte du casque lupine`\n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication du casque lupine`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Peau de loup sombre, 2 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Peau de marcassin) :", "`=Amélioration d'un équipement lupine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epaulières lupines")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières lupines :", ":scales: Ce sont des épaulières faites avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 2 Sève de jeune tréant et 2 Peau de marcassin\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des épaulières lupines`\n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication des épaulières lupines`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Peau de loup sombre, 2 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Peau de marcassin) :", "`=Amélioration d'un équipement lupine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plastron lupine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron lupine :", ":scales: C'est un plastron fait avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Plume d'aigle\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte du plastron lupine`\n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron lupine`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Peau de loup sombre, 2 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Peau de marcassin) :", "`=Amélioration d'un équipement lupine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape lupine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape lupine :", ":scales: C'est une cape faite avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Plume d'aigle\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de la cape lupine`\n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape lupine`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Peau de loup sombre, 2 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Peau de marcassin) :", "`=Amélioration d'un équipement lupine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ceinture lupine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture lupine :", ":scales: C'est une ceinture faite avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Peau de maracassin\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture lupine`\n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture lupine`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Peau de loup sombre, 2 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Peau de marcassin) :", "`=Amélioration d'un équipement lupine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gantelets lupines")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets lupines :", ":scales: Ce sont des gantelets faits avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Fer parfait\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des gantelets lupines`\n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets lupines`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Peau de loup sombre, 2 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Peau de marcassin) :", "`=Amélioration d'un équipement lupine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Jambières lupines")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières lupines :", ":scales: Ce sont des jambières faites avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Fer parfait\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des jambières lupines`\n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières lupines`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Peau de loup sombre, 2 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Peau de marcassin) :", "`=Amélioration d'un équipement lupine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bottes lupines")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes lupines :", ":scales: Ce sont des bottes faites avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Fer parfait\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des bottes lupines`\n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes lupines`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Peau de loup sombre, 2 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Peau de marcassin) :", "`=Amélioration d'un équipement lupine : [Niveau en Forgeron]`")
+            .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet :", "`=Démantèlement d'un équipement lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bijoux lupine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des bijoux lupine :", "=Anneau lupine\n=Amulette lupine")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Anneau lupine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau lupine :", ":scales: C'est un anneau fait avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Coeur de loup sombre, 3 Essence de jeune tréant, 5 Coeur de marcassin et 5 Fer parfait\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 1000 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau lupine` \n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau lupine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 3 Coeur de loup sombre, 2 Essence de jeune tréant, 3 Coeur de marcassin et 3 Fer parfait) :", "`=Amélioration d'un bijou lupine : [Niveau en Bijoutier]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démenteler cet objet :", "`=Démantèlement d'un bijou lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Amulette lupine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette lupine :", ":scales: C'est une amulette faite avec des composants des monstres de la jungle profonde du palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 6\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Coeur de loup sombre, 3 Essence de jeune tréant, 5 Coeur de marcassin et 5 Fer parfait\n\n" +
+                ":sparkles: Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 30\n\n" +
+                ":large_orange_diamond: Prix de revente : 1000 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette lupine` \n\n" +
+                ":keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette lupine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 3 Coeur de loup sombre, 2 Essence de jeune tréant, 3 Coeur de marcassin et 3 Fer parfait) :", "`=Amélioration d'un bijou lupine : [Niveau en Bijoutier]`")
+            .addField(":keyboard: Si un bijoutier de profession souhaite démenteler cet objet :", "`=Démantèlement d'un bijou lupine`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bonus de la panoplie lupine")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Panoplie lupine :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises), les bonus sont additifs : \n\n- Pour 2 pièces : Bonus de 40 points de vie\n- Pour 4 pièces : Bonus de 30 points de vie\n- Pour 6 pièces : Bonus de 20 points de vie\n- Pour 8 pièces : Bonus de 10 points de vie\n- Pour 10 pièces : Accès à la compétence `=Overgrowth : [Vos points de vie maximum]` , permettant de lancer un bouclier absorbant que les dommages finaux pour le reste du combat (Utilisable qu'une fois par combat).")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -27018,76 +27287,76 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme darchic à une main")) {
         const idRole = "544250021134991361"
-        if (message.member.roles.has(idRole)){
-        let lvlMetier = args.slice(7).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 6
-        if (lvlMetier <= lvlArme) {
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(7).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 6
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme darchic à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme darchic à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk (Si c'est un bouclier, c'est 1 Def)")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme darchic à une main :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme darchic à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk (Si c'est un bouclier, c'est 5 HP)")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Arme darchic à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme darchic à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk (Si c'est un bouclier, c'est 1 Def)")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme darchic à une main :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme darchic à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk (Si c'est un bouclier, c'est 5 HP)")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
-    } else {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
-            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-            .setTimestamp()
-        message.channel.send({ embed })
     }
-}
 });
 
 bot.on('message', message => {
@@ -27095,76 +27364,76 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme darchic à deux mains")) {
         const idRole = "544250021134991361"
-        if (message.member.roles.has(idRole)){
-        let lvlMetier = args.slice(7).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 6
-        if (lvlMetier <= lvlArme) {
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(7).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 6
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme darchic à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme darchic à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 4 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme darchic à deux mains :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme darchic à deux mains :", "Vous avez raté critiquement l'amélioration. L'objet perd 2 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Arme darchic à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme darchic à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 4 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme darchic à deux mains :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme darchic à deux mains :", "Vous avez raté critiquement l'amélioration. L'objet perd 2 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
-    } else {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
-            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-            .setTimestamp()
-        message.channel.send({ embed })
     }
-}
 });
 
 // Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Darchic | Démantèlement
@@ -27172,49 +27441,49 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme darchic à une main")) {
         const idRole = "544250021134991361"
-        if (message.member.roles.has(idRole)){
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme darchic à une main :", "Vous obtenez :\n\n:dagger: 1 Sabot de boeuf\n:syringe: 1 Dard de frelon foudroyant\n:pick: 1 Fer commun\n:pick: 1 Fer rare")
-            .setTimestamp()
-        message.channel.send({ embed })
-    } else {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
-            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-            .setTimestamp()
-        message.channel.send({ embed })
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme darchic à une main :", "Vous obtenez :\n\n:dagger: 1 Sabot de boeuf\n:syringe: 1 Dard de frelon foudroyant\n:pick: 1 Fer commun\n:pick: 1 Fer rare")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
-}
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme darchic à deux mains")) {
         const idRole = "544250021134991361"
-        if (message.member.roles.has(idRole)){
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme darchic à deux mains :", "Vous obtenez :\n\n:dagger: 2 Sabot de boeuf\n:syringe: 2 Dard de frelon foudroyant\n:pick: 2 Fer commun\n:pick: 1 Fer rare\n:deciduous_tree: 1 Bois de séquoia rare")
-            .setTimestamp()
-        message.channel.send({ embed })
-    } else {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
-            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
-            .setTimestamp()
-        message.channel.send({ embed })
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme darchic à deux mains :", "Vous obtenez :\n\n:dagger: 2 Sabot de boeuf\n:syringe: 2 Dard de frelon foudroyant\n:pick: 2 Fer commun\n:pick: 1 Fer rare\n:deciduous_tree: 1 Bois de séquoia rare")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
-}
 });
 
 // Menus | Liste | Potions
