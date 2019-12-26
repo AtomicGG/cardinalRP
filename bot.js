@@ -14232,14 +14232,14 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Epée arachnide :", ":scales: C'est une épée faite à partir des monstres de la jungle du palier 3 !\n\n" +
-                                                   ":crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n" +
-                                                   ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
-                                                   ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n" +
-                                                   ":wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n" +
-                                                   ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                                                   ":large_orange_diamond: Prix de revente : 700 cols\n\n" +
-                                                   ":keyboard: Si vous trouvez cet objet : `=Découverte de l'épée arachnide`\n\n" +
-                                                   "keyboard: Si vous fabriquez cet objet : `=Fabrication de l'épée arachnide`")
+                ":crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n" +
+                ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
+                ":large_orange_diamond: Prix de revente : 700 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'épée arachnide`\n\n" +
+                "keyboard: Si vous fabriquez cet objet : `=Fabrication de l'épée arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée arachnide : [Votre niveau en forgeron]`")
@@ -14256,14 +14256,14 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Espadon arachnide :", ":scales: C'est un espadon fait à partir des monstres de la jungle du palier 3 !\n\n" +
-                                                   ":crossed_swords: Améliore le 'Combo' de 3 points.\n\n" +
-                                                   ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
-                                                   ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n" +
-                                                   ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n" +
-                                                   ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                                                   ":large_orange_diamond: Prix de revente : 1100 cols\n\n" +
-                                                   ":keyboard: Si vous trouvez cet objet : `=Découverte de l'espadon arachnide`\n\n" +
-                                                   "keyboard: Si vous fabriquez cet objet : `=Fabrication de l'espadon arachnide`")
+                ":crossed_swords: Améliore le 'Combo' de 3 points.\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n" +
+                ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n" +
+                ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
+                ":large_orange_diamond: Prix de revente : 1100 cols\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'espadon arachnide`\n\n" +
+                "keyboard: Si vous fabriquez cet objet : `=Fabrication de l'espadon arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'espadon arachnide : [Votre niveau en forgeron]`")
@@ -33003,6 +33003,19 @@ bot.on('message', message => {
     }
 });
 
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des parchemins 2")) {
+        message.channel.send("```Parchemin de poison moyen :\nCoûts : [Achat : X cols] [Revente : 300 cols]\nInfos : [=Parchemin de poison moyen]\n\n" +
+            "Suite en écrivant :\n=Liste des parchemins 3```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des parchemins 3")) {
+        message.channel.send("```Parchemin de poison moyen :\nCoûts : [Achat : X cols] [Revente : 300 cols]\nInfos : [=Parchemin de poison moyen]```")
+    }
+});
+
 // Menus | Liste | Parchemins | Détails
 
 bot.on('message', message => {
@@ -33404,7 +33417,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Plan d'arme kobolt :", "C'est un plan servant à la création des armes des Kobolts du palier 1 !")
-            .addField("Prix de revente :", "100 cols")
+            .addField("Prix de revente :", "300 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de kobolt")
             .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
             .setTimestamp()
@@ -33419,7 +33432,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Plan d'armure kobolt :", "C'est un plan servant à la création des armures des Kobolts du palier 1 !")
-            .addField("Prix de revente :", "100 cols")
+            .addField("Prix de revente :", "300 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements de kobolt")
             .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
             .setTimestamp()
@@ -33434,7 +33447,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Plan de bijoux kobolt :", "C'est un plan servant à la création des bijoux des Kobolts du palier 1 !")
-            .addField("Prix de revente :", "100 cols")
+            .addField("Prix de revente :", "300 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Bijoux de kobolt")
             .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
             .setTimestamp()
@@ -33449,7 +33462,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Plan d'arme supérieure kobolt :", "C'est un plan servant à la création des armes supérieures des Kobolts supérieur du palier 1 !")
-            .addField("Prix de revente :", "200 cols")
+            .addField("Prix de revente :", "400 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Armes de kobolt supérieurs")
             .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
             .setTimestamp()
@@ -33464,7 +33477,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Plan d'armure supérieure kobolt :", "C'est un plan servant à la création des armures supérieures des Kobolts supérieure du palier 1 !")
-            .addField("Prix de revente :", "200 cols")
+            .addField("Prix de revente :", "400 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Equipements de kobolt supérieurs")
             .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
             .setTimestamp()
@@ -33479,7 +33492,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Plan de bijoux supérieur kobolt :", "C'est un plan servant à la création des bijoux supérieurs des Kobolts supérieur du palier 1 !")
-            .addField("Prix de revente :", "200 cols")
+            .addField("Prix de revente :", "400 cols")
             .addField("Permet de réaliser le ou les crafts suivants :", "=Bijoux de kobolt supérieurs")
             .setImage("https://cdn3.iconfinder.com/data/icons/game-development-4/64/Adventure_Game-512.png")
             .setTimestamp()
@@ -33577,6 +33590,23 @@ bot.on('message', message => {
     }
 });
 
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des oeufs 2")) {
+        message.channel.send("```Oeuf bavant :\nCoûts : [Achat : 6000 cols] [Revente : 1500 cols]\nInfos : [=Oeuf bavant]\n\n" +
+            "Oeuf brisé :\nCoûts : [Achat : 8000 cols] [Revente : 2000 cols]\nInfos : [=Oeuf brisé]\n\n" +
+            "Suite en écrivant :\n=Liste des oeufs 3```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des oeufs 3")) {
+        message.channel.send("```Oeuf bavant :\nCoûts : [Achat : 6000 cols] [Revente : 1500 cols]\nInfos : [=Oeuf bavant]\n\n" +
+            "Oeuf brisé :\nCoûts : [Achat : 8000 cols] [Revente : 2000 cols]\nInfos : [=Oeuf brisé]```")
+    }
+});
+
+// Menus | Liste | Oeufs | Détails
+
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Oeuf déformé")) {
         const embed = new Discord.RichEmbed()
@@ -33592,6 +33622,56 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Oeuf difforme")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":egg: Oeuf difforme :", ":egg: C'est un oeuf plutôt étrange, diforme qui renferme parfois un bébé animal trouvable dans le palier 1 !")
+            .addField("Prix d'achat :", "3000 cols")
+            .addField("Prix de revente :", "750 cols")
+            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf difforme")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Oeuf bavant")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":egg: Oeuf bavant :", ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
+            .addField("Prix d'achat :", "6000 cols")
+            .addField("Prix de revente :", "1500 cols")
+            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf bavant")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Oeuf brisé")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":egg: Oeuf brisé :", ":egg: C'est un oeuf assez étrange, avec une allure qui pourrait faire penser qu'il est sur le point de se briser, qui renferme parfois un bébé animal trouvable dans le palier 2 !")
+            .addField("Prix d'achat :", "8000 cols")
+            .addField("Prix de revente :", "2000 cols")
+            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf brisé")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+// Menus | Liste | Oeufs | Achat/découverte
 
 bot.on('message', message => {
     const A = (Math.floor((100) * Math.random() + 1))
@@ -33688,97 +33768,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const A = (Math.floor((100) * Math.random() + 1))
-    const B = (Math.floor((6) * Math.random() + 3))
-    if (message.content.startsWith(prefix + "Bébé renard attaque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Bébé renard :", ":crossed_swords: Le bébé renard tente de mordre sa cible mais il est trop petit et n'arrive pas à lui infliger de dégâts...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Bébé renard :", ":crossed_swords: Le bébé renard fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " + B + " points de dégâts !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    const B = (Math.floor((13) * Math.random() + 6))
-    if (message.content.startsWith(prefix + "Bébé loup attaque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Bébé loup :", ":crossed_swords: Le bébé loup essaye de bondir sur la cible mais se rate et retombe par terre et n'arrive pas à lui infliger de dégâts...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Bébé loup :", ":crossed_swords: Le bébé loup bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " + B + " points de dégâts !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    const B = (Math.floor((20) * Math.random() + 12))
-    if (message.content.startsWith(prefix + "Bébé loup de sang attaque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Bébé loup de sang :", ":crossed_swords: Le bébé loup de sang hurle pour faire peur à l'ennemis avant de foncer dessus, mais il n'est pas assez rapide et n'arrive pas à lui infliger de dégâts...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Bébé loup de sang :", ":crossed_swords: Le bébé loup de sang hurle de rage avec un bruit glaçant le sang, il bondit sur sa cible les griffes immenses en avant et le plante, il inflige " + B + " points de dégâts !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Oeuf difforme")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":egg: Oeuf difforme :", ":egg: C'est un oeuf plutôt étrange, diforme qui renferme parfois un bébé animal trouvable dans le palier 1 !")
-            .addField("Prix d'achat :", "3000 cols")
-            .addField("Prix de revente :", "750 cols")
-            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf difforme")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
     if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf difforme")) {
         if (A <= 60) {
             const embed = new Discord.RichEmbed()
@@ -33801,22 +33790,6 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Oeuf bavant")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":egg: Oeuf bavant :", ":egg: C'est un oeuf assez étrange, bavant qui renferme parfois un bébé animal trouvable dans le palier 2 !")
-            .addField("Prix d'achat :", "6000 cols")
-            .addField("Prix de revente :", "1500 cols")
-            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf bavant")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
     }
 });
 
@@ -33904,72 +33877,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const A = (Math.floor((100) * Math.random() + 1))
-    const B = (Math.floor((20) * Math.random() + 35))
-    if (message.content.startsWith(prefix + "Boa attaque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Boa :", ":crossed_swords: Le boa tente de mordre sa cible mais il n'est pas assez rapide et n'arrive pas à le toucher...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Boa :", ":crossed_swords: Le boa fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " + B + " points de dégâts !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    const B = (Math.floor((26) * Math.random() + 46))
-    if (message.content.startsWith(prefix + "Ark venom attaque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Ark venom :", ":crossed_swords: Le Ark venom essaye de mordre sa cible mais préfère passer a coté...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Ark venom :", ":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu afin de planter ses crocs à un point vital, il inflige " + B + " points de dégâts !")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Oeuf brisé")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":egg: Oeuf brisé :", ":egg: C'est un oeuf assez étrange, avec une allure qui pourrait faire penser qu'il est sur le point de se briser, qui renferme parfois un bébé animal trouvable dans le palier 2 !")
-            .addField("Prix d'achat :", "8000 cols")
-            .addField("Prix de revente :", "2000 cols")
-            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf brisé")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
     if (message.content.startsWith(prefix + "Achat/découverte d'un oeuf brisé")) {
         if (A <= 60) {
             const embed = new Discord.RichEmbed()
@@ -34028,54 +33935,6 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Gros bébé taurus provoque")) {
-        if (A <= 50) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque... Rien... Il a raté sa provoc...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 51) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque un monstre pendant un tour, il pourra supporter que 3 attaque!")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const A = (Math.floor((100) * Math.random() + 1))
-    if (message.content.startsWith(prefix + "Petit taurus malin attaque")) {
-        if (A <= 75) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Petit taurus malin :", ":crossed_swords: Petit taurus malin tente de briser la défense du monstre mais il préfère faire le beau...")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (A >= 76) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Petit taurus malin :", ":crossed_swords: Petit taurus malin attaque et brise la défense du monstre, l'immobilisant pour une attaque!")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
 // Menus | Liste | Familiers
 
 bot.on('message', message => {
@@ -34124,6 +33983,31 @@ bot.on('message', message => {
     }
 });
 
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des familiers 5")) {
+        message.channel.send("```Familiers de l'oeuf ??? :\n\n" +
+            "Ecureuil (indisponible):\nNiveau requis : 1\nBonus : 40 HP\n\n" +
+            "Bébé loup blanc (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 4 Atk\n\n" +
+            "Bébé renne (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
+            "Bébé ours polaire (indisponible) :\nNiveau requis : 1\nBonus : 4 Atk & 2 Def\n\n" +
+            "Lézard (marchand) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
+            "Métamorphe :\nNiveau requis : 1\nBonus : Peut prendre la forme et le bonus de n'importe quel familier de l'oeuf déformé\n\n" +
+            "Suite en écrivant :\n=Liste des familiers 6```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des familiers 6")) {
+        message.channel.send("```Familiers d'évènement ou du marchand :\n\n" +
+            "Ecureuil (indisponible):\nNiveau requis : 1\nBonus : 40 HP\n\n" +
+            "Bébé loup blanc (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 4 Atk\n\n" +
+            "Bébé renne (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
+            "Bébé ours polaire (indisponible) :\nNiveau requis : 1\nBonus : 4 Atk & 2 Def\n\n" +
+            "Lézard (marchand) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
+            "Métamorphe :\nNiveau requis : 1\nBonus : Peut prendre la forme et le bonus de n'importe quel familier de l'oeuf déformé```")
+    }
+});
+
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 5")) {
         message.channel.send("```Familiers d'évènement ou du marchand' :\n\n" +
@@ -34133,6 +34017,181 @@ bot.on('message', message => {
             "Bébé ours polaire (indisponible) :\nNiveau requis : 1\nBonus : 4 Atk & 2 Def\n\n" +
             "Lézard (marchand) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
             "Métamorphe :\nNiveau requis : 1\nBonus : Peut prendre la forme et le bonus de n'importe quel familier de l'oeuf déformé```")
+    }
+});
+
+// Menus | Liste | Familiers | Attaques
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    const B = (Math.floor((6) * Math.random() + 3))
+    if (message.content.startsWith(prefix + "Bébé renard attaque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Bébé renard :", ":crossed_swords: Le bébé renard tente de mordre sa cible mais il est trop petit et n'arrive pas à lui infliger de dégâts...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Bébé renard :", ":crossed_swords: Le bébé renard fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " + B + " points de dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    const B = (Math.floor((13) * Math.random() + 6))
+    if (message.content.startsWith(prefix + "Bébé loup attaque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Bébé loup :", ":crossed_swords: Le bébé loup essaye de bondir sur la cible mais se rate et retombe par terre et n'arrive pas à lui infliger de dégâts...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Bébé loup :", ":crossed_swords: Le bébé loup bondit rapidement sur sa cible, la déstabilise un peu pour planter ses crocs à un point vital, il inflige " + B + " points de dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    const B = (Math.floor((20) * Math.random() + 12))
+    if (message.content.startsWith(prefix + "Bébé loup de sang attaque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Bébé loup de sang :", ":crossed_swords: Le bébé loup de sang hurle pour faire peur à l'ennemis avant de foncer dessus, mais il n'est pas assez rapide et n'arrive pas à lui infliger de dégâts...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Bébé loup de sang :", ":crossed_swords: Le bébé loup de sang hurle de rage avec un bruit glaçant le sang, il bondit sur sa cible les griffes immenses en avant et le plante, il inflige " + B + " points de dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    const B = (Math.floor((20) * Math.random() + 35))
+    if (message.content.startsWith(prefix + "Boa attaque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Boa :", ":crossed_swords: Le boa tente de mordre sa cible mais il n'est pas assez rapide et n'arrive pas à le toucher...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Boa :", ":crossed_swords: Le boa fonce rapidement sur sa cible en poussant un petit cri avant de planter ses petits crocs dessus, il inflige " + B + " points de dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    const B = (Math.floor((26) * Math.random() + 46))
+    if (message.content.startsWith(prefix + "Ark venom attaque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Ark venom :", ":crossed_swords: Le Ark venom essaye de mordre sa cible mais préfère passer a coté...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Ark venom :", ":crossed_swords: Le Ark Venom bondit rapidement sur sa cible, la déstabilise un peu afin de planter ses crocs à un point vital, il inflige " + B + " points de dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Gros bébé taurus provoque")) {
+        if (A <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque... Rien... Il a raté sa provoc...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque un monstre pendant un tour, il pourra supporter que 3 attaque!")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const A = (Math.floor((100) * Math.random() + 1))
+    if (message.content.startsWith(prefix + "Petit taurus malin attaque")) {
+        if (A <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Petit taurus malin :", ":crossed_swords: Petit taurus malin tente de briser la défense du monstre mais il préfère faire le beau...")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (A >= 76) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Petit taurus malin :", ":crossed_swords: Petit taurus malin attaque et brise la défense du monstre, l'immobilisant pour une attaque!")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
