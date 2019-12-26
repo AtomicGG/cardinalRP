@@ -9475,7 +9475,7 @@ bot.on('message', message => {
             let lvlMetier = args.slice(5).join(" : ");
             let plage = 0
             let echecCrit = 95
-            const lvlArme = 5
+            const lvlArme = 6
             if (lvlMetier <= lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -20238,7 +20238,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -20386,7 +20386,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -20534,7 +20534,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -20682,7 +20682,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -20830,7 +20830,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -20978,7 +20978,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -21126,7 +21126,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -21274,7 +21274,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -21422,7 +21422,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -21570,7 +21570,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -21718,7 +21718,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -21866,7 +21866,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -22014,7 +22014,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -22710,7 +22710,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -22858,7 +22858,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -23006,7 +23006,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -23154,7 +23154,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -23302,7 +23302,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -23450,7 +23450,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -23598,7 +23598,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -23746,7 +23746,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(6).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -23894,7 +23894,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -24042,7 +24042,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -24190,7 +24190,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -24338,7 +24338,7 @@ bot.on('message', message => {
         if (message.member.roles.has(idRole)) {
             let roll = 0
             let lvlMetier = args.slice(5).join(" : ");
-            const lvlArme = 4
+            const lvlArme = 5
             if (lvlMetier < lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
@@ -25054,12 +25054,1940 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Darchic | Fonte
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de l'épée darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de l'espadon darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la dague darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la masse darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du marteau darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la hache darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la hallebarde darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte de la rapière darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du cimeterre darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du sabre darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Sabre darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du katana darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du nodachi darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Fonte du pavois darchic")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(4).join(" : ");
+            const lvlArme = 6
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois darchic :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune mineure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune commune de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous obtenez une rune majeure de blocage.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois darchic :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Darchic | Amélioration
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme darchic à une main")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)){
         let lvlMetier = args.slice(7).join(" : ");
         let plage = 0
         let echecCrit = 95
@@ -25118,13 +27046,25 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
         }
+    } else {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
+}
 });
 
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme darchic à deux mains")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)){
         let lvlMetier = args.slice(7).join(" : ");
         let plage = 0
         let echecCrit = 95
@@ -25183,13 +27123,25 @@ bot.on('message', message => {
                 message.channel.send({ embed })
             }
         }
+    } else {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
+}
 });
 
 // Menus | Liste | Armes | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Darchic | Démantèlement
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme darchic à une main")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)){
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25197,11 +27149,23 @@ bot.on('message', message => {
             .addField(":scales: Arme darchic à une main :", "Vous obtenez :\n\n:dagger: 1 Sabot de boeuf\n:syringe: 1 Dard de frelon foudroyant\n:pick: 1 Fer commun\n:pick: 1 Fer rare")
             .setTimestamp()
         message.channel.send({ embed })
+    } else {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
+}
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme darchic à deux mains")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)){
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -25209,7 +27173,17 @@ bot.on('message', message => {
             .addField(":scales: Arme darchic à deux mains :", "Vous obtenez :\n\n:dagger: 2 Sabot de boeuf\n:syringe: 2 Dard de frelon foudroyant\n:pick: 2 Fer commun\n:pick: 1 Fer rare\n:deciduous_tree: 1 Bois de séquoia rare")
             .setTimestamp()
         message.channel.send({ embed })
+    } else {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
+}
 });
 
 // Menus | Liste | Potions
