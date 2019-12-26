@@ -7721,52 +7721,64 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un bijou du croc")) {
-        let lvlMetier = args.slice(5).join(" : ");
-        let plage = 0
-        const lvlArme = 2
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(5).join(" : ");
+            let plage = 0
+            const lvlArme = 2
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bijou du croc :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou du croc :", "Vous avez réussi l'amélioration. L'objet gagne 5 HP")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou du croc :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bijou du croc :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou du croc :", "Vous avez réussi l'amélioration. L'objet gagne 5 HP")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou du croc :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -7927,52 +7939,64 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un équipement rouillé")) {
-        let lvlMetier = args.slice(4).join(" : ");
-        let plage = 0
-        const lvlArme = 2
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(4).join(" : ");
+            let plage = 0
+            const lvlArme = 2
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Equipement rouillé :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement rouillé :", "Vous avez réussi l'amélioration. L'objet gagne 5 HP")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement rouillé :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Equipement rouillé :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement rouillé :", "Vous avez réussi l'amélioration. L'objet gagne 5 HP")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement rouillé :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -7981,52 +8005,64 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un bijou rouillé")) {
-        let lvlMetier = args.slice(4).join(" : ");
-        let plage = 0
-        const lvlArme = 2
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(4).join(" : ");
+            let plage = 0
+            const lvlArme = 2
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bijou rouillé :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou rouillé :", "Vous avez réussi l'amélioration. L'objet gagne 5 HP")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou rouillé :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bijou rouillé :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou rouillé :", "Vous avez réussi l'amélioration. L'objet gagne 5 HP")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou rouillé :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -8474,52 +8510,64 @@ bot.on('message', message => {
         if (message.content.includes('supérieur')) {
 
         } else {
-            let lvlMetier = args.slice(5).join(" : ");
-            let plage = 0
-            const lvlArme = 3
-            if (lvlMetier <= lvlArme) {
+            const idRole = "544250021134991361"
+            if (message.member.roles.has(idRole)) {
+                let lvlMetier = args.slice(5).join(" : ");
+                let plage = 0
+                const lvlArme = 3
+                if (lvlMetier <= lvlArme) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement de kobolt :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
+                    if (lvlMetier == lvlArme + 1) {
+                        plage = 2
+                    }
+                    if (lvlMetier == lvlArme + 2) {
+                        plage = 16
+                    }
+                    if (lvlMetier == lvlArme + 3) {
+                        plage = 36
+                    }
+                    if (lvlMetier == lvlArme + 4) {
+                        plage = 64
+                    }
+                    if (lvlMetier >= lvlArme + 5) {
+                        plage = 100
+                    }
+                    let roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= plage) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Equipement de kobolt :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                    if (roll > plage) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Equipement de kobolt :", "Vous avez raté l'amélioration.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+            } else {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Equipement de kobolt :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                     .setTimestamp()
                 message.channel.send({ embed })
-            } else {
-                if (lvlMetier == lvlArme + 1) {
-                    plage = 2
-                }
-                if (lvlMetier == lvlArme + 2) {
-                    plage = 16
-                }
-                if (lvlMetier == lvlArme + 3) {
-                    plage = 36
-                }
-                if (lvlMetier == lvlArme + 4) {
-                    plage = 64
-                }
-                if (lvlMetier >= lvlArme + 5) {
-                    plage = 100
-                }
-                let roll = Math.floor(100 * Math.random() + 1)
-                if (roll <= plage) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Equipement de kobolt :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-                if (roll > plage) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Equipement de kobolt :", "Vous avez raté l'amélioration.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
             }
         }
     }
@@ -8532,15 +8580,137 @@ bot.on('message', message => {
         if (message.content.includes('supérieur')) {
 
         } else {
-            let lvlMetier = args.slice(5).join(" : ");
+            const idRole = "544250021445369870"
+            if (message.member.roles.has(idRole)) {
+                let lvlMetier = args.slice(5).join(" : ");
+                let plage = 0
+                const lvlArme = 3
+                if (lvlMetier <= lvlArme) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou de kobolt :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
+                    if (lvlMetier == lvlArme + 1) {
+                        plage = 2
+                    }
+                    if (lvlMetier == lvlArme + 2) {
+                        plage = 16
+                    }
+                    if (lvlMetier == lvlArme + 3) {
+                        plage = 36
+                    }
+                    if (lvlMetier == lvlArme + 4) {
+                        plage = 64
+                    }
+                    if (lvlMetier >= lvlArme + 5) {
+                        plage = 100
+                    }
+                    let roll = Math.floor(100 * Math.random() + 1)
+                    if (roll <= plage) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Bijou de kobolt :", "Vous avez réussi l'amélioration. L'objet gagne 1 Def")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                    if (roll > plage) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Bijou de kobolt :", "Vous avez raté l'amélioration.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+            } else {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+        }
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt | Démantèlement
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un équipement de kobolt")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Equipement de kobolt :", "Vous obtenez :\n\n:pick: 1 Cuivre commun\n:pick: 2 Cuivre médiocre\n:poultry_leg: 1 Peau de ragondin")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Démantèlement d'un bijou de kobolt")) {
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Bijou de kobolt :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:pick: 2 Cuivre commun\n:pick: 4 Cuivre médiocre")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt supérieur | Amélioration
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Amélioration d'un équipement de kobolt supérieur")) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(6).join(" : ");
             let plage = 0
-            const lvlArme = 3
+            let echecCrit = 95
+            const lvlArme = 4
             if (lvlMetier <= lvlArme) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                     .setColor(3447003)
-                    .addField(":scales: Bijou de kobolt :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .addField(":scales: Equipement de kobolt supérieur :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
                     .setTimestamp()
                 message.channel.send({ embed })
             } else {
@@ -8558,6 +8728,7 @@ bot.on('message', message => {
                 }
                 if (lvlMetier >= lvlArme + 5) {
                     plage = 100
+                    echecCrit = 200
                 }
                 let roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= plage) {
@@ -8565,113 +8736,38 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bijou de kobolt :", "Vous avez réussi l'amélioration. L'objet gagne 1 Def")
+                        .addField(":scales: Equipement de kobolt supérieur :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
-                if (roll > plage) {
+                if (roll > plage && roll <= echecCrit) {
                     const embed = new Discord.RichEmbed()
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Bijou de kobolt :", "Vous avez raté l'amélioration.")
+                        .addField(":scales: Equipement de kobolt supérieur :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement de kobolt supérieur :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
             }
-        }
-    }
-});
-
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt | Démantèlement
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un équipement de kobolt")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement de kobolt :", "Vous obtenez :\n\n:pick: 1 Cuivre commun\n:pick: 2 Cuivre médiocre\n:poultry_leg: 1 Peau de ragondin")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Démantèlement d'un bijou de kobolt")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou de kobolt :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:pick: 2 Cuivre commun\n:pick: 4 Cuivre médiocre")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Kobolt supérieur | Amélioration
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Amélioration d'un équipement de kobolt supérieur")) {
-        let lvlMetier = args.slice(6).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 4
-        if (lvlMetier <= lvlArme) {
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Equipement de kobolt supérieur :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement de kobolt supérieur :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement de kobolt supérieur :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement de kobolt supérieur :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -8680,63 +8776,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un bijou de kobolt supérieur")) {
-        let lvlMetier = args.slice(6).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 4
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(6).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 4
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bijou de kobolt supérieur :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou de kobolt supérieur :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou de kobolt supérieur :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou de kobolt supérieur :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bijou de kobolt supérieur :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou de kobolt supérieur :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou de kobolt supérieur :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou de kobolt supérieur :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -8745,25 +8853,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement de kobolt supérieur")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement de kobolt supérieur :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:poultry_leg: 2 Peau de chien errant\n:gem: 1 Dent de kobolt pilion")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Equipement de kobolt supérieur :", "Vous obtenez :\n\n:pick: 1 Cuivre rare\n:poultry_leg: 2 Peau de chien errant\n:gem: 1 Dent de kobolt pilion")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un bijou de kobolt supérieur")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou de kobolt supérieur :", "Vous obtenez :\n\n:pick: 1 Cuivre parfait\n:pick: 2 Cuivre rare\n:pick: 3 Cuivre commun\n:pick: 4 Cuivre médiocre\n:cupid: 1 Coeur de chien errant")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Bijou de kobolt supérieur :", "Vous obtenez :\n\n:pick: 1 Cuivre parfait\n:pick: 2 Cuivre rare\n:pick: 3 Cuivre commun\n:pick: 4 Cuivre médiocre\n:cupid: 1 Coeur de chien errant")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -9261,63 +9393,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un équipement en chitine")) {
-        let lvlMetier = args.slice(5).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 4
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(5).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 4
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Equipement en chitine :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement en chitine :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement en chitine :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement en chitine :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Equipement en chitine :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement en chitine :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement en chitine :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement en chitine :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -9326,63 +9470,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un bijou en chitine")) {
-        let lvlMetier = args.slice(5).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(5).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bijou en chitine :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou en chitine :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou en chitine :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou en chitine :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bijou en chitine :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou en chitine :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou en chitine :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou en chitine :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -9391,25 +9547,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement en chitine :", "Vous obtenez :\n\n:knife: 1 Peau élastique de lombric irrégulier\n:shell: 1 Carapace de bousier colossal\n:pick: 2 Fer médiocre")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Equipement en chitine :", "Vous obtenez :\n\n:knife: 1 Peau élastique de lombric irrégulier\n:shell: 1 Carapace de bousier colossal\n:pick: 2 Fer médiocre")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un bijou en chitine")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou en chitine :", "Vous obtenez :\n\n:shell: 2 Carapace de doryphore géant\n:butterfly: 1 Aile de doryphore géant\n:cupid: 1 Coeur de lièvre")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Bijou en chitine :", "Vous obtenez :\n\n:shell: 2 Carapace de doryphore géant\n:butterfly: 1 Aile de doryphore géant\n:cupid: 1 Coeur de lièvre")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -9845,63 +10025,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un équipement taurus")) {
-        let lvlMetier = args.slice(4).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(4).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Equipement taurus :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement taurus :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 2 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement taurus :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement taurus :", "Vous avez raté critiquement l'amélioration. L'objet perd 5 HP et 1 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Equipement taurus :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement taurus :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 2 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement taurus :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement taurus :", "Vous avez raté critiquement l'amélioration. L'objet perd 5 HP et 1 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -9910,63 +10102,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un bijou taurus")) {
-        let lvlMetier = args.slice(4).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(4).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bijou taurus :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou taurus :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 2 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou taurus :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou taurus :", "Vous avez raté critiquement l'amélioration. L'objet perd 5 HP et 1 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bijou taurus :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou taurus :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 2 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou taurus :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou taurus :", "Vous avez raté critiquement l'amélioration. L'objet perd 5 HP et 1 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -9975,25 +10179,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement taurus :", "Vous obtenez :\n\n:knife: 2 Peau de taurus\n:shell: 2 Carapace de bourdon flâneur\n:ox: 1 Poil de taurus")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Equipement taurus :", "Vous obtenez :\n\n:knife: 2 Peau de taurus\n:shell: 2 Carapace de bourdon flâneur\n:ox: 1 Poil de taurus")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un bijou taurus")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou taurus :", "Vous obtenez :\n\n:shell: 2 Carapace de bourdon flâneur\n:beginner: 1 Cuirasse de fort taurus adroit\n:bacon: 1 Scalp de taurus\n:cupid: 1 Coeur de desman")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Bijou taurus :", "Vous obtenez :\n\n:shell: 2 Carapace de bourdon flâneur\n:beginner: 1 Cuirasse de fort taurus adroit\n:bacon: 1 Scalp de taurus\n:cupid: 1 Coeur de desman")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -10145,63 +10373,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un équipement de maille")) {
-        let lvlMetier = args.slice(5).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(5).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Equipement de maille :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement de maille :", "Vous avez réussi l'amélioration. L'objet gagne 2 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement de maille :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement de maille :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Equipement de maille :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement de maille :", "Vous avez réussi l'amélioration. L'objet gagne 2 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement de maille :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement de maille :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -10210,63 +10450,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un bijou de maille")) {
-        let lvlMetier = args.slice(5).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(5).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bijou de maille :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou de maille :", "Vous avez réussi l'amélioration. L'objet gagne 2 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou de maille :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou de maille :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bijou de maille :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou de maille :", "Vous avez réussi l'amélioration. L'objet gagne 2 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou de maille :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou de maille :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -10275,25 +10527,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement de maille :", "Vous obtenez :\n\n:pick: 2 Fer rare\n:pick: 2 Fer commun\n:pick: 3 Fer médiocre")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Equipement de maille :", "Vous obtenez :\n\n:pick: 2 Fer rare\n:pick: 2 Fer commun\n:pick: 3 Fer médiocre")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un bijou de maille")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou de maille :", "Vous obtenez :\n\n:pick: 2 Fer rare\n:pick: 2 Fer commun\n:pick: 3 Fer médiocre")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Bijou de maille :", "Vous obtenez :\n\n:pick: 2 Fer rare\n:pick: 2 Fer commun\n:pick: 3 Fer médiocre")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -10607,63 +10883,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un équipement dargnan")) {
-        let lvlMetier = args.slice(4).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 6
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(4).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 6
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Equipement dargnan :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement dargnan :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement dargnan :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement dargnan :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Equipement dargnan :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement dargnan :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement dargnan :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement dargnan :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -10672,63 +10960,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un bijou dargnan")) {
-        let lvlMetier = args.slice(4).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 6
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(4).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 6
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bijou dargnan :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou dargnan :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou dargnan :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou dargnan :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bijou dargnan :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou dargnan :", "Vous avez réussi l'amélioration. L'objet gagne 10 HP et 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou dargnan :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou dargnan :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Def")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -10737,25 +11037,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement dargnan :", "Vous obtenez :\n\n:shell: 2 Carapace de guêpe vivace\n:shell: 2 Carapace de frelon foudroyant\n:butterfly: 1 Aile de frelon foudroyant")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Equipement dargnan :", "Vous obtenez :\n\n:shell: 2 Carapace de guêpe vivace\n:shell: 2 Carapace de frelon foudroyant\n:butterfly: 1 Aile de frelon foudroyant")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un bijou dargnan")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou dargnan :", "Vous obtenez :\n\n:shell: 2 Carapace de frelon foudroyant\n:shell: 1 Carapace de guêpe vivace\n:syringe: 1 dard de frelon foudroyant\n:cupid: 1 Coeur de veau")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Bijou dargnan :", "Vous obtenez :\n\n:shell: 2 Carapace de frelon foudroyant\n:shell: 1 Carapace de guêpe vivace\n:syringe: 1 dard de frelon foudroyant\n:cupid: 1 Coeur de veau")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -11191,63 +11515,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un équipement bovin")) {
-        let lvlMetier = args.slice(4).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 6
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(4).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 6
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Equipement bovin :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement bovin :", "Vous avez réussi l'amélioration. L'objet gagne 20 Hp")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement bovin :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Equipement bovin :", "Vous avez raté critiquement l'amélioration. L'objet perd 10 Hp")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Equipement bovin :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement bovin :", "Vous avez réussi l'amélioration. L'objet gagne 20 Hp")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement bovin :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Equipement bovin :", "Vous avez raté critiquement l'amélioration. L'objet perd 10 Hp")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -11256,63 +11592,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'un bijou bovin")) {
-        let lvlMetier = args.slice(4).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 6
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(4).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 6
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Bijou bovin :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou bovin :", "Vous avez réussi l'amélioration. L'objet gagne 20 Hp")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou bovin :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Bijou bovin :", "Vous avez raté critiquement l'amélioration. L'objet perd 10 Hp")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Bijou bovin :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou bovin :", "Vous avez réussi l'amélioration. L'objet gagne 20 Hp")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou bovin :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Bijou bovin :", "Vous avez raté critiquement l'amélioration. L'objet perd 10 Hp")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -11321,25 +11669,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un équipement bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Equipement bovin :", "Vous obtenez :\n\n:knife: 2 Peau de boeuf\n:knife: 2 Peau de vache\n:dagger: 1 Corne de boeuf\n:gem: 1 Oreille de vache")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Equipement bovin :", "Vous obtenez :\n\n:knife: 2 Peau de boeuf\n:knife: 2 Peau de vache\n:dagger: 1 Corne de boeuf\n:gem: 1 Oreille de vache")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'un bijou bovin")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Bijou bovin :", "Vous obtenez :\n\n:dagger: 2 Sabot de boeuf\n:gem: 1 Oreille de vache\n:dagger: 1 Corne de boeuf\n:cupid: 1 Coeur de veau")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021445369870"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Bijou bovin :", "Vous obtenez :\n\n:dagger: 2 Sabot de boeuf\n:gem: 1 Oreille de vache\n:dagger: 1 Corne de boeuf\n:cupid: 1 Coeur de veau")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -13364,234 +13736,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'épée du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(7).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -13600,234 +13984,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'espadon du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(7).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Espadon du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -13836,234 +14232,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la dague du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(8).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(8).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de combo.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Dague du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -14072,234 +14480,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la masse du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(8).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(8).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -14308,234 +14728,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la marteau du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(8).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(8).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Marteau du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -14544,234 +14976,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la hache du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(8).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(8).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hache du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -14780,234 +15224,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la hallebarde du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(8).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(8).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune mineure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune commune de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup provocateur.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Hallebarde du clan des loups :", "Vous obtenez une rune majeure de coup circulaire.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -15016,234 +15472,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la rapière du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(8).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(8).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune mineure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune commune de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup d'estoc.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Rapière du clan des loups :", "Vous obtenez une rune majeure de coup létal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -15252,234 +15720,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du cimeterre du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(7).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Cimeterre du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -15488,234 +15968,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du sabre du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(7).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure d'esquive.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Sabre du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -15724,234 +16216,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du katana du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(7).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Katana du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -15960,234 +16464,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du nodachi du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(7).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune mineure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune commune de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Nodachi du clan des loups :", "Vous obtenez une rune majeure de parade.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -16196,234 +16712,246 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du pavois du clan des loups")) {
-        let roll = 0
-        let roll2 = 0
-        let lvlMetier = args.slice(7).join(" : ");
-        const lvlArme = 2
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let roll2 = 0
+            let lvlMetier = args.slice(7).join(" : ");
+            const lvlArme = 2
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 21 && roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 35) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 31 && roll <= 45) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 46 && roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 51 && roll <= 75) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 76 && roll <= 90) {
+                    roll2 = Math.floor(100 * Math.random() + 1)
+                    if (roll2 <= 50) {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setColor(3447003)
+                            .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 21 && roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 35) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 31 && roll <= 45) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 46 && roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune mineure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 51 && roll <= 75) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune commune de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 76 && roll <= 90) {
-                roll2 = Math.floor(100 * Math.random() + 1)
-                if (roll2 <= 50) {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de coup normal.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setColor(3447003)
-                        .addField(":scales: Pavois du clan des loups :", "Vous obtenez une rune majeure de blocage.")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Pavois du clan des loups :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
