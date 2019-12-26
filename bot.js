@@ -22706,134 +22706,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'épée de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Epée de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -22842,134 +22854,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de l'espadon de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Espadon de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune mineure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune commune de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous obtenez une rune majeure de combo.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Espadon de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Espadon de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune mineure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune commune de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous obtenez une rune majeure de combo.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Espadon de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -22978,134 +23002,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la dague de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Dague de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune mineure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune commune de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous obtenez une rune majeure de coup létal.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Dague de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Dague de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune mineure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune commune de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous obtenez une rune majeure de coup létal.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Dague de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -23114,134 +23150,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la masse de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Masse de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Masse de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Masse de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Masse de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -23250,134 +23298,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du marteau de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Marteau de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune commune de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Marteau de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Marteau de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune mineure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune commune de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous obtenez une rune majeure de coup provocateur.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Marteau de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -23386,134 +23446,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la hache de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hache de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hache de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hache de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hache de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -23522,134 +23594,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la hallebarde de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Hallebarde de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune commune de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Hallebarde de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Hallebarde de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune mineure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune commune de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous obtenez une rune majeure de coup circulaire.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Hallebarde de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -23658,134 +23742,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte de la rapière de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(6).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(6).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Rapière de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune mineure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune commune de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous obtenez une rune majeure de coup d'estoc.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Rapière de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Rapière de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune mineure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune commune de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous obtenez une rune majeure de coup d'estoc.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Rapière de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -23794,134 +23890,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du cimeterre de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Cimeterre de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Cimeterre de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Cimeterre de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Cimeterre de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -23930,134 +24038,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du sabre de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Sabre de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune mineure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune commune d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous obtenez une rune majeure d'esquive.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Sabre de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Sabre de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune mineure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune commune d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous obtenez une rune majeure d'esquive.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Sabre de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -24066,134 +24186,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du katana de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Katana de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Katana de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Katana de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Katana de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -24202,134 +24334,146 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Fonte du nodachi de taurus")) {
-        let roll = 0
-        let lvlMetier = args.slice(5).join(" : ");
-        const lvlArme = 4
-        if (lvlMetier < lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let roll = 0
+            let lvlMetier = args.slice(5).join(" : ");
+            const lvlArme = 4
+            if (lvlMetier < lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Nodachi de taurus :", "Vous n'obtenez aucunes runes.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            if (lvlMetier == lvlArme) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 20) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 21 && roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 35) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 36) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 30) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 31 && roll <= 45) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 46 && roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            if (lvlMetier > (lvlArme + 2)) {
+                roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= 50) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune mineure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 51 && roll <= 75) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune commune de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 76 && roll <= 90) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune majeure de parade.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll >= 91) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Nodachi de taurus :", "Vous n'obtenez aucunes runes.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Nodachi de taurus :", "Vous n'obtenez aucunes runes.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        }
-        if (lvlMetier == lvlArme) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 20) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 21 && roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 35) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 36) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier == (lvlArme + 1) || lvlMetier == (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 30) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 31 && roll <= 45) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 46 && roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-        }
-        if (lvlMetier > (lvlArme + 2)) {
-            roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= 50) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune mineure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 51 && roll <= 75) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune commune de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 76 && roll <= 90) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous obtenez une rune majeure de parade.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll >= 91) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Nodachi de taurus :", "Vous n'obtenez aucunes runes.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -24340,63 +24484,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme de taurus à une main")) {
-        let lvlMetier = args.slice(8).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(8).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme de taurus à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de taurus à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de taurus à une main :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de taurus à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Arme de taurus à une main :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de taurus à une main :", "Vous avez réussi l'amélioration. L'objet gagne 2 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de taurus à une main :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de taurus à une main :", "Vous avez raté critiquement l'amélioration. L'objet perd 1 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -24405,63 +24561,75 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Amélioration d'une arme de taurus à deux mains")) {
-        let lvlMetier = args.slice(8).join(" : ");
-        let plage = 0
-        let echecCrit = 95
-        const lvlArme = 5
-        if (lvlMetier <= lvlArme) {
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            let lvlMetier = args.slice(8).join(" : ");
+            let plage = 0
+            let echecCrit = 95
+            const lvlArme = 5
+            if (lvlMetier <= lvlArme) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField(":scales: Arme de taurus à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                if (lvlMetier == lvlArme + 1) {
+                    plage = 2
+                }
+                if (lvlMetier == lvlArme + 2) {
+                    plage = 16
+                }
+                if (lvlMetier == lvlArme + 3) {
+                    plage = 36
+                }
+                if (lvlMetier == lvlArme + 4) {
+                    plage = 64
+                }
+                if (lvlMetier >= lvlArme + 5) {
+                    plage = 100
+                    echecCrit = 200
+                }
+                let roll = Math.floor(100 * Math.random() + 1)
+                if (roll <= plage) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de taurus à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 4 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > plage && roll <= echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de taurus à deux mains :", "Vous avez raté l'amélioration.")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                if (roll > echecCrit) {
+                    const embed = new Discord.RichEmbed()
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setColor(3447003)
+                        .addField(":scales: Arme de taurus à deux mains :", "Vous avez raté critiquement l'amélioration. L'objet perd 2 Atk")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+        } else {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":scales: Arme de taurus à deux mains :", "Vous n'avez pas le niveau nécessaire à l'amélioration.")
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
                 .setTimestamp()
             message.channel.send({ embed })
-        } else {
-            if (lvlMetier == lvlArme + 1) {
-                plage = 2
-            }
-            if (lvlMetier == lvlArme + 2) {
-                plage = 16
-            }
-            if (lvlMetier == lvlArme + 3) {
-                plage = 36
-            }
-            if (lvlMetier == lvlArme + 4) {
-                plage = 64
-            }
-            if (lvlMetier >= lvlArme + 5) {
-                plage = 100
-                echecCrit = 200
-            }
-            let roll = Math.floor(100 * Math.random() + 1)
-            if (roll <= plage) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de taurus à deux mains :", "Vous avez réussi l'amélioration. L'objet gagne 4 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > plage && roll <= echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de taurus à deux mains :", "Vous avez raté l'amélioration.")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
-            if (roll > echecCrit) {
-                const embed = new Discord.RichEmbed()
-                    .setAuthor(message.author.username, message.author.avatarURL)
-                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setColor(3447003)
-                    .addField(":scales: Arme de taurus à deux mains :", "Vous avez raté critiquement l'amélioration. L'objet perd 2 Atk")
-                    .setTimestamp()
-                message.channel.send({ embed })
-            }
         }
     }
 });
@@ -24470,25 +24638,49 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme de taurus à une main")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de taurus à une main :", "Vous obtenez :\n\n:beginner: 1 Cuirasse de fort taurus adroit\n:pick: 1 Fer médiocre\n:dagger: 1 Corne de taurus")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme de taurus à une main :", "Vous obtenez :\n\n:beginner: 1 Cuirasse de fort taurus adroit\n:pick: 1 Fer médiocre\n:dagger: 1 Corne de taurus")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
 bot.on('message', message => {
     if (message.content === (prefix + "Démantèlement d'une arme de taurus à deux mains")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":scales: Arme de taurus à deux mains :", "Vous obtenez :\n\n:beginner: 2 Cuirasse de  fort taurus adroit\n:pick: 1 Fer commun\n:pick: 2 Fer médiocre\n:dagger: 2 Corne de taurus\n:deciduous_tree: 1 Bois de séquoia commun")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const idRole = "544250021134991361"
+        if (message.member.roles.has(idRole)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":scales: Arme de taurus à deux mains :", "Vous obtenez :\n\n:beginner: 2 Cuirasse de  fort taurus adroit\n:pick: 1 Fer commun\n:pick: 2 Fer médiocre\n:dagger: 2 Corne de taurus\n:deciduous_tree: 1 Bois de séquoia commun")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©️", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas la profession nécessaire pour pouvoir faire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
