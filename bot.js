@@ -34203,6 +34203,21 @@ bot.on('message', message => {
     }
 });
 
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des clefs 1")) {
+        message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]" +
+            "Suite en écrivant :\n=Liste des clefs 2```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des clefs 2")) {
+        message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
+    }
+});
+
+// Menus | Liste | Clefs | Détails
+
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Clef du donjon sauvage")) {
         const embed = new Discord.RichEmbed()
