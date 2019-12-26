@@ -2432,30 +2432,30 @@ bot.off('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des matériaux 9")) {
-        message.channel.send("```Viande de loup sombre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Peau de loup sombre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Coeur de loup sombre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Patte d'arachnide :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Sclérite d'arachnide :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Toile d'arachnide' :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Bois de jeune tréant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Essence de jeune tréant :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Bec d'aigle :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Plume d'aigle :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Plume d'or :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Serre d'aigle :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Viande de marcassin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Peau de marcassin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Coeur de marcassin :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Sarriette commune :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Sarriette rare :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Sarriette parfaite :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Bois de manioc impur :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Bois de manioc pur :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Malachite médiocre :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Malachite commun :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Petit piranha :\nCoûts : [Achat : X cols] [Revente : X cols]\n\n" +
-            "Grand piranha :\nCoûts : [Achat : X cols] [Revente : X cols]```")
+        message.channel.send("```Viande de loup sombre :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
+            "Peau de loup sombre :\nCoûts : [Achat : X cols] [Revente : 54 cols]\n\n" +
+            "Coeur de loup sombre :\nCoûts : [Achat : X cols] [Revente : 58 cols]\n\n" +
+            "Patte d'arachnide :\nCoûts : [Achat : X cols] [Revente : 54 cols]\n\n" +
+            "Sclérite d'arachnide :\nCoûts : [Achat : X cols] [Revente : 58 cols]\n\n" +
+            "Toile d'arachnide' :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
+            "Bois de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 58 cols]\n\n" +
+            "Essence de jeune tréant :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
+            "Bec d'aigle :\nCoûts : [Achat : X cols] [Revente : 62 cols]\n\n" +
+            "Plume d'aigle :\nCoûts : [Achat : X cols] [Revente : 66 cols]\n\n" +
+            "Plume d'or :\nCoûts : [Achat : X cols] [Revente : 70 cols]\n\n" +
+            "Serre d'aigle :\nCoûts : [Achat : X cols] [Revente : 74 cols]\n\n" +
+            "Viande de marcassin :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
+            "Peau de marcassin :\nCoûts : [Achat : X cols] [Revente : 44 cols]\n\n" +
+            "Coeur de marcassin :\nCoûts : [Achat : X cols] [Revente : 48 cols]\n\n" +
+            "Sarriette commune :\nCoûts : [Achat : X cols] [Revente : 40 cols]\n\n" +
+            "Sarriette rare :\nCoûts : [Achat : X cols] [Revente : 44 cols]\n\n" +
+            "Sarriette parfaite :\nCoûts : [Achat : X cols] [Revente : 48 cols]\n\n" +
+            "Bois de manioc impur :\nCoûts : [Achat : X cols] [Revente : 44 cols]\n\n" +
+            "Bois de manioc pur :\nCoûts : [Achat : X cols] [Revente : 48 cols]\n\n" +
+            "Malachite médiocre :\nCoûts : [Achat : X cols] [Revente : 44 cols]\n\n" +
+            "Malachite commun :\nCoûts : [Achat : X cols] [Revente : 48 cols]\n\n" +
+            "Petit piranha :\nCoûts : [Achat : X cols] [Revente : 8 cols]\n\n" +
+            "Grand piranha :\nCoûts : [Achat : X cols] [Revente : 12 cols]```")
     }
 });
 
