@@ -51799,7 +51799,6 @@ bot.on('message', message => {
             let roll = 0;
             do {
                 roll = Math.floor(100 * Math.random() + 1)
-                roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= 60) {
                     test = test + 2 + loupSombre;
                     if (test <= (6 + 7 * (joueurs - 1))) {
@@ -51839,7 +51838,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":mount_fuji: Grotte :", ":mount_fuji: En marchant dans la grotte, vous rencontrez les ennemis suivants\n\n" +
+                .addField(":evergreen_tree: Jungle profonde :", ":evergreen_tree: En marchant dans la jungle profonde, vous rencontrez les ennemis suivants\n\n" +
                     ":crossed_swords: Loup(s) sombre(s) | 3000HP : " + loupSombre + "\n" +
                     ":crossed_swords: Traknide(s) | 2550HP : " + traknide + "\n" +
                     ":crossed_swords: Ataknide(s) | 2550HP : " + ataknide + "\n" +
