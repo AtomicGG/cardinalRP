@@ -60919,6 +60919,148 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Traknide récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const patte = Math.floor((2 - 0.32) * Math.random())
+        const sclerite = Math.floor((2 - 0.57) * Math.random())
+        const toile = Math.floor((2 - 0.824) * Math.random())
+        const cols = Math.floor(41 * Math.random() + 105)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 45) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":spider: Patte d'arachnide : " + patte + "\n" +
+                ":spider: Sclérite d'arachnide' : " + sclerite + "\n" +
+                ":spider_web: Toile de traknide : " + toile + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Ataknide récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const patte = Math.floor((2 - 0.32) * Math.random())
+        const sclerite = Math.floor((2 - 0.57) * Math.random())
+        const venin = Math.floor((2 - 0.749) * Math.random())
+        const arme1 = Math.floor((2 - 0.98) * Math.random())
+        const arme2 = Math.floor((2 - 0.958) * Math.random())
+        const cols = Math.floor(41 * Math.random() + 105)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 45) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":spider: Patte d'arachnide : " + patte + "\n" +
+                ":spider: Sclérite d'arachnide' : " + sclerite + "\n" +
+                ":alembic: Venin d'ataknide : " + venin + "\n" +
+                ":scales: Arme arachnide à une main au choix : " + arme1 + "\n" +
+                ":scales: Arme arachnide à deux mains au choix : " + arme2 + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Jeune tréant récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const bois = Math.floor((2 - 0.32) * Math.random())
+        const seve = Math.floor((2 - 0.88) * Math.random())
+        const essence = Math.floor((2 - 0.88) * Math.random())
+        const armure = Math.floor((2 - 0.97) * Math.random())
+        const bijou = Math.floor((2 - 0.98) * Math.random())
+        const cols = Math.floor(41 * Math.random() + 105)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 45) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":deciduous_tree: Bois de jeune tréant : " + bois + "\n" +
+                ":test_tube: Sève de jeune tréant' : " + seve + "\n" +
+                ":test_tube: Essence de jeune tréant : " + essence + "\n" +
+                ":scales: Armure lupine au choix : " + armure + "\n" +
+                ":scales: Bijou lupine au choix : " + bijou + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Aigle récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const bec = Math.floor((2 - 0.947) * Math.random())
+        const plume = Math.floor((2 - 0.924) * Math.random())
+        const plumeOr = Math.floor((2 - 0.99) * Math.random())
+        const serre = Math.floor((2 - 0.97) * Math.random())
+        const cols = Math.floor(41 * Math.random() + 105)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 6
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(11 * Math.random() + 45) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":eagle: Bec d'aigle : " + bec + "\n" +
+                ":eagle: Plume d'aigle : " + plume + "\n" +
+                ":eagle: Plume d'or : " + plumeOr + "\n" +
+                ":eagle: Serre d'aigle : " + serre + "\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Noël 2019 | Plaine
 
 bot.on('message', message => {
