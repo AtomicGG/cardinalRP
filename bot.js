@@ -7395,6 +7395,197 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Equipements | Détails | Asterius
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Equipements d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des équipements d'Asterius :", "=Casque d'Asterius\n=Epaulières d'Asterius\n=Plastron d'Asterius\n=Cape d'Asterius\n=Ceinture d'Asterius\n=Gantelets d'Asterius\n=Jambières d'Asterius\n=Bottes d'Asterius")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Casque d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque d'Asterius :", ":scales: C'est un casque issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte du casque d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epaulières d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epaulières d'Asterius :", ":scales: Ce sont des épaulières issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des épaulières d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Plastron d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron d'Asterius :", ":scales: C'est un plastron issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte du plastron d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cape d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape d'Asterius :", ":scales: C'est une cape issue du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de la cape d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ceinture d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture d'Asterius :", ":scales: C'est une ceinture issue du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gantelets d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets d'Asterius :", ":scales: Ce sont des gantelets issus du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des gantelets d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Jambières d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières d'Asterius :", ":scales: Ce sont des jambières issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des jambières d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bottes d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes d'Asterius :", ":scales: Ce sont des bottes issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des bottes d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bijoux d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des bijoux d'Asterius :", "=Anneau d'Asterius\n=Amulette d'Asterius")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Anneau d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau d'Asterius :", ":scales: C'est un anneau issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Amulette d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette d'Asterius :", ":scales: C'est une amulette issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette d'Asterius`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bonus de la panoplie d'Asterius")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Panoplie d'Asterius :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises)(ces bonus sont additifs) : \n\n- Pour 2 pièces : Bonus de 60 points de vie\n- Pour 4 pièces : Bonus de 40 points de vie\n- Pour 6 pièces : Bonus de 20 points de vie\n- Pour 8 pièces : Bonus de 10 points de vie")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Menus | Liste | Equipements | Détails | Lupine
 
 bot.on('message', message => {
@@ -12029,6 +12220,160 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
+    }
+});
+
+// Menus | Liste | Equipements | Achat/fabrication/découverte/fonte/amélioration/démantèlement | Asterius | Découverte
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte du casque d'Asterius")) {
+        const atk = Math.floor(4 * Math.random() + 9)
+        const def = Math.floor(3 * Math.random() + 5)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte des épaulières d'Asterius")) {
+        const atk = Math.floor(4 * Math.random() + 9)
+        const def = Math.floor(3 * Math.random() + 5)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Épaulières d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte du plastron d'Asterius")) {
+        const atk = Math.floor(4 * Math.random() + 9)
+        const def = Math.floor(3 * Math.random() + 5)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte de la cape d'Asterius")) {
+        const atk = Math.floor(4 * Math.random() + 9)
+        const def = Math.floor(3 * Math.random() + 5)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte de la ceinture d'Asterius")) {
+        const atk = Math.floor(4 * Math.random() + 9)
+        const def = Math.floor(3 * Math.random() + 5)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte des gantelets d'Asterius")) {
+        const atk = Math.floor(4 * Math.random() + 9)
+        const def = Math.floor(3 * Math.random() + 5)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte des jambières d'Asterius")) {
+        const atk = Math.floor(4 * Math.random() + 9)
+        const def = Math.floor(3 * Math.random() + 5)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte des bottes d'Asterius")) {
+        const atk = Math.floor(4 * Math.random() + 9)
+        const def = Math.floor(3 * Math.random() + 5)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte de l'anneau d'Asterius")) {
+        const hp = (Math.floor((41) * Math.random() + 60) / 5) * 5
+        const atk = (Math.floor((8) * Math.random() + 13))
+        const def = (Math.floor((3) * Math.random() + 7))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points de vie : " + hp + "\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte de l'amulette d'Asterius")) {
+        const hp = (Math.floor((41) * Math.random() + 60) / 5) * 5
+        const atk = (Math.floor((8) * Math.random() + 13))
+        const def = (Math.floor((3) * Math.random() + 7))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette d'Asterius :", ":scales: Vous venez de découvrir cet objet !\n\n:gift_heart: Points de vie : " + hp + "\n:crossed_sword: Points de dégâts : " + atk + "\n:shield: Points d'armure : " + def)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
 });
 
