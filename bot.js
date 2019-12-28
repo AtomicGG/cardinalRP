@@ -727,7 +727,7 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix) + "Les bâtons") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -744,7 +744,7 @@ bot.off('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix) + "Les lances") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -761,7 +761,7 @@ bot.off('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix) + "Les cestes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -795,7 +795,7 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix) + "Les rondaches") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -812,7 +812,7 @@ bot.off('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix) + "Les écus") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -829,7 +829,7 @@ bot.off('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix) + "Les targes") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -849,25 +849,6 @@ bot.off('message', message => {
 // Menus | Trajets
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Trajets")) {
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField("Les trajets :", "Quand vous voulez vous déplacer d'un lieu à un autre, vous mettrez plus ou moins de temps selon la zone où vous vous situez !\n\n" +
-                "Pour consulter la durée des trajets en dehors de la ville du palier 1 :\n\n`=Trajet palier 1`\n\n" +
-                "Pour consulter la durée des trajets en dehors de la ville du palier 2 :\n\n`=Trajet palier 2`\n\n" +
-                "Quand vous êtes en ville ou dans les souterrains, il n'y a pas de contrainte de temps, il n'y en a que dans les zones extérieures !\n\n" +
-                "Pour vous rendre à l'extérieur depuis la ville, il vous faudra passer par l'entrée de la ville !\n\n" +
-                "Pour mieux comprendre ce système, imaginez que vous êtes à un magasin de 15 min de chez vous, pour revenir vous mettrez 15 minutes !\n\n" +
-                "Les chemins entre les zones permettent de pouvoir continuer à RP avant d'arriver à la zone souhaitée !")
-            .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-bot.off('message', message => {
     if (message.content.startsWith(prefix + "Trajets")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -933,22 +914,18 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Trajet palier 3")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Trajet en ville :", "Entrée de la ville\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Forêt dense 1 ou Clairière 1\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Forêt dense 2 ou Clairière 2\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Forêt dense 3 ou Clairière 3\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Vallée\n‖\n‖ `[3 minutes]`\n‖\n" +
-                "Grande clairière\n" +
-                "Pont\n" +
-                "Ravin\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Labyrinthe\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Salle du boss")
+                "Jungle profonde\n" +
+                "Rivière\n" +
+                "Petite grotte\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Donjon Tréant\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Chemin")
             .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -2107,7 +2084,7 @@ bot.on('message', message => {
                 "Les zones actuellement disponible selon les paliers sont les suivantes :")
             .addField("Zones du palier 1 :", "\n`=Plaine`\n`=Forêt`\n`=Donjon sauvage`\n`=Montagne`\n`=Grotte`")
             .addField("Zones du palier 2 :", "\n`=Forêt dense`\n`=Clairière`\n`=Vallée`\n`=Ravin`")
-            //.addField("Zones du palier 3 :", "\n`=Forêt dense`\n`=Clairière`\n`=Vallée`\n`=Ravin`")
+            .addField("Zones du palier 3 :", "\n`=Jungle profonde`")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -2126,7 +2103,7 @@ bot.on('message', message => {
             .addBlankField(true)
             .addField("**__Le Palier 2 :__**", "`=Monstres du palier 2`")
             .addBlankField(true)
-            //.addField("**__Le Palier 3 :__**", "`=Monstres du palier 3`")
+            .addField("**__Le Palier 3 :__**", "`=Monstres du palier 3`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -2177,7 +2154,7 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Monstres du palier 3")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
