@@ -13801,7 +13801,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée de taurus :", ":scales: C'est une épée faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'épée de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'épée de taurus`")
+            .addField(":scales: Epée de taurus :", ":scales: C'est une épée faite à partir des taurus du palier 2 !\n\n:crossed_swords: Améliore le 'Combo' de 1 point.\n\n:sparkles: Niveau minimum requis pour le porter : 21\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux n��cessaires pour fabriquer cet objet : 2 Cuirasse de fort taurus adroit, 2 fer commun, 3 fer médiocre, 2 Corne de taurus, 1 Bois de séquoia commun\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix d'achat : 1725 cols\n\n:large_orange_diamond: Prix de revente : 430 cols\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'épée de taurus`\n\n:keyboard: Si vous fabriquez cet objet : `=Fabrication de l'épée de taurus`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Cuirasse de fort taurus adroit, 1 fer commun, 1 fer médiocre, 1 Corne de taurus, 1 Bois de séquoia commun) :", "`=Amélioration d'une arme de taurus à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme de taurus à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'épée de taurus : [Votre niveau en forgeron]`")
@@ -59833,7 +59833,7 @@ bot.off('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Le colonel taurus") {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -59861,7 +59861,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Le général taurus") {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -59889,7 +59889,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix) + "Asterius le roi taurus") {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -59919,7 +59919,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Le colonel taurus attaque")) {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -59973,7 +59973,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Le général taurus attaque")) {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -60028,7 +60028,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius attaque")) {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -60093,7 +60093,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius spécial")) {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -60123,7 +60123,7 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Le colonel taurus défense")) {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -60162,7 +60162,7 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Le général taurus défense")) {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -60201,7 +60201,7 @@ bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Asterius défense")) {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -60259,7 +60259,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Asterius récompenses")) {
-        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624) {
+        if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
