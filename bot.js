@@ -60224,7 +60224,7 @@ bot.on('message', message => {
                     .addField(":shield: Asterius :", ":shield: Asterius de sa giganteste taille ne peut ni esquiver, ni bloquer, ni parade et vous l'attaquez bien dans ses jambes, vous lui infligez " + defense + " points de dégâts")
                 message.channel.send({ embed })
             }
-            if (41 <= roll && roll >= 60) {
+            if (41 <= roll && roll <= 60) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -60233,7 +60233,7 @@ bot.on('message', message => {
                     .setTimestamp()
                 message.channel.send({ embed })
             }
-            if (61 <= roll && roll >= 80) {
+            if (61 <= roll && roll <= 80) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
