@@ -60602,7 +60602,7 @@ bot.on('message', message => {
 
 // Salle du boss | Monstres | Récompenses
 
-bot.on('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix + "Asterius récompenses")) {
         if (message.channel.id != 593454901498085377 && message.channel.id != 566021680120725518 && message.channel.id != 576072663592730624 && message.channel.id != 660500094944149516 && message.channel.id != 660500115328335872 && message.channel.id != 660500130566373376) {
             const embed = new Discord.RichEmbed()
@@ -61237,12 +61237,12 @@ bot.on('message', message => {
         const coeur = Math.floor((2 - 0.749) * Math.random())
         const clef = Math.floor((2 - 0.947) * Math.random())
         const oeuf = Math.floor((2 - 0.98) * Math.random())
-        const cols = Math.floor(41 * Math.random() + 105)
+        const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6
+        const tMob = 6.5
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(11 * Math.random() + 45) / 10
+        const roll = Math.floor(41 * Math.random() + 40) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -61255,8 +61255,8 @@ bot.on('message', message => {
             .addField(":moneybag: Récompenses :", ":poultry_leg: Viande de loup sombre : " + viande + "\n" +
                 ":knife: Peau de loup sombre : " + peau + "\n" +
                 ":cupid: Coeur de loup sombre : " + coeur + "\n" +
-                ":key: Clef du donjon ???  : " + clef + "\n" +
-                ":egg: Oeuf ??? : " + oeuf + "\n" +
+                ":key: Clef arbuste  : " + clef + "\n" +
+                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -61272,12 +61272,12 @@ bot.on('message', message => {
         const patte = Math.floor((2 - 0.32) * Math.random())
         const sclerite = Math.floor((2 - 0.57) * Math.random())
         const toile = Math.floor((2 - 0.824) * Math.random())
-        const cols = Math.floor(41 * Math.random() + 105)
+        const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6
+        const tMob = 6.5
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(11 * Math.random() + 45) / 10
+        const roll = Math.floor(41 * Math.random() + 40) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -61307,12 +61307,12 @@ bot.on('message', message => {
         const venin = Math.floor((2 - 0.749) * Math.random())
         const arme1 = Math.floor((2 - 0.98) * Math.random())
         const arme2 = Math.floor((2 - 0.958) * Math.random())
-        const cols = Math.floor(41 * Math.random() + 105)
+        const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6
+        const tMob = 6.5
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(11 * Math.random() + 45) / 10
+        const roll = Math.floor(41 * Math.random() + 40) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -61344,12 +61344,12 @@ bot.on('message', message => {
         const essence = Math.floor((2 - 0.88) * Math.random())
         const armure = Math.floor((2 - 0.97) * Math.random())
         const bijou = Math.floor((2 - 0.98) * Math.random())
-        const cols = Math.floor(41 * Math.random() + 105)
+        const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6
+        const tMob = 6.5
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(11 * Math.random() + 45) / 10
+        const roll = Math.floor(41 * Math.random() + 40) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -61380,12 +61380,12 @@ bot.on('message', message => {
         const plume = Math.floor((2 - 0.924) * Math.random())
         const plumeOr = Math.floor((2 - 0.99) * Math.random())
         const serre = Math.floor((2 - 0.97) * Math.random())
-        const cols = Math.floor(41 * Math.random() + 105)
+        const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6
+        const tMob = 6.5
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(11 * Math.random() + 45) / 10
+        const roll = Math.floor(41 * Math.random() + 40) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
