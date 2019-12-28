@@ -60618,7 +60618,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField("Récompenses du triple boss, Asterius le Roi Taurus, son général et son colonel :", "20 000 Cols\n1 100 XP\n2 équipements au choix de la panoplie d'Asterius\n1 bijou au choix de la panoplie d'Asterius\n(pour chaque personne)\n\nEt en plus pour le Last Hit d'Asterius, donc notre chère combattant Levia !\nLe Marteau d'Asterius !")
+                .addField("Récompenses du triple boss, Asterius le Roi Taurus, son général et son colonel :", "20 000 Cols\n1 100 XP\n2 équipements au choix de la panoplie d'Asterius\n1 bijou au choix de la panoplie d'Asterius\nPour récupérer vos équipements/bijoux, faites `=[Nom de l'équipement] d'Asterius\n(pour chaque personne)\n\nEt en plus pour le Last Hit d'Asterius, donc notre chère combattant Levia !\nLe Marteau d'Asterius !")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
             message.channel.send({ embed })
