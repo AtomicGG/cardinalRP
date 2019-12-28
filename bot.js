@@ -60626,6 +60626,22 @@ bot.off('message', message => {
     }
 });
 
+// Jungle profonde | Description
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Jungle profonde") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setColor(1447003)
+            .addField(":mount_fuji: Jungle profonde :", ":mount_fuji: Bienvenue dans cette jungle où vous pouvez rencontrer toutes sortes de monstres !\n\n" +
+                ":crossed_swords: Pour combattre des monstres :\n:crossed_swords: `=Jungle profonde combat : [Nombre de joueurs dans votre groupe]`\n\n" +
+                ":book: Pour avoir une quête :\n:book: `=Jungle profonde quête`")
+            .setImage("https://i.pinimg.com/originals/14/34/27/1434270a730daaa74ddfeabf71543b8c.jpg")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
 // Jungle profonde | Combat
 
 bot.on('message', message => {
