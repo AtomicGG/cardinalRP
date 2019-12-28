@@ -34239,7 +34239,7 @@ bot.on('message', message => {
         message.channel.send("```Familiers de l'oeuf verdoyant :\n\n" +
             "Araignée :\nNiveau requis : 31\nBonus : 30 HP & 25 Atk & A la fin de votre tour, vous enlève une toile violette sur vous\n\n" +
             "Tréant junior :\nNiveau requis : 31\nBonus : 50 HP & 15 Def\n\n" +
-            "Aiglon :\nNiveau requis : 31\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Aiglon attaque]\n\n" +
+            "Aiglon :\nNiveau requis : 31\nBonus : Peut attaquer (même si le monstre vole) lorsque votre coup réussi via la commande [=Aiglon attaque]\n\n" +
             "Suite en écrivant :\n=Liste des familiers 6```")
     }
 });
@@ -34449,6 +34449,31 @@ bot.off('message', message => {
 bot.off('message', message => {
     if (message.content === (prefix + "Liste des clefs 2")) {
         message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
+    }
+});
+
+bot.on('message', message => {
+    const roll = Math.floor(100 * Math.random() + 1)
+    const degat = Math.floor(21 * Math.random() + 90)
+    if (message.content.startsWith(prefix + "Aiglon attaque")) {
+        if (roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Aiglon :", ":crossed_swords: L'aiglon fonce sur la cible mais passe à côté !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (roll >= 51) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Aiglon :", ":crossed_swords: L'aiglon fonce sur sa cible et lui donne un violent coup de bec, infligeant " + degat + " points de dégâts !")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
