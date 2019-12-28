@@ -5335,38 +5335,39 @@ bot.on('message', message => {
             "Jambières bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Jambières bovin]\n\n" +
             "Bottes bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Bottes bovin]\n\n" +
             "Anneau bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Anneau bovin]\n\n" +
-            "Amulette bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Amulette bovin]```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste d'équipements 11")) {
-        message.channel.send("```Casque bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Casque bovin]\n\n" +
-            "Epaulières bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Epaulières bovin]\n\n" +
-            "Plastron bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Plastron bovin]\n\n" +
-            "Cape bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Cape bovin]\n\n" +
-            "Ceinture bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Ceinture bovin]\n\n" +
-            "Gantelets bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Gantelets bovin]\n\n" +
-            "Jambières bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Jambières bovin]\n\n" +
-            "Bottes bovin :\nCoûts : [Achat : 1650 cols] [Revente : 410 cols]\nInfos : [=Bottes bovin]\n\n" +
-            "Anneau bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Anneau bovin]\n\n" +
             "Amulette bovin :\nCoûts : [Achat : 3525 cols] [Revente : 880 cols]\nInfos : [=Amulette bovin]\n\n" +
             "Suite en écrivant :\n=Liste d'équipements 12```")
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Liste d'équipements 12")) {
-        message.channel.send("```Casque lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Casque lupine]\n\n" +
-            "Epaulières lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Epaulières lupine]\n\n" +
-            "Plastron lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Plastron lupine]\n\n" +
-            "Cape lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Cape lupine]\n\n" +
-            "Ceinture lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Ceinture lupine]\n\n" +
-            "Gantelets lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Gantelets lupine]\n\n" +
-            "Jambières lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Jambières lupine]\n\n" +
-            "Bottes lupine :\nCoûts : [Achat : X cols] [Revente : 600 cols]\nInfos : [=Bottes lupine]\n\n" +
-            "Anneau lupine :\nCoûts : [Achat : X cols] [Revente : 1000 cols]\nInfos : [=Anneau lupine]\n\n" +
-            "Amulette lupine :\nCoûts : [Achat : X cols] [Revente : 1000 cols]\nInfos : [=Amulette lupine]```")
+        message.channel.send("```Casque d'Asterius :\nCoûts : [Achat : X cols] [Revente : 3375 cols]\nInfos : [=Casque d'Asterius]\n\n" +
+            "Epaulières d'Asterius :\nCoûts : [Achat : X cols] [Revente : 3375 cols]\nInfos : [=Epaulières d'Asterius]\n\n" +
+            "Plastron d'Asterius :\nCoûts : [Achat : X cols] [Revente : 3375 cols]\nInfos : [=Plastron d'Asterius]\n\n" +
+            "Cape d'Asterius :\nCoûts : [Achat : X cols] [Revente : 3375 cols]\nInfos : [=Cape d'Asterius]\n\n" +
+            "Ceinture d'Asterius :\nCoûts : [Achat : X cols] [Revente : 3375 cols]\nInfos : [=Ceinture d'Asterius]\n\n" +
+            "Gantelets d'Asterius :\nCoûts : [Achat : X cols] [Revente : 3375 cols]\nInfos : [=Gantelets d'Asterius]\n\n" +
+            "Jambières d'Asterius :\nCoûts : [Achat : X cols] [Revente : 3375 cols]\nInfos : [=Jambières d'Asterius]\n\n" +
+            "Bottes d'Asterius :\nCoûts : [Achat : X cols] [Revente : 3375 cols]\nInfos : [=Bottes d'Asterius]\n\n" +
+            "Anneau d'Asterius :\nCoûts : [Achat : X cols] [Revente : 7050 cols]\nInfos : [=Anneau d'Asterius]\n\n" +
+            "Amulette d'Asterius :\nCoûts : [Achat : X cols] [Revente : 7050 cols]\nInfos : [=Amulette d'Asterius]\n\n" +
+            "Suite en écrivant :\n=Liste d'équipements 13```")
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix + "Liste d'équipements 13")) {
+        message.channel.send("```Casque lupine :\nCoûts : [Achat : X cols] [Revente : 2475 cols]\nInfos : [=Casque lupine]\n\n" +
+            "Epaulières lupine :\nCoûts : [Achat : X cols] [Revente : 2475 cols]\nInfos : [=Epaulières lupine]\n\n" +
+            "Plastron lupine :\nCoûts : [Achat : X cols] [Revente : 2475 cols]\nInfos : [=Plastron lupine]\n\n" +
+            "Cape lupine :\nCoûts : [Achat : X cols] [Revente : 2475 cols]\nInfos : [=Cape lupine]\n\n" +
+            "Ceinture lupine :\nCoûts : [Achat : X cols] [Revente : 2475 cols]\nInfos : [=Ceinture lupine]\n\n" +
+            "Gantelets lupine :\nCoûts : [Achat : X cols] [Revente : 2475 cols]\nInfos : [=Gantelets lupine]\n\n" +
+            "Jambières lupine :\nCoûts : [Achat : X cols] [Revente : 2475 cols]\nInfos : [=Jambières lupine]\n\n" +
+            "Bottes lupine :\nCoûts : [Achat : X cols] [Revente : 2475 cols]\nInfos : [=Bottes lupine]\n\n" +
+            "Anneau lupine :\nCoûts : [Achat : X cols] [Revente : 5250 cols]\nInfos : [=Anneau lupine]\n\n" +
+            "Amulette lupine :\nCoûts : [Achat : X cols] [Revente : 5250 cols]\nInfos : [=Amulette lupine]```")
     }
 });
 
@@ -7388,6 +7389,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Casque d'Asterius :", ":scales: C'est un casque issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte du casque d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7403,6 +7405,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Epaulières d'Asterius :", ":scales: Ce sont des épaulières issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte des épaulières d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7418,6 +7421,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Plastron d'Asterius :", ":scales: C'est un plastron issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte du plastron d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7433,6 +7437,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Cape d'Asterius :", ":scales: C'est une cape issue du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de la cape d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7448,6 +7453,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Ceinture d'Asterius :", ":scales: C'est une ceinture issue du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7463,6 +7469,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Gantelets d'Asterius :", ":scales: Ce sont des gantelets issus du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte des gantelets d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7478,6 +7485,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Jambières d'Asterius :", ":scales: Ce sont des jambières issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte des jambières d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7493,6 +7501,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Bottes d'Asterius :", ":scales: Ce sont des bottes issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte des bottes d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7521,6 +7530,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Anneau d'Asterius :", ":scales: C'est un anneau issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 7050 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7536,6 +7546,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":scales: Amulette d'Asterius :", ":scales: C'est une amulette issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
+                ":large_orange_diamond: Prix de revente : 7050 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -7582,7 +7593,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Peau de marcassin\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2475 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte du casque lupine`\n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication du casque lupine`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
@@ -7605,7 +7616,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 2 Sève de jeune tréant et 2 Peau de marcassin\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2475 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte des épaulières lupines`\n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication des épaulières lupines`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
@@ -7628,7 +7639,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Plume d'aigle\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2475 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte du plastron lupine`\n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication du plastron lupine`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
@@ -7651,7 +7662,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 1 Plume d'aigle\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2475 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de la cape lupine`\n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication de la cape lupine`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
@@ -7674,7 +7685,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Peau de maracassin\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2475 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture lupine`\n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication de la ceinture lupine`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
@@ -7697,7 +7708,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Fer parfait\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2475 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte des gantelets lupines`\n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication des gantelets lupines`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
@@ -7720,7 +7731,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Fer parfait\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2475 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte des jambières lupines`\n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication des jambières lupines`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
@@ -7743,7 +7754,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Peau de loup sombre, 4 Sclérite d'arachnide, 1 Sève de jeune tréant et 2 Fer parfait\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 600 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2475 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte des bottes lupines`\n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication des bottes lupines`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
@@ -7779,7 +7790,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Coeur de loup sombre, 3 Essence de jeune tréant, 5 Coeur de marcassin et 5 Fer parfait\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 1000 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 5250 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau lupine` \n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication de l'anneau lupine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
             .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 3 Coeur de loup sombre, 2 Essence de jeune tréant, 3 Coeur de marcassin et 3 Fer parfait) :", "`=Amélioration d'un bijou lupine : [Niveau en Bijoutier]`")
@@ -7801,7 +7812,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Bijoutier' requis pour fabriquer cet objet : 6\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Coeur de loup sombre, 3 Essence de jeune tréant, 5 Coeur de marcassin et 5 Fer parfait\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Bijoutier' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 1000 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 5250 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette lupine` \n\n" +
                 ":keyboard: Si vous fabriquez cet objet : `=Fabrication de l'amulette lupine`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie lupine`")
             .addField(":keyboard: Si un bijoutier de profession souhaite améliorer cet objet (il aura besoin de 3 Coeur de loup sombre, 2 Essence de jeune tréant, 3 Coeur de marcassin et 3 Fer parfait) :", "`=Amélioration d'un bijou lupine : [Niveau en Bijoutier]`")
@@ -12974,50 +12985,32 @@ bot.on('message', message => {
             "Sabre darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Sabre darchic]\n\n" +
             "Katana darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Katana darchic]\n\n" +
             "Nodachi darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Nodachi darchic]\n\n" +
-            "Pavois darchic :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Pavois darchic]```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste d'armes 8")) {
-        message.channel.send("```Epée darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Epée darchic]\n\n" +
-            "Espadon darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Espadon darchic]\n\n" +
-            "Dague darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Dague darchic]\n\n" +
-            "Masse darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Masse darchic]\n\n" +
-            "Marteau darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Marteau darchic]\n\n" +
-            "Hache darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Hache darchic]\n\n" +
-            "Hallebarde darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Hallebarde darchic]\n\n" +
-            "Rapière darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Rapière darchic]\n\n" +
-            "Cimeterre darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Cimeterre darchic]\n\n" +
-            "Sabre darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Sabre darchic]\n\n" +
-            "Katana darchic :\nCoûts : [Achat : 1950 cols] [Revente : 480 cols]\nInfos : [=Katana darchic]\n\n" +
-            "Nodachi darchic :\nCoûts : [Achat : 3975 cols] [Revente : 990 cols]\nInfos : [=Nodachi darchic]\n\n" +
             "Pavois darchic :\nCoûts : [Achat : 3000 cols] [Revente : 750 cols]\nInfos : [=Pavois darchic]\n\n" +
             "Suite en écrivant :\n=Liste d'armes 9```")
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Liste d'armes 9")) {
-        message.channel.send("```Epée arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Epée arachnide]\n\n" +
-            "Espadon arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Espadon arachnide]\n\n" +
-            "Dague arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Dague arachnide]\n\n" +
-            "Masse arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Masse arachnide]\n\n" +
-            "Marteau arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Marteau arachnide]\n\n" +
-            "Hache arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Hache arachnide]\n\n" +
-            "Hallebarde arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Hallebarde arachnide]\n\n" +
-            "Rapière arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Rapière arachnide]\n\n" +
-            "Cimeterre arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Cimeterre arachnide]\n\n" +
-            "Sabre arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Sabre arachnide]\n\n" +
-            "Katana arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Katana arachnide]\n\n" +
-            "Nodachi arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Nodachi arachnide]\n\n" +
-            "Bâton arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Bâton arachnide]\n\n" +
-            "Lance arachnide :\nCoûts : [Achat : X cols] [Revente : 1100 cols]\nInfos : [=Lance arachnide]\n\n" +
-            "Ceste arachnide :\nCoûts : [Achat : X cols] [Revente : 700 cols]\nInfos : [=Ceste arachnide]\n\n" +
-            "Pavois arachnide :\nCoûts : [Achat : X cols] [Revente : 900 cols]\nInfos : [=Pavois arachnide]\n\n" +
-            "Rondache arachnide :\nCoûts : [Achat : X cols] [Revente : 900 cols]\nInfos : [=Rondache arachnide]\n\n" +
-            "Ecu arachnide :\nCoûts : [Achat : X cols] [Revente : 900 cols]\nInfos : [=Ecu arachnide]\n\n" +
-            "Targe arachnide :\nCoûts : [Achat : X cols] [Revente : 900 cols]\nInfos : [=Targe arachnide]```")
+        message.channel.send("```Epée arachnide :\nCoûts : [Achat : X cols] [Revente : 2925 cols]\nInfos : [=Epée arachnide]\n\n" +
+            "Espadon arachnide :\nCoûts : [Achat : X cols] [Revente : 5850 cols]\nInfos : [=Espadon arachnide]\n\n" +
+            "Dague arachnide :\nCoûts : [Achat : X cols] [Revente : 2925 cols]\nInfos : [=Dague arachnide]\n\n" +
+            "Masse arachnide :\nCoûts : [Achat : X cols] [Revente : 2925 cols]\nInfos : [=Masse arachnide]\n\n" +
+            "Marteau arachnide :\nCoûts : [Achat : X cols] [Revente : 5850 cols]\nInfos : [=Marteau arachnide]\n\n" +
+            "Hache arachnide :\nCoûts : [Achat : X cols] [Revente : 2925 cols]\nInfos : [=Hache arachnide]\n\n" +
+            "Hallebarde arachnide :\nCoûts : [Achat : X cols] [Revente : 5850 cols]\nInfos : [=Hallebarde arachnide]\n\n" +
+            "Rapière arachnide :\nCoûts : [Achat : X cols] [Revente : 2925 cols]\nInfos : [=Rapière arachnide]\n\n" +
+            "Cimeterre arachnide :\nCoûts : [Achat : X cols] [Revente : 2925 cols]\nInfos : [=Cimeterre arachnide]\n\n" +
+            "Sabre arachnide :\nCoûts : [Achat : X cols] [Revente : 5850 cols]\nInfos : [=Sabre arachnide]\n\n" +
+            "Katana arachnide :\nCoûts : [Achat : X cols] [Revente : 2925 cols]\nInfos : [=Katana arachnide]\n\n" +
+            "Nodachi arachnide :\nCoûts : [Achat : X cols] [Revente : 5850 cols]\nInfos : [=Nodachi arachnide]\n\n" +
+            "Bâton arachnide :\nCoûts : [Achat : X cols] [Revente : 5850 cols]\nInfos : [=Bâton arachnide]\n\n" +
+            "Lance arachnide :\nCoûts : [Achat : X cols] [Revente : 5850 cols]\nInfos : [=Lance arachnide]\n\n" +
+            "Ceste arachnide :\nCoûts : [Achat : X cols] [Revente : 2925 cols]\nInfos : [=Ceste arachnide]\n\n" +
+            "Pavois arachnide :\nCoûts : [Achat : X cols] [Revente : 4350 cols]\nInfos : [=Pavois arachnide]\n\n" +
+            "Rondache arachnide :\nCoûts : [Achat : X cols] [Revente : 4350 cols]\nInfos : [=Rondache arachnide]\n\n" +
+            "Ecu arachnide :\nCoûts : [Achat : X cols] [Revente : 4350 cols]\nInfos : [=Ecu arachnide]\n\n" +
+            "Targe arachnide :\nCoûts : [Achat : X cols] [Revente : 4350 cols]\nInfos : [=Targe arachnide]```")
     }
 });
 
@@ -14552,7 +14545,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 700 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 2925 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de l'épée arachnide`\n\n" +
                 "keyboard: Si vous fabriquez cet objet : `=Fabrication de l'épée arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
@@ -14576,7 +14569,7 @@ bot.on('message', message => {
                 ":sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n" +
                 ":wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n" +
                 ":sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n" +
-                ":large_orange_diamond: Prix de revente : 1100 cols\n\n" +
+                ":large_orange_diamond: Prix de revente : 5850 cols\n\n" +
                 ":keyboard: Si vous trouvez cet objet : `=Découverte de l'espadon arachnide`\n\n" +
                 "keyboard: Si vous fabriquez cet objet : `=Fabrication de l'espadon arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
@@ -14594,7 +14587,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague arachnide :", ":scales: C'est une dague faite à partir des monstres de la jungle du palier 3 !:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague arachnide`")
+            .addField(":scales: Dague arachnide :", ":scales: C'est une dague faite à partir des monstres de la jungle du palier 3 !:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 2925 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la dague arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la dague arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la dague arachnide : [Votre niveau en forgeron]`")
@@ -14610,7 +14603,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse arachnide :", ":scales: C'est une masse faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse arachnide`")
+            .addField(":scales: Masse arachnide :", ":scales: C'est une masse faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 2925 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la masse arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la masse arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la masse arachnide : [Votre niveau en forgeron]`")
@@ -14626,7 +14619,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Marteau arachnide :", ":scales: C'est une masse faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du marteau arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du marteau arachnide`")
+            .addField(":scales: Marteau arachnide :", ":scales: C'est une masse faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 5850 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du marteau arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du marteau arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du marteau arachnide : [Votre niveau en forgeron]`")
@@ -14642,7 +14635,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache arachnide :", ":scales: C'est une hache faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache arachnide`")
+            .addField(":scales: Hache arachnide :", ":scales: C'est une hache faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 2925 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hache arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hache arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hache arachnide : [Votre niveau en forgeron]`")
@@ -14658,7 +14651,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hallebarde arachnide :", ":scales: C'est une hache faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hallebarde arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hallebarde arachnide`")
+            .addField(":scales: Hallebarde arachnide :", ":scales: C'est une hache faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 5850 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la hallebarde arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la hallebarde arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la hallebarde arachnide : [Votre niveau en forgeron]`")
@@ -14674,7 +14667,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière arachnide :", ":scales: C'est une rapière faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 700 cols rapière arachnide`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière arachnide`")
+            .addField(":scales: Rapière arachnide :", ":scales: C'est une rapière faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 2925 cols rapière arachnide`\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rapière arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rapière arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rapière arachnide : [Votre niveau en forgeron]`")
@@ -14690,7 +14683,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre arachnide :", ":scales: C'est un cimeterre fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre arachnide`")
+            .addField(":scales: Cimeterre arachnide :", ":scales: C'est un cimeterre fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 2925 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du cimeterre arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du cimeterre arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du cimeterre arachnide : [Votre niveau en forgeron]`")
@@ -14706,7 +14699,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Sabre arachnide :", ":scales: C'est un cimeterre fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du sabre arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du sabre arachnide`")
+            .addField(":scales: Sabre arachnide :", ":scales: C'est un cimeterre fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 5850 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du sabre arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du sabre arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du sabre arachnide : [Votre niveau en forgeron]`")
@@ -14722,7 +14715,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana arachnide :", ":scales: C'est un katana fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana arachnide`")
+            .addField(":scales: Katana arachnide :", ":scales: C'est un katana fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 2925 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana arachnide : [Votre niveau en forgeron]`")
@@ -14738,7 +14731,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Nodachi arachnide :", ":scales: C'est un katana fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du nodachi arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du nodachi arachnide`")
+            .addField(":scales: Nodachi arachnide :", ":scales: C'est un katana fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 5850 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du nodachi arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du nodachi arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du nodachi arachnide : [Votre niveau en forgeron]`")
@@ -14754,7 +14747,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bâton arachnide :", ":scales: C'est un bâton fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup sauté' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bâton arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bâton arachnide`")
+            .addField(":scales: Bâton arachnide :", ":scales: C'est un bâton fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup sauté' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 5850 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du bâton arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du bâton arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du bâton arachnide : [Votre niveau en forgeron]`")
@@ -14770,7 +14763,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Lance arachnide :", ":scales: C'est une lance faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 1100 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la lance arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la lance arachnide`")
+            .addField(":scales: Lance arachnide :", ":scales: C'est une lance faite à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 4 Patte d'arachnide, 4 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc impur, 5 Malachite médiocre et 5 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 5850 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la lance arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la lance arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc impur, 3 Malachite médiocre et 3 Malachite commune) :", "`=Amélioration d'une arme arachnide à deux mains : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à deux mains`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la lance arachnide : [Votre niveau en forgeron]`")
@@ -14786,7 +14779,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Ceste arachnide :", ":scales: C'est un ceste fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Coup normal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 700 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du ceste arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du ceste arachnide`")
+            .addField(":scales: Ceste arachnide :", ":scales: C'est un ceste fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore la 'Coup normal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 2925 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du ceste arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du ceste arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du ceste arachnide : [Votre niveau en forgeron]`")
@@ -14802,7 +14795,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Pavois arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du pavois arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du pavois arachnide`")
+            .addField(":scales: Pavois arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 4350 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du pavois arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du pavois arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du pavois arachnide : [Votre niveau en forgeron]`")
@@ -14818,7 +14811,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rondache arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rondache arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rondache arachnide`")
+            .addField(":scales: Rondache arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 4350 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la rondache arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la rondache arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la rondache arachnide : [Votre niveau en forgeron]`")
@@ -14834,7 +14827,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Ecu arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'écu arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'écu arachnide`")
+            .addField(":scales: Ecu arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 4350 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de l'écu arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de l'écu arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de l'écu arachnide : [Votre niveau en forgeron]`")
@@ -14850,7 +14843,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Targe arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 900 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la targe arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la targe arachnide`")
+            .addField(":scales: Targe arachnide :", ":scales: C'est un bouclier fait à partir des monstres de la jungle du palier 3 !\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 6\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 3 Patte d'arachnide, 2 Bois de jeune tréant, 1 Bec d'aigle, 3 Bois de manioc pur, 3 Malachite médiocre et 3 Malachite commune\n\n:sparkles:  Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 25\n\n:large_orange_diamond: Prix de revente : 4350 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte de la targe arachnide`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication de la targe arachnide`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 2 Patte d'arachnide, 1 Bois de jeune tréant, 1 Bec d'aigle, 2 Bois de manioc pur, 2 Malachite médiocre et 2 Malachite commune) :", "`=Amélioration d'une arme arachnide à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme arachnide à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte de la targe arachnide : [Votre niveau en forgeron]`")
@@ -33925,7 +33918,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField(":egg: Oeuf verdoyant :", ":egg: C'est un oeuf assez étrange, tout vert, qui renferme parfois un bébé animal trouvable dans le palier 3 !")
             .addField("Prix de revente :", "2500 cols")
-            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Découverte d'un oeuf brisé")
+            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Découverte d'un oeuf verdoyant")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -34490,27 +34483,6 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Liste | Clefs
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Liste des clefs 1")) {
-        message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des clefs 1")) {
-        message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]" +
-            "Suite en écrivant :\n=Liste des clefs 2```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des clefs 2")) {
-        message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]```")
-    }
-});
-
 bot.on('message', message => {
     const roll = Math.floor(100 * Math.random() + 1)
     const degat = Math.floor(21 * Math.random() + 90)
@@ -34536,6 +34508,21 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Liste | Clefs
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des clefs 1")) {
+        message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]" +
+            "Suite en écrivant :\n=Liste des clefs 2```")
+    }
+});
+
+bot.off('message', message => {
+    if (message.content === (prefix + "Liste des clefs 2")) {
+        message.channel.send("```Clef arbuste :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Clef arbuste]```")
+    }
+});
+
 // Menus | Liste | Clefs | Détails
 
 bot.on('message', message => {
@@ -34544,7 +34531,20 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":key: Clef du donjon sauvage:", ":key: C'est une clef permettant d'ouvrir la porte pour accèder au donjon sauvage !\n\nPrix d'achat : X\n\nPrix de revente : 200")
+            .addField(":key: Clef du donjon sauvage:", ":key: C'est une clef permettant d'ouvrir la porte pour accèder au donjon sauvage !\n\nPrix de revente : 200 cols")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Clef arbuste")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":key: Clef arbuste :", ":key: C'est une clef permettant d'ouvrir la porte pour accèder au donjon sauvage !\n\nPrix de revente : 500 cols")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -35106,7 +35106,7 @@ bot.on('message', message => {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .addField("Liste des donjons :", "`=Donjon sauvage`")
+            .addField("Liste des donjons :", "`=Donjon sauvage`\n`=Donjon tréant`")
             .setColor(3447003)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -61344,6 +61344,7 @@ bot.on('message', message => {
         const patte = Math.floor((2 - 0.32) * Math.random())
         const sclerite = Math.floor((2 - 0.57) * Math.random())
         const toile = Math.floor((2 - 0.824) * Math.random())
+        const clef = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 6.5
@@ -61362,6 +61363,7 @@ bot.on('message', message => {
             .addField(":moneybag: Récompenses :", ":spider: Patte d'arachnide : " + patte + "\n" +
                 ":spider: Sclérite d'arachnide' : " + sclerite + "\n" +
                 ":spider_web: Toile de traknide : " + toile + "\n" +
+                ":key: Clef arbuste  : " + clef + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -61379,6 +61381,7 @@ bot.on('message', message => {
         const venin = Math.floor((2 - 0.749) * Math.random())
         const arme1 = Math.floor((2 - 0.98) * Math.random())
         const arme2 = Math.floor((2 - 0.958) * Math.random())
+        const clef = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 6.5
@@ -61399,6 +61402,7 @@ bot.on('message', message => {
                 ":alembic: Venin d'ataknide : " + venin + "\n" +
                 ":scales: Arme arachnide à une main au choix : " + arme1 + "\n" +
                 ":scales: Arme arachnide à deux mains au choix : " + arme2 + "\n" +
+                ":key: Clef arbuste  : " + clef + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -61416,6 +61420,7 @@ bot.on('message', message => {
         const essence = Math.floor((2 - 0.88) * Math.random())
         const armure = Math.floor((2 - 0.97) * Math.random())
         const bijou = Math.floor((2 - 0.98) * Math.random())
+        const clef = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 6.5
@@ -61436,6 +61441,7 @@ bot.on('message', message => {
                 ":test_tube: Essence de jeune tréant : " + essence + "\n" +
                 ":scales: Armure lupine au choix : " + armure + "\n" +
                 ":scales: Bijou lupine au choix : " + bijou + "\n" +
+                ":key: Clef arbuste  : " + clef + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -61452,6 +61458,7 @@ bot.on('message', message => {
         const plume = Math.floor((2 - 0.924) * Math.random())
         const plumeOr = Math.floor((2 - 0.99) * Math.random())
         const serre = Math.floor((2 - 0.97) * Math.random())
+        const clef = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 6.5
@@ -61471,6 +61478,7 @@ bot.on('message', message => {
                 ":eagle: Plume d'aigle : " + plume + "\n" +
                 ":eagle: Plume d'or : " + plumeOr + "\n" +
                 ":eagle: Serre d'aigle : " + serre + "\n" +
+                ":key: Clef arbuste  : " + clef + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
