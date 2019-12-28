@@ -60642,6 +60642,87 @@ bot.on('message', message => {
     }
 })
 
+// Jungle profonde | Quête
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Jungle profonde quête") {
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (talkedRecently.has(message.author.id + 18000)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.pFng")
+                .setColor(3447003)
+                .addField("Cooldown :", " Vous devrez attendre 1 journée avant de pouvoir refaire ceci !")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            if (roll <= 100) {
+                talkedRecently.add(message.author.id + 18000);
+                setTimeout(() => {
+                    talkedRecently.delete(message.author.id + 18000);
+                }, 86400000);
+                const loup = Math.floor(2 * Math.random() + 3)
+                const traknide = Math.floor(2 * Math.random() + 2)
+                const ataknide = Math.floor(2 * Math.random() + 2)
+                const jeunetreant = Math.floor(2 * Math.random() + 1)
+                const aigle = Math.floor(2 * Math.random() + 1)
+                const embed = new Discord.RichEmbed()
+                    .setColor(3447003)
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+                    .addField(":bookmark: Quête de la jungle profonde :", ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
+                        ":crossed_swords: Loup sombre : " + loup + "\n" +
+                        ":crossed_swords: Traknide : " + traknide + "\n" +
+                        ":crossed_swords: Ataknide : " + ataknide + "\n" +
+                        ":crossed_swords: Jeune tréant : " + jeunetreant + "\n" +
+                        ":crossed_swords: Aigle : " + aigle)
+                    .addField(":bookmark: Les récompenses une fois la quête accomplie :", ":bookmark: `=Jungle profonde quête accomplie : [Votre niveau]`")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            }
+            talkedRecently.add(message.author.id + 18000);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 18000);
+            }, 86400000);
+        }
+    }
+})
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Jungle profonde quête accomplie")) {
+        let lvl = args.slice(4).join(" : ");
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 7
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const rollxp = Math.floor(41 * Math.random() + 40) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
+        const cols = Math.floor(31 * Math.random() + 190)
+        const stuff = Math.floor(2 * 0.80 * Math.random())
+        if (xp <= 0) {
+            xp = 0
+        }
+        if (lvl > 35) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://cdn.discordapp.com/attachments/530057837334757396/594613089538801670/fe5008595f73437e91eaeb974b360f0b.jpg")
+            .addField(":bookmark: Quête de la jungle profonde :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
+                ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":large_orange_diamond: Cols : " + cols + "\n" +
+                ":scales: Equipement lupine au choix : " + stuff)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Jungle profonde | Combat
 
 bot.on('message', message => {
@@ -60959,7 +61040,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le féroce rapace vole à vive allure jusqu'au joueur le plus proche, l'attrapant par les épaules et l'emmenant dans le ciel.\nLes seules défenses possibles sont la parade et l'esquive, les autres entraînant la capture dans tous les cas.\nS'il est bel et bien capturé, alors le joueur ne peut plus rien faire. Cependant, en prenant appui sur l'un de ses coéquipiers qui l'enverra vers l'agresseur, un joueur libre peut tenter de le sauver en réussissant à toucher la bête. Seul l'élan procuré par la poussée d'un autre joueur permet d'atteindre l'aigle, il est donc impossible de réussir en se servant d'une quelconque autre plateforme que l'échine de l'un de vos camarades.\n\nSi le joueur n'est toujours pas libéré au tour de l'aigle, faites `=Aigle punch`.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le féroce rapace vole à vive allure jusqu'au joueur le plus proche, l'attrapant par les épaules et l'emmenant dans le ciel.\nLes seules défenses possibles sont la parade et l'esquive, les autres entraînant la capture dans tous les cas.\nS'il est bel et bien capturé, alors le joueur ne peut plus rien faire. Cependant, en prenant appui sur l'un de ses coéquipiers qui l'enverra vers l'agresseur, un joueur libre peut tenter de le sauver en réussissant à toucher la bête. Seul l'élan procuré par la poussée d'un autre joueur permet d'atteindre l'aigle, il est donc impossible de réussir en se servant d'une quelconque autre plateforme que l'échine de l'un de vos camarades.\n\nSi le joueur n'est toujours pas libéré au tour de l'aigle, faites `=Aigle spécial`.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -60991,7 +61072,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le féroce rapace vole à vive allure jusqu'au joueur le plus proche, l'attrapant par les épaules et l'emmenant dans le ciel.\nLes seules défenses possibles sont la parade et l'esquive, les autres entraînant la capture dans tous les cas.\nS'il est bel et bien capturé, alors le joueur ne peut plus rien faire. Cependant, en prenant appui sur l'un de ses coéquipiers qui l'enverra vers l'agresseur, un joueur libre peut tenter de le sauver en réussissant à toucher la bête. Seul l'élan procuré par la poussée d'un autre joueur permet d'atteindre l'aigle, il est donc impossible de réussir en se servant d'une quelconque autre plateforme que l'échine de l'un de vos camarades.\n\nSi le joueur n'est toujours pas libéré au tour de l'aigle, faites `=Aigle punch`.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le féroce rapace vole à vive allure jusqu'au joueur le plus proche, l'attrapant par les épaules et l'emmenant dans le ciel.\nLes seules défenses possibles sont la parade et l'esquive, les autres entraînant la capture dans tous les cas.\nS'il est bel et bien capturé, alors le joueur ne peut plus rien faire. Cependant, en prenant appui sur l'un de ses coéquipiers qui l'enverra vers l'agresseur, un joueur libre peut tenter de le sauver en réussissant à toucher la bête. Seul l'élan procuré par la poussée d'un autre joueur permet d'atteindre l'aigle, il est donc impossible de réussir en se servant d'une quelconque autre plateforme que l'échine de l'un de vos camarades.\n\nSi le joueur n'est toujours pas libéré au tour de l'aigle, faites `=Aigle spécial`.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -60999,7 +61080,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Aigle punch")) {
+    if (message.content.startsWith(prefix + "Aigle spécial")) {
         const degat = Math.floor(26 * Math.random() + 255)
         const degatPerce = Math.floor(26 * Math.random() + 115)
         const crit = Math.floor(21 * Math.random() + 260)
@@ -61010,7 +61091,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le Eagle vous garde dans les airs avec lui, Ding Ding Ding Ding bienvenu sur air Eagle.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le Eagle vous garde dans les airs avec lui.")
             message.channel.send({ embed })
         }
         if (21 <= roll && roll <= 95) {
@@ -61026,7 +61107,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le Eagle envoie le joueur devant lui et fonce sur lui faire un Eagle PUNCH... / L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " points de dégats pour chaque arbre que vous vous prenez.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: L'aigle vous fait cogner contre " + ciblage + " arbres et vous recevez " + crit + " points de dégats pour chaque arbre que vous vous prenez.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
