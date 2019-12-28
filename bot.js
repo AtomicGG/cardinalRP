@@ -2392,22 +2392,12 @@ bot.on('message', message => {
             "Goujon :\nCoûts : [Achat : 4 cols] [Revente : 1 cols]\n\n" +
             "Crevette :\nCoûts : [Achat : 8 cols] [Revente : 2 cols]\n\n" +
             "Truite :\nCoûts : [Achat : 12 cols] [Revente : 3 cols]\n\n" +
-            "Crabe :\nCoûts : [Achat : 16 cols] [Revente : 4 cols]```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des matériaux 8")) {
-        message.channel.send("```Bois de séquoia parfait :\nCoûts : [Achat : 128 cols] [Revente : 32 cols]\n\n" +
-            "Goujon :\nCoûts : [Achat : 4 cols] [Revente : 1 cols]\n\n" +
-            "Crevette :\nCoûts : [Achat : 8 cols] [Revente : 2 cols]\n\n" +
-            "Truite :\nCoûts : [Achat : 12 cols] [Revente : 3 cols]\n\n" +
             "Crabe :\nCoûts : [Achat : 16 cols] [Revente : 4 cols]\n\n" +
             "Suite en écrivant :\n=Liste des matériaux 9```")
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Liste des matériaux 9")) {
         message.channel.send("```Viande de loup sombre :\nCoûts : [Achat : X cols] [Revente : 50 cols]\n\n" +
             "Peau de loup sombre :\nCoûts : [Achat : X cols] [Revente : 54 cols]\n\n" +
@@ -32285,27 +32275,6 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des potions 2")) {
-        message.channel.send("```Potion améliorée :\nCoûts : [Achat : 360 cols] [Revente : 90 cols]\nInfos : [=Potion améliorée]\n\n" +
-            "Potion jetable de poison léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de poison léger]\n\n" +
-            "Potion jetable de soin légère :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de soin légère]\n\n" +
-            "Antidote léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Antidote léger]\n\n" +
-            "Potion améliorée supérieure :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Potion améliorée supérieure]\n\n" +
-            "Suite en écrivant :\n=Liste des potions 3```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des potions 3")) {
-        message.channel.send("```Potion améliorée :\nCoûts : [Achat : 360 cols] [Revente : 90 cols]\nInfos : [=Potion améliorée]\n\n" +
-            "Potion jetable de poison léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de poison léger]\n\n" +
-            "Potion jetable de soin légère :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Potion jetable de soin légère]\n\n" +
-            "Antidote léger :\nCoûts : [Achat : 720 cols] [Revente : 180 cols]\nInfos : [=Antidote léger]\n\n" +
-            "Potion améliorée supérieure :\nCoûts : [Achat : 460 cols] [Revente : 115 cols]\nInfos : [=Potion améliorée supérieure]```")
-    }
-});
-
 // Menus | Liste | Potions | Détails
 
 bot.on('message', message => {
@@ -32762,33 +32731,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des plats 2")) {
-        message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
-            "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
-            "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
-            "Ragoûts bovin :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Ragoût bovin]\n\n" +
-            "Petite cassolette de goujon :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Petite cassolette de goujon]\n\n" +
-            "Soupe de crevette :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Soupe de crevette]\n\n" +
-            "Cassolette de truite :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Cassolette de truite]\n\n" +
-            "Soupe de crabe :\nCoûts : [Achat : X cols] [Revente : ?? cols]\nInfos : [=Soupe de crabe]```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des plats 2")) {
-        message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
-            "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
-            "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
-            "Ragoûts bovin :\nCoûts : [Achat : 400 cols] [Revente : 100 cols]\nInfos : [=Ragoût bovin]\n\n" +
-            "Petite cassolette de goujon :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Petite cassolette de goujon]\n\n" +
-            "Soupe de crevette :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Soupe de crevette]\n\n" +
-            "Cassolette de truite :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Cassolette de truite]\n\n" +
-            "Soupe de crabe :\nCoûts : [Achat : X cols] [Revente : X cols]\nInfos : [=Soupe de crabe]\n\n" +
-            "Suite en écrivant :\n=Liste des plats 3```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des plats 3")) {
         message.channel.send("```Ragoûts de lièvre :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de lièvre]\n\n" +
             "Ragoûts de desman :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de desman]\n\n" +
             "Ragoûts de taurus :\nCoûts : [Achat : 320 cols] [Revente : 80 cols]\nInfos : [=Ragoût de taurus]\n\n" +
@@ -33321,19 +33263,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des parchemins 2")) {
-        message.channel.send("```Parchemin de poison moyen :\nCoûts : [Achat : X cols] [Revente : 300 cols]\nInfos : [=Parchemin de poison moyen]```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des parchemins 2")) {
-        message.channel.send("```Parchemin de poison moyen :\nCoûts : [Achat : X cols] [Revente : 300 cols]\nInfos : [=Parchemin de poison moyen]\n\n" +
-            "Suite en écrivant :\n=Liste des parchemins 3```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des parchemins 3")) {
         message.channel.send("```Parchemin de poison moyen :\nCoûts : [Achat : X cols] [Revente : 300 cols]\nInfos : [=Parchemin de poison moyen]```")
     }
 });
@@ -34305,34 +34234,19 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 5")) {
-        message.channel.send("```Familiers de l'oeuf ??? :\n\n" +
-            "Ecureuil (indisponible):\nNiveau requis : 1\nBonus : 40 HP\n\n" +
-            "Bébé loup blanc (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 4 Atk\n\n" +
-            "Bébé renne (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
-            "Bébé ours polaire (indisponible) :\nNiveau requis : 1\nBonus : 4 Atk & 2 Def\n\n" +
-            "Lézard (marchand) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
-            "Métamorphe :\nNiveau requis : 1\nBonus : Peut prendre la forme et le bonus de n'importe quel familier de l'oeuf déformé\n\n" +
+        message.channel.send("```Familiers de l'oeuf verdoyant :\n\n" +
+            "Araignée :\nNiveau requis : 31\nBonus : 30 HP & 25 Atk & A la fin de votre tour, vous enlève une toile violette sur vous\n\n" +
+            "Tréant junion :\nNiveau requis : 31\nBonus : 50 HP & 15 Def\n\n" +
+            "Aiglon :\nNiveau requis : 31\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Aiglon attaque]\n\n" +
             "Suite en écrivant :\n=Liste des familiers 6```")
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 6")) {
         message.channel.send("```Familiers d'évènement ou du marchand :\n\n" +
-            "Ecureuil (indisponible):\nNiveau requis : 1\nBonus : 40 HP\n\n" +
-            "Bébé loup blanc (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 4 Atk\n\n" +
-            "Bébé renne (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
-            "Bébé ours polaire (indisponible) :\nNiveau requis : 1\nBonus : 4 Atk & 2 Def\n\n" +
-            "Lézard (marchand) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
-            "Métamorphe :\nNiveau requis : 1\nBonus : Peut prendre la forme et le bonus de n'importe quel familier de l'oeuf déformé```")
-    }
-});
-
-bot.on('message', message => {
-    if (message.content === (prefix + "Liste des familiers 5")) {
-        message.channel.send("```Familiers d'évènement ou du marchand' :\n\n" +
             "Ecureuil (indisponible):\nNiveau requis : 1\nBonus : 40 HP\n\n" +
             "Bébé loup blanc (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 4 Atk\n\n" +
             "Bébé renne (indisponible) :\nNiveau requis : 1\nBonus : 20 HP & 2 Def\n\n" +
