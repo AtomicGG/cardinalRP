@@ -907,7 +907,10 @@ bot.on('message', message => {
                 "Pont\n" +
                 "Ravin\n‖\n‖ `[5 minutes]`\n‖\n" +
                 "Labyrinthe\n‖\n‖ `[5 minutes]`\n‖\n" +
-                "Salle du boss")
+                "Salle du boss\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Grand escalier\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Grande plaine du palier 3\n‖\n‖ `[5 minutes]`\n‖\n" +
+                "Place principale de Zumfut")
             .setImage("https://www.playm.de/wp-content/uploads/2014/10/Sword-Art-Online-Lost-Song.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -33837,22 +33840,14 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content === (prefix + "Liste des oeufs 2")) {
         message.channel.send("```Oeuf bavant :\nCoûts : [Achat : 6000 cols] [Revente : 1500 cols]\nInfos : [=Oeuf bavant]\n\n" +
-            "Oeuf brisé :\nCoûts : [Achat : 8000 cols] [Revente : 2000 cols]\nInfos : [=Oeuf brisé]```")
-    }
-});
-
-bot.off('message', message => {
-    if (message.content === (prefix + "Liste des oeufs 2")) {
-        message.channel.send("```Oeuf bavant :\nCoûts : [Achat : 6000 cols] [Revente : 1500 cols]\nInfos : [=Oeuf bavant]\n\n" +
             "Oeuf brisé :\nCoûts : [Achat : 8000 cols] [Revente : 2000 cols]\nInfos : [=Oeuf brisé]\n\n" +
             "Suite en écrivant :\n=Liste des oeufs 3```")
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Liste des oeufs 3")) {
-        message.channel.send("```Oeuf bavant :\nCoûts : [Achat : 6000 cols] [Revente : 1500 cols]\nInfos : [=Oeuf bavant]\n\n" +
-            "Oeuf brisé :\nCoûts : [Achat : 8000 cols] [Revente : 2000 cols]\nInfos : [=Oeuf brisé]```")
+        message.channel.send("```Oeuf verdoyant :\nCoûts : [Achat : X cols] [Revente : 2500 cols]\nInfos : [=Oeuf verdoyant]```")
     }
 });
 
@@ -33916,6 +33911,21 @@ bot.on('message', message => {
             .addField("Prix d'achat :", "8000 cols")
             .addField("Prix de revente :", "2000 cols")
             .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Achat/découverte d'un oeuf brisé")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Oeuf verdoyant")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":egg: Oeuf verdoyant :", ":egg: C'est un oeuf assez étrange, tout vert, qui renferme parfois un bébé animal trouvable dans le palier 3 !")
+            .addField("Prix de revente :", "2500 cols")
+            .addField(":keyboard: Si vous trouvez ou achetez cette oeuf :", "=Découverte d'un oeuf brisé")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -34179,6 +34189,55 @@ bot.on('message', message => {
                 .setColor(3447003)
                 .addField(":egg: Oeuf brisé", ":egg: En ouvrant l'Oeuf brisé, vous découvrez un petit taurus malin")
                 .addField(":egg: Taurus malin :", ":egg: Après chacunes de vos attaques réussies, le petit taurus malin attaquera : =Petit taurus malin attaque!\n\n:sparkles: Niveau minimum requis pour l'équiper : 20")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Découverte d'un oeuf verdoyant")) {
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 60) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf verdoyant", ":egg: En ouvrant l'Oeuf verdoyant, vous ne découvrez aucun bébé animal malheureusement...")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (roll >= 61 && roll <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf verdoyant", ":egg: En ouvrant l'Oeuf verdoyant, vous découvrez une petite araignée !")
+                .addField(":egg: Araignée :", ":egg: Confère 30 HP max & 25 Atk supplémentaires !\nA la fin de votre tour, l'araignée enlève une toile violette sur vous !\n\n:sparkles: Niveau minimum requis pour l'équiper : 31")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (roll >= 76 && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf verdoyant", ":egg: En ouvrant l'Oeuf verdoyant, vous découvrez un jeune tréant !")
+                .addField(":egg: Tréant junior :", ":egg: Confère 50 HP max & 15 Def supplémentaires !\n\n:sparkles: Niveau minimum requis pour l'équiper : 31")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (roll >= 96) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":egg: Oeuf verdoyant", ":egg: En ouvrant l'Oeuf verdoyant, vous découvrez un petit aigle")
+                .addField(":egg: Aiglon :", ":egg: Après chacunes de vos attaques réussies, l'aiglon attaquera : =Aiglon attaque !\nIl peut même attaquer les monstres volants !\n\n:sparkles: Niveau minimum requis pour l'équiper : 31")
                 .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
                 .setTimestamp()
             message.channel.send({ embed })
