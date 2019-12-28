@@ -34238,7 +34238,7 @@ bot.on('message', message => {
     if (message.content === (prefix + "Liste des familiers 5")) {
         message.channel.send("```Familiers de l'oeuf verdoyant :\n\n" +
             "Araignée :\nNiveau requis : 31\nBonus : 30 HP & 25 Atk & A la fin de votre tour, vous enlève une toile violette sur vous\n\n" +
-            "Tréant junion :\nNiveau requis : 31\nBonus : 50 HP & 15 Def\n\n" +
+            "Tréant junior :\nNiveau requis : 31\nBonus : 50 HP & 15 Def\n\n" +
             "Aiglon :\nNiveau requis : 31\nBonus : Peut attaquer lorsque votre coup réussi via la commande [=Aiglon attaque]\n\n" +
             "Suite en écrivant :\n=Liste des familiers 6```")
     }
