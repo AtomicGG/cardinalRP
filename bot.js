@@ -61824,7 +61824,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            if (/*talkedRecently.has(message.author.id + 19)*/false) {
+            if (talkedRecently.has(message.author.id + 19)) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -61847,7 +61847,7 @@ bot.on('message', message => {
                 const idRole = "544250415550693386"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if(protecteur <= 30){
+                    if (protecteur <= 30) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -61857,27 +61857,27 @@ bot.on('message', message => {
                                 ":knife: Peau de marcassin : " + Peau * 2 + "\n" +
                                 ":cupid: Coeur de marcassin : " + Coeur * 2 + "\n" +
                                 ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
-                                .addBlankField(true)
-                                .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
-                                    ":crossed_swords: Phacochère : 1")
+                            .addBlankField(true)
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                                ":crossed_swords: Phacochère : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
                     } else {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":knife: Viande de marcassin : " + Viande * 2 + "\n" +
-                            ":knife: Peau de marcassin : " + Peau * 2 + "\n" +
-                            ":cupid: Coeur de marcassin : " + Coeur * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
-                        .setTimestamp()
-                    message.channel.send({ embed })
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":knife: Viande de marcassin : " + Viande * 2 + "\n" +
+                                ":knife: Peau de marcassin : " + Peau * 2 + "\n" +
+                                ":cupid: Coeur de marcassin : " + Coeur * 2 + "\n" +
+                                ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            .setTimestamp()
+                        message.channel.send({ embed })
                     }
                 } else {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if(protecteur <= 30){
+                    if (protecteur <= 30) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -61887,9 +61887,115 @@ bot.on('message', message => {
                                 ":knife: Peau de marcassin : " + Peau + "\n" +
                                 ":cupid: Coeur de marcassin : " + Coeur + "\n" +
                                 ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            .addBlankField(true)
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                                ":crossed_swords: Phacochère : 1")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":knife: Viande de marcassin : " + Viande + "\n" +
+                                ":knife: Peau de marcassin : " + Peau + "\n" +
+                                ":cupid: Coeur de marcassin : " + Coeur + "\n" +
+                                ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
+                }
+            }
+            talkedRecently.add(message.author.id + 19);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 19);
+            }, 3600000);
+        }
+    }
+})
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Petite grotte miner")) {
+        let cont = message.content;
+        let split = cont.split(' ');
+        let level = split[4] - 0
+        if (isNaN(level)) {
+            level = 0
+        }
+        let levelZone = 1;
+        if (level < levelZone || isNaN(level)) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas le niveau nécessaire pour miner dans cette zone ou vous avez fait une erreur dans la commande !")
+                .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            if (/*talkedRecently.has(message.author.id + 19)*/false) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Cooldown :", " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                const roll = Math.floor(100 * Math.random() + 1);
+                const diff = level - levelZone
+                let chance = diff * diff;
+                if (chance > 100) {
+                    chance = 100
+                }
+                const mediocre = Math.floor(2 * Math.random() + 1)
+                const commune = Math.floor(2 * Math.random() + 1) - 1
+                const Exp = Math.floor(5 * Math.random() + 4)
+                const idRole = "544250415051702282"
+                if (roll <= chance && message.member.roles.has(idRole)) {
+                const protecteur = Math.floor(100 * Math.random() + 1);
+                if(protecteur <= 30){
+                    const embed = new Discord.RichEmbed()
+                        .setColor(3447003)
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":pick: Malachite médiocre : " + mediocre * 2 + "\n" +
+                            ":pick: Malachite commune : " + commune * 2 + "\n" +
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            .addBlankField(true)
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                                ":crossed_swords: Golemite de malachite : 1")
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
+                    const embed = new Discord.RichEmbed()
+                        .setColor(3447003)
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":pick: Malachite médiocre : " + mediocre * 2 + "\n" +
+                            ":pick: Malachite commune : " + commune * 2 + "\n" +
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+                } else {
+                    const protecteur = Math.floor(100 * Math.random() + 1);
+                    if(protecteur <= 30){
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":pick: Malachite médiocre : " + mediocre + "\n" +
+                                ":pick: Malachite commune : " + commune + "\n" +
+                                ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                                 .addBlankField(true)
                                 .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
-                                    ":crossed_swords: Phacochère : 1")
+                                    ":crossed_swords: Golemite de malachite : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
                     } else {
@@ -61897,11 +62003,10 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":knife: Viande de marcassin : " + Viande + "\n" +
-                            ":knife: Peau de marcassin : " + Peau + "\n" +
-                            ":cupid: Coeur de marcassin : " + Coeur + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":pick: Malachite médiocre : " + mediocre + "\n" +
+                            ":pick: Malachite commune : " + commune + "\n" +
+                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                     }
