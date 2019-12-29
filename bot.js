@@ -61486,6 +61486,117 @@ bot.on('message', message => {
     }
 });
 
+// Rivière | Description
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Rivière") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setColor(1447003)
+            .addField(":park: Rivière :", ":park: Bienvenue dans cette rivière où vous pouvez vous reposer, ou non !\n\n" +
+                ":wilted_rose: Pour cueillir, niveau 1 requis dans 'Cueilleur' :\n :wilted_rose: `=Rivière cueillir : [Votre niveau en Cueilleur]`\n\n" +
+                ":deciduous_tree: Pour bûcheronner, niveau 1 requis dans 'Bûcheron' :\n :deciduous_tree: `=Rivière bûcheronner : [Votre niveau en Bûcheron]`\n\n" +
+                ":fish: Pour pêcher, niveau 1 requis dans 'Pêcheur' :\n :fish: `=Rivière pêcher : [Votre niveau en Pêcheur]`")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/660633378068103207/362148_art_pejzazh_les_boloto_voda_prud_1680x1050_www.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+// Rivière | Métiers
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Rivière cueillir")) {
+        let cont = message.content;
+        let split = cont.split(' ');
+        let level = split[3] - 0
+        if (isNaN(level)) {
+            level = 0
+        }
+        let levelZone = 1;
+        if (level < levelZone) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField("Erreur :", " Vous n'avez pas le niveau nécessaire pour cueillir dans cette zone ou vous avez fait une erreur dans la commande !")
+                .setImage("https://coubsecure-s.akamaihd.net/get/b142/p/coub/simple/cw_timeline_pic/7f1c5d47aa2/484488aa5d0d97af950a4/med_1482439204_image.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        } else {
+            if (talkedRecently.has(message.author.id + 19)) {
+                const embed = new Discord.RichEmbed()
+                    .setAuthor(message.author.username, message.author.avatarURL)
+                    .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                    .setColor(3447003)
+                    .addField("Cooldown :", " Vous devrez attendre 1 heure avant de pouvoir refaire ceci !")
+                    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/4/43/AnimeJohnnyBlack.png/revision/latest?cb=20140328034625")
+                    .setTimestamp()
+                message.channel.send({ embed })
+            } else {
+                const roll = Math.floor(100 * Math.random() + 1);
+                const diff = level - levelZone
+                let chance = diff * diff;
+                if (chance > 100) {
+                    chance = 100
+                }
+                const commun = Math.floor(2 * Math.random() + 2)
+                const rare = Math.floor(2 * Math.random() + 1)
+                const parfait = Math.floor(2 * Math.random() + 1) - 1
+                const Exp = Math.floor(5 * Math.random() + 4)
+                const idRole = "544250412753092638"
+                if (roll <= chance && message.member.roles.has(idRole)) {
+                    const embed = new Discord.RichEmbed()
+                        .setColor(3447003)
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+                        .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":wilted_rose: Sariette commune : " + commun * 2 + "\n" +
+                            ":wilted_rose: Sariette rare : " + rare * 2 + "\n" +
+                            ":wilted_rose: Sariette parfaite : " + parfait * 2 + "\n" +
+                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                } else {
+                    const embed = new Discord.RichEmbed()
+                        .setColor(3447003)
+                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
+                        .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                            ":wilted_rose: Sariette commune : " + commun + "\n" +
+                            ":wilted_rose: Sariette rare : " + rare + "\n" +
+                            ":wilted_rose: Sariette parfaite : " + parfait + "\n" +
+                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                        .setTimestamp()
+                    message.channel.send({ embed })
+                }
+            }
+            talkedRecently.add(message.author.id + 19);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id + 19);
+            }, 3600000);
+        }
+    }
+})
+
+// Petite grotte | Description
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Petite grotte") {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setColor(1447003)
+            .addField(":mountain: Petite grotte :", ":mountain: Bienvenue dans cette petite grotte où vous pouvez vous reposer, ou non !\n\n" +
+                ":knife: Pour chasser, niveau 1 minimum requis dans 'Chasseur' :\n:knife: `=Petite grotte chasser : [Votre niveau en Chasseur]`\n\n" +
+                ":pick: Pour miner, niveau 1 minimum requis dans 'Mineur' :\n:pick: `=Petite grotte miner : [Votre niveau en Mineur]`")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/660633214884249621/ClV5e1F.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
 // Noël 2019 | Plaine
 
 bot.on('message', message => {
