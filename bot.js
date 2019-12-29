@@ -805,7 +805,7 @@ bot.on('message', message => {
                 "Elles sont à une main !\n\n" +
                 "Elles donnent généralement un bonus en Esquive de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup à revers : [Votre attaque]`")
+                "`=Coup à revers : [Votre armure]`")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/640975161855836160/800px-Rondache_-_MAP_-_I_74.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -839,7 +839,7 @@ bot.on('message', message => {
                 "Elles sont à une main !\n\n" +
                 "Elles donnent généralement un bonus en Cri de provocation de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
-                "`=Coup résonant : [Votre attaque]`")
+                "`=Coup résonant`")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/640976259022716949/telechargement.jpg")
             .setTimestamp()
         message.channel.send({ embed })
