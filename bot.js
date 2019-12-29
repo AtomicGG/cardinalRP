@@ -44685,7 +44685,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Persil : " + Persils * 2 + "\n" +
                             ":wilted_rose: Herbe médicinale faible : " + Herbe * 2 + "\n" +
@@ -44699,7 +44698,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Persil : " + Persils + "\n" +
                             ":wilted_rose: Herbe médicinale faible : " + Herbe + "\n" +
@@ -44765,7 +44763,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de lapin : " + Viande * 2 + "\n" +
                             ":knife: Peau de lapin : " + Peau * 2 + "\n" +
@@ -44780,7 +44777,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de lapin : " + Viande + "\n" +
                             ":knife: Peau de lapin : " + Peau + "\n" +
@@ -45719,7 +45715,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Estragon : " + Estragon * 2 + "\n" +
                             ":wilted_rose: Herbe médicinale : " + Herbe * 2 + "\n" +
@@ -45732,7 +45727,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Estragon : " + Estragon + "\n" +
                             ":wilted_rose: Herbe médicinale : " + Herbe + "\n" +
@@ -45795,7 +45789,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre médiocre : " + CuivreMediocre * 2 + "\n" +
                             ":pick: Cuivre commun : " + CuivreCommun * 2 + "\n" +
@@ -45808,7 +45801,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre médiocre : " + CuivreMediocre + "\n" +
                             ":pick: Cuivre commun : " + CuivreCommun + "\n" +
@@ -45871,7 +45863,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre * 2 + "\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun * 2 + "\n" +
@@ -45884,7 +45875,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre + "\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
@@ -45949,7 +45939,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de taupe : " + Viande * 2 + "\n" +
                             ":knife: Peau de taupe : " + Peau * 2 + "\n" +
@@ -45964,7 +45953,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de taupe : " + Viande + "\n" +
                             ":knife: Peau de taupe : " + Peau + "\n" +
@@ -47506,7 +47494,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Basilic : " + Basilic * 2 + "\n" +
                             ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre * 2 + "\n" +
@@ -47520,7 +47507,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Basilic : " + Basilic + "\n" +
                             ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre + "\n" +
@@ -47584,7 +47570,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre commun : " + CuivreCommun * 2 + "\n" +
                             ":pick: Cuivre rare : " + CuivreRare * 2 + "\n" +
@@ -47597,7 +47582,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre commun : " + CuivreCommun + "\n" +
                             ":pick: Cuivre rare : " + CuivreRare + "\n" +
@@ -47660,7 +47644,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun * 2 + "\n" +
                             ":deciduous_tree: Bois de frêne rare : " + BoisRare * 2 + "\n" +
@@ -47673,7 +47656,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("http://www.wallpapermaiden.com/image/2016/06/12/anime-landscape-forest-tree-paint-anime-894.jpg")
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
                             ":deciduous_tree: Bois de frêne rare : " + BoisRare + "\n" +
@@ -47738,7 +47720,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de ragondin : " + Viande * 2 + "\n" +
                             ":knife: Peau de ragondin : " + Peau * 2 + "\n" +
@@ -47753,7 +47734,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de ragondin : " + Viande + "\n" +
                             ":knife: Peau de ragondin : " + Peau + "\n" +
@@ -48623,7 +48603,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun * 2 + "\n" +
                             ":wilted_rose: Plantrus rare : " + PlantrusRare * 2 + "\n" +
@@ -48637,7 +48616,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
                             ":wilted_rose: Plantrus rare : " + PlantrusRare + "\n" +
@@ -48702,7 +48680,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre rare : " + CuivreRare * 2 + "\n" +
                             ":pick: Cuivre parfait : " + CuivreParfait * 2 + "\n" +
@@ -48716,7 +48693,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre rare : " + CuivreRare + "\n" +
                             ":pick: Cuivre parfait : " + CuivreParfait + "\n" +
@@ -50066,7 +50042,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Lierre commun : " + LierreCommun * 2 + "\n" +
                             ":wilted_rose: Lierre rare : " + LierreRare * 2 + "\n" +
@@ -50080,7 +50055,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Lierre commun : " + LierreCommun + "\n" +
                             ":wilted_rose: Lierre rare : " + LierreRare + "\n" +
@@ -50146,7 +50120,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de lièvre : " + Viande * 2 + "\n" +
                             ":knife: Peau de lièvre : " + Peau * 2 + "\n" +
@@ -50161,7 +50134,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de lièvre : " + Viande + "\n" +
                             ":knife: Peau de lièvre : " + Peau + "\n" +
@@ -51085,7 +51057,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Lierre d'antidote : " + LierreAntidote * 2 + "\n" +
                             ":wilted_rose: Lierre de soin : " + LierreSoin * 2 + "\n" +
@@ -51099,7 +51070,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Lierre d'antidote : " + LierreAntidote + "\n" +
                             ":wilted_rose: Lierre de soin : " + LierreSoin + "\n" +
@@ -51165,7 +51135,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de desman : " + Viande * 2 + "\n" +
                             ":knife: Peau de desman : " + Peau * 2 + "\n" +
@@ -51180,7 +51149,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de desman : " + Viande + "\n" +
                             ":knife: Peau de desman : " + Peau + "\n" +
@@ -51247,7 +51215,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Pierre de sel : " + Sel * 2 + "\n" +
                             ":pick: Fer médiocre : " + FerMediocre * 2 + "\n" +
@@ -51262,7 +51229,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Pierre de sel : " + Sel + "\n" +
                             ":pick: Fer médiocre : " + FerMediocre + "\n" +
@@ -52043,7 +52009,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de veau : " + Viande * 2 + "\n" +
                             ":knife: Peau de veau : " + Peau * 2 + "\n" +
@@ -52058,7 +52023,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049")
                         .addField(":knife: Chasse :", ":knife: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":knife: Viande de veau : " + Viande + "\n" +
                             ":knife: Peau de veau : " + Peau + "\n" +
@@ -52124,7 +52088,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Fer commun : " + FerCommun * 2 + "\n" +
                             ":pick: Fer rare : " + FerRare * 2 + "\n" +
@@ -52138,7 +52101,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/steamtradingcards/images/b/bf/Planet_Alcatraz_Background_Coal_mine.jpg/revision/latest?cb=20140807180230")
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Fer commun : " + FerCommun + "\n" +
                             ":pick: Fer rare : " + FerRare + "\n" +
@@ -61524,7 +61486,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            if (talkedRecently.has(message.author.id + 19)) {
+            if (/*talkedRecently.has(message.author.id + 19)*/false) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -61550,7 +61512,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Sariette commune : " + commun * 2 + "\n" +
                             ":wilted_rose: Sariette rare : " + rare * 2 + "\n" +
@@ -61563,7 +61524,6 @@ bot.on('message', message => {
                         .setColor(3447003)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/c/c9/The_Forest_of_the_Giant_Trees.png/revision/latest?cb=20130811103348")
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Sariette commune : " + commun + "\n" +
                             ":wilted_rose: Sariette rare : " + rare + "\n" +
