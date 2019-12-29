@@ -61508,29 +61508,63 @@ bot.on('message', message => {
                 const Exp = Math.floor(5 * Math.random() + 4)
                 const idRole = "544250412753092638"
                 if (roll <= chance && message.member.roles.has(idRole)) {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":wilted_rose: Sariette commune : " + commun * 2 + "\n" +
-                            ":wilted_rose: Sariette rare : " + rare * 2 + "\n" +
-                            ":wilted_rose: Sariette parfaite : " + parfait * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
-                        .setTimestamp()
-                    message.channel.send({ embed })
+                    const protect = Math.floor(100 * Math.random() + 1);
+                    if (protect <= 30) {
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":wilted_rose: Sariette commune : " + commun * 2 + "\n" +
+                                ":wilted_rose: Sariette rare : " + rare * 2 + "\n" +
+                                ":wilted_rose: Sariette parfaite : " + parfait * 2 + "\n" +
+                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":wilted_rose: Sariette commune : " + commun * 2 + "\n" +
+                                ":wilted_rose: Sariette rare : " + rare * 2 + "\n" +
+                                ":wilted_rose: Sariette parfaite : " + parfait * 2 + "\n" +
+                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre cueillette. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                                ":crossed_swords: Sariette carnivore : 1")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
                 } else {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":wilted_rose: Sariette commune : " + commun + "\n" +
-                            ":wilted_rose: Sariette rare : " + rare + "\n" +
-                            ":wilted_rose: Sariette parfaite : " + parfait + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
-                        .setTimestamp()
-                    message.channel.send({ embed })
+                    const protect = Math.floor(100 * Math.random() + 1);
+                    if (protect <= 30) {
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":wilted_rose: Sariette commune : " + commun + "\n" +
+                                ":wilted_rose: Sariette rare : " + rare + "\n" +
+                                ":wilted_rose: Sariette parfaite : " + parfait + "\n" +
+                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre cueillette. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                                ":crossed_swords: Sariette carnivore : 1")
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":wilted_rose: Sariette commune : " + commun + "\n" +
+                                ":wilted_rose: Sariette rare : " + rare + "\n" +
+                                ":wilted_rose: Sariette parfaite : " + parfait + "\n" +
+                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
                 }
             }
             talkedRecently.add(message.author.id + 19);
