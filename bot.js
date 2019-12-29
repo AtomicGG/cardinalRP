@@ -60729,7 +60729,7 @@ bot.on('message', message => {
                     ":crossed_swords: Loup(s) sombre(s) | 3000HP : " + loupSombre + "\n" +
                     ":crossed_swords: Traknide(s) | 2550HP : " + traknide + "\n" +
                     ":crossed_swords: Ataknide(s) | 2550HP : " + ataknide + "\n" +
-                    ":crossed_swords: Jeune(s) tréant(s) | 500HP | 250Def : " + jeuneTreant + "\n" +
+                    ":crossed_swords: Jeune(s) tréant(s) | 1200HP | 250Def : " + jeuneTreant + "\n" +
                     ":crossed_swords: Aigle(s) | 2550HP : " + aigle)
                 .setImage("https://i.pinimg.com/originals/74/ef/20/74ef206acce786bab2081e1fae7aa94e.jpg")
                 .setTimestamp()
@@ -60799,7 +60799,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Jeune tréant :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
             .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/cc/Treant_Sapling.png/revision/latest/scale-to-width-down/350?cb=20160913205917")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 500 :shield: 250")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 1200 :shield: 250")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Jeune tréant attaque`")
             .addField(":shield: Lorsque le jeune tréant reçoit un coup :", ":shield: `=Jeune tréant défense : [Points de dégâts de votre coup]`")
             .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Jeune tréant récompenses : [Votre niveau]`")
@@ -60928,7 +60928,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Jeune tréant :", ":crossed_swords: La terrifiante créature de feuilles et d'écorce déploie rapidement ses épaisses racines dans le sol, mais celles-ci se dirigent cette fois vers " + ciblage + " joueurs de votre groupe, sortant brusquement du sol juste en face de vous avant de venir s'écraser là où vous vous trouvez, vous infligeant " + degat + " points de dégâts. De plus, si vous êtes seul face à cette attaque, alors des racines viennent ensuite vous saisir pour vous immobiliser, empêchant toute défense jusqu'au prochain tour.\nSuite au coup, une sève poisseuse couvre votre corps et vous donne une sensation étrange, tandis que toutes vos afflictions durent un tour supplémentaire.")
+                .addField(":crossed_swords: Jeune tréant :", ":crossed_swords: La terrifiante créature de feuilles et d'écorce déploie rapidement ses épaisses racines dans le sol, mais celles-ci se dirigent cette fois vers " + ciblage + " joueurs de votre groupe, sortant brusquement du sol juste en face de vous avant de venir s'écraser là où vous vous trouvez, vous infligeant " + degat + " points de dégâts. De plus, si vous êtes seul face à cette attaque, alors des racines viennent ensuite vous saisir pour vous immobiliser, empêchant toute défense jusqu'au prochain tour même si vous bloquez tous les dégâts.\nSuite au coup, une sève poisseuse couvre votre corps et vous donne une sensation étrange, tandis que toutes vos afflictions durent un tour supplémentaire.")
             message.channel.send({ embed })
         }
         if (56 <= roll && roll <= 75) {
