@@ -803,7 +803,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les rondaches :", "Ce sont des boucliers de forme circulaire et généralement de taille moyenne.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en ??? de +1.\n\n" +
+                "Elles donnent généralement un bonus en Esquive de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup à revers : [Votre attaque]`")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/640975161855836160/800px-Rondache_-_MAP_-_I_74.jpg")
@@ -820,7 +820,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les écus :", "Ce sont des boucliers allongés par le bas.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en ??? de +1.\n\n" +
+                "Elles donnent généralement un bonus en Parade de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Détournement : [L'attaque adverse]`")
             .setImage("https://www.epees.fr/751-435-large/ecu-maitre-d39armes.jpg")
@@ -837,7 +837,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Les targes :", "Ce sont des petits boucliers qui se tenait à la main ou fixé sur l'avant-bras. Le diamètre de la targe est d'au maximum 40 centimètres. Elle est constituée exclusivement de fer et non de bois.\n\n" +
                 "Elles sont à une main !\n\n" +
-                "Elles donnent généralement un bonus en ??? de +1.\n\n" +
+                "Elles donnent généralement un bonus en Cri de provocation de +1.\n\n" +
                 "Elles vous donnent accès à la compétence suivante : \n" +
                 "`=Coup résonant : [Votre attaque]`")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/640976259022716949/telechargement.jpg")
@@ -50785,7 +50785,7 @@ bot.on('message', message => {
             hemolymphe = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 10) {
+        if (rollRessource <= 2) {
             oeufB = 1
         }
         cols = Math.floor(40 * Math.random() + 40)
@@ -50849,7 +50849,7 @@ bot.on('message', message => {
             scalp = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 10) {
+        if (rollRessource <= 2) {
             oeufB = 1
         }
         cols = Math.floor(41 * Math.random() + 40)
@@ -50913,7 +50913,7 @@ bot.on('message', message => {
             scalp = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 10) {
+        if (rollRessource <= 2) {
             oeufB = 1
         }
         cols = Math.floor(41 * Math.random() + 40)
@@ -50982,7 +50982,7 @@ bot.on('message', message => {
             cuirasse = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 10) {
+        if (rollRessource <= 2) {
             oeufB = 1
         }
         cols = Math.floor(41 * Math.random() + 40)
@@ -60876,7 +60876,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Traknide :", ":crossed_swords: L'adversaire violacé observera son ou ses adversaire(s) à la recherche d'une quelconque toile arborant ses couleurs pour faire sa proie de celui en étant recouvert.\nSi l'un des joueur a une toile violette sur lui, alors la Traknide va se balancer à l'aide d'une toile jusqu'à lui pour atterrir brutalement où il se trouve en lui ayant envoyé une nouvelle toile dans la manœuvre. Dans sa chute, il va mordre violemment sa cible en lui infligeant " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Traknide :", ":crossed_swords: L'adversaire violacé observera son ou ses adversaire(s) à la recherche d'une quelconque toile arborant ses couleurs pour faire sa proie de celui en étant recouvert.\nSi l'un des joueur a une toile violette sur lui, alors la Traknide va se balancer à l'aide d'une toile jusqu'à lui pour atterrir brutalement où il se trouve en lui ayant envoyé une nouvelle toile dans la manœuvre (esquivable). Dans sa chute, il va mordre violemment sa cible en lui infligeant " + degat + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (95 <= roll) {
@@ -60910,7 +60910,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Ataknide :", ":crossed_swords: La féroce arachnide vous faisant face prend soigneusement le temps de vous viser, avant de vous cracher une toile gluante dessus. Celle-ci vous empêche de bloquer les coups reçus pendant un tour. Profitant de la précarité de votre situation, elle se rue alors vers vous pour vous asséner une puissante attaque à l'aide de ses pattes qui vous inflige " + degatT + " points de dégâts. ")
+                .addField(":crossed_swords: Ataknide :", ":crossed_swords: La féroce arachnide vous faisant face prend soigneusement le temps de vous viser, avant de vous cracher une toile gluante dessus (esquivable). Celle-ci vous empêche de bloquer les coups reçus pendant un tour. Profitant de la précarité de votre situation, elle se rue alors vers vous pour vous asséner une puissante attaque à l'aide de ses pattes qui vous inflige " + degatT + " points de dégâts. ")
                 .setTimestamp()
             message.channel.send({ embed })
         }
