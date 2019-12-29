@@ -14476,7 +14476,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana darchic :", ":scales: C'est un katana fait à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagnés dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana darchic`")
+            .addField(":scales: Katana darchic :", ":scales: C'est un katana fait à partir des monstres insectes et boeuf du palier 2 !\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 26\n\n:sparkles: Niveau minimum dans le métier 'Forgeron' requis pour fabriquer cet objet : 5\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 2 Sabot de boeuf, 2 Dard de frelon foudroyant , 2 Fer commun, 2 Fer rare, 1 Bois de séquoia rare\n\n:sparkles: Points d'expérience gagn��s dans le métier 'Forgeron' une fois l'objet fabriqué : 20\n\n:large_orange_diamond: Prix d'achat : 1950\n\n:large_orange_diamond: Prix de revente : 480 cols\n\n:keyboard: Si vous trouvez cet objet : `=Découverte du katana darchic`\n\n:keyboard: Si vous fabriquez ou achetez cet objet : `=Fabrication du katana darchic`")
             .addField(":keyboard: Si un forgeron de profession souhaite améliorer cet objet (il aura besoin de 1 Sabot de boeuf, 1 Dard de frelon foudroyant , 1 Fer commun, 1 Fer rare, 1 Bois de séquoia rare) :", "`=Amélioration d'une arme darchic à une main : [Niveau en Forgeron]`")
             .addField(":keyboard: Si un forgeron de profession souhaite démanteler cet objet (uniquement si l'objet a été découvert ou fabriqué, pas acheté au commerce) :", "`=Démantèlement d'une arme darchic à une main`")
             .addField(":keyboard: Si un forgeron de profession souhaite fondre cet objet :", "`=Fonte du katana darchic : [Votre niveau en forgeron]`")
@@ -61001,7 +61001,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le majestueux volatile, planant au-dessus de votre tête, va alors décider de plonger en piqué dans votre direction pour venir violemment vous heurter, becs et griffes sortis qu'il déchaînera en déployant toute sa fougue, vous infligeant " + degat + " points de dégâts. Suite à cela, l'animal enragé repartira aussitôt dans les cieux, à moins d'avoir réussi une parade ou bloquer critiquement son attaque auquel cas il sera contraint de rester à basse altitude, le rendant vulnérable à vos attaques.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le majestueux volatile, planant au-dessus de votre tête, va alors décider de plonger en piqué dans votre direction pour venir violemment vous heurter, becs et griffes sortis qu'il déchaînera en déployant toute sa fougue, vous infligeant " + degat + " points de dégâts. Suite à cela, l'animal enragé repartira aussitôt dans les cieux, à moins d'avoir réussi une parade ou un bloquage, auquel cas il sera contraint de rester à basse altitude, le rendant vulnérable à vos attaques.")
             message.channel.send({ embed })
         }
         if (76 <= roll) {
@@ -61531,6 +61531,7 @@ bot.on('message', message => {
                                 ":wilted_rose: Sariette rare : " + rare * 2 + "\n" +
                                 ":wilted_rose: Sariette parfaite : " + parfait * 2 + "\n" +
                                 ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                                .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre cueillette. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Sariette carnivore : 1")
                             .setTimestamp()
@@ -61548,6 +61549,7 @@ bot.on('message', message => {
                                 ":wilted_rose: Sariette rare : " + rare + "\n" +
                                 ":wilted_rose: Sariette parfaite : " + parfait + "\n" +
                                 ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                                .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre cueillette. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Sariette carnivore : 1")
                             .setTimestamp()
