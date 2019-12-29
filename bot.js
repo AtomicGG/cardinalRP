@@ -61934,7 +61934,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            if (/*talkedRecently.has(message.author.id + 19)*/false) {
+            if (talkedRecently.has(message.author.id + 19)) {
                 const embed = new Discord.RichEmbed()
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -61955,36 +61955,36 @@ bot.on('message', message => {
                 const Exp = Math.floor(5 * Math.random() + 4)
                 const idRole = "544250415051702282"
                 if (roll <= chance && message.member.roles.has(idRole)) {
-                const protecteur = Math.floor(100 * Math.random() + 1);
-                if(protecteur <= 30){
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Malachite médiocre : " + mediocre * 2 + "\n" +
-                            ":pick: Malachite commune : " + commune * 2 + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                    const protecteur = Math.floor(100 * Math.random() + 1);
+                    if (protecteur <= 30) {
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":pick: Malachite médiocre : " + mediocre * 2 + "\n" +
+                                ":pick: Malachite commune : " + commune * 2 + "\n" +
+                                ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Golemite de malachite : 1")
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                } else {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Malachite médiocre : " + mediocre * 2 + "\n" +
-                            ":pick: Malachite commune : " + commune * 2 + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
-                        .setTimestamp()
-                    message.channel.send({ embed })
-                }
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    } else {
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":pick: Malachite médiocre : " + mediocre * 2 + "\n" +
+                                ":pick: Malachite commune : " + commune * 2 + "\n" +
+                                ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            .setTimestamp()
+                        message.channel.send({ embed })
+                    }
                 } else {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if(protecteur <= 30){
+                    if (protecteur <= 30) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -61993,22 +61993,22 @@ bot.on('message', message => {
                                 ":pick: Malachite médiocre : " + mediocre + "\n" +
                                 ":pick: Malachite commune : " + commune + "\n" +
                                 ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
-                                .addBlankField(true)
-                                .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
-                                    ":crossed_swords: Golemite de malachite : 1")
+                            .addBlankField(true)
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                                ":crossed_swords: Golemite de malachite : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
                     } else {
-                    const embed = new Discord.RichEmbed()
-                        .setColor(3447003)
-                        .setAuthor(message.author.username, message.author.avatarURL)
-                        .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                        .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
-                            ":pick: Malachite médiocre : " + mediocre + "\n" +
-                            ":pick: Malachite commune : " + commune + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
-                        .setTimestamp()
-                    message.channel.send({ embed })
+                        const embed = new Discord.RichEmbed()
+                            .setColor(3447003)
+                            .setAuthor(message.author.username, message.author.avatarURL)
+                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
+                                ":pick: Malachite médiocre : " + mediocre + "\n" +
+                                ":pick: Malachite commune : " + commune + "\n" +
+                                ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            .setTimestamp()
+                        message.channel.send({ embed })
                     }
                 }
             }
