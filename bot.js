@@ -61058,7 +61058,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Loup sombre défense")) {
         let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 1.2) + 1) * Math.random() + (degat * 1.2))
+        const echec = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.2))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
             const embed = new Discord.RichEmbed()
