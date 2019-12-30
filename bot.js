@@ -60688,39 +60688,39 @@ bot.on('message', message => {
                 roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= 60) {
                     test = test + 2 + loupSombre;
-                    if (test <= (5 + 6 * (joueurs - 1))) {
+                    if (test <= (5 + 5 * (joueurs - 1))) {
                         loupSombre = loupSombre + 1;
                     } else break;
                 }
                 roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= 50) {
                     test = test + 2 + traknide;
-                    if (test <= (5 + 6 * (joueurs - 1))) {
+                    if (test <= (5 + 5 * (joueurs - 1))) {
                         traknide = traknide + 1;
                     } else break;
                 }
                 roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= 50) {
                     test = test + 2 + ataknide;
-                    if (test <= (5 + 6 * (joueurs - 1))) {
+                    if (test <= (5 + 5 * (joueurs - 1))) {
                         ataknide = ataknide + 1;
                     } else break;
                 }
                 roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= 40) {
                     test = test + 4 + jeuneTreant;
-                    if (test <= (5 + 6 * (joueurs - 1))) {
+                    if (test <= (5 + 5 * (joueurs - 1))) {
                         jeuneTreant = jeuneTreant + 1;
                     } else break;
                 }
                 roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= 30 && aigle < 1) {
                     test = test + 4 + (2 * aigle);
-                    if (test <= (5 + 6 * (joueurs - 1))) {
+                    if (test <= (5 + 5 * (joueurs - 1))) {
                         aigle = aigle + 1;
                     } else break;
                 }
-            } while (test <= (5 + 6 * (joueurs - 1)));
+            } while (test <= (5 + 5 * (joueurs - 1)));
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
