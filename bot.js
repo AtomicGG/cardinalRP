@@ -60691,6 +60691,9 @@ bot.on('message', message => {
             if(joueurs >= 3){
                 nbr = 4;
             }
+            if(joueurs == 5){
+                nbr = 3;
+            }
             do {
                 roll = Math.floor(100 * Math.random() + 1)
                 if (roll <= 60) {
