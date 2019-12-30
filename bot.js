@@ -61058,9 +61058,9 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Loup sombre défense")) {
         let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 1.2) + 1) * Math.random() + (degat * 0.7))
+        const echec = Math.floor(((degat * 1.2) + 1) * Math.random() + (degat * 1.2))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 30) {
+        if (roll <= 20) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -61068,7 +61068,7 @@ bot.on('message', message => {
                 .addField(":shield: Loup sombre :", ":shield: Vous voyant lancer l'assaut, le canidé, certes fort mais un peu trop fier, tentera comme à son habitude de vous éviter tout en vous faisant vous écraser au sol. Malheureusement pour lui, sa fierté n'en sera que plus blessée pour cette même raison lorsque sa manœuvre échouera et que vous lui infligerez un puissant coup au bas-ventre. Sa fierté ne sera pas la seule chose blessée, puisque vous lui infligez " + echec + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (31 <= roll) {
+        if (21 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
