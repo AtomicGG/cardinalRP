@@ -7390,7 +7390,7 @@ bot.on('message', message => {
             .addField(":scales: Casque d'Asterius :", ":scales: C'est un casque issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte du casque d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte du casque d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7406,7 +7406,7 @@ bot.on('message', message => {
             .addField(":scales: Epaulières d'Asterius :", ":scales: Ce sont des épaulières issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte des épaulières d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des épaulières d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7422,7 +7422,7 @@ bot.on('message', message => {
             .addField(":scales: Plastron d'Asterius :", ":scales: C'est un plastron issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte du plastron d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte du plastron d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7438,7 +7438,7 @@ bot.on('message', message => {
             .addField(":scales: Cape d'Asterius :", ":scales: C'est une cape issue du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte de la cape d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de la cape d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7454,7 +7454,7 @@ bot.on('message', message => {
             .addField(":scales: Ceinture d'Asterius :", ":scales: C'est une ceinture issue du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de la ceinture d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7470,7 +7470,7 @@ bot.on('message', message => {
             .addField(":scales: Gantelets d'Asterius :", ":scales: Ce sont des gantelets issus du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte des gantelets d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des gantelets d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7486,7 +7486,7 @@ bot.on('message', message => {
             .addField(":scales: Jambières d'Asterius :", ":scales: Ce sont des jambières issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte des jambières d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des jambières d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7502,7 +7502,7 @@ bot.on('message', message => {
             .addField(":scales: Bottes d'Asterius :", ":scales: Ce sont des bottes issues du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 3375 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte des bottes d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte des bottes d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7531,7 +7531,7 @@ bot.on('message', message => {
             .addField(":scales: Anneau d'Asterius :", ":scales: C'est un anneau issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 7050 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'anneau d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -7547,7 +7547,7 @@ bot.on('message', message => {
             .addField(":scales: Amulette d'Asterius :", ":scales: C'est une amulette issu du combat contre le boss du palier 2, Asterius le Roi Taurus !\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 28\n\n" +
                 ":large_orange_diamond: Prix de revente : 7050 cols\n\n" +
-                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette d'Asterius`")
+                ":keyboard: Si vous trouvez cet objet : `=Découverte de l'amulette d'Asterius`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie d'Asterius`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
