@@ -61314,6 +61314,7 @@ bot.on('message', message => {
         const sclerite = Math.floor((2 - 0.57) * Math.random())
         const toile = Math.floor((2 - 0.824) * Math.random())
         const clef = Math.floor((2 - 0.947) * Math.random())
+        const oeuf = Math.floor((2 - 0.98) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 6.5
@@ -61333,6 +61334,7 @@ bot.on('message', message => {
                 ":spider: Sclérite d'arachnide' : " + sclerite + "\n" +
                 ":spider_web: Toile de traknide : " + toile + "\n" +
                 ":key: Clef arbuste  : " + clef + "\n" +
+                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -61351,6 +61353,7 @@ bot.on('message', message => {
         const arme1 = Math.floor((2 - 0.98) * Math.random())
         const arme2 = Math.floor((2 - 0.958) * Math.random())
         const clef = Math.floor((2 - 0.947) * Math.random())
+        const oeuf = Math.floor((2 - 0.98) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 6.5
@@ -61372,6 +61375,7 @@ bot.on('message', message => {
                 ":scales: Arme arachnide à une main au choix : " + arme1 + "\n" +
                 ":scales: Arme arachnide à deux mains au choix : " + arme2 + "\n" +
                 ":key: Clef arbuste  : " + clef + "\n" +
+                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -61390,6 +61394,7 @@ bot.on('message', message => {
         const armure = Math.floor((2 - 0.97) * Math.random())
         const bijou = Math.floor((2 - 0.98) * Math.random())
         const clef = Math.floor((2 - 0.947) * Math.random())
+        const oeuf = Math.floor((2 - 0.98) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 6.5
@@ -61411,6 +61416,7 @@ bot.on('message', message => {
                 ":scales: Armure lupine au choix : " + armure + "\n" +
                 ":scales: Bijou lupine au choix : " + bijou + "\n" +
                 ":key: Clef arbuste  : " + clef + "\n" +
+                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
@@ -61428,6 +61434,7 @@ bot.on('message', message => {
         const plumeOr = Math.floor((2 - 0.99) * Math.random())
         const serre = Math.floor((2 - 0.97) * Math.random())
         const clef = Math.floor((2 - 0.947) * Math.random())
+        const oeuf = Math.floor((2 - 0.98) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 6.5
@@ -61448,6 +61455,7 @@ bot.on('message', message => {
                 ":eagle: Plume d'or : " + plumeOr + "\n" +
                 ":eagle: Serre d'aigle : " + serre + "\n" +
                 ":key: Clef arbuste  : " + clef + "\n" +
+                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
