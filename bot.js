@@ -36856,7 +36856,7 @@ bot.on('message', message => {
         let amelioration = args.slice(10, position - 1);
         let degat = args.slice(position + 2);
         if (amelioration == "") {
-            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
             const degatSubis = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.8))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 10) {
@@ -36891,7 +36891,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "1") {
-            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
             const degatSubis = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.8))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 10) {
@@ -36926,7 +36926,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "2") {
-            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
             const degatSubis = Math.floor((degat * 0.17 + 1) * Math.random() + (degat * 0.8))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 10) {
@@ -36961,7 +36961,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "3") {
-            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
             const degatSubis = Math.floor((degat * 0.17 + 1) * Math.random() + (degat * 0.8))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 10) {
@@ -36996,7 +36996,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "4") {
-            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
             const degatSubis = Math.floor((degat * 0.14 + 1) * Math.random() + (degat * 0.8))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 10) {
@@ -37031,7 +37031,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "5") {
-            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
             const degatSubis = Math.floor((degat * 0.14 + 1) * Math.random() + (degat * 0.8))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 10) {
@@ -37066,7 +37066,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "6") {
-            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
             const degatSubis = Math.floor((degat * 0.11 + 1) * Math.random() + (degat * 0.8))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 10) {
@@ -37101,7 +37101,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "7") {
-            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1.1))
+            const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
             const degatSubis = Math.floor((degat * 0.11 + 1) * Math.random() + (degat * 0.8))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 10) {
@@ -38310,7 +38310,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "3") {
-            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.9))
+            const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 1.9))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 47) {
                 const embed = new Discord.RichEmbed()
@@ -38334,7 +38334,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "4") {
-            const degatInflige = Math.floor((degat * 0.8 + 1) * Math.random() + (degat * 1.9))
+            const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 1.9))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 44) {
                 const embed = new Discord.RichEmbed()
@@ -38358,7 +38358,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "5") {
-            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 2))
+            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.9))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 44) {
                 const embed = new Discord.RichEmbed()
@@ -38382,7 +38382,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "6") {
-            const degatInflige = Math.floor((degat * 0.9 + 1) * Math.random() + (degat * 2))
+            const degatInflige = Math.floor((degat * 0.7 + 1) * Math.random() + (degat * 1.9))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 41) {
                 const embed = new Discord.RichEmbed()
@@ -38406,7 +38406,7 @@ bot.on('message', message => {
             }
         }
         if (amelioration == "7") {
-            const degatInflige = Math.floor((degat * 1 + 1) * Math.random() + (degat * 2.1))
+            const degatInflige = Math.floor((degat * 0.6 + 1) * Math.random() + (degat * 2))
             const roll = Math.floor(100 * Math.random() + 1)
             if (roll <= 38) {
                 const embed = new Discord.RichEmbed()
