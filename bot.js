@@ -34510,14 +34510,14 @@ bot.on('message', message => {
 
 // Menus | Liste | Clefs
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Liste des clefs 1")) {
         message.channel.send("```Clef du donjon sauvage :\nCoûts : [Achat : X cols] [Revente : 200 cols]\nInfos : [=Clef du donjon sauvage]" +
             "Suite en écrivant :\n=Liste des clefs 2```")
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix + "Liste des clefs 2")) {
         message.channel.send("```Clef arbuste :\nCoûts : [Achat : X cols] [Revente : 500 cols]\nInfos : [=Clef arbuste]```")
     }
