@@ -49580,7 +49580,7 @@ bot.on('message', message => {
             hemolyphe = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 3) {
+        if (rollRessource <= 5) {
             oeufB = 1
         }
         cols = Math.floor(60 * Math.random() + 60)
@@ -49639,7 +49639,7 @@ bot.on('message', message => {
             hemolyphe = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 3) {
+        if (rollRessource <= 5) {
             oeufB = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
@@ -49752,7 +49752,7 @@ bot.on('message', message => {
             Venin = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 3) {
+        if (rollRessource <= 5) {
             Oeufs = 1
         }
         cols = Math.floor(51 * Math.random() + 50)
@@ -49821,7 +49821,7 @@ bot.on('message', message => {
             hemolyphe = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 3) {
+        if (rollRessource <= 5) {
             oeufB = 1
         }
         cols = Math.floor(81 * Math.random() + 80)
@@ -50617,7 +50617,7 @@ bot.on('message', message => {
             hemolymphe = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 2) {
+        if (rollRessource <= 5) {
             oeufB = 1
         }
         cols = Math.floor(40 * Math.random() + 40)
@@ -50679,7 +50679,7 @@ bot.on('message', message => {
             scalp = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 2) {
+        if (rollRessource <= 5) {
             oeufB = 1
         }
         cols = Math.floor(41 * Math.random() + 40)
@@ -50741,7 +50741,7 @@ bot.on('message', message => {
             scalp = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 2) {
+        if (rollRessource <= 5) {
             oeufB = 1
         }
         cols = Math.floor(41 * Math.random() + 40)
@@ -50808,7 +50808,7 @@ bot.on('message', message => {
             cuirasse = 1
         }
         rollRessource = Math.floor(100 * Math.random() + 1);
-        if (rollRessource <= 2) {
+        if (rollRessource <= 5) {
             oeufB = 1
         }
         cols = Math.floor(41 * Math.random() + 40)
@@ -51678,7 +51678,7 @@ bot.on('message', message => {
         oreille = Math.floor((2 - 0.666) * Math.random())
         sabot = Math.floor((2 - 0.666) * Math.random())
         lait = Math.floor((2 - 0.749) * Math.random())
-        oeufB = Math.floor((2 - 0.98) * Math.random())
+        oeufB = Math.floor((2 - 0.947) * Math.random())
         armureBovin = Math.floor((2 - 0.97) * Math.random())
         bijouBovin = Math.floor((2 - 0.98) * Math.random())
         cols = Math.floor(41 * Math.random() + 90)
@@ -51730,7 +51730,7 @@ bot.on('message', message => {
         corne = Math.floor((2 - 0.666) * Math.random())
         sabot = Math.floor((2 - 0.666) * Math.random())
         intestin = Math.floor((2 - 0.78) * Math.random())
-        oeufB = Math.floor((2 - 0.98) * Math.random())
+        oeufB = Math.floor((2 - 0.947) * Math.random())
         armeUneMainBovin = Math.floor((2 - 0.98) * Math.random())
         armeDeuxMainBovin = Math.floor((2 - 0.958) * Math.random())
         cols = Math.floor(41 * Math.random() + 105)
