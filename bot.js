@@ -61582,7 +61582,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Tréantin de manioc :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/656685405311074347/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.png")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659487025661214739/Treantin.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréantin de manioc attaque`")
             .addField(":shield: Lorsque le tréantin de manioc reçoit un coup :", ":shield: `=Tréantin de manioc défense : [Points de dégâts de votre coup]`")
@@ -61592,17 +61592,17 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
-    if (message.content === (prefix) + "Loup sombre") {
+bot.on('message', message => {
+    if (message.content === (prefix) + "Piranha sahuagin") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Loup sombre :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/656685405311074347/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Loup sombre attaque`")
-            .addField(":shield: Lorsque le loup sombre reçoit un coup :", ":shield: `=Loup sombre défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Loup sombre récompenses : [Votre niveau]`")
+            .setTitle(":japanese_ogre: Piranha sahuagin :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659490553909739531/Colrum.png")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Piranha sahuagin attaque`")
+            .addField(":shield: Lorsque le piranha sahuagin reçoit un coup :", ":shield: `=Piranha sahuagin défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Piranha sahuagin récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -62822,6 +62822,145 @@ bot.on('message', message => {
                 .setColor(3447003)
                 .addField(":shield: Counter :", ":shield: Vous vous protégez du coup de votre adversaire.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Elf épéiste attaque")) {
+        const degat = Math.floor(51 * Math.random() + 250)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 70) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":crossed_swords: L'elf épéiste vous donne un coup d'épée dans votre flan, vous infligeant " + degat + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (71 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":crossed_swords: L'elf épéiste tente de vous donner un coup d'épée mais rate.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Elf épéiste défense")) {
+        let position = args.indexOf(":");
+        let degat = args.slice(position + 2);
+        const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+            const degatEchec = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.75))
+            const degatReussite = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.45))
+            const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 0.25))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 5) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":shield: L'elf épéiste tente de bloquer votre coup mais cela ne fonctionne pas du tout, vous lui infligez " + degatEchecCrit + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (6 <= roll && roll <= 45) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":shield: L'elf épéiste tente de bloquer votre coup mais cela ne fonctionne pas beaucoup, vous ne lui infligez que " + degatEchec + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (46 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":shield: L'elf épéiste tente de bloquer votre coup et cela fonctionne assez bien, vous ne lui infligez que " + degatReussite + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":shield: L'elf épéiste tente de bloquer votre coup et cela fonctionne très bien, vous ne lui infligez que " + degatReussiteCrit + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Elf lancier attaque")) {
+        const degat = Math.floor(41 * Math.random() + 150)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 65) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":crossed_swords: L'elf lancier vous donne un coup de lance dans votre poitrail, vous infligeant " + degat + " points de dégâts perce armure.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (66 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":crossed_swords: L'elf lancier tente de vous donner un coup de lance mais rate.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Elf lancier défense")) {
+        let position = args.indexOf(":");
+        let degat = args.slice(position + 2);
+        const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
+            const degatSubis = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.8))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 10) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":shield: L'elf lance tente d'esquiver votre coup mais cela ne fonctionne pas du tout, vous lui infligez " + degatSubisCrit + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (11 <= roll && roll <= 50) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":shield: L'elf épéiste tente d'esquiver votre coup mais cela ne fonctionne pas beaucoup, vous ne lui infligez que " + degatSubis + " points de dégâts.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (51 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Elf :", ":shield: L'elf épéiste esquive votre coup avec une facilité déconcertante.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
