@@ -60639,7 +60639,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Traknide :", ":crossed_swords: L'adversaire violacé observera son ou ses adversaire(s) à la recherche d'une quelconque toile arborant ses couleurs pour faire sa proie de celui en étant recouvert.\nRegardant la personne avec le plus de toile sur lui, alors la Traknide va se balancer à l'aide d'une toile jusqu'à lui pour atterrir brutalement où il se trouve en lui ayant envoyé une nouvelle toile dans la manœuvre (esquivable). Dans sa chute, il va mordre violemment sa cible en lui infligeant " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Traknide :", ":crossed_swords: L'adversaire violacé observera son ou ses adversaire(s) à la recherche d'une quelconque toile arborant ses couleurs pour faire sa proie de celui en étant recouvert.\nRegardant la personne avec le plus de toile sur lui, même si l'araignée a été provoquée, alors la Traknide va se balancer à l'aide d'une toile jusqu'à lui pour atterrir brutalement où il se trouve en lui ayant envoyé une nouvelle toile dans la manœuvre (esquivable). Dans sa chute, il va mordre violemment sa cible en lui infligeant " + degat + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (95 <= roll) {
