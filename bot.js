@@ -62121,51 +62121,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Coup autre")) {
-        let position = args.indexOf(":");
-        let atk = args.slice(position + 2);
-        const premier = Math.floor((degats * 0.3 + 1) * Math.random() + (degats * 0.5))
-        const deuxieme = Math.floor((degats * 0.3 + 1) * Math.random() + (degats * 0.5))
-        const troisieme = Math.floor(degats * 0.3 * Math.random() + (degats * 0.7))
-        const quatrieme = Math.floor(degats * 0.3 * Math.random() + (degats * 0.8))
-        const total = premier + deuxieme + troisieme + quatrieme
-        const totalT = premier + deuxieme
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 10) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Coup puissant :", ":crossed_swords: Vous ratez votre coup, votre adversaire pourra attaquer deux fois.")
-                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (11 <= roll && roll <= 95) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Coup puissant :", ":crossed_swords: :crossed_swords: Vous réussissez votre coup qui inflige `" + premier + "` points de dégâts et `" + deuxieme + "` qui inflige `" + totalT + "` points de dégâts au total !.")
-                .setImage("https://akibento.com/blog/wp-content/uploads/2016/11/SifAkiMSE5.jpg")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (96 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Coup puissant :", ":crossed_swords: Vous réussissez série de coups qui inflige `" + premier + "` points de dégâts et `" + deuxieme + "` et `" + troisieme + "` points de dégâts et `" + quatrieme + "` inflige `" + total + "` points de dégâts au total qui ne peut être esquiver ou contré!.")
-                .setImage("https://thumbs.gfycat.com/PossibleBitterIndianelephant-size_restricted.gif")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    const args = message.content;
     if (message.content.startsWith(prefix + "Coup rapide")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
