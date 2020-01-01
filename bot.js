@@ -31618,7 +31618,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31627,7 +31627,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31636,7 +31636,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31657,7 +31657,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31666,7 +31666,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31675,7 +31675,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31696,7 +31696,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune mineure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31705,7 +31705,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune commune d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31714,7 +31714,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Rondache arachnide :", "Vous obtenez une rune majeure d'esquive.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31766,7 +31766,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31775,7 +31775,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31784,7 +31784,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31805,7 +31805,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31814,7 +31814,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31823,7 +31823,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31844,7 +31844,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune mineure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31853,7 +31853,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune commune de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31862,7 +31862,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Ecu arachnide :", "Vous obtenez une rune majeure de parade.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31914,7 +31914,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31923,7 +31923,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31932,7 +31932,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31953,7 +31953,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31962,7 +31962,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31971,7 +31971,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -31992,7 +31992,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune mineure de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -32001,7 +32001,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune commune de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -32010,7 +32010,7 @@ bot.on('message', message => {
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                         .setColor(3447003)
-                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de blocage.")
+                        .addField(":scales: Targe arachnide :", "Vous obtenez une rune majeure de cri de provocation.")
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -61036,7 +61036,7 @@ bot.on('message', message => {
         const oeuf = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6.5
+        const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
         const roll = Math.floor(41 * Math.random() + 40) / 10
@@ -61073,7 +61073,7 @@ bot.on('message', message => {
         const oeuf = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6.5
+        const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
         const roll = Math.floor(41 * Math.random() + 40) / 10
@@ -61112,7 +61112,7 @@ bot.on('message', message => {
         const oeuf = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6.5
+        const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
         const roll = Math.floor(41 * Math.random() + 40) / 10
@@ -61153,7 +61153,7 @@ bot.on('message', message => {
         const oeuf = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6.5
+        const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
         const roll = Math.floor(41 * Math.random() + 40) / 10
@@ -61193,7 +61193,7 @@ bot.on('message', message => {
         const oeuf = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 6.5
+        const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
         const roll = Math.floor(41 * Math.random() + 40) / 10
