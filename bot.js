@@ -62121,6 +62121,47 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
+    if (message.content.startsWith(prefix + "Coup perçant")) {
+        let position = args.indexOf(":");
+        let atk = args.slice(position + 2);
+        const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
+        const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.8))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 25) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup perçant :", ":crossed_swords: Vous ratez votre coup, votre adversaire pourra attaquer deux fois.")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (26 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup perçant :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts perce armure.")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/81/SAO_duel.png/revision/latest?cb=20140314041239")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup perçant :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit + "` points de dégâts perce armure et et le désoriente qui l'empêche d'attaquer au prochain tour.")
+                .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/8/81/SAO_duel.png/revision/latest?cb=20140314041239")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
     if (message.content.startsWith(prefix + "Coup rapide")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
@@ -62261,7 +62302,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Bloque :", ":shield: Vous ratez critiquement votre bloquage et votre garde est bien ouverte pour que votre adversaire vous attaque de nouveau sans que vous pouvez vous défendre et subissez `" + degatEchecCrit + "` points de dégâts.")
+                .addField(":shield: Bloque :", ":shield: Vous ratez critiquement votre blocage et votre garde est bien ouverte pour que votre adversaire vous attaque de nouveau sans que vous pouvez vous défendre et subissez `" + degatEchecCrit + "` points de dégâts.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62271,7 +62312,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Bloque :", ":shield: Vous ratez votre contre et subissez `" + degatEchec + "` points de dégâts.")
+                .addField(":shield: Bloque :", ":shield: Vous ratez votre blocage et subissez `" + degatEchec + "` points de dégâts.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62281,7 +62322,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Bloque :", ":shield: Vous bloquer le coup mais vous pouvez pas attaquer en retour.")
+                .addField(":shield: Bloque :", ":shield: Vous blocage le coup mais vous pouvez pas attaquer en retour.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62291,7 +62332,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Bloque :", ":shield: Vous bloquer le coup de votre adversaire et vous pouvez attaquez derrière de suite.")
+                .addField(":shield: Bloque :", ":shield: Vous blocage le coup de votre adversaire et vous pouvez attaquez derrière de suite.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62301,7 +62342,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Shunpo")) {
+    if (message.content.startsWith(prefix + "Roulade")) {
         let position = args.indexOf(":");
         let degat = args.slice(position + 2);
         const degatEchecCrit = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1))
@@ -62312,7 +62353,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Shunpo :", ":shield: Vous ratez critiquement votre esquive et et vous subissez `" + degatEchecCrit + "` points de dégâts et vous ne pouvez pas attaquer de nouveau.")
+                .addField(":shield: Roulade :", ":shield: Vous ratez critiquement votre esquive et et vous subissez `" + degatEchecCrit + "` points de dégâts et vous ne pouvez pas attaquer de nouveau.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62322,7 +62363,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Shunpo :", ":shield: Vous ratez votre esquive et subissez `" + degatEchec + "` points de dégâts.")
+                .addField(":shield: Roulade :", ":shield: Vous ratez votre esquive et subissez `" + degatEchec + "` points de dégâts.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62332,7 +62373,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Shunpo :", ":shield: Vous esquivez le coup si c'est un __coup puissant__ si ce n'est pas le cas, vous ratez votre esquive et subissez `" + degatEchec + "` points de dégâts.")
+                .addField(":shield: Roulade :", ":shield: Vous esquivez le coup si c'est un __coup puissant__ si ce n'est pas le cas, vous ratez votre esquive et subissez `" + degatEchec + "` points de dégâts.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62342,7 +62383,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Shunpo :", ":shield: Vous esquiver le coup de votre adversaire.")
+                .addField(":shield: Roulade :", ":shield: Vous esquiver le coup de votre adversaire.")
                 .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
