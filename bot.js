@@ -34561,7 +34561,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .addField("Le craft :", "Pour continuer votre aventure, et surtout survivre contre les monstres ainsi que les joueurs, il vous faudra fabriquer toutes sortes de choses, on appelle aussi cela du 'Craft' !\n\n" +
                 "Pour craft un objet, il vous faudra les matériaux nécessaires pour le faire, ainsi que le niveau minimum pour l'utiliser et le niveau de métier minimum requis !\n\n" +
-                "Craft un objet prendra un certain temps, et il vous rapportera de l'expérience dans une métier, et si vous avez de la chance l'objet sera d'une bonne qualité !\n\n" +
+                "Craft un objet prendra un certain temps, et il vous rapportera de l'expérience dans un métier, et si vous avez de la chance l'objet sera d'une bonne qualité !\n\n" +
                 "Pour voir les informations sur un objet, s'il se craft ou non ainsi que les informations, écrivez :\n\n`=[Nom de l'objet]`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -43326,7 +43326,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .addField(":crossed_swords: Coup en rafale :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
                 .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -43336,7 +43336,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` et `" + degat3 + "` points de dégâts.")
+                .addField(":crossed_swords: Coup en rafale :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` et `" + degat3 + "` points de dégâts.")
                 .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -43346,7 +43346,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` et `" + degat3 + "` points de dégâts ainsi qu'un coup final infligeant `" + degatcrit + "`. Ce coup final donne une chance bonus d'infliger les dégâts d'enchantement de l'arme.")
+                .addField(":crossed_swords: Coup en rafale :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` et `" + degat3 + "` points de dégâts ainsi qu'un coup final infligeant `" + degatcrit + "`. Ce coup final donne une chance bonus d'infliger les dégâts d'enchantement de l'arme.")
                 .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -44667,7 +44667,7 @@ bot.on('message', message => {
                             ":wilted_rose: Persil : " + Persils * 2 + "\n" +
                             ":wilted_rose: Herbe médicinale faible : " + Herbe * 2 + "\n" +
                             ":wilted_rose: Baie : " + Baies * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -44679,7 +44679,7 @@ bot.on('message', message => {
                             ":wilted_rose: Persil : " + Persils + "\n" +
                             ":wilted_rose: Herbe médicinale faible : " + Herbe + "\n" +
                             ":wilted_rose: Baie : " + Baies + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -44743,7 +44743,7 @@ bot.on('message', message => {
                             ":knife: Peau de lapin : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de lapin : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de lapin : " + Oeil * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -44756,7 +44756,7 @@ bot.on('message', message => {
                             ":knife: Peau de lapin : " + Peau + "\n" +
                             ":cupid: Coeur de lapin : " + Coeur + "\n" +
                             ":eye: Oeil de lapin : " + Oeil + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -45740,7 +45740,7 @@ bot.on('message', message => {
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre médiocre : " + CuivreMediocre * 2 + "\n" +
                             ":pick: Cuivre commun : " + CuivreCommun * 2 + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -45751,7 +45751,7 @@ bot.on('message', message => {
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre médiocre : " + CuivreMediocre + "\n" +
                             ":pick: Cuivre commun : " + CuivreCommun + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -45811,7 +45811,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre * 2 + "\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun * 2 + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -45822,7 +45822,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre + "\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -45886,7 +45886,7 @@ bot.on('message', message => {
                             ":knife: Peau de taupe : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de taupe : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de taupe : " + Oeil * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -45899,7 +45899,7 @@ bot.on('message', message => {
                             ":knife: Peau de taupe : " + Peau + "\n" +
                             ":cupid: Coeur de taupe : " + Coeur + "\n" +
                             ":eye: Oeil de taupe : " + Oeil + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -47410,7 +47410,7 @@ bot.on('message', message => {
                             ":wilted_rose: Basilic : " + Basilic * 2 + "\n" +
                             ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre * 2 + "\n" +
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -47422,7 +47422,7 @@ bot.on('message', message => {
                             ":wilted_rose: Basilic : " + Basilic + "\n" +
                             ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre + "\n" +
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -47482,7 +47482,7 @@ bot.on('message', message => {
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre commun : " + CuivreCommun * 2 + "\n" +
                             ":pick: Cuivre rare : " + CuivreRare * 2 + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -47493,7 +47493,7 @@ bot.on('message', message => {
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre commun : " + CuivreCommun + "\n" +
                             ":pick: Cuivre rare : " + CuivreRare + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -47553,7 +47553,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun * 2 + "\n" +
                             ":deciduous_tree: Bois de frêne rare : " + BoisRare * 2 + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -47564,7 +47564,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
                             ":deciduous_tree: Bois de frêne rare : " + BoisRare + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -47628,7 +47628,7 @@ bot.on('message', message => {
                             ":knife: Peau de ragondin : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de ragondin : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de ragondin : " + Oeil * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -47641,7 +47641,7 @@ bot.on('message', message => {
                             ":knife: Peau de ragondin : " + Peau + "\n" +
                             ":cupid: Coeur de ragondin : " + Coeur + "\n" +
                             ":eye: Oeil de ragondin : " + Oeil + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -48486,7 +48486,7 @@ bot.on('message', message => {
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun * 2 + "\n" +
                             ":wilted_rose: Plantrus rare : " + PlantrusRare * 2 + "\n" +
                             ":wilted_rose: Plantrus parfait : " + PlantrusParfait * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -48498,7 +48498,7 @@ bot.on('message', message => {
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
                             ":wilted_rose: Plantrus rare : " + PlantrusRare + "\n" +
                             ":wilted_rose: Plantrus parfait : " + PlantrusParfait + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -48560,7 +48560,7 @@ bot.on('message', message => {
                             ":pick: Cuivre rare : " + CuivreRare * 2 + "\n" +
                             ":pick: Cuivre parfait : " + CuivreParfait * 2 + "\n" +
                             ":pick: Pierre de feu faible : " + Feu * 2 + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -48572,7 +48572,7 @@ bot.on('message', message => {
                             ":pick: Cuivre rare : " + CuivreRare + "\n" +
                             ":pick: Cuivre parfait : " + CuivreParfait + "\n" +
                             ":pick: Pierre de feu faible : " + Feu + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -49898,7 +49898,7 @@ bot.on('message', message => {
                             ":wilted_rose: Lierre commun : " + LierreCommun * 2 + "\n" +
                             ":wilted_rose: Lierre rare : " + LierreRare * 2 + "\n" +
                             ":wilted_rose: Lierre parfait : " + LierreParfait * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -49910,7 +49910,7 @@ bot.on('message', message => {
                             ":wilted_rose: Lierre commun : " + LierreCommun + "\n" +
                             ":wilted_rose: Lierre rare : " + LierreRare + "\n" +
                             ":wilted_rose: Lierre parfait : " + LierreParfait + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -49974,7 +49974,7 @@ bot.on('message', message => {
                             ":knife: Peau de lièvre : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de lièvre : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de lièvre : " + Oeil * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -49987,7 +49987,7 @@ bot.on('message', message => {
                             ":knife: Peau de lièvre : " + Peau + "\n" +
                             ":cupid: Coeur de lièvre : " + Coeur + "\n" +
                             ":eye: Oeil de lièvre : " + Oeil + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -50047,7 +50047,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre * 2 + "\n" +
                             ":deciduous_tree: Bois de séquoia commun : " + BoisCommun * 2 + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -50058,7 +50058,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
                             ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -50885,7 +50885,7 @@ bot.on('message', message => {
                             ":wilted_rose: Lierre d'antidote : " + LierreAntidote * 2 + "\n" +
                             ":wilted_rose: Lierre de soin : " + LierreSoin * 2 + "\n" +
                             ":wilted_rose: Lierre d'air : " + LierreAir * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -50897,7 +50897,7 @@ bot.on('message', message => {
                             ":wilted_rose: Lierre d'antidote : " + LierreAntidote + "\n" +
                             ":wilted_rose: Lierre de soin : " + LierreSoin + "\n" +
                             ":wilted_rose: Lierre d'air : " + LierreAir + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -50961,7 +50961,7 @@ bot.on('message', message => {
                             ":knife: Peau de desman : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de desman : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de desman : " + Oeil * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -50974,7 +50974,7 @@ bot.on('message', message => {
                             ":knife: Peau de desman : " + Peau + "\n" +
                             ":cupid: Coeur de desman : " + Coeur + "\n" +
                             ":eye: Oeil de desman : " + Oeil + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -51038,7 +51038,7 @@ bot.on('message', message => {
                             ":pick: Fer médiocre : " + FerMediocre * 2 + "\n" +
                             ":pick: Fer commun : " + FerCommun * 2 + "\n" +
                             ":pick: Fer rare : " + FerRare * 2 + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -51051,7 +51051,7 @@ bot.on('message', message => {
                             ":pick: Fer médiocre : " + FerMediocre + "\n" +
                             ":pick: Fer commun : " + FerCommun + "\n" +
                             ":pick: Fer rare : " + FerRare + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -51810,7 +51810,7 @@ bot.on('message', message => {
                             ":knife: Peau de veau : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de veau : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de veau : " + Oeil * 2 + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -51823,7 +51823,7 @@ bot.on('message', message => {
                             ":knife: Peau de veau : " + Peau + "\n" +
                             ":cupid: Coeur de veau : " + Coeur + "\n" +
                             ":eye: Oeil de veau : " + Oeil + "\n" +
-                            ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                            ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -51885,7 +51885,7 @@ bot.on('message', message => {
                             ":pick: Fer commun : " + FerCommun * 2 + "\n" +
                             ":pick: Fer rare : " + FerRare * 2 + "\n" +
                             ":pick: Fer parfait : " + FerParfait * 2 + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -51897,7 +51897,7 @@ bot.on('message', message => {
                             ":pick: Fer commun : " + FerCommun + "\n" +
                             ":pick: Fer rare : " + FerRare + "\n" +
                             ":pick: Fer parfait : " + FerParfait + "\n" +
-                            ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                            ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -51957,7 +51957,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia commun : " + BoisCommun * 2 + "\n" +
                             ":deciduous_tree: Bois de séquoia rare : " + BoisRare * 2 + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -51968,7 +51968,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
                             ":deciduous_tree: Bois de séquoia rare : " + BoisRare + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -52249,7 +52249,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia rare : " + BoisRare * 2 + "\n" +
                             ":deciduous_tree: Bois de séquoia parfait : " + BoisParfait * 2 + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -52260,7 +52260,7 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia rare : " + BoisRare + "\n" +
                             ":deciduous_tree: Bois de séquoia parfait : " + BoisParfait + "\n" +
-                            ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                            ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -52324,7 +52324,7 @@ bot.on('message', message => {
                             ":fish: Crevette : " + crevette * 2 + "\n" +
                             ":fish: Truite : " + truite * 2 + "\n" +
                             ":fish: Crabe : " + crabe * 2 + "\n" +
-                            ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
+                            ":fish: Points d'expérience dans le métier 'Pêcheur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 } else {
@@ -52337,7 +52337,7 @@ bot.on('message', message => {
                             ":fish: Crevette : " + crevette + "\n" +
                             ":fish: Truite : " + truite + "\n" +
                             ":fish: Crabe : " + crabe + "\n" +
-                            ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
+                            ":fish: Points d'expérience dans le métier 'Pêcheur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
                 }
@@ -61289,7 +61289,7 @@ bot.on('message', message => {
                                 ":wilted_rose: Sariette commune : " + commun * 2 + "\n" +
                                 ":wilted_rose: Sariette rare : " + rare * 2 + "\n" +
                                 ":wilted_rose: Sariette parfaite : " + parfait * 2 + "\n" +
-                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                                ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     } else {
@@ -61301,7 +61301,7 @@ bot.on('message', message => {
                                 ":wilted_rose: Sariette commune : " + commun * 2 + "\n" +
                                 ":wilted_rose: Sariette rare : " + rare * 2 + "\n" +
                                 ":wilted_rose: Sariette parfaite : " + parfait * 2 + "\n" +
-                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                                ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre cueillette. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Sariette carnivore : 1")
@@ -61319,7 +61319,7 @@ bot.on('message', message => {
                                 ":wilted_rose: Sariette commune : " + commun + "\n" +
                                 ":wilted_rose: Sariette rare : " + rare + "\n" +
                                 ":wilted_rose: Sariette parfaite : " + parfait + "\n" +
-                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                                ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre cueillette. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Sariette carnivore : 1")
@@ -61334,7 +61334,7 @@ bot.on('message', message => {
                                 ":wilted_rose: Sariette commune : " + commun + "\n" +
                                 ":wilted_rose: Sariette rare : " + rare + "\n" +
                                 ":wilted_rose: Sariette parfaite : " + parfait + "\n" +
-                                ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
+                                ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
@@ -61397,7 +61397,7 @@ bot.on('message', message => {
                             .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":deciduous_tree: Bois de manioc impur : " + impur * 2 + "\n" +
                                 ":deciduous_tree: Bois de manioc pur : " + pur * 2 + "\n" +
-                                ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                                ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Tréantin de manioc : 1")
@@ -61411,7 +61411,7 @@ bot.on('message', message => {
                             .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":deciduous_tree: Bois de manioc impur : " + impur * 2 + "\n" +
                                 ":deciduous_tree: Bois de manioc pur : " + pur * 2 + "\n" +
-                                ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                                ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
@@ -61425,7 +61425,7 @@ bot.on('message', message => {
                             .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":deciduous_tree: Bois de manioc impur : " + impur + "\n" +
                                 ":deciduous_tree: Bois de manioc pur : " + pur + "\n" +
-                                ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                                ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Tréantin de manioc : 1")
@@ -61439,7 +61439,7 @@ bot.on('message', message => {
                             .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":deciduous_tree: Bois de manioc impur : " + impur + "\n" +
                                 ":deciduous_tree: Bois de manioc pur : " + pur + "\n" +
-                                ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
+                                ":deciduous_tree: Points d'expérience dans le métier 'Bûcheron' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
@@ -61502,7 +61502,7 @@ bot.on('message', message => {
                             .addField(":fish: Pêcheur :", ":fish: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":fish: Petit piranha : " + petit * 2 + "\n" +
                                 ":fish: Grand piranha : " + grand * 2 + "\n" +
-                                ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
+                                ":fish: Points d'expérience dans le métier 'Pêcheur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Piranha sahuagin : 1")
@@ -61516,7 +61516,7 @@ bot.on('message', message => {
                             .addField(":fish: Pêcheur :", ":fish: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":fish: Petit piranha : " + petit * 2 + "\n" +
                                 ":fish: Grand piranha : " + grand * 2 + "\n" +
-                                ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
+                                ":fish: Points d'expérience dans le métier 'Pêcheur' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
@@ -61530,7 +61530,7 @@ bot.on('message', message => {
                             .addField(":fish: Pêcheur :", ":fish: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":fish: Petit piranha : " + petit + "\n" +
                                 ":fish: Grand piranha : " + grand + "\n" +
-                                ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
+                                ":fish: Points d'expérience dans le métier 'Pêcheur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Piranha sahuagin : 1")
@@ -61544,7 +61544,7 @@ bot.on('message', message => {
                             .addField(":fish: Pêcheur :", ":fish: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":fish: Petit piranha : " + petit + "\n" +
                                 ":fish: Grand piranha : " + grand + "\n" +
-                                ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
+                                ":fish: Points d'expérience dans le métier 'Pêcheur' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
@@ -61627,7 +61627,7 @@ bot.on('message', message => {
                                 ":knife: Viande de marcassin : " + Viande * 2 + "\n" +
                                 ":knife: Peau de marcassin : " + Peau * 2 + "\n" +
                                 ":cupid: Coeur de marcassin : " + Coeur * 2 + "\n" +
-                                ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                                ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Phacochère : 1")
@@ -61642,7 +61642,7 @@ bot.on('message', message => {
                                 ":knife: Viande de marcassin : " + Viande * 2 + "\n" +
                                 ":knife: Peau de marcassin : " + Peau * 2 + "\n" +
                                 ":cupid: Coeur de marcassin : " + Coeur * 2 + "\n" +
-                                ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                                ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
@@ -61657,7 +61657,7 @@ bot.on('message', message => {
                                 ":knife: Viande de marcassin : " + Viande + "\n" +
                                 ":knife: Peau de marcassin : " + Peau + "\n" +
                                 ":cupid: Coeur de marcassin : " + Coeur + "\n" +
-                                ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                                ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Phacochère : 1")
@@ -61672,7 +61672,7 @@ bot.on('message', message => {
                                 ":knife: Viande de marcassin : " + Viande + "\n" +
                                 ":knife: Peau de marcassin : " + Peau + "\n" +
                                 ":cupid: Coeur de marcassin : " + Coeur + "\n" +
-                                ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
+                                ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
@@ -61735,7 +61735,7 @@ bot.on('message', message => {
                             .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":pick: Malachite médiocre : " + mediocre * 2 + "\n" +
                                 ":pick: Malachite commune : " + commune * 2 + "\n" +
-                                ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                                ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Golemite de malachite : 1")
@@ -61749,7 +61749,7 @@ bot.on('message', message => {
                             .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":pick: Malachite médiocre : " + mediocre * 2 + "\n" +
                                 ":pick: Malachite commune : " + commune * 2 + "\n" +
-                                ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                                ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
@@ -61763,7 +61763,7 @@ bot.on('message', message => {
                             .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":pick: Malachite médiocre : " + mediocre + "\n" +
                                 ":pick: Malachite commune : " + commune + "\n" +
-                                ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                                ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                             .addBlankField(true)
                             .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Golemite de malachite : 1")
@@ -61777,7 +61777,7 @@ bot.on('message', message => {
                             .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                                 ":pick: Malachite médiocre : " + mediocre + "\n" +
                                 ":pick: Malachite commune : " + commune + "\n" +
-                                ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
+                                ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                             .setTimestamp()
                         message.channel.send({ embed })
                     }
