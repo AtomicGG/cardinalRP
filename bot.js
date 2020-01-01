@@ -43918,7 +43918,6 @@ bot.on('message', message => {
         const rollxp = Math.floor(11 * Math.random() + 5) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
         const cols = Math.floor(30 * Math.random() + 30)
-        const flocon = Math.floor(41 * Math.random() + 30)
         let potionFaibleSoin = 0
         let stuffPeauArrache = 0
         let roll = Math.floor(100 * Math.random() + 1);
@@ -43940,7 +43939,6 @@ bot.on('message', message => {
             .addField(":bookmark: Quête des plaines :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":syringe: Potion faible de soin : " + potionFaibleSoin + "\n" +
                 ":scales: Equipement en peau arraché au choix : " + stuffPeauArrache)
             .setTimestamp()
@@ -44399,7 +44397,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Renard récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let Viande = 0
         let Peau = 0
         let Oeil = 0
@@ -44432,7 +44429,6 @@ bot.on('message', message => {
                 ":cupid: Coeur de renard : " + Coeur + "\n" +
                 ":gem: Oeuf déformé : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -44444,7 +44440,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Sanglier récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let Viande = 0
         let Peau = 0
         let Oeil = 0
@@ -44477,7 +44472,6 @@ bot.on('message', message => {
                 ":cupid: Coeur de sanglier : " + Coeur + "\n" +
                 ":gem: Oeuf déformé : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -44489,7 +44483,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Chien récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let Viande = 0
         let Peau = 0
         let Oeil = 0
@@ -44522,7 +44515,6 @@ bot.on('message', message => {
                 ":cupid: Coeur de chien : " + Coeur + "\n" +
                 ":gem: Oeuf déformé : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -44534,7 +44526,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bandit débutant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let stuffPeauArrache = 0
         let bijouxAnimal = 0
         let potionFaibleSoin = 0
@@ -44573,7 +44564,6 @@ bot.on('message', message => {
                 ":meat_on_bone: Ragoût de renard : " + ragoutRenard + "\n" +
                 ":meat_on_bone: Ragoût de lapin : " + ragoutLapin + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -44585,7 +44575,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Lapin géant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let Viande = 0
         let Peau = 0
         let Oeil = 0
@@ -44621,7 +44610,6 @@ bot.on('message', message => {
                 ":gem: Oreille de lapin géant : " + Oreille + "\n" +
                 ":gem: Oeuf déformé : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -44661,7 +44649,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -44680,7 +44667,6 @@ bot.on('message', message => {
                             ":wilted_rose: Persil : " + Persils * 2 + "\n" +
                             ":wilted_rose: Herbe médicinale faible : " + Herbe * 2 + "\n" +
                             ":wilted_rose: Baie : " + Baies * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -44693,7 +44679,6 @@ bot.on('message', message => {
                             ":wilted_rose: Persil : " + Persils + "\n" +
                             ":wilted_rose: Herbe médicinale faible : " + Herbe + "\n" +
                             ":wilted_rose: Baie : " + Baies + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -44738,7 +44723,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -44759,7 +44743,6 @@ bot.on('message', message => {
                             ":knife: Peau de lapin : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de lapin : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de lapin : " + Oeil * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -44773,7 +44756,6 @@ bot.on('message', message => {
                             ":knife: Peau de lapin : " + Peau + "\n" +
                             ":cupid: Coeur de lapin : " + Coeur + "\n" +
                             ":eye: Oeil de lapin : " + Oeil + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -44888,7 +44870,6 @@ bot.on('message', message => {
         const rollxp = Math.floor(11 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
         const cols = Math.floor(50 * Math.random() + 50)
-        const flocon = Math.floor(41 * Math.random() + 30)
         let potionLegereSoin = 0
         let stuffPeauResistante = 0
         let clefDonjonSauvage = 0
@@ -44915,7 +44896,6 @@ bot.on('message', message => {
             .addField(":bookmark: Quête de la forêt :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":syringe: Potion légère de soin : " + potionLegereSoin + "\n" +
                 ":scales: Equipement en peau résistante au choix : " + stuffPeauResistante + "\n" +
                 ":scales: Clef du donjon sauvage : " + clefDonjonSauvage)
@@ -45382,7 +45362,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Loup récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let Viande = 0
         let Peau = 0
         let Oeil = 0
@@ -45420,7 +45399,6 @@ bot.on('message', message => {
                 ":gem: Croc de loup : " + Croc + "\n" +
                 ":gem: Oeuf déformé : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
                 ":scales: Clef du donjon sauvage : " + Clef)
             .setTimestamp()
@@ -45433,7 +45411,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Slime récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let gelatine = 0
         let poison = 0
         let stuffRouille = 0
@@ -45465,7 +45442,6 @@ bot.on('message', message => {
                 ":scales: Equipement rouillé au choix : " + stuffRouille + "\n" +
                 ":scales: Bijoux rouillé au choix : " + bijouxRouille + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
                 ":scales: Clef du donjon sauvage : " + Clef)
             .setTimestamp()
@@ -45478,7 +45454,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bandit expérimenté récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let stuffPeauResistante = 0
         let bijouxCroc = 0
         let armeBasiqueUneMain = 0
@@ -45525,7 +45500,6 @@ bot.on('message', message => {
                 ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
                 ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
                 ":scales: Clef du donjon sauvage : " + Clef)
             .setTimestamp()
@@ -45538,7 +45512,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bandit sombre récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let stuffPeauResistante = 0
         let bijouxCroc = 0
         let armeBasiqueUneMain = 0
@@ -45591,7 +45564,6 @@ bot.on('message', message => {
                 ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
                 ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
                 ":scales: Clef du donjon sauvage : " + Clef)
             .setTimestamp()
@@ -45604,7 +45576,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Loup de sang récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let Viande = 0
         let Peau = 0
         let Oeil = 0
@@ -45642,7 +45613,6 @@ bot.on('message', message => {
                 ":gem: Croc de loup de sang : " + Croc + "\n" +
                 ":gem: Oeuf déformé : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
                 ":scales: Clef du donjon sauvage : " + Clef)
             .setTimestamp()
@@ -45683,7 +45653,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -45700,7 +45669,6 @@ bot.on('message', message => {
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Estragon : " + Estragon * 2 + "\n" +
                             ":wilted_rose: Herbe médicinale : " + Herbe * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -45712,7 +45680,6 @@ bot.on('message', message => {
                         .addField(":wilted_rose: Cueillette :", ":wilted_rose: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":wilted_rose: Estragon : " + Estragon + "\n" +
                             ":wilted_rose: Herbe médicinale : " + Herbe + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -45757,7 +45724,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -45774,7 +45740,6 @@ bot.on('message', message => {
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre médiocre : " + CuivreMediocre * 2 + "\n" +
                             ":pick: Cuivre commun : " + CuivreCommun * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -45786,7 +45751,6 @@ bot.on('message', message => {
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre médiocre : " + CuivreMediocre + "\n" +
                             ":pick: Cuivre commun : " + CuivreCommun + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -45831,7 +45795,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -45848,7 +45811,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre * 2 + "\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -45860,7 +45822,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne médiocre : " + BoisMediocre + "\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -45905,7 +45866,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -45926,7 +45886,6 @@ bot.on('message', message => {
                             ":knife: Peau de taupe : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de taupe : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de taupe : " + Oeil * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -45940,7 +45899,6 @@ bot.on('message', message => {
                             ":knife: Peau de taupe : " + Peau + "\n" +
                             ":cupid: Coeur de taupe : " + Coeur + "\n" +
                             ":eye: Oeil de taupe : " + Oeil + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -46418,7 +46376,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Loup de sang d'élite récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let stuffClan = 0
         let bijouxClan = 0
         let armeClanUneMain = 0
@@ -46469,7 +46426,6 @@ bot.on('message', message => {
                 ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
                 ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -46481,7 +46437,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bandit sombre d'élite récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let stuffClan = 0
         let bijouxClan = 0
         let armeClanUneMain = 0
@@ -46532,7 +46487,6 @@ bot.on('message', message => {
                 ":meat_on_bone: Ragoût de lapin géant : " + ragoutLapinGeant + "\n" +
                 ":meat_on_bone: Ragoût de loup de sang : " + ragoutLoupDeSang + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -46544,7 +46498,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Loup gigantesque récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let stuffClan = 0
         let bijouxClan = 0
         let armeClanUneMain = 0
@@ -46577,7 +46530,6 @@ bot.on('message', message => {
                 ":scales: Arme du clan des loups à deux mains au choix : " + armeClanDeuxMains + "\n" +
                 ":gem: Oeuf déformé : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -46685,7 +46637,6 @@ bot.on('message', message => {
         const rollxp = Math.floor(11 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
         const cols = Math.floor(70 * Math.random() + 70)
-        const flocon = Math.floor(41 * Math.random() + 30)
         let potionMoyenneSoin = 0
         let stuffKobolt = 0
         let roll = Math.floor(100 * Math.random() + 1);
@@ -46707,7 +46658,6 @@ bot.on('message', message => {
             .addField(":bookmark: Quête de la montagne :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":syringe: Potion moyenne de soin : " + potionMoyenneSoin + "\n" +
                 ":scales: Equipement de kobolt au choix : " + stuffKobolt)
             .setTimestamp()
@@ -47193,7 +47143,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Jeune kobolt récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let oreille = 0
         let echantillon = 0
         let dent = 0
@@ -47220,7 +47169,6 @@ bot.on('message', message => {
                 ":syringe: Echantillon de kobolt : " + echantillon + "\n" +
                 ":gem: Dent de kobolt : " + dent + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -47232,7 +47180,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Kobolt explorateur récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let oreille = 0
         let echantillon = 0
         let dent = 0
@@ -47265,7 +47212,6 @@ bot.on('message', message => {
                 ":map: Carte au trésor : " + carte + "\n" +
                 ":scales: Bottes d'exploration kobolt : " + bottes + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -47277,7 +47223,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Kobolt ouvrier récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let oreille = 0
         let echantillon = 0
         let dent = 0
@@ -47313,7 +47258,6 @@ bot.on('message', message => {
                 ":ticket: Plan d'arme kobolt : " + planArme + "\n" +
                 ":ticket: Plan de bijoux kobolt : " + planBijoux + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -47325,7 +47269,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Kobolt espion récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let oreille = 0
         let echantillon = 0
         let dent = 0
@@ -47361,7 +47304,6 @@ bot.on('message', message => {
                 ":scales: Kunai de kobolt : " + kunai + "\n" +
                 ":scales: Bolas de kobolt : " + bolas + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -47373,7 +47315,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Kobolt enragé récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let oreille = 0
         let echantillon = 0
         let dent = 0
@@ -47412,7 +47353,6 @@ bot.on('message', message => {
                 ":scales: Equipement de kobolt au choix : " + stuffKob + "\n" +
                 ":scales: Bijoux de kobolt au choix : " + bijouxKob + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -47452,7 +47392,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -47471,7 +47410,6 @@ bot.on('message', message => {
                             ":wilted_rose: Basilic : " + Basilic * 2 + "\n" +
                             ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre * 2 + "\n" +
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -47484,7 +47422,6 @@ bot.on('message', message => {
                             ":wilted_rose: Basilic : " + Basilic + "\n" +
                             ":wilted_rose: Plantrus médiocre : " + PlantrusMediocre + "\n" +
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -47529,7 +47466,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -47546,7 +47482,6 @@ bot.on('message', message => {
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre commun : " + CuivreCommun * 2 + "\n" +
                             ":pick: Cuivre rare : " + CuivreRare * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -47558,7 +47493,6 @@ bot.on('message', message => {
                         .addField(":pick: Minage :", ":pick: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":pick: Cuivre commun : " + CuivreCommun + "\n" +
                             ":pick: Cuivre rare : " + CuivreRare + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -47603,7 +47537,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -47620,7 +47553,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun * 2 + "\n" +
                             ":deciduous_tree: Bois de frêne rare : " + BoisRare * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -47632,7 +47564,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de frêne commun : " + BoisCommun + "\n" +
                             ":deciduous_tree: Bois de frêne rare : " + BoisRare + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -47677,7 +47608,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -47698,7 +47628,6 @@ bot.on('message', message => {
                             ":knife: Peau de ragondin : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de ragondin : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de ragondin : " + Oeil * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -47712,7 +47641,6 @@ bot.on('message', message => {
                             ":knife: Peau de ragondin : " + Peau + "\n" +
                             ":cupid: Coeur de ragondin : " + Coeur + "\n" +
                             ":eye: Oeil de ragondin : " + Oeil + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -47823,7 +47751,6 @@ bot.on('message', message => {
         const rollxp = Math.floor(11 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
         const cols = Math.floor(90 * Math.random() + 90)
-        const flocon = Math.floor(41 * Math.random() + 30)
         let potionMoyenneSoin = 0
         let stuffKoboltSup = 0
         let roll = Math.floor(100 * Math.random() + 1);
@@ -47845,7 +47772,6 @@ bot.on('message', message => {
             .addField(":bookmark: Quête de la grotte :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":syringe: Potion moyenne de soin : " + potionMoyenneSoin + "\n" +
                 ":scales: Equipement de kobolt supérieur au choix : " + stuffKoboltSup)
             .setTimestamp()
@@ -48281,7 +48207,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Kobolt garde récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let oreille = 0
         let echantillon = 0
         let dent = 0
@@ -48317,7 +48242,6 @@ bot.on('message', message => {
                 ":ticket: Plan d'arme supérieure kobolt : " + planArme + "\n" +
                 ":ticket: Plan de bijou supérieur kobolt : " + planBijoux + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -48329,7 +48253,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Kobolt combattant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let oreille = 0
         let echantillon = 0
         let dent = 0
@@ -48362,7 +48285,6 @@ bot.on('message', message => {
                 ":scales: Arme de kobolt supérieure à une main au choix : " + armeKobSupUneMain + "\n" +
                 ":scales: Arme de kobolt supérieure à deux mains au choix : " + armeKobSupDeuxMains + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -48374,7 +48296,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Kobolt mineur récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let oreille = 0
         let echantillon = 0
         let dent = 0
@@ -48416,7 +48337,6 @@ bot.on('message', message => {
                 ":scales: Faucille de kobolt : " + faucille + "\n" +
                 ":scales: Casque de mineur kobolt : " + casque + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -48428,7 +48348,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Chien errant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let Viande = 0
         let Peau = 0
         let Oeil = 0
@@ -48461,7 +48380,6 @@ bot.on('message', message => {
                 ":cupid: Coeur de chien errant : " + Coeur + "\n" +
                 ":gem: Oeuf difforme : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -48473,7 +48391,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Kobolt pilion récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let peau = 0
         let dent = 0
         let armeKobSupUneMain = 0
@@ -48512,7 +48429,6 @@ bot.on('message', message => {
                 ":scales: Bijoux de kobolt supérieur au choix : " + bijouxKobSup + "\n" +
                 ":scales: Parchemin de feu rouge faible : " + parchemin + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -48552,7 +48468,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -48571,7 +48486,6 @@ bot.on('message', message => {
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun * 2 + "\n" +
                             ":wilted_rose: Plantrus rare : " + PlantrusRare * 2 + "\n" +
                             ":wilted_rose: Plantrus parfait : " + PlantrusParfait * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -48584,7 +48498,6 @@ bot.on('message', message => {
                             ":wilted_rose: Plantrus commun : " + PlantrusCommun + "\n" +
                             ":wilted_rose: Plantrus rare : " + PlantrusRare + "\n" +
                             ":wilted_rose: Plantrus parfait : " + PlantrusParfait + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -48629,7 +48542,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -48648,7 +48560,6 @@ bot.on('message', message => {
                             ":pick: Cuivre rare : " + CuivreRare * 2 + "\n" +
                             ":pick: Cuivre parfait : " + CuivreParfait * 2 + "\n" +
                             ":pick: Pierre de feu faible : " + Feu * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -48661,7 +48572,6 @@ bot.on('message', message => {
                             ":pick: Cuivre rare : " + CuivreRare + "\n" +
                             ":pick: Cuivre parfait : " + CuivreParfait + "\n" +
                             ":pick: Pierre de feu faible : " + Feu + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -49103,7 +49013,6 @@ bot.on('message', message => {
         const rollxp = Math.floor(41 * Math.random() + 40) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
         const cols = Math.floor(150 * Math.random() + 150)
-        const flocon = Math.floor(41 * Math.random() + 30)
         let potionAmelio = 0
         let stuffChitine = 0
         let roll = Math.floor(100 * Math.random() + 1);
@@ -49125,7 +49034,6 @@ bot.on('message', message => {
             .addField(":bookmark: Quête de la Forêt dense :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":syringe: Potion améliorée : " + potionAmelio + "\n" +
                 ":scales: Equipement en chitine au choix : " + stuffChitine)
             .setTimestamp()
@@ -49645,7 +49553,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Lombric irrégulier récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let bave = 0
         let peauelastic = 0
         let langue = 0
@@ -49691,7 +49598,6 @@ bot.on('message', message => {
                 ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                 ":gem: Oeuf bavant : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -49704,7 +49610,6 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
 
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let poudrePoison = 0
         let ailes = 0
         let peau = 0
@@ -49762,7 +49667,6 @@ bot.on('message', message => {
                 ":scales: Bijou en chitine au choix : " + bijouChitine + "\n" +
                 ":gem: Oeuf bavant : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -49774,7 +49678,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bousier colossal récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let patte = 0
         let carapace = 0
         let corne = 0
@@ -49814,7 +49717,6 @@ bot.on('message', message => {
                 ":dagger: Corne de bousier colossal : " + corne + "\n" +
                 ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -49826,7 +49728,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Venom récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let crochetPoison = 0
         let Peau = 0
         let queueSerpent = 0
@@ -49869,7 +49770,6 @@ bot.on('message', message => {
                 ":alembic: Venin de venom : " + Venin + "\n" +
                 ":gem: Oeuf bavant : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -49881,7 +49781,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Doryphore géant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let carapace = 0
         let aile = 0
         let patte = 0
@@ -49942,7 +49841,6 @@ bot.on('message', message => {
                 ":scales: Arme en chitine à deux mains au choix : " + armeChitineDeuxMains + "\n" +
                 ":gem: Oeuf bavant : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -49982,7 +49880,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -50001,7 +49898,6 @@ bot.on('message', message => {
                             ":wilted_rose: Lierre commun : " + LierreCommun * 2 + "\n" +
                             ":wilted_rose: Lierre rare : " + LierreRare * 2 + "\n" +
                             ":wilted_rose: Lierre parfait : " + LierreParfait * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -50014,7 +49910,6 @@ bot.on('message', message => {
                             ":wilted_rose: Lierre commun : " + LierreCommun + "\n" +
                             ":wilted_rose: Lierre rare : " + LierreRare + "\n" +
                             ":wilted_rose: Lierre parfait : " + LierreParfait + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -50059,7 +49954,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -50080,7 +49974,6 @@ bot.on('message', message => {
                             ":knife: Peau de lièvre : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de lièvre : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de lièvre : " + Oeil * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -50094,7 +49987,6 @@ bot.on('message', message => {
                             ":knife: Peau de lièvre : " + Peau + "\n" +
                             ":cupid: Coeur de lièvre : " + Coeur + "\n" +
                             ":eye: Oeil de lièvre : " + Oeil + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -50139,7 +50031,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -50156,7 +50047,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre * 2 + "\n" +
                             ":deciduous_tree: Bois de séquoia commun : " + BoisCommun * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -50168,7 +50058,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia médiocre : " + BoisMediocre + "\n" +
                             ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -50258,7 +50147,6 @@ bot.on('message', message => {
         const controle = 110 + 90 * tMob
         const rollxp = Math.floor(31 * Math.random() + 40) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
-        const flocon = Math.floor(41 * Math.random() + 30)
         const cols = Math.floor(130 * Math.random() + 130)
         let potionAmelio = 0
         let stuffTaurus = 0
@@ -50281,7 +50169,6 @@ bot.on('message', message => {
             .addField(":bookmark: Quête de la Clairière :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":syringe: Potion améliorée : " + potionAmelio + "\n" +
                 ":scales: Equipement de taurus au choix : " + stuffTaurus)
             .setTimestamp()
@@ -50698,7 +50585,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Bourdon flâneur récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let carapace = 0
         let ailes = 0
         let antenne = 0
@@ -50750,7 +50636,6 @@ bot.on('message', message => {
                 ":alembic: Hemolymphe : " + hemolymphe + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -50762,7 +50647,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Taurus chargeur récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let peau = 0
         let poil = 0
         let corne = 0
@@ -50814,7 +50698,6 @@ bot.on('message', message => {
                 ":bacon: Scalp de taurus : " + scalp + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -50826,7 +50709,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Taurus lourd récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let peau = 0
         let poil = 0
         let corne = 0
@@ -50878,7 +50760,6 @@ bot.on('message', message => {
                 ":bacon: Scalp de taurus : " + scalp + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -50890,7 +50771,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Fort taurus adroit récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let peau = 0
         let poil = 0
         let corne = 0
@@ -50948,7 +50828,6 @@ bot.on('message', message => {
                 ":beginner: Cuirasse de fort taurus adroit : " + cuirasse + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -50988,7 +50867,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -51007,7 +50885,6 @@ bot.on('message', message => {
                             ":wilted_rose: Lierre d'antidote : " + LierreAntidote * 2 + "\n" +
                             ":wilted_rose: Lierre de soin : " + LierreSoin * 2 + "\n" +
                             ":wilted_rose: Lierre d'air : " + LierreAir * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -51020,7 +50897,6 @@ bot.on('message', message => {
                             ":wilted_rose: Lierre d'antidote : " + LierreAntidote + "\n" +
                             ":wilted_rose: Lierre de soin : " + LierreSoin + "\n" +
                             ":wilted_rose: Lierre d'air : " + LierreAir + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Cueilleur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -51065,7 +50941,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -51086,7 +50961,6 @@ bot.on('message', message => {
                             ":knife: Peau de desman : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de desman : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de desman : " + Oeil * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -51100,7 +50974,6 @@ bot.on('message', message => {
                             ":knife: Peau de desman : " + Peau + "\n" +
                             ":cupid: Coeur de desman : " + Coeur + "\n" +
                             ":eye: Oeil de desman : " + Oeil + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -51145,7 +51018,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -51166,7 +51038,6 @@ bot.on('message', message => {
                             ":pick: Fer médiocre : " + FerMediocre * 2 + "\n" +
                             ":pick: Fer commun : " + FerCommun * 2 + "\n" +
                             ":pick: Fer rare : " + FerRare * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -51180,7 +51051,6 @@ bot.on('message', message => {
                             ":pick: Fer médiocre : " + FerMediocre + "\n" +
                             ":pick: Fer commun : " + FerCommun + "\n" +
                             ":pick: Fer rare : " + FerRare + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -51271,7 +51141,6 @@ bot.on('message', message => {
         const rollxp = Math.floor(41 * Math.random() + 40) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
         const cols = Math.floor(90 * Math.random() + 90)
-        const flocon = Math.floor(41 * Math.random() + 30)
         const potionAmelioreeSup = Math.floor(2 * 0.25 * Math.random())
         const stuffDargnan = Math.floor(2 * 0.80 * Math.random())
         if (xp <= 0) {
@@ -51285,7 +51154,6 @@ bot.on('message', message => {
             .addField(":bookmark: Quête de la vallée :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":syringe: Potion améliorée supérieure : " + potionAmelioreeSup + "\n" +
                 ":scales: Equipement de Dargnan : " + stuffDargnan)
             .setTimestamp()
@@ -51698,7 +51566,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Guêpe vivace récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let carapace = 0
         let aile = 0
         let dard = 0
@@ -51734,7 +51601,6 @@ bot.on('message', message => {
                 ":scales: Armure dargnan au choix : " + armureDargnan + "\n" +
                 ":scales: Bijou dargnan au choix : " + bijouDargnan + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -51746,7 +51612,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Frelon foudroyant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let carapace = 0
         let aile = 0
         let dard = 0
@@ -51782,7 +51647,6 @@ bot.on('message', message => {
                 ":scales: Arme darchic à une main : " + armeUneMainDargnan + "\n" +
                 ":scales: Arme darchic à deux mains : " + armeDeuxMainDargnan + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -51794,7 +51658,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Vache vrombissante récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let peau = 0
         let viande = 0
         let oreille = 0
@@ -51836,7 +51699,6 @@ bot.on('message', message => {
                 ":scales: Armure bovin au choix : " + armureBovin + "\n" +
                 ":scales: Bijou bovin au choix : " + bijouBovin + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -51848,7 +51710,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Boeuf vrombissant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let peau = 0
         let viande = 0
         let corne = 0
@@ -51890,7 +51751,6 @@ bot.on('message', message => {
                 ":scales: Arme darchic à une main au choix : " + armeUneMainBovin + "\n" +
                 ":scales: Arme darchic à deux mains au choix : " + armeDeuxMainBovin + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -51930,7 +51790,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -51951,7 +51810,6 @@ bot.on('message', message => {
                             ":knife: Peau de veau : " + Peau * 2 + "\n" +
                             ":cupid: Coeur de veau : " + Coeur * 2 + "\n" +
                             ":eye: Oeil de veau : " + Oeil * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -51965,7 +51823,6 @@ bot.on('message', message => {
                             ":knife: Peau de veau : " + Peau + "\n" +
                             ":cupid: Coeur de veau : " + Coeur + "\n" +
                             ":eye: Oeil de veau : " + Oeil + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":sparkles: Points d'expérience dans la métier 'Chasseur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -52010,7 +51867,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -52029,7 +51885,6 @@ bot.on('message', message => {
                             ":pick: Fer commun : " + FerCommun * 2 + "\n" +
                             ":pick: Fer rare : " + FerRare * 2 + "\n" +
                             ":pick: Fer parfait : " + FerParfait * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -52042,7 +51897,6 @@ bot.on('message', message => {
                             ":pick: Fer commun : " + FerCommun + "\n" +
                             ":pick: Fer rare : " + FerRare + "\n" +
                             ":pick: Fer parfait : " + FerParfait + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":pick: Points d'expérience dans la métier 'Mineur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -52087,7 +51941,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 const Exp = Math.floor(5 * Math.random() + 11)
                 let chance = diff * diff;
                 if (chance > 100) {
@@ -52104,7 +51957,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia commun : " + BoisCommun * 2 + "\n" +
                             ":deciduous_tree: Bois de séquoia rare : " + BoisRare * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -52116,7 +51968,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia commun : " + BoisCommun + "\n" +
                             ":deciduous_tree: Bois de séquoia rare : " + BoisRare + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -52382,7 +52233,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -52399,7 +52249,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia rare : " + BoisRare * 2 + "\n" +
                             ":deciduous_tree: Bois de séquoia parfait : " + BoisParfait * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -52411,7 +52260,6 @@ bot.on('message', message => {
                         .addField(":deciduous_tree: Bûcheron :", ":deciduous_tree: Vous obtenez suite à votre recherche, les objets suivants :\n\n" +
                             ":deciduous_tree: Bois de séquoia rare : " + BoisRare + "\n" +
                             ":deciduous_tree: Bois de séquoia parfait : " + BoisParfait + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":deciduous_tree: Points d'expérience dans la métier 'Bûcheron' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -52456,7 +52304,6 @@ bot.on('message', message => {
             } else {
                 const roll = Math.floor(100 * Math.random() + 1);
                 const diff = level - levelZone
-                const flocon = Math.floor(6 * Math.random() + 10)
                 let chance = diff * diff;
                 if (chance > 100) {
                     chance = 100
@@ -52477,7 +52324,6 @@ bot.on('message', message => {
                             ":fish: Crevette : " + crevette * 2 + "\n" +
                             ":fish: Truite : " + truite * 2 + "\n" +
                             ":fish: Crabe : " + crabe * 2 + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -52491,7 +52337,6 @@ bot.on('message', message => {
                             ":fish: Crevette : " + crevette + "\n" +
                             ":fish: Truite : " + truite + "\n" +
                             ":fish: Crabe : " + crabe + "\n" +
-                            ":snowflake: Flocons : " + flocon + "\n" +
                             ":fish: Points d'expérience dans la métier 'Pêcheur' : " + Exp)
                         .setTimestamp()
                     message.channel.send({ embed })
@@ -58149,7 +57994,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex guêpe vivace récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let carapace = 0
         let aile = 0
         let dard = 0
@@ -58185,7 +58029,6 @@ bot.on('message', message => {
                 ":scales: Armure dargnan au choix : " + armureDargnan + "\n" +
                 ":scales: Bijou dargnan au choix : " + bijouDargnan + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58197,7 +58040,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex frelon foudroyant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let carapace = 0
         let aile = 0
         let dard = 0
@@ -58233,7 +58075,6 @@ bot.on('message', message => {
                 ":scales: Arme darchic à une main : " + armeUneMainDargnan + "\n" +
                 ":scales: Arme darchic à deux mains : " + armeDeuxMainDargnan + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58245,7 +58086,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex vache vrombissante récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let peau = 0
         let viande = 0
         let oreille = 0
@@ -58287,7 +58127,6 @@ bot.on('message', message => {
                 ":scales: Armure bovin au choix : " + armureBovin + "\n" +
                 ":scales: Bijou bovin au choix : " + bijouBovin + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58299,7 +58138,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex boeuf vrombissant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let peau = 0
         let viande = 0
         let corne = 0
@@ -58341,7 +58179,6 @@ bot.on('message', message => {
                 ":scales: Arme darchic à une main au choix : " + armeUneMainBovin + "\n" +
                 ":scales: Arme darchic à deux mains au choix : " + armeDeuxMainBovin + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58353,7 +58190,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex bourdon flâneur récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let carapace = 0
         let ailes = 0
         let antenne = 0
@@ -58405,7 +58241,6 @@ bot.on('message', message => {
                 ":alembic: Hemolymphe : " + hemolymphe + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58417,7 +58252,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex taurus chargeur récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let peau = 0
         let poil = 0
         let corne = 0
@@ -58469,7 +58303,6 @@ bot.on('message', message => {
                 ":bacon: Scalp de taurus : " + scalp + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58481,7 +58314,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex taurus lourd récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let peau = 0
         let poil = 0
         let corne = 0
@@ -58533,7 +58365,6 @@ bot.on('message', message => {
                 ":bacon: Scalp de taurus : " + scalp + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58545,7 +58376,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex fort taurus adroit récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let peau = 0
         let poil = 0
         let corne = 0
@@ -58603,7 +58433,6 @@ bot.on('message', message => {
                 ":beginner: Cuirasse de fort taurus adroit : " + cuirasse + "\n" +
                 ":gem: Oeuf brisé : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58615,7 +58444,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex lombric irrégulier récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let bave = 0
         let peauelastic = 0
         let langue = 0
@@ -58661,7 +58489,6 @@ bot.on('message', message => {
                 ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                 ":gem: Oeuf bavant : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58674,7 +58501,6 @@ bot.on('message', message => {
         const pos = args.indexOf(":");
 
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let poudrePoison = 0
         let ailes = 0
         let peau = 0
@@ -58732,7 +58558,6 @@ bot.on('message', message => {
                 ":scales: Bijou en chitine au choix : " + bijouChitine + "\n" +
                 ":gem: Oeuf bavant : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58744,7 +58569,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex bousier colossal récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let patte = 0
         let carapace = 0
         let corne = 0
@@ -58784,7 +58608,6 @@ bot.on('message', message => {
                 ":dagger: Corne de bousier colossal : " + corne + "\n" +
                 ":alembic: Hémolymphe : " + hemolyphe + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58796,7 +58619,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex venom récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(5 * Math.random() + 1)
         let crochetPoison = 0
         let Peau = 0
         let queueSerpent = 0
@@ -58839,7 +58661,6 @@ bot.on('message', message => {
                 ":alembic: Venin de venom : " + Venin + "\n" +
                 ":gem: Oeuf bavant : " + Oeufs + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -58851,7 +58672,6 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Apex doryphore géant récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const flocon = Math.floor(8 * Math.random() + 3)
         let carapace = 0
         let aile = 0
         let patte = 0
@@ -58912,7 +58732,6 @@ bot.on('message', message => {
                 ":scales: Arme en chitine à deux mains au choix : " + armeChitineDeuxMains + "\n" +
                 ":gem: Oeuf bavant : " + oeufB + "\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
                 ":large_orange_diamond: Cols : " + cols)
             .setTimestamp()
         message.channel.send({ embed })
@@ -62430,43 +62249,3 @@ bot.on('message', message => {
         }
     }
 });
-
-
-
-
-
-
-bot.on('message', message => {
-    const args = message.content;
-    if (message.content.startsWith(prefix + "Ours polaire récompenses")) {
-        const pos = args.indexOf(":");
-        const lvl = args.slice(pos + 2)
-        let flocon = Math.floor(9 * Math.random() + 6)
-        const cols = Math.floor(21 * Math.random() + 100)
-        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
-        const tMob = 3
-        const dif = tMob - tJoueur
-        const controle = 110 + 90 * tMob
-        const roll = Math.floor(11 * Math.random() + 40) / 10
-        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
-        if (xp <= 0) {
-            xp = 0;
-        }
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":snowflake: Flocons : " + flocon + "\n" +
-                ":large_orange_diamond: Cols : " + cols)
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-});
-
-
-
-
-
-
