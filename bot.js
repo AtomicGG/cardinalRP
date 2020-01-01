@@ -61961,8 +61961,6 @@ bot.on('message', message => {
     }
 });
 
-
-
 bot.on('message', message => {
     const args = message.content;
     if (message.content.startsWith(prefix + "Coup moyen")) {
@@ -62197,7 +62195,6 @@ bot.on('message', message => {
         }
     }
 });
-
 
 bot.on('message', message => {
     const args = message.content;
