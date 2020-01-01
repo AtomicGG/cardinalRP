@@ -62166,6 +62166,51 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
+    if (message.content.startsWith(prefix + "Coup en série")) {
+        let position = args.indexOf(":");
+        let atk = args.slice(position + 2);
+        const degat1 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
+        const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
+        const degat3 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.7))
+        const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.8))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 10) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (11 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "`  points de dégâts.")
+                .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` et `" + degat3 + "` et`" + degatcrit + "`. points de dégâts au total qui ne peut être contré.")
+                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+
+
+bot.on('message', message => {
+    const args = message.content;
     if (message.content.startsWith(prefix + "Coup moyen")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
