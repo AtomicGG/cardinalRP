@@ -62140,33 +62140,33 @@ bot.on('message', message => {
 
 // Petite grotte | Métiers | Protecteurs | Descriptions
 
-bot.off('message', message => {
-    if (message.content === (prefix) + "Loup sombre") {
+bot.on('message', message => {
+    if (message.content === (prefix) + "Phacochère") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Loup sombre :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/656685405311074347/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Loup sombre attaque`")
-            .addField(":shield: Lorsque le loup sombre reçoit un coup :", ":shield: `=Loup sombre défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Loup sombre récompenses : [Votre niveau]`")
+            .setTitle(":japanese_ogre: Phacochère :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659501389860306947/Raksha.jpg")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Phacochère attaque`")
+            .addField(":shield: Lorsque le phacochère reçoit un coup :", ":shield: `=Phacochère défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Phacochère récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
-bot.off('message', message => {
-    if (message.content === (prefix) + "Loup sombre") {
+bot.on('message', message => {
+    if (message.content === (prefix) + "Golemite de malachite") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Loup sombre :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/566021680120725518/656685405311074347/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Loup sombre attaque`")
-            .addField(":shield: Lorsque le loup sombre reçoit un coup :", ":shield: `=Loup sombre défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Loup sombre récompenses : [Votre niveau]`")
+            .setTitle(":japanese_ogre: Golemite de malachite :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
+            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659486983822770197/Goleminus_de_pierre.png")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Golemite de malachite attaque`")
+            .addField(":shield: Lorsque le golemite de malachite reçoit un coup :", ":shield: `=Golemite de malachite défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Golemite de malachite récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -62964,5 +62964,59 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Elf épéiste récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const cols = Math.floor(26 * Math.random() + 300)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 7
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(101 * Math.random() + 50) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Elf lancier récompenses")) {
+        const pos = args.indexOf(":");
+        const lvl = args.slice(pos + 2)
+        const cols = Math.floor(26 * Math.random() + 300)
+        const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
+        const tMob = 7
+        const dif = tMob - tJoueur
+        const controle = 110 + 90 * tMob
+        const roll = Math.floor(101 * Math.random() + 50) / 10
+        let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
+        if (xp <= 0) {
+            xp = 0
+        }
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
+            .addField(":moneybag: Récompenses :", ":sparkles: Points d'expérience : " + xp + "\n" +
+                ":large_orange_diamond: Cols : " + cols)
+            .setTimestamp()
+        message.channel.send({ embed })
     }
 });
