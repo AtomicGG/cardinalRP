@@ -61576,17 +61576,17 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
-    if (message.content === (prefix) + "Loup sombre") {
+bot.on('message', message => {
+    if (message.content === (prefix) + "Tréantin de manioc") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Loup sombre :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
+            .setTitle(":japanese_ogre: Tréantin de manioc :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/566021680120725518/656685405311074347/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Loup sombre attaque`")
-            .addField(":shield: Lorsque le loup sombre reçoit un coup :", ":shield: `=Loup sombre défense : [Points de dégâts de votre coup]`")
-            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Loup sombre récompenses : [Votre niveau]`")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréantin de manioc attaque`")
+            .addField(":shield: Lorsque le tréantin de manioc reçoit un coup :", ":shield: `=Tréantin de manioc défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Tréantin de manioc récompenses : [Votre niveau]`")
             .setTimestamp()
         message.channel.send({ embed })
     }
