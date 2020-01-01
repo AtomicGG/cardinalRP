@@ -62121,7 +62121,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Coup rapide")) {
+    if (message.content.startsWith(prefix + "Coup autre")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
         const premier = Math.floor((degats * 0.3 + 1) * Math.random() + (degats * 0.5))
@@ -62166,7 +62166,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Coup en série")) {
+    if (message.content.startsWith(prefix + "Coup rapide")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
         const degat1 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
@@ -62190,7 +62190,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "`  points de dégâts.")
-                .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+                .setImage("https://akibento.com/blog/wp-content/uploads/2016/11/SifAkiMSE5.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -62200,7 +62200,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Coup révélateur :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` et `" + degat3 + "` et`" + degatcrit + "`. points de dégâts au total qui ne peut être contré.")
-                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setImage("https://thumbs.gfycat.com/PossibleBitterIndianelephant-size_restricted.gif")
                 .setTimestamp()
             message.channel.send({ embed })
         }
