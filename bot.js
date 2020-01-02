@@ -63355,7 +63355,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bâton elfique noir :", ":scales: C'est un bâton fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup sauté' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du Bâton elfique noir`")
+            .addField(":scales: Bâton elfique noir :", ":scales: C'est un bâton fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup sauté' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du bâton elfique noir`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63368,7 +63368,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Lance elfique noir :", ":scales: C'est une lance fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la Lance elfique noir`")
+            .addField(":scales: Lance elfique noir :", ":scales: C'est une lance fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la lance elfique noir`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63606,6 +63606,49 @@ bot.on('message', message => {
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Nodachi elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat du bâton elfique noir")) {
+        const Dégâts = Math.floor(8 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bâton elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat des cestes elfique noir")) {
+        const Dégâts = Math.floor(8 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cestes elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de la lance elfique noir")) {
+        const Dégâts = Math.floor(8 * Math.random() + 50)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Lance elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
