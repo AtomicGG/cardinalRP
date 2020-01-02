@@ -63040,7 +63040,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Gros venom attaque")) {
         const degat = Math.floor(21 * Math.random() + 190)
         const poison = Math.floor(21 * Math.random() + 40)
-        const roll = Math.floor(100 * Math.random() + 1)
+        const roll = Math.floor(85 * Math.random() + 1)
         const tour = Math.floor(3 * Math.random() + 3)
         if (roll <= 25) {
             const embed = new Discord.RichEmbed()
