@@ -63020,3 +63020,89 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Gros venom") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Gros venom :", ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 2 !")
+            .setImage("https://media.melty.fr/article-3886497-raw/media.gif")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5500 \n:warning: **__L'empoisonement du gros venom n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Gros venom attaque`")
+            .addField(":shield: Lorsque le gros venom reçoit un coup :", ":shield: `=Gros venom défense : [Points de dégâts de votre coup]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gros venom attaque")) {
+        const degat = Math.floor(26 * Math.random() + 160)
+        const poison = Math.floor(21 * Math.random() + 40)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros venom :", ":crossed_swords: Le Gros venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
+            message.channel.send({ embed })
+        }
+        if (31 <= roll && roll <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros venom :", ":crossed_swords: Le Gros venom tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (81 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros venom:", ":crossed_swords: Le Gros venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros venom:", ":crossed_swords: L'énorme venom engloutit sa cible d'une traite, lui infligeant au passage " + degat + " points de dégâts perce armure. Vous ne pouvez point faire grand chose à l'intérieur de la bête, perdant " + degat + " points de dégâts par tour (à la fin de chaque tour du Venom).\n\nLes joueurs peuvent le libérer en étourdissant le monstre via une compétence ou un coup. Sinon, ils peuvent attirer l'attention de celui-ci pendant que vous vous placez devant un arbre ou un rocher (action RP). L'esquive est seulement permise dans cette situation. Si vous réussissez, l'énorme Venom est étourdi et le joueur est libéré.")
+                .setTimestamp()
+
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Gros venom défense")) {
+        let Dégâts = args.slice(3).join(" : ");
+        const degat = Math.floor((Dégâts * 0.4 + 1) * Math.random() + (Dégâts * 0.9))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 65) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Gros venom :", ":shield: Le Gros venom tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (66 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Gros venom :", ":shield: Le Gros venom se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
