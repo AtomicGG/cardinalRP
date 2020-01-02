@@ -63041,7 +63041,8 @@ bot.on('message', message => {
         const degat = Math.floor(21 * Math.random() + 190)
         const poison = Math.floor(21 * Math.random() + 40)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 30) {
+        const tour = Math.floor(3 * Math.random() + 3)
+        if (roll <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63049,7 +63050,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Gros venom :", ":crossed_swords: Le Gros venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
             message.channel.send({ embed })
         }
-        if (31 <= roll && roll <= 80) {
+        if (26 <= roll && roll <= 80) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63072,7 +63073,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Gros venom:", ":crossed_swords: L'énorme venom engloutit sa cible d'une traite, lui infligeant au passage " + degat + " points de dégâts perce armure. Vous ne pouvez point faire grand chose à l'intérieur de la bête, perdant " + degat + " points de dégâts par tour (à la fin de chaque tour du Venom).\n\nLes joueurs peuvent le libérer en étourdissant le monstre via une compétence ou un coup. Sinon, ils peuvent attirer l'attention de celui-ci pendant que vous vous placez devant un arbre ou un rocher (action RP). L'esquive est seulement permise dans cette situation. Si vous réussissez, l'énorme Venom est étourdi et le joueur est libéré.")
+                .addField(":crossed_swords: Gros venom:", ":crossed_swords: L'énorme venom engloutit sa cible d'une traite, lui infligeant au passage " + degat + " points de dégâts perce armure. Vous ne pouvez point faire grand chose à l'intérieur de la bête, perdant " + degat + " points de dégâts par tour (à la fin de chaque tour du Venom) durant " + tour + " tours.\n\nLes joueurs peuvent le libérer en étourdissant le monstre via une compétence ou un coup. Sinon, ils peuvent attirer l'attention de celui-ci pendant que vous vous placez devant un arbre ou un rocher (action RP). L'esquive est seulement permise dans cette situation. Si vous réussissez, l'énorme Venom est étourdi et le joueur est libéré.")
                 .setTimestamp()
 
             message.channel.send({ embed })
