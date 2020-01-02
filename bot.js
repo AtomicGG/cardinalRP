@@ -63028,7 +63028,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Gros venom :", ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 2 !")
             .setImage("https://media.melty.fr/article-3886497-raw/media.gif")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5500 \n:warning: **__L'empoisonement du gros venom n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5500\n:shield: 100 \n:warning: **__L'empoisonement du gros venom n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Gros venom attaque`")
             .addField(":shield: Lorsque le gros venom reçoit un coup :", ":shield: `=Gros venom défense : [Points de dégâts de votre coup]`")
             .setTimestamp()
