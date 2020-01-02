@@ -62779,7 +62779,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Protec")) {
+    if (message.content.startsWith(prefix + "Opposition")) {
         let position = args.indexOf(":");
         let degat = args.slice(position + 2);
         const degatEchecCrit = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 1))
