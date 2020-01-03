@@ -62680,7 +62680,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Coup puissant")) {
+    if (message.content.startsWith(prefix + "Brise armure")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
         const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.8))
@@ -62691,7 +62691,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous ratez votre coup ( vous êtes nul ou darkness de Konosuba ), votre adversaire pourra attaquer deux fois.")
+                .addField(":crossed_swords: Brise armure :", ":crossed_swords: Vous ratez votre coup ( vous êtes nul ou darkness de Konosuba ), votre adversaire pourra attaquer deux fois.")
                 .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62701,7 +62701,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts perce armure.")
+                .addField(":crossed_swords: Brise armure :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts perce armure.")
                 .setImage("https://cdn.discordapp.com/attachments/566021680120725518/662761998177796145/giphy.png")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -62711,7 +62711,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit + "` points de dégâts perce armure et vous pouvez enchaînez avec un coup simple sans que votre adversaire puissent bloquer.")
+                .addField(":crossed_swords: Brise armure :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit + "` points de dégâts perce armure et vous pouvez enchaînez avec un coup simple sans que votre adversaire puissent bloquer.")
                 .setImage("https://cdn.discordapp.com/attachments/566021680120725518/662761998177796145/giphy.png")
                 .setTimestamp()
             message.channel.send({ embed })
