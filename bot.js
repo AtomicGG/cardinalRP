@@ -62603,7 +62603,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Perce bouclier :", ":crossed_swords: Vous réussissez votre coup, et briser la garde votre adversaire, ce qui vous permet de faire l'attaque suivante =Coup direct : [Votre attaque].")
-                .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/662755080331591699/unknown.png")
                 .setTimestamp()
             message.channel.send({ embed })
         }
