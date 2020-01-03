@@ -62585,6 +62585,142 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const args = message.content;
+    if (message.content === (prefix + "Perce bouclier")) {
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 40) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Perce bouclier :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (41 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Perce bouclier :", ":crossed_swords: Vous réussissez votre coup, et briser la garde votre adversaire, ce qui vous permet de faire l'attaque suivante =Coup direct : [Votre attaque].")
+                .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content === (prefix + "Brise garde")) {
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 40) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Perce bouclier :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (41 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Perce bouclier :", ":crossed_swords: Vous réussissez votre coup, et briser la garde votre adversaire, ce qui vous permet de faire l'attaque suivante =Coup puissant : [Votre attaque].")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/662761998177796145/giphy.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Coup direct")) {
+        let position = args.indexOf(":");
+        let atk = args.slice(position + 2);
+        const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
+        const degatcrit = Math.floor((atk * 0.1 + 1) * Math.random() + (atk * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 2) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous ratez votre coup ( vous êtes nul ou darkness de Konosuba ), votre adversaire pourra attaquer deux fois.")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (3 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts perce armure.")
+                .setImage("https://i.ytimg.com/vi/z1PKZLRwKTw/hqdefault.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit + "` points de dégâts perce armure et vous pouvez enchaînez avec un coup simple sans que votre adversaire puissent bloquer.")
+                .setImage("https://i.ytimg.com/vi/z1PKZLRwKTw/hqdefault.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Coup puissant")) {
+        let position = args.indexOf(":");
+        let atk = args.slice(position + 2);
+        const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.8))
+        const degatcrit = Math.floor((atk * 0.1 + 1) * Math.random() + (atk * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 15) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous ratez votre coup ( vous êtes nul ou darkness de Konosuba ), votre adversaire pourra attaquer deux fois.")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (16 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts perce armure.")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/662761998177796145/giphy.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup direct :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit + "` points de dégâts perce armure et vous pouvez enchaînez avec un coup simple sans que votre adversaire puissent bloquer.")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/662761998177796145/giphy.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
     if (message.content.startsWith(prefix + "Contre")) {
         let position = args.indexOf(":");
         let degat = args.slice(position + 2);
@@ -62638,7 +62774,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":shield: Bloque :", ":shield: Vous ratez critiquement votre blocage et votre garde est bien ouverte pour que votre adversaire vous attaque de nouveau sans que vous pouvez vous défendre et subissez `" + degatEchecCrit + "` points de dégâts.")
-                .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
+                .setImage("https://pm1.narvii.com/6139/db96e64e9d675c10a9b5dbfe5822e12110a508aa_hq.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -62648,7 +62784,7 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":shield: Bloque :", ":shield: Vous ratez votre blocage et subissez `" + degatEchec + "` points de dégâts.")
-                .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
+                .setImage("https://pm1.narvii.com/6139/db96e64e9d675c10a9b5dbfe5822e12110a508aa_hq.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -62657,8 +62793,8 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Bloque :", ":shield: Vous blocage le coup mais vous pouvez pas attaquer en retour.")
-                .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
+                .addField(":shield: Bloque :", ":shield: Vous bloquez le coup mais vous pouvez pas attaquer en retour.")
+                .setImage("https://pm1.narvii.com/6139/db96e64e9d675c10a9b5dbfe5822e12110a508aa_hq.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -62667,8 +62803,8 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Bloque :", ":shield: Vous blocage le coup de votre adversaire et vous pouvez attaquez derrière de suite.")
-                .setImage("https://dailygeekshow.com/wp-content/uploads/sites/2/2016/05/sword-art-online-kirito-combat.jpg")
+                .addField(":shield: Bloque :", ":shield: Vous bloquez le coup de votre adversaire et vous pouvez attaquez derrière de suite.")
+                .setImage("https://pm1.narvii.com/6139/db96e64e9d675c10a9b5dbfe5822e12110a508aa_hq.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
         }
