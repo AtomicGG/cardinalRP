@@ -43404,7 +43404,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Coup ascendant")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
-        const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2.3))
+        const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 45) {
             const embed = new Discord.RichEmbed()
@@ -43479,7 +43479,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Coup à revers")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
-        const degat = Math.floor((atk * 0.5 + 1) * Math.random() + (atk * 2))
+        const degat = Math.floor((atk * 0.5 + 1) * Math.random() + (atk * 1.5))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 35) {
             const embed = new Discord.RichEmbed()
@@ -63756,6 +63756,47 @@ bot.on('message', message => {
     }
 });
 
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "Vision elfique")) {
+        let position = args.indexOf(":");
+        let atk = args.slice(position + 2);
+        const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 1.8))
+        const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 15) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Vision elfique :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (16 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Vision elfique :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts aux monstre qui se cache et les fait sortir.")
+                .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Vision elfique :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degatcrit + "` points de dégâts sans que le monstre puisse se défendre.")
+                .setImage("https://img00.deviantart.net/48e7/i/2013/287/0/7/kirito_vs__heathcliff_by_kanamelover101-d6qidml.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
 
 bot.on('message', message => {
     const args = message.content;
