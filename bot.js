@@ -62829,7 +62829,7 @@ bot.on('message', message => {
 });
 
 
-// Menus | Liste | Equipements | Détails | elfique noir
+// Menus | Liste | Equipements | Détails | elfique
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Equipements elfique noir")) {
@@ -62850,7 +62850,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Casque elfique noir :", ":scales: C'est un casque elfique trouvable dans les camps des elfs noir au palier 3\n\n" +
+            .addField(":scales: Casque elfique noir :", ":scales: C'est un casque elfique noir trouvable dans les camps des elfs noir au palier 3\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
                 ":keyboard: Si vous achetez cet objet : `=Achat du casque elfique noir`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique noir`")
@@ -62882,7 +62882,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Plastron elfique noir :", ":scales: C'est un plastron elfique trouvable dans les camps des elfs noir au palier 3\n\n" +
+            .addField(":scales: Plastron elfique noir :", ":scales: C'est un plastron elfique noir trouvable dans les camps des elfs noir au palier 3\n\n" +
             ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
                 ":keyboard: Si vous achetez cet objet : `=Achat du plastron elfique noir`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique noir`")
@@ -62991,7 +62991,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Anneau elfique noir :", ":scales: C'est un anneau elfique trouvable dans les camps des elfs noir au palier 3\n\n" +
+            .addField(":scales: Anneau elfique noir :", ":scales: C'est un anneau elfique noir trouvable dans les camps des elfs noir au palier 3\n\n" +
                 ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
                 ":keyboard: Si vous achetez cet objet : `=Achat de l'anneau elfique noir`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique noir`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -63171,22 +63171,22 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Amulette elfique noir :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Amulette elfique :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
-
+// Menus | Liste | Equipements | Détails | elfique
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Armes elfique noir")) {
+    if (message.content.startsWith(prefix + "Equipements elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Liste des armes elfique noir :", "=Epée elfique noir\n=Espadon elfique noir\n=Dague elfique noir\n=Masse elfique noir\n=Marteau elfique noir\n=Hache elfique noir\n=Hallebarde elfique noir\n=Rapière elfique noir\n=Cimeterre elfique noir\n=Sabre elfique noir\n=Katana elfique noir\n=Nodachi elfique noir\n=Pavois elfique noir")
+            .addField(":scales: Liste des équipements elfique sylvestre :", "=Casque elfique sylvestre\n=Epaulières elfique sylvestre\n=Plastron elfique sylvestre\n=Cape elfique sylvestre\n=Ceinture elfique sylvestre\n=Gantelets elfique sylvestre\n=Jambières elfique sylvestre\n=Bottes elfique sylvestre")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63194,12 +63194,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Epée elfique noir")) {
+    if (message.content.startsWith(prefix + "Casque elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée elfique noir :", ":scales: C'est une épée faite à partir des matériaux elfique !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'épée elfique noir`")
+            .addField(":scales: Casque elfique sylvestre :", ":scales: C'est un casque elfique sylvestre trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat du casque elfique sylvestre`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63207,12 +63210,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Espadon elfique noir")) {
+    if (message.content.startsWith(prefix + "Epaulières elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Espadon elfique noir :", ":scales: C'est une épée faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\nkeyboard: Si vous achetez cet objet : `=Achat de l'espadon elfique noir`")
+            .addField(":scales: Epaulières elfique sylvestre :", ":scales: Ce sont des épaulières trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+            ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat des épaulières elfique sylvestre`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63220,12 +63226,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Dague elfique noir")) {
+    if (message.content.startsWith(prefix + "Plastron elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague elfique noir :", ":scales: C'est une dague faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la dague elfique noir`")
+            .addField(":scales: Plastron elfique sylvestre :", ":scales: C'est un plastron elfique sylvestre trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+            ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat du plastron elfique sylvestre`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63233,12 +63242,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Masse elfique noir")) {
+    if (message.content.startsWith(prefix + "Cape elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse elfique noir :", ":scales: C'est une masse faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la masse elfique noir`")
+            .addField(":scales: Cape elfique sylvestre :", ":scales: C'est une cape trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat de la cape elfique sylvestre`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63246,12 +63258,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Marteau elfique noir")) {
+    if (message.content.startsWith(prefix + "Ceinture elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Marteau elfique noir :", ":scales: C'est une masse faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du marteau elfique noir`")
+            .addField(":scales: Ceinture elfique sylvestre :", ":scales: C'est une ceinture trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat de la ceinture elfique sylvestre`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63259,12 +63274,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Hache elfique noir")) {
+    if (message.content.startsWith(prefix + "Gantelets elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache elfique noir :", ":scales: C'est une hache faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la hache elfique noir`")
+            .addField(":scales: Gantelets elfique sylvestre :", ":scales: Ce sont des gantelets trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat des gantelets elfique sylvestre`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63272,12 +63290,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Hallebarde elfique noir")) {
+    if (message.content.startsWith(prefix + "Jambières elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hallebarde elfique noir :", ":scales: C'est une hache faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la hallebarde elfique noir`")
+            .addField(":scales: Jambières elfique sylvestre :", ":scales: Ce sont des jambières trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat des jambières elfique sylvestre`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63285,12 +63306,15 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Rapière elfique noir")) {
+    if (message.content.startsWith(prefix + "Bottes elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière elfique noir :", ":scales: C'est une rapière faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31 rapière elfique noir`\n\n:keyboard: Si vous achetez cet objet : `=Achat de la rapière elfique noir`")
+            .addField(":scales: Bottes elfique sylvestre :", ":scales: Ce sont des bottes trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat des bottes elfique sylvestre`\n\n" +
+                ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63298,12 +63322,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cimeterre elfique noir")) {
+    if (message.content.startsWith(prefix + "Bijoux elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre elfique noir :", ":scales: C'est un cimeterre fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du cimeterre elfique noir`")
+            .addField(":scales: Liste des bijoux elfique sylvestre :", "=Anneau elfique sylvestre\n=Amulette elfique sylvestre")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63311,12 +63335,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Sabre elfique noir")) {
+    if (message.content.startsWith(prefix + "Anneau elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Sabre elfique noir :", ":scales: C'est un cimeterre fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du sabre elfique noir`")
+            .addField(":scales: Anneau elfique sylvestre :", ":scales: C'est un anneau elfique sylvestre trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat de l'anneau elfique sylvestre`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63324,12 +63350,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Katana elfique noir")) {
+    if (message.content.startsWith(prefix + "Amulette elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana elfique noir :", ":scales: C'est un katana fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du katana elfique noir`")
+            .addField(":scales: Amulette elfique sylvestre :", ":scales: C'est une amulette trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":keyboard: Si vous achetez cet objet : `=Achat de l'amulette elfique sylvestre`\n\n:keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63337,12 +63365,12 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Nodachi elfique noir")) {
+    if (message.content.startsWith(prefix + "Bonus de la panoplie elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Nodachi elfique noir :", ":scales: C'est un katana fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du nodachi elfique noir`")
+            .addField(":scales: Panoplie elfique sylvestre :", "Voici les bonus que vous obtiendrez selon le nombre de pièces d'équipements que vous équiperez (armes non comprises), les bonus sont additifs : \n\n- Pour 2 pièces : Bonus de 4 points d'armure\n- Pour 4 pièces : Bonus de 2 d'armure\n- Pour 6 pièces : Bonus de 2 points d'armure\n- Pour 8 pièces : Bonus de 1 points d'armure\n- Pour 10 pièces : Accès à la compétence `=Vision elfique : [Vos points d'attaque]` , permettant d'attaquer tous monstre non atteignabe caché par la faune. __Ne fonctionne pas sur des monstres non caché.__")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63350,12 +63378,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Bâton elfique noir")) {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat du casque elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bâton elfique noir :", ":scales: C'est un bâton fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup sauté' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du bâton elfique noir`")
+            .addField(":scales: Casque elfique sylvestre :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63363,12 +63393,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Lance elfique noir")) {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat des épaulières elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Lance elfique noir :", ":scales: C'est une lance fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la lance elfique noir`")
+            .addField(":scales: Épaulières elfique sylvestre :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63376,12 +63408,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Cestes elfique noir")) {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat du plastron elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cestes elfique noir :", ":scales: C'est des cestes fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup normal' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat des cestes elfique noir`")
+            .addField(":scales: Plastron elfique sylvestre :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63389,12 +63423,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Pavois elfique noir")) {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat de la cape elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier elfique noir :", ":scales: C'est un bouclier fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du pavois elfique noir`")
+            .addField(":scales: Cape elfique sylvestre :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63402,12 +63438,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Rondace elfique noir")) {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat de la ceinture elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier elfique noir :", ":scales: C'est un bouclier fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du rondace elfique noir`")
+            .addField(":scales: Ceinture elfique sylvestre :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63415,12 +63453,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Ecu elfique noir")) {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat des gantelets elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier elfique noir :", ":scales: C'est un bouclier fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du écu elfique noir`")
+            .addField(":scales: Gantelets elfique sylvestre :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63428,12 +63468,319 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Targe elfique noir")) {
+  const HP = Math.floor(16 * Math.random() + 35)
+  const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat des jambières elfique sylvestre")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bouclier elfique noir :", ":scales: C'est un bouclier fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Cri de provocation' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du targe elfique noir`")
+            .addField(":scales: Jambières elfique sylvestre :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 35)
+    const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat des bottes elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes elfique sylvestre :", ":scales: Vous venez de découvrir cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'anneau elfique sylvestre")) {
+        const Dégâts = Math.floor(1 * Math.random() + 20)
+        const HP = Math.floor(31 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau elfique sylvestre :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:shield: Points d'armure : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'amulette elfique sylvestre")) {
+        const Dégâts = Math.floor(1 * Math.random() + 20)
+        const HP = Math.floor(31 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette elfique :", ":scales: Vous venez de fabriquer cet objet !\n\n:gift_heart: HP : " + HP + "\n:shield: Points d'armure : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Armes elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Liste des armes elfique :", "=Epée elfique\n=Espadon elfique\n=Dague elfique\n=Masse elfique\n=Marteau elfique\n=Hache elfique\n=Hallebarde elfique\n=Rapière elfique\n=Cimeterre elfique\n=Sabre elfique\n=Katana elfique\n=Nodachi elfique\n=Pavois elfique")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Epée elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Epée elfique :", ":scales: C'est une épée faite à partir des matériaux elfique !\n\n:crossed_swords: Améliore le 'Combo' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de l'épée elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Espadon elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Espadon elfique :", ":scales: C'est une épée faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Combo' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\nkeyboard: Si vous achetez cet objet : `=Achat de l'espadon elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Dague elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Dague elfique :", ":scales: C'est une dague faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup létal' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la dague elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Masse elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Masse elfique :", ":scales: C'est une masse faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup provocateur' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la masse elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Marteau elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Marteau elfique :", ":scales: C'est une masse faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup provocateur' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du marteau elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Hache elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Hache elfique :", ":scales: C'est une hache faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup circulaire' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la hache elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Hallebarde elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Hallebarde elfique :", ":scales: C'est une hache faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup circulaire' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la hallebarde elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Rapière elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Rapière elfique :", ":scales: C'est une rapière faite à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup d'estoc de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31 rapière elfique`\n\n:keyboard: Si vous achetez cet objet : `=Achat de la rapière elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cimeterre elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cimeterre elfique :", ":scales: C'est un cimeterre fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du cimeterre elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Sabre elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Sabre elfique :", ":scales: C'est un cimeterre fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore l' 'Esquive' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du sabre elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Katana elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Katana elfique :", ":scales: C'est un katana fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du katana elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Nodachi elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Nodachi elfique :", ":scales: C'est un katana fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore la 'Parade' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du nodachi elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Bâton elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bâton elfique :", ":scales: C'est un bâton fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup sauté' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du bâton elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Lance elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Lance elfique :", ":scales: C'est une lance fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup perce armure' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat de la lance elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Cestes elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cestes elfique :", ":scales: C'est des cestes fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Coup normal' de 3 points\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat des cestes elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Pavois elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bouclier elfique :", ":scales: C'est un bouclier fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Blocage' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du pavois elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Rondace elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bouclier elfique :", ":scales: C'est un bouclier fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore l' 'Esquive' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du rondace elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Ecu elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bouclier elfique :", ":scales: C'est un bouclier fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore la 'Parade' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du écu elfique`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Targe elfique")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bouclier elfique :", ":scales: C'est un bouclier fait à partir des matériaux elfique!\n\n:crossed_swords: Améliore le 'Cri de provocation' de 1 point sauf si une autre arme du même type est équipé. Le bonus deviendra +3 en tout.\n\n:sparkles: Niveau minimum requis pour le porter : 31\n\n:keyboard: Si vous achetez cet objet : `=Achat du targe elfique`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63445,13 +63792,13 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de l'épée elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat de l'épée elfique")) {
         const Dégâts = Math.floor(4 * Math.random() + 25)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Epée elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Epée elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63459,13 +63806,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de l'espadon elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat de l'espadon elfique")) {
         const Dégâts = Math.floor(8 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Espadon elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Espadon elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63473,13 +63820,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la dague elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat de la dague elfique")) {
         const Dégâts = Math.floor(4 * Math.random() + 25)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Dague elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Dague elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63487,13 +63834,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la masse elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat de la masse elfique")) {
         const Dégâts = Math.floor(4 * Math.random() + 25)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Masse elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Masse elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63501,13 +63848,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du marteau elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat du marteau elfique")) {
         const Dégâts = Math.floor(8 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Marteau elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Marteau elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63515,13 +63862,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la hache elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat de la hache elfique")) {
         const Dégâts = Math.floor(4 * Math.random() + 25)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hache elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Hache elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63529,13 +63876,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la hallebarde elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat de la hallebarde elfique")) {
         const Dégâts = Math.floor(8 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Hallebarde elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Hallebarde elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63543,13 +63890,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la rapière elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat de la rapière elfique")) {
         const Dégâts = Math.floor(4 * Math.random() + 25)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rapière elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Rapière elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63557,13 +63904,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du cimeterre elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat du cimeterre elfique")) {
         const Dégâts = Math.floor(4 * Math.random() + 25)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cimeterre elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Cimeterre elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63571,13 +63918,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du sabre elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat du sabre elfique")) {
         const Dégâts = Math.floor(8 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Sabre elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Sabre elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63585,13 +63932,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du katana elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat du katana elfique")) {
         const Dégâts = Math.floor(4 * Math.random() + 25)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Katana elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Katana elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63599,13 +63946,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du nodachi elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat du nodachi elfique")) {
         const Dégâts = Math.floor(8 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Nodachi elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Nodachi elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63613,13 +63960,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du bâton elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat du bâton elfique")) {
         const Dégâts = Math.floor(8 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Bâton elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Bâton elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63627,13 +63974,13 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat des cestes elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat des cestes elfique")) {
         const Dégâts = Math.floor(8 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Cestes elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Cestes elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63642,13 +63989,13 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat de la lance elfique noir")) {
+    if (message.content.startsWith(prefix + "Achat de la lance elfique")) {
         const Dégâts = Math.floor(8 * Math.random() + 50)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Lance elfique noir :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
+            .addField(":scales: Lance elfique :", ":scales: Vous venez de fabriquez cet objet !\n\n:crossed_swords: Points de dégâts : " + Dégâts)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63656,14 +64003,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du pavois elfique noir")) {
-        const Défense = Math.floor(2 * Math.random() + 9)
-        const HP = Math.floor(11 * Math.random() + 50)
+    if (message.content.startsWith(prefix + "Achat du pavois elfique")) {
+        const Défense = Math.floor(2 * Math.random() + 14)
+        const HP = Math.floor(11 * Math.random() + 65)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Pavois elfique noir :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .addField(":scales: Pavois elfique :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63671,14 +64018,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du rondache elfique noir")) {
-        const Défense = Math.floor(2 * Math.random() + 9)
-        const HP = Math.floor(11 * Math.random() + 50)
+    if (message.content.startsWith(prefix + "Achat du rondache elfique")) {
+      const Défense = Math.floor(2 * Math.random() + 14)
+      const HP = Math.floor(11 * Math.random() + 65)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Rondache elfique noir :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .addField(":scales: Rondache elfique :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63686,14 +64033,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du écus elfique noir")) {
-        const Défense = Math.floor(2 * Math.random() + 9)
-        const HP = Math.floor(11 * Math.random() + 50)
+    if (message.content.startsWith(prefix + "Achat du écus elfique")) {
+      const Défense = Math.floor(2 * Math.random() + 14)
+      const HP = Math.floor(11 * Math.random() + 65)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Ecus elfique noir :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .addField(":scales: Ecus elfique :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63701,14 +64048,14 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Achat du targe elfique noir")) {
-        const Défense = Math.floor(2 * Math.random() + 9)
-        const HP = Math.floor(11 * Math.random() + 50)
+    if (message.content.startsWith(prefix + "Achat du targe elfique")) {
+      const Défense = Math.floor(2 * Math.random() + 14)
+      const HP = Math.floor(11 * Math.random() + 65)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scales: Targe elfique noir :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .addField(":scales: Targe elfique :", ":scales: Vous venez de fabriquer cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
