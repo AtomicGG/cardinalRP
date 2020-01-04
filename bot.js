@@ -37738,7 +37738,7 @@ bot.on('message', message => {
             .addBlankField(true)
             .addField("Le coup débilitant :", "C'est un coup moyennement puissant, permettant de diminuer les dégâts de la cible pendant un tour.")
             .addBlankField(true)
-            .addField("Le coup dévastateur :", "C'est un coup moyennement puissant, permettant parfois de paralyser la cible pendant un tour.")
+            /*.addField("Le coup dévastateur :", "C'est un coup moyennement puissant, permettant parfois de paralyser la cible pendant un tour.")
             .addBlankField(true)
             .addField("Le coup précis :", "C'est un coup plutôt faible, permettant d'empêcher la cible d'attaquer pendant un tour.")
             .addBlankField(true)
@@ -37757,7 +37757,7 @@ bot.on('message', message => {
             .addField("Le détournement :", "C'est une défense, permettant parfois de renvoyer une partie des dégâts reçus vers l'un des coéquipiers de l'ennemi.")
             .addBlankField(true)
             .addField("Le coup résonant :", "C'est un coup permettant parfois d'empêcher la cible d'attaquer pendant un tour.")
-            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")*/
             .setTimestamp()
         message.channel.send({ embed })
     }
