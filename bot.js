@@ -64343,11 +64343,8 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Coup rapide")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
-        const degat1 = Math.floor((atk * 0.1 + 1) * Math.random() + (atk * 0.1))
-        const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.2))
-        const degat3 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.2))
-        const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.3))
-        const total = degat1 + degat2 + degat3 + degatcrit
+        const degat1 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
+        const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
         const final = degat1 + degat2
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 10) {
@@ -64371,6 +64368,11 @@ bot.on('message', message => {
             message.channel.send({ embed })
         }
         if (96 <= roll) {
+            const degat1 = Math.floor((atk * 0.1 + 1) * Math.random() + (atk * 0.1))
+            const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.2))
+            const degat3 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.2))
+            const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.3))
+            const total = degat1 + degat2 + degat3 + degatcrit
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
