@@ -64223,7 +64223,7 @@ bot.on('message', message => {
         const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.3))
         const total = degat1 + degat2 + degat3 + degatcrit
         const final = degat1 + degat2
-        const roll = Math.floor(100 * Math.random() + 1)
+        const roll = /*Math.floor(100 * Math.random() + 1)*/97
         if (roll <= 10) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
