@@ -37495,6 +37495,20 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .addField("Il y a deux types de coups et défense :", "- Les coups et défenses générales : `=Coups et défenses générales`\n" +
+                "- Les coups et défenses des armes : `=Coups et défenses des armes`")
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Coups et défenses générales") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .addField(":crossed_swords: Pour effectuer un coup normal :", ":crossed_swords: `=Coup normal : [Vos dégâts]`\n" +
                 ":crossed_swords: `=Coup normal +1 : [Vos dégâts]`\n" +
                 ":crossed_swords: `=Coup normal +2 : [Vos dégâts]`\n" +
@@ -37540,11 +37554,11 @@ bot.on('message', message => {
                 ":shield: `=Blocage +2 : [Dégâts de l'attaque de l'ennemi]`\n" +
                 ":shield: `=Blocage +3 : [Dégâts de l'attaque de l'ennemi]`")
             .addBlankField(true)
-            .addField(":book: Pour savoir ce que vous débloquez selon le niveau :", ":book: `=Coups et défenses apprentissage`")
+            .addField(":book: Pour savoir ce que vous débloquez selon le niveau :", ":book: `=Coups et défenses générales apprentissage`")
             .addBlankField(true)
-            .addField(":book: Pour comprendre à quoi sert chaques coups et défenses :", ":book: `=Coups et défenses descriptions`")
+            .addField(":book: Pour comprendre à quoi sert chaques coups et défenses :", ":book: `=Coups et défenses générales descriptions`")
             .addBlankField(true)
-            .addField(":crossed_swords:Pour la suite des coups et défenses possibles :", "`=Coups et défenses 2`")
+            .addField(":crossed_swords:Pour la suite des coups et défenses générales possibles :", "`=Coups et défenses générales 2`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37552,7 +37566,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Coups et défenses 2") {
+    if (message.content === (prefix) + "Coups et défenses générales 2") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -37588,7 +37602,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Coups et défenses descriptions") {
+    if (message.content === (prefix) + "Coups et défenses générales descriptions") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -37613,7 +37627,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Coups et défenses apprentissage") {
+    if (message.content === (prefix) + "Coups et défenses générales apprentissage") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -37646,6 +37660,8 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 })
+
+
 
 // Coups & Défenses | Coup normal
 
@@ -64201,10 +64217,10 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Coup rapide")) {
         let position = args.indexOf(":");
         let atk = args.slice(position + 2);
-        const degat1 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
-        const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
-        const degat3 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.7))
-        const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.8))
+        const degat1 = Math.floor((atk * 0.1 + 1) * Math.random() + (atk * 0.1))
+        const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.2))
+        const degat3 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.2))
+        const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.3))
         const total = degat1 + degat2 + degat3 + degatcrit
         const final = degat1 + degat2
         const roll = Math.floor(100 * Math.random() + 1)
