@@ -62737,7 +62737,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (6 <= roll && roll <= 45) {
+        if (6 <= roll && roll <= 55) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -62747,7 +62747,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (46 <= roll) {
+        if (56 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
