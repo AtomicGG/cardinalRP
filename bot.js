@@ -64346,7 +64346,7 @@ bot.on('message', message => {
         const degat1 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
         const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
         const final = degat1 + degat2
-        const roll = /*Math.floor(100 * Math.random() + 1)*/97
+        const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 10) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
