@@ -64369,9 +64369,9 @@ bot.on('message', message => {
         }
         if (96 <= roll) {
             const degat1 = Math.floor((atk * 0.1 + 1) * Math.random() + (atk * 0.1))
-            const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.2))
-            const degat3 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.2))
-            const degatcrit = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.3))
+            const degat2 = Math.floor((atk * 0.2 + 1) * Math.random() + (atk * 0.2))
+            const degat3 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.3))
+            const degatcrit = Math.floor((atk * 0.4 + 1) * Math.random() + (atk * 0.4))
             const total = degat1 + degat2 + degat3 + degatcrit
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
