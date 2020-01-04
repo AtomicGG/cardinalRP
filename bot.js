@@ -37715,7 +37715,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-    if (message.content === (prefix) + "Coups et défenses générales descriptions") {
+    if (message.content === (prefix) + "Coups et défenses des armes descriptions") {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
