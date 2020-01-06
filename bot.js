@@ -45269,6 +45269,22 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Aura de la nature")) {
+        let hp = args.slice(4).join(" : ");
+        const soin = Math.floor(hp * Math.random() + 1)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            //.setImage("https://cdn.discordapp.com/attachments/654219161630933002/663541405309861938/pit-trap.png")
+            .addField("Vous sentez une aura autour de vous !", "Vous êtes soigné de " + soin + " points de vie !")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Météo
 
 bot.on('message', message => {
