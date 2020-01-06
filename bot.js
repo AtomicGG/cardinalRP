@@ -45262,6 +45262,7 @@ bot.on('message', message => {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
+            .setImage("https://cdn.discordapp.com/attachments/654219161630933002/663541405309861938/pit-trap.png")
             .addField("Vous tombez dans un piège !", "Vous subissez " + degat + " points de dégâts perce armure !")
             .setTimestamp()
         message.channel.send({ embed })
