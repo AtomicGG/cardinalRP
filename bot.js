@@ -63815,8 +63815,8 @@ bot.on('message', message => {
 
 // Petite grotte | Métiers | Protecteurs | Attaques
 
-bot.off('message', message => {
-    if (message.content.startsWith(prefix + "Loup sombre attaque")) {
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Phacochère attaque")) {
         const degat = Math.floor(26 * Math.random() + 255)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 15) {
@@ -63824,7 +63824,7 @@ bot.off('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: La sombre créature canine vous faisant face jettera son dévolu sur une cible précise et ne prêtera plus attention aux différentes provocations qui pourrait la viser.\nAu prochain tour, le loup au pelage noir de jais va vivement bondir sur le côté, se mouvant dans un silence de mort, camouflé par les multiples obstacles visuels des lieux.\nIl en sortira alors brusquement pour attaquer la proie désignée : L'effet de surprise rend toute esquive impossible, ne vous laissant le temps que de vous défendre sans déplacement.")
+                .addField(":crossed_swords: Phacochère :", ":crossed_swords: La sombre créature canine vous faisant face jettera son dévolu sur une cible précise et ne prêtera plus attention aux différentes provocations qui pourrait la viser.\nAu prochain tour, le loup au pelage noir de jais va vivement bondir sur le côté, se mouvant dans un silence de mort, camouflé par les multiples obstacles visuels des lieux.\nIl en sortira alors brusquement pour attaquer la proie désignée : L'effet de surprise rend toute esquive impossible, ne vous laissant le temps que de vous défendre sans déplacement.")
             message.channel.send({ embed })
         }
         if (16 <= roll && roll <= 85) {
@@ -63832,7 +63832,7 @@ bot.off('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: Le loup sombre vous choisit comme prochaine victime puis, après avoir poussé un grognement dévoilant ses crocs acérés, se rue sur vous en esquivant avec une aisance totale les différents obstacles naturels de son habitat. Il plonge alors profondément ses crocs dans votre chair, vous infligeant " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le loup sombre vous choisit comme prochaine victime puis, après avoir poussé un grognement dévoilant ses crocs acérés, se rue sur vous en esquivant avec une aisance totale les différents obstacles naturels de son habitat. Il plonge alors profondément ses crocs dans votre chair, vous infligeant " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63841,14 +63841,14 @@ bot.off('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre:", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
+                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Loup sombre attaque")) {
         const degat = Math.floor(26 * Math.random() + 255)
         const roll = Math.floor(100 * Math.random() + 1)
@@ -63883,34 +63883,52 @@ bot.off('message', message => {
 
 // Petite grotte | Métiers | Protecteurs | Défenses
 
-bot.off('message', message => {
+bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Loup sombre défense")) {
-        let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.2))
+    if (message.content.startsWith(prefix + "Phacochère défense")) {
+        let degat = args.slice(2).join(" : ");
+        const esquiveRatee = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
+        const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.6))
+        const blocageRatee = Math.floor(((degat * 1.5) + 1) * Math.random() + (degat * 1.5))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+        if (roll <= 25) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: Vous voyant lancer l'assaut, le canidé, certes fort mais un peu trop fier, tentera comme à son habitude de vous éviter tout en vous faisant vous écraser au sol. Malheureusement pour lui, sa fierté n'en sera que plus blessée pour cette même raison lorsque sa manœuvre échouera et que vous lui infligerez un puissant coup au bas-ventre. Sa fierté ne sera pas la seule chose blessée, puisque vous lui infligez " + echec + " points de dégâts.")
+                .addField(":shield: Phacochère :", ":shield: Le phacochère tente d'esquive votre coup mais se loupe. Vous lui infligez " + esquiveRatee + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (71 <= roll) {
+        if (26 <= roll && roll <= 40) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: L'habile animal vous faisant face, vous voyant attaquer, bondira une première fois du sol dans votre direction quoiqu'un peu plus haut que vous. Retombant sur vous, il se servira de votre corps comme d'une seconde plateforme et effectuera un deuxième bond pour finalement atterrir derrière vous, ne vous lâchant pas du regard. Malgré votre, très certaine, absence de connaissances en physiognomonie lupine, vous êtes étrangement convaincu en regardant son expression qu'il se moque de vous suite à cette action.")
+                .addField(":shield: Phacochère :", ":shield: Le phacochère esquive votre coup.")
+            message.channel.send({ embed })
+        }
+        if (41 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Phacochère :", ":shield: Le phacochère bloque votre coup à l'aide de ses défense, vous lui infligez " + blocageReussie + " points de dégâts.")
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Phacochère :", ":shield: Le phacochère tente de bloquer votre coup mais vous arrivez à toucher son point faible, lui infligeant " + blocageRatee + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Loup sombre défense")) {
@@ -63941,7 +63959,7 @@ bot.off('message', message => {
 
 bot.off('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Loup sombre récompenses")) {
+    if (message.content.startsWith(prefix + "Phacochère récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         const viande = Math.floor((2 - 0.46) * Math.random())
