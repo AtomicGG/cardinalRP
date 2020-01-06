@@ -62649,7 +62649,8 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: L'intelligent chasseur aérien aperçoit vos agissements et les comprend bien assez vite. Cependant, plutôt que simplement manœuvrer au loin pour esquiver votre assaut, il décide de continuer vers vous en passant légèrement trop haut pour être à la portée de votre coup et vient refermer ses puissantes serres sur vos épaules, vous emportant avec lui.\nÀ son prochain tour, faites la commande `=Eagle punch`.").setTimestamp()
+                .addField(":crossed_swords: Eagle vol :", ":crossed_swords: L'intelligent chasseur aérien aperçoit vos agissements et les comprend bien assez vite. Cependant, plutôt que simplement manœuvrer au loin pour esquiver votre assaut, il décide de continuer vers vous en passant légèrement trop haut pour être à la portée de votre coup et vient refermer ses puissantes serres sur vos épaules, vous emportant avec lui.\nÀ son prochain tour, faites la commande `=Aigle spécial`.")
+                .setTimestamp()
             message.channel.send({ embed })
         }
     }
