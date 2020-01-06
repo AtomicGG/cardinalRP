@@ -63361,7 +63361,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Sarriette carnivore :", ":shield: La sarriette carnivore va ouvrir la gueule en vous voyant arriver mais ne la refermera pas assez vite sur vous, vous lui infligez " + paradeRate + " points de dégâts.")
+                .addField(":shield: Sarriette carnivore :", ":shield: La sarriette carnivore va ouvrir la gueule en vous voyant arriver mais ne la refermera pas assez vite sur vous, vous lui infligez " + paradeRatee + " points de dégâts.")
             message.channel.send({ embed })
         }
         if (86 <= roll) {
