@@ -63850,7 +63850,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le phacochère vous charge et vous percute, vous inflieant " + degat + " points de dégâts, et vous empêche d'attaquer ce tour si vous n'esquivez pas l'attaque (ou en cas de parade réusside).")
+                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le phacochère vous charge et vous percute, vous inflieant " + degat + " points de dégâts, et vous empêche d'attaquer ce tour si vous n'esquivez pas l'attaque (ou en cas de parade réussite).")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63858,32 +63858,33 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Loup sombre attaque")) {
-        const degat = Math.floor(26 * Math.random() + 255)
+    if (message.content.startsWith(prefix + "Golemite de malachite attaque")) {
+        const degat = Math.floor(31 * Math.random() + 200)
+        const crit = Math.floor(31 * Math.random() + 250)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 15) {
+        if (roll <= 50) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: La sombre créature canine vous faisant face jettera son dévolu sur une cible précise et ne prêtera plus attention aux différentes provocations qui pourrait la viser.\nAu prochain tour, le loup au pelage noir de jais va vivement bondir sur le côté, se mouvant dans un silence de mort, camouflé par les multiples obstacles visuels des lieux.\nIl en sortira alors brusquement pour attaquer la proie désignée : L'effet de surprise rend toute esquive impossible, ne vous laissant le temps que de vous défendre sans déplacement.")
+                .addField(":crossed_swords: Golemite de malachite :", ":crossed_swords: Le golemite tente de vous attaquer mais se loupe.")
             message.channel.send({ embed })
         }
-        if (16 <= roll && roll <= 85) {
+        if (51 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: Le loup sombre vous choisit comme prochaine victime puis, après avoir poussé un grognement dévoilant ses crocs acérés, se rue sur vous en esquivant avec une aisance totale les différents obstacles naturels de son habitat. Il plonge alors profondément ses crocs dans votre chair, vous infligeant " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Golemite de malachite :", ":crossed_swords: Le golemite vous attaque, vous infligeant " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (86 <= roll) {
+        if (91 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre:", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
+                .addField(":crossed_swords: Golemite de malachite :", ":crossed_swords: Le golemite vous attque, projetant une partie de son corps de golem, vous infligeant " + crit + " points de dégâts.\n\nIl perd automatiquement la moitié de ses HP restants et si il l'utilise une seconde fois, il meurt.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63940,24 +63941,35 @@ bot.on('message', message => {
 bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Loup sombre défense")) {
-        let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.2))
+    if (message.content.startsWith(prefix + "Golemite de malachite défense")) {
+        let degat = args.slice(4).join(" : ");
+        const blocageRatee = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.6))
+        const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 1))
+        const parade = Math.floor(26 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: Vous voyant lancer l'assaut, le canidé, certes fort mais un peu trop fier, tentera comme à son habitude de vous éviter tout en vous faisant vous écraser au sol. Malheureusement pour lui, sa fierté n'en sera que plus blessée pour cette même raison lorsque sa manœuvre échouera et que vous lui infligerez un puissant coup au bas-ventre. Sa fierté ne sera pas la seule chose blessée, puisque vous lui infligez " + echec + " points de dégâts.")
+                .addField(":shield: Golemite de malachite :", ":shield: Le golemite bloque votre coup, vous lui infligez " + blocageReussie * 0.8 + " points de dégâts si vous avez une arme tranchante ou " + blocageReussie * 1.2 + " points de dégâts si vous avez une arme contondante.")
             message.channel.send({ embed })
         }
-        if (71 <= roll) {
+        if (71 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: L'habile animal vous faisant face, vous voyant attaquer, bondira une première fois du sol dans votre direction quoiqu'un peu plus haut que vous. Retombant sur vous, il se servira de votre corps comme d'une seconde plateforme et effectuera un deuxième bond pour finalement atterrir derrière vous, ne vous lâchant pas du regard. Malgré votre, très certaine, absence de connaissances en physiognomonie lupine, vous êtes étrangement convaincu en regardant son expression qu'il se moque de vous suite à cette action.")
+                .addField(":shield: Golemite de malachite :", ":shield: Le golemite tente de bloquer votre coup, vous lui infligez " + blocageRatee * 0.8 + " points de dégâts si vous avez une arme tranchante ou " + blocageRatee * 1.2 + " points de dégâts si vous avez une arme contondante.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Golemite de malachite :", ":shield: Le golemite pare votre coup, il vous inflige " + parade + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -64005,7 +64017,7 @@ bot.off('message', message => {
 
 bot.off('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Loup sombre récompenses")) {
+    if (message.content.startsWith(prefix + "Golemite de malachite récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         const viande = Math.floor((2 - 0.46) * Math.random())
