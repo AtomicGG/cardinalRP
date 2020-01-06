@@ -63817,22 +63817,31 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Phacochère attaque")) {
-        const degat = Math.floor(26 * Math.random() + 255)
+        const degat = Math.floor(31 * Math.random() + 200)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 15) {
+        if (roll <= 5) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Phacochère :", ":crossed_swords: La sombre créature canine vous faisant face jettera son dévolu sur une cible précise et ne prêtera plus attention aux différentes provocations qui pourrait la viser.\nAu prochain tour, le loup au pelage noir de jais va vivement bondir sur le côté, se mouvant dans un silence de mort, camouflé par les multiples obstacles visuels des lieux.\nIl en sortira alors brusquement pour attaquer la proie désignée : L'effet de surprise rend toute esquive impossible, ne vous laissant le temps que de vous défendre sans déplacement.")
+                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le phacochère fonce vers vous mais charge en fait dans un tronc, se retrouvant paralysé pour un tour.")
             message.channel.send({ embed })
         }
-        if (16 <= roll && roll <= 85) {
+        if (6 <= roll && roll <= 35) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le loup sombre vous choisit comme prochaine victime puis, après avoir poussé un grognement dévoilant ses crocs acérés, se rue sur vous en esquivant avec une aisance totale les différents obstacles naturels de son habitat. Il plonge alors profondément ses crocs dans votre chair, vous infligeant " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le phracochère fonce vers vous mais passe à côté.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (36 <= roll && roll <= 85) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le phacochère vous charge et vous percute, vous infligeant " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63841,7 +63850,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
+                .addField(":crossed_swords: Phacochère :", ":crossed_swords: Le phacochère vous charge et vous percute, vous inflieant " + degat + " points de dégâts, et vous empêche d'attaquer ce tour si vous n'esquivez pas l'attaque (ou en cas de parade réusside).")
                 .setTimestamp()
             message.channel.send({ embed })
         }
