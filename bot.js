@@ -62028,14 +62028,11 @@ bot.on('message', message => {
         const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const rollxp = Math.floor(41 * Math.random() + 40) / 10
+        const rollxp = Math.floor(51 * Math.random() + 50) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * rollxp)
         const cols = Math.floor(31 * Math.random() + 190)
         const stuff = Math.floor(2 * 0.80 * Math.random())
         if (xp <= 0) {
-            xp = 0
-        }
-        if (lvl > 35) {
             xp = 0
         }
         const embed = new Discord.RichEmbed()
