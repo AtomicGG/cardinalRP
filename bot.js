@@ -63315,33 +63315,45 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
-    if (message.content.startsWith(prefix + "Loup sombre attaque")) {
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Piranha sahuagin attaque")) {
         const degat = Math.floor(26 * Math.random() + 255)
+        const saignement = Math.floor(26 * Math.random() + 255)
+        const piranha = Math.floor(26 * Math.random() + 255)
+        const perce = Math.floor(26 * Math.random() + 255)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 15) {
+        if (roll <= 40) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: La sombre créature canine vous faisant face jettera son dévolu sur une cible précise et ne prêtera plus attention aux différentes provocations qui pourrait la viser.\nAu prochain tour, le loup au pelage noir de jais va vivement bondir sur le côté, se mouvant dans un silence de mort, camouflé par les multiples obstacles visuels des lieux.\nIl en sortira alors brusquement pour attaquer la proie désignée : L'effet de surprise rend toute esquive impossible, ne vous laissant le temps que de vous défendre sans déplacement.")
+                .addField(":crossed_swords: Piranha sahuagin :", ":crossed_swords: Le piranha sahuagin fonce vers vous de ses nageoires tranchantes mais vous rate.")
             message.channel.send({ embed })
         }
-        if (16 <= roll && roll <= 85) {
+        if (41 <= roll && roll <= 80) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: Le loup sombre vous choisit comme prochaine victime puis, après avoir poussé un grognement dévoilant ses crocs acérés, se rue sur vous en esquivant avec une aisance totale les différents obstacles naturels de son habitat. Il plonge alors profondément ses crocs dans votre chair, vous infligeant " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Piranha sahuagin :", ":crossed_swords: Le piranha sahuagin fonce vers vous et vous attaque à l'aide de ses nageoires, vous infligeant " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (86 <= roll) {
+        if (91 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre:", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
+                .addField(":crossed_swords: Piranha sahuagin :", ":crossed_swords: Le piranha sahuagin fonce vers vous et vous mord à la gorge, vous infligeant " + degat + " points de dégâts et vous fait saigner, vous perdez " + saignement + " points de saignement pendant 3 tours. Le saignement n'est pas additif, si vous êtes déjà en saignement, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Piranha sahuagin :", ":crossed_swords: Le piranha sahuagin s'arrange pour que vous vous rapprochez de l'eau puis, passant dans votre dos, vous saute dessus et vous fait tomber dans l'eau en vous accompagnant (Seulement esquivable ou parable).\nUne fois dans l'eau, une nuée de piranha s'acharne sur vous, rendant votre remontée difficile et vous infligeant " + piranha + " points de dégâts à chaque tour que vous êtes dans l'eau.\nEn même temps, le piranha sahuagin nage à vive allure vers vous et vous lacère profondément, vous infligeant " + perce + " points de dégâts perce armure.\n\nA chaque tour, vous pouvez tenter de vous échapper de l'eau en faisant un roll supérieur à 70. Au bout de trois tours, vous sortez automatiquement de l'eau. S'il y a plus d'un joueur, le cap passe à 50.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63394,27 +63406,27 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Loup sombre défense")) {
+    if (message.content.startsWith(prefix + "Piranha sahuagin défense")) {
         let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.2))
+        const echec = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+        if (roll <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: Vous voyant lancer l'assaut, le canidé, certes fort mais un peu trop fier, tentera comme à son habitude de vous éviter tout en vous faisant vous écraser au sol. Malheureusement pour lui, sa fierté n'en sera que plus blessée pour cette même raison lorsque sa manœuvre échouera et que vous lui infligerez un puissant coup au bas-ventre. Sa fierté ne sera pas la seule chose blessée, puisque vous lui infligez " + echec + " points de dégâts.")
+                .addField(":shield: Piranha sahuagin :", ":shield: Le piranha sahuagin tente d'esquiver mais rate, vous lui infligez " + echec + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (71 <= roll) {
+        if (31 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: L'habile animal vous faisant face, vous voyant attaquer, bondira une première fois du sol dans votre direction quoiqu'un peu plus haut que vous. Retombant sur vous, il se servira de votre corps comme d'une seconde plateforme et effectuera un deuxième bond pour finalement atterrir derrière vous, ne vous lâchant pas du regard. Malgré votre, très certaine, absence de connaissances en physiognomonie lupine, vous êtes étrangement convaincu en regardant son expression qu'il se moque de vous suite à cette action.")
+                .addField(":shield: Piranha sahuagin :", ":shield: Le piranha sahuagin esquive votre attaque.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63499,7 +63511,7 @@ bot.off('message', message => {
 
 bot.off('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Loup sombre récompenses")) {
+    if (message.content.startsWith(prefix + "Piranha sahuagin récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         const viande = Math.floor((2 - 0.46) * Math.random())
