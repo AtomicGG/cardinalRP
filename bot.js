@@ -13446,7 +13446,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
@@ -13461,7 +13461,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
@@ -13476,7 +13476,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
@@ -13491,7 +13491,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
@@ -13506,7 +13506,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
@@ -13521,7 +13521,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
@@ -13536,7 +13536,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
       const HP = Math.floor(16 * Math.random() + 35)
       const Défense = Math.floor(2 * Math.random() + 8)
@@ -13551,7 +13551,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
       if (message.content.startsWith(prefix + "Achat de l'anneau elfique sylvestre")) {
           const Dégâts = Math.floor(1 * Math.random() + 20)
@@ -13566,7 +13566,7 @@ bot.on('message', message => {
           message.channel.send({ embed })
       }
   });
-  
+
   bot.on('message', message => {
       if (message.content.startsWith(prefix + "Achat de l'amulette elfique sylvestre")) {
           const Dégâts = Math.floor(1 * Math.random() + 20)
@@ -64379,6 +64379,53 @@ bot.on('message', message => {
                 .setColor(3447003)
                 .addField(":crossed_swords: Coup rapide :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` et `" + degat3 + "` et`" + degatcrit + "` qui égale a `" + total + "` points de dégâts au total qui ne peut être contré.")
                 .setImage("https://thumbs.gfycat.com/PossibleBitterIndianelephant-size_restricted.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content.startsWith(prefix + "ATATATATATATA")) {
+        let position = args.indexOf(":");
+        let atk = args.slice(position + 2);
+        const degat1 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
+        const degat2 = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 0.5))
+        const final = degat1 + degat2
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 10) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup rapide :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (11 <= roll && roll <= 95) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup rapide :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` pour un total de `" + final + "` points de dégâts.")
+                .setImage("http://img1.ak.crunchyroll.com/i/spire3/23856a273430fc2ac1c6944de758a6951432760725_full.gif")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const degat1 = Math.floor((atk * 0.05 + 1) * Math.random() + (atk * 0.3))
+            const degat2 = Math.floor((atk * 0.05 + 1) * Math.random() + (atk * 0.4))
+            const degat3 = Math.floor((atk * 0.05 + 1) * Math.random() + (atk * 0.4))
+            const degatcrit = Math.floor((atk * 0.05 + 1) * Math.random() + (atk * 0.5))
+            const total = degat1 + degat2 + degat3 + degatcrit
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Coup rapide :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat1 + "`, `" + degat2 + "` et `" + degat3 + "` et`" + degatcrit + "` qui égale a `" + total + "` points de dégâts au total qui ne peut être contré.")
+                .setImage("http://img1.ak.crunchyroll.com/i/spire3/23856a273430fc2ac1c6944de758a6951432760725_full.gif")
                 .setTimestamp()
             message.channel.send({ embed })
         }
