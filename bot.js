@@ -63940,8 +63940,8 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Golemite de malachite défense")) {
         let degat = args.slice(4).join(" : ");
-        const blocageRatee = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.6))
-        const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 1))
+        const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.6))
+        const blocageRatee = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 1))
         const parade = Math.floor(26 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
