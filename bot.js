@@ -45256,6 +45256,18 @@ bot.on('message', message => {
     }
 });
 
+bot.on('message', message => {
+    if (message.content === (prefix) + "Piège") {
+        const degat = Math.floor(101 * Math.random() + 100)
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .addField("Vous tombez dans un piège !", "Vous subissez " + degat + " points de dégâts perce armure !")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
 // Météo
 
 bot.on('message', message => {
@@ -50737,7 +50749,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Gros venom :", ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 2 !")
             .setImage("https://media.melty.fr/article-3886497-raw/media.gif")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 8000\n:shield: 125 \n:warning: **__L'empoisonement du gros venom n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5500\n:shield: 100 \n:warning: **__L'empoisonement du gros venom n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Gros venom attaque`")
             .addField(":shield: Lorsque le gros venom reçoit un coup :", ":shield: `=Gros venom défense : [Points de dégâts de votre coup]`")
             .setTimestamp()
@@ -50939,11 +50951,11 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Gros venom attaque")) {
-        const degat = Math.floor(21 * Math.random() + 190)
+        const degat = Math.floor(26 * Math.random() + 160)
         const poison = Math.floor(21 * Math.random() + 40)
         const roll = Math.floor(100 * Math.random() + 1)
         const tour = Math.floor(3 * Math.random() + 3)
-        if (roll <= 25) {
+        if (roll <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -50951,7 +50963,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Gros venom :", ":crossed_swords: Le Gros venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
             message.channel.send({ embed })
         }
-        if (26 <= roll && roll <= 80) {
+        if (31 <= roll && roll <= 80) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
