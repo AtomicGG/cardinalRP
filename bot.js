@@ -63317,10 +63317,10 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Piranha sahuagin attaque")) {
-        const degat = Math.floor(26 * Math.random() + 255)
-        const saignement = Math.floor(26 * Math.random() + 255)
-        const piranha = Math.floor(26 * Math.random() + 255)
-        const perce = Math.floor(26 * Math.random() + 255)
+        const degat = Math.floor(30 * Math.random() + 200)
+        const saignement = Math.floor(16 * Math.random() + 25)
+        const piranha = Math.floor(26 * Math.random() + 150)
+        const perce = Math.floor(26 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 40) {
             const embed = new Discord.RichEmbed()
@@ -63339,7 +63339,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll && roll <= 90) {
+        if (81 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
