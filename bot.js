@@ -7906,7 +7906,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Epaulières elfique noir :", ":scales: Ce sont des épaulières trouvables dans les camps des elfs noir au palier 3\n\n" +
-            ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
                 ":keyboard: Si vous achetez cet objet : `=Achat des épaulières elfique noir`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique noir`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -7922,7 +7922,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Plastron elfique noir :", ":scales: C'est un plastron elfique noir trouvable dans les camps des elfs noir au palier 3\n\n" +
-            ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
                 ":keyboard: Si vous achetez cet objet : `=Achat du plastron elfique noir`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique noir`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -8105,7 +8105,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Epaulières elfique sylvestre :", ":scales: Ce sont des épaulières trouvables dans les camps des elfs sylvestre au palier 3\n\n" +
-            ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
                 ":keyboard: Si vous achetez cet objet : `=Achat des épaulières elfique sylvestre`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -8121,7 +8121,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField(":scales: Plastron elfique sylvestre :", ":scales: C'est un plastron elfique sylvestre trouvable dans les camps des elfs sylvestre au palier 3\n\n" +
-            ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
+                ":sparkles: Niveau minimum requis pour le porter : 31\n\n" +
                 ":keyboard: Si vous achetez cet objet : `=Achat du plastron elfique sylvestre`\n\n" +
                 ":keyboard: Pour voir le bonus qu'offre la panoplie : `=Bonus de la panoplie elfique sylvestre`")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
@@ -13435,152 +13435,152 @@ bot.on('message', message => {
 bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
-      if (message.content.startsWith(prefix + "Achat du casque elfique sylvestre")) {
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Casque elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+    if (message.content.startsWith(prefix + "Achat du casque elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Casque elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
+bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
-      if (message.content.startsWith(prefix + "Achat des épaulières elfique sylvestre")) {
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Épaulières elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+    if (message.content.startsWith(prefix + "Achat des épaulières elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Épaulières elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
+bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
-      if (message.content.startsWith(prefix + "Achat du plastron elfique sylvestre")) {
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Plastron elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+    if (message.content.startsWith(prefix + "Achat du plastron elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Plastron elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
+bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
-      if (message.content.startsWith(prefix + "Achat de la cape elfique sylvestre")) {
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Cape elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+    if (message.content.startsWith(prefix + "Achat de la cape elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Cape elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
+bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
-      if (message.content.startsWith(prefix + "Achat de la ceinture elfique sylvestre")) {
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Ceinture elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+    if (message.content.startsWith(prefix + "Achat de la ceinture elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Ceinture elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
+bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
-      if (message.content.startsWith(prefix + "Achat des gantelets elfique sylvestre")) {
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Gantelets elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+    if (message.content.startsWith(prefix + "Achat des gantelets elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Gantelets elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
+bot.on('message', message => {
     const HP = Math.floor(16 * Math.random() + 35)
     const Défense = Math.floor(2 * Math.random() + 8)
-      if (message.content.startsWith(prefix + "Achat des jambières elfique sylvestre")) {
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Jambières elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+    if (message.content.startsWith(prefix + "Achat des jambières elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Jambières elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
-      const HP = Math.floor(16 * Math.random() + 35)
-      const Défense = Math.floor(2 * Math.random() + 8)
-      if (message.content.startsWith(prefix + "Achat des bottes elfique sylvestre")) {
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Bottes elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+bot.on('message', message => {
+    const HP = Math.floor(16 * Math.random() + 35)
+    const Défense = Math.floor(2 * Math.random() + 8)
+    if (message.content.startsWith(prefix + "Achat des bottes elfique sylvestre")) {
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Bottes elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:shield: Points d'armure : " + Défense + "\n:gift_heart: HP : " + HP)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Achat de l'anneau elfique sylvestre")) {
-          const Dégâts = Math.floor(1 * Math.random() + 20)
-          const HP = Math.floor(31 * Math.random() + 45)
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Anneau elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:shield: Points d'armure : " + Dégâts)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'anneau elfique sylvestre")) {
+        const Dégâts = Math.floor(1 * Math.random() + 20)
+        const HP = Math.floor(31 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Anneau elfique sylvestre :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:shield: Points d'armure : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
-  bot.on('message', message => {
-      if (message.content.startsWith(prefix + "Achat de l'amulette elfique sylvestre")) {
-          const Dégâts = Math.floor(1 * Math.random() + 20)
-          const HP = Math.floor(31 * Math.random() + 45)
-          const embed = new Discord.RichEmbed()
-              .setAuthor(message.author.username, message.author.avatarURL)
-              .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-              .setColor(3447003)
-              .addField(":scales: Amulette elfique :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:shield: Points d'armure : " + Dégâts)
-              .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
-              .setTimestamp()
-          message.channel.send({ embed })
-      }
-  });
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Achat de l'amulette elfique sylvestre")) {
+        const Dégâts = Math.floor(1 * Math.random() + 20)
+        const HP = Math.floor(31 * Math.random() + 45)
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":scales: Amulette elfique :", ":scales: Vous venez d'acheter cet objet !\n\n:gift_heart: HP : " + HP + "\n:shield: Points d'armure : " + Dégâts)
+            .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
 
 // Menus | Liste | Armes
 
@@ -33494,8 +33494,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat de la rondache elfique")) {
-      const Défense = Math.floor(2 * Math.random() + 14)
-      const HP = Math.floor(11 * Math.random() + 65)
+        const Défense = Math.floor(2 * Math.random() + 14)
+        const HP = Math.floor(11 * Math.random() + 65)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33509,8 +33509,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat de l'écu elfique")) {
-      const Défense = Math.floor(2 * Math.random() + 14)
-      const HP = Math.floor(11 * Math.random() + 65)
+        const Défense = Math.floor(2 * Math.random() + 14)
+        const HP = Math.floor(11 * Math.random() + 65)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -33524,8 +33524,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Achat de la targe elfique")) {
-      const Défense = Math.floor(2 * Math.random() + 14)
-      const HP = Math.floor(11 * Math.random() + 65)
+        const Défense = Math.floor(2 * Math.random() + 14)
+        const HP = Math.floor(11 * Math.random() + 65)
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -37670,8 +37670,8 @@ bot.on('message', message => {
             .addField(":crossed_swords: Si vous possédez une épée :", ":crossed_swords: `=Coup glissé : [Vos dégâts]`")
             .addBlankField(true)
             .addField(":crossed_swords: Si vous possédez un espadon :", ":crossed_swords: `=Coup tournoyant 1 : [Vos dégâts]`\n" +
-            ":crossed_swords: `=Coup tournoyant 2 : [Vos dégâts]`\n" +
-            ":crossed_swords: `=Coup tournoyant 3 : [Vos dégâts]`")
+                ":crossed_swords: `=Coup tournoyant 2 : [Vos dégâts]`\n" +
+                ":crossed_swords: `=Coup tournoyant 3 : [Vos dégâts]`")
             .addBlankField(true)
             .addField(":crossed_swords: Si vous possédez une dague :", ":crossed_swords: `=Coup sanglant : [Vos dégâts]`")
             .addBlankField(true)
@@ -62077,10 +62077,10 @@ bot.on('message', message => {
             let aigle = 0;
             let roll = 0;
             let nbr = 5;
-            if(joueurs == 1){
+            if (joueurs == 1) {
                 nbr = 6;
             }
-            if(joueurs >= 3){
+            if (joueurs >= 3) {
                 nbr = 4;
             }
             do {
@@ -62251,7 +62251,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre:", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
+                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -62926,9 +62926,9 @@ bot.on('message', message => {
                                 ":wilted_rose: Sarriette rare : " + rare * 2 + "\n" +
                                 ":wilted_rose: Sarriette parfaite : " + parfait * 2 + "\n" +
                                 ":sparkles: Points d'expérience dans le métier 'Cueilleur' : " + Exp)
-                                .addBlankField(true)
-                                .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre cueillette. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
-                                    ":crossed_swords: Sarriette carnivore : 1")
+                            .addBlankField(true)
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre cueillette. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                                ":crossed_swords: Sarriette carnivore : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
                     } else {
@@ -63220,6 +63220,8 @@ bot.on('message', message => {
             .setTitle(":japanese_ogre: Tréantin de manioc :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659487025661214739/Treantin.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField("**__Immunites :__**", "Poison (ne reçoit pas les dégâts de poison)")
+            .addField("**__Faiblesses :__**", "Feu (reçoit les dégâts de feu en double)")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréantin de manioc attaque`")
             .addField(":shield: Lorsque le tréantin de manioc reçoit un coup :", ":shield: `=Tréantin de manioc défense : [Points de dégâts de votre coup]`")
             .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Tréantin de manioc récompenses : [Votre niveau]`")
@@ -63280,33 +63282,33 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
-    if (message.content.startsWith(prefix + "Loup sombre attaque")) {
-        const degat = Math.floor(26 * Math.random() + 255)
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Tréantin de manioc attaque")) {
+        const degat = Math.floor(31 * Math.random() + 200)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 15) {
+        if (roll <= 50) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: La sombre créature canine vous faisant face jettera son dévolu sur une cible précise et ne prêtera plus attention aux différentes provocations qui pourrait la viser.\nAu prochain tour, le loup au pelage noir de jais va vivement bondir sur le côté, se mouvant dans un silence de mort, camouflé par les multiples obstacles visuels des lieux.\nIl en sortira alors brusquement pour attaquer la proie désignée : L'effet de surprise rend toute esquive impossible, ne vous laissant le temps que de vous défendre sans déplacement.")
+                .addField(":crossed_swords: Tréantin de manioc :", ":crossed_swords: Le tréantin tente de vous attaquer, mais passe à côté.")
             message.channel.send({ embed })
         }
-        if (16 <= roll && roll <= 85) {
+        if (51 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: Le loup sombre vous choisit comme prochaine victime puis, après avoir poussé un grognement dévoilant ses crocs acérés, se rue sur vous en esquivant avec une aisance totale les différents obstacles naturels de son habitat. Il plonge alors profondément ses crocs dans votre chair, vous infligeant " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Tréantin de manioc :", ":crossed_swords: Le tréantin vous donne un violent coup de branche, infligeant " + degat + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (86 <= roll) {
+        if (91 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre:", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
+                .addField(":crossed_swords: Tréantin de manioc :", ":crossed_swords: Le tréantin vous donne un violent coup de branche vous étourdissant, infligeant " + degat + " points de dégâts. Vous êtes étourdit sauf si vous ne prenez pas de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63376,30 +63378,19 @@ bot.on('message', message => {
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Loup sombre défense")) {
-        let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.2))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: Vous voyant lancer l'assaut, le canidé, certes fort mais un peu trop fier, tentera comme à son habitude de vous éviter tout en vous faisant vous écraser au sol. Malheureusement pour lui, sa fierté n'en sera que plus blessée pour cette même raison lorsque sa manœuvre échouera et que vous lui infligerez un puissant coup au bas-ventre. Sa fierté ne sera pas la seule chose blessée, puisque vous lui infligez " + echec + " points de dégâts.")
-            message.channel.send({ embed })
-        }
-        if (71 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: L'habile animal vous faisant face, vous voyant attaquer, bondira une première fois du sol dans votre direction quoiqu'un peu plus haut que vous. Retombant sur vous, il se servira de votre corps comme d'une seconde plateforme et effectuera un deuxième bond pour finalement atterrir derrière vous, ne vous lâchant pas du regard. Malgré votre, très certaine, absence de connaissances en physiognomonie lupine, vous êtes étrangement convaincu en regardant son expression qu'il se moque de vous suite à cette action.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
+    if (message.content.startsWith(prefix + "Tréantin de manioc défense")) {
+        let atk = args.slice(4).join(" : ");
+        const degat = Math.floor(((atk * 0.8) + 1) * Math.random() + (atk * 0.8))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":shield: Tréantin de manioc :", ":shield: L'épaisse armure naturelle du tréantin réduit les dégâts qu'il prend. Vous lui infligez " + degat + " points de dégâts.")
+            .setTimestamp()
+        message.channel.send({ embed })
     }
 });
 
@@ -63471,7 +63462,7 @@ bot.off('message', message => {
 
 bot.off('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Loup sombre récompenses")) {
+    if (message.content.startsWith(prefix + "Tréantin de manioc récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         const viande = Math.floor((2 - 0.46) * Math.random())
@@ -64106,9 +64097,9 @@ bot.on('message', message => {
         let position = args.indexOf(":");
         let degat = args.slice(position + 2);
         const degatEchecCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
-            const degatEchec = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.75))
-            const degatReussite = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.45))
-            const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 0.25))
+        const degatEchec = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.75))
+        const degatReussite = Math.floor((degat * 0.15 + 1) * Math.random() + (degat * 0.45))
+        const degatReussiteCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 0.25))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 5) {
             const embed = new Discord.RichEmbed()
@@ -64155,7 +64146,7 @@ bot.on('message', message => {
         let position = args.indexOf(":");
         let degat = args.slice(position + 2);
         const degatSubisCrit = Math.floor((degat * 0.1 + 1) * Math.random() + (degat * 1))
-            const degatSubis = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.8))
+        const degatSubis = Math.floor((degat * 0.2 + 1) * Math.random() + (degat * 0.8))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 10) {
             const embed = new Discord.RichEmbed()
