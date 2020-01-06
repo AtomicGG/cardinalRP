@@ -45278,7 +45278,6 @@ bot.on('message', message => {
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
-            //.setImage("https://cdn.discordapp.com/attachments/654219161630933002/663541405309861938/pit-trap.png")
             .addField("Vous sentez une aura autour de vous !", "Vous êtes soigné de " + soin + " points de vie !")
             .setTimestamp()
         message.channel.send({ embed })
@@ -63247,33 +63246,34 @@ bot.on('message', message => {
 
 // Rivière | Métiers | Protecteurs | Attaques
 
-bot.off('message', message => {
-    if (message.content.startsWith(prefix + "Loup sombre attaque")) {
-        const degat = Math.floor(26 * Math.random() + 255)
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Sarriette carnivore attaque")) {
+        const degat = Math.floor(21 * Math.random() + 230)
+        const poison = Math.floor(16 * Math.random() + 25)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 15) {
+        if (roll <= 70) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: La sombre créature canine vous faisant face jettera son dévolu sur une cible précise et ne prêtera plus attention aux différentes provocations qui pourrait la viser.\nAu prochain tour, le loup au pelage noir de jais va vivement bondir sur le côté, se mouvant dans un silence de mort, camouflé par les multiples obstacles visuels des lieux.\nIl en sortira alors brusquement pour attaquer la proie désignée : L'effet de surprise rend toute esquive impossible, ne vous laissant le temps que de vous défendre sans déplacement.")
+                .addField(":crossed_swords: Sarriette carnivore :", ":crossed_swords: La sarriette carnivore s'avance vers vous et vous mord, vous infligeant " + degat + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (16 <= roll && roll <= 85) {
+        if (71 <= roll && roll <= 90) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre :", ":crossed_swords: Le loup sombre vous choisit comme prochaine victime puis, après avoir poussé un grognement dévoilant ses crocs acérés, se rue sur vous en esquivant avec une aisance totale les différents obstacles naturels de son habitat. Il plonge alors profondément ses crocs dans votre chair, vous infligeant " + degat + " points de dégâts.")
+                .addField(":crossed_swords: Sarriette carnivore :", ":crossed_swords: La sarriette carnivore s'avance vers vous et vous mord et vous empoisonne, vous infligeant " + degat + " points de dégâts et " + poison + " de dégâts de poison pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (86 <= roll) {
+        if (91 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Loup sombre:", ":crossed_swords: Le féroce carnivore semble vous attaquer d'une manière assez classique, jusqu'à ce que vous vous rendiez compte qu'il vise votre jambe afin de vous rendre vulnérable. Il tentera de refermer sa puissante mâchoire sur votre jambe, vous infligeant " + degat + " de dégâts. De plus, ses canines relâcheront un poison paralysant léger n'affectant que la jambe, vous empêchant toute action défensive ou offensive nécessitant un déplacement pendant un tour, et ce même si votre armure bloque la totalité de ses dégâts.")
+                .addField(":crossed_swords: Sarriette carnivore:", ":crossed_swords: La sarriette carnivore sécrète un poison paralysant et vous mord. Si vous êtes touchés, vous êtes paralysés pendant un tour.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63348,27 +63348,28 @@ bot.off('message', message => {
 
 // Rivière | Métiers | Protecteurs | Défenses
 
-bot.off('message', message => {
+bot.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" ");
     const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Loup sombre défense")) {
+    if (message.content.startsWith(prefix + "Sarriette carnivore défense")) {
         let degat = args.slice(3).join(" : ");
-        const echec = Math.floor(((degat * 0.6) + 1) * Math.random() + (degat * 1.2))
+        const paradeRatee = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1.5))
+        const paradeReussie = Math.floor(26 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+        if (roll <= 85) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: Vous voyant lancer l'assaut, le canidé, certes fort mais un peu trop fier, tentera comme à son habitude de vous éviter tout en vous faisant vous écraser au sol. Malheureusement pour lui, sa fierté n'en sera que plus blessée pour cette même raison lorsque sa manœuvre échouera et que vous lui infligerez un puissant coup au bas-ventre. Sa fierté ne sera pas la seule chose blessée, puisque vous lui infligez " + echec + " points de dégâts.")
+                .addField(":shield: Sarriette carnivore :", ":shield: La sarriette carnivore va ouvrir la gueule en vous voyant arriver mais ne la refermera pas assez vite sur vous, vous lui infligez " + paradeRate + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (71 <= roll) {
+        if (86 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Loup sombre :", ":shield: L'habile animal vous faisant face, vous voyant attaquer, bondira une première fois du sol dans votre direction quoiqu'un peu plus haut que vous. Retombant sur vous, il se servira de votre corps comme d'une seconde plateforme et effectuera un deuxième bond pour finalement atterrir derrière vous, ne vous lâchant pas du regard. Malgré votre, très certaine, absence de connaissances en physiognomonie lupine, vous êtes étrangement convaincu en regardant son expression qu'il se moque de vous suite à cette action.")
+                .addField(":shield: Sarriette carnivore :", ":shield: La sarriette carnivore va ouvrir la gueule et la refermer sur vous avant que votre attaque ne la touche, vous infligeant " + paradeReussie + " points de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63433,7 +63434,7 @@ bot.off('message', message => {
 
 bot.off('message', message => {
     const args = message.content;
-    if (message.content.startsWith(prefix + "Loup sombre récompenses")) {
+    if (message.content.startsWith(prefix + "Sarriette carnivore récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
         const viande = Math.floor((2 - 0.46) * Math.random())
