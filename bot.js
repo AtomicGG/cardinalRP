@@ -63952,7 +63952,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Golemite de malachite :", ":shield: Le golemite bloque votre coup, vous lui infligez " + blocageReussie * 0.8 + " points de dégâts si vous avez une arme tranchante ou " + blocageReussie * 1.2 + " points de dégâts si vous avez une arme contondante.")
+                .addField(":shield: Golemite de malachite :", ":shield: Le golemite bloque votre coup, vous lui infligez " + Math.floor(blocageReussie * 0.8) + " points de dégâts si vous avez une arme tranchante ou " + Math.floor(blocageReussie * 1.2) + " points de dégâts si vous avez une arme contondante.")
             message.channel.send({ embed })
         }
         if (71 <= roll && roll <= 90) {
@@ -63960,7 +63960,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Golemite de malachite :", ":shield: Le golemite tente de bloquer votre coup, vous lui infligez " + blocageRatee * 0.8 + " points de dégâts si vous avez une arme tranchante ou " + blocageRatee * 1.2 + " points de dégâts si vous avez une arme contondante.")
+                .addField(":shield: Golemite de malachite :", ":shield: Le golemite tente de bloquer votre coup, vous lui infligez " + Math.floor(blocageRatee * 0.8) + " points de dégâts si vous avez une arme tranchante ou " + Math.floor(blocageRatee * 1.2) + " points de dégâts si vous avez une arme contondante.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
