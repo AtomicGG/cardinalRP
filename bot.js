@@ -44842,7 +44842,7 @@ bot.on('message', message => {
         let atk = args.slice(position + 2);
         const degat = Math.floor((atk * 0.3 + 1) * Math.random() + (atk * 2))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 45) {
+        if (roll <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -44852,12 +44852,12 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (46 <= roll) {
+        if (31 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup ascendant :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts.")
+                .addField(":crossed_swords: Coup ascendant :", ":crossed_swords: Vous réussissez votre coup qui inflige `" + degat + "` points de dégâts [Si toute fois vous vous êtes fait touchez au tour précédents.].")
                 .setImage("https://media.discordapp.net/attachments/469506089512075294/507360566072049679/image0.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -64300,7 +64300,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup simple :", ":crossed_swords: Vous ratez votre coup ( vous êtes nul ou darkness de Konosuba ), votre adversaire pourra attaquer deux fois.")
+                .addField(":crossed_swords: Coup simple :", ":crossed_swords: Vous ratez votre coup, votre adversaire pourra attaquer deux fois.")
                 .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -64424,7 +64424,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup rapide :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...")
+                .addField(":crossed_swords: Coup rapide :", ":crossed_swords: Vous ratez votre coup, dommage pour vous...votre adversaire peut attaquer deux fois.")
                 .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -64519,6 +64519,33 @@ bot.on('message', message => {
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Perce bouclier :", ":crossed_swords: Vous réussissez votre coup, et briser la garde votre adversaire, ce qui vous permet de faire l'attaque suivante =Coup direct : [Votre attaque].")
+                .setImage("https://cdn.discordapp.com/attachments/566021680120725518/662755080331591699/unknown.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    const args = message.content;
+    if (message.content === (prefix + "Intervention")) {
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Perce bouclier :", ":crossed_swords: Vous ratez votre intervention, dommage pour vous...")
+                .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (31 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Perce bouclier :", ":crossed_swords: Vous réussissez votre intervention, vous prenez l'attaque de votre coéquipier et vous pouvez vous défendre du coup (Impossible de le faire deux fois dans le même tour d'attaque).")
                 .setImage("https://cdn.discordapp.com/attachments/566021680120725518/662755080331591699/unknown.png")
                 .setTimestamp()
             message.channel.send({ embed })
