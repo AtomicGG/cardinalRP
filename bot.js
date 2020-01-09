@@ -63200,8 +63200,9 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Sarriette carnivore :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
-            .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659487077338972166/Geastrum.PNG")
+            .setImage("https://media.discordapp.net/attachments/543345227604164618/659501725765599242/hebiphylle.png?width=503&height=670")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField("**__Immunités :__**", "Poison (ne reçoit pas les dégâts de poison)")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Sarriette carnivore attaque`")
             .addField(":shield: Lorsque la sarriette carnivore reçoit un coup :", ":shield: `=Sarriette carnivore défense : [Points de dégâts de votre coup]`")
             .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Sarriette carnivore récompenses : [Votre niveau]`")
@@ -63218,7 +63219,8 @@ bot.on('message', message => {
             .setTitle(":japanese_ogre: Tréantin de manioc :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659487025661214739/Treantin.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
-            .addField("**__Immunites :__**", "Poison (ne reçoit pas les dégâts de poison)")
+            .addField("**__Immunités :__**", "Poison (ne reçoit pas les dégâts de poison)")
+            .addField("**__Résistances :__**", "Saignement (réduit les dégâts de saignement de moitié), Electricité (réduit les dégâts de foudre de moitié)")
             .addField("**__Faiblesses :__**", "Feu (reçoit les dégâts de feu en double)")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréantin de manioc attaque`")
             .addField(":shield: Lorsque le tréantin de manioc reçoit un coup :", ":shield: `=Tréantin de manioc défense : [Points de dégâts de votre coup]`")
@@ -63248,7 +63250,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Sarriette carnivore attaque")) {
-        const degat = Math.floor(21 * Math.random() + 230)
+        const degat = Math.floor(21 * Math.random() + 300)
+        const perce = Math.floor(26 * Math.random() + 150)
         const poison = Math.floor(16 * Math.random() + 25)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
@@ -63273,7 +63276,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Sarriette carnivore:", ":crossed_swords: La sarriette carnivore sécrète un poison paralysant et vous mord. Si vous êtes touchés, vous êtes paralysés pendant un tour.")
+                .addField(":crossed_swords: Sarriette carnivore:", ":crossed_swords: La sarriette carnivore sécrète un poison paralysant et vous mord. Il vous inflige " + perce + " points de dégâts de perce armure. Si vous êtes touchés, vous êtes paralysés pendant un tour.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63282,7 +63285,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Tréantin de manioc attaque")) {
-        const degat = Math.floor(31 * Math.random() + 200)
+        const degat = Math.floor(31 * Math.random() + 220)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 50) {
             const embed = new Discord.RichEmbed()
@@ -63306,7 +63309,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Tréantin de manioc :", ":crossed_swords: Le tréantin vous donne un violent coup de branche vous étourdissant, infligeant " + degat + " points de dégâts. Vous êtes étourdit sauf si vous ne prenez pas de dégâts.")
+                .addField(":crossed_swords: Tréantin de manioc :", ":crossed_swords: Le tréantin vous donne un violent coup de branche vous étourdissant, infligeant " + degat + " points de dégâts. Vous êtes étourdit même si vous ne prenez pas de dégâts.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63315,7 +63318,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Piranha sahuagin attaque")) {
-        const degat = Math.floor(30 * Math.random() + 200)
+        const degat = Math.floor(30 * Math.random() + 220)
         const saignement = Math.floor(16 * Math.random() + 25)
         const piranha = Math.floor(26 * Math.random() + 150)
         const perce = Math.floor(26 * Math.random() + 150)
@@ -63351,7 +63354,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Piranha sahuagin :", ":crossed_swords: Le piranha sahuagin s'arrange pour que vous vous rapprochez de l'eau puis, passant dans votre dos, vous saute dessus et vous fait tomber dans l'eau en vous accompagnant (Seulement esquivable ou parable).\nUne fois dans l'eau, une nuée de piranha s'acharne sur vous, rendant votre remontée difficile et vous infligeant " + piranha + " points de dégâts à chaque tour que vous êtes dans l'eau.\nEn même temps, le piranha sahuagin nage à vive allure vers vous et vous lacère profondément, vous infligeant " + perce + " points de dégâts perce armure.\n\nA chaque tour, vous pouvez tenter de vous échapper de l'eau en faisant un roll supérieur à 70. Au bout de trois tours, vous sortez automatiquement de l'eau. S'il y a plus d'un joueur, le cap passe à 50.")
+                .addField(":crossed_swords: Piranha sahuagin :", ":crossed_swords: Le piranha sahuagin s'arrange pour que vous vous rapprochez de l'eau puis, passant dans votre dos, vous saute dessus et vous fait tomber dans l'eau en vous accompagnant (Seulement esquivable ou parable).\nUne fois dans l'eau, une nuée de piranha s'acharne sur vous, rendant votre remontée difficile et vous infligeant " + piranha + " points de dégâts à chaque tour que vous êtes dans l'eau.\nEn même temps, le piranha sahuagin nage à vive allure vers vous et vous lacère profondément, vous infligeant " + perce + " points de dégâts perce armure.\n\nA chaque tour, vous pouvez tenter de vous échapper de l'eau en faisant un roll supérieur à 70. Au bout de trois tours, vous sortez automatiquement de l'eau. S'il y a plus d'un joueur, le cap passe à 50.\n\nVous pouvez également, si vous possédez Lighting fall, l'utiliser dans l'eau, infligeant le double de dégâts prévus et sans possibilité de défense pour le Piranha sahuagin.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63365,7 +63368,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Sarriette carnivore défense")) {
         let degat = args.slice(3).join(" : ");
-        const paradeRatee = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1.5))
+        const paradeRatee = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 1.5))
         const paradeReussie = Math.floor(26 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 85) {
@@ -63398,7 +63401,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":shield: Tréantin de manioc :", ":shield: L'épaisse armure naturelle du tréantin réduit les dégâts qu'il prend. Vous lui infligez " + degat + " points de dégâts.")
+            .addField(":shield: Tréantin de manioc :", ":shield: L'épaisse armure naturelle du tréantin réduit les dégâts qu'il prend. Vous lui infligez " + Math.floor(degat * 1.2) + " points de dégâts si vous avez une arme tranchante ou " + Math.floor(degat * 0.8) + " points de dégâts si vous avez une arme contondante.")
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -63787,6 +63790,8 @@ bot.on('message', message => {
             .setTitle(":japanese_ogre: Phacochère :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659501389860306947/Raksha.jpg")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField("**__Immunités :__**", "Renversement, Etourdissement")
+            .addField("**__Faiblesses :__**", "Saignement (reçoit les dégâts de saignement en double)")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Phacochère attaque`")
             .addField(":shield: Lorsque le phacochère reçoit un coup :", ":shield: `=Phacochère défense : [Points de dégâts de votre coup]`")
             .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Phacochère récompenses : [Votre niveau]`")
@@ -63802,7 +63807,8 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Golemite de malachite :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659486983822770197/Goleminus_de_pierre.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 4000")
+            .addField("**__Immunités :__**", "Poison (ne reçoit pas les dégâts de poison), Feu (ne reçoit pas les dégâts de feu), Saignement (ne reçoit pas les dégâts de saignement), Paralysie")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Golemite de malachite attaque`")
             .addField(":shield: Lorsque le golemite de malachite reçoit un coup :", ":shield: `=Golemite de malachite défense : [Points de dégâts de votre coup]`")
             .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Golemite de malachite récompenses : [Votre niveau]`")
@@ -63815,7 +63821,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Phacochère attaque")) {
-        const degat = Math.floor(31 * Math.random() + 200)
+        const degat = Math.floor(31 * Math.random() + 220)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 5) {
             const embed = new Discord.RichEmbed()
@@ -63858,7 +63864,7 @@ bot.on('message', message => {
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Golemite de malachite attaque")) {
         const degat = Math.floor(31 * Math.random() + 200)
-        const crit = Math.floor(31 * Math.random() + 250)
+        const crit = Math.floor(31 * Math.random() + 300)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 50) {
             const embed = new Discord.RichEmbed()
@@ -63941,7 +63947,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Golemite de malachite défense")) {
         let degat = args.slice(4).join(" : ");
-        const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.6))
+        const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.4))
         const blocageRatee = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 1))
         const parade = Math.floor(26 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
