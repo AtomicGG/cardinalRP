@@ -62563,7 +62563,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Jeune tréant behind you")) {
         let degat = args.slice(4).join(" : ");
-        const blocage = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 0.6))
+        const blocage = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 1))
         const parade = Math.floor(26 * Math.random() + 200)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 25) {
