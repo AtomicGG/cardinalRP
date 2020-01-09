@@ -35779,9 +35779,9 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     const roll = Math.floor(100 * Math.random() + 1)
-    const degat = Math.floor(21 * Math.random() + 90)
+    const degat = Math.floor(21 * Math.random() + 130)
     if (message.content.startsWith(prefix + "Aiglon attaque")) {
-        if (roll <= 50) {
+        if (roll <= 30) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -35790,12 +35790,12 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (roll >= 51) {
+        if (roll >= 31) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Aiglon :", ":crossed_swords: L'aiglon fonce sur sa cible et lui donne un violent coup de bec, infligeant " + degat + " points de dégâts !")
+                .addField(":crossed_swords: Aiglon :", ":crossed_swords: L'aiglon fonce sur sa cible et lui donne un violent coup de bec perce armure, infligeant " + degat + " points de dégâts ! Si c'est un aigle, il se fait toucher et descend au sol.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
