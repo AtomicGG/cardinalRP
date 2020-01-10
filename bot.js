@@ -63285,7 +63285,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Tréantin de manioc attaque")) {
-        const degat = Math.floor(31 * Math.random() + 220)
+        const degat = Math.floor(31 * Math.random() + 250)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 50) {
             const embed = new Discord.RichEmbed()
@@ -63318,9 +63318,9 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Piranha sahuagin attaque")) {
-        const degat = Math.floor(30 * Math.random() + 220)
-        const saignement = Math.floor(16 * Math.random() + 25)
-        const piranha = Math.floor(26 * Math.random() + 150)
+        const degat = Math.floor(30 * Math.random() + 250)
+        const saignement = Math.floor(16 * Math.random() + 55)
+        const piranha = Math.floor(26 * Math.random() + 200)
         const perce = Math.floor(26 * Math.random() + 150)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 40) {
@@ -63369,7 +63369,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Sarriette carnivore défense")) {
         let degat = args.slice(3).join(" : ");
         const paradeRatee = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 1.5))
-        const paradeReussie = Math.floor(26 * Math.random() + 150)
+        const paradeReussie = Math.floor(26 * Math.random() + 200)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 85) {
             const embed = new Discord.RichEmbed()
@@ -63821,7 +63821,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Phacochère attaque")) {
-        const degat = Math.floor(31 * Math.random() + 220)
+        const degat = Math.floor(31 * Math.random() + 260)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 5) {
             const embed = new Discord.RichEmbed()
@@ -63863,8 +63863,8 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Golemite de malachite attaque")) {
-        const degat = Math.floor(31 * Math.random() + 200)
-        const crit = Math.floor(31 * Math.random() + 300)
+        const degat = Math.floor(31 * Math.random() + 240)
+        const crit = Math.floor(31 * Math.random() + 400)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 50) {
             const embed = new Discord.RichEmbed()
