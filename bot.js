@@ -63218,7 +63218,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Tréantin de manioc :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659487025661214739/Treantin.png")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
             .addField("**__Immunités :__**", "Poison (ne reçoit pas les dégâts de poison)")
             .addField("**__Résistances :__**", "Saignement (réduit les dégâts de saignement de moitié), Electricité (réduit les dégâts de foudre de moitié)")
             .addField("**__Faiblesses :__**", "Feu (reçoit les dégâts de feu en double)")
@@ -63874,7 +63874,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Golemite de malachite :", ":crossed_swords: Le golemite tente de vous attaquer mais se loupe.")
             message.channel.send({ embed })
         }
-        if (51 <= roll && roll <= 90) {
+        if (51 <= roll && roll <= 92) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63883,7 +63883,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (93 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
