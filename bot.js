@@ -63436,22 +63436,19 @@ bot.on('message', message => {
 
 // Rivière | Métiers | Protecteurs | Récompenses
 
-bot.off('message', message => {
+bot.on('message', message => {
     const args = message.content;
     if (message.content.startsWith(prefix + "Sarriette carnivore récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const viande = Math.floor((2 - 0.46) * Math.random())
-        const peau = Math.floor((2 - 0.32) * Math.random())
-        const coeur = Math.floor((2 - 0.749) * Math.random())
-        const clef = Math.floor((2 - 0.947) * Math.random())
-        const oeuf = Math.floor((2 - 0.947) * Math.random())
-        const cols = Math.floor(31 * Math.random() + 160)
+        const commun = Math.floor(2 * Math.random() + 3)
+        const rare = Math.floor(2 * Math.random() + 2)
+        const parfait = Math.floor(2 * Math.random() + 1)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(41 * Math.random() + 40) / 10
+        const roll = Math.floor(31 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -63461,34 +63458,27 @@ bot.off('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":poultry_leg: Viande de loup sombre : " + viande + "\n" +
-                ":knife: Peau de loup sombre : " + peau + "\n" +
-                ":cupid: Coeur de loup sombre : " + coeur + "\n" +
-                ":key: Clef arbuste  : " + clef + "\n" +
-                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
-                ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":large_orange_diamond: Cols : " + cols)
+            .addField(":moneybag: Récompenses :", ":wilted_rose: Sarriette commune : " + commun + "\n" +
+                ":wilted_rose: Sarriette rare : " + rare + "\n" +
+                ":wilted_rose: Sarriette parfaite : " + parfait + "\n" +
+                ":sparkles: Points d'expérience : " + xp)
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     const args = message.content;
     if (message.content.startsWith(prefix + "Tréantin de manioc récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const viande = Math.floor((2 - 0.46) * Math.random())
-        const peau = Math.floor((2 - 0.32) * Math.random())
-        const coeur = Math.floor((2 - 0.749) * Math.random())
-        const clef = Math.floor((2 - 0.947) * Math.random())
-        const oeuf = Math.floor((2 - 0.947) * Math.random())
-        const cols = Math.floor(31 * Math.random() + 160)
+        const impur = Math.floor(2 * Math.random() + 2)
+        const pur = Math.floor(2 * Math.random() + 1)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(41 * Math.random() + 40) / 10
+        const roll = Math.floor(31 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -63498,34 +63488,26 @@ bot.off('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":poultry_leg: Viande de loup sombre : " + viande + "\n" +
-                ":knife: Peau de loup sombre : " + peau + "\n" +
-                ":cupid: Coeur de loup sombre : " + coeur + "\n" +
-                ":key: Clef arbuste  : " + clef + "\n" +
-                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
-                ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":large_orange_diamond: Cols : " + cols)
+            .addField(":moneybag: Récompenses :", ":deciduous_tree: Bois de manioc impur : " + impur + "\n" +
+                ":deciduous_tree: Bois de manioc pur : " + pur + "\n" +
+                ":sparkles: Points d'expérience : " + xp)
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     const args = message.content;
     if (message.content.startsWith(prefix + "Piranha sahuagin récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const viande = Math.floor((2 - 0.46) * Math.random())
-        const peau = Math.floor((2 - 0.32) * Math.random())
-        const coeur = Math.floor((2 - 0.749) * Math.random())
-        const clef = Math.floor((2 - 0.947) * Math.random())
-        const oeuf = Math.floor((2 - 0.947) * Math.random())
-        const cols = Math.floor(31 * Math.random() + 160)
+        const petit = Math.floor(2 * Math.random() + 2)
+        const grand = Math.floor(2 * Math.random() + 1)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(41 * Math.random() + 40) / 10
+        const roll = Math.floor(31 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -63535,13 +63517,9 @@ bot.off('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":poultry_leg: Viande de loup sombre : " + viande + "\n" +
-                ":knife: Peau de loup sombre : " + peau + "\n" +
-                ":cupid: Coeur de loup sombre : " + coeur + "\n" +
-                ":key: Clef arbuste  : " + clef + "\n" +
-                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
-                ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":large_orange_diamond: Cols : " + cols)
+            .addField(":moneybag: Récompenses :", ":fish: Petit piranha : " + petit + "\n" +
+                ":fish: Grand piranha : " + grand + "\n" +
+                ":sparkles: Points d'expérience : " + xp)
             .setTimestamp()
         message.channel.send({ embed })
     }
@@ -63982,22 +63960,19 @@ bot.on('message', message => {
 
 // Petite grotte | Métiers | Protecteurs | Récompenses
 
-bot.off('message', message => {
+bot.on('message', message => {
     const args = message.content;
     if (message.content.startsWith(prefix + "Phacochère récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const viande = Math.floor((2 - 0.46) * Math.random())
-        const peau = Math.floor((2 - 0.32) * Math.random())
-        const coeur = Math.floor((2 - 0.749) * Math.random())
-        const clef = Math.floor((2 - 0.947) * Math.random())
-        const oeuf = Math.floor((2 - 0.947) * Math.random())
-        const cols = Math.floor(31 * Math.random() + 160)
+        const Viande = Math.floor(2 * Math.random() + 3)
+        const Peau = Math.floor(2 * Math.random() + 2)
+        const Coeur = Math.floor(2 * Math.random() + 1)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(41 * Math.random() + 40) / 10
+        const roll = Math.floor(31 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -64007,34 +63982,27 @@ bot.off('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":poultry_leg: Viande de loup sombre : " + viande + "\n" +
-                ":knife: Peau de loup sombre : " + peau + "\n" +
-                ":cupid: Coeur de loup sombre : " + coeur + "\n" +
-                ":key: Clef arbuste  : " + clef + "\n" +
-                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
-                ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":large_orange_diamond: Cols : " + cols)
+            .addField(":moneybag: Récompenses :", ":knife: Viande de marcassin : " + Viande + "\n" +
+                ":knife: Peau de marcassin : " + Peau + "\n" +
+                ":cupid: Coeur de marcassin : " + Coeur + "\n" +
+                ":sparkles: Points d'expérience : " + xp)
             .setTimestamp()
         message.channel.send({ embed })
     }
 });
 
-bot.off('message', message => {
+bot.on('message', message => {
     const args = message.content;
     if (message.content.startsWith(prefix + "Golemite de malachite récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const viande = Math.floor((2 - 0.46) * Math.random())
-        const peau = Math.floor((2 - 0.32) * Math.random())
-        const coeur = Math.floor((2 - 0.749) * Math.random())
-        const clef = Math.floor((2 - 0.947) * Math.random())
-        const oeuf = Math.floor((2 - 0.947) * Math.random())
-        const cols = Math.floor(31 * Math.random() + 160)
+        const mediocre = Math.floor(2 * Math.random() + 2)
+        const commune = Math.floor(2 * Math.random() + 1)
         const tJoueur = (Math.ceil((lvl / 5) * 2)) / 2
         const tMob = 7
         const dif = tMob - tJoueur
         const controle = 110 + 90 * tMob
-        const roll = Math.floor(41 * Math.random() + 40) / 10
+        const roll = Math.floor(31 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
             xp = 0
@@ -64044,13 +64012,9 @@ bot.off('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
-            .addField(":moneybag: Récompenses :", ":poultry_leg: Viande de loup sombre : " + viande + "\n" +
-                ":knife: Peau de loup sombre : " + peau + "\n" +
-                ":cupid: Coeur de loup sombre : " + coeur + "\n" +
-                ":key: Clef arbuste  : " + clef + "\n" +
-                ":egg: Oeuf verdoyant : " + oeuf + "\n" +
-                ":sparkles: Points d'expérience : " + xp + "\n" +
-                ":large_orange_diamond: Cols : " + cols)
+            .addField(":moneybag: Récompenses :", ":pick: Malachite médiocre : " + mediocre + "\n" +
+            ":pick: Malachite commune : " + commune + "\n" +
+                ":sparkles: Points d'expérience : " + xp)
             .setTimestamp()
         message.channel.send({ embed })
     }
