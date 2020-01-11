@@ -62819,10 +62819,10 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Aigle récompenses")) {
         const pos = args.indexOf(":");
         const lvl = args.slice(pos + 2)
-        const bec = Math.floor((2 - 0.947) * Math.random())
-        const plume = Math.floor((2 - 0.924) * Math.random())
-        const plumeOr = Math.floor((2 - 0.99) * Math.random())
-        const serre = Math.floor((2 - 0.97) * Math.random())
+        const bec = Math.floor((2 - 0.666) * Math.random())
+        const plume = Math.floor((2 - 0.625 * Math.random())
+        const plumeOr = Math.floor((2 - 0.73) * Math.random())
+        const serre = Math.floor((2 - 0.7) * Math.random())
         const clef = Math.floor((2 - 0.947) * Math.random())
         const oeuf = Math.floor((2 - 0.947) * Math.random())
         const cols = Math.floor(31 * Math.random() + 160)
@@ -62914,7 +62914,7 @@ bot.on('message', message => {
                 const idRole = "544250412753092638"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const protect = Math.floor(100 * Math.random() + 1);
-                    if (protect <= 30) {
+                    if (protect <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -62944,7 +62944,7 @@ bot.on('message', message => {
                     }
                 } else {
                     const protect = Math.floor(100 * Math.random() + 1);
-                    if (protect <= 30) {
+                    if (protect <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63023,7 +63023,7 @@ bot.on('message', message => {
                 const idRole = "544250416943071355"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const protect = Math.floor(100 * Math.random() + 1);
-                    if (protect <= 30) {
+                    if (protect <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63051,7 +63051,7 @@ bot.on('message', message => {
                     }
                 } else {
                     const protect = Math.floor(100 * Math.random() + 1);
-                    if (protect <= 30) {
+                    if (protect <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63128,7 +63128,7 @@ bot.on('message', message => {
                 const idRole = "544250417123426324"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if (protecteur <= 30) {
+                    if (protecteur <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63156,7 +63156,7 @@ bot.on('message', message => {
                     }
                 } else {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if (protecteur <= 30) {
+                    if (protecteur <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63453,6 +63453,9 @@ bot.on('message', message => {
         if (xp <= 0) {
             xp = 0
         }
+        if (lvl <= 28){
+            xp = 0
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63483,6 +63486,9 @@ bot.on('message', message => {
         if (xp <= 0) {
             xp = 0
         }
+        if (lvl <= 28){
+            xp = 0
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63510,6 +63516,9 @@ bot.on('message', message => {
         const roll = Math.floor(31 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
+            xp = 0
+        }
+        if (lvl <= 28){
             xp = 0
         }
         const embed = new Discord.RichEmbed()
@@ -63585,7 +63594,7 @@ bot.on('message', message => {
                 const idRole = "544250415550693386"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if (protecteur <= 30) {
+                    if (protecteur <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63615,7 +63624,7 @@ bot.on('message', message => {
                     }
                 } else {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if (protecteur <= 30) {
+                    if (protecteur <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63694,7 +63703,7 @@ bot.on('message', message => {
                 const idRole = "544250415051702282"
                 if (roll <= chance && message.member.roles.has(idRole)) {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if (protecteur <= 30) {
+                    if (protecteur <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63722,7 +63731,7 @@ bot.on('message', message => {
                     }
                 } else {
                     const protecteur = Math.floor(100 * Math.random() + 1);
-                    if (protecteur <= 30) {
+                    if (protecteur <= 25) {
                         const embed = new Discord.RichEmbed()
                             .setColor(3447003)
                             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63977,6 +63986,9 @@ bot.on('message', message => {
         if (xp <= 0) {
             xp = 0
         }
+        if (lvl <= 28){
+            xp = 0
+        }
         const embed = new Discord.RichEmbed()
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -64005,6 +64017,9 @@ bot.on('message', message => {
         const roll = Math.floor(31 * Math.random() + 30) / 10
         let xp = Math.floor(controle * (1 + dif) / (25 * tJoueur) * roll)
         if (xp <= 0) {
+            xp = 0
+        }
+        if (lvl <= 28){
             xp = 0
         }
         const embed = new Discord.RichEmbed()
