@@ -62000,7 +62000,7 @@ bot.on('message', message => {
                     .setColor(3447003)
                     .setAuthor(message.author.username, message.author.avatarURL)
                     .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                    .setImage("http://ekladata.com/yYMIHgx7eaoRXPZ2EWPrB7bk_qs.jpg")
+                    .setImage("https://i.pinimg.com/originals/14/34/27/1434270a730daaa74ddfeabf71543b8c.jpg")
                     .addField(":bookmark: Quête de la jungle profonde :", ":bookmark: Votre quête sera de tuer les cibles suivantes :\n\n" +
                         ":crossed_swords: Loup sombre : " + loup + "\n" +
                         ":crossed_swords: Traknide : " + traknide + "\n" +
@@ -62039,7 +62039,7 @@ bot.on('message', message => {
             .setColor(3447003)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setImage("https://cdn.discordapp.com/attachments/530057837334757396/594613089538801670/fe5008595f73437e91eaeb974b360f0b.jpg")
+            .setImage("https://i.pinimg.com/originals/14/34/27/1434270a730daaa74ddfeabf71543b8c.jpg")
             .addField(":bookmark: Quête de la jungle profonde :", ":bookmark: Vos récompenses après l'accomplissement de votre quête sont :\n\n" +
                 ":sparkles: Points d'expérience : " + xp + "\n" +
                 ":large_orange_diamond: Cols : " + cols + "\n" +
