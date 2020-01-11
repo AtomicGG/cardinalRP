@@ -62855,7 +62855,7 @@ bot.on('message', message => {
 
 // Rivière | Description
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix) + "Rivière") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -62872,7 +62872,7 @@ bot.off('message', message => {
 
 // Rivière | Métiers
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Rivière cueillir")) {
         let cont = message.content;
         let split = cont.split(' ');
@@ -62982,7 +62982,7 @@ bot.off('message', message => {
     }
 })
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Rivière bûcheronner")) {
         let cont = message.content;
         let split = cont.split(' ');
@@ -63087,7 +63087,7 @@ bot.off('message', message => {
     }
 })
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Rivière pêcher")) {
         let cont = message.content;
         let split = cont.split(' ');
@@ -63527,7 +63527,7 @@ bot.on('message', message => {
 
 // Petite grotte | Description
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content === (prefix) + "Petite grotte") {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
@@ -63543,7 +63543,7 @@ bot.off('message', message => {
 
 // Petite grotte | Métiers
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Petite grotte chasser")) {
         let cont = message.content;
         let split = cont.split(' ');
@@ -63653,7 +63653,7 @@ bot.off('message', message => {
     }
 })
 
-bot.off('message', message => {
+bot.on('message', message => {
     if (message.content.startsWith(prefix + "Petite grotte miner")) {
         let cont = message.content;
         let split = cont.split(' ');
@@ -64424,7 +64424,6 @@ bot.on('message', message => {
         }
     }
 });
-
 
 bot.on('message', message => {
     const args = message.content;
