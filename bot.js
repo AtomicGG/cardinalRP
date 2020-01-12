@@ -63414,7 +63414,7 @@ bot.on('message', message => {
         let degat = args.slice(3).join(" : ");
         const echec = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 30) {
+        if (roll <= 70) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63422,7 +63422,7 @@ bot.on('message', message => {
                 .addField(":shield: Piranha sahuagin :", ":shield: Le piranha sahuagin tente d'esquiver mais rate, vous lui infligez " + echec + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (31 <= roll) {
+        if (71 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
