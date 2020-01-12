@@ -27,6 +27,14 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('message', message => {
+    if (message.content.startsWith(prefix)) {
+        member.createDM().then(channel => {
+            return channel.send(message.content)
+        })
+        .catch(console.error)}
+});
+
+bot.on('message', message => {
     if (message.content === 'ping') {
         message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**` + ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**` + ' **Ms** ] pour repondre')
     }
@@ -17188,7 +17196,7 @@ bot.on('message', message => {
                     } else {
                         const embed = new Discord.RichEmbed()
                             .setAuthor(message.author.username, message.author.avatarURL)
-                            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                            .setFooter("『SAO Community [RP]��©", "http://www.copyrightfrance.com/images/copyright.png")
                             .setColor(3447003)
                             .addField(":scales: Masse du clan des loups :", "Vous obtenez une rune commune de blocage.")
                             .setTimestamp()
@@ -46176,7 +46184,7 @@ bot.on('message', message => {
             level = 0
         }
         let levelZone = 1;
-        if (level < levelZone) {
+        if (level < levelZone || isNaN(level)) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -62881,7 +62889,7 @@ bot.on('message', message => {
             level = 0
         }
         let levelZone = 1;
-        if (level < levelZone) {
+        if (level < levelZone || isNaN(level)) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63453,7 +63461,7 @@ bot.on('message', message => {
         if (xp <= 0) {
             xp = 0
         }
-        if (lvl <= 28){
+        if (lvl <= 28) {
             xp = 0
         }
         const embed = new Discord.RichEmbed()
@@ -63486,7 +63494,7 @@ bot.on('message', message => {
         if (xp <= 0) {
             xp = 0
         }
-        if (lvl <= 28){
+        if (lvl <= 28) {
             xp = 0
         }
         const embed = new Discord.RichEmbed()
@@ -63518,7 +63526,7 @@ bot.on('message', message => {
         if (xp <= 0) {
             xp = 0
         }
-        if (lvl <= 28){
+        if (lvl <= 28) {
             xp = 0
         }
         const embed = new Discord.RichEmbed()
@@ -63986,7 +63994,7 @@ bot.on('message', message => {
         if (xp <= 0) {
             xp = 0
         }
-        if (lvl <= 28){
+        if (lvl <= 28) {
             xp = 0
         }
         const embed = new Discord.RichEmbed()
@@ -64019,7 +64027,7 @@ bot.on('message', message => {
         if (xp <= 0) {
             xp = 0
         }
-        if (lvl <= 28){
+        if (lvl <= 28) {
             xp = 0
         }
         const embed = new Discord.RichEmbed()
@@ -64028,7 +64036,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setImage("https://vignette.wikia.nocookie.net/sao/images/0/02/Col.png/revision/latest?cb=20150705174105&path-prefix=es")
             .addField(":moneybag: Récompenses :", ":pick: Malachite médiocre : " + mediocre + "\n" +
-            ":pick: Malachite commune : " + commune + "\n" +
+                ":pick: Malachite commune : " + commune + "\n" +
                 ":sparkles: Points d'expérience : " + xp)
             .setTimestamp()
         message.channel.send({ embed })
