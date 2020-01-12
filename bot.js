@@ -26,7 +26,7 @@ bot.on('guildMemberAdd', member => {
     // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
 });
 
-bot.of('message', message => {
+bot.off('message', message => {
     if (message.content.startsWith(prefix)) {
         member.createDM().then(channel => {
             return channel.send(message.content)
