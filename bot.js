@@ -27,14 +27,6 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix)) {
-        member.createDM().then(channel => {
-            return channel.send("message.content")
-        })
-        .catch(console.error)}
-});
-
-bot.on('message', message => {
     if (message.content === 'ping') {
         message.reply('Le **BOT** a mis: ' + `[ **${msg.createdTimestamp - message.createdTimestamp}**` + ' **Ms** ] pour repondre.\nEt l\'**API** a mis: ' + `[ **${Math.round(client.ping)}**` + ' **Ms** ] pour repondre')
     }
