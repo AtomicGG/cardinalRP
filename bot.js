@@ -63776,7 +63776,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setTitle(":japanese_ogre: Phacochère :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659501389860306947/Raksha.jpg")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
             .addField("**__Immunités :__**", "Renversement, Etourdissement")
             .addField("**__Faiblesses :__**", "Saignement (reçoit les dégâts de saignement en double)")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Phacochère attaque`")
@@ -63889,9 +63889,9 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Phacochère défense")) {
         let degat = args.slice(2).join(" : ");
-        const esquiveRatee = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1))
-        const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.6))
-        const blocageRatee = Math.floor(((degat * 1.5) + 1) * Math.random() + (degat * 1.5))
+        const esquiveRatee = Math.floor(((degat * 0.7) + 1) * Math.random() + (degat * 0.9))
+        const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.55))
+        const blocageRatee = Math.floor(((degat * 1) + 1) * Math.random() + (degat * 1.5))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 25) {
             const embed = new Discord.RichEmbed()
@@ -63901,7 +63901,7 @@ bot.on('message', message => {
                 .addField(":shield: Phacochère :", ":shield: Le phacochère tente d'esquive votre coup mais se loupe. Vous lui infligez " + esquiveRatee + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (26 <= roll && roll <= 40) {
+        if (26 <= roll && roll <= 45) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63909,7 +63909,7 @@ bot.on('message', message => {
                 .addField(":shield: Phacochère :", ":shield: Le phacochère esquive votre coup.")
             message.channel.send({ embed })
         }
-        if (41 <= roll && roll <= 90) {
+        if (46 <= roll && roll <= 95) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63917,7 +63917,7 @@ bot.on('message', message => {
                 .addField(":shield: Phacochère :", ":shield: Le phacochère bloque votre coup à l'aide de ses défense, vous lui infligez " + blocageReussie + " points de dégâts.")
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (96 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
