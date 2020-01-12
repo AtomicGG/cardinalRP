@@ -29,7 +29,7 @@ bot.on('guildMemberAdd', member => {
 bot.off('message', message => {
     if (message.content.startsWith(prefix)) {
         member.createDM().then(channel => {
-            return channel.send(message.content)
+            return channel.send("message.content")
         })
         .catch(console.error)}
 });
