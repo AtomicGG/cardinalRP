@@ -63138,7 +63138,7 @@ bot.on('message', message => {
                                 ":fish: Grand piranha : " + grand * 2 + "\n" +
                                 ":fish: Points d'expérience dans le métier 'Pêcheur' : " + Exp)
                             .addBlankField(true)
-                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre pêche. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Piranha sahuagin : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
@@ -63166,7 +63166,7 @@ bot.on('message', message => {
                                 ":fish: Grand piranha : " + grand + "\n" +
                                 ":fish: Points d'expérience dans le métier 'Pêcheur' : " + Exp)
                             .addBlankField(true)
-                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre pêche. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Piranha sahuagin : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
@@ -63605,7 +63605,7 @@ bot.on('message', message => {
                                 ":cupid: Coeur de marcassin : " + Coeur * 2 + "\n" +
                                 ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                             .addBlankField(true)
-                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre chasse. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Phacochère : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
@@ -63635,7 +63635,7 @@ bot.on('message', message => {
                                 ":cupid: Coeur de marcassin : " + Coeur + "\n" +
                                 ":sparkles: Points d'expérience dans le métier 'Chasseur' : " + Exp)
                             .addBlankField(true)
-                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre chasse. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Phacochère : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
@@ -63713,7 +63713,7 @@ bot.on('message', message => {
                                 ":pick: Malachite commune : " + commune * 2 + "\n" +
                                 ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                             .addBlankField(true)
-                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre minage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Golemite de malachite : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
@@ -63741,7 +63741,7 @@ bot.on('message', message => {
                                 ":pick: Malachite commune : " + commune + "\n" +
                                 ":pick: Points d'expérience dans le métier 'Mineur' : " + Exp)
                             .addBlankField(true)
-                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre bûcheronnage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
+                            .addField(":crossed_swords: Combat :", ":crossed_swords: Malheureusement pour vous, vous n'avez pas vu le monstre approcher de vous lors de votre minage. Il bondit sur vous et vous attaque, il s'agit d'un :\n\n" +
                                 ":crossed_swords: Golemite de malachite : 1")
                             .setTimestamp()
                         message.channel.send({ embed })
