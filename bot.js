@@ -64973,7 +64973,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Tréantintin :", ":crossed_swords: Le tréantintin reste planter la, comme on dit, il peut toujours courir pour vous attaquez.")
             message.channel.send({ embed })
         }
-        if (56 <= roll && roll <= 75) {
+        if (26 <= roll && roll <= 75) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
