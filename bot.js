@@ -64941,3 +64941,71 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Tréantata") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Tréantata :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/cc/Treant_Sapling.png/revision/latest/scale-to-width-down/350?cb=20160913205917")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 1500 :shield: 300 Se prend les dégat de __feu__ fois deux.")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréantata attaque`")
+            .addField(":shield: Lorsque le jeune tréant reçoit un coup :", ":shield: `=Tréantata défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Tréantata récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Tréantintin attaque")) {
+        const degat = Math.floor(31 * Math.random() + 275)
+        const degatCrit = Math.floor(31 * Math.random() + 260)
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 25) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Tréantintin :", ":crossed_swords: Le tréantintin reste planter la, comme on dit, il peut toujours courir pour vous attaquez.")
+            message.channel.send({ embed })
+        }
+        if (56 <= roll && roll <= 75) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Tréantintin :", ":crossed_swords: L'immense arbre animé en manga, vous fonce dessus et s'arrache une branche pour vous frapper avec ! Ils vous infligent " + degat + " et regarde sa branche l'air de dire {Alors vielle branche ?} et donne un tour de plus à vos altérations d'états.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (76 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Tréantintin :", ":crossed_swords: Le robuste être végétal agitera ses branchages, et envoient donc ses branches tel que des boomerang et touche __Tous le monde__ et va infliger " + degatCrit + " de dégâts, non parable. Faut savoir rester brancher, pour rester au courant.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Tréantintin défense")) {
+        let atk = args.slice(2).join(" : ");
+        const degat = Math.floor(((atk * 0.8) + 1) * Math.random() + (atk * 1.2))
+        const embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+            .setColor(3447003)
+            .addField(":shield: Tréantin de manioc :", ":shield: Il a voulu esquiver mais c'est bien planter et reçoit " + degat + " de dégâts .")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
