@@ -62324,7 +62324,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Jeune tréant :", ":crossed_swords: La terrifiante créature de feuilles et d'écorce déploie rapidement ses épaisses racines dans le sol, mais celles-ci se dirigent cette fois vers " + ciblage + " joueurs de votre groupe, sortant brusquement du sol juste en face de vous avant de venir s'écraser là où vous vous trouvez, vous infligeant " + degat + " points de dégâts. De plus, si vous êtes seul face à cette attaque, alors des racines viennent ensuite vous saisir pour vous immobiliser, empêchant toute défense jusqu'au prochain tour même si vous bloquez tous les dégâts.\nSuite au coup, une sève poisseuse couvre votre corps et vous donne une sensation étrange, tandis que toutes vos afflictions durent un tour supplémentaire.")
+                .addField(":crossed_swords: Jeune tréant :", ":crossed_swords: La terrifiante créature de feuilles et d'écorce déploie rapidement ses épaisses racines dans le sol, mais celles-ci se dirigent cette fois vers " + ciblage + " joueurs de votre groupe, sortant brusquement du sol juste en face de vous avant de venir s'écraser là où vous vous trouvez, vous infligeant " + degat + " points de dégâts. De plus, si vous êtes seul face à cette attaque, alors des racines viennent ensuite vous saisir pour vous immobiliser, empêchant toute défense jusqu'au prochain tour même si vous bloquez tous les dégâts.\nSuite au coup, une sève poisseuse couvre votre corps et vous donne une sensation étrange, tandis que toutes vos afflictions durent un tour supplémentaire. Attaque seulement esquivable et bloquable.")
             message.channel.send({ embed })
         }
         if (56 <= roll && roll <= 75) {
@@ -62424,7 +62424,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Aigle :", ":crossed_swords: Le Eagle vous garde dans les airs avec lui.")
+                .addField(":crossed_swords: Aigle :", ":crossed_swords: L'aigle vous garde dans les airs avec lui.")
             message.channel.send({ embed })
         }
         if (21 <= roll && roll <= 95) {
