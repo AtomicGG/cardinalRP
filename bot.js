@@ -63936,7 +63936,7 @@ bot.on('message', message => {
         let degat = args.slice(4).join(" : ");
         const blocageReussie = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 0.4))
         const blocageRatee = Math.floor(((degat * 0.2) + 1) * Math.random() + (degat * 1))
-        const parade = Math.floor(26 * Math.random() + 150)
+        const parade = Math.floor(26 * Math.random() + 200)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 70) {
             const embed = new Discord.RichEmbed()
@@ -64453,7 +64453,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Coup moyen :", ":crossed_swords: Vous ratez votre coup ( vous êtes nul ou darkness de Konosuba ), votre adversaire pourra attaquer deux fois.")
+                .addField(":crossed_swords: Coup moyen :", ":crossed_swords: Vous ratez votre coup, votre adversaire pourra attaquer deux fois.")
                 .setImage("http://www.anime-evo.net/wp-content/uploads/2012/10/Sword_14_5.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
@@ -64703,17 +64703,17 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (6 <= roll && roll <= 25) {
+        if (6 <= roll && roll <= 45) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":shield: Bloque :", ":shield: Vous ratez votre blocage et subissez `" + degatEchec + "` points de dégâts.")
+                .addField(":shield: Bloque :", ":shield: Vous subissez des dégats du au coup et subissez `" + degatEchec + "` points de dégâts.")
                 .setImage("https://pm1.narvii.com/6139/db96e64e9d675c10a9b5dbfe5822e12110a508aa_hq.jpg")
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (26 <= roll && roll <= 75) {
+        if (46 <= roll && roll <= 75) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("?SAO Community [RP]?©", "http://www.copyrightfrance.com/images/copyright.png")
