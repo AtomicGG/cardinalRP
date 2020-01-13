@@ -64908,3 +64908,51 @@ bot.on('message', message => {
         message.channel.send({ embed })
     }
 });
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Tréantintin") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Tréantintin :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/cc/Treant_Sapling.png/revision/latest/scale-to-width-down/350?cb=20160913205917")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 7500 :shield: 250 Se prend les dégat de __feu__ fois deux.")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréantintin attaque`")
+            .addField(":shield: Lorsque le jeune tréant reçoit un coup :", ":shield: `=Tréantintin défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Tréantintin récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Tréanmilou") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Tréanmilou" :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/cc/Treant_Sapling.png/revision/latest/scale-to-width-down/350?cb=20160913205917")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 2500 :shield: 300 Se prend les dégat de __feu__ fois deux.")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréanmilou attaque`")
+            .addField(":shield: Lorsque le jeune tréant reçoit un coup :", ":shield: `=Tréanmilou défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Tréanmilou récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Tréantata") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Tréanmilou" :", ":japanese_ogre: Un arbre vivant qui n'est trouvable que dans le palier 3")
+            .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/c/cc/Treant_Sapling.png/revision/latest/scale-to-width-down/350?cb=20160913205917")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 1500 :shield: 300 Se prend les dégat de __feu__ fois deux.")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréanmilou attaque`")
+            .addField(":shield: Lorsque le jeune tréant reçoit un coup :", ":shield: `=Tréanmilou défense : [Points de dégâts de votre coup]`")
+            .addField(":moneybag: Les récompenses une fois mort :", ":moneybag: `=Tréanmilou récompenses : [Votre niveau]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+});
