@@ -35746,7 +35746,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque un monstre pendant un tour, il pourra supporter que 3 attaque!")
+                .addField(":crossed_swords: Gros bébé taurus :", ":crossed_swords: Gros bébé taurus provoque un monstre pendant un tour.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
