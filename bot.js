@@ -44226,8 +44226,8 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Coup enchaîné")) {
         let degat = args.slice(2).join(" : ");
-        const degats = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.5))
-        const degatcrit = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 0.8))
+        const degats = Math.floor((degat * 0.3 + 1) * Math.random() + (degat * 0.7))
+        const degatcrit = Math.floor((degat * 0.4 + 1) * Math.random() + (degat * 1))
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 15) {
             const embed = new Discord.RichEmbed()
