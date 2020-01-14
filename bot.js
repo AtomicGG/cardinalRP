@@ -1030,6 +1030,137 @@ bot.on('message', message => {
     }
 });
 
+// Menus | Quêtes | Freya
+
+// Menus | Quêtes | Freya | Quête 2
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Gros venom") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setTitle(":japanese_ogre: Gros venom :", ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 2 !")
+            .setImage("https://media.melty.fr/article-3886497-raw/media.gif")
+            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5500\n:shield: 100 \n:warning: **__L'empoisonement du gros venom n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
+            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Gros venom attaque`")
+            .addField(":shield: Lorsque le gros venom reçoit un coup :", ":shield: `=Gros venom défense : [Points de dégâts de votre coup]`")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Gros venom attaque")) {
+        const degat = Math.floor(26 * Math.random() + 160)
+        const poison = Math.floor(21 * Math.random() + 40)
+        const roll = Math.floor(100 * Math.random() + 1)
+        const tour = Math.floor(3 * Math.random() + 3)
+        if (roll <= 30) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros venom :", ":crossed_swords: Le Gros venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
+            message.channel.send({ embed })
+        }
+        if (31 <= roll && roll <= 80) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros venom :", ":crossed_swords: Le Gros venom tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (81 <= roll && roll <= 90) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros venom:", ":crossed_swords: Le Gros venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (91 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Gros venom:", ":crossed_swords: L'énorme venom engloutit sa cible d'une traite, lui infligeant au passage " + degat + " points de dégâts perce armure. Vous ne pouvez point faire grand chose à l'intérieur de la bête, perdant " + degat + " points de dégâts par tour (à la fin de chaque tour du Venom) durant " + tour + " tours.\n\nLes joueurs peuvent le libérer en étourdissant le monstre via une compétence ou un coup. Sinon, ils peuvent attirer l'attention de celui-ci pendant que vous vous placez devant un arbre ou un rocher (action RP). L'esquive est seulement permise dans cette situation. Si vous réussissez, l'énorme Venom est étourdi et le joueur est libéré.")
+                .setTimestamp()
+
+            message.channel.send({ embed })
+        }
+    }
+});
+
+bot.on('message', message => {
+    let cont = message.content.slice(prefix.length).split(" ");
+    const args = cont.slice(1);
+    if (message.content.startsWith(prefix + "Gros venom défense")) {
+        let Dégâts = args.slice(3).join(" : ");
+        const degat = Math.floor((Dégâts * 0.4 + 1) * Math.random() + (Dégâts * 0.9))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if (roll <= 65) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Gros venom :", ":shield: Le Gros venom tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
+            message.channel.send({ embed })
+        }
+        if (66 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Gros venom :", ":shield: Le Gros venom se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
+// Menus | Quêtes | Freya | Quête 3
+
+bot.on('message', message => {
+    if (message.content === (prefix) + "Chaîne résistante") {
+        const embed = new Discord.RichEmbed()
+            .setColor(3447003)
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .addField(":link: Chaîne résistante :", ":link: `Une châine résistante qui serait capable de f aire s'agenouiller le Seigneur solitaire\n\nPour la lancer, faites la commande : `=Lancer de chaîne résistante`")
+            .setImage("https://cdn.discordapp.com/attachments/564812043169824772/664686828619563008/nrkD46EbCNQAAAABJRU5ErkJggg.png")
+            .setTimestamp()
+        message.channel.send({ embed })
+    }
+})
+
+bot.on('message', message => {
+    if (message.content.startsWith(prefix + "Lancer de chaîne résistante")) {
+        const roll = Math.floor(100 * Math.random() + 1)
+        if(roll <= 25){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":link: Chaîne résistante :", ":link: Vous ratez votre lancer de chaîne. Vous devez recommencer.")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if(roll >= 26){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":link: Chaîne résistante :", ":link: Vous réussissez à lancer la chaîne sur le Seigneur solitaire ! Vous devez donc tenir la chaîne ou bien l'attacher quelque part.\nSi 2 chaînes sont lancées sur le Seigneur : Il est ralenti (Il sautera donc un tour d'attaque sur deux)\nSi 4 chaînes sont lancées sur le Seigneur : Il sera agenouillé, donnant donc accès à sa tête aux joueurs.")
+                .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+    }
+});
+
 // Menus | Mort
 
 bot.on('message', message => {
@@ -50758,21 +50889,6 @@ bot.on('message', message => {
     }
 })
 
-bot.on('message', message => {
-    if (message.content === (prefix) + "Gros venom") {
-        const embed = new Discord.RichEmbed()
-            .setColor(3447003)
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(":japanese_ogre: Gros venom :", ":japanese_ogre: Un gros chien qui n'est trouvable que dans la Forêt dense du palier 2 !")
-            .setImage("https://media.melty.fr/article-3886497-raw/media.gif")
-            .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 5500\n:shield: 100 \n:warning: **__L'empoisonement du gros venom n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.__**")
-            .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Gros venom attaque`")
-            .addField(":shield: Lorsque le gros venom reçoit un coup :", ":shield: `=Gros venom défense : [Points de dégâts de votre coup]`")
-            .setTimestamp()
-        message.channel.send({ embed })
-    }
-})
-
 // Forêt dense | Monstres | Attaques
 
 bot.on('message', message => {
@@ -50965,51 +51081,6 @@ bot.on('message', message => {
     }
 });
 
-bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Gros venom attaque")) {
-        const degat = Math.floor(26 * Math.random() + 160)
-        const poison = Math.floor(21 * Math.random() + 40)
-        const roll = Math.floor(100 * Math.random() + 1)
-        const tour = Math.floor(3 * Math.random() + 3)
-        if (roll <= 30) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Gros venom :", ":crossed_swords: Le Gros venom essaye de vous faire peur en ouvrant bien sa gueule et n'attaque pas, vous avez de la chance !")
-            message.channel.send({ embed })
-        }
-        if (31 <= roll && roll <= 80) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Gros venom :", ":crossed_swords: Le Gros venom tente de vous surprendre en vous mordant la jambe rapidement, il inflige " + degat + " points de dégâts qui perce votre armure.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (81 <= roll && roll <= 90) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Gros venom:", ":crossed_swords: Le Gros venom fonce sur votre bras et le mord sauvagement et inflige " + degat + " qui perce votre armure en plus de vous empoisonner, infligeant " + poison + " points de dégâts de poison suplémentaire pendant 3 tours. Le poison n'est pas additif, si vous êtes déjà empoisonnés, le nombre de tours est réinitialisé et les nouveaux dégâts s'appliquent.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-        if (91 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":crossed_swords: Gros venom:", ":crossed_swords: L'énorme venom engloutit sa cible d'une traite, lui infligeant au passage " + degat + " points de dégâts perce armure. Vous ne pouvez point faire grand chose à l'intérieur de la bête, perdant " + degat + " points de dégâts par tour (à la fin de chaque tour du Venom) durant " + tour + " tours.\n\nLes joueurs peuvent le libérer en étourdissant le monstre via une compétence ou un coup. Sinon, ils peuvent attirer l'attention de celui-ci pendant que vous vous placez devant un arbre ou un rocher (action RP). L'esquive est seulement permise dans cette situation. Si vous réussissez, l'énorme Venom est étourdi et le joueur est libéré.")
-                .setTimestamp()
-
-            message.channel.send({ embed })
-        }
-    }
-});
-
 // Forêt dense | Monstres | Défenses
 
 bot.on('message', message => {
@@ -51149,33 +51220,6 @@ bot.on('message', message => {
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":shield: Doryphore géant :", ":shield: Le Doryphore géant tente de se protéger avec la plus épaisse partie de son armure, votre arme rebondit maladroitement sur son indestructible carapace et il ne subit aucun dégat.")
-                .setTimestamp()
-            message.channel.send({ embed })
-        }
-    }
-});
-
-bot.on('message', message => {
-    let cont = message.content.slice(prefix.length).split(" ");
-    const args = cont.slice(1);
-    if (message.content.startsWith(prefix + "Gros venom défense")) {
-        let Dégâts = args.slice(3).join(" : ");
-        const degat = Math.floor((Dégâts * 0.4 + 1) * Math.random() + (Dégâts * 0.9))
-        const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 65) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Gros venom :", ":shield: Le Gros venom tente d'esquiver votre coup en glissant hors de portée mais vous l'avez pris de court et votre coup le touche, vous lui infligez " + degat + " points de dégâts")
-            message.channel.send({ embed })
-        }
-        if (66 <= roll) {
-            const embed = new Discord.RichEmbed()
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-                .setColor(3447003)
-                .addField(":shield: Gros venom :", ":shield: Le Gros venom se faufile dans un coin étroit de la Forêt dense. Vous ne pouvez pas l'atteindre.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
@@ -63219,8 +63263,8 @@ bot.on('message', message => {
             .setTitle(":japanese_ogre: Tréantin de manioc :", ":japanese_ogre: Un loup qui n'est trouvable que dans le palier 3")
             .setImage("https://cdn.discordapp.com/attachments/543345227604164618/659487025661214739/Treantin.png")
             .addField(":sparkling_heart: Point de vie :", ":sparkling_heart: 3000")
-            .addField("**__Immunités :__**", "Poison (ne reçoit pas les dégâts de poison)")
-            .addField("**__Résistances :__**", "Saignement (réduit les dégâts de saignement de moitié), Electricité (réduit les dégâts de foudre de moitié)")
+            .addField("**__Immunités :__**", "Poison (ne reçoit pas les dégâts de poison), Electricité (ne reçoit pas les dégâts de foudre)")
+            .addField("**__Résistances :__**", "Saignement (réduit les dégâts de saignement de moitié)")
             .addField("**__Faiblesses :__**", "Feu (reçoit les dégâts de feu en double)")
             .addField(":crossed_swords: Pour engager le combat :", ":crossed_swords: `=Tréantin de manioc attaque`")
             .addField(":shield: Lorsque le tréantin de manioc reçoit un coup :", ":shield: `=Tréantin de manioc défense : [Points de dégâts de votre coup]`")
@@ -63250,19 +63294,28 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content.startsWith(prefix + "Sarriette carnivore attaque")) {
-        const degat = Math.floor(21 * Math.random() + 300)
+        const degat = Math.floor(41 * Math.random() + 280)
         const perce = Math.floor(26 * Math.random() + 150)
         const poison = Math.floor(16 * Math.random() + 25)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 70) {
+        if (roll <= 15) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Sarriette carnivore :", ":crossed_swords: La sarriette carnivore s'avance vers vous et tente de vous mordre mais se loupe.")
+            message.channel.send({ embed })
+        }
+        if (16 <= roll && roll <= 70) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Sarriette carnivore :", ":crossed_swords: La sarriette carnivore s'avance vers vous et vous mord, vous infligeant " + degat + " points de dégâts.")
+                .setTimestamp()
             message.channel.send({ embed })
         }
-        if (71 <= roll && roll <= 90) {
+        if (71 <= roll && roll <= 95) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63271,7 +63324,7 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (96 <= roll) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63287,7 +63340,7 @@ bot.on('message', message => {
     if (message.content.startsWith(prefix + "Tréantin de manioc attaque")) {
         const degat = Math.floor(31 * Math.random() + 250)
         const roll = Math.floor(100 * Math.random() + 1)
-        if (roll <= 50) {
+        if (roll <= 20) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63295,7 +63348,7 @@ bot.on('message', message => {
                 .addField(":crossed_swords: Tréantin de manioc :", ":crossed_swords: Le tréantin tente de vous attaquer, mais passe à côté.")
             message.channel.send({ embed })
         }
-        if (51 <= roll && roll <= 90) {
+        if (21 <= roll && roll <= 80) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
@@ -63304,13 +63357,21 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         }
-        if (91 <= roll) {
+        if (81 <= roll && roll <= 95) {
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
                 .addField(":crossed_swords: Tréantin de manioc :", ":crossed_swords: Le tréantin vous donne un violent coup de branche vous étourdissant, infligeant " + degat + " points de dégâts. Vous êtes étourdit même si vous ne prenez pas de dégâts.")
                 .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if (96 <= roll) {
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":crossed_swords: Tréantin de manioc :", ":crossed_swords: Le tréantin plante ses racines dans le sol et se soigne de 1500 HP.")
             message.channel.send({ embed })
         }
     }
@@ -63368,7 +63429,7 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Sarriette carnivore défense")) {
         let degat = args.slice(3).join(" : ");
-        const paradeRatee = Math.floor(((degat * 0.5) + 1) * Math.random() + (degat * 1.5))
+        const paradeRatee = Math.floor(((degat * 0.7) + 1) * Math.random() + (degat * 1.3))
         const paradeReussie = Math.floor(26 * Math.random() + 200)
         const roll = Math.floor(100 * Math.random() + 1)
         if (roll <= 85) {
@@ -63396,14 +63457,36 @@ bot.on('message', message => {
     const args = cont.slice(1);
     if (message.content.startsWith(prefix + "Tréantin de manioc défense")) {
         let atk = args.slice(4).join(" : ");
-        const degat = Math.floor(((atk * 0.8) + 1) * Math.random() + (atk * 0.8))
-        const embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
-            .setColor(3447003)
-            .addField(":shield: Tréantin de manioc :", ":shield: L'épaisse armure naturelle du tréantin réduit les dégâts qu'il prend. Vous lui infligez " + Math.floor(degat * 1.2) + " points de dégâts si vous avez une arme tranchante ou " + Math.floor(degat * 0.8) + " points de dégâts si vous avez une arme contondante.")
-            .setTimestamp()
-        message.channel.send({ embed })
+        const blocageReussie = Math.floor(((atk * 0.3) + 1) * Math.random() + (atk * 0.4))
+        const blocageRaté = Math.floor(((atk * 0.3) + 1) * Math.random() + (atk * 1))
+        const roll = Math.floor(100 * Math.random() + 1)
+        if(roll <= 65){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Tréantin de manioc :", ":shield: L'épaisse armure naturelle du tréantin réduit les dégâts qu'il prend. Vous lui infligez " + Math.floor(blocageReussie * 1.2) + " points de dégâts si vous avez une arme tranchante ou " + Math.floor(blocageReussie * 0.8) + " points de dégâts si vous avez une arme contondante.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if(66 <= roll && roll <= 90){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Tréantin de manioc :", ":shield: L'épaisse armure naturelle du tréantin réduit normalement les dégâts qu'il prend mais vous trouvez une faille dans son écorce. Vous lui infligez " + Math.floor(blocageRaté * 1.2) + " points de dégâts si vous avez une arme tranchante ou " + Math.floor(blocageRaté * 0.8) + " points de dégâts si vous avez une arme contondante.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
+        if(90 <= roll){
+            const embed = new Discord.RichEmbed()
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
+                .setColor(3447003)
+                .addField(":shield: Tréantin de manioc :", ":shield: Le tréantin fait pousser des racines qui vous font tomber, vous empêchant de vous défendre pendant un tour.")
+                .setTimestamp()
+            message.channel.send({ embed })
+        }
     }
 });
 
@@ -63875,7 +63958,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":crossed_swords: Golemite de malachite :", ":crossed_swords: Le golemite vous attque, projetant une partie de son corps de golem, vous infligeant " + crit + " points de dégâts.\n\nIl perd automatiquement la moitié de ses HP restants et si il l'utilise une seconde fois, il meurt.")
+                .addField(":crossed_swords: Golemite de malachite :", ":crossed_swords: Le golemite vous attque, projetant une partie de son corps de golem, vous infligeant " + crit + " points de dégâts.\n\nIl perd automatiquement le quart de ses HP restants.")
                 .setTimestamp()
             message.channel.send({ embed })
         }
