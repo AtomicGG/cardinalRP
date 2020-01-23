@@ -197,7 +197,7 @@ bot.on('message', message => {
             "Forgeron niveau 1 : 0/50\n\n" +
             "Cuisinier niveau 1 : 0/50\n\n" +
             "Alchimiste niveau 1 : 0/50\n\n" +
-            "Enchanteur niveau 1 : 0/50\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
+            "Inventeur niveau 1 : 0/50\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
             "Liste d'amis : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
             "Marié(e) à : aucun\n\n۝▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬۝\n\n" +
             "Inventaire :\n\n100 Cols\n\n" +
@@ -34697,7 +34697,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scroll: Parchemin de poison faible :", ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué d'oeil d'animal ainsi que de pierre de poison faible !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 6\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de lapin géant, 5 pierre de poison faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 400 cols\n\n:large_orange_diamond: Prix de revente : 100 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de poison faible`\n\n:warning: Un seul enchantement actif possible")
+            .addField(":scroll: Parchemin de poison faible :", ":scroll: C'est un parchemin peu efficace permettant d'enchanter votre arme causant parfois du poison constitué d'oeil d'animal ainsi que de pierre de poison faible !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 6\n\n:sparkles: Niveau minimum dans le métier 'Inventeur' requis pour fabriquer cet objet : 1\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de loup, 1 coeur de loup de sang, 1 coeur de lapin géant, 5 pierre de poison faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Inventeur' une fois l'objet fabriqué : 12\n\n:large_orange_diamond: Prix d'achat : 400 cols\n\n:large_orange_diamond: Prix de revente : 100 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de poison faible`\n\n:warning: Un seul enchantement actif possible")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -34710,7 +34710,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 24\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
+            .addField(":scroll: Parchemin de feu rouge faible :", ":scroll: C'est un parchemin efficace permettant d'enchanter votre arme causant parfois des brûlures constitué de pierres de feu faibles ainsi que de divers matériaux !\n\n:sparkles: Niveau minimum requis pour l'utiliser' : 16\n\n:sparkles: Niveau minimum dans le métier 'Inventeur' requis pour fabriquer cet objet : 2\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 1 coeur de ragondin, 1 oeil de ragondin, 1 plantrus parfait, 1 cuivre parfait, 5 pierre de feu faible\n\n:sparkles: Points d'expérience gagnés dans le métier 'Inventeur' une fois l'objet fabriqué : 24\n\n:large_orange_diamond: Prix d'achat : 800 cols\n\n:large_orange_diamond: Prix de revente : 200 cols\n\n:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Achat/fabrication/découverte du parchemin de feu rouge faible`\n\n:warning: Un seul enchantement actif possible")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -34723,7 +34723,7 @@ bot.on('message', message => {
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField(":scroll: Parchemin de poison moyen :", ":scroll: C'est un parchemin assez efficace permettant d'enchanter votre arme causant parfois du poison constitué de certains monstres !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 21\n\n:sparkles: Niveau minimum dans le métier 'Enchanteur' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Hémolymphe, 3 crochet de venom, 5 venin de Venom\n\n:sparkles: Points d'expérience gagnés dans le métier 'Enchanteur' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 300 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Fabrication du parchemin de poison moyen`\n\n:warning: Un seul enchantement actif possible")
+            .addField(":scroll: Parchemin de poison moyen :", ":scroll: C'est un parchemin assez efficace permettant d'enchanter votre arme causant parfois du poison constitué de certains monstres !\n\n:sparkles: Niveau minimum requis pour l'utiliser : 21\n\n:sparkles: Niveau minimum dans le métier 'Inventeur' requis pour fabriquer cet objet : 4\n\n:wrench: Matériaux nécessaires pour fabriquer cet objet : 5 Hémolymphe, 3 crochet de venom, 5 venin de Venom\n\n:sparkles: Points d'expérience gagnés dans le métier 'Inventeur' une fois l'objet fabriqué : 15\n\n:large_orange_diamond: Prix de revente : 300 cols\n\:keyboard: Si vous trouvez ou fabriquez ou achetez cet objet : `=Fabrication du parchemin de poison moyen`\n\n:warning: Un seul enchantement actif possible")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36028,7 +36028,7 @@ bot.on('message', message => {
                 "vous gagnerez parfois de l'expérience pour un métier !\n\n" +
                 "Cette expérience permet d'augmenter de niveaux dans justement vos métiers qui sont les suivantes :\n\n" +
                 "[Chasseur]\n[Cueilleur]\n[Mineur]\n[Bûcheron]\n[Pêcheur]\n" +
-                "[Bijoutier]\n[Forgeron]\n[Cuisinier]\n[Alchimiste]\n[Enchanteur]\n\n" +
+                "[Bijoutier]\n[Forgeron]\n[Cuisinier]\n[Alchimiste]\n[Inventeur]\n\n" +
                 "Tout ces métiers possèdent le même nombre de points d'expérience à avoir pour gagner un niveau dedans\n\n" +
                 "Pour voir justement les niveaux de métiers :\n\n`=Tableau des métiers`\n\n" +
                 "Pour calculer votre niveau de métier selon vos points d'expérience :\n\n`=Calculateur d'expérience de métier : [Vos points d'expérience]`")
@@ -36641,7 +36641,7 @@ bot.on('message', message => {
                 "- Alchimiste\n" +
                 "- Forgeron\n" +
                 "- Bijoutier\n" +
-                "- Enchanteur\n" +
+                "- Inventeur\n" +
                 "- Cuisinier")
             .setImage("https://i.pinimg.com/originals/18/fb/4b/18fb4b82ad92387d26413f1ef3518d96.png")
             .setTimestamp()
@@ -36684,7 +36684,7 @@ bot.on('message', message => {
             .addField("Les bonus des professions de fabrication :", "- Alchimiste : Faites `=Alchimiste` pour le savoir\n" +
                 "- Forgeron : Faites `=Forgeron` pour le savoir\n" +
                 "- Bijoutier : Faites `=Bijoutier` pour le savoir\n" +
-                "- Enchanteur : Faites `=Enchanteur` pour le savoir\n" +
+                "- Inventeur : Faites `=Inventeur` pour le savoir\n" +
                 "- Cuisinier : Faites `=Cuisinier` pour le savoir")
             .addBlankField(true)
             .addField("Les bonus des professions de fonction publique :", "- Aubergiste : +10 au roll d'attention lorsque vous êtes dans l'auberge.\n" +
@@ -36723,7 +36723,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("La fonte :", "Il pourra, au moyen d'une forge (C.F. voir `=Constructions prix`), fondre des armes afin de pouvoir avoir une chance d'obtenir des runes.\n\n" +
-                "Ces runes peuvent servir à améliorer une arme chez l'enchanteur.\n\n" +
+                "Ces runes peuvent servir à améliorer une arme chez l'inventeur.\n\n" +
                 "Une rune obtenue sur une arme du palier 1 ne pourra être ajoutée que sur une arme du palier 1.")
             .addBlankField(true)
             .addField("L'amélioration' :", "Il pourra également, au moyen d'une forge, améliorer une seule fois des armes/équipements à l'aide d'une partie des ressources nécessaires à la création de l'arme ou de l'équipement pour qu'il soit meilleur.")
@@ -36752,15 +36752,15 @@ bot.on('message', message => {
     }
 });
 
-// Menus | Enchanteur
+// Menus | Inventeur
 
 bot.on('message', message => {
-    if (message.content.startsWith(prefix + "Enchanteur")) {
+    if (message.content.startsWith(prefix + "Inventeur")) {
         const embed = new Discord.RichEmbed()
             .setAuthor(message.author.username, message.author.avatarURL)
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
-            .addField("L'enchanteur :", "Il pourra, au moyen de runes et d'un atelier d'enchantement (C.F. voir `=Constructions prix`), améliorer des armes afin que ces dernières donnent des améliorations supplémentaires.\n\n" +
+            .addField("L'inventeur :", "Il pourra, au moyen de runes et d'un atelier d'enchantement (C.F. voir `=Constructions prix`), améliorer des armes afin que ces dernières donnent des améliorations supplémentaires.\n\n" +
                 "Il ne peut y avoir qu'une amélioration par arme.\n\n" +
                 "Une rune obtenue sur une arme du palier 1 ne pourra être ajoutée que sur une arme du palier 1.\n\n" +
                 "Il devra cependant réaliser cela dans un atelier d'enchantement dans une construction (C.F. voir `=Constructions prix`).\n\n" +
@@ -36773,7 +36773,7 @@ bot.on('message', message => {
                 "OU\n" +
                 "- 1 rune majeure de la même amélioration")
             .addBlankField(true)
-            .addField("L'enchanteur :", "Il pourra également, au moyen d'un atelier d'enchantement, retirer un enchantement ou une rune déjà présente sur une arme mais vous ne récupèrerez pas l'enchantement ou la rune.")
+            .addField("L'inventeur :", "Il pourra également, au moyen d'un atelier d'enchantement, retirer un enchantement ou une rune déjà présente sur une arme mais vous ne récupèrerez pas l'enchantement ou la rune.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36787,7 +36787,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de cri de provocation :", "C'est une rune nécessaire pour améliorer une arme en cri de provocation.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36801,7 +36801,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de cri de provocation :", "C'est une rune nécessaire pour améliorer une arme en cri de provocation.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36815,7 +36815,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de cri de provocation :", "C'est une rune nécessaire pour améliorer une arme en cri de provocation.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36829,7 +36829,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de fuite :", "C'est une rune nécessaire pour améliorer une arme en fuite.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36843,7 +36843,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de fuite :", "C'est une rune nécessaire pour améliorer une arme en fuite.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36857,7 +36857,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de fuite :", "C'est une rune nécessaire pour améliorer une arme en fuite.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36871,7 +36871,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure d'interception :", "C'est une rune nécessaire pour améliorer une arme en interception.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36885,7 +36885,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune d'interception :", "C'est une rune nécessaire pour améliorer une arme en interception.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36899,7 +36899,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure d'interception :", "C'est une rune nécessaire pour améliorer une arme en interception.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36913,7 +36913,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de combo :", "C'est une rune nécessaire pour améliorer une arme en combo.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36927,7 +36927,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de combo :", "C'est une rune nécessaire pour améliorer une arme en combo.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36941,7 +36941,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de combo :", "C'est une rune nécessaire pour améliorer une arme en combo.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36955,7 +36955,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de coup circulaire :", "C'est une rune nécessaire pour améliorer une arme en coup circulaire.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36969,7 +36969,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de coup circulaire :", "C'est une rune nécessaire pour améliorer une arme en coup circulaire.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36983,7 +36983,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de coup circulaire :", "C'est une rune nécessaire pour améliorer une arme en coup circulaire.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -36997,7 +36997,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de coup d'estoc :", "C'est une rune nécessaire pour améliorer une arme en coup d'estoc.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37011,7 +37011,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de coup d'estoc :", "C'est une rune nécessaire pour améliorer une arme en coup d'estoc.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37025,7 +37025,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de coup d'estoc :", "C'est une rune nécessaire pour améliorer une arme en coup d'estoc.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37039,7 +37039,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de coup normal :", "C'est une rune nécessaire pour améliorer une arme en coup normal.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37053,7 +37053,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de coup normal :", "C'est une rune nécessaire pour améliorer une arme en coup normal.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37067,7 +37067,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de coup normal :", "C'est une rune nécessaire pour améliorer une arme en coup normal.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37081,7 +37081,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de coup perce armure :", "C'est une rune nécessaire pour améliorer une arme en coup perce armure.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37095,7 +37095,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de coup perce armure :", "C'est une rune nécessaire pour améliorer une arme en coup perce armure.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37109,7 +37109,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de coup perce armure :", "C'est une rune nécessaire pour améliorer une arme en coup perce armure.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37123,7 +37123,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de coup létal :", "C'est une rune nécessaire pour améliorer une arme en coup létal.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37137,7 +37137,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de coup létal :", "C'est une rune nécessaire pour améliorer une arme en coup létal.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37151,7 +37151,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de coup létal :", "C'est une rune nécessaire pour améliorer une arme en coup létal.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37165,7 +37165,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de coup provocateur :", "C'est une rune nécessaire pour améliorer une arme en coup provocateur.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37179,7 +37179,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de coup provocateur :", "C'est une rune nécessaire pour améliorer une arme en coup provocateur.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37193,7 +37193,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de coup provocateur :", "C'est une rune nécessaire pour améliorer une arme en coup provocateur.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37207,7 +37207,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de coup sauté :", "C'est une rune nécessaire pour améliorer une arme en coup sauté.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37221,7 +37221,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de coup sauté :", "C'est une rune nécessaire pour améliorer une arme en coup sauté.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37235,7 +37235,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de coup sauté :", "C'est une rune nécessaire pour améliorer une arme en coup sauté.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37249,7 +37249,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de blocage :", "C'est une rune nécessaire pour améliorer une arme en blocage.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37263,7 +37263,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de blocage :", "C'est une rune nécessaire pour améliorer une arme en blocage.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37277,7 +37277,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de blocage :", "C'est une rune nécessaire pour améliorer une arme en blocage.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37291,7 +37291,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure d'esquive :", "C'est une rune nécessaire pour améliorer une arme en esquive.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37305,7 +37305,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune d'esquive :", "C'est une rune nécessaire pour améliorer une arme en esquive.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37319,7 +37319,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure d'esquive :", "C'est une rune nécessaire pour améliorer une arme en esquive.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37333,7 +37333,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune mineure de parade :", "C'est une rune nécessaire pour améliorer une arme en parade.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37347,7 +37347,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune commune de parade :", "C'est une rune nécessaire pour améliorer une arme en parade.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -37361,7 +37361,7 @@ bot.on('message', message => {
             .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
             .setColor(3447003)
             .addField("Rune majeure de parade :", "C'est une rune nécessaire pour améliorer une arme en parade.\n" +
-                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'enchanteur dans son atelier.")
+                "Vous avez besoin de 4 runes mineures, ou de 2 communes, ou de 1 commune et 2 mineures, ou d'une majeure, pour l'amélioration par l'inventeur dans son atelier.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
