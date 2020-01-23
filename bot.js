@@ -112,7 +112,8 @@ bot.on('message', message => {
                 "Le seul moyen d'en sortir est de finir le jeu.\n\n" +
                 "Mais sortir de ce monde virtuel ne sera pas aussi facile que prévu. En effet, si un joueur meurt au cours de son aventure, il meurt également dans le monde réel.\n\n" +
                 "Vous êtes l'un de ces malchanceux joueurs qui ont attendu et acheté le jeu SAO, mais qui n'auraient jamais dû y rentrer...\n\n" +
-                "Vous l'aurez compris, vous êtes donc bloqué dans l'Aincrad jusqu'à que vous réussissiez à vaincre la forteresse volante, mais y survivrez-vous seulement ?")
+                "Vous l'aurez compris, vous êtes donc bloqué dans l'Aincrad jusqu'à que vous réussissiez à vaincre la forteresse volante, mais y survivrez-vous seulement ?\n\n" +
+                "Actuellement, nous sommes en 2024, 2 ans se sont déjà écoulés dans l'Aincrad et le jeu n'est toujours pas fini.")
             .setImage("https://www.nautiljon.com/images/univers/00/41/sword_art_online_aincrad_14.jpg")
             .setTimestamp()
         message.channel.send({ embed })
@@ -43713,13 +43714,14 @@ bot.on('message', message => {
                 .setTimestamp()
             message.channel.send({ embed })
         } else {
-            let degats = args.slice(2).join(" : ");
-            const degat = (Math.floor((degats) * Math.random() + 1 * (degats)))
+            let armure = args.slice(2).join(" : ");
+            const degat = Math.floor((armure * 0.5 + 1) * Math.random() + (armure * 1.3))
+            const boost = Math.floor((armure * 0.2 + 1) * Math.random() + (1.6 * armure))
             const embed = new Discord.RichEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":cyclone: Armure sainte :", ":cyclone: Afin de mieux vous protéger, vous acceptez de vous infliger des dégâts allant jusqu'à `" + degat + "` points de dégâts ! En retour, votre corps se sentit plus apte au combat. Vous sentant mieux protégé par une aura protecteur, votre armure est doublée !")
+                .addField(":cyclone: Armure sainte :", ":cyclone: Afin de mieux vous protéger, vous acceptez de vous infliger des dégâts allant jusqu'à `" + degat + "` points de dégâts ! En retour, votre corps se sentit plus apte au combat. Vous sentant mieux protégé par une aura protecteur, votre armure passe donc à " + boost + ".")
                 .setImage("https://cdn.discordapp.com/attachments/564812043169824772/655247154436243460/latest.png")
                 .setTimestamp()
             message.channel.send({ embed })
