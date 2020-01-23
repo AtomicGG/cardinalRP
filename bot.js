@@ -43721,7 +43721,7 @@ bot.on('message', message => {
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("『SAO Community [RP]』©", "http://www.copyrightfrance.com/images/copyright.png")
                 .setColor(3447003)
-                .addField(":cyclone: Armure sainte :", ":cyclone: Afin de mieux vous protéger, vous acceptez de vous infliger des dégâts allant jusqu'à `" + degat + "` points de dégâts ! En retour, votre corps se sentit plus apte au combat. Vous sentant mieux protégé par une aura protecteur, votre armure passe donc à " + boost + ".")
+                .addField(":cyclone: Armure sainte :", ":cyclone: Afin de mieux vous protéger, vous acceptez de vous infliger des dégâts allant jusqu'à `" + degat + "` points de dégâts ! En retour, votre corps se sentit plus apte au combat. Vous sentant mieux protégé par une aura protecteur, votre armure passe donc à `" + boost + "`.")
                 .setImage("https://cdn.discordapp.com/attachments/564812043169824772/655247154436243460/latest.png")
                 .setTimestamp()
             message.channel.send({ embed })
